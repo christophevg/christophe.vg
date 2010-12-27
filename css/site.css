@@ -1,0 +1,43 @@
+BODY {
+  font:80% arial,helvetica,sans-serif;
+  margin: 35px;
+}
+
+IMG {
+  border: 0px;
+}
+
+H1 {
+  font: 150% arial,helvetica,sans-serif;
+}
+
+H2 {
+  font:125% arial,helvetica,sans-serif;
+}
+
+DIV#footer {
+  font: 60% arial, helvetica, sans-serif;
+  text-align: left;
+  margin-top: 10px;
+}
+
+A.icon {
+  background-repeat:no-repeat;
+  padding-top:4px; 
+  padding-bottom:5px; 
+  padding-left:23px;
+}
+
+DIV#passport {
+  text-align: justify;
+  float: right;
+  width: 178x;
+  background-color: #eee;
+  margin-left: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+DIV#passport P {
+  width: 178px;
+}

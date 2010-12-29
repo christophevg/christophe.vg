@@ -41,3 +41,43 @@ DIV#passport {
 DIV#passport P {
   width: 178px;
 }
+
+/* <circular menu> */
+
+UL.circular.menu {
+  display: inline-block;
+  list-style: none;
+  height: 450px;
+  width: 400px;
+}
+
+UL.circular.menu LI {
+  display: block;
+  height: 125px;
+  width: 125px;
+  float: left; 
+}
+
+UL.circular.menu LI.koken {
+  left: 120px;
+  top: 50px;
+}
+
+UL.circular.menu LI.zeilen {
+  left: 210px;
+  top: 110px;
+}
+
+UL.circular.menu LI.informatica {
+  left: 110px;
+  top: 220px;
+}
+
+UL.circular.menu LI.fotografie {
+  left: 0px;
+  top: 280px;
+}
+
+/* </circular menu> */
+
+

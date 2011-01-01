@@ -8,7 +8,8 @@ var CircularMenu = Class.extend( {
     this.setupMenu();
     this.setupItems();
     this.arrangeElements();
-    this.rotate();
+    
+    this.start();
   },
   
   setupMenu : function setupMenu() {
@@ -45,9 +46,20 @@ var CircularMenu = Class.extend( {
   },
   
   rotate: function rotate() {
-    this.offset -= 0.001;
-    this.arrangeElements();
-    this.rotate.scope(this).after(5);
+    if( this.rotating ) {
+      this.offset -= 0.001;
+      this.arrangeElements();
+      this.rotate.scope(this).after(5);
+    }
+  },
+  
+  start : function start() {
+    this.rotating = true;
+    this.rotate();
+  },
+  
+  stop: function stop() {
+    this.rotating = false;
   }
 } );
 
@@ -103,14 +115,16 @@ CircularMenu.Item = Class.extend( {
   },
   
   handleFocus : function handleFocus() { 
+    this.menu.stop();
+    this.grow();
     this.menu.info.innerHTML = 
       "<h1>" + this.element.title + "</h1>" + this.getDescription();
-    this.grow();
   },
   
   handleLostFocus : function handleLostFocus() { 
     this.menu.info.innerHTML = "";
     this.shrink(); 
+    this.menu.start();
   },
   
   getURL : function getURL() {

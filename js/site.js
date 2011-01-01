@@ -60,6 +60,25 @@ var CircularMenu = Class.extend( {
     this.rotate();
   },
   
+  startAfter : function startAfter(delay) {
+    this.waitStart = new Date().valueOf();
+    this.waitFor   = delay;
+    if( ! this.waitingToStart ) { this.waitForStart(); }
+  },
+  
+  waitForStart : function waitForStart() {
+    this.waitingToStart = true;
+    var now = new Date().valueOf();
+    if( now - this.waitStart > this.waitFor ) {
+      this.waitStart = 0;
+      this.waitFor = 0;
+      this.waitingToStart = false;
+      this.start();
+      return;
+    }
+    this.waitForStart.scope(this).after(10);
+  },
+  
   stop: function stop() {
     this.rotating = false;
   },
@@ -140,7 +159,7 @@ CircularMenu.Item = Class.extend( {
   handleLostFocus : function handleLostFocus() { 
     this.menu.hideInfo();
     this.shrink(); 
-    this.menu.start();
+    this.menu.startAfter(750);
   },
   
   getURL : function getURL() {

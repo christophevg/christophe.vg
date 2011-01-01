@@ -6,6 +6,9 @@ title: The World According to Christophe VG
 <script type="text/javascript">
 ProtoJS.Event.observe( window, "load", function() {
   CircularMenu.info["circular-menu"] = {
+    "_default_" : {
+      description : "<h1>Hello World</h1>You rotate around me ;-)<br>Pick a topic..."
+    },
     "Koken"  : { 
       url:         "/Koken",
       description: "Er is geen leukere plek dan achter het fornuis." 
@@ -39,6 +42,7 @@ ProtoJS.Event.observe( window, "load", function() {
       description: "Another fun project: Can I build an AUTOnomous roBOT ?"
     }
   };
+  new CircularMenu("circular-menu");
 } );
 </script>
 

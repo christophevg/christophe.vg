@@ -22,6 +22,7 @@ var CircularMenu = Class.extend( {
     this.info = document.createElement( "DIV" );
     this.info.className = "info";
     this.menu.appendChild(this.info);
+    this.hideInfo();
   },
   
   setupItems : function setupItems() {
@@ -61,6 +62,14 @@ var CircularMenu = Class.extend( {
   
   stop: function stop() {
     this.rotating = false;
+  },
+  
+  showInfo: function showInfo( html ) {
+    this.info.innerHTML = html;
+  },
+  
+  hideInfo: function hideInfo() {
+    this.showInfo( CircularMenu.info[this.id]["_default_"].description );
   }
 } );
 
@@ -118,12 +127,11 @@ CircularMenu.Item = Class.extend( {
   handleFocus : function handleFocus() { 
     this.menu.stop();
     this.grow();
-    this.menu.info.innerHTML = 
-      "<h1>" + this.element.title + "</h1>" + this.getDescription();
+    this.menu.showInfo( "<h1>" + this.element.title + "</h1>" + this.getDescription() );
   },
   
   handleLostFocus : function handleLostFocus() { 
-    this.menu.info.innerHTML = "";
+    this.menu.hideInfo();
     this.shrink(); 
     this.menu.start();
   },
@@ -169,7 +177,5 @@ CircularMenu.Item = Class.extend( {
     this.goto(left, top);
   }
 } );
-
-new CircularMenu("circular-menu");
 
 /* </circular menu> */

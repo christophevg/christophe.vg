@@ -3,15 +3,54 @@ layout: base
 title: The World According to Christophe VG 
 ---
 
+<script type="text/javascript">
+ProtoJS.Event.observe( window, "load", function() {
+  CircularMenu.info["circular-menu"] = {
+    "Koken"  : { 
+      url:         "/Koken",
+      description: "Er is geen leukere plek dan achter het fornuis." 
+    },
+    "Zeilen" : { 
+      url:         "/Zeilen", 
+      description: "Wind, water en een catamaran. Meer moet dat niet zijn."
+    },
+    "IT" : { 
+      url:         "/IT", 
+      description: "Various notes and things to remember concerning computers, programming and the world."
+    },
+    "Fotografie" : { 
+      url:         "/Fotografie", 
+      description: "Say Cheese ..."
+    },
+    "Eline" : { 
+      url:         "http://eline.vg", 
+      description: "Mijn dochter, Eline heeft haar eigen plekje op het web."
+    },
+    "Peyerstraat 35" : { 
+      url:         "http://35.peyerstraat.be", 
+      description: "Ons bouwdagboek ..."
+    },
+    "Bladwijzer" : { 
+      url:         "http://bladwijzer.net", 
+      description: "Mijn persoonlijke bladwijzer op de wereld ..."
+    },
+    "Project Autobot" : { 
+      url:         "http://project-autobot.blogspot.com",
+      description: "Another fun project: Can I build an AUTOnomous roBOT ?"
+    }
+  };
+} );
+</script>
+
 <div id="splash">
   <div id="circular-menu" class="circular menu">
-    <img src="images/sections/koken.jpg">
-    <img src="images/sections/zeilen.jpg">
-    <img src="images/sections/informatica.jpg">
-    <img src="images/sections/fotografie.jpg">
-    <img src="images/sections/eline.vg.jpg">
-    <img src="images/sections/peyerstraat.be.jpg">
-    <img src="images/sections/bladwijzer.net.jpg">
-    <img src="images/sections/project-autobot.jpg">
+    <img src="images/sections/koken.jpg"           title="Koken">
+    <img src="images/sections/zeilen.jpg"          title="Zeilen">
+    <img src="images/sections/informatica.jpg"     title="IT">
+    <img src="images/sections/fotografie.jpg"      title="Fotografie">
+    <img src="images/sections/eline.vg.jpg"        title="Eline">
+    <img src="images/sections/peyerstraat.be.jpg"  title="Peyerstraat 35">
+    <img src="images/sections/bladwijzer.net.jpg"  title="Bladwijzer">
+    <img src="images/sections/project-autobot.jpg" title="Project Autobot">
   </div>
 </div>

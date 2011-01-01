@@ -4,7 +4,6 @@ var CircularMenu = Class.extend( {
   init : function init( id ) {
     this.id = id;
     this.offset = 0.0;
-    this.radius = 130;
 
     this.setupMenu();
     this.setupItems();
@@ -18,24 +17,31 @@ var CircularMenu = Class.extend( {
     this.height = parseInt(this.menu.offsetHeight);
     this.paddingTop = parseInt(this.menu.offsetTop);
     this.center = { x: this.width / 2, y: this.height / 2 };
+    this.radius = this.width / 2.5;
+    this.info = document.createElement( "DIV" );
+    this.info.className = "info";
+    this.menu.appendChild(this.info);
   },
   
   setupItems : function setupItems() {
     this.items = [];
     $A(this.menu.getElementsByTagName("IMG")).iterate( function( image ) {
-      var item  = new CircularMenu.Item( image );
+      var item  = new CircularMenu.Item( image, this );
       this.items.push( item );
     }.scope(this) );
   },
   
   arrangeElements : function arrangeElements() {
+    var paddingLeft = this.menu.offsetLeft;
     var blocks = this.items.length;
     this.items.iterate( function( item, count ) {
       var deg = ( ( ( Math.PI * 2 ) / blocks ) * count ) + this.offset;
       var x = Math.cos(deg) * this.radius;
       var y = Math.sin(deg) * this.radius;
-      item.moveTo( this.center.x + x, this.paddingTop + this.center.y - y );
+      item.moveTo( paddingLeft + this.center.x + x, this.paddingTop + this.center.y - y );
     }.scope(this) );
+    this.info.style.left = ( paddingLeft + this.center.x - ( this.info.offsetWidth / 2)) + "px";
+    this.info.style.top  = ( this.paddingTop + this.center.y - ( this.info.offsetHeight / 2)) + "px";
   },
   
   rotate: function rotate() {
@@ -45,9 +51,12 @@ var CircularMenu = Class.extend( {
   }
 } );
 
+CircularMenu.info = {};
+
 CircularMenu.Item = Class.extend( {
-  init : function init( elem ) {
+  init : function init( elem, menu ) {
     this.element = elem;
+    this.menu    = menu;
     this.analyzeElement();
     
     this.scale = 0.60;
@@ -69,6 +78,8 @@ CircularMenu.Item = Class.extend( {
                            this.handleFocus.scope(this) );
     ProtoJS.Event.observe( this.element, "mouseout", 
                            this.handleLostFocus.scope(this) );
+    ProtoJS.Event.observe( this.element, "click",
+                           this.handleClick.scope(this) );
   },
   
   updateElement : function updateElement() {
@@ -91,8 +102,33 @@ CircularMenu.Item = Class.extend( {
     this.processModification.scope(this).after(30); 
   },
   
-  handleFocus     : function handleFocus()     {  this.grow();  },
-  handleLostFocus : function handleLostFocus() { this.shrink(); },
+  handleFocus : function handleFocus() { 
+    this.menu.info.innerHTML = 
+      "<h1>" + this.element.title + "</h1>" + this.getDescription();
+    this.grow();
+  },
+  
+  handleLostFocus : function handleLostFocus() { 
+    this.menu.info.innerHTML = "";
+    this.shrink(); 
+  },
+  
+  getURL : function getURL() {
+    return CircularMenu.info[this.menu.id][this.element.title].url;
+  },
+  
+  getDescription : function getDescription() {
+    return CircularMenu.info[this.menu.id][this.element.title].description;
+  },
+  
+  handleClick     : function handleClick()     {
+    var url = this.getURL();
+    if( url.substring(0,7) == "http://" ) {
+      window.open( url );
+    } else {
+      window.location = url;
+    }
+  },
   
   grow : function grow() {
     this.scaleDelta = 0.10;
@@ -107,10 +143,9 @@ CircularMenu.Item = Class.extend( {
   goto : function goto(left, top) {
     this.left = left;
     this.top  = top;
-    var paddingLeft = this.element.parentNode.offsetLeft;
     var dx = ( this.width * this.scale ) / 2;
     var dy = ( this.height * this.scale ) / 2;
-    this.element.style.left = ( paddingLeft + this.left - dx ) + "px";
+    this.element.style.left = ( this.left - dx ) + "px";
     this.element.style.top  = ( this.top - dy ) + "px";
   },
   

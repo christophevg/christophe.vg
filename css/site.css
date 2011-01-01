@@ -48,6 +48,12 @@ DIV#passport P {
   min-width: 410px;
 }
 
+.info {
+  position: absolute;
+  width: 200px;
+  height: 100px;
+}
+
 /* <circular menu> */
 
 .circular.menu {

@@ -42,40 +42,26 @@ DIV#passport P {
   width: 178px;
 }
 
+#splash {
+  text-align: center;
+  margin-right: 210px;
+  min-width: 410px;
+}
+
 /* <circular menu> */
 
-UL.circular.menu {
+.circular.menu {
   display: inline-block;
   list-style: none;
-  height: 450px;
+  height: 400px;
   width: 400px;
 }
 
-UL.circular.menu LI {
-  display: block;
+.circular.menu IMG {
   height: 125px;
   width: 125px;
-  float: left; 
-}
-
-UL.circular.menu LI.koken {
-  left: 120px;
-  top: 50px;
-}
-
-UL.circular.menu LI.zeilen {
-  left: 210px;
-  top: 110px;
-}
-
-UL.circular.menu LI.informatica {
-  left: 110px;
-  top: 220px;
-}
-
-UL.circular.menu LI.fotografie {
-  left: 0px;
-  top: 280px;
+  float: left;
+  cursor: pointer;
 }
 
 /* </circular menu> */

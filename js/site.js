@@ -36,7 +36,7 @@ var CircularMenu = Class.extend( {
     var paddingLeft = this.menu.offsetLeft;
     var blocks = this.items.length;
     this.items.iterate( function( item, count ) {
-      var deg = ( ( ( Math.PI * 2 ) / blocks ) * count ) + this.offset;
+      var deg = ( ( ( Math.PI * 2 ) / blocks ) * count ) - this.offset;
       var x = Math.cos(deg) * this.radius;
       var y = Math.sin(deg) * this.radius;
       item.moveTo( paddingLeft + this.center.x + x, this.paddingTop + this.center.y - y );
@@ -47,9 +47,10 @@ var CircularMenu = Class.extend( {
   
   rotate: function rotate() {
     if( this.rotating ) {
-      this.offset -= 0.001;
+      this.offset += 0.005;
+      if( this.offset >= ( 2 * Math.PI ) ) { this.offset -= ( 2 * Math.PI ); }
       this.arrangeElements();
-      this.rotate.scope(this).after(5);
+      this.rotate.scope(this).after(25);
     }
   },
   

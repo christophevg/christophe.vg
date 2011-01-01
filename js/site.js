@@ -105,10 +105,17 @@ CircularMenu.Item = Class.extend( {
   },
   
   updateElement : function updateElement() {
+    // size
     var width = this.width * this.scale;
     var height = this.height * this.scale;
     this.element.style.width  = width  + "px";
     this.element.style.height = height + "px";
+
+    // position
+    var dx = ( this.width * this.scale ) / 2;
+    var dy = ( this.height * this.scale ) / 2;
+    this.element.style.left = ( this.left - dx ) + "px";
+    this.element.style.top  = ( this.top - dy ) + "px";
   },
     
   processModification : function processModification() {
@@ -166,10 +173,7 @@ CircularMenu.Item = Class.extend( {
   goto : function goto(left, top) {
     this.left = left;
     this.top  = top;
-    var dx = ( this.width * this.scale ) / 2;
-    var dy = ( this.height * this.scale ) / 2;
-    this.element.style.left = ( this.left - dx ) + "px";
-    this.element.style.top  = ( this.top - dy ) + "px";
+    this.updateElement();
   },
   
   moveTo : function moveTo(left, top) {

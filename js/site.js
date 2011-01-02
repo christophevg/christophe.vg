@@ -67,20 +67,26 @@ var CircularMenu = Class.extend( {
   },
   
   waitForStart : function waitForStart() {
+    if( this.waitStart == 0 ) { return; } // has been reset or something
     this.waitingToStart = true;
     var now = new Date().valueOf();
     if( now - this.waitStart > this.waitFor ) {
-      this.waitStart = 0;
-      this.waitFor = 0;
-      this.waitingToStart = false;
+      this.stopWaitingToStart();
       this.start();
       return;
     }
     this.waitForStart.scope(this).after(10);
   },
   
+  stopWaitingToStart : function stopWaitingToStart() {
+    this.waitStart = 0;
+    this.waitFor = 0;
+    this.waitingToStart = false;
+  },
+
   stop: function stop() {
     this.rotating = false;
+    this.stopWaitingToStart();
   },
   
   showInfo: function showInfo( html ) {

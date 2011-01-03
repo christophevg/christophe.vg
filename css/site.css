@@ -18,7 +18,8 @@ H2 {
 DIV#footer {
   font: 60% arial, helvetica, sans-serif;
   text-align: left;
-  margin-top: 10px;
+  margin-top: 30px;
+  clear:both;
 }
 
 A.icon {
@@ -52,6 +53,15 @@ DIV#passport P {
   position: absolute;
   width: 200px;
   height: 100px;
+}
+
+.section.header {
+  float: right;
+  text-align: right;
+}
+
+.section.header IMG {
+  margin-top: 10px; 
 }
 
 /* <circular menu> */

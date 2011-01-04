@@ -1,3 +1,22 @@
+---
+sections: { 
+  default: 
+    "<p>
+      This site should answer most of your questions about me and point you to
+      other spaces online where you find some of my work.
+    </p>
+    <p>
+      <b>Language Disclaimer</b><br>
+      Most of the content on this site is in Dutch, my mother tongue, since
+      I'm from Belgium - yeah I know, please don't hold it against me ;-)
+    </p>"
+  }
+---
+{% capture section %}{{page.categories}}{% endcapture %}
+{% capture sectionSize %}{{ section | size }}{% endcapture %}
+{% if sectionSize == '0' %}
+  {% assign section = 'default' %}
+{% endif %}
 <!doctype html>
 <html lang="en">
 <head>
@@ -17,15 +36,7 @@
       I'm Christophe Van Ginneken, your host on this personal website ...
       of mine.
     </p>
-    <p>
-      This site should answer most of your questions about me and point you to
-      other spaces online where you find some of my work.
-    </p>
-    <p>
-      <b>Language Disclaimer</b><br>
-      Most of the content on this site is in Dutch, my mother tongue, since
-      I'm from Belgium - yeah I know, please don't hold it against me ;-)
-    </p>
+    {{ page.sections[section] }}
   </div>
 
   <div id="content">

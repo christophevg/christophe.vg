@@ -3,17 +3,15 @@ layout: section
 ---
 {% capture section %}{{page.categories}}{% endcapture %}
 
-<h1>debug: index layout</h1>
-
 <h1>{{ section }}</h1>
 {{content}}
 
 <hr>
 
-{% assign currentLetter = '' %}
+{% capture currentLetter %}{% endcapture %}
 {% for item in site.categories[section] | sort %}
   {% if item.layout == "post" %} 
-    {% capture letter %}{{ item.title | truncate: 1, "" }}{% endcapture %}
+    {% capture letter %}{{ item.title | truncate: 2, " " }}{% endcapture %}
     {% if currentLetter != letter %}
       {% assign currentLetter = letter %}
 <h2>{{ currentLetter }}</h2>

@@ -3,6 +3,8 @@ layout: index
 title: Cooking According to Christophe VG
 ---
 
+# debug: requesting {{ page.layout }} layout from post
+
 Naast alle informatica-gerelateerde interesses, heeft de keuken een belangrijk
 plekje in mijn hart verworven, of moet ik eerlijkheidshalve dan maar maag
 zeggen? De liefde van de man gaat door de maag en Kristien heeft dat goed

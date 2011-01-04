@@ -1,3 +1,5 @@
 auto: true
 permalink: none
+pygments: true
+safe: true
 url: http://christophevg.github.com/christophe.vg/

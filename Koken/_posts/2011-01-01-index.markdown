@@ -1,6 +1,5 @@
 ---
 layout: index
-section: Koken
 title: Cooking According to Christophe VG
 ---
 

@@ -1,6 +1,5 @@
 ---
 layout: post
-section: Koken
 title: Worstenbroodjes
 ---
 

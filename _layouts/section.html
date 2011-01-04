@@ -1,10 +1,11 @@
 ---
 layout: base
 ---
+{% capture section %}{{page.categories}}{% endcapture %}
 
 <div class="section header">
-  <a href="{{ page.section }}">{{ page.section }}</a> / <a href="./">Christophe VG</a><br>
-  <a href="{{ page.section }}"><img src="images/sections/{{ page.section | downcase }}.jpg"></a>
+  <a href="{{ section }}">{{ section }}</a> / <a href="./">Christophe VG</a><br>
+  <a href="{{ section }}"><img src="images/sections/{{ section | downcase }}.jpg"></a>
 </div>
 
 {{content}}

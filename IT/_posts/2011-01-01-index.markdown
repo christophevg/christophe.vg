@@ -1,6 +1,5 @@
 ---
 layout: index
-section: IT
 title: IT According to Christophe VG
 ---
 

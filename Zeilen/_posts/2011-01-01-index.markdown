@@ -1,6 +1,5 @@
 ---
 layout: index
-section: Zeilen
 title: Sailing According to Christophe VG
 ---
 

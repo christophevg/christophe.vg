@@ -1,14 +1,15 @@
 ---
 layout: section
 ---
+{% capture section %}{{page.categories}}{% endcapture %}
 
-<h1>{{ page.section }}</h1>
+<h1>{{ section }}</h1>
 {{content}}
 
 <hr>
 
 {% assign currentLetter = '' %}
-{% for item in site.categories[page.section] | sort %}
+{% for item in site.categories[section] | sort %}
   {% if item.layout == "post" %} 
     {% capture letter %}{{ item.title | truncate: 1, "" }}{% endcapture %}
     {% if currentLetter != letter %}

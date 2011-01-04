@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Tataki van Rundvlees
-section: Koken
 ---
 
 ## Ingredienten

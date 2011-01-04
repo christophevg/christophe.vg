@@ -1,6 +1,5 @@
 ---
 layout: index
-section: Fotografie
 title: Photography According to Christophe VG
 ---
 

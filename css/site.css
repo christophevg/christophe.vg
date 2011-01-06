@@ -146,16 +146,21 @@ DIV#passport P {
 .highlight .vi { color: #008080 } /* Name.Variable.Instance */
 .highlight .il { color: #009999 } /* Literal.Number.Integer.Long */
 
-DIV.highlight PRE CODE.bash {
+DIV.highlight PRE CODE {
   width: 560px;
-  background-color: black;
-  border: 1px solid silver;
+  display: block;
   margin: 15px;
   padding: 15px;
+  border: 1px solid silver;
   font-family: 'Courier New', Courier;
+  background: whiteSmoke;
+  line-height: 110%;
+}
+
+DIV.highlight PRE CODE.bash {
+  background-color: black;
   line-height: 125%;
   color: #eee;
-  display: block;
 }
 
 /* </syntax highlighting> */

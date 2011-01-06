@@ -147,6 +147,7 @@ DIV#passport P {
 .highlight .il { color: #009999 } /* Literal.Number.Integer.Long */
 
 DIV.highlight PRE CODE.bash {
+  width: 560px;
   background-color: black;
   border: 1px solid silver;
   margin: 15px;

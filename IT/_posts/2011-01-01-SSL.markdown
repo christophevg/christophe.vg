@@ -1,0 +1,11 @@
+---
+layout: post
+title: SSL
+---
+## Certificates for use with Apache
+
+see [http://www.openssl.org/docs/HOWTO/keys.txt](http://www.openssl.org/docs/HOWTO/keys.txt)
+
+{% highlight bash%}
+openssl genrsa -out privkey.pem 2048
+{% endhighlight %}

@@ -4,5 +4,21 @@ hideSectionImage: true
 title: Me, myself and I
 ---
 
-{{page.showSectionImage}}
-Things to know about ... me:
+"Passion makes the world go round." Well, in my world it does. Lack of passion
+is not something you can accuse me of and I tend to incorporate it in
+everything I do. On a professional level I'm passionate about software
+architecture, about doing the right thing in the right way.
+
+Professional might be an understatement, because in my not so copious spare
+time I also tend to enjoy the company of my MacBooks to work on some fun
+project. Most of these are open source, something I deeply believe in.
+
+But, there is more than [computers](IT/) in my life. I'm happily married to
+Kristien Tambuyzer and our little daughter [Eline](http://eline.vg) really
+brightens up every day of our life. Soon though she will have to share our
+attention with a little brother or sister.
+
+[Cooking](Koken/), [digital photography](Fotografie/) and [catamaran
+sailing](Zeilen/) complete the initial picture of my world. Below are a few more pages that add some more personal details.
+
+And please remember: "If you think I'm arrogant, you're missing the point."

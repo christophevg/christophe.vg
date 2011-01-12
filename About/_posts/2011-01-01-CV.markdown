@@ -1,0 +1,167 @@
+---
+layout: post
+hideSectionImage: true
+title: Curriculum Vitae
+---
+
+<div style="float:right;border: 2px solid #7777aa;padding:15px;width:250px;margin:10px">
+<b>Downloads</b><br>
+<li><a href="About/CV/cv_beknopt.pdf">CV  beknopt - PDF</a></li>
+</div>
+
+## Profiel
+
+Na een opleiding informatica aan de KHLeuven, departement REGA, was ik in
+staat om mijn passie - het analyseren van problemen aangaande software
+ontwikkeling en het formuleren en realiseren van oplossingen hiervoor - in
+verscheidene boeiende bedrijven verder te ontplooien.
+
+Bouwend op een jarenlange ervaring op verschillende vlakken binnen de
+informatica sector, ligt mijn expertise in het coördineren en uitvoeren van
+analyses betreffende informatica gerelateerde projecten en dit in samenspraak
+met de verschillende belanghebbende partijen.
+
+Op die manier zoek ik als software architect de juiste oplossing voor
+uitdagende projecten. Hierbij wordt gebruik gemaakt zowel van bestaande
+toepassingen als nieuwe ontwikkelingen. De nadruk ligt op een goede
+samenwerking tussen de verschillende software componenten en de medewerkers
+van het project. Hierbij spelen processen en procedures een essentiële
+overkoepelende rol.
+
+## Ervaring
+
+### Platform Architect, UnifiedPost
+__januari 2011 - ...__
+
+Uitvoeren van functionele en technische analyses omtrent de
+platform-specifieke aspected van het UnifiedPost aanbod. Hierbij ligt de focus
+met nadruk op de beveiliging, de schaalbaarheid en de beschikbaarheid van het
+platform. Organiseren en ondersteunen van zowel interne als externe audits and
+certificeringsprocessen.
+
+### Security Architect, UnifiedPost
+__mei 2010 - december 2010__
+
+Coördineren van het Security Team binnen de Software Development en Release
+Management afdeling van UnifiedPost Solution.
+
+### Solution Architect, Acerta
+__april 2008 - december 2009__
+
+Uitvoeren van architecturale voorstudies voor nieuwe en vervangingsprojecten
+ten behoeve van de verschillende business units. Ondervragen van het business
+team om concrete en volledige requirements te verzamelen, onderzoeken van de
+verschillende mogelijke strategieën, onderhandelen met leveranciers en
+formuleren van een aanbevolen implementatie, rekening houdend met de bestaande
+infrastructuur en de toekomstvisie op business en ICT vlak.
+
+### Functioneel Analist & Methodologie Coach, SD Worx
+
+__januari 2006 - maart 2008__
+
+Analyseren van het bestaande software platform voor loonberekeningen en
+definiëren van een nieuw op .NET en COBOL gebaseerd platform, in nauwe
+samenwerking met het business en management team om diens visie te realiseren.
+Begeleiden van de introductie van object-georiënteerde analyse technieken in
+het kader van een heroriëntatie naar een MDA/UML en SOA gedreven
+projectaanpak.
+
+### Technical Architect & Release Manager, Business Architects International NV
+__juli 2004 - december 2005__
+
+Uitwerken van functionele modellen betreffende hypotheken en kredieten voor
+Rabo Bank Nederland, gebruikmakend van UML en MDA principes. Definiëren van
+het proces, opstellen en implementeren van procedures voor het samenstellen
+van releases.
+
+### Oprichter, 2Know BVBA
+__mei 2004__
+
+Aanbieden van ondersteunende diensten aangaande software architectuur.
+Uitwerken van software analyse en ontwikkelingsprocessen. Begeleiden van
+software analyse- en ontwikkelingsteams.
+
+### Software Architect, Telindus Corporate NV
+__mei 2002 - september 2003__
+
+Verantwoordelijk voor het ontwerp en de integratie met bestaande systemen van
+het een netwerk-event correlatie- en rapporteringsysteem voor het
+International Service Center.
+
+### Mede-oprichter, Valid Solutions BVBA
+__juni 2002 - maart 2004__
+
+Verantwoordelijk voor het ontwerp en ontwikkeling van KMO-gerichte
+internet-gebaseerde producten, die in de vorm van diensten aangeboden werden.
+Projectleider voor ontwikkeling van een online orderverwerkingsplatform voor
+Ratiopharm NV.
+
+### Software Analist & Teamleider, Ubizen NV
+__juni 2000 - februari 2002__
+
+Verantwoordelijk voor het ontwerp van een volgende versie van OnlineGuardian,
+een monitoring platform voor beveiligingscomponenten. Teamleider van het
+volledige interne ontwikkelingsteam.
+
+### Stagair Software Engineer, Ubizen NV
+__februari 2000 - mei 2000__
+
+Implementatie van OnlineGuardian, een monitoring platform voor
+beveiligingscomponenten.
+
+### Erasmus, Denemarken
+__september 1999 - december 1999__
+
+Uitwisselingsproject in Kopenhagen.
+
+### Oprichter ISW, KHLeuven departement REGA
+__Academiejaar 1998 - 1999__
+
+ISW, Informatica Studenten Werking, is een para-scolaire werkgroep ter
+ondersteuning van het IT departement van de KHLeuven, departement REGA.
+
+### Docent, Sociale Hogeschool Leuven
+__Academiejaar 1998 - 1999__
+
+Uitwerken en doceren van een cursus gevorderd gebruik van MS Office.
+
+### Verschillende informatica-gerelateerde studentenjobs
+
+o.a. de ontwikkeling van een ERP systeem voor Cervo NV te Leuven; migratie van
+een FORTRAN applicatie voor de analyse van de elektriciteitsproductie naar
+Visual C++ op Windows NT voor Electrabel
+
+## Eigenschappen
+* mogelijkheid om snel te leren door zelfstudie
+* teamgericht
+* positief ingesteld en sterk motiverende invloed
+* flexibel, goed aanpassingsvermogen bij wijzigende omstandigheden
+
+## Motivatie
+* ontwerp en ontwikkeling van uitgebreide geïnformatiseerde systemen
+* samenwerken met mensen en hen aanzetten om hun capaciteiten te overstijgen
+* het zoeken en vinden van de beste oplossingen voor problemen met een oog naar de toekomst
+* ontdekken en aanleren van nieuwe technologieën om uitdagingen te overwinnen
+* samenbrengen van mensen en het combineren van hun mogelijkheden
+
+## Vrije tijd
+* koken, o.a. koksopleiding PIVA
+* catamaran zeilen, o.a. internationale wedstrijden en opleiding van jeugd
+* fotografie
+* langeafstandslopen
+* wandelen (meerdaagse tochten)
+
+## Kennis
+* gedreven door Object-Orientatie, UML, MDA, SOA
+* uitgebreide ervaring met Linux, OpenBSD, Mac OS X, Solaris en Microsoft Windows
+* actieve kennis betreffende C#, Perl, HTML, CSS, Javascript, PHP, Visual Basic, XML, SQL, Bash scripting
+* onderlegd in verschillende RDBMS (PostgreSQL, MySQL, Oracle, MS SQL Server)
+* passieve kennis betreffende C, C++, Assembler, COBOL, Java, XSLT
+* sterke achtergrond betreffende beveiliging en netwerken
+* oog voor ontwerp van interactieve grafische gebruikers interfaces
+
+## Talen
+* Nederlands : moedertaal
+* Engels : vloeiend
+* Frans: goed
+* Duits : noties

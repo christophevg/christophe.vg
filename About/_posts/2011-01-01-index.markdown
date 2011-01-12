@@ -1,0 +1,8 @@
+---
+layout: index
+hideSectionImage: true
+title: Me, myself and I
+---
+
+{{page.showSectionImage}}
+Things to know about ... me:

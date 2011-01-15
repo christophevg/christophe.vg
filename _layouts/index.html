@@ -8,14 +8,35 @@ layout: section
 
 <hr>
 
-{% capture currentLetter %}{% endcapture %}
-{% for item in site.categories[section] | sort %}
+{% capture emptystring %}{% endcapture %}
+{% assign entireIndex   = emptystring %}
+{% assign currentHeader = emptystring %}
+{% assign currentIndex  = emptystring %}
+{% assign currentLetter = emptystring %}
+
+{% for item in site.categories[section] %}
   {% if item.layout == "post" %} 
     {% capture letter %}{{ item.title | truncate: 2, " " }}{% endcapture %}
     {% if currentLetter != letter %}
+      {% capture newIndex %}
+{{ currentHeader }}
+{{ currentIndex }}
+{{ entireIndex }}
+      {% endcapture %}
+      {% assign entireIndex = newIndex %}
       {% assign currentLetter = letter %}
-<h2>{{ currentLetter }}</h2>
+      {% capture newHeader %}<h2>{{ currentLetter }}</h2>{% endcapture %}
+      {% assign currentHeader = newHeader %}
+      {% assign currentIndex  = emptystring %}
     {% endif %}
+    {% capture newIndex %}
 <li><a href="{{site.url}}{{item.url}}">{{ item.title }}</a></li>
+{{ currentIndex }}
+    {% endcapture %}
+    {% assign currentIndex = newIndex %}
   {% endif %}
 {% endfor %}
+
+{{ currentHeader }}
+{{ currentIndex }}
+{{ entireIndex }}

@@ -166,3 +166,22 @@ DIV.highlight PRE CODE.bash {
 }
 
 /* </syntax highlighting> */
+
+.thumb {
+  width: auto;
+  border: 1px solid #CCC;
+  font-size: 94%;
+  overflow: hidden;
+  padding: 3px !important;
+  text-align: center;
+}
+
+.thumb.right {
+  margin-left: 10px;
+  float: right;
+}
+
+.thumb.left {
+  margin-right: 10px;
+  float: left;
+}

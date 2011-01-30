@@ -155,6 +155,8 @@ DIV.highlight PRE CODE {
   font-family: 'Courier New', Courier;
   background: whiteSmoke;
   line-height: 110%;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 
 DIV.highlight PRE CODE.bash {

@@ -10,6 +10,6 @@ cursussen digitale fotografie.
 Onlangs heb ik een [Aperture plugin voor Flickr](http://www.flickr.com/tools/aperture)
 gevonden. Tijd om Flickr eens verder uit te proberen ...
 
-<object type="text/html" 
-        data="http://www.flickr.com/slideShow/index.gne?group_id=&user_id=50564098@N03&set_id=&text=" 
-        width="560" height="450"></object>
+<div>
+<object type="text/html" data="http://www.flickr.com/slideShow/index.gne?group_id=&user_id=50564098@N03&set_id=&text=" width="560" height="450"></object>
+</div>

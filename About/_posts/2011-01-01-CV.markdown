@@ -36,8 +36,8 @@ __januari 2011 - ...__
 Uitvoeren van functionele en technische analyses omtrent de
 platform-specifieke aspected van het UnifiedPost aanbod. Hierbij ligt de focus
 met nadruk op de beveiliging, de schaalbaarheid en de beschikbaarheid van het
-platform. Organiseren en ondersteunen van zowel interne als externe audits and
-certificeringsprocessen.
+platform. Organiseren en ondersteunen van zowel interne als externe audits en
+certificering-procedures.
 
 ### Security Architect, UnifiedPost
 __mei 2010 - december 2010__

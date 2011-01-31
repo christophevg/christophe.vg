@@ -1,0 +1,18 @@
+---
+layout: post
+title: Favicon
+---
+
+## using the GIMP
+
+* Open/create an image with GIMP.
+* Scale the image to 16x16 pixel (Image, Scale image).
+* Choose File, save as.. and save as favicon.pnm or favicon.ppm with raw encoding.
+* Close GIMP
+* Convert favicon.pnm resp. favicon.ppm using the command line utility ppmtowinicon:
+
+{% highlight bash %}
+$ ppmtowinicon -output favicon.ico favicon.ppm
+{% endhighlight %}
+
+Ppmtowinicon is part of the NetPBM tools.

@@ -14,29 +14,29 @@ layout: section
 {% assign currentIndex  = emptystring %}
 {% assign currentLetter = emptystring %}
 
-{% for item in site.categories[section] %}
+{% assign maxPerColumn = 15 %}
+<table>
+  <tr>
+    <td valign="top">
+{% for item in site.categories[section] reversed %}
   {% if item.layout == "post" %} 
     {% capture letter %}{{ item.title | truncate: 2, " " }}{% endcapture %}
     {% if currentLetter != letter %}
-      {% capture newIndex %}
-{{ currentHeader }}
-{{ currentIndex }}
-{{ entireIndex }}
-      {% endcapture %}
-      {% assign entireIndex = newIndex %}
+      {% if forloop.index > maxPerColumn %}
+    </td>
+    <td valign="top">
+        {% if maxPerColumn == 15 %}
+          {% assign maxPerColumn = 30 %}
+        {% else %}
+          {% assign maxPerColumn = 45 %}
+        {% endif %}
+      {% endif %}
       {% assign currentLetter = letter %}
-      {% capture newHeader %}<h2>{{ currentLetter }}</h2>{% endcapture %}
-      {% assign currentHeader = newHeader %}
-      {% assign currentIndex  = emptystring %}
+      <h2>{{ currentLetter }}</h2>
     {% endif %}
-    {% capture newIndex %}
-<li><a href="{{site.url}}{{item.url}}">{{ item.title }}</a></li>
-{{ currentIndex }}
-    {% endcapture %}
-    {% assign currentIndex = newIndex %}
+      <li><a href="{{site.url}}{{item.url}}">{{ item.title }}</a></li>
   {% endif %}
 {% endfor %}
-
-{{ currentHeader }}
-{{ currentIndex }}
-{{ entireIndex }}
+    </td>
+  </tr>
+</table>

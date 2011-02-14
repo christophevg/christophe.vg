@@ -14,21 +14,21 @@ layout: section
 {% assign currentIndex  = emptystring %}
 {% assign currentLetter = emptystring %}
 
-{% assign maxPerColumn = 15 %}
+{% assign maxPerColumn = 40 %}
 <table>
   <tr>
-    <td valign="top">
+    <td valign="top" width="33%">
 {% for item in site.categories[section] reversed %}
   {% if item.layout == "post" %} 
     {% capture letter %}{{ item.title | truncate: 2, " " }}{% endcapture %}
     {% if currentLetter != letter %}
       {% if forloop.index > maxPerColumn %}
     </td>
-    <td valign="top">
-        {% if maxPerColumn == 15 %}
-          {% assign maxPerColumn = 30 %}
+    <td valign="top" width="33%">
+        {% if maxPerColumn == 40 %}
+          {% assign maxPerColumn = 80 %}
         {% else %}
-          {% assign maxPerColumn = 45 %}
+          {% assign maxPerColumn = 120 %}
         {% endif %}
       {% endif %}
       {% assign currentLetter = letter %}

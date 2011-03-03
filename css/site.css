@@ -4,6 +4,10 @@ BODY {
   min-width: 800px;
 }
 
+A {
+  text-decoration: none;
+}
+
 IMG {
   border: 0px;
 }
@@ -14,6 +18,10 @@ H1 {
 
 H2 {
   font:125% arial,helvetica,sans-serif;
+}
+
+H3 {
+  font:100% arial,helvetica,sans-serif;
 }
 
 DIV#footer {
@@ -184,4 +192,15 @@ DIV.highlight PRE CODE.bash {
 .thumb.left {
   margin-right: 10px;
   float: left;
+}
+
+/* index pages */
+
+TABLE.index {
+}
+
+TABLE.index TD.column {
+  width: 33%;
+  padding: 15px;
+  vertical-align: top;
 }

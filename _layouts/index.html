@@ -9,7 +9,6 @@ layout: section
 <hr>
 
 {% capture currentLetter %}{% endcapture %}
-{% capture maxPerColumn %}{{ site.categories[section].size | divided_by:3 }}{% endcapture %}
 
 <table class="index">
   <tr>
@@ -17,7 +16,7 @@ layout: section
 {% for item in site.categories[section] reversed %}
   {% if item.layout == "post" %} 
     {% capture letter %}{{ item.title | truncate: 2, " " }}{% endcapture %}
-		{% capture mod %}{{ forloop.index | divided_by: maxPerColumn | times: maxPerColumn | minus: forloop.index }}{% endcapture %}
+		{% capture mod %}{{ forloop.index | divided_by: site[section] | times: site[section] | minus: forloop.index }}{% endcapture %}
     {% if currentLetter != letter %}
       {% assign currentLetter = letter %}
       	<h2>{{ currentLetter }}</h2>

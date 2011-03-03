@@ -2,6 +2,7 @@
 layout: post
 title: Mac OS X Notes
 ---
+
 So my PowerPC G4 got f..ked up ... Time to buy a new Mac ... with Intel this
 time.
 

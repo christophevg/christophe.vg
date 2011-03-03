@@ -2,6 +2,7 @@
 layout: post
 title: Leopard Quirks
 ---
+
 ## Airport
 
 It seems that the airport implementation is pretty fucked up. Up to the

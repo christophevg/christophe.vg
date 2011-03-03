@@ -1,7 +1,8 @@
 ---
 layout: post
-title: MySQL
+title: MySQL Notes
 ---
+
 ## Installation
 
 * download installer from [http://dev.mysql.com/downloads/mysql/](http://dev.mysql.com/downloads/mysql/)

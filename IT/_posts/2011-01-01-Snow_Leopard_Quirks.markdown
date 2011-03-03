@@ -2,6 +2,7 @@
 layout: post
 title: Snow Leopard Quirks
 ---
+
 ## PHP / PgSQL
 
 * http://www.gnegg.ch/tag/snow-leopard/

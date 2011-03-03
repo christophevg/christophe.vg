@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CD Burning
+title: CD Burning Notes
 ---
 
 ## CLI

@@ -1,8 +1,9 @@
 ---
 layout: post
-title: PHP5 SOAP Server and Mono Client
+title: PHP SOAP Server an Mono Client
 ---
-### the WSDL file
+
+## the WSDL file
 
 {% highlight xml %}
 <?xml version="1.0"?>
@@ -61,7 +62,7 @@ title: PHP5 SOAP Server and Mono Client
 </definitions>
 {% endhighlight %}
 
-### the TestService.php
+## the TestService.php
 
 {% highlight php %}
 <?
@@ -82,7 +83,7 @@ $server->handle();
 ?>
 {% endhighlight %}
 
-### the TestClient.php
+## the TestClient.php
 
 {% highlight php %}
 <?
@@ -93,7 +94,7 @@ $server->handle();
 ?>
 {% endhighlight %}
 
-### the TestClient.cs
+## the TestClient.cs
 
 {% highlight csharp %}
 using System;
@@ -113,7 +114,7 @@ class TestClient {
 }
 {% endhighlight %}
 
-### the Makefile
+## the Makefile
 
 {% highlight basemake %}
 all: run
@@ -134,7 +135,7 @@ clean:
     rm -f *~ *.exe *.dll TestService.cs
 {% endhighlight %}
 
-### Action !
+## Action !
 
 {% highlight bash %}
 $ ls
@@ -152,7 +153,7 @@ A: Hello TestClient!
 rm TestService.cs
 {% endhighlight %}
   
-### References
+## References
 
 * [http://www.zend.com/php5/articles/php5-SOAP.php#Heading8](http://www.zend.com/php5/articles/php5-SOAP.php#Heading8)
 * [http://www.mono-project.com/Web_Services](http://www.mono-project.com/Web_Services)

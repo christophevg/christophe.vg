@@ -1,7 +1,8 @@
 ---
 layout: post
-title: Postfix
+title: Postfix Notes
 ---
+
 {% highlight bash %}
 # Virtual Mailboxes via MySQL configuration
 virtual_mailbox_domains = mysql:/etc/postfix/mysql_virtual_domains.cf

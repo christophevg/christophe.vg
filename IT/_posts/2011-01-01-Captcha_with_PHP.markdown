@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Basic Captcha in PHP
+title: Captcha with PHP
 ---
 
 {% highlight php %}

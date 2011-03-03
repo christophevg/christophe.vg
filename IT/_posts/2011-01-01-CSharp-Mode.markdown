@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CSharp-Mode (for Emacs)
+title: CSharp-Mode
 ---
 
 ## Install

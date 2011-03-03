@@ -1,7 +1,8 @@
 ---
 layout: post
-title: PostgreSQL
+title: PostgreSQL Notes
 ---
+
 ## OpenBSD
 
 ### Installing from OpenBSD/Ports

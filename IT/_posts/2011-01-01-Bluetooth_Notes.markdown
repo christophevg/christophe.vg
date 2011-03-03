@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bluetooth
+title: Bluetooth Notes
 ---
 
 ## goal

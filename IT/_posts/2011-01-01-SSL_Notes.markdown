@@ -1,7 +1,8 @@
 ---
 layout: post
-title: SSL
+title: SSL Notes
 ---
+
 ## Certificates for use with Apache
 
 see [http://www.openssl.org/docs/HOWTO/keys.txt](http://www.openssl.org/docs/HOWTO/keys.txt)

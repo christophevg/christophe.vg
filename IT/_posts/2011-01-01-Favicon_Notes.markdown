@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Favicon
+title: Favicon Notes
 ---
 
 ## using the GIMP

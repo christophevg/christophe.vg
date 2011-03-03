@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Mediawiki
+title: Mediawiki Notes
 ---
 
 ## remove index.php

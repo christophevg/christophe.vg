@@ -2,7 +2,8 @@
 layout: post
 title: PInvoke Hello World
 ---
-### the library: hello.c
+
+## the library: hello.c
 
 {% highlight c %}
   #include <stdio.h>;
@@ -12,13 +13,13 @@ title: PInvoke Hello World
   }
 {% endhighlight %}
 
-### the header: hello.h
+## the header: hello.h
 
 {% highlight c %}
   void say_hello( char* );
 {% endhighlight %}
 
-### the C caller: caller.c
+## the C caller: caller.c
 
 {% highlight c %}
   #include <stdio.h>
@@ -34,7 +35,7 @@ title: PInvoke Hello World
   }
 {% endhighlight %}
 
-### the C# caller: caller.cs
+## the C# caller: caller.cs
 
 {% highlight csharp %}
   using System;
@@ -58,7 +59,7 @@ title: PInvoke Hello World
   };
 {% endhighlight %}
 
-### the Makefile
+## the Makefile
 
 {% highlight basemake %}
   CC=gcc
@@ -105,7 +106,7 @@ title: PInvoke Hello World
           @rm -f *_caller
 {% endhighlight %}
 
-### Action!
+## Action!
 
 {% highlight bash %}
 $ ls
@@ -137,7 +138,7 @@ caller.c   caller.exe      hello.c  libhello.a        Makefile  static_caller
 caller.cs  dynamic_caller  hello.h  libhello.so.1.0.1  README
 {% endhighlight %}
 
-### Links
+## Links
 
 * [http://www.adp-gmbh.ch/cpp/gcc/create_lib.html](http://www.adp-gmbh.ch/cpp/gcc/create_lib.html)
 * [http://www.gnu.org/software/make/manual/html_mono/make.html](http://www.gnu.org/software/make/manual/html_mono/make.html)

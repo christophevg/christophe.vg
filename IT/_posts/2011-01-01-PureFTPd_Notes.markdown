@@ -1,8 +1,9 @@
 ---
 layout: post
-title: PureFTPd
+title: PureFTPd Notes
 ---
-**on OpenBSD**
+
+## OpenBSD
 
 {% highlight bash %}
 $ cd /usr/ports/net/pure-ftpd/

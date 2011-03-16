@@ -3,10 +3,68 @@ layout: post
 title: SSL Notes
 ---
 
-## Certificates for use with Apache
+## Resources
 
-see [http://www.openssl.org/docs/HOWTO/keys.txt](http://www.openssl.org/docs/HOWTO/keys.txt)
+* see [http://www.openssl.org/docs/HOWTO/keys.txt](http://www.openssl.org/docs/HOWTO/keys.txt)
+* see [http://www.openssl.org/docs/HOWTO/certificates.txt](http://www.openssl.org/docs/HOWTO/certificates.txt)
 
-{% highlight bash%}
-openssl genrsa -out privkey.pem 2048
+## Generate private key
+
+{% highlight bash %}
+$ openssl genrsa -out privkey.pem 2048
+Generating RSA private key, 2048 bit long modulus
+....+++
+......................+++
+e is 65537 (0x10001)
+{% endhighlight %}
+
+## Generate CSR
+
+{% highlight bash %}
+$ openssl req -new -key privkey.pem -out cert.csr
+You are about to be asked to enter information that will be incorporated
+into your certificate request.
+What you are about to enter is what is called a Distinguished Name or a DN.
+There are quite a few fields but you can leave some blank
+For some fields there will be a default value,
+If you enter '.', the field will be left blank.
+-----
+Country Name (2 letter code) [AU]:BE
+State or Province Name (full name) [Some-State]:Antwerp
+Locality Name (eg, city) []:Schriek
+Organization Name (eg, company) [Internet Widgits Pty Ltd]:2Know BVBA
+Organizational Unit Name (eg, section) []:Operations
+Common Name (eg, YOUR name) []:Christophe VG
+Email Address []:
+
+Please enter the following 'extra' attributes
+to be sent with your certificate request
+A challenge password []:
+An optional company name []:
+{% endhighlight %}
+
+## Display CSR content ##
+
+{% highlight bash %}
+$ openssl req -text -noout -in cert.csr
+Certificate Request:
+    Data:
+        Version: 0 (0x0)
+        Subject: C=BE, ST=Antwerp, L=Schriek, O=2Know BVBA, OU=Operations, CN=Christophe VG/emailAddress=
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+            RSA Public Key: (2048 bit)
+                Modulus (2048 bit):
+                    00:ae:88:b4:44:44:4e:fe:48:84:65:a2:5d:0f:20:
+										...
+                    60:6c:9c:6e:ca:81:12:b0:15:97:f3:4a:5b:7b:3a:
+                    7d:e3
+                Exponent: 65537 (0x10001)
+        Attributes:
+            a0:00
+    Signature Algorithm: sha1WithRSAEncryption
+        22:f6:ca:35:fb:0c:ff:a5:7d:a0:5a:93:77:49:00:c6:b1:fc:
+				...
+        bd:b5:fb:71:77:3c:ef:6b:aa:dc:65:c8:5b:a5:12:a3:b9:19:
+        ff:1d:bd:ae
 {% endhighlight %}

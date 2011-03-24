@@ -1,0 +1,85 @@
+---
+layout: post
+title: Jekyll Notes
+---
+
+When I started moving all of my domains from my co-located hosts into the cloud, I needed a way to keep alive a few websites I own - like this one. Before solving that problem, I already had moved all my repositories to [GitHub](http://github.com) and one of the requirements therefore was that I wanted to be able to simply push and see my sites online.
+
+[GitHub Pages](http://pages.github.com) seemed a nice initial solution. It only offers hosting for static pages, but they provide support for  [Jekyll](https://github.com/mojombo/jekyll), a static site generator.
+
+Although far from ideal, it currently allows me to maintain most of my sites, without the need for any fancy CMS.
+
+## Installation
+
+I'm running Jekyll also on my MacBooks, but I first had to get it working:
+
+### take 1 ...
+
+{% highlight bash %}
+$ sudo gem install jekyll
+Password:
+ERROR:  Error installing jekyll:
+	liquid requires RubyGems version >= 1.3.7
+	
+$ sudo gem update --system
+Updating RubyGems
+Updating rubygems-update
+Successfully installed rubygems-update-1.6.2
+Updating RubyGems to 1.6.2
+Installing RubyGems 1.6.2
+RubyGems 1.6.2 installed
+{% endhighlight %}
+
+### take 2 ...
+
+{% highlight bash %}
+$ sudo gem install jekyll
+Fetching: fast-stemmer-1.0.0.gem (100%)
+Building native extensions.  This could take a while...
+...
+Installing RDoc documentation for jekyll-0.10.0...
+{% endhighlight %}
+
+### add support for Pygments
+
+{% highlight bash %}
+$ sudo easy_install Pygments
+Searching for Pygments
+Reading http://pypi.python.org/simple/Pygments/
+Reading http://pygments.org/
+Reading http://pygments.pocoo.org/
+Best match: Pygments 1.4
+Downloading http://pypi.python.org/packages/2.6/P/Pygments/Pygments-1.4-py2.6.egg#md5=306241dd68799753cdb4a2c9ce8e883a
+Processing Pygments-1.4-py2.6.egg
+creating /Library/Python/2.6/site-packages/Pygments-1.4-py2.6.egg
+Extracting Pygments-1.4-py2.6.egg to /Library/Python/2.6/site-packages
+Adding Pygments 1.4 to easy-install.pth file
+Installing pygmentize script to /usr/local/bin
+
+Installed /Library/Python/2.6/site-packages/Pygments-1.4-py2.6.egg
+Processing dependencies for Pygments
+Finished processing dependencies for Pygments
+{% endhighlight %}
+
+### downgrade Liquid to match GitHub's version
+
+* [http://support.github.com/discussions/site/2397-jekyll-generation-on-github-pages-differs-from-local-results](http://support.github.com/discussions/site/2397-jekyll-generation-on-github-pages-differs-from-local-results)
+
+{% highlight bash %}
+$ sudo gem install liquid -v 2.0.0
+Fetching: liquid-2.0.0.gem (100%)
+Successfully installed liquid-2.0.0
+1 gem installed
+Installing ri documentation for liquid-2.0.0...
+Installing RDoc documentation for liquid-2.0.0...
+
+$ ls -l /Library/Ruby/Gems/1.8/gems | grep -i liquid
+drwxr-xr-x  11 root  admin  374 Mar 21 13:45 liquid-2.0.0
+drwxr-xr-x   7 root  admin  238 Mar 21 13:34 liquid-2.2.2
+
+$ sudo gem uninstall liquid -v 2.2.2
+Successfully uninstalled liquid-2.2.2
+
+$ ls -l /Library/Ruby/Gems/1.8/gems | grep -i liquid
+drwxr-xr-x  11 root  admin  374 Mar 21 13:45 liquid-2.0.0
+{% endhighlight %}

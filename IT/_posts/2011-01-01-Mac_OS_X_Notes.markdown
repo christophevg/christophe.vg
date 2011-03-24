@@ -124,3 +124,9 @@ from [http://www.spy-hill.com/~myers/help/apple/EnableRoot.html](http://www.spy-
 
 * use NetInfo Manager to reset the root password
 * su to root and set new password using the passwd command
+
+## Apache + PHP
+
+* To enable PHP, uncomment the loading of the module from `/private/etc/apache2/httpd.conf`.
+
+* I tend to symlink ~/Workspace to ~/Sites/. To make apache see and follow them, add the option `FollowSymlinks` to `/private/etc/apache2/users/username.conf`.

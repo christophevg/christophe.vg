@@ -181,6 +181,7 @@ DIV.highlight PRE CODE.bash {
   font-size: 94%;
   overflow: hidden;
   padding: 3px !important;
+  margin-top: 2px;
   text-align: center;
 }
 
@@ -204,6 +205,17 @@ TABLE.index TD.column {
   padding: 15px;
   vertical-align: top;
 }
+
+/* quotations */
+
+DIV.mail {
+  border: 1px solid #ccc;
+  background-color: #eee;
+  font-family: Courier;
+  width: 560px;
+  padding: 20px;
+}
+
 /* plus one */
 
 .plusone {

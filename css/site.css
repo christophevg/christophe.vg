@@ -204,3 +204,11 @@ TABLE.index TD.column {
   padding: 15px;
   vertical-align: top;
 }
+/* plus one */
+
+.plusone {
+  display: inline-block;
+  position: relative;
+  margin-left: 10px;
+  top: -4px;
+}

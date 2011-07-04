@@ -53,11 +53,11 @@ ProtoJS.Event.observe( window, "load", function() {
     </noscript>
 
   <div id="circular-menu" class="circular menu">
-    <img src="images/sections/canvas2d.jpg"         title="Canvas2D">
-    <img src="images/sections/umlcanvas.jpg"       title="UmlCanvas">
-    <img src="images/sections/jsture.jpg"          title="jsture">
-    <img src="images/sections/protojs.jpg"         title="ProtoJS">
-    <img src="images/sections/project-autobot.jpg" title="Project AutoBot">
-    <img src="images/sections/opencloudfs.jpg"     title="OpenCloudFS">
+    <img src="images/sections/canvas2d.png"        title="Canvas2D">
+    <img src="images/sections/umlcanvas.png"       title="UmlCanvas">
+    <img src="images/sections/jsture.png"          title="jsture">
+    <img src="images/sections/protojs.png"         title="ProtoJS">
+    <img src="images/sections/project-autobot.png" title="Project AutoBot">
+    <img src="images/sections/opencloudfs.png"     title="OpenCloudFS">
   </div>
 </div>

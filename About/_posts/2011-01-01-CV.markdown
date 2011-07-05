@@ -4,9 +4,9 @@ hideSectionImage: true
 title: Curriculum Vitae
 ---
 
-<div style="float:right;border: 2px solid #7777aa;padding:15px;width:250px;margin:10px">
-<b>Downloads</b><br>
-<li><a href="About/CV/cv_beknopt.pdf">CV  beknopt - PDF</a></li>
+<div style="float:right;text-align:center;padding:10px;margin:10px;">
+  <a href="About/CV/cv_beknopt.pdf"><img src="About/images/cv_icon.png"><br>
+  CV  beknopt - PDF</a>
 </div>
 
 ## Profiel

@@ -130,3 +130,16 @@ from [http://www.spy-hill.com/~myers/help/apple/EnableRoot.html](http://www.spy-
 * To enable PHP, uncomment the loading of the module from `/private/etc/apache2/httpd.conf`.
 
 * I tend to symlink ~/Workspace to ~/Sites/. To make apache see and follow them, add the option `FollowSymlinks` to `/private/etc/apache2/users/username.conf`.
+
+## Reconnecting Network Shares
+
+based on [http://forums.macrumors.com/showpost.php?p=2543004&postcount=5](http://forums.macrumors.com/showpost.php?p=2543004&postcount=5)
+
+* Open Automator and create an application workflow.
+* Select "Files and Folders" and choose "Get Specific Servers".
+* Add the share locations you want to connect to.
+* Add the "Connect to Servers" action
+* Save Workflow App to Desktop or Dock and call it when needed.
+
+* Optionally add it to your account's Startup Items
+* [http://www.bernhard-baehr.de/](http://www.bernhard-baehr.de/) offers SleepWatcher, which can be used to run this automatically when resuming from sleep. (to be tested)

@@ -55,6 +55,19 @@ A.icon {
   padding-left:23px;
 }
 
+A.download {
+  display: block;
+  width: 106px;
+  padding: 75px 10px 10px;
+  margin: 10px auto;
+  background-repeat: no-repeat;
+  background-position: center 0px;
+}
+
+A.download.pdf {
+ background-image: url( /images/pdf-preview.png );
+}
+
 DIV#passport {
   text-align: justify;
   float: right;

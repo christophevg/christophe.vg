@@ -11,13 +11,14 @@ architecture, about doing the right thing in the right way.
 
 Professional might be an understatement, because in my not so copious spare
 time I also tend to enjoy the company of my MacBooks to work on some fun
-project. Most of these are open source, something I deeply believe in.
+project. Most of these are [open source](/Open), something I deeply believe
+in.
 
-But, there is more than [computers](IT/) in my life. I'm happily married to
+But, there is more than [computers](/IT) in my life. I'm happily married to
 Kristien Tambuyzer and our daughter [Eline](http://eline.vg) and baby son
 [Arjen](http://arjen.vg) really brighten up every day of our life.
 
-[Cooking](Koken/), [digital photography](Fotografie/) and [catamaran
-sailing](Zeilen/) complete the initial picture of my world. Below are a few more pages that add some more personal details.
+[Cooking](/Koken), [digital photography](/Fotografie) and [catamaran
+sailing](/Zeilen) complete the initial picture of my world. Below are a few more pages that add some more personal details.
 
 And please remember: "If you think I'm arrogant, you're missing the point."

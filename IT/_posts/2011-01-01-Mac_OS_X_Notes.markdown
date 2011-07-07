@@ -13,9 +13,9 @@ get when you got Mac.
 In the mean time, I thought that upgrading my ultra-stable Tiger install to
 Leopard was a safe bet ... yeah right, it's going to take more than one big
 update to reach the level of Tiger anytime soon. In the meantime I collect my
-findings for [Leopard Quirks](IT/Leopard_Quirks).
+findings for [Leopard Quirks](Leopard_Quirks.html).
 
-So I also got me an Apple TV ... and I [patched it](IT/ATV) a bit.
+So I also got me an Apple TV ... and I [patched it](Apple_TV_Notes.html) a bit.
 
 ## Free Software
 

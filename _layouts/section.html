@@ -71,9 +71,9 @@ sections: {
 {% capture section %}{{page.categories}}{% endcapture %}
 
 <div class="section header">
-  <a href="{{ section }}">{{ section }}</a> / <a href="./">Christophe VG</a><br>
+  <a href="/{{ section }}">{{ section }}</a> / <a href="/">Christophe VG</a><br>
   {% if page.hideSectionImage == null %}
-  <a href="{{ section }}"><img src="images/sections/{{ section | downcase }}.png"></a>
+  <a href="/{{ section }}"><img src="/images/sections/{{ section | downcase }}.png"></a>
   {% endif %}
 </div>
 

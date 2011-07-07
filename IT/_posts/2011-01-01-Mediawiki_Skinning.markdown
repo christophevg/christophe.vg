@@ -4,7 +4,7 @@ title: Mediawiki Skinning
 ---
 
 <div class="thumb left" markdown="1">
-[![eline.vg](IT/images/thumb/Eline.png)](IT/images/full/Eline.png)
+[![eline.vg](images/thumb/Eline.png)](images/full/Eline.png)
 </div>
 
 This page discribes my adventures in creating a Mediawiki skin from scratch, looking at the existing skins and a lot of trail and error. The idea was to use Mediawiki as an online site-editor and not really as a wiki the way it is meant to be. 
@@ -45,7 +45,7 @@ class SkinEline extends Skin {
 The result wasn't that bad, but surely not a good start either. Mediawiki generates a lot by default.
 
 <div class="thumb left" markdown="1">
-[![step 1](IT/images/thumb/Mediawiki_step1.png)](IT/images/full/Mediawiki_step1.png)
+[![step 1](images/thumb/Mediawiki_step1.png)](images/full/Mediawiki_step1.png)
 </div>
 <br clear="both">
 
@@ -73,7 +73,7 @@ class SkinEline extends Skin {
 And indeed. The result was an even less marked-up page:
 
 <div class="thumb left clear" markdown="1">
-[![step 2](IT/images/thumb/Mediawiki_step2.png)](IT/images/full/Mediawiki_step2.png)
+[![step 2](images/thumb/Mediawiki_step2.png)](images/full/Mediawiki_step2.png)
 </div>
 <br clear="both">
 
@@ -108,7 +108,7 @@ class SkinEline extends Skin {
 And indeed ... no more useless wiki-technical stuff on the page. 
 
 <div class="thumb left clear" markdown="1">
-[![step 3](IT/images/thumb/Mediawiki_step3.png)](IT/images/full/Mediawiki_step3.png)
+[![step 3](images/thumb/Mediawiki_step3.png)](images/full/Mediawiki_step3.png)
 </div>
 <br clear="both">
 
@@ -155,7 +155,7 @@ class SkinEline extends Skin {
 I added a few things here: First I added the "pageTitle" again using the "pageTitle()" method in the "doBeforeContent()" method. I then found out how the "editThisPage()" method was implemented and added a slim version of that implementation to the "doAfterContent()" method. I also changed the default behaviour, where an "Edit This Page" text was displayed, and replaced it with an image placed under the new skin's own directory.
 
 <div class="thumb left clear" markdown="1">
-[![step 4](IT/images/thumb/Mediawiki_step4.png)](IT/images/full/Mediawiki_step4.png)
+[![step 4](images/thumb/Mediawiki_step4.png)](images/full/Mediawiki_step4.png)
 </div>
 <br clear="both">
 

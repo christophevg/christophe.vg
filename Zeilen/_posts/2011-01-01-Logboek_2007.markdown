@@ -5,7 +5,7 @@ title: Logboek 2007
 
 ## 17 november 2007 - surprise, surprise, surprise, ...
 
-<div class="thumb right">
+<div class="thumb left">
   <a href="images/full/Capricorn_smoke_red.jpg"><img src="images/thumb/Capricorn_smoke_red.jpg"></a>
 </div>
 

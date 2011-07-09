@@ -3,61 +3,40 @@ layout: post
 title: Open Source
 ---
 
-<script type="text/javascript">
-ProtoJS.Event.observe( window, "load", function() {
-  CircularMenu.info["circular-menu"] = {
-    "_default_" : {
-      description : "<h1>Free as in ...</h1>These projects occasionally enjoy my attention.<br>Pick one and have a look..."
-    },
-    "Canvas2D"  : { 
-      url:         "http://canvas2d.org",
-      description: "Turning the basic HTML5 canvas element in an shape-oriented, interactive diagram editor."
-    },
-    "UmlCanvas"  : { 
-      url:         "http://umlcanvas.org",
-      description: "A full-fletched UML editor, built on top of Canvas2D."
-    },
-    "jsture" : { 
-      url:         "http://jsture.org", 
-      description: "An experiment to bring basic gesture recognition to any webpage."
-    },
-    "ProtoJS" : { 
-      url:         "http://protojs.org",
-      description: "My own small Javascript framework ... not focusing on the browser."
-    },
-    "Project AutoBot" : { 
-      url:         "http://project-autobot.blogspot.com", 
-      description: "The answer to the question 'Can I build an AUTOnomous roBOT, using some basic components..."
-    },
-    "OpenCloudFS" : { 
-      url:         "http://opencloudfs.org", 
-      description: "An experiment to build a network of basic storage nodes ..."
-    }
-  };
-  new CircularMenu("circular-menu");
-} );
-</script>
-
-<div id="splash">
-    <noscript>
-      Too bad, you have disabled Javascript. Now you can't see the world
-      revolve around me. You'll have to settle for some old-skool links:<br>
-      <br>
-      <a href="http://canvas2d.org">Canvas2D</a> | 
-      <a href="http://umlcanvas.org">UmlCanvas</a> | 
-      <a href="http://jsture.org">jsture</a> | 
-      <a href="http://protojs.org">ProtoJS</a> | 
-      <a href="http://project-autobot.blogspot.com">Project AutoBot</a> | 
-      <a href="http://opencloudfs.org">OpenCloudFS</a>
-      <br><br>    
-    </noscript>
-
-  <div id="circular-menu" class="circular menu">
-    <img src="/images/sections/canvas2d.png"        title="Canvas2D">
-    <img src="/images/sections/umlcanvas.png"       title="UmlCanvas">
-    <img src="/images/sections/jsture.png"          title="jsture">
-    <img src="/images/sections/protojs.png"         title="ProtoJS">
-    <img src="/images/sections/project-autobot.png" title="Project AutoBot">
-    <img src="/images/sections/opencloudfs.png"     title="OpenCloudFS">
+<div class="orbit menu">
+  <div class="orbit info">
+    <h1>Free as in</h1>
+    These projects occasionally enjoy my attention.<br>
+    Pick one and have a look...
   </div>
+
+  <a href="http://canvas2d.org">
+    <img src="/images/sections/canvas2d.png" class="orbit item"
+         title="Canvas2D" data-description="Turning the basic HTML5 canvas element in an shape-oriented, interactive diagram editor.">
+  </a>
+
+  <a href="http://umlcanvas.org">
+    <img src="/images/sections/umlcanvas.png" class="orbit item"
+         title="UmlCanvas" data-description="A full-fletched UML editor, built on top of Canvas2D.">
+  </a>
+
+  <a href="http://jsture.org">
+    <img src="/images/sections/jsture.png" class="orbit item"
+         title="jsture" data-description="An experiment to bring basic gesture recognition to any webpage.">
+  </a>
+
+  <a href="http://protojs.org">
+    <img src="/images/sections/protojs.png" class="orbit item"
+         title="ProtoJS" data-description="My own small Javascript framework ... not focusing on the browser.">
+  </a>
+
+  <a href="http://project-autobot.blogspot.com">
+    <img src="/images/sections/project-autobot.png" class="orbit item"
+         title="Project AutoBot" data-description="The answer to the question 'Can I build an AUTOnomous roBOT, using some basic components...">
+  </a>
+
+  <a href="http://opencloudfs.org">
+    <img src="/images/sections/opencloudfs.png" class="orbit item"
+         title="OpenCloudFS" data-description="An experiment to build a network of basic storage nodes ...">
+  </a>
 </div>

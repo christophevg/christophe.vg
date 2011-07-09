@@ -3,85 +3,60 @@ layout: base
 title: The World According to Christophe VG 
 ---
 
-<script type="text/javascript">
-ProtoJS.Event.observe( window, "load", function() {
-  CircularMenu.info["circular-menu"] = {
-    "_default_" : {
-      description : "<h1>Hello World</h1>You revolve around me ;-)<br>Pick a topic..."
-    },
-    "About"  : { 
-      url:         "About",
-      description: "It's all about ... me." 
-    },
-    "Koken"  : { 
-      url:         "Koken",
-      description: "Er is geen leukere plek dan achter het fornuis." 
-    },
-    "Zeilen" : { 
-      url:         "Zeilen", 
-      description: "Wind, water en een catamaran. Meer moet dat niet zijn."
-    },
-    "IT" : { 
-      url:         "IT", 
-      description: "Various notes and things to remember concerning computers, programming and the world."
-    },
-    "Fotografie" : { 
-      url:         "Fotografie", 
-      description: "Say Cheese ..."
-    },
-    "Eline" : { 
-      url:         "http://eline.vg", 
-      description: "Mijn dochter, Eline heeft ook haar eigen plekje op het web."
-    },
-    "Arjen" : { 
-      url:         "http://arjen.vg", 
-      description: "Mijn zoontje, Arjen heeft ook zijn eigen plekje op het web."
-    },
-    "Peyerstraat 35" : { 
-      url:         "http://35.peyerstraat.be", 
-      description: "Ons bouwdagboek ..."
-    },
-    "Bladwijzer" : { 
-      url:         "http://bladwijzer.net", 
-      description: "Mijn persoonlijke bladwijzer op de wereld ..."
-    },
-    "Open Source" : { 
-      url:         "Open",
-      description: "I run a few Open Source projects ... for fun !"
-    }
-  };
-  new CircularMenu("circular-menu");
-} );
-</script>
-
-<div id="splash">
-    <noscript>
-      Too bad, you have disabled Javascript. Now you can't see the world
-      revolve around me. You'll have to settle for some old-skool links:<br>
-      <br>
-      <a href="About/">Over mezelf</a> | 
-      <a href="Koken/">Koken</a> | 
-      <a href="Zeilen/">Zeilen</a> | 
-      <a href="IT/">Informatica</a> | 
-      <a href="Fotografie/">Fotografie</a> | 
-      <a href="Open/">Open Source</a> | 
-      <a href="http://eline.vg">Eline VG</a> | 
-      <a href="http://arjen.vg">Arjen VG</a> | 
-      <a href="http://35.peyerstraat.be">Peyerstraat 35</a> | 
-      <a href="http://bladwijzer.net">Bladwijzer</a>
-      <br><br>    
-    </noscript>
-
-  <div id="circular-menu" class="circular menu">
-    <img src="images/sections/about.png"           title="About">
-    <img src="images/sections/koken.png"           title="Koken">
-    <img src="images/sections/zeilen.png"          title="Zeilen">
-    <img src="images/sections/it.png"              title="IT">
-    <img src="images/sections/fotografie.png"      title="Fotografie">
-    <img src="images/sections/open.png"            title="Open Source">
-    <img src="images/sections/eline.vg.png"        title="Eline">
-    <img src="images/sections/arjen.vg.png"        title="Arjen">
-    <img src="images/sections/peyerstraat.be.png"  title="Peyerstraat 35">
-    <img src="images/sections/bladwijzer.net.png"  title="Bladwijzer">
+<div class="orbit menu">
+  <div class="orbit info">
+    <h1>Hello World</h1>
+    You revolve around me ;-)<br>
+    Pick a topic...    
   </div>
+
+  <a href="About/">
+    <img src="images/sections/about.png" class="orbit item"
+         title="About" data-description="It's all about ... me.">
+  </a>
+  
+  <a href="Koken/">
+    <img src="images/sections/koken.png" class="orbit item"
+         title="Koken" data-description="Er is geen leukere plek dan achter het fornuis.">
+  </a>
+
+  <a href="Zeilen/">
+    <img src="images/sections/zeilen.png" class="orbit item"
+         title="Zeilen" data-description="Wind, water en een catamaran. Meer moet dat niet zijn.">
+  </a>
+
+  <a href="IT/">
+    <img src="images/sections/it.png" class="orbit item"
+         title="IT" data-description="Various notes and things to remember concerning computers, programming and the world.">
+  </a>
+  
+  <a href="Fotografie/">
+    <img src="images/sections/fotografie.png" class="orbit item"
+         title="Fotografie" data-description="">
+  </a>
+  
+  <a href="Open/">
+    <img src="images/sections/open.png" class="orbit item"
+         title="Open Source" data-description="I run a few Open Source projects ... for fun !">
+  </a>
+  
+  <a href="http://eline.vg">
+    <img src="images/sections/eline.vg.png" class="orbit item"
+         title="Eline" data-description="Mijn dochter, Eline heeft ook haar eigen plekje op het web.">
+  </a>
+  
+  <a href="http://arjen.vg">
+    <img src="images/sections/arjen.vg.png" class="orbit item"
+         title="Arjen" data-description="Mijn zoontje, Arjen heeft ook zijn eigen plekje op het web.">
+  </a>
+  
+  <a href="http://35.peyerstraat.be">
+    <img src="images/sections/peyerstraat.be.png" class="orbit item"
+         title="Peyerstraat 35" data-description="Ons bouwdagboek ...">
+  </a>
+  
+  <a href="http://bladwijzer.net">
+    <img src="images/sections/bladwijzer.net.png" class="orbit item"
+         title="Bladwijzer" data-description="Mijn persoonlijke bladwijzer op de wereld ...">
+  </a>
 </div>

@@ -82,18 +82,6 @@ DIV#passport P {
   width: 178px;
 }
 
-#splash {
-  text-align: center;
-  margin-right: 210px;
-  min-width: 410px;
-}
-
-.info {
-  position: absolute;
-  width: 200px;
-  height: 100px;
-}
-
 .section.header {
   float: right;
   text-align: right;
@@ -103,25 +91,33 @@ DIV#passport P {
   margin-top: 10px; 
 }
 
-/* <circular menu> */
+/* <orbit menu> */
 
-.circular.menu {
-  display: inline-block;
-  list-style: none;
+.orbit.menu {
+  margin-left: 140px;
   height: 450px;
   width: 450px;
+  text-align: center;
+  font-size: 0pt; /* avoids spacing between images due to white space */
 }
 
-.circular.menu IMG {
+/* and put the info pane in the middel of it */
+.orbit.menu .orbit.info {
+  position: relative;
+  margin-left: 125px;
+  padding-top: 170px;
+  width: 200px;
+  height: 132px;
+  text-align: center;
+  font-size: 10pt;
+}
+
+.orbit.item {
   height: 125px;
   width: 125px;
-  float: left;
-  cursor: pointer;
 }
 
-/* </circular menu> */
-
-/* <syntax highlighting> */
+/* syntax highlighting */
 
 .highlight  { background: #ffffff; }
 .highlight .c { color: #999988; font-style: italic } /* Comment */
@@ -202,8 +198,6 @@ DIV.highlight PRE CODE.bash {
   line-height: 125%;
   color: #eee;
 }
-
-/* </syntax highlighting> */
 
 .thumb {
   width: auto;

@@ -16,6 +16,27 @@ $ sudo /Library/StartupItems/MySQLCOM/MySQLCOM start
 $ sudo /Library/StartupItems/MySQLCOM/MySQLCOM stop
 {% endhighlight %}
 
+## Snow Leopard / Lion
+
+After upgrading to Snow Leopard or Lion, `/usr/local/mysql` doesn't exist anymore, resulting in a failure when starting the server:
+
+{% highlight bash %}
+$ sudo /Library/StartupItems/MySQLCOM/MySQLCOM start
+Password:
+Could not find MySQL startup script!
+{% endhighlight %}
+
+Simply creating a symlink from the MySQL installation directory to `/usr/local/mysql` solves the problem:
+
+{% highlight bash %}
+$ cd /usr/local/
+
+$ sudo ln -s mysql-6.0.7-alpha-osx10.5-x86_64 mysql
+
+$ sudo /Library/StartupItems/MySQLCOM/MySQLCOM start
+Starting MySQL database server
+{% endhighlight %}
+
 ## Create Users
 
 {% highlight bash %}

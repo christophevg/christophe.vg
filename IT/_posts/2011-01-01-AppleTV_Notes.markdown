@@ -96,6 +96,69 @@ Dit werkt alleen nog onder de 1.0 release van de ATV. Als je de 1.1 update al he
  # echo "mount_afp afp://<user>:<passwd>@<server>/Shared ~frontrow/Movies/Shared" >> /etc/rc.local
 {% endhighlight %}
 
+### Mount SMB share
+
+Download
+* [Mac OS X 10.4.9 Combo Update](http://support.apple.com/downloads/Mac_OS_X_10_4_9_Combo_Update__Intel_)
+* [turbo_atv_enabler.bin](http://0xfeedbeef.com/appletv/turbo_atv_enabler.bin)
+
+#### Add missing smb related files
+
+After downloading the Mac OS X 10.4.9 Combo, mount it and extract the actual Archive:
+
+{% highlight bash %}
+$ hdiutil mount MacOSXUpdCombo10.4.9Intel.dmg
+$ mkdir tmp
+$ cd tmp
+$ pax -r -z <  /Volumes/Mac\ OS\ X\ 10.4.9\ Combined\ Update\ \(Intel\)/MacOSXUpdCombo10.4.9Intel.pkg/Contents/Archive.pax.gz
+{% endhighlight %}
+
+Next copy `mount_smbfs` and the `smbfs.kext` to the AppleTV
+
+{% highlight bash %}
+$ scp sbin/mount_smbfs AppleTV.local
+$ scp -r System/Library/Extensions/smbfs.kext AppleTV.local:
+{% endhighlight %}
+
+On the AppleTV, move them in the correct location and make them more userfriendly:
+
+{% highlight bash %}
+$ sudo /bin/bash
+...
+$ cp mount_smbfs /sbin/
+$ cp -r smbfs.kext /System/Library/Extensions/
+$ chmod +s /sbin/mount_smbfs
+{% endhighlight %}
+
+#### Add turbo_atv_enabler.bin
+
+To be able to load the kernel extensions, we need to use the `turbo_atv_enabler.bin`. First copy it to the AppleTV and move it into place:
+
+{% highlight bash %}
+$ scp turbo_atv_enabler.bin AppleTV.local
+$ ssh -1 frontrow@AppleTV.local
+...
+$ sudo /bin/bash
+...
+$ cp turbo_atv_enabler.bin /sbin/turbo_kext_enabler.bin
+$ chown root:wheel /sbin/turbo_kext_enabler.bin
+$ chmod 555 /sbin/turbo_kext_enabler.bin
+{% endhighlight %}
+
+#### Set up a /etc/rc.local that works
+
+{% highlight bash %}
+$ cat /etc/rc.local
+#!/bin/sh
+ifconfig waitall
+/sbin/turbo_kext_enabler.bin
+kextload /System/Library/Extensions/smbfs.kext
+mkdir -p ~frontrow/Movies/FatBoy
+chown -R frontrow ~frontrow/Movies
+ping -c2 fatboy.local # needed because we loose the first packet(s)
+mount_smbfs "//atv:atv@fatboy.local/Media" ~frontrow/Movies/FatBoy
+{% endhighlight %}
+
 ### Veilig upgraden naar 1.1
 
 * download [http://mesu.apple.com/data/OS/061-2988.20070620.bHy75/2Z694-5248-45.dmg](http://mesu.apple.com/data/OS/061-2988.20070620.bHy75/2Z694-5248-45.dmg)

@@ -35,8 +35,4 @@ title: Open Source
          title="Project AutoBot" data-description="The answer to the question 'Can I build an AUTOnomous roBOT, using some basic components...">
   </a>
 
-  <a href="http://opencloudfs.org">
-    <img src="/images/sections/opencloudfs.png" class="orbit item"
-         title="OpenCloudFS" data-description="An experiment to build a network of basic storage nodes ...">
-  </a>
 </div>

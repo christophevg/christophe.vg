@@ -7,7 +7,7 @@ A few years ago I also made the switch from Subversion to Git. And I never looke
 
 ## Installation
 
-On [Mac OS X](IT/Mac_OS_X_Notes.html) Git can be installed using a clean disk image that can be downloaded from [http://code.google.com/p/git-osx-installer/](http://code.google.com/p/git-osx-installer/).
+On [Mac OS X](Mac_OS_X_Notes.html) Git can be installed using a clean disk image that can be downloaded from [http://code.google.com/p/git-osx-installer/](http://code.google.com/p/git-osx-installer/).
 
 ## References
 
@@ -26,9 +26,9 @@ $ git reset --soft HEAD^
 
 ### GitX
 
-Running [Mac OS X](IT/Mac_OS_X_Notes.html), discovering GitX was a blessing. Although normally I'm not the GUI-client-lover, this one really hits the spot.
+Running [Mac OS X](Mac_OS_X_Notes.html), discovering GitX was a blessing. Although normally I'm not the GUI-client-lover, this one really hits the spot.
 
-![GitX](IT/images/full/gitx.png)
+![GitX](images/full/gitx.png)
 
 The mother of all versions can be found at : [https://github.com/pieter/gitx](https://github.com/pieter/gitx)
 
@@ -38,11 +38,11 @@ But an experimental and much improved fork lives at : [https://github.com/brothe
 
 Tig (http://jonas.nitro.dk/tig) is truly a console version of GitX and comes in handy when I'm working on remote hosts and GitX isn't an option.
 
-![tig](IT/images/full/tig.png)
+![tig](images/full/tig.png)
 
 At first sight, the keybindings don't really come naturally, so the manual is mandatory: [http://jonas.nitro.dk/tig/manual.html](http://jonas.nitro.dk/tig/manual.html)
 
-On [Snow Leopard](IT/Snow_Leopard_Quirks.html) I had to upgrade `m4`, `autoconf`, `automake` and `libtool` to be able to compile it:
+On [Snow Leopard](Snow_Leopard_Quirks.html) I had to upgrade `m4`, `autoconf`, `automake` and `libtool` to be able to compile it:
 
 {% highlight bash %}
 curl -O http://ftp.gnu.org/gnu/m4/m4-1.4.16.tar.gz

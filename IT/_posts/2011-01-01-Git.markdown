@@ -1,0 +1,76 @@
+---
+layout: post
+title: Git Notes
+---
+
+A few years ago I also made the switch from Subversion to Git. And I never looked back. After experimenting with some other distributed version control systems, I was already convinced that it matched my way of working in a much more natural way. Moving to Git was just the cherry on the cake.
+
+## Installation
+
+On [Mac OS X](IT/Mac_OS_X_Notes.html) Git can be installed using a clean disk image that can be downloaded from [http://code.google.com/p/git-osx-installer/](http://code.google.com/p/git-osx-installer/).
+
+## References
+
+* [http://book.git-scm.com/index.html](http://book.git-scm.com/index.html)
+* [http://www.kernel.org/pub/software/scm/git/docs/gittutorial.html](http://www.kernel.org/pub/software/scm/git/docs/gittutorial.html)
+
+## Commands I keep forgetting
+
+* undo a commit
+
+{% highlight bash %}
+$ git reset --soft HEAD^
+{% endhighlight %}
+
+## Tools
+
+### GitX
+
+Running [Mac OS X](IT/Mac_OS_X_Notes.html), discovering GitX was a blessing. Although normally I'm not the GUI-client-lover, this one really hits the spot.
+
+![GitX](IT/images/full/gitx.png)
+
+The mother of all versions can be found at : [https://github.com/pieter/gitx](https://github.com/pieter/gitx)
+
+But an experimental and much improved fork lives at : [https://github.com/brotherbard/gitx/wiki](https://github.com/brotherbard/gitx/wiki)
+
+### tig
+
+Tig (http://jonas.nitro.dk/tig) is truly a console version of GitX and comes in handy when I'm working on remote hosts and GitX isn't an option.
+
+![tig](IT/images/full/tig.png)
+
+At first sight, the keybindings don't really come naturally, so the manual is mandatory: [http://jonas.nitro.dk/tig/manual.html](http://jonas.nitro.dk/tig/manual.html)
+
+On [Snow Leopard](IT/Snow_Leopard_Quirks.html) I had to upgrade `m4`, `autoconf`, `automake` and `libtool` to be able to compile it:
+
+{% highlight bash %}
+curl -O http://ftp.gnu.org/gnu/m4/m4-1.4.16.tar.gz
+tar -xzvf m4-1.4.16.tar.gz
+cd m4-1.4.16
+./configure --prefix=/usr/local
+make
+sudo make install
+cd ..
+curl -O http://ftp.gnu.org/gnu/autoconf/autoconf-2.68.tar.gz
+tar -xzvf autoconf-2.68.tar.gz
+cd autoconf-2.68
+./configure --prefix=/usr/local
+make
+sudo make install
+cd ..
+# get a fresh terminal to make sure the new version is in use
+curl -O http://ftp.gnu.org/gnu/automake/automake-1.11.tar.gz
+tar xzvf automake-1.11.tar.gz
+cd automake-1.11
+./configure --prefix=/usr/local
+make
+sudo make install
+cd ..
+curl -O http://ftp.gnu.org/gnu/libtool/libtool-2.4.tar.gz
+tar xzvf libtool-2.4.tar.gz
+cd libtool-2.4
+./configure --prefix=/usr/local
+make
+sudo make install
+{% endhighlight %}

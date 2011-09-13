@@ -35,7 +35,7 @@ title: Open Source
          title="Project AutoBot" data-description="The answer to the question 'Can I build an AUTOnomous roBOT, using some basic components...">
   </a>
 
-  <a href="http://christophevg.github.com/SkoolSCool">
+  <a href="http://github.com/christophevg/SkoolSCool">
     <img src="/images/sections/skoolscool.png" class="orbit item" 
          alt="SkoolSCool"
          title="SkoolSCool" data-description="When the website of my children's school became outdated and parents wanted social features, I started writing a little CMS.">

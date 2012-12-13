@@ -248,3 +248,35 @@ DIV.mail {
   margin-left: 10px;
   top: -4px;
 }
+
+/* updates / twitter */
+
+.updates {
+	padding: 5px;
+}
+
+.updates H3 {
+	border-bottom: 1px solid #555;
+	padding-bottom: 1px;
+	margin-bottom: 2px;
+}
+
+.twitter {}
+
+.twitter .tweet {
+	padding-bottom: 3px;
+}
+
+.twitter .tweet .when {
+  font: 10px arial, helvetica, sans-serif;
+  color: #999;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+.twitter .tweet .content A,
+.twitter .tweet .content IMG {
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
+}

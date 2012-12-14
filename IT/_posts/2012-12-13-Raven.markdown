@@ -1,0 +1,170 @@
+---
+layout: post
+title: Raven
+---
+
+While doing research for possible master thesis topics, I'm looking into the
+idea of wireless sensor network. At KULeuven the DISTRINET research group is
+spending quiet some effort into this and I want to make sure that I fully
+understand it before I decide to move in this direction or not.
+
+So I bought a Raven developer evaluation kit to see what it's all about.
+
+## Step 1: Hello World
+
+The developer evaluation kit basically comes with two Raven Wireless Sensor
+Nodes - let's also call them _motes_, we need to talk the lingo now ;-) - and
+one USB stick to also allow a computer to join the network.
+
+![](images/full/ravenKit_small.jpg) 
+
+### RZUSBSTICK
+
+It seems that the RZUSBSTICK is recognized when I plug it into one of my Mac's
+USB ports.
+
+{% highlight bash %}
+$ system_profiler SPUSBDataType | grep -A10 USBSTICK
+                RZUSBSTICK:
+
+                  Product ID: 0x210a
+                  Vendor ID: 0x03eb  (Atmel Corporation)
+                  Version: 2.00
+                  Serial Number: A30100A01C25
+                  Speed: Up to 12 Mb/sec
+                  Manufacturer: ATMEL
+                  Location ID: 0xfa135000 / 10
+                  Current Available (mA): 500
+                  Current Required (mA): 500
+{% endhighlight %}
+
+Now can I do anything with it? Turning on the Raven shows it's not able to join
+any network. So I'll need to do something more ;-)
+
+### Python
+
+I found
+[http://code.rancidbacon.com/LearningAboutAtmelRZRAVEN](http://code.rancidbacon.
+com/LearningAboutAtmelRZRAVEN) which included some Python code that should be
+able to setup the stick and connect to the mote.
+
+I had to install libusb using MacPorts and use python also from MacPorts to get
+the script up and running:
+
+{% highlight bash %}
+$ ./raven.py 
+=== Device found ===
+Device: 
+'RZUSBSTICK'
+Serial number: 'A30100A01C25\x00'
+Traceback (most recent call last):
+  File "./raven.py", line 51, in <module>
+    handle.setConfiguration(config)
+  File "build/bdist.macosx-10.8-intel/egg/usb/legacy.py", line 257, in setConfiguration
+  File "build/bdist.macosx-10.8-intel/egg/usb/core.py", line 554, in set_configuration
+  File "build/bdist.macosx-10.8-intel/egg/usb/core.py", line 92, in managed_set_configuration
+AttributeError: 'NoneType' object has no attribute 'bConfigurationValue'
+{% endhighlight %}
+
+Commenting out the line that sets the configuration, allows the script to
+continue, but it fails again a bit later:
+
+{% highlight bash %}
+$ ./raven.py 
+=== Device found ===
+Device: 
+'RZUSBSTICK'
+Serial number: 'A30100A01C25\x00'
+2
+0x80
+4
+0x80
+2
+0x80
+Traceback (most recent call last):
+  File "./raven.py", line 110, in <module>
+    response = handle.bulkRead(0x81, 50)
+  File "build/bdist.macosx-10.8-intel/egg/usb/legacy.py", line 159, in bulkRead
+  File "build/bdist.macosx-10.8-intel/egg/usb/core.py", line 661, in read
+  File "build/bdist.macosx-10.8-intel/egg/usb/backend/libusb1.py", line 541, in bulk_read
+  File "build/bdist.macosx-10.8-intel/egg/usb/backend/libusb1.py", line 648, in __read
+  File "build/bdist.macosx-10.8-intel/egg/usb/backend/libusb1.py", line 403, in _check
+usb.core.USBError: [Errno 60] Operation timed out
+{% endhighlight %}
+
+Now, when I turn on a mote, it _does_ connect to the network, so it seems that
+the partially working script initializes network on the stick.
+
+After a bad night's sleep, I started looking at the code again and compared it
+to [http://pyusb.sourceforge.net/docs/1.0/tutorial.html](http://pyusb.sourceforge.n
+et/docs/1.0/tutorial.html). I'm not entirely sure, but I think the code was
+written in a pre-1.0 era, so I tried to convert it to the new coding style.
+
+After learning a lot about Python, unicode, USB,... I managed to get the thing
+running. Most of the black-magic hexadecimal constants are still a mistery, but
+it works.
+
+The code is @ [https://github.com/christophevg/raven](https://github.com/christophevg/raven)
+and it basically looks like this:
+
+{% highlight bash %}
+$ ./raven.py 
+*** dumping configuration/interface/endpoint info
+1
+        0,0
+                132
+                2
+                129
+*** step 1: TODO: figure out what this does ;-)
+    if a USBError 60: Operation timed out happens here, reset the stick
+2
+0x80
+*** step 2: setting channel=11 pan id= 0xBABE (TODO: figure out...)
+4
+0x80
+*** step 3: final step to turn on network (TODO: figure out...)
+2
+0x80
+*** network should be accessible now, turn on a mote
+*** received response on control(?) endpoint
+    data =  ['0x54', '0xc', '0x1b', '0x0', '0x1d', '0x81', '0x0', '0xa0', '0...
+*** remote address 0x001b joined.
+*** sending message:  Christophe was here ...
+33
+0x80
+*** reading temperature
+10
+0x80
+*** received response on control(?) endpoint
+    data =  ['0x53', '0xa', '0x0', '0x0', '0x1b', '0x0', '0xff', '0x2', '0x0...
+*** received 0x53: ack for txt msg ?
+9
+0x80
+*** reading temperature
+10
+0x80
+{% endhighlight %}
+
+Messages received by the mote are displayed ... I need a shorter name ;-)
+
+[![Christophe was here](images/thumb/raven-cvg.jpg)](images/full/raven-cvg.jpg)
+
+### Power
+
+After only running a few tests, the pre-installed batteries are almost drained,
+so I'll need to hook up some external power supply.
+
+TODO
+
+## Step 2: Replace the existing code with something else
+
+Before I acutally wipe the Raven, I want to know the basics and be able to
+replace the pre-installed code with a simple Hello World of my own.
+
+TODO
+
+## Step 3: Install Contiki and Looci
+
+The real goal is to install Contiki and Looci and start playing with that.
+
+TODO

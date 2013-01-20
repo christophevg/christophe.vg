@@ -18,5 +18,4 @@ Klop de eieren met de suiker schuimig. Spatel er de chocoladeboter en bloem door
 
 Verdeel het beslag over 6 soufflepotjes en bak in een voorverwarmde over van 200 graden gedurende 10-12 minuten.
 
-Serveer met een beetje poedersuiker en een bolletje .
-
+Serveer met een beetje poedersuiker en een bolletje [ijs](Vanille_Roomijs.html).

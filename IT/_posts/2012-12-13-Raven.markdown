@@ -168,3 +168,9 @@ TODO
 The real goal is to install Contiki and Looci and start playing with that.
 
 TODO
+
+### Temporary notes
+
+* sudo port install libusb
+* export PYUSB_DEBUG_LEVEL=debug
+* system_profiler SPUSBDataType | grep -A10 USBSTICK

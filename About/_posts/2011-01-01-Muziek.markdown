@@ -4,8 +4,6 @@ hideSectionImage: true
 title: 
 ---
 
-<a href="http://www.last.fm/user/christophevg/?chartstyle=iTunesFIXED"><img src="http://imagegen.last.fm/iTunesFIXED/recenttracks/christophevg.gif" border="0" alt="christophevg's Profile Page" /></a>
-
 ## Favoriete Song Tekst van het ogenblik ...
 
 ### Iridescent - Linkin Park

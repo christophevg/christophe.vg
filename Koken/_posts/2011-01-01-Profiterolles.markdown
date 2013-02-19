@@ -6,15 +6,15 @@ title: Profiterolles
 ##  ingredienten 
 
 ### voor de profiterolles
-* 185g boter
-* 750g water
-* 1/4 theelepel zout
+* 3 dl water
+* 150 g boter
+* 4 g zout
 * 1 theelepel suiker
-* 750g bloem
-* 6 eieren
+* 150 g bloem
+* 5 eieren
 
 ### voor de vulling
-* Chocolade Roomijs
+* [chocolade ijsroom](Chocolade_ijsroom.html)
 * slagroom
 
 ##  bereiding 

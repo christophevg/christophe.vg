@@ -1,0 +1,42 @@
+---
+layout: post
+title: eID notes
+---
+
+If you live in Belgium and want to use your eID on Mac OS X, things aren't all
+that nice. 
+
+## Keychain/Safari Integration
+
+As of Mac OS X 10.7 things got even worst due to the removal of the
+previously included BELPIC Tokend. This now needs to be installed manually.
+
+These three steps have recently been succesful at getting an ACR28 cardreader
+(the one handed out by the Belgian government) to authenticate Safari.
+
+### Step 1: install driver
+
+Visit the manufacturer's website and download the latest driver. In case of the
+ACR38 it is
+[http://www.acs.com.hk/index.php?pid=drivers&id=ACR38](http://www.acs.com.hk/ind
+ex.php?pid=drivers&id=ACR38).
+
+Validate that it works by plugging in the reader and inserting your card. The
+light on the reader should stop blinking an be on all the time - indicating
+your card was read and accepted.
+
+
+### Step 2: Install Tokend voor BELPIC
+
+As of Mac OS X 10.7 the Tokend's for several cards are no longer shipped. They
+are downloadable from MacOSForge. 
+[http://smartcardservices.macosforge.org/trac/wiki/installers](http://smartcardservices.macosforge.org/trac/wiki/installers)
+Download and install (at least) the BELPIC Tokend.
+
+Validate that it works by opening your Keychain Access app and see that you
+card is added to the list of keychains.
+
+### Step 3:  Test it ...
+
+Visit [https://test.eid.belgium.be](https://test.eid.belgium.be) and test your
+setup.

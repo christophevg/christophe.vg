@@ -44,7 +44,7 @@ After some more searches I (once again) ended up at O'Reilly's.
 
 ### Book 1 : Making Embedded Systems
 
-<div class="thumb right">
+<div class="thumb right" style="clear:both">
   <img src="images/full/making_embedded_systems_cover.gif" alt="Making Embedded Systems">
 </div>
 
@@ -65,12 +65,77 @@ one that I also already had found through other searches.
 
 ### Book 2 : Designing Embedded Hardware
 
-<div class="thumb right">
+<div class="thumb right" style="clear:both">
   <img src="images/full/designing_embedded_hardware_cover.gif" alt="Designing Embedded Hardware">
 </div>
 
-TODO
+After a great introduction, picking up this book was a great experience. Still
+very much an introduction with many pointers to more, but once more a step up
+the learning curve.
+
+Its focus is a lot more on hardware and that was the right next step. Finally I
+was introduced to SPI and other important aspects.
+
+### Book 3 : Make: Electronics
+
+<div class="thumb right" style="clear:both">
+  <img src="images/full/make_electronics_cover.jpeg" alt="Make: Electronics">
+</div>
+
+I hesitated a long time before actually buying it, but this is really a great
+book when trying to pickup electronics in a hands-on fashion. Many of the
+initial experiments below where constructed from examples from this book.
+
+### Diagrams
+
+* To document circuits on my online pages I'm using
+  [Circuits.io](http://circuits.io). Not only because I happen to know one of
+  the creators, but simply because it was the best online tool I found so far -
+  covering _my_ needs :-) All diagrams on these pages are all availabel on my
+  [Cuircuits.ui profile page](http://www.circuits.io/circuits/user?uid=1785).
+
+### Hardware
+
+There are many sources to consult with respect to getting an initial hardware
+setup. Below is a rough list of the hardware I bought during the first months.
+
+* Digital Multi-meter: UNI-T UT39B
+* soldering iron: Weller SPI-27 25W
+* solder Sn60Pb40 - 0.80mm and 0.60mm
+* helping hand
+* pointy wirecutter
+* 2 breadboards
+* 3 PCB boards
+* battery packs for 2 and 4 AA batteries
+* assorted resistors & condensators pack from Vellman
+* most of the components from the shopping lists from the Make: Electronics book
+* solid wires in various colours
+* ...
 
 ## Step 2 : Hello World
 
-TODO
+Although I'd love to create something that my wife doesn't frown upon, I have
+to start with the basics: make a LED light up ... without burning it.
+
+<div class="thumb circuit left" width="250">
+  <a href="http://circuits.io/circuits/2367" target="_blank">
+    <img src="http://circuits.io/circuits/2367/schematic" height="100"><br>
+    http://circuits.io/circuits/2367
+  </a>
+</div>
+
+<br clear="both">
+
+It's of course a bit more practical with a button :-)
+
+<div class="thumb circuit left" width="250">
+  <a href="http://circuits.io/circuits/2455" target="_blank">
+    <img src="http://circuits.io/circuits/2455/schematic" height="100"><br>
+    http://circuits.io/circuits/2455
+  </a>
+</div>
+
+<br clear="both">
+
+Next up ... fading in ... fading out ...
+

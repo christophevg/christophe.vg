@@ -219,6 +219,10 @@ DIV.highlight PRE CODE.bash {
   float: left;
 }
 
+.thumb.circuit {
+	text-align: right;
+}
+
 /* index pages */
 
 TABLE.index {

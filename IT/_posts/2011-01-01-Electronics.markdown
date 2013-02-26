@@ -117,10 +117,17 @@ setup. Below is a rough list of the hardware I bought during the first months.
 Although I'd love to create something that my wife doesn't frown upon, I have
 to start with the basics: make a LED light up ... without burning it.
 
-<div class="thumb circuit left" width="250">
+<div class="thumb circuit left">
   <a href="http://circuits.io/circuits/2367" target="_blank">
     <img src="http://circuits.io/circuits/2367/schematic" height="100"><br>
     http://circuits.io/circuits/2367
+  </a>
+</div>
+
+<div class="thumb circuit left">
+  <a href="images/full/hello_led.jpg" target="_blank">
+    <img src="images/thumb/hello_led.jpg"><br>
+    always on
   </a>
 </div>
 
@@ -128,14 +135,84 @@ to start with the basics: make a LED light up ... without burning it.
 
 It's of course a bit more practical with a button :-)
 
-<div class="thumb circuit left" width="250">
+<div class="thumb circuit left">
   <a href="http://circuits.io/circuits/2455" target="_blank">
     <img src="http://circuits.io/circuits/2455/schematic" height="100"><br>
     http://circuits.io/circuits/2455
   </a>
 </div>
 
+<div class="thumb circuit left">
+  <a href="images/full/hello_switch_led.jpg" target="_blank">
+    <img src="images/thumb/hello_switch_led.jpg"><br>
+    on/off
+  </a>
+</div>
+
 <br clear="both">
 
-Next up ... fading in ... fading out ...
+Next up of course is having the LED fade in and out, like a heart-beat. I
+followed the different examples from the excellent Make: Electronics book here.
+
+First a basic seteup with a relay. A realy basically contains a coil and a
+2-way switch. When current flows through the coil, it magnetizes and it will
+push the switch into the other position. When well connected, this might also
+cause it to be no longer powered, thus losing its magnetic property and the
+swith will fall back into its original position. And the cycle repeats itself.
+
+The circuit is not that difficult, although that it looks a bit more
+complicated at first. Just start at the power source and follow the current.
+Notice that I've created a setup with two battery sources: one 9V and one
+consisting of two 1.5V AA batteries. Combined in series these result in a
+power source of 12V (9 + 2x1.5).
+
+<div class="thumb circuit left">
+  <a href="http://circuits.io/circuits/2476" target="_blank">
+    <img src="http://circuits.io/circuits/2476/schematic" height="290"><br>
+    http://circuits.io/circuits/2476
+  </a> 
+</div>
+
+<object width="560" height="315">
+  <param name="movie" value="http://www.youtube.com/v/kG8f-J1K0ts?version=3&amp;hl=en_US"></param>
+  <param name="allowFullScreen" value="true"></param>
+  <param name="allowscriptaccess" value="always"></param>
+  <embed src="http://www.youtube.com/v/kG8f-J1K0ts?version=3&amp;hl=en_US" type="application/x-shockwave-flash" width="560" height="315" allowscriptaccess="always" allowfullscreen="true"></embed>
+</object>
+
+<br clear="both">
+
+A relay looks kind of bulky, so let's introduce the transistor. Just like a
+relay, it can switch a flow of electricity. It has three pins: the collector,
+base and emitter. The collector receives current, the base controls the flow
+and the emitter sends it through.
+
+You could compare it to a switch: If you put a little current on the base, the
+switch is closed and the current flows from the collector to the emitter. So
+it's basically a on/off switch. In the case of the relay, we have a two-way on
+switch. To create the same effect, two transistors, turning each other on and
+of are needed.
+
+<div class="thumb circuit left">
+  <a href="http://circuits.io/circuits/2481" target="_blank">
+    <img src="http://circuits.io/circuits/2481/schematic" height="290"><br>
+    http://circuits.io/circuits/2481
+  </a> 
+</div>
+
+<object width="560" height="315">
+  <param name="movie" value="http://www.youtube.com/v/lLMTcqTKUIE?version=3&amp;hl=en_US"></param>
+  <param name="allowFullScreen" value="true"></param>
+  <param name="allowscriptaccess" value="always"></param>
+  <embed src="http://www.youtube.com/v/lLMTcqTKUIE?version=3&amp;hl=en_US" type="application/x-shockwave-flash" width="560" height="315" allowscriptaccess="always" allowfullscreen="true"></embed>
+</object>
+
+<br clear="both">
+
+Note: In the movie I've added a switch, which is not included in the diagram :-)
+
+But it's not quiet yet the effect I'm aiming for. Let's try it with the famous
+555 timer.
+
+TBC...
 

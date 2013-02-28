@@ -214,5 +214,72 @@ Note: In the movie I've added a switch, which is not included in the diagram :-)
 But it's not quiet yet the effect I'm aiming for. Let's try it with the famous
 555 timer.
 
-TBC...
+<div class="thumb circuit left">
+  <a href="http://circuits.io/circuits/2502" target="_blank">
+    <img src="http://circuits.io/circuits/2502/schematic" height="290"><br>
+    http://circuits.io/circuits/2502
+  </a> 
+</div>
 
+<object width="560" height="315">
+  <param name="movie" value="http://www.youtube.com/v/yjtR2P6eKc0?version=3&amp;hl=en_US"></param>
+  <param name="allowFullScreen" value="true"></param>
+  <param name="allowscriptaccess" value="always"></param>
+  <embed src="http://www.youtube.com/v/yjtR2P6eKc0?version=3&amp;hl=en_US" type="application/x-shockwave-flash" width="560" height="315" allowscriptaccess="always" allowfullscreen="true"></embed>
+</object>
+
+<br clear="both">
+
+Yeah, we made heart beat ;-)
+
+The 555 timer hides (a lot of) the complexity. Let's see if I can explain
+everything in the diagram:
+
+* connecting GND (pin 1) and VCC (pin 8) are pretty straightforward
+* RESET requires a high value to avoid resetting (it's active low), so
+  connected to the power source, it will keep the timer running.
+
+That leaves us with TRIG (pin 2), OUT (pin 3) and THRES (pin 6).
+
+The 555 timer allows us to generate a "pulse". This happens when the voltage on
+the TRIGger is low (another active low). Internally, the timer will _flip_
+into a different state.
+
+The pulse is a fixed-time high voltage on OUT. The length of the pulse is
+determined by the capacitance of the capcitor connected on TRESH (pin 6). When
+this charges to 2/3, TRESH will detect this and internally, the timer will
+_flop back_.
+
+So let's walk through the circuit: initially there is no high voltage on TRIG,
+which triggers the _flip_ and 9V is put on OUT. This causes capacitor C0 to
+start charging, causing an increasing voltage on the transistor, which will
+start eluminating the LED. After 2/3 of its charging time, TRESH will cause a
+_flop_ and OUT goes back to low voltage.
+
+Capacitor C0 now starts to discharge, causing a high voltage on TRIG for some
+time. When C0 is fully discharged, the cycle repeats itself.
+
+Okay, I understand the circuit. Now I want to modify it and actually show the
+discharging of capacitor C0 back to OUT (which internally sinks this to GND).
+
+This current will flow back through resistor R1, so I can put a LED in parallel
+to that. To only show the back-current when discharging the capacitor, I added
+a diode to that branch, blocking any charge current from going through the LED.
+
+<div class="thumb circuit left">
+  <a href="http://circuits.io/circuits/2505" target="_blank">
+    <img src="http://circuits.io/circuits/2505/schematic" height="290"><br>
+    http://circuits.io/circuits/2505
+  </a> 
+</div>
+
+<object width="560" height="315">
+  <param name="movie" value="http://www.youtube.com/v/Te_AX1X_7ag?version=3&amp;hl=en_US"></param>
+  <param name="allowFullScreen" value="true"></param>
+  <param name="allowscriptaccess" value="always"></param>
+  <embed src="http://www.youtube.com/v/Te_AX1X_7ag?version=3&amp;hl=en_US" type="application/x-shockwave-flash" width="560" height="315" allowscriptaccess="always" allowfullscreen="true"></embed>
+</object>
+
+<br clear="both">
+
+Next up ... more 555 fun and then some programming.

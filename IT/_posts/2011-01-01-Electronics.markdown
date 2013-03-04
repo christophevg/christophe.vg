@@ -154,7 +154,7 @@ It's of course a bit more practical with a button :-)
 Next up of course is having the LED fade in and out, like a heart-beat. I
 followed the different examples from the excellent Make: Electronics book here.
 
-First a basic seteup with a relay. A realy basically contains a coil and a
+First a basic setup with a relay. A relay basically contains a coil and a
 2-way switch. When current flows through the coil, it magnetizes and it will
 push the switch into the other position. When well connected, this might also
 cause it to be no longer powered, thus losing its magnetic property and the
@@ -282,4 +282,51 @@ a diode to that branch, blocking any charge current from going through the LED.
 
 <br clear="both">
 
-Next up ... more 555 fun and then some programming.
+Although this works, it doesn't seem to be a classic setup. It would be nice if
+the output was taken out of the loop generation and only be used to do
+something (else).
+
+Also, the 555 can be configured (programmed is a bit strong here I think). The
+length of the pulse (or the duration of the "on" cycle) and the length of the
+interval (or the duration of the "off" cycle) can be set using resistors.
+
+Let's once more walk through the entire circuit to make sure we _get_ how it
+works. When activating the power source, the current flows through R1 and the
+200K trimmer. It starts to charge capacitor C0, thus keeping the voltage on
+TRIG initially low, which activates it and a high voltage on OUT will make the LED
+
+When C0 reaches 2/3 of its capacity, THRES will be activated which causes OUT
+to go low. When the 555 _flops_ back, DISCH will be grounded and allow for
+sinking. This allows for C0 to discharge, until it reaches a level that again
+triggers TRIG and the cycle repeats.
+
+The 200K trimmer allows us to control the rate at which the capacitor charges
+and discharges, thus allowing us to control the frequency of the oscillation.
+There is in fact a little difference between charging and discharging. When
+charging, the current flow through both R1 and the 200K trimmer and while
+discharging only through the trimmer.
+
+This can be eliminated by adding a diode in parallel with the trimmer, which
+will eliminate it from the charge cycle and only include it in the discharge
+cycle. This way the charge and discharge cycles can be configured independently.
+
+<div class="thumb circuit left">
+  <a href="http://circuits.io/circuits/2559" target="_blank">
+    <img src="http://circuits.io/circuits/2559/schematic" height="290"><br>
+    http://circuits.io/circuits/2559
+  </a> 
+</div>
+
+<object width="560" height="315">
+  <param name="movie" value="http://www.youtube.com/v/XOqSQaZmZLM?hl=en_US&amp;version=3&amp;rel=0"></param>
+  <param name="allowFullScreen" value="true"></param>
+  <param name="allowscriptaccess" value="always"></param>
+  <embed src="http://www.youtube.com/v/XOqSQaZmZLM?hl=en_US&amp;version=3&amp;rel=0" type="application/x-shockwave-flash" width="560" height="315" allowscriptaccess="always" allowfullscreen="true"></embed>
+</object>
+
+<br clear="both">
+
+The CONT pin can be used to configure the timing/sensitivity of the RC circuit.
+It seems that it is not often used, but varying the voltage will change the
+speed.
+

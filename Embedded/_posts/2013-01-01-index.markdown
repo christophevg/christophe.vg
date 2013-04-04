@@ -1,0 +1,8 @@
+---
+layout: index
+title: Embedded Systems According to Christophe VG
+---
+
+After more than 30 years doing (mostly administrative) software, I decided to
+make a rather big switch and move into the hardware world, more specifically the
+area of embedded systems.

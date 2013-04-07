@@ -59,4 +59,4 @@ At this point in time (April 2013) I had an Atmel ATMEGA168 lying around, so
 that's what I started out with. It's part of the AVR family, a range of very
 popular processors these days.
 
-Time to hook up the [ATMega168](ATMega168.html).
+Time to hook up the [ATMega168](ATMEGA168.html).

@@ -24,6 +24,10 @@ H3 {
   font:125% arial,helvetica,sans-serif;
 }
 
+TT {
+	font-size: 125%;
+}
+
 DIV.error {
 }
 
@@ -283,4 +287,20 @@ DIV.mail {
 	border: 0px;
 	margin: 0px;
 	padding: 0px;
+}
+
+/* info tables */
+TABLE.info {
+	border-collapse:collapse;
+}
+
+TABLE.info, TABLE.info TH, TABLE.info TD {
+	border: 1px solid #666;
+	padding: 5px;
+}
+
+TABLE.info TR.header TH {
+	border-top: 3px solid #555;
+	border-bottom: 3px solid #555;
+	text-align: right;
 }

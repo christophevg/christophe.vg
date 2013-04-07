@@ -1,0 +1,230 @@
+---
+layout: post
+title: avrdude
+---
+
+To handle the programmer when programming e.g. my [ATMEGA168](ATMEGA168.html),
+I use <tt>avrdude</tt>.
+
+* [avrdude Homepage](http://www.nongnu.org/avrdude/)
+
+## Using avrdude
+
+Installing it on my Mac was a breeze using MacPorts ...
+
+{% highlight console %}
+$ port search avrdude
+avrdude @5.11.1 (cross, devel)
+    an Atmel AVR MCU programmer
+$ sudo port install avrdude
+...
+---> No broken files found.
+{% endhighlight %}
+
+### List the JTAGICEs connected to USB
+
+{% highlight console %}
+$ avrdude -c jtag2isp -p atmega168 -P usb:xx -v
+
+avrdude: Version 5.11.1, compiled on Apr  6 2013 at 15:52:02
+         Copyright (c) 2000-2005 Brian Dean, http://www.bdmicro.com/
+         Copyright (c) 2007-2009 Joerg Wunsch
+
+         System wide configuration file is "/opt/local/etc/avrdude.conf"
+         User configuration file is "/Users/xtof/.avrduderc"
+         User configuration file does not exist or is not a regular file, skipping
+
+         Using Port                    : usb:xx
+         Using Programmer              : jtag2isp
+avrdude: usbdev_open(): Found JTAGICE mkII, serno: 070000005ACB
+avrdude: usbdev_open(): did not find any (matching) USB device "usb:xx"
+{% endhighlight %}
+
+The four last digits of the serial number of the JTAGICE are important. We need
+them to identify the correct USB port.
+
+### Information about you JTAGICE mkII and the connected MCU
+
+{% highlight console %}
+$ avrdude -p atmega168 -P usb:5a:cb -c jtag2isp -v
+
+avrdude: Version 5.11.1, compiled on Apr  6 2013 at 15:52:02
+         Copyright (c) 2000-2005 Brian Dean, http://www.bdmicro.com/
+         Copyright (c) 2007-2009 Joerg Wunsch
+
+         System wide configuration file is "/opt/local/etc/avrdude.conf"
+         User configuration file is "/Users/xtof/.avrduderc"
+         User configuration file does not exist or is not a regular file, skipping
+
+         Using Port                    : usb:5a:cb
+         Using Programmer              : jtag2isp
+avrdude: usbdev_open(): Found JTAGICE mkII, serno: 070000005ACB
+JTAG ICE mkII sign-on message:
+Communications protocol version: 1
+M_MCU:
+  boot-loader FW version:        255
+  firmware version:              4.38
+  hardware version:              0
+S_MCU:
+  boot-loader FW version:        255
+  firmware version:              4.38
+  hardware version:              1
+Serial number:                   07:00:00:00:5a:cb
+Device ID:                       JTAGICEmkII
+         AVR Part                      : ATMEGA168
+         Chip Erase delay              : 9000 us
+         PAGEL                         : PD7
+         BS2                           : PC2
+         RESET disposition             : dedicated
+         RETRY pulse                   : SCK
+         serial program mode           : yes
+         parallel program mode         : yes
+         Timeout                       : 200
+         StabDelay                     : 100
+         CmdexeDelay                   : 25
+         SyncLoops                     : 32
+         ByteDelay                     : 0
+         PollIndex                     : 3
+         PollValue                     : 0x53
+         Memory Detail                 :
+
+                                  Block Poll               Page                       Polled
+           Memory Type Mode Delay Size  Indx Paged  Size   Size #Pages MinW  MaxW   ReadBack
+           ----------- ---- ----- ----- ---- ------ ------ ---- ------ ----- ----- ---------
+           eeprom        65    20     4    0 no        512    4      0  3600  3600 0xff 0xff
+           flash         65     6   128    0 yes     16384  128    128  4500  4500 0xff 0xff
+           lfuse          0     0     0    0 no          1    0      0  4500  4500 0x00 0x00
+           hfuse          0     0     0    0 no          1    0      0  4500  4500 0x00 0x00
+           efuse          0     0     0    0 no          1    0      0  4500  4500 0x00 0x00
+           lock           0     0     0    0 no          1    0      0  4500  4500 0x00 0x00
+           calibration    0     0     0    0 no          1    0      0     0     0 0x00 0x00
+           signature      0     0     0    0 no          3    0      0     0     0 0x00 0x00
+
+         Programmer Type : JTAGMKII_ISP
+         Description     : Atmel JTAG ICE mkII in ISP mode
+         Vtarget         : 5.0 V
+         SCK period      : 10.37 us
+
+avrdude: AVR device initialized and ready to accept instructions
+
+Reading | ################################################## | 100% 0.15s
+
+avrdude: Device signature = 0x1e9406
+avrdude: safemode: lfuse reads as 62
+avrdude: safemode: hfuse reads as DF
+avrdude: safemode: efuse reads as 7
+
+avrdude: safemode: lfuse reads as 62
+avrdude: safemode: hfuse reads as DF
+avrdude: safemode: efuse reads as 7
+avrdude: safemode: Fuses OK
+
+avrdude done.  Thank you.
+{% endhighlight %}
+
+### Read a fuse
+
+{% highlight console %}
+$ avrdude -p atmega168 -P usb:5a:cb -c jtag2isp -U lfuse:r:low.txt:i
+
+avrdude: AVR device initialized and ready to accept instructions
+
+Reading | ################################################## | 100% 0.15s
+
+avrdude: Device signature = 0x1e9406
+avrdude: reading lfuse memory:
+
+Reading | ################################################## | 100% 0.05s
+
+avrdude: writing output file "low.txt"
+
+avrdude: safemode: Fuses OK
+
+avrdude done.  Thank you.
+{% endhighlight %}
+
+The content of <tt>low.txt</tt> contains information about the low fuse in
+[Intel Hex format](http://en.wikipedia.org/wiki/Intel_HEX) and requires a
+little interpretation.
+
+{% highlight console %}
+$ cat low.txt 
+:01000000629D
+:00000001FF
+{% endhighlight %}
+
+The two digits that are important here are the 6 and 2 on the first line. All
+the other digits are part of the Intel HEX format. 62 was also already found in
+the verbose output, as seen above.
+
+### Burn a fuse
+
+{% highlight console %}
+$ avrdude -p atmega168 -P usb:5a:cb -c jtag2isp -U lfuse:w:0x62:m
+
+avrdude: AVR device initialized and ready to accept instructions
+
+Reading | ################################################## | 100% 0.15s
+
+avrdude: Device signature = 0x1e9406
+avrdude: reading input file "0x62"
+avrdude: writing lfuse (1 bytes):
+
+Writing | ################################################## | 100% 0.05s
+
+avrdude: 1 bytes of lfuse written
+avrdude: verifying lfuse memory against 0x62:
+avrdude: load data lfuse data from input file 0x62:
+avrdude: input file 0x62 contains 1 bytes
+avrdude: reading on-chip lfuse data:
+
+Reading | ################################################## | 100% 0.05s
+
+avrdude: verifying ...
+avrdude: 1 bytes of lfuse verified
+
+avrdude: safemode: Fuses OK
+
+avrdude done.  Thank you.
+{% endhighlight %}
+
+### Upload a hex file (e.g. blink_1MHz.hex)
+
+{% highlight console %}
+$ avrdude -p atmega168 -P usb:5a:cb -c jtag2isp    -U flash:w:blink_1MHz.hex 
+
+avrdude: AVR device initialized and ready to accept instructions
+
+Reading | ################################################## | 100% 0.15s
+
+avrdude: Device signature = 0x1e9406
+avrdude: NOTE: FLASH memory has been specified, an erase cycle will be performed
+         To disable this feature, specify the -D option.
+avrdude: erasing chip
+avrdude: reading input file "blink_1MHz.hex"
+avrdude: input file blink_1MHz.hex auto detected as Intel Hex
+avrdude: writing flash (236 bytes):
+
+Writing | ################################################## | 100% 0.30s
+
+avrdude: 236 bytes of flash written
+avrdude: verifying flash memory against blink_1MHz.hex:
+avrdude: load data flash data from input file blink_1MHz.hex:
+avrdude: input file blink_1MHz.hex auto detected as Intel Hex
+avrdude: input file blink_1MHz.hex contains 236 bytes
+avrdude: reading on-chip flash data:
+
+Reading | ################################################## | 100% 0.20s
+
+avrdude: verifying ...
+avrdude: 236 bytes of flash verified
+
+avrdude: safemode: Fuses OK
+
+avrdude done.  Thank you.
+{% endhighlight %}
+
+* [avrdude Example Command Line Invocation](http://www.nongnu.org/avrdude/user-manual/avrdude_6.html)
+* [Embedded AVR Fuse Calculator](http://www.engbedded.com/fusecalc/)
+* [AVR Fuses HOWTO Guide](http://electrons.psychogenic.com/modules/arms/art/14/)
+* [How to program Atmel AVR and ATMega fuses](http://www.upgradeindustries.com/article/20/How-to-program-Atmel-AVR-and-ATMega-Fuses)

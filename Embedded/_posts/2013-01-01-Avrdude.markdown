@@ -225,6 +225,3 @@ avrdude done.  Thank you.
 {% endhighlight %}
 
 * [avrdude Example Command Line Invocation](http://www.nongnu.org/avrdude/user-manual/avrdude_6.html)
-* [Embedded AVR Fuse Calculator](http://www.engbedded.com/fusecalc/)
-* [AVR Fuses HOWTO Guide](http://electrons.psychogenic.com/modules/arms/art/14/)
-* [How to program Atmel AVR and ATMega fuses](http://www.upgradeindustries.com/article/20/How-to-program-Atmel-AVR-and-ATMega-Fuses)

@@ -498,6 +498,193 @@ fuses prohibited me from uploading my image.
 
 Coming soon ... (I hope)
 
+## The Need for Speed
+
+The ATMEGA168 by default is configured to use its internal oscillator, which
+operates at 1Mhz (kind of). The ATMEGA168 supports up to 20MHz, which allows it to
+process 20 MIPS (Million Instructions Per Second).
+
+### 8MHz
+
+By default, the ATMEGA168 does run at 1MHz, but this achieved by a fuse
+setting, dividing the speed by 8. If we look at the definition of the low fuse
+byte (by default 0x62 or <tt>0110 0010</tt>), we see that the 7<sup>th</sup>
+bit (the left-most one) is 0, which means that it's programmed. The definition
+describes this bit as name: CKDIV8(4), bit: 7, description: Divide clock by 8,
+default: 0 (programmed). So is we change it to 1, the low byte fuse needs to be
+<tt>1110 0010</tt> or 0xE2.
+
+{% highlight console %}
+$ avrdude -p atmega168 -P usb:5a:cb -c jtag2isp -U lfuse:w:0xE2:m
+ 
+avrdude: AVR device initialized and ready to accept instructions
+
+Reading | ################################################## | 100% 0.15s
+
+avrdude: Device signature = 0x1e9406
+avrdude: reading input file "0xE2"
+avrdude: writing lfuse (1 bytes):
+
+Writing | ################################################## | 100% 0.15s
+
+avrdude: 1 bytes of lfuse written
+avrdude: verifying lfuse memory against 0xE2:
+avrdude: load data lfuse data from input file 0xE2:
+avrdude: input file 0xE2 contains 1 bytes
+avrdude: reading on-chip lfuse data:
+
+Reading | ################################################## | 100% 0.05s
+
+avrdude: verifying ...
+avrdude: 1 bytes of lfuse verified
+
+avrdude: safemode: Fuses OK
+
+avrdude done.  Thank you.
+{% endhighlight %}
+
+And immediately our red LED is blinking 8 times faster.
+
+This also shows that we need to take this into account when programming,
+especially when dealing with timings. Remember the <tt>wait_ms()</tt> function?
+
+{% highlight c %}
+void wait_ms(uint16_t x) {
+  uint8_t y, z;
+  for ( ; x > 0 ; x--){
+    for ( y = 0 ; y < 90 ; y++){
+      for ( z = 0 ; z < 6 ; z++){
+        asm volatile ("nop"); // yikes, a busy loop ;-)
+      }
+    }
+  }
+}
+{% endhighlight %}
+
+This is now no longer calibrated to the speed of our MCU. And if we want to
+write portable code, we even don't want to bother. The Sparkfun Makefile
+implements a way to abstract this.
+
+{% highlight makefile %}
+# Processor frequency.
+#     This will define a symbol, F_CPU, in all source code files equal to the 
+#     processor frequency. You can then use this symbol in your source code to 
+#     calculate timings. Do NOT tack on a 'UL' at the end, this will be done
+#     automatically to create a 32-bit value in your source code.
+F_CPU = 8000000
+{% endhighlight %}
+
+But the blink code isn't using this feature. It turns out that the AVR LibC
+library has its own support through <tt>_delay_ms()</tt> from
+<tt>util/delay.h</tt>, which takes into account <tt>F_CPU</tt> and allows us to
+clean up the code further and make it CPU frequency invariant.
+
+{% highlight c %}
+// blink.c
+// based on blink_1MHz.c from tutorial on Sparkfun
+
+#include <avr/io.h>
+#include <util/delay.h>
+
+void ioinit(void);
+void turn_ports_on(void);
+void turn_ports_off(void);
+
+int main(void) {
+    ioinit();
+
+    while(1) {
+      turn_ports_on();   _delay_ms(500);
+      turn_ports_off();  _delay_ms(250);
+      turn_ports_on();   _delay_ms(500);
+      turn_ports_off();  _delay_ms(1000);
+    }
+   
+    return(0);
+}
+
+void ioinit(void) {
+  // 1 = output, 0 = input
+  DDRB = 0b11111111; // all outputs
+  DDRC = 0b11111111; // all outputs
+  DDRD = 0b11111110; // PORTD (RX on PD0)
+}
+
+void turn_ports_on(void) {
+  PORTC = 0xFF;
+  PORTB = 0xFF;
+  PORTD = 0xFF;  
+}
+
+void turn_ports_off(void) {
+  PORTC = 0x00;
+  PORTB = 0x00;
+  PORTD = 0x00;  
+}
+{% endhighlight %}
+
+* [AVR LibC user manual](http://www.nongnu.org/avr-libc/user-manual/group__util__delay.html)
+
+### 18MHz
+
+<div class="thumb circuit right">
+  <a href="http://circuits.io/circuits/3076" target="_blank">
+    <img src="http://circuits.io/circuits/3076/schematic" height="300"><br>
+    http://circuits.io/circuits/3076
+  </a>
+</div>
+
+That's the fastest the MCU can go without external help. But, adding an
+external oscillating crystal is easy. It needs to be connected to pins 9 and
+10. To make sure that the crystal starts oscillating, we need to add two 22pF
+capacitors before connecting the crystal to GND.
+
+But that's not all. The MCU also needs to be configured to use this external
+crystal. For an external *full swing crystal oscillator* we need 4 first bits
+(the right-most or CKSEL3..0) to be set to <tt>0111</tt> or <tt>0110</tt>.
+
+The first (right-most) bit, as well as the 3 of the 4 remaining bits depend on
+the way the oscillator behaves at start-up. Based on what I can read I think I
+have to go for <tt>Crystal Oscillator, slowly rising power</tt>, which requires
+SUT1..0 = 11 and CKSEL0 = 1, resulting in <tt>1111 0111</tt> or <tt>0xF7</tt>.
+
+Fingers crossed ...
+
+{% highlight console %}
+$ avrdude -p atmega168 -P usb:5a:cb -c jtag2isp -U lfuse:w:0xF7:m
+ 
+avrdude: AVR device initialized and ready to accept instructions
+
+Reading | ################################################## | 100% 0.15s
+
+avrdude: Device signature = 0x1e9406
+avrdude: reading input file "0xF7"
+avrdude: writing lfuse (1 bytes):
+
+Writing | ################################################## | 100% 0.15s
+
+avrdude: 1 bytes of lfuse written
+avrdude: verifying lfuse memory against 0xF7:
+avrdude: load data lfuse data from input file 0xF7:
+avrdude: input file 0xF7 contains 1 bytes
+avrdude: reading on-chip lfuse data:
+
+Reading | ################################################## | 100% 0.05s
+
+avrdude: verifying ...
+avrdude: 1 bytes of lfuse verified
+
+avrdude: safemode: Fuses OK
+
+avrdude done.  Thank you.
+{% endhighlight %}
+
+The LED is blinking like crazy, of course we need to adjust the CPU frequency
+parameter in the Makefile, rebuild and upload.
+
+And then the LED is blinking again at the expected rates, while the CPU is
+running at 18MHz.
+
 ## The Programming Box
 
 Just as in the case of the [regulated voltage power supply](Regulated_Voltage.html),
@@ -505,3 +692,7 @@ I think I'll be seeing more of the ATMEGA8 family in the future, so putting this
 programmer in a nice box should be worth the work.
 
 To be continued ...
+
+* [Embedded AVR Fuse Calculator](http://www.engbedded.com/fusecalc/)
+* [AVR Fuses HOWTO Guide](http://electrons.psychogenic.com/modules/arms/art/14/)
+* [How to program Atmel AVR and ATMega fuses](http://www.upgradeindustries.com/article/20/How-to-program-Atmel-AVR-and-ATMega-Fuses)

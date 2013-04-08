@@ -30,6 +30,7 @@ in the list below:
 
 * [https://www.sparkfun.com/tutorials/57](https://www.sparkfun.com/tutorials/57)
 * [https://www.sparkfun.com/tutorials/93](https://www.sparkfun.com/tutorials/93)
+* [https://www.sparkfun.com/tutorials/95](https://www.sparkfun.com/tutorials/95)
 * [https://www.sparkfun.com/tutorials/104](https://www.sparkfun.com/tutorials/104)
 * [http://www.codehosting.net/blog/BlogEngine/post/Programming-the-ATmega168.aspx](http://www.codehosting.net/blog/BlogEngine/post/Programming-the-ATmega168.aspx)
 * [http://adentranter.blogspot.be/2011/03/atmega168-hello-world.html](http://adentranter.blogspot.be/2011/03/atmega168-hello-world.html)

@@ -61,3 +61,11 @@ that's what I started out with. It's part of the AVR family, a range of very
 popular processors these days.
 
 Time to hook up the [ATMega168](ATMEGA168.html).
+
+## Step 3 : Adding a Serial Interface
+
+What do real programmers use to debug software ? Right, <tt>printf</tt>. And
+that's what I also want to do from my ATMEGA168. So let's add a good old
+[serial interface](MAX232.html) to the board that allows us to use
+<tt>printf</tt> and have it displayed on our terminal window on our full
+fletched computer.

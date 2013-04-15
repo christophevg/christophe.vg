@@ -20,6 +20,7 @@ tomatensaus.
 * 2 takjes tijm, blaadjes eraf geritst
 * 1 eetlepel balsamico azijn
 * 1 blokje runderbouillon
+* 1 eetlepel Luikse perensiroop
 
 ## bereiding
 
@@ -36,6 +37,6 @@ ui-look mengsel.
 
 Voeg de stukjes tomaat toe en laat deze even mee bakken. Voeg vervolgens
 achtereenvolgens de gezeefde tomaten, de tijm, balsamico, het bouillonblokje en
-de stroop toe.
+de siroop toe.
 
 Laat 15 minuutjes sudderen ... Listo!

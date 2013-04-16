@@ -116,6 +116,12 @@ DIV#passport P {
   font-size: 10pt;
 }
 
+/* temp initial values until set by javascript */
+.orbit.menu .orbit.info.disabled {
+  padding-top: 0px;
+  height: 90px;
+}
+
 .orbit.item {
   height: 125px;
   width: 125px;

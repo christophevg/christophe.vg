@@ -276,5 +276,7 @@ Orbit.Item = Class.extend( {
 ProtoJS.Event.observe( window, "load", function() {
   Orbit.getElements( "menu" ).iterate( function( menu ) {
     new Orbit.menu( menu );
+    // only center the menu if javascript is available
+    document.getElementById("orbit_info").className = "orbit info";
   } );
 } );

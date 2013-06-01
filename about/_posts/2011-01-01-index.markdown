@@ -17,7 +17,8 @@ repositories](http://github.com/christophevg).
 In 2011, at the age of 37, I decided to return to full time studying at the
 University of Leuven, seizing the moment to take a step back and try to find a
 (professional) life that I can really be passionate about. After about a year
-it became apparant that embedded systems seemed to lure me their way.
+it became apparant that [embedded systems](/embedded) seemed to lure me their
+way.
 
 But, there is more than [computers](/it) in my life. I'm happily married to
 Kristien Tambuyzer and our daughter [Eline](http://eline.vg) and baby son

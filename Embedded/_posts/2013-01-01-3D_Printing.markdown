@@ -1,0 +1,108 @@
+---
+layout: post
+title: 3D Printing
+---
+
+Beginning 2013, I decided to jump onto the 3D printing train and built a
+[Printrbot](http://www.reprap.org/wiki/Printrbot) at a workshop hosted by
+[3D Parts](http://3dparts.be).
+
+On this page I collect my experiences, problems and solutions, as well as the
+modifications I make while solving problems and making improvements.
+
+This page is under the section [Embedded](./) because of its close relationship
+to hardware and embedded systems. One of my goals is to create an embedded
+system to replace the
+[printerboard](http://makemendel.com/electronics-parts/printrboard) - or at
+least create and addon - to remotely manage printing (which happens at my
+garage).
+
+## The Beginning
+
+Although quiet a few of my fellow technology addicts have been involved in 3D
+Printing for some time, I waited until the moment that 3 months in a row I
+caught myself thinking "If I only had a 3D Printer now I could ...".
+
+By February 2013 I reached that moment and decided to build one. Having seen
+pretty nice results (given the associated price tag) from the
+[Printrbot](http://www.reprap.org/wiki/Printrbot) that was sold and build by
+[3D Parts](http://3dparts.be), I went for it and registered for one of the
+workshops. 
+
+Below is a Flickr slideshow of that workshop up to the point where I installed
+it at home in my garage and started printing my first prints.
+
+<div>
+  <iframe src="http://www.flickr.com/slideShow/index.gne?group_id=&user_id=50564098@N03&set_id=72157633851203240&text="
+          width="560" height="450" frameBorder="0" scrolling="no" align="center">
+    <br>
+  </iframe>
+</div>
+
+## Prints
+
+Although this list will soon be out-dated, I'm going to try and keep a list of
+things I print. Most of them come from
+[Thingiverse](http://www.thingiverse.com), some of them are own creations,
+which should also be uploaded to Thingiverse :-)
+
+* [Naked Woman Shooter Glass](http://www.thingiverse.com/thing:15012)
+* Bumba Cookie Cutter
+* [Wallace++ components](http://www.thingiverse.com/thing:45207)
+
+<div>
+  <iframe src="http://www.flickr.com/slideShow/index.gne?group_id=&user_id=50564098@N03&set_id=72157633850208383&text="
+          width="560" height="450" frameBorder="0" scrolling="no" align="center">
+    <br>
+  </iframe>
+</div>
+
+## Problems
+
+3D Printing at home (at this price tag at least) is not (yet) simply setting up
+and go. It's a bit of a craft and requires a lot of love.
+
+In the weeks following my workshop I encountered a lot of problems. Having
+built the printer myself, I was also able to track down the source and fix it.
+
+* Tilted extruder
+* Loose screw on extruder servo gear
+* Blocked large extruder gear
+* Too little tension on belts driving the axis
+* Loose screws on X-axis servo mount
+
+## Changes
+
+Having built the printer myself, I'm also able to modify it. There are many
+people out there experimenting with new designs, so there are a lot of sources
+to learn from.
+
+### Transformation into a Wallace++
+
+Our workshop at [3D Parts](http://3dparts.be) was the last one that produced
+pretty standard a [Printrbot](http://www.reprap.org/wiki/Printrbot). After
+that, Stefaan decided to go for an improved model: the
+[Wallace++](http://www.thingiverse.com/thing:45207).
+
+During the first weeks, I _used_ the components needed to assemble a Wallace++,
+to get to know my printer and tighten a lot of loose screws and belts.
+
+With all components ready now, I'm soon going to upgrade my printer. To be
+continued.
+
+## Welcome to my 3D Hub
+
+By the end of May, I was the tenth registered [3D printing
+hub](http://3dhubs.com/antwerp/hubs/christophe) in Antwerp on [3D
+Hubs](http://3dhubs.com). Which basically means I'm willing to welcome you in
+my garage to print your 3D design. And to make it perfectly clear ... I'm not
+interested in [printing
+guns](https://plus.google.com/109420283197516932948/posts/2z1qQubD8fV).
+
+## Future
+
+3D Printing in itself is nice, but it's also a testbed for me to try out new
+stuff. Being stocked by [embedded systems](./) I'm starting to assemble a wish
+list of things I want to build around this printer.
+
+* Build a remote-print-manager system

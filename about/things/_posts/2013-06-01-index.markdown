@@ -1,0 +1,13 @@
+---
+layout: index
+hideSectionImage: true
+title: Me about ... things
+---
+
+I don't keep a blog, am not really active on so called social networks, but I
+sometimes feel the need to write down my very personal opinion about
+... things.
+
+The pages in this section have been extended with comments functionality.
+
+And please remember: "If you think I'm arrogant, you're missing the point."

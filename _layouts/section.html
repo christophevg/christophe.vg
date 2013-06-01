@@ -56,12 +56,24 @@ sections: {
       If I need to add a few words of explanation, it will be in Dutch, my 
       mother tongue, since I'm from Belgium - yeah I know, please don't hold
       it against me ;-)
+    </p>",
+  things:
+    "<p>
+      Don't take <b>things</b> too seriously. And remember: If you think I'm 
+      arrogant, you're missing the point.
+    </p>
+    <p>
+      Things have comments functionality. Use them wisely :-)
     </p>"
   }
 ---
-{% capture section %}{{page.categories}}{% endcapture %}
+{% capture section %}{{ page.categories | first }}{% endcapture %}
+{% capture subsection %}{{ page.categories | last }}{% endcapture %}
 
 <div class="section header">
+  {% if section != subsection %}
+  <a href="/{{ section }}/{{ subsection }}">{{ subsection }}</a> /
+  {% endif %}
   <a href="/{{ section }}">{{ section }}</a> / <a href="/">Christophe VG</a><br>
   {% if page.hideSectionImage == null %}
   <a href="/{{ section }}"><img src="/images/sections/{{ section }}.png"></a>

@@ -1,7 +1,11 @@
 ---
 layout: section
 ---
-{% capture section %}{{page.categories}}{% endcapture %}
+{% capture section %}{{ page.categories | first }}{% endcapture %}
+{% capture subsection %}{{ page.categories | last }}{% endcapture %}
+{% if section != subsection %}
+{% assign section = subsection %}
+{% endif %}
 
 <h1>{{ section | capitalize }}</h1>
 {{content}}
@@ -14,7 +18,7 @@ layout: section
   <tr>
     <td class="column">
 {% for item in site.categories[section] reversed %}
-  {% if item.layout == "post" %} 
+  {% if item.layout == "post" or item.layout == "thing" %} 
     {% capture letter %}{{ item.title | upcase | truncate: 2, " " }}{% endcapture %}
 		{% capture mod %}{{ forloop.index | divided_by: site[section] | times: site[section] | minus: forloop.index }}{% endcapture %}
     {% if currentLetter != letter %}

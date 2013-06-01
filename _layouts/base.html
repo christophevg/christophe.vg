@@ -12,7 +12,7 @@ sections: {
     </p>"
   }
 ---
-{% capture section %}{{page.categories}}{% endcapture %}
+{% capture section %}{{ page.categories | last }}{% endcapture %}
 {% capture sectionSize %}{{ section | size }}{% endcapture %}
 {% if sectionSize == '0' %}
   {% assign section = 'default' %}

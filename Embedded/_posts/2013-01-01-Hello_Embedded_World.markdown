@@ -69,3 +69,15 @@ that's what I also want to do from my ATMEGA168. So let's add a good old
 [serial interface](MAX232.html) to the board that allows us to use
 <tt>printf</tt> and have it displayed on our terminal window on our full
 fletched computer.
+
+## Next steps - aka coming soon
+
+Below is a list of components I want to add/experiment with to cover a
+reasonable classic scope of what you want/need when designing embedded systems.
+
+Basically my TODO list ...
+
+* flash memory
+* sensors: temperature, light, accelerometer, ...
+* usb serial communication
+* wireless communication: RF, WiFi, Zigbee

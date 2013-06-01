@@ -3,7 +3,7 @@ layout: section
 ---
 {% capture section %}{{page.categories}}{% endcapture %}
 
-<h1>{{ section }}</h1>
+<h1>{{ section | capitalize }}</h1>
 {{content}}
 
 <hr>

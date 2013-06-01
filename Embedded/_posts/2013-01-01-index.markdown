@@ -9,3 +9,11 @@ area of embedded systems.
 
 Most of the code found in these pages is also available in my [Github embedded
 repository](https://github.com/christophevg/embedded).
+
+If you're also new to and very interested in electronics and embedded systems,
+you might want to read my [first steps in electronics](FirstSteps.html) and my
+[first steps in embedded systems](Hello_Embedded_World.html) as a guide from
+nothing to something.
+
+These two pages serve as an introduction and are basically a guided index
+through most of the other pages in this section.

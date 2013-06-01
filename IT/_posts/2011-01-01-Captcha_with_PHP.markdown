@@ -4,8 +4,6 @@ title: Captcha with PHP
 ---
 
 {% highlight php %}
-<?
-
 # captcha.php
 # generates a session-based key and graphical representation
 # Author: Christophe VG
@@ -44,6 +42,4 @@ imagettftext($im, $size, $angle, $left, $top, $text_color, $font, $key);
 
 imagepng($im);
 imagedestroy($im); 
-
-?>
 {% endhighlight %}

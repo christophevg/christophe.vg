@@ -1,7 +1,7 @@
 ---
 layout: base
 sections: {
-  Koken: 
+  koken: 
     "<p>
       In this section of the site I collect recipes of dishes I've prepared in
       the past. Most of them are fine-tuned to the likings of my guests.
@@ -11,7 +11,7 @@ sections: {
       All recipes are in Dutch, my mother tongue, since I'm from Belgium - 
       yeah I know, please don't hold it against me ;-)
     </p>",
-  Zeilen: 
+  zeilen: 
     "<p>
       If you have sailed a cat you simply know that there is little more to
       look for in sports.
@@ -21,7 +21,7 @@ sections: {
       All sailing stories are in Dutch, my mother tongue, since I'm from 
       Belgium - yeah I know, please don't hold it against me ;-)
     </p>",
-  IT: 
+  it: 
     "<p>
       With over 30 years of hands-on experience with computers, I can hardly
       deny that I have strong feelings about IT.
@@ -36,13 +36,13 @@ sections: {
       Most of the posts in this section are in English, but since it's not my
       mother tongue, there will be mistakes ;-)
     </p>",
-  Embedded:
+  embedded:
     "<p>
       So I decided to extend my interest in technology to hardware. That's
       quite a world and this section will contain pages describing how I try to
       interface with different components.
      </p>",
-  Fotografie:
+  fotografie:
     "<p>
       I'm the proud owner of a Nikon D90. This beauty allows to me to capture
       the world the way I tend to see it.
@@ -56,21 +56,6 @@ sections: {
       If I need to add a few words of explanation, it will be in Dutch, my 
       mother tongue, since I'm from Belgium - yeah I know, please don't hold
       it against me ;-)
-    </p>",
-  Open:
-    "<p>
-      When you are passionate about something, the most natural thing to do is
-      ... be open about it. Below is a small overview of some of the software
-      projects that I call my pet projects.
-    </p>
-    <p>
-      It are projects that I just like to thinker with from time to time.
-      Maybe some of them had some commercial goal initially, but that made
-      them most of the time ``un-fun''.
-    </p>
-    <p>
-      Most of these codebases are now freely available under the very liberal
-      BSD license.
     </p>"
   }
 ---
@@ -79,7 +64,7 @@ sections: {
 <div class="section header">
   <a href="/{{ section }}">{{ section }}</a> / <a href="/">Christophe VG</a><br>
   {% if page.hideSectionImage == null %}
-  <a href="/{{ section }}"><img src="/images/sections/{{ section | downcase }}.png"></a>
+  <a href="/{{ section }}"><img src="/images/sections/{{ section }}.png"></a>
   {% endif %}
 </div>
 

@@ -3,8 +3,10 @@ layout: section
 ---
 {% capture section %}{{ page.categories | first }}{% endcapture %}
 {% capture subsection %}{{ page.categories | last }}{% endcapture %}
+{% assign allcount = 1 %}
 {% if section != subsection %}
-{% assign section = subsection %}
+  {% assign section = subsection %}
+  {% assign allcount = 2 %}
 {% endif %}
 
 <h1>{{ section | capitalize }}</h1>
@@ -18,7 +20,8 @@ layout: section
   <tr>
     <td class="column">
 {% for item in site.categories[section] reversed %}
-  {% if item.layout == "post" or item.layout == "thing" %} 
+  {% assign count = item.categories.size %}
+  {% if item.layout != "index" and count == allcount %} 
     {% capture letter %}{{ item.title | upcase | truncate: 2, " " }}{% endcapture %}
 		{% capture mod %}{{ forloop.index | divided_by: site[section] | times: site[section] | minus: forloop.index }}{% endcapture %}
     {% if currentLetter != letter %}

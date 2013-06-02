@@ -236,6 +236,7 @@ DIV.highlight PRE CODE.bash {
 /* index pages */
 
 TABLE.index {
+  width: 560px;
 }
 
 TABLE.index TD.column {

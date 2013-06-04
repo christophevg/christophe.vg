@@ -44,11 +44,30 @@ it at home in my garage and started printing my first prints.
 Although this list will soon be out-dated, I'm going to try and keep a list of
 things I print. Most of them come from
 [Thingiverse](http://www.thingiverse.com), some of them are own creations,
-which should also be uploaded to Thingiverse :-)
+some of which should also be uploaded to Thingiverse :-)
 
-* [Naked Woman Shooter Glass](http://www.thingiverse.com/thing:15012)
-* Bumba Cookie Cutter
-* [Wallace++ components](http://www.thingiverse.com/thing:45207)
+* [Naked Woman Shooter Glass](http://www.thingiverse.com/thing:15012)  
+This is a very nice introduction to show what is possible with 3D printing.
+
+* Bumba Cookie Cutter  
+First experiment with custom shapes.
+
+* [Wallace++ components](http://www.thingiverse.com/thing:45207) (failed and complete set)  
+My printrbot is nice, but it can be improved. This Wallace++ modification gives
+it a much more solid base and the horizontally mounted X-axis should also
+improve its general stability.
+
+* a replacement terminator for a tent pole  
+After the first time playing with their new toy tents, a tent pole terminator
+was lost in action. My wife suggested I try to print a replacement. With only a
+simple ruler it was a 10 minute job. First real home-improvement success :-)
+
+* keychain-style experiments with a beautiful name  
+To experiment with infilling and various other parameters, I tried a rather
+difficult shape: the name of my daughter.
+
+I try to take pictures of every print and add them to my [3D prints
+set on Flickr](http://www.flickr.com/photos/christophevg/sets/72157633850208383/)
 
 <div>
   <iframe src="http://www.flickr.com/slideShow/index.gne?group_id=&user_id=50564098@N03&set_id=72157633850208383&text="

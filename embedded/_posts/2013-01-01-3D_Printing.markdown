@@ -47,24 +47,31 @@ things I print. Most of them come from
 some of which should also be uploaded to Thingiverse :-)
 
 * [Naked Woman Shooter Glass](http://www.thingiverse.com/thing:15012)  
-This is a very nice introduction to show what is possible with 3D printing.
+This is a very nice introduction to show what is possible with 3D printing.  
+V = 16.7 cm<sup>3</sup>
 
 * Bumba Cookie Cutter  
-First experiment with custom shapes.
+First experiment with custom shapes.  
+V = 6.4 cm<sup>3</sup>
 
 * [Wallace++ components](http://www.thingiverse.com/thing:45207) (failed and complete set)  
 My printrbot is nice, but it can be improved. This Wallace++ modification gives
 it a much more solid base and the horizontally mounted X-axis should also
-improve its general stability.
+improve its general stability.  
+V = 2x 75.2 cm<sup>3</sup> + 38.7 cm<sup>3</sup> + 41.8 cm<sup>3</sup> + 19.3
+cm<sup>3</sup> + 7.9 cm<sup>3</sup> + 2.5 cm<sup>3</sup> + 3x 1.9
+cm<sup>3</sup> = 266.3 cm<sup>3</sup>
 
 * a replacement terminator for a tent pole  
 After the first time playing with their new toy tents, a tent pole terminator
 was lost in action. My wife suggested I try to print a replacement. With only a
-simple ruler it was a 10 minute job. First real home-improvement success :-)
+simple ruler it was a 10 minute job. First real home-improvement success :-)  
+V = 0.6 cm<sup>3</sup>
 
 * keychain-style experiments with a beautiful name  
 To experiment with infilling and various other parameters, I tried a rather
-difficult shape: the name of my daughter.
+difficult shape: the name of my daughter.  
+V = 1.8 cm<sup>3</sup>
 
 I try to take pictures of every print and add them to my [3D prints
 set on Flickr](http://www.flickr.com/photos/christophevg/sets/72157633850208383/)

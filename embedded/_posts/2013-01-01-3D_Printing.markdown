@@ -71,7 +71,7 @@ V = 0.6 cm<sup>3</sup>
 * keychain-style experiments with a beautiful name  
 To experiment with infilling and various other parameters, I tried a rather
 difficult shape: the name of my daughter.  
-V = 1.8 cm<sup>3</sup>
+V = 1.8 cm<sup>3</sup> and V = 4.2 cm<sup>3</sup>
 
 I try to take pictures of every print and add them to my [3D prints
 set on Flickr](http://www.flickr.com/photos/christophevg/sets/72157633850208383/)
@@ -88,14 +88,34 @@ set on Flickr](http://www.flickr.com/photos/christophevg/sets/72157633850208383/
 3D Printing at home (at this price tag at least) is not (yet) simply setting up
 and go. It's a bit of a craft and requires a lot of love.
 
-In the weeks following my workshop I encountered a lot of problems. Having
+In the weeks following my workshop I encountered a lot of problems. But, having
 built the printer myself, I was also able to track down the source and fix it.
 
-* Tilted extruder
-* Loose screw on extruder servo gear
-* Blocked large extruder gear
-* Too little tension on belts driving the axis
-* Loose screws on X-axis servo mount
+* Tilted extruder  
+Apparently I didn't tighten the screws of my extruder will enough and it was no
+longer nicely perpendicular to my plate. This caused very bad prints, but once
+solved did improve the prints _a lot_.
+
+* Loose screw on extruder servo gear  
+After a few prints my X-axis suddenly stopped working. The small screw that
+keeps the gear in place had come loose, making the motor spin with no effect.
+Remember to check and tighten that screw from time to time.
+
+* Blocked large extruder gear  
+The large gear that drives the filament into the extruder had become blocked.
+Adding two big washers between it and the extruder mount solved that one.
+
+* Too little tension on belts driving the axis  
+From time to time and more and more, my prints suddenly shifted along the X-
+and Y-axis, causing kind of a staircase effect. After searching a bit on the
+net, I found out that the cause could be that there wasn't enough tension on
+the belts. And indeed, putting a lot more tension on them solved this problem.
+
+* Loose screws on X-axis servo mount  
+I still had problems with a lot of vertical _wobble_. I initially though it was
+due to the Z-axis, until I discovered that my Y-axis servo motor was not firmly
+connected to its mount. Adding a nut to remove the spacing resulted in a firmly
+mounted servo motor, but suddenly also reasonably good prints.
 
 ## Changes
 

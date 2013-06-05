@@ -68,10 +68,11 @@ was lost in action. My wife suggested I try to print a replacement. With only a
 simple ruler it was a 10 minute job. First real home-improvement success :-)  
 V = 0.6 cm<sup>3</sup>
 
-* keychain-style experiments with a beautiful name  
+* keychain-style experiments with a beautiful names.
 To experiment with infilling and various other parameters, I tried a rather
-difficult shape: the name of my daughter.  
-V = 1.8 cm<sup>3</sup> and V = 4.2 cm<sup>3</sup>
+difficult shape: the name of my daughter. Not much later, she asked me to do
+one for her best friend's birthday party.
+V = 1.8 cm<sup>3</sup>, V = 4.2 cm<sup>3</sup> and V = 4.4 cm<sup>3</sup>
 
 I try to take pictures of every print and add them to my [3D prints
 set on Flickr](http://www.flickr.com/photos/christophevg/sets/72157633850208383/)

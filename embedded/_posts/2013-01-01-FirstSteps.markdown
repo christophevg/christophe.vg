@@ -330,3 +330,10 @@ The CONT pin can be used to configure the timing/sensitivity of the RC circuit.
 It seems that it is not often used, but varying the voltage will change the
 speed.
 
+## Step 3 : Play
+
+Once you get the hang of it, it is more of the same. Not that it becomes
+boring, on the contrary, but you can start having fun trying out thing. Below
+is a list of other small pages that deal with different experiments.
+
+* [SR Latch](SR_Latch.html)

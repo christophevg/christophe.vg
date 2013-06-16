@@ -65,37 +65,3 @@ title: The World According to Christophe VG
   </a>
   
 </div>
-
-<div class="updates">
-  <h3>Updates...</h3>
-  <div id="twitter" class="twitter"></div>
-  <noscript>
-    The site updates are pulled from my <a
-    href="http://twitter.com/Christophe_VG">Twitter</a> account using
-    Javascript, which your browser doesn't have enabled :-(
-  </noscript>
-</div>
-
-<script>
-function processUrls(text) {
-  var exp = /(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
-  return text.replace(exp,'<a href="$1"><img src="images/icons/link.png"></a>'); 
-}
-
-function processTwitter(tweets) {
-  html  = "";
-  count = 0; maxCount = 5; index=0;
-  while( count < maxCount && index<tweets.length) {
-    tweet = tweets[index++];
-    if( tweet.in_reply_to_user_id == null ) {
-      count++;
-      html += '<div class="tweet"><span class="when">'
-           +    new Date(Date.parse(tweet.created_at)).toDateString()
-           +  '</span><br>'
-           +  '<span class="content">' + processUrls(tweet.text) + '</span></div>';
-    }
-  }
-  document.getElementById('twitter').innerHTML = html;
-}
-</script>
-<script src="https://api.twitter.com/1/statuses/user_timeline/Christophe_VG.json?callback=processTwitter"></script>

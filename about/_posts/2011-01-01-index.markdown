@@ -33,3 +33,7 @@ sometimes feel the need to write down my very personal opinion about
 [things](./things).
 
 And please remember: "If you think I'm arrogant, you're missing the point."
+
+### Subsections
+
+* [Things](./things)

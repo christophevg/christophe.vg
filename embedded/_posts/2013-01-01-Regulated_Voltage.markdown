@@ -18,6 +18,15 @@ and via an adapter, connected to the electric grid.
 The circuit below shows somewhat _the_ default circuit you'll set up when
 designing something around a processor (of course one requiring 5V).
 
+<div class="thumb circuit left">
+  <a href="http://circuits.io/circuits/3024" target="_blank">
+    <img src="http://circuits.io/circuits/3024/schematic" width="700"><br>
+    http://circuits.io/circuits/3024
+  </a>
+</div>
+
+<br clear="both">
+
 It consists of a 9V source, typically from an adapter plugged into the an
 electric wall socket which is routed through an LM7805 regulator. This
 regulator will bring down the voltage to 5V and try to ease out the ripples in
@@ -37,14 +46,7 @@ add to the design. They each bridge one side of the circuit, a 100 &mu;F on the
 full and then when ripples occur and the voltage drops, they kick in and
 discharge, easing out the ripples even further.
 
-Laying things out on a breadboard ...
-
-<div class="thumb circuit left">
-  <a href="http://circuits.io/circuits/3024" target="_blank">
-    <img src="http://circuits.io/circuits/3024/schematic" height="300"><br>
-    http://circuits.io/circuits/3024
-  </a>
-</div>
+Laying things out on a breadboard and adding a switch ...
 
 <div class="thumb circuit left">
   <a href="images/full/regulated_voltage_breadboard.jpg" target="_blank">

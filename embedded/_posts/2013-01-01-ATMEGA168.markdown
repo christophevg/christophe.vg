@@ -685,6 +685,10 @@ parameter in the Makefile, rebuild and upload.
 And then the LED is blinking again at the expected rates, while the CPU is
 running at 18MHz.
 
+## Power Management
+
+TODO: watchdog, ...
+
 ## The Programming Box
 
 Just as in the case of the [regulated voltage power supply](Regulated_Voltage.html),

@@ -14,7 +14,7 @@ I use [avrdude](Avrdude.html).
 The JTAGICE mkII comes with the *squid cable*, a female JTAG connector with 10
 loose wires. It allows you to separate the 6 wires needed to connect the
 [ISP](http://en.wikipedia.org/wiki/In-System_Programming) (In System
-Programming) to the MCU's
+Programmer) to the MCU's
 [SPI](http://en.wikipedia.org/wiki/Serial_Peripheral_Interface_Bus). The
 following table shows which 6 of the 10 JTAG wires are matched to the wires
 from the squid cable:

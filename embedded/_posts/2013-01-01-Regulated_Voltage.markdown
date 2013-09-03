@@ -13,14 +13,14 @@ Therefore it is important to have a very stable power supply to hook up your
 designs. There are basically two ways to get your systems powered: batteries
 and via an adapter, connected to the electric grid.
 
-## The Circuit
+## The 5V Circuit
 
 The circuit below shows somewhat _the_ default circuit you'll set up when
 designing something around a processor (of course one requiring 5V).
 
 <div class="thumb circuit left">
   <a href="http://circuits.io/circuits/3024" target="_blank">
-    <img src="http://circuits.io/circuits/3024/schematic" width="700"><br>
+    <img src="http://circuits.io/circuits/3024/schematic" width="600"><br>
     http://circuits.io/circuits/3024
   </a>
 </div>
@@ -60,7 +60,25 @@ Laying things out on a breadboard and adding a switch ...
 To avoid dismantling the connector on the adapter, I've added a barrel jack.
 This allows me to simply plug in the connector from the adapter.
 
-## The Box
+## The 3V Circuit<a name="mcp1700">&nbsp;</a>
+
+While designing my first [mote](XT0F-003.html), I wanted to use a [LIPO battery of
+3.7V with 1400mAh](https://www.olimex.com/Products/Power/BATTERY-LIPO1400mAh/).
+My design required 3.3V, so I had to create a drop. With a little help from a
+[friend](http://aitec.be), I found the
+[MCP1700](http://www.microchip.com/wwwproducts/Devices.aspx?dDocName=en010642),
+which perfectly fitted my requirements.
+
+<div class="thumb circuit left">
+  <a href="http://circuits.io/circuits/4969" target="_blank">
+    <img src="http://circuits.io/circuits/4969/schematic" width="600"><br>
+    http://circuits.io/circuits/4969
+  </a>
+</div>
+
+<br clear="both">
+
+## The Boxed Version
 
 As this is the first basic building block, I thought it might be a good idea to
 actually build this in a small and boxed form factor, as a default power source
@@ -69,4 +87,7 @@ experimenting with transferring such a design from the breadboard to a PCB.
 Besides that it is also a good excuse to design an enclosure and print it using
 my new 3D Printer ;-)
 
-To be continued ...
+This first building block is called [XT0F-001](XT0F-001.html) and it's the
+first component from my [XT0F](XT0F.html) family of components. On its
+[page](XT0F-001.html), details about the actual implementation are collected in
+more detail.

@@ -1,0 +1,41 @@
+---
+layout: post
+title: XT0F-001 - Regulated Power
+---
+
+XT0F-001 is a an implementation of the [regulated power
+supply](Regulated_Voltage.html). Initially I provides 5V, but I intend to add
+support for the 3V circuit also.
+
+## Revision 1
+
+The first revision is a basic, straight-forward implementation of the
+breadboard design of my [regulated power supply](Regulated_Voltage.html)
+
+<div class="thumb circuit left">
+  <a href="images/full/regulated_voltage_breadboard.jpg" target="_blank">
+    <img src="images/thumb/regulated_voltage_breadboard.jpg"><br>
+    regulated voltage circuit on a breadboard
+  </a>
+</div>
+
+<br clear="both">
+
+The power-supply barrel connector and the switch are connected using wires and
+are not mounted on the prototype board and will be incorporated into the casing.
+
+<div class="thumb circuit left">
+  <a href="images/full/xt0f-001-rev1.png" target="_blank">
+    <img src="images/thumb/xt0f-001-rev1.png"><br>
+    revision 1 through-hole design
+  </a>
+</div>
+
+<br clear="both">
+
+On the right two female headers are mounted in a 90 degree angle, providing a
+socket-style connector for other designs.
+
+### Status
+
+Needs to be implemented :-)

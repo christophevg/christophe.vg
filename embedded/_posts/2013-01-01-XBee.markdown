@@ -1,0 +1,214 @@
+---
+layout: post
+title: XBee - Zigbee module
+---
+
+Zigbee is the de facto wireless communication standard in Wireless Sensor
+Networks these days. It's a low-power communication stack that provides a way
+to create a meshed network of motes.
+
+To ease the initial pain, I decided to start with a very nicely packed module,
+created within the realm of Arduino. The [XBee](http://www.digi.com/xbee/)
+family of modules are a cost-effective way of incorporating Zigbee into
+embedded systems.
+
+# The Goodies
+
+Let's start with the things we need to get started...
+
+## Hardware
+
+<div class="thumb right">
+  <img src="images/full/xbee-s2-wire.png" 
+       alt="XBee S2 with wire Antenna">
+</div>
+
+Below is the list of hardware I bought to get started. I've included links to a
+reasonably priced reseller, but other sources are equally good or even cheaper.
+
+[XBee S2 with wire antenna](http://www.antratek.nl/xbee-1-25mw-series-2-wire-antenna-xb24-z7wit-004)
+
+The XBee module come in two major flavors: Series 1 and Series 2. Series 2
+implements the entire Zigbee standard and it's therefore important to remember
+that you can't mix the two series. I chose Series 2, which was also the choice
+of the book I used to get started.
+
+<div class="thumb right" style="clear:both">
+  <img src="images/full/xbee-adapter-board.png" 
+       alt="XBee Adapter Board">
+</div>
+
+[XBee adapter board](http://www.antratek.nl/xbee-adapter-board)
+
+The XBee module's pins are spaced at 2mm, which is not the same as the 1"
+spacing of regular through-hole boards. To be able to mount them on a breadboard
+or on a basic board, one needs an adapter. These adapters are too cheap not to
+buy and allow you to get started quickly. They (most of the time) come with
+both the female headers to fit the XBee aswel as male headers to prepare them
+to be mounted on regularly spaces boards.
+
+<div class="thumb right" style="clear:both">
+  <img src="images/full/xbee-usb-explorer.png" 
+       alt="XBee USB Explorer">
+</div>
+
+[XBee explorer board](http://www.antratek.nl/xbee-explorer-usb)
+
+Finally, although you are ready to go with two XBees, a very useful addition is
+a USB adapter. It's almost a necessity to be able to configure and upload
+firmware to your module and it makes an easy way of connecting an XBee to your
+computer and control it from there.
+
+## Software
+
+To be able to configure the XBee module, one needs the
+[X-CTU](http://www.digi.com/support/productdetail?pid=3352&osvid=57&type=utiliti
+es) provided by Digi. It's a Windows only solution, which is a pity. I found
+references to non-Windows solutions, but along those also the comments that
+it's not the real thing. So better launch that Windows partition or virtual
+machine.
+
+## Literature
+
+<div class="thumb right" style="clear:both">
+  <img src="images/full/building_wireless_sensor_networks_cover.gif" 
+       alt="Building Wireless Sensor Networks">
+</div>
+
+Although the standard documentation of the XBee is pretty decent, I again
+consulted O'Reilly for some additional reading material. "Building Wireless
+Sensor Networks" introduces WSN through small projects based on the XBee module.
+
+The book is aimed at very novice users, which makes it an easy and fast read.
+The examples gradually build up the complexity using realistic examples.
+Because not all material was of interest to me, I could skip large parts
+dealing with processing and setting up an internet-gateway. Overall the book
+presented me with the background information I needed to build my own way of
+using the XBee module.
+
+It's surely not a must and you will find most of the interesting information
+also through online sources, but I found it to be a good help and in the end it
+took me less than half a day to go through the parts that were interesting to
+me. The information on this page is to great extend what I wanted to recall
+later, but it surely doesn't cover the entire book.
+
+# Transparent or API Mode
+
+The XBee module provides two ways of interacting with the underlying Zigbee
+protocols: the default transparent mode and the API mode.
+
+Choosing a mode requires a different firmware, due to the size constraints of
+the XBee. The same goes for the role the mote will have in the network, as we
+will see below when I briefly introduce the Zigbee network topology.
+
+## Transparent Mode
+
+In transparent mode, two module simply replace a serial (cable) connection. The
+module has a simple pair of Data In and Data Out pins which can be directly
+connected to the corresponding pins of a UART. So in a way, we can consider the
+XBee module - in transparent mode - a drop-in replacement for a
+[MAX232](MAX232.html) and attached serial cable.
+
+## API Mode
+
+TODO: automated configuration, 
+
+# Concepts and Configuration
+
+## Zigbee networks
+
+TODO: coordinator, router, end-node
+TODO: network id,...
+
+TODO: Minimal Configuration
+
+# Project 1: Hello Wireless Echo
+
+As we saw before, a pair of XBees in transparent mode can replace a serial
+connection. When looking at the [MAX232](MAX232.html), I already build a small
+example with an [ATMEGA](ATMEGA168.html) communicating with a terminal
+emulation over an RS232 serial connection on a computer.
+
+Let's cut that wire ...
+
+## Circuit
+
+<div class="thumb circuit left">
+  <a href="http://circuits.io/circuits/5152" target="_blank">
+    <img src="http://circuits.io/circuits/5152/schematic" width="650"><br>
+    http://circuits.io/circuits/5152
+  </a>
+</div>
+
+<br clear="both">
+
+The circuit couldn't be simpler: hook up 3.3V to an ATMEGA and an XBee and
+connect TX and RX from the ATMEGA to DOUT and DIN on the XBee. That's it. This
+circuit also added two LEDs, connected directly to the XBee. These tell us a
+little about the status and connection of the XBee.
+
+I've also connected the XBee's DTR pin to port D2 (pin 4) on the ATMEGA. This
+will allow me to control the XBee's status and put it to sleep. Adding a
+pushbutton to function as a reset button for the ATMEGA will also prove to be a
+valuable tool.
+
+## Software
+
+The same [software as with the
+MAX232](https://github.com/christophevg/embedded/blob/master/serial/main.c) can
+literally be reused, but now without the wires.
+
+## Setup
+
+When discussing the configuration we already covered setting up a coordinator
+and an end-node. The coordinator is hooked up to our computer using a USB
+explorer board and the end-node is hooked up to the ATMEGA as shown in the
+circuit above.
+
+TODO: foto computer + coordinator + breadboard with XBee and ATMEGA.
+
+## Action
+
+Time to fire up a terminal emulator and see what happens ...
+
+TODO: show first start-up, nothing happens ? -> reset after well connected.
+TODO: explain LEDs
+TODO: show reset -> problem: wait when booting for first time
+
+# Pushing the Limits
+
+So we've hit a first speed-bump. We need a way to wait at the ATMEGA side until
+the XBee is associated and connected, before starting to send out characters.
+
+## Other Limits
+
+* sender/receiver ? -> 1-on-1 only
+
+## Cranking up the Possibilities
+
+TODO: introduction API
+
+# Project 2: Using the API
+
+TODO: project that uses API to wait_for_association, sleep, wakeup, send
+      byte_array_, string
+
+## Introducing the API
+
+TODO
+
+## Configuraion
+
+TODO
+
+## Circuit
+
+TODO
+
+## Software
+
+TODO
+
+## Action
+
+TODO

@@ -1,6 +1,7 @@
 permalink: none
 pygments: true
 safe: true
+excerpt_separator: blah123
 url: http://christophe.vg
 about: 1
 fotografie: 1

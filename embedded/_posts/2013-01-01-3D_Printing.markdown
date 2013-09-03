@@ -33,7 +33,7 @@ Below is a Flickr slideshow of that workshop up to the point where I installed
 it at home in my garage and started printing my first prints.
 
 <div>
-  <iframe src="http://www.flickr.com/slideShow/index.gne?group_id=&user_id=50564098@N03&set_id=72157633851203240&text="
+  <iframe src="http://www.flickr.com/slideShow/index.gne?group_id=&amp;user_id=50564098@N03&amp;set_id=72157633851203240&amp;text="
           width="560" height="450" frameBorder="0" scrolling="no" align="center">
     <br>
   </iframe>
@@ -78,7 +78,7 @@ I try to take pictures of every print and add them to my [3D prints
 set on Flickr](http://www.flickr.com/photos/christophevg/sets/72157633850208383/)
 
 <div>
-  <iframe src="http://www.flickr.com/slideShow/index.gne?group_id=&user_id=50564098@N03&set_id=72157633850208383&text="
+  <iframe src="http://www.flickr.com/slideShow/index.gne?group_id=&amp;user_id=50564098@N03&amp;set_id=72157633850208383&amp;text="
           width="560" height="450" frameBorder="0" scrolling="no" align="center">
     <br>
   </iframe>

@@ -17,8 +17,9 @@ all documents.
 
 # MacTex
 
-Download and install the latest version of MacTex from http://tug.org/mactex/.
-Mind that it's a big download - 2.3G at the time of writing.
+Download and install the latest version of MacTex from
+[http://tug.org/mactex/](http://tug.org/mactex/). Mind that it's a big download
+- 2.3G at the time of writing.
 
 ## LiveTex Utility
 
@@ -27,7 +28,8 @@ Run the LiveTex Utility and update all packages.
 # KUL Engineering Master Thesis Class
 
 Download the KULEMT class distribution from
-ftp://ftp.esat.kuleuven.be/latex/kulemt/. You can log in as a guest user.
+[ftp://ftp.esat.kuleuven.be/latex/kulemt/](ftp://ftp.esat.kuleuven.be/latex/kule
+mt/). You can log in as a guest user.
 
 Next follow the instructions in the <tt>README</tt> file.
 

@@ -1,0 +1,70 @@
+---
+layout: post
+title: PIC
+---
+
+For a course on software for [realtime and embedded
+systems](http://onderwijsaanbod.kuleuven.be/syllabi/e/H04L2AE.htm) I was
+invited to explore a [PIC](www.microchip.com/pic/‎) microcontroller. Up to that
+point my primary and only target had been the [ATMEGA](ATMEGA168.html) mcu. The
+actual mcu was a [PIC
+18F97J60](http://www.microchip.com/wwwproducts/Devices.aspx?dDocName=en026439),
+installed on the
+[PIC-MAXI-WEB](https://www.olimex.com/Products/PIC/Development/PIC-MAXI-WEB/)
+development board by Olimex.
+
+# Development Environment
+
+{% highlight bash %}
+$ port search gputils
+gputils @1.2.0 (devel)
+    GNU PIC Utilities
+
+$ sudo port install gputils
+Password:
+--->  Fetching archive for gputils
+...
+--->  Updating database of binaries: 100.0%
+--->  Scanning binaries for linking errors: 100.0%
+--->  No broken files found.
+
+$ sudo port install sdcc29
+--->  Computing dependencies for sdcc29
+--->  Dependencies to be installed: boost icu
+...
+--->  Updating database of binaries: 100.0%
+--->  Scanning binaries for linking errors: 100.0%
+--->  No broken files found.
+{% endhighlight %}
+
+Note: I had to use *sdcc29* to be able to work on an assigned project with
+dependencies on bugs in this compiler version to work correctly, functionally.
+E.g.: <tt>long long</tt> only has limited support in the 3.3 branch, while the
+2.9 branch allowed this due to a bug and considers it to be a simple
+<tt>long</tt>.
+
+To be able to compile the provided example code, the Makefile had to be adapted
+to match the paths used by the port:
+
+{% highlight make %}
+# The original Makefile had many hard-code paths to e.g. /usr/local
+# When installing the compiler using package management, like MacPorts, the
+# following changes allow the use of e.g. port sdcc29 (not sdcc! which is 3.3.0)
+ifneq ($(wildcard /opt/local/libexec/sdcc29),)
+  PREFIX=/opt/local/libexec/sdcc29
+  INCLUDE_DIR=$(PREFIX)/share/sdcc/include/pic16
+  LIB_DIR=-L$(PREFIX)/share/sdcc/lib/pic16 \
+          -L$(PREFIX)/share/sdcc/lib/src/pic16/libc
+  BIN=$(PREFIX)/bin/
+else
+  # default setup
+  INCLUDE_DIR=/usr/local/share/sdcc/include
+  LIB_DIR=-L/usr/local/lib/pic16
+  BIN=
+endif
+{% endhighlight %}
+
+# Resources
+
+* [datasheet](http://ww1.microchip.com/downloads/en/DeviceDoc/39762f.pdf)
+

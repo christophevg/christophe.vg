@@ -484,6 +484,18 @@ So the answer is <tt>2222</tt> which is what we expected.
 
 I'm using the same circuit as before, so no hardware changes here.
 
+### IMPORTANT
+
+When we're going to put nodes to sleep, it is important that their parent
+nodes, e.g. the coordinator, are aware of this. The XBee has a couple of
+settings (SN and SP) to configure their sleep period. For parents, this also
+means the time they expect their children to sleep ... maximally. After this
+timeout they flush their associations with their children, causing them to
+re-associate again.
+
+Make sure that parent nodes always have a setting for SP and SN that is equal
+or higher than the highest values of their children.
+
 ## Software
 
 On the software side, we need to implement some functions to handle the API.

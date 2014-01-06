@@ -151,11 +151,11 @@ have accumulated a predefined amount of credits to actually graduate.
 An important _side-note_ here is that they don't take on one specific
 curriculum. During these five years they possibly discover that their actual
 interest lies somewhere else - maybe they encountered an interesting company or
-did a course suddenly ring a different bell, or simply did they have had some
-time to explore and now start to zoom in into one specific topic of interest.
-The only requirement is that at the end of their period, they should have
-accumulated enough credits to comply with the minimal regulations required by
-the discipline they want to graduate in at that time.
+did a course suddenly ring a different bell, or simply did they have some time
+to explore and now start to zoom in on one specific topic of interest. The only
+requirement is that at the end of their studies, they should have accumulated
+enough credits to comply with the minimal regulations required by the
+discipline they want to graduate in at that time.
 
 As I see it, this form of education would be a win-win-win situation, where
 both the student, the industry and the higher educational institutes would
@@ -173,8 +173,8 @@ would be amortized. Secondly, companies finally hiring graduates would no
 longer have to wait for five years to see these juniors become productive. They
 would even see a much improved intake process, where the graduate actually
 knows the company or at least has enough experience to know if this is their
-primary interest. Job-hopping rates would probably be a lot lower and fear to
-loose someone after the initial period would be a lot lower. 
+primary interest. Job-hopping rates would probably be a lot lower as would the
+fear to loose someone after the initial period.
 
 Finally, higher education would benefit from this very tight integration with
 the actual industry. Seeing students going back and forth between workplace and
@@ -183,7 +183,7 @@ problems, that can be integrated into the courses. Professors would get
 first-hand feedback about application of their courses in real-world
 situations. This way, problems encountered at work, could be discussed in class
 and perhaps new and great ideas could emerge, resulting in another win for the
-industrial partners, who now get a entire research group with the working
+industrial partners, who now get a entire research group with the employed
 student.
 
 Now, to avoid the obvious, I need to add one special case: the academic world

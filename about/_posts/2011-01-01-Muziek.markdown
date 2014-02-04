@@ -1,7 +1,7 @@
 ---
 layout: post
 hideSectionImage: true
-title: 
+title: Muziek
 ---
 
 ## Favoriete Song Tekst van het ogenblik ...

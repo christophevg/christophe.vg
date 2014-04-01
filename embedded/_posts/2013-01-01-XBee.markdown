@@ -522,7 +522,7 @@ where we send an AT command.
 
 ### Power Management
 
-We also wanted power management in this project. Two <tt>xbee_</tt> functions
+We also wanted power management in this project. Two <tt>xbee_ </tt> functions
 are implemented:
 
 {% highlight c %}

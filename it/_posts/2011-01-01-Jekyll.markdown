@@ -3,15 +3,27 @@ layout: post
 title: Jekyll Notes
 ---
 
-When I started moving all of my domains from my co-located hosts into the cloud, I needed a way to keep alive a few websites I own - like this one. Before solving that problem, I already had moved all my repositories to [GitHub](http://github.com) and one of the requirements therefore was that I wanted to be able to simply push and see my sites online.
+When I started moving all of my domains from my co-located hosts into the
+cloud, I needed a way to keep alive a few websites I own - like this one.
+Before solving that problem, I already had moved all my repositories to
+[GitHub](http://github.com) and one of the requirements therefore was that I
+wanted to be able to simply push and see my sites online.
 
-[GitHub Pages](http://pages.github.com) seemed a nice initial solution. It only offers hosting for static pages, but they provide support for  [Jekyll](https://github.com/mojombo/jekyll), a static site generator.
+[GitHub Pages](http://pages.github.com) seemed a nice initial solution. It only
+offers hosting for static pages, but they provide support for
+[Jekyll](https://github.com/mojombo/jekyll), a static site generator.
 
-Although far from ideal, it currently allows me to maintain most of my sites, without the need for any fancy CMS.
+Although far from ideal, it currently allows me to maintain most of my sites,
+without the need for any fancy CMS.
 
 ## Installation
 
 Follow the instruction in [https://help.github.com/articles/using-jekyll-with-pages](https://help.github.com/articles/using-jekyll-with-pages)
+
+### Ruby and RVM
+
+It's a good idea to use [RVM](Ruby_on_Mac.html) to install a clean Ruby
+environment.
 
 ### Minimal Survival commands
 

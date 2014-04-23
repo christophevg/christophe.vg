@@ -3,6 +3,7 @@ pygments: true
 safe: true
 excerpt_separator: blah123
 url: http://christophe.vg
+markdown: kramdown
 about: 1
 fotografie: 1
 it: 10

@@ -73,7 +73,14 @@ PS en voor zij die nog twijfelen dat was inderdaad een verwijzging naar ...
 [http://youtu.be/4fyYlZ7ZDa8](http://youtu.be/4fyYlZ7ZDa8), maar die hebben er
 alletwee niets mee te maken, ... misschien ;-)
 
-<br><br>
+<br>
+
+<style>
+DIV.answer {
+  border-left: 5px solid #00cc00; 
+  padding-left: 10px;
+}
+</style>
 
 ---
 
@@ -85,7 +92,18 @@ Om de spieren wat los te gooien en ons wat op te warmen, kortom om jullie
 alvast even de tijd te geven om op zoek te gaan naar elkaar en plannen te
 smeden, hier een eerste, _zeer_ eenvoudige tip: "123".
 
-<br><br>
+<div class="answer" markdown="1">
+Deze tip was _eenvoudig_ op te lossen met minimale kennis over mij en een
+beetje handigheid bij het zoeken op internet. Mijn normale verjaardag en 123
+brengen je al snel bij bv.:
+
+[http://nl.wikipedia.org/wiki/3_mei](http://nl.wikipedia.org/wiki/3_mei) :
+
+3 mei is de **123**ste dag van het jaar (124ste dag in een schrikkeljaar) in de
+gregoriaanse kalender. Hierna volgen nog 242 dagen tot het einde van het jaar.
+</div>
+
+<br>
 
 ---
 
@@ -98,7 +116,32 @@ belangrijk is geweest voor mij: "Zoals jullie weten hou ik enorm van films.
 Vooral cult-films maakten de cinemazaal meer dan eens een echt toevluchtsoord
 wanneer de wereld weer eens doordraaide."
 
-<br><br>
+<div class="answer" markdown="1">
+Bij deze tip moet je deel uitgemaakt hebben van de groep die dat deel van mijn
+leven heeft opgeluisterd. Ofschoon ik nog weinig contact met hen heb, zit er
+wel nog iemand van toen bij de contacten op Google+:
+[Geert Vermeiren](https://plus.google.com/+GeertVermeiren). Zij die ooit
+contact hadden met mijn kozijn (iets moeilijker te vinden online tegenwoordig)
+zouden misschien bij hem hier ook een antwoord op gevonden kunnen hebben.
+
+Voor hen zou er eigenlijk wel een belletje moeten gaan rinkelen bij het lezen
+van volgende trefwoorden: cult, sanctuary (toevluchtsoord), "the world spins
+around" (de wereld weer eens doordraaide).
+
+"She sells Sancutary", van The Cult, was zowat een hymne gedurende een zeer
+speciale zomer in de zeilclub van **Duinbergen**.
+
+Ook de films en filmzaal waren in combinatie met cult-film een bijkomende
+verwijzing naar bv. "Point Break", het _droom/ideaal-beeld_ waar we ons toen zo
+graag aan spiegelden. Maar dat geheel terzijde.
+
+</div>
+
+<br>
+
+<object width="420" height="315"><param name="movie" value="//www.youtube.com/v/8I8mWG6HlmU?hl=en_US&amp;version=3&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="//www.youtube.com/v/8I8mWG6HlmU?hl=en_US&amp;version=3&amp;rel=0" type="application/x-shockwave-flash" width="420" height="315" allowscriptaccess="always" allowfullscreen="true"></embed></object>
+
+<br>
 
 ---
 
@@ -128,7 +171,32 @@ Dat gezegd, is het tijd voor een volgende, eigenlijk te gemakkelijke tip. We
 zoeken deze keer een titel: "Bij het aardappelrooien ging ik bijna over mijn
 nek toen ik zag hoe een stier aan de andere kant van de vaart van katoen gaf."
 
-<br><br>
+<div class="answer" markdown="1">
+Hier gaan mogelijk verschillende mensen zich voor het hoofd slagen. Christophe
+en Mark ik ben er _zeker_ van dat jullie zich nog wel de nachten herinneren
+waar dit nummer ons tot zeer bizarre danspasjes verleidde.
+
+We vertalen enkele trefwoorden uit de tip:
+
+* (de) "rooien" : red(s)
+* "nek" : neck
+* "stier" : bull ... of anders geschreven: Boule
+* "katoen" : cotton
+
+Nog verstopt:
+
+* "ik zag", zien, dat doe met een oog : eye
+* "aan de andere kant van de vaart(straat)" lag ... opnieuw, den Boule
+* aardappel vertaalt naar potato en misschien ken je "Potato Joe" wel.
+
+Kortom ... ik denk dat jullie nu wel het puzzeltje kunnen leggen:
+</div>
+
+<br>
+
+<object width="420" height="315"><param name="movie" value="//www.youtube.com/v/VcDy8HEg1QY?hl=en_US&amp;version=3&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="//www.youtube.com/v/VcDy8HEg1QY?hl=en_US&amp;version=3&amp;rel=0" type="application/x-shockwave-flash" width="420" height="315" allowscriptaccess="always" allowfullscreen="true"></embed></object>
+
+<br>
 
 ---
 
@@ -141,7 +209,33 @@ ouder. Op 20 februari blaast Eline elk jaar trots haar kaarsjes uit. Arjen doet
 dit op 11 april. Maar weet u ook wie op 22 februari elk jaar deze heldendaad
 tot een goed einde brengt?
 
-<br><br>
+<div class="answer" markdown="1">
+We verhuizen naar nog een andere groep mensen die een deel hebben uitgemaakt
+van mijn leven: [Anthony](https://plus.google.com/+AnthonyLiekens),
+[Manu](https://plus.google.com/+ManuHeirbaut),
+[Dale](https://plus.google.com/107357591958964339570) &
+[Walle](https://plus.google.com/115805631932260798822). Iedereen weet dat we nu
+op het computer en nerdy gedeelte van mijn leven zijn gekomen.
+
+Met wat hulp van tip 6, werd gelukkig al duidelijk dat het over een domeinnaam
+ging, maar geen .com! De _heldendaad_ had daarbij toch misschien een belletje
+moeten doen rinkelen bij één van mij dierbare _commerads_.
+
+Het feit dat we na enkele jaren van grote afstand tegenwoordig elkaar af en toe
+nog wel eens terug zien, bewijst dat het uiteindelijk toch nog "tot een goed
+einde" is gekomen.
+
+Op 22 februari 1999 besloten we namelijk om onze beperkte studenten-centjes bij
+elkaar te leggen en onze allereerste eigen domeinnaam te registreren:
+**[nerdhero.org](http://nerdhero.org)**
+
+    $ whois nerdhero.org
+    Domain Name:NERDHERO.ORG
+    Domain ID: D3812433-LROR
+    Creation Date: 1999-02-22T05:00:00Z
+</div>
+
+<br>
 
 ---
 
@@ -154,7 +248,19 @@ feitelijke noemde.
 
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2494.8582331463804!2d4.621378500000011!3d51.29533289999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c400fcae398669%3A0xf95f0d47bde3a2fe!2sVraagheideweg+65!5e0!3m2!1sen!2sbe!4v1398246066987" width="400" height="300" frameborder="0" style="border:0"></iframe>
 
-<br><br>
+<div class="answer" markdown="1">
+Deze locatie gaat terug tot minstens 1997. Weinigen waren er toen al bij, maar
+Kristien is er ooit geweest. Anthony is er ooit niet mee naartoe willen gaan en
+mijn ouders zouden bij het horen van dit adres onmiddellijk de naam die wij er
+toen aan gaven gezegd hebben:
+
+**'t Bos** was de naam voor het buitenverblijf van mijn grootouders, waar ik
+letterlijke het merendeel van mijn pre-puber-zomers heb doorgebracht.
+
+Een blik op de satellietfoto's bracht jullie misschien ook al een heel eind ;-)
+</div>
+
+<br>
 
 ---
 
@@ -164,4 +270,41 @@ feitelijke noemde.
 
 ![](images/crossword.png)
 
-<br><br>
+
+<div class="answer" markdown="1">
+Zoals ik aan het begin al zei, het was een niet-uitnodiging, of misschien een
+uitnodiging voor een niet-verjaardagsfeest.
+
+Na 40 jaar, met de nodige ups en downs, toppen en dalen, feestjes en verdriet,
+vondsten en verlies, hoop ik dat de mensen die vandaag nog in mijn leven een
+rol spelen, dat nog lang zullen doen. De wereld draait, voor ons allemaal, zo
+snel dat onze banden soms verloren (lijken te) gaan in de jachtigheid. Soms
+lijkt het dat alles zo georganiseerd moet zijn wanneer we elkaar dan toch nog
+eens zien, dat het moment zelf bijna verloren gaat in plichtplegingen en regels.
+
+Vandaag wil ik geen groot feest waar later nog over gesproken wordt, wil ik
+niet al het geld van Bill Gates. Vandaag wil ik gewoon een onbezonnen dag voor
+mezelf en al mijn vrienden, zonder organisatie, zonder veel tralala, gewoon een
+ongedwongen, eenvoudig moment van een alledaags bezoek, een eenvoudige pint (of
+Duvel), een bevroren fles ice-tea en misschien nog een hapje dat nog ergens in
+de bijkeuken staat, als je er zelf al geen bij hebt of enkele take-out snacks
+die je onderweg opgepikt hebt.
+
+Een moment zoals het vroeger was toen we elkaar troffen op de zeilclub, in de
+Gecko's of den Boule, op mijn kot in de Leeuwerikenstraat, Nationale Straat,
+Augustijnenstraat of de Lei, of gewoon over de haag in de tuin. Laat ons er
+gewoon een niet-verjaardag van maken, elke andere dag beleven alsof het onze
+verjaardag is, maar deze eens heel gewoon doorbrengen, alsof er niets aan de
+hand is.
+
+_Als_ jullie agenda het toelaat natuurlijk.
+
+Uw mad Hatter van dienst,  
+Christophe
+</div>
+
+<br>
+
+<object width="420" height="315"><param name="movie" value="//www.youtube.com/v/RdsZT7WKjW8?hl=en_US&amp;version=3&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="//www.youtube.com/v/RdsZT7WKjW8?hl=en_US&amp;version=3&amp;rel=0" type="application/x-shockwave-flash" width="420" height="315" allowscriptaccess="always" allowfullscreen="true"></embed></object>
+
+<br>

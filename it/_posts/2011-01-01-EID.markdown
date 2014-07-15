@@ -6,6 +6,25 @@ title: eID notes
 If you live in Belgium and want to use your eID on Mac OS X, things aren't all
 that nice. 
 
+<div style="width:550px;color:#3c763d;background-color:#dff0d8;border-color:#d6e9c6;padding:15px;margin-bottom:20px;border:1px solid transparent;border-radius: 4px;">
+
+  <b>NOTE</b>
+  <br><br>
+
+  My notes are sometimes outdated. Currently the development of an Open Source
+  software package for the Belgian eID is maintained by the great people at <a
+  href="http://www.linuxbe.com">Linux Belgium</a>. I haven't tested it, but
+  they say - and I'm willing to believe them - that the installation
+  instructions provided at <a
+  href="http://eid.belgium.be/nl/je_eid_gebruiken/de_eid-middleware_installeren/
+  ">http://eid.belgium.be/nl/je_eid_gebruiken/de_eid-middleware_installeren/</a>
+   should provide you with a single-install solution.
+
+  <br><br>
+  If not ... continue on reading and blame Jasper ;-)
+
+</div>
+
 ## Keychain/Safari Integration
 
 As of Mac OS X 10.7 things got even worst due to the removal of the

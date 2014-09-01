@@ -1,5 +1,5 @@
 permalink: none
-pygments: true
+highlighter: pygments
 safe: true
 excerpt_separator: blah123
 url: http://christophe.vg

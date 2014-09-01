@@ -23,7 +23,7 @@ layout: section
   {% assign count = item.categories.size %}
   {% if item.layout != "index" and count == allcount %} 
     {% capture letter %}{{ item.title | upcase | truncate: 2, " " }}{% endcapture %}
-		{% capture mod %}{{ forloop.index | divided_by: site[section] | times: site[section] | minus: forloop.index }}{% endcapture %}
+		{% capture mod %}{{ forloop.index | modulo: site[section] }}{% endcapture %}
     {% if currentLetter != letter %}
       {% assign currentLetter = letter %}
       	<h2>{{ currentLetter }}</h2>

@@ -7,10 +7,11 @@ For my master thesis, I needed to get the KUL Engineering Master Thesis Class
 working with MacTex. This page describes this process. It is based on the
 information provided by the <tt>README</tt> file, included in the distribution.
 
-Because I work on my beloved Mac and use TexShop to edit LaTeX files, I wanted
-to work with these tools. TexShop comes with the MacTex distribution, but non
-of these are mentioned in the KULEMT distribution documentation. This page was
-written to confirm that everything works perfectly and shows how it is done.
+Because I work on my beloved Mac and use TextMate to edit LaTeX files, I wanted
+to work with these tools. To have a working LaTeX environment, the MacTex
+distribution is the right way to go. But these aren't mentioned in the KULEMT
+distribution documentation. This page was written to confirm that everything
+works perfectly and shows how it is done.
 
 Disclaimer: All credits for this work go of course to the people mentioned in
 all documents.
@@ -19,7 +20,7 @@ all documents.
 
 Download and install the latest version of MacTex from
 [http://tug.org/mactex/](http://tug.org/mactex/). Mind that it's a big download
-- 2.3G at the time of writing.
+- 2.4G at the time of writing.
 
 ## LiveTex Utility
 
@@ -38,7 +39,7 @@ Next follow the instructions in the <tt>README</tt> file.
 The KULEMT template requires the memoir class. The README provides a command
 for this, but you can do this from the LiveTex utility.
 
-## Installing the KUEMT class
+## Installing the KULEMT class
 
 The README provides steps to do this. I here follow the instruction to do a
 system-wide installation. Adapting these to the instructions in the README for
@@ -117,3 +118,9 @@ and typeset again. Et voila, the bibliography is also rendered.
 
 Compare it to the provided <tt>masterproef.pdf</tt> and then start customizing
 the template.
+
+## TextMate
+
+Opening a LaTeX file in TextMate and issuing a run command will nicely build
+the document. No hassle ;-)
+

@@ -7,7 +7,7 @@ A few years ago I also made the switch from Subversion to Git. And I never looke
 
 ## Installation
 
-On [Mac OS X](Mac_OS_X_Notes.html) Git can be installed using a clean disk image that can be downloaded from [http://code.google.com/p/git-osx-installer/](http://code.google.com/p/git-osx-installer/).
+On [Mac OS X](Mac_OS_X_Notes.html) recent versions ask to install git on first use.
 
 ## References
 
@@ -33,6 +33,8 @@ Running [Mac OS X](Mac_OS_X_Notes.html), discovering GitX was a blessing. Althou
 The mother of all versions can be found at : [https://github.com/pieter/gitx](https://github.com/pieter/gitx)
 
 But an experimental and much improved fork lives at : [https://github.com/brotherbard/gitx/wiki](https://github.com/brotherbard/gitx/wiki)
+
+The version I'm currently tracking as a binary comes from [http://rowanj.github.io/gitx/](http://rowanj.github.io/gitx/).
 
 ### tig
 

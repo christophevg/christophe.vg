@@ -28,3 +28,6 @@ window (including the shadow) on the desktop.
 
 ### Java
   See [Java on Mac](Java_on_Mac.html)
+
+### OS X Fuse + SSHFS
+  [http://osxfuse.github.io](http://osxfuse.github.io)

@@ -1,0 +1,78 @@
+---
+layout: post
+title: Alfresco Notes
+---
+
+Yet another CMS, yet another Java-based PITA installation ... *sigh*
+
+## Downloads
+- tomcat7 from [http://tomcat.apache.org/download-70.cgi](http://tomcat.apache.org/download-70.cgi)
+- alfresco from [http://wiki.alfresco.com/wiki/Community_file_list_5.0.c](http://wiki.alfresco.com/wiki/Community_file_list_5.0.c)
+- mysql-connector from [http://dev.mysql.com/downloads/connector/j/](http://dev.mysql.com/downloads/connector/j/)
+
+## Procedure
+
+This procedure was performed on Mac OS X 10.9 with MacPorts
+
+### MySQL 5
+
+{% highlight bash %}
+$ sudo port install mysql5 mysql5-server
+...
+$ sudo -u _mysql mysql_install_db5
+...
+$ /opt/local/lib/mysql5/bin/mysql_secure_installation
+...
+$ mysql5 -uroot -p
+...
+mysql> CREATE USER 'alfresco'@'localhost' IDENTIFIED BY 'alfresco';
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> CREATE DATABASE alfresco;
+Query OK, 1 row affected (0.00 sec)
+
+mysql> GRANT ALL ON alfresco.* TO 'alfresco'@'localhost';
+Query OK, 0 rows affected (0.00 sec)
+{% endhighlight %}
+
+### Tomcat 7
+
+* unpack release and set `CATALINA_HOME` to that directory
+* edit `${CATALINA_HOME}/conf/tomcat-users.xml`
+{% highlight xml %}
+<tomcat-users>
+  <role rolename="manager-gui"/>
+  <user username="admin" password="admin" roles="manager-gui"/>
+</tomcat-users>
+{% endhighlight %}
+* use `${CATALINA_HOME}/bin/catalina.sh {start|stop}`
+* access via  [http://localhost:8080](http://localhost:8080)
+* copy `mysql-connector-java-5.1.34-bin.jar` to `${CATALINA_HOME}/lib/`
+
+### Alfresco 5
+
+* info
+  * [http://docs.alfresco.com/community/tasks/alf-war-install.html](http://docs.alfresco.com/community/tasks/alf-war-install.html)
+  * [http://docs.alfresco.com/4.0/tasks/mysql-config.html](http://docs.alfresco.com/4.0/tasks/mysql-config.html)
+* set `ALFRESCO_SRC` to the unpacked Alfresco directory (only used for documentation)
+* create directory to hold Alfresco data, set `ALFRESCO_HOME` to that directory (only used for documentation)
+{% highlight bash %}
+$ mkdir -p ${CATALINA_HOME}/shared/classes
+$ cp ${ALFRESCO_SRC}//web-server/shared/classes/alfresco-global.properties.sample ${CATALINA_HOME}/shared/classes/alfresco-global.properties
+{% endhighlight %}
+* edit `${CATALINA_HOME}/shared/classes/alfresco-global.properties`:
+{% highlight ini %}
+dir.root=${ALFRESCO_HOME}  # not the variable, but its content ;-)
+db.driver=org.gjt.mm.mysql.Driver
+db.url=jdbc:mysql://${db.host}:${db.port}/${db.name}?useUnicode=yes&characterEncoding=UTF-8 
+db.name=alfresco
+db.username=alfresco
+db.password=alfresco
+db.host=localhost
+db.port=3306
+db.pool.max=40
+{% endhighlight %}
+* deploy
+{% highlight bash %}
+cp ${ALFRESCO_SRC}/web-server/webapps/*.war ${CATALINA_HOME}/webapps/
+{% endhighlight %}

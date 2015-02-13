@@ -1,0 +1,56 @@
+---
+layout: post
+title: LDAP Notes
+---
+
+I used to use OpenDS, until I discovered it was no longer maintained. So I switched to OpenLDAP.
+
+## Install
+
+{% highlight bash %}
+$ sudo port install openldap
+{% endhighlight %}
+
+## Config
+
+* copy the default configuration files:
+{% highlight bash %}
+$ sudo cp /opt/local/etc/openldap/ldap.conf.default /opt/local/etc/openldap/ldap.conf
+$ sudo cp /opt/local/etc/openldap/slapd.conf.default /opt/local/etc/openldap/slapd.conf
+{% endhighlight %}
+
+* edit `/opt/local/etc/openldap/ldap.conf`
+
+{% highlight ini%}
+BASE dc=christophe,dc=vg
+URI ldap://localhost:389
+{% endhighlight %}
+
+* prepare a hashed password
+
+{% highlight bash %}
+$ slappasswd -s secret
+{SSHA}LiOgGFfN3ZgmWj7pt7yBVoNAtCg1NwAQ
+{% endhighlight %}
+
+* edit `/opt/local/etc/openldap/slapd.conf`
+
+{% highlight ini%}
+include   /opt/local/etc/openldap/schema/cosine.schema  
+include   /opt/local/etc/openldap/schema/nis.schema  
+include   /opt/local/etc/openldap/schema/inetorgperson.schema  
+...
+modulepath	/opt/local/libexec/openldap
+moduleload	back_bdb.la
+...
+suffix		"dc=christophe,dc=vg"
+rootdn		"cn=admin,dc=christophe,dc=vg"
+rootpw		{SSHA}LiOgGFfN3ZgmWj7pt7yBVoNAtCg1NwAQ
+{% endhighlight %}
+
+## Start
+
+{% highlight bash %}
+$ sudo /opt/local/libexec/slapd -d3
+{% endhighlight %}
+

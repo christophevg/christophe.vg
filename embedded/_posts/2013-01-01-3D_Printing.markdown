@@ -137,19 +137,10 @@ to get to know my printer and tighten a lot of loose screws and belts.
 With all components ready now, I'm soon going to upgrade my printer. To be
 continued.
 
-## Welcome to my 3D Hub
-
-By the end of May, I was the tenth registered [3D printing
-hub](http://3dhubs.com/antwerp/hubs/christophe) in Antwerp on [3D
-Hubs](http://3dhubs.com). Which basically means I'm willing to welcome you in
-my garage to print your 3D design. And to make it perfectly clear ... I'm not
-interested in [printing
-guns](https://plus.google.com/109420283197516932948/posts/2z1qQubD8fV).
-
 ## Future
 
 3D Printing in itself is nice, but it's also a testbed for me to try out new
-stuff. Being stocked by [embedded systems](./) I'm starting to assemble a wish
+stuff. Being stoked about [embedded systems](./) I'm starting to assemble a wish
 list of things I want to build around this printer.
 
 * Build a remote-print-manager system

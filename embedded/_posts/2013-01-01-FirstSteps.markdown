@@ -91,7 +91,7 @@ initial experiments below where constructed from examples from this book.
 * To document circuits on my online pages I'm using
   [Circuits.io](http://circuits.io). Not only because I happen to know one of
   the creators, but simply because it was the best online tool I found so far -
-  covering _my_ needs :-) All diagrams on these pages are all availabel on my
+  covering _my_ needs :-) All diagrams on these pages are all available on my
   [Cuircuits.ui profile page](http://www.circuits.io/circuits/user?uid=1785).
 
 ### Hardware

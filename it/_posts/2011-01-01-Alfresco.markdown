@@ -48,6 +48,10 @@ Query OK, 0 rows affected (0.00 sec)
 * use `${CATALINA_HOME}/bin/catalina.sh {start|stop}`
 * access via  [http://localhost:8080](http://localhost:8080)
 * copy `mysql-connector-java-5.1.34-bin.jar` to `${CATALINA_HOME}/lib/`
+* edit `${CATALINE_HOME}/conf/catalina.properties` and modify setting of the shared loader:
+{% highlight ini %}
+shared.loader=shared/classes
+{% endhighlight %}
 
 ### Alfresco 5
 
@@ -56,6 +60,10 @@ Query OK, 0 rows affected (0.00 sec)
   * [http://docs.alfresco.com/4.0/tasks/mysql-config.html](http://docs.alfresco.com/4.0/tasks/mysql-config.html)
 * set `ALFRESCO_SRC` to the unpacked Alfresco directory (only used for documentation)
 * create directory to hold Alfresco data, set `ALFRESCO_HOME` to that directory (only used for documentation)
+{% highlight bash %}
+$ mkdir ${ALFRESCO_HOME}
+{% endhighlight %}
+* prepare configuration of Alfresco using properties files in `shared/classes`
 {% highlight bash %}
 $ mkdir -p ${CATALINA_HOME}/shared/classes
 $ cp ${ALFRESCO_SRC}//web-server/shared/classes/alfresco-global.properties.sample ${CATALINA_HOME}/shared/classes/alfresco-global.properties
@@ -71,8 +79,32 @@ db.password=alfresco
 db.host=localhost
 db.port=3306
 db.pool.max=40
+# only use ldap authentication
+authentication.chain=ldap1:ldap
+{% endhighlight %}
+* setup ldap authentication extension configuration
+  * create extension directory
+{% highlight bash %}
+$ mkdir -p ${CATALINA_HOME}/shared/classes/alfresco/extension/subsystems/Authentication/ldap/ldap1
+{% endhighlight %}
+  * create the configuration
+{% highlight ini %}
+ldap.authentication.active=true
+
+ntlm.authentication.sso.enabled=false
+
+ldap.authentication.allowGuestLogin=true
+ldap.authentication.userNameFormat=uid=%s,ou=People,dc=christophe,dc=vg
+ldap.authentication.java.naming.provider.url=ldap://localhost:389
+ldap.authentication.defaultAdministratorUserNames=
+ldap.synchronization.java.naming.security.principal=cn=admin,dc=christophe,dc=vg
+ldap.synchronization.java.naming.security.credentials=secret
+ldap.synchronization.groupSearchBase=ou=Groups,dc=christophe,dc=vg
+ldap.synchronization.userSearchBase=ou=People,dc=christophe,dc=vg
 {% endhighlight %}
 * deploy
 {% highlight bash %}
-cp ${ALFRESCO_SRC}/web-server/webapps/*.war ${CATALINA_HOME}/webapps/
+cp ${ALFRESCO_SRC}/web-server/webapps/{alfresco,share}.war ${CATALINA_HOME}/webapps/
 {% endhighlight %}
+* visit [http://localhost:8080/alfresco](http://localhost:8080/alfresco) or [http://localhost:8080/share](http://localhost:8080/share) 
+* log in using one of the users as defined in the LDAP directory (see also [OpenLDAP](OpenLDAP.html))

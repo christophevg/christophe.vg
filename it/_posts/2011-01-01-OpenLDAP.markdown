@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LDAP Notes
+title: OpenLDAP Notes
 ---
 
 I used to use OpenDS, until I discovered it was no longer maintained. So I switched to OpenLDAP.
@@ -36,8 +36,8 @@ $ slappasswd -s secret
 * edit `/opt/local/etc/openldap/slapd.conf`
 
 {% highlight ini%}
+include		/opt/local/etc/openldap/schema/core.schema
 include   /opt/local/etc/openldap/schema/cosine.schema  
-include   /opt/local/etc/openldap/schema/nis.schema  
 include   /opt/local/etc/openldap/schema/inetorgperson.schema  
 ...
 modulepath	/opt/local/libexec/openldap
@@ -46,6 +46,83 @@ moduleload	back_bdb.la
 suffix		"dc=christophe,dc=vg"
 rootdn		"cn=admin,dc=christophe,dc=vg"
 rootpw		{SSHA}LiOgGFfN3ZgmWj7pt7yBVoNAtCg1NwAQ
+...
+password-hash  {CLEARTEXT}    # for use-case with Alfresco
+{% endhighlight %}
+
+## Add some initial data
+
+The following example data is modified based on tips for combining [Alfresco](Alfresco.html) with OpenLDAP.  
+See [http://docs.alfresco.com/4.1/concepts/auth-ldap-openldaptips.html](http://docs.alfresco.com/4.1/concepts/auth-ldap-openldaptips.html).
+
+{% highlight text %}
+dn: dc=christophe,dc=vg
+dc: christophe
+objectClass: top
+objectClass: domain
+
+dn: ou=People,dc=christophe,dc=vg
+ou: People
+objectClass: top
+objectClass: organizationalUnit
+
+dn: ou=Groups,dc=christophe,dc=vg
+ou: Groups
+objectClass: top
+objectClass: organizationalUnit
+
+dn: uid=fullname,ou=People,dc=christophe,dc=vg
+objectclass: inetOrgPerson
+sn: Name
+cn: Full Name
+userPassword: fullname
+telephoneNumber: 1234567890
+uid: fullname
+givenName: Full
+mail: full.name@christophe.vg
+o: Company Software Inc.
+
+dn: uid=walrus,ou=People,dc=christophe,dc=vg
+objectclass: inetOrgPerson
+sn: Rus
+cn: Wal Rus
+userPassword: walrus
+telephoneNumber: 1234567890
+uid: walrus
+givenName: Wal
+mail: wal.rus@christophe.vg
+o: Company Software Inc.
+
+dn: cn=Group One,ou=Groups,dc=christophe,dc=vg
+objectclass: groupOfNames
+cn: Group One
+member: uid=fullname,ou=People,dc=christophe,dc=vg 
+
+dn: cn=Group Two,ou=Groups,dc=christophe,dc=vg
+objectclass: groupOfNames
+cn: Group Two
+member: cn=Group One,ou=Groups,dc=christophe,dc=vg 
+member: uid=walrus,ou=People,dc=christophe,dc=vg
+{% endhighlight %}
+
+Import these from the command-line:
+
+{% highlight bash %}
+$ ldapadd -cxWD cn=admin,dc=christophe,dc=vg -f demo.ldif 
+Enter LDAP Password: 
+adding new entry "dc=christophe,dc=vg"
+
+adding new entry "ou=People,dc=christophe,dc=vg"
+
+adding new entry "ou=Groups,dc=christophe,dc=vg"
+
+adding new entry "uid=fullname,ou=People,dc=christophe,dc=vg"
+
+adding new entry "uid=walrus,ou=People,dc=christophe,dc=vg"
+
+adding new entry "cn=Group One,ou=Groups,dc=christophe,dc=vg"
+
+adding new entry "cn=Group Two,ou=Groups,dc=christophe,dc=vg"
 {% endhighlight %}
 
 ## Start
@@ -54,3 +131,35 @@ rootpw		{SSHA}LiOgGFfN3ZgmWj7pt7yBVoNAtCg1NwAQ
 $ sudo /opt/local/libexec/slapd -d3
 {% endhighlight %}
 
+And try a search request ...
+
+{% highlight bash %}
+$ ldapsearch -xWD cn=admin,dc=christophe,dc=vg uid=walrus
+Enter LDAP Password: 
+# extended LDIF
+#
+# LDAPv3
+# base <dc=christophe,dc=vg> (default) with scope subtree
+# filter: uid=walrus
+# requesting: ALL
+#
+
+# walrus, People, christophe.vg
+dn: uid=walrus,ou=People,dc=christophe,dc=vg
+objectClass: inetOrgPerson
+sn: Rus
+cn: Wal Rus
+userPassword:: d2FscnVz
+telephoneNumber: 1234567890
+uid: walrus
+givenName: Wal
+mail: wal.rus@christophe.vg
+o: Company Software Inc.
+
+# search result
+search: 2
+result: 0 Success
+
+# numResponses: 2
+# numEntries: 1
+{% endhighlight %}

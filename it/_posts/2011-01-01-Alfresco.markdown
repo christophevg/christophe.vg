@@ -49,7 +49,7 @@ Query OK, 0 rows affected (0.00 sec)
 * access via  [http://localhost:8080](http://localhost:8080)
 * copy `mysql-connector-java-5.1.34-bin.jar` to `${CATALINA_HOME}/lib/`
 * edit `${CATALINE_HOME}/conf/catalina.properties` and modify setting of the shared loader:
-{% highlight ini %}
+{% highlight properties %}
 shared.loader=shared/classes
 {% endhighlight %}
 
@@ -69,7 +69,7 @@ $ mkdir -p ${CATALINA_HOME}/shared/classes
 $ cp ${ALFRESCO_SRC}//web-server/shared/classes/alfresco-global.properties.sample ${CATALINA_HOME}/shared/classes/alfresco-global.properties
 {% endhighlight %}
 * edit `${CATALINA_HOME}/shared/classes/alfresco-global.properties`:
-{% highlight ini %}
+{% highlight properties %}
 dir.root=${ALFRESCO_HOME}  # not the variable, but its content ;-)
 db.driver=org.gjt.mm.mysql.Driver
 db.url=jdbc:mysql://${db.host}:${db.port}/${db.name}?useUnicode=yes&characterEncoding=UTF-8 
@@ -87,8 +87,8 @@ authentication.chain=ldap1:ldap
 {% highlight bash %}
 $ mkdir -p ${CATALINA_HOME}/shared/classes/alfresco/extension/subsystems/Authentication/ldap/ldap1
 {% endhighlight %}
-  * create the configuration
-{% highlight ini %}
+  * create the configuration `ldap-authentication.properties` in that directory
+{% highlight properties %}
 ldap.authentication.active=true
 
 ntlm.authentication.sso.enabled=false

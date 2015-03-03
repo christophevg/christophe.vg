@@ -21,7 +21,7 @@ $ sudo cp /opt/local/etc/openldap/slapd.conf.default /opt/local/etc/openldap/sla
 
 * edit `/opt/local/etc/openldap/ldap.conf`
 
-{% highlight ini%}
+{% highlight apacheconf %}
 BASE dc=christophe,dc=vg
 URI ldap://localhost:389
 {% endhighlight %}
@@ -35,10 +35,10 @@ $ slappasswd -s secret
 
 * edit `/opt/local/etc/openldap/slapd.conf`
 
-{% highlight ini%}
-include		/opt/local/etc/openldap/schema/core.schema
-include   /opt/local/etc/openldap/schema/cosine.schema  
-include   /opt/local/etc/openldap/schema/inetorgperson.schema  
+{% highlight apacheconf %}
+include /opt/local/etc/openldap/schema/core.schema
+include /opt/local/etc/openldap/schema/cosine.schema  
+include /opt/local/etc/openldap/schema/inetorgperson.schema  
 ...
 modulepath	/opt/local/libexec/openldap
 moduleload	back_bdb.la
@@ -47,7 +47,7 @@ suffix		"dc=christophe,dc=vg"
 rootdn		"cn=admin,dc=christophe,dc=vg"
 rootpw		{SSHA}LiOgGFfN3ZgmWj7pt7yBVoNAtCg1NwAQ
 ...
-password-hash  {CLEARTEXT}    # for use-case with Alfresco
+password-hash   {CLEARTEXT}    # for use-case with Alfresco
 {% endhighlight %}
 
 ## Add some initial data

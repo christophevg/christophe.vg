@@ -6,8 +6,8 @@ title: Revisiting Higher Education
 
 Having decided to return to full-time studying presented me with an incredible
 opportunity to make a personal evaluation of our education system and academic
-institute. In the end, there are few of us - aged (almost) 40 and attending
-courses full-time.
+institute. In the end, there are few of us - aged 40 and attending courses
+full-time.
 
 Now, let's make one thing crystal clear up-front: I'm not going to state that
 it is a stupid idea to go to the university - or any other form of classical
@@ -40,7 +40,7 @@ It's not hard to see that this is not only a pity for the companies but also
 for them. Add to this the typical pattern where they often leave their first
 company within the same period - not only because of financial opportunities
 but also due to the very valid reason to discover more interesting topics -
-and it boils down to a very negative experience for both parties.
+and it boils down to a very negative experience for all parties.
 
 This search for more interesting topics is in fact a symptom of another problem
 that originates from the sociocultural obligation for teenagers to make the
@@ -60,7 +60,7 @@ suffer from this situation. Once they release their students into the wide wild
 world, they completely loose touch. On one hand, the students become employees
 and feel freed from the educational chains. On the other hand, being submerged
 in this five-year period of industrial adolescence, they are not able to have a
-good oversight of the world they enter and are not capable of giving valuable
+good overview of the world they enter and are not capable of giving valuable
 feedback to their origins.
 
 The higher educational institutes are therefore deprived of very important
@@ -186,7 +186,7 @@ problems, that can be integrated into the courses. Professors would get
 first-hand feedback about application of their courses in real-world
 situations. This way, problems encountered at work, could be discussed in class
 and perhaps new and great ideas could emerge, resulting in another win for the
-industrial partners, who now get a entire research group with the employed
+industrial partners, who now get an entire research group with the employed
 student.
 
 Now, to avoid the obvious, I need to add one special case: the academic world

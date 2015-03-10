@@ -22,14 +22,7 @@ The conceptual circuit below shows two NOR gates that use each others' output.
 This way when no set or reset signal is present, the feedback loop retains the
 memorized state.
 
-<div class="thumb circuit left">
-  <a href="http://circuits.io/circuits/3994" target="_blank">
-    <img src="http://circuits.io/circuits/3994/schematic" height="290"><br>
-    http://circuits.io/circuits/3994
-  </a> 
-</div>
-
-<br clear="both">
+<iframe width="725" height="448" src="http://123d.circuits.io/circuits/18974/embed#schematic" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
 
 Let's see what happens. When set and reset are low the NOR ports will depend on
 each others' output to come up with output. Due to noise they will in the end
@@ -64,14 +57,7 @@ showing the state of Q and Q'.
 
 Note that the third input of each used gate must be connected to GND.
 
-<div class="thumb circuit left">
-  <a href="http://circuits.io/circuits/3992" target="_blank">
-    <img src="http://circuits.io/circuits/3992/schematic" height="290"><br>
-    http://circuits.io/circuits/3992
-  </a> 
-</div>
-
-<br clear="both">
+<iframe width="725" height="448" src="http://123d.circuits.io/circuits/18702/embed#schematic" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
 
 ## Action
 

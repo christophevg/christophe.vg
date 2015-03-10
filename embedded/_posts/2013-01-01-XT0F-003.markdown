@@ -77,14 +77,7 @@ The circuit is in fact a collection of modules: a 3.3V regulated power supply,
 the XBee module, 2 basic sensor modules and the central ATMEGA controlling
 module. This is reflected in the circuit design below:
 
-<div class="thumb circuit left">
-  <a href="http://circuits.io/circuits/5123" target="_blank">
-    <img src="http://circuits.io/circuits/5123/schematic" width="800"><br>
-    http://circuits.io/circuits/5123
-  </a>
-</div>
-
-<br clear="both">
+<iframe width="725" height="448" src="http://123d.circuits.io/circuits/18432/embed#schematic" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
 
 Operational on a breadboard, it looks like this ...
 

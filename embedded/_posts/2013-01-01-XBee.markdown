@@ -181,14 +181,7 @@ Let's cut that wire ...
 
 ## Circuit
 
-<div class="thumb circuit left">
-  <a href="http://circuits.io/circuits/5152" target="_blank">
-    <img src="http://circuits.io/circuits/5152/schematic" width="650"><br>
-    http://circuits.io/circuits/5152
-  </a>
-</div>
-
-<br clear="both">
+<iframe width="725" height="448" src="http://123d.circuits.io/circuits/18470/embed#schematic" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
 
 The circuit couldn't be simpler: hook up 3.3V to an ATMEGA and an XBee and
 connect TX and RX from the ATMEGA to DOUT and DIN on the XBee. That's it. This

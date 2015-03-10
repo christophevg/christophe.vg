@@ -92,7 +92,7 @@ initial experiments below where constructed from examples from this book.
   [Circuits.io](http://circuits.io). Not only because I happen to know one of
   the creators, but simply because it was the best online tool I found so far -
   covering _my_ needs :-) All diagrams on these pages are all available on my
-  [Cuircuits.ui profile page](http://www.circuits.io/circuits/user?uid=1785).
+  [Cuircuits.ui profile page](http://123d.circuits.io/users/1785#mycircuits).
 
 ### Hardware
 
@@ -118,29 +118,15 @@ Although I'd love to create something that my wife doesn't frown upon, I have
 to start with the basics: make a LED light up ... without burning it.
 
 <div class="thumb circuit left">
-  <a href="http://circuits.io/circuits/2367" target="_blank">
-    <img src="http://circuits.io/circuits/2367/schematic" height="100"><br>
-    http://circuits.io/circuits/2367
-  </a>
-</div>
-
-<div class="thumb circuit left">
   <a href="images/full/hello_led.jpg" target="_blank">
     <img src="images/thumb/hello_led.jpg"><br>
     always on
   </a>
 </div>
 
-<br clear="both">
+<iframe width="600" height="300" src="http://123d.circuits.io/circuits/19034/embed#schematic" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
 
 It's of course a bit more practical with a button :-)
-
-<div class="thumb circuit left">
-  <a href="http://circuits.io/circuits/2455" target="_blank">
-    <img src="http://circuits.io/circuits/2455/schematic" height="100"><br>
-    http://circuits.io/circuits/2455
-  </a>
-</div>
 
 <div class="thumb circuit left">
   <a href="images/full/hello_switch_led.jpg" target="_blank">
@@ -149,7 +135,7 @@ It's of course a bit more practical with a button :-)
   </a>
 </div>
 
-<br clear="both">
+<iframe width="600" height="300" src="http://123d.circuits.io/circuits/17018/embed#schematic" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
 
 Next up of course is having the LED fade in and out, like a heart-beat. I
 followed the different examples from the excellent Make: Electronics book here.
@@ -166,12 +152,7 @@ Notice that I've created a setup with two battery sources: one 9V and one
 consisting of two 1.5V AA batteries. Combined in series these result in a
 power source of 12V (9 + 2x1.5).
 
-<div class="thumb circuit left">
-  <a href="http://circuits.io/circuits/2476" target="_blank">
-    <img src="http://circuits.io/circuits/2476/schematic" height="290"><br>
-    http://circuits.io/circuits/2476
-  </a> 
-</div>
+<iframe width="725" height="448" src="http://123d.circuits.io/circuits/17634/embed#schematic" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
 
 <object width="560" height="315">
   <param name="movie" value="http://www.youtube.com/v/kG8f-J1K0ts?version=3&amp;hl=en_US"></param>
@@ -179,8 +160,6 @@ power source of 12V (9 + 2x1.5).
   <param name="allowscriptaccess" value="always"></param>
   <embed src="http://www.youtube.com/v/kG8f-J1K0ts?version=3&amp;hl=en_US" type="application/x-shockwave-flash" width="560" height="315" allowscriptaccess="always" allowfullscreen="true"></embed>
 </object>
-
-<br clear="both">
 
 A relay looks kind of bulky, so let's introduce the transistor. Just like a
 relay, it can switch a flow of electricity. It has three pins: the collector,
@@ -193,12 +172,7 @@ it's basically a on/off switch. In the case of the relay, we have a two-way on
 switch. To create the same effect, two transistors, turning each other on and
 of are needed.
 
-<div class="thumb circuit left">
-  <a href="http://circuits.io/circuits/2481" target="_blank">
-    <img src="http://circuits.io/circuits/2481/schematic" height="290"><br>
-    http://circuits.io/circuits/2481
-  </a> 
-</div>
+<iframe width="725" height="448" src="http://123d.circuits.io/circuits/17479/embed#schematic" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
 
 <object width="560" height="315">
   <param name="movie" value="http://www.youtube.com/v/lLMTcqTKUIE?version=3&amp;hl=en_US"></param>
@@ -207,19 +181,12 @@ of are needed.
   <embed src="http://www.youtube.com/v/lLMTcqTKUIE?version=3&amp;hl=en_US" type="application/x-shockwave-flash" width="560" height="315" allowscriptaccess="always" allowfullscreen="true"></embed>
 </object>
 
-<br clear="both">
-
 Note: In the movie I've added a switch, which is not included in the diagram :-)
 
 But it's not quiet yet the effect I'm aiming for. Let's try it with the famous
 555 timer.
 
-<div class="thumb circuit left">
-  <a href="http://circuits.io/circuits/2502" target="_blank">
-    <img src="http://circuits.io/circuits/2502/schematic" height="290"><br>
-    http://circuits.io/circuits/2502
-  </a> 
-</div>
+<iframe width="725" height="448" src="http://123d.circuits.io/circuits/16711/embed#schematic" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
 
 <object width="560" height="315">
   <param name="movie" value="http://www.youtube.com/v/yjtR2P6eKc0?version=3&amp;hl=en_US"></param>
@@ -227,8 +194,6 @@ But it's not quiet yet the effect I'm aiming for. Let's try it with the famous
   <param name="allowscriptaccess" value="always"></param>
   <embed src="http://www.youtube.com/v/yjtR2P6eKc0?version=3&amp;hl=en_US" type="application/x-shockwave-flash" width="560" height="315" allowscriptaccess="always" allowfullscreen="true"></embed>
 </object>
-
-<br clear="both">
 
 Yeah, we made heart beat ;-)
 
@@ -266,12 +231,7 @@ This current will flow back through resistor R1, so I can put a LED in parallel
 to that. To only show the back-current when discharging the capacitor, I added
 a diode to that branch, blocking any charge current from going through the LED.
 
-<div class="thumb circuit left">
-  <a href="http://circuits.io/circuits/2505" target="_blank">
-    <img src="http://circuits.io/circuits/2505/schematic" height="290"><br>
-    http://circuits.io/circuits/2505
-  </a> 
-</div>
+<iframe width="725" height="448" src="http://123d.circuits.io/circuits/16733/embed#schematic" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
 
 <object width="560" height="315">
   <param name="movie" value="http://www.youtube.com/v/Te_AX1X_7ag?version=3&amp;hl=en_US"></param>
@@ -279,8 +239,6 @@ a diode to that branch, blocking any charge current from going through the LED.
   <param name="allowscriptaccess" value="always"></param>
   <embed src="http://www.youtube.com/v/Te_AX1X_7ag?version=3&amp;hl=en_US" type="application/x-shockwave-flash" width="560" height="315" allowscriptaccess="always" allowfullscreen="true"></embed>
 </object>
-
-<br clear="both">
 
 Although this works, it doesn't seem to be a classic setup. It would be nice if
 the output was taken out of the loop generation and only be used to do
@@ -310,12 +268,7 @@ This can be eliminated by adding a diode in parallel with the trimmer, which
 will eliminate it from the charge cycle and only include it in the discharge
 cycle. This way the charge and discharge cycles can be configured independently.
 
-<div class="thumb circuit left">
-  <a href="http://circuits.io/circuits/2559" target="_blank">
-    <img src="http://circuits.io/circuits/2559/schematic" height="290"><br>
-    http://circuits.io/circuits/2559
-  </a> 
-</div>
+<iframe width="725" height="448" src="http://123d.circuits.io/circuits/16682/embed#schematic" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
 
 <object width="560" height="315">
   <param name="movie" value="http://www.youtube.com/v/XOqSQaZmZLM?hl=en_US&amp;version=3&amp;rel=0"></param>
@@ -323,8 +276,6 @@ cycle. This way the charge and discharge cycles can be configured independently.
   <param name="allowscriptaccess" value="always"></param>
   <embed src="http://www.youtube.com/v/XOqSQaZmZLM?hl=en_US&amp;version=3&amp;rel=0" type="application/x-shockwave-flash" width="560" height="315" allowscriptaccess="always" allowfullscreen="true"></embed>
 </object>
-
-<br clear="both">
 
 The CONT pin can be used to configure the timing/sensitivity of the RC circuit.
 It seems that it is not often used, but varying the voltage will change the

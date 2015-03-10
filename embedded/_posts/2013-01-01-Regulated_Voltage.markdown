@@ -18,14 +18,7 @@ and via an adapter, connected to the electric grid.
 The circuit below shows somewhat _the_ default circuit you'll set up when
 designing something around a processor (of course one requiring 5V).
 
-<div class="thumb circuit left">
-  <a href="http://circuits.io/circuits/3024" target="_blank">
-    <img src="http://circuits.io/circuits/3024/schematic" width="600"><br>
-    http://circuits.io/circuits/3024
-  </a>
-</div>
-
-<br clear="both">
+<iframe width="725" height="448" src="http://123d.circuits.io/circuits/17148/embed#schematic" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
 
 It consists of a 9V source, typically from an adapter plugged into the an
 electric wall socket which is routed through an LM7805 regulator. This
@@ -69,14 +62,7 @@ My design required 3.3V, so I had to create a drop. With a little help from a
 [MCP1700](http://www.microchip.com/wwwproducts/Devices.aspx?dDocName=en010642),
 which perfectly fitted my requirements.
 
-<div class="thumb circuit left">
-  <a href="http://circuits.io/circuits/4969" target="_blank">
-    <img src="http://circuits.io/circuits/4969/schematic" width="600"><br>
-    http://circuits.io/circuits/4969
-  </a>
-</div>
-
-<br clear="both">
+<iframe width="725" height="448" src="http://123d.circuits.io/circuits/18435/embed#schematic" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
 
 ## The Boxed Version
 

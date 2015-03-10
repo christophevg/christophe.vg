@@ -43,12 +43,7 @@ male header. This allows me to cleanly connect the 6 required wires. If I want
 to add this to a PCB, I can of course use a 10 (5x2) pin female connector into
 which the JTAG connector can be plugged in.
 
-<div class="thumb circuit left" style="clear:both">
-  <a href="http://circuits.io/circuits/3064" target="_blank">
-    <img src="http://circuits.io/circuits/3064/schematic" height="300"><br>
-    http://circuits.io/circuits/3064
-  </a>
-</div>
+<iframe width="725" height="448" src="http://123d.circuits.io/circuits/17091/embed#schematic" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
 
 <div class="thumb left">
   <a href="images/full/squid_cable.jpg" target="_blank">
@@ -87,14 +82,7 @@ course, it simply works :-)
 
 The setup isn't that different from the ISP setup:
 
-<div class="thumb circuit left" style="clear:both">
-  <a href="http://circuits.io/circuits/6894" target="_blank">
-    <img src="http://circuits.io/circuits/6894/schematic" height="300"><br>
-    http://circuits.io/circuits/6894
-  </a>
-</div>
-
-<br clear="both">
+<iframe width="725" height="448" src="http://123d.circuits.io/circuits/10002861/embed#schematic" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
 
 The programming process using [avrdude](Averdude.html) remains identical, apart
 from the the <tt>-c</tt> switch that now simple is set to <tt>jtag2</tt>.

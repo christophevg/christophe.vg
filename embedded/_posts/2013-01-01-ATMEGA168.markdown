@@ -89,12 +89,7 @@ capacitor.
 
 The final circuit looks something like this ...
 
-<div class="thumb circuit left" style="clear:both">
-  <a href="http://circuits.io/circuits/3064" target="_blank">
-    <img src="http://circuits.io/circuits/3064/schematic" height="300"><br>
-    http://circuits.io/circuits/3064
-  </a>
-</div>
+<iframe width="725" height="448" src="http://123d.circuits.io/circuits/17091/embed#schematic" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
 
 <div class="thumb circuit left">
   <a href="images/full/jtag_spi_programmer_atmega168.jpg" target="_blank">
@@ -627,17 +622,12 @@ void turn_ports_off(void) {
 
 ### 18MHz
 
-<div class="thumb circuit right">
-  <a href="http://circuits.io/circuits/3076" target="_blank">
-    <img src="http://circuits.io/circuits/3076/schematic" height="300"><br>
-    http://circuits.io/circuits/3076
-  </a>
-</div>
-
 That's the fastest the MCU can go without external help. But, adding an
 external oscillating crystal is easy. It needs to be connected to pins 9 and
 10. To make sure that the crystal starts oscillating, we need to add two 22pF
 capacitors before connecting the crystal to GND.
+
+<iframe width="725" height="448" src="http://123d.circuits.io/circuits/17480/embed#schematic" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
 
 But that's not all. The MCU also needs to be configured to use this external
 crystal. For an external *full swing crystal oscillator* we need 4 first bits

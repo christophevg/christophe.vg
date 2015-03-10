@@ -3,4 +3,4 @@ layout: post
 title: TSL252R - Light Sensor
 ---
 
-##
+_Coming soon..._

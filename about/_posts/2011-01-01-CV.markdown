@@ -27,7 +27,17 @@ samenwerking tussen de verschillende software componenten en de medewerkers
 van het project. Hierbij spelen processen en procedures een essentiële
 overkoepelende rol.
 
+In 2011 ben ik teruggekeerd naar de universiteit om een master in toegepaste
+ingenieurswetenschappen te behalen. Dit met het oog op onderzoek naar embedded
+systemen.
+
 ## Ervaring
+
+### Onderzoeker, KU Leuven
+__september 2014 - augustus 2015__
+
+Onderzoek naar inzetbaarheid van programmeertalen bij het optimaliseren van het
+energieverbruik in draadloze sensornetwerken.
 
 ### Platform Architect, UnifiedPost
 __januari 2011 - september 2011__
@@ -147,15 +157,15 @@ Visual C++ op Windows NT voor Electrabel
 * koken, o.a. koksopleiding PIVA
 * catamaran zeilen, o.a. internationale wedstrijden en opleiding van jeugd
 * fotografie
-* langeafstandslopen
 * wandelen (meerdaagse tochten)
 
 ## Kennis
 * gedreven door Object-Orientatie, UML, MDA, SOA
+* gepassioneerd door geïntegreerde systemen (hardware en software)
 * uitgebreide ervaring met Linux, OpenBSD, Mac OS X, Solaris en Microsoft Windows
-* actieve kennis betreffende C#, Perl, HTML, CSS, Javascript, PHP, Visual Basic, XML, SQL, Bash scripting
+* actieve kennis betreffende Python, C, C#, Perl, Java, HTML, CSS, Javascript, PHP,  XML, SQL, Bash
 * onderlegd in verschillende RDBMS (PostgreSQL, MySQL, Oracle, MS SQL Server)
-* passieve kennis betreffende C, C++, Assembler, COBOL, Java, XSLT
+* passieve kennis betreffende C++, Assembler, COBOL, XSLT, Visual Basic
 * sterke achtergrond betreffende beveiliging en netwerken
 * oog voor ontwerp van interactieve grafische gebruikers interfaces
 

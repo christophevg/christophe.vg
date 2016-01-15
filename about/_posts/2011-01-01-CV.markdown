@@ -33,6 +33,13 @@ systemen.
 
 ## Ervaring
 
+### Onderzoeker, Universiteit Antwerpen
+__september 2015 - ...__
+
+Design en implementatie van Internet of Things oplossingen, met een zeer sterke
+focus op laag energieverbruik en ontluikende netwerktechnologieën (Dash7,
+SIGFOX, LoRa,...)
+
 ### Onderzoeker, KU Leuven
 __september 2014 - augustus 2015__
 

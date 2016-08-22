@@ -28,13 +28,19 @@ van het project. Hierbij spelen processen en procedures een essentiële
 overkoepelende rol.
 
 In 2011 ben ik teruggekeerd naar de universiteit om een master in toegepaste
-ingenieurswetenschappen te behalen. Dit met het oog op onderzoek naar embedded
-systemen.
+ingenieurs-wetenschappen te behalen. Gedurende twee jaar werkte ik mee in twee
+uitmuntende onderzoeksgroepen aan de universiteiten van Leuven (DistriNet) en
+Antwerpen (MOSAIC). Mijn focus lag steeds op energie-zuinige embedded
+hardware-oplossingen. Zo onderzocht ik de mogelijkheden die programmeertalen
+kunnen bieden op dit vlak en werkte ik later vooral rond laag-niveau methodes
+in toepassingen voor interactieve apparaten. Dit leidde tevens tot de
+voorbereiding van een nieuwe spin-off van de UA, en een selectie voor het
+iMinds iStart incubatie programma.
 
 ## Ervaring
 
 ### Onderzoeker, Universiteit Antwerpen
-__september 2015 - ...__
+__september 2015 - augustus 2016__
 
 Design en implementatie van Internet of Things oplossingen, met een zeer sterke
 focus op laag energieverbruik en ontluikende netwerktechnologieën (Dash7,

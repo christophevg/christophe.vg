@@ -586,7 +586,11 @@ DIV.introduction {
 }
 
 DIV.summary {
-  margin: 52px;
+  width: 80%;
+  margin-top: 65px;
+  margin-bottom: 65px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 25px;
   background-color: white;
   border-radius: 0.25em;
@@ -610,10 +614,6 @@ DIV.introduction H2, DIV.summary H2 {
 }
 
 @media only screen and (min-width: 1170px) {
-  DIV.summary {
-    margin: 65px;
-  }
-  
   DIV.summary P {
     font-size: 16px;
     font-size: 1rem;

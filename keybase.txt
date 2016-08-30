@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/christophevg
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://christophe.vg
+  * I am christophevg (https://keybase.io/christophevg) on keybase.
+  * I have a public key with fingerprint F5EC FEB6 A1B8 0CB6 CFA7  FDE7 897E 3E40 AABF 2ECC
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101dc7b322dfadbd9ba7b5cd478e5075c8aff6f6219bd52c4849de7ee0051e704050a",
+            "fingerprint": "f5ecfeb6a1b80cb6cfa7fde7897e3e40aabf2ecc",
+            "host": "keybase.io",
+            "key_id": "897e3e40aabf2ecc",
+            "kid": "0101dc7b322dfadbd9ba7b5cd478e5075c8aff6f6219bd52c4849de7ee0051e704050a",
+            "uid": "c7118487597693ebeaf1392d26ce8a19",
+            "username": "christophevg"
+        },
+        "service": {
+            "hostname": "christophe.vg",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1472547967,
+    "expire_in": 157680000,
+    "prev": "4b1b96174ed65c52536c0cbf1f3def5d692955d6d836654386feec5a240be911",
+    "seqno": 4,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.56
+Comment: https://keybase.io/crypto
+
+yMI3AnicrZJfaBxFHMcvsU1MSnsFg01MQTppjtKEsLO7s7N79U+LwQctEsUkYCXH
+zuxv7pY0u5e7vYs1PWtqG2xjxL8BLVbzh5aGlPgHIiiSi5g8mPiQh7SkfRBBpA8V
+m5ZCOEx1NtgnfXRefsz8Pt/v/H6/mR+2PxCpLlu58Jvxlrc+W7Y4dy4X6Zw/fKIf
+Md85huL9qBs2Axx1IBskul0HxZGCFexwyjRVdYTtMMdiNmWEOzo1gSiUcNMWwhCG
+ii3mEJXrpm45QAEUhWCgiq4QxUbNSLheEjLpjOsF0lYQ4AKYYWNmKpwZXNhUSJlp
+UdBAV2ybCRU4l8KUnw0VsjhmZ6HF9eWZ3CQ2y/sP/n+uO7dpxynGpm5SYlHD0oCB
+LbBmqY5qcDBtbIVgFjKe3QMhncq42cBPpyCfRIVmJDN5l0M43LCbf1EtEmtG6Ywf
++Nw/KlOpIEjHQ2VwLB2ifcAS/5gkmOs5cpZSkIdM1vU9FMeS5IEbumKdqkSnlkGb
+EbySdjOQcEOCUMNU5Aqvgby01BlmloGpDo5BOFGJZnD5EgILzQFBHMNSLSKDY2qG
+QXTNNAQAJ7aqKwwsjFHYVq/no7guy7ST0jLrJj07yGUAFb4vvrwlUlYdqdhaHv6x
+SHXVzvs/7+3blX+9UGy/U/HQ0GPt2u8itXTw4YGaffFvBvr/eKe0vlEcW9w2vKDG
+JmOl5Xud9Wp335Ox8+O3Z9suXZ9Jfn1q5P2uaFXjvbpc6vWhqUE4H911uQFNDF08
+CW/U5vcO1o3FL7g/PvLJq+Mto7c+7FLPdsQ+uPXm8ae1n7yPPn/iyo3tbX9OTzVs
+nOl49Ewr2aGlJ79dvvbedzNfREUXjbbtRS8Nfdy0Or86vKP2y3fNwemKtd4DK4WN
+3fWnnxlcunvtq4sjxYEjlc+dONy09Wc8erOu8dOaQkfb7gcbYtueLS30te45e6hq
+Yrmn5anGk699VhwpjT9envr16uXlxV/O5XqfXzv04ty0Fd1/5G8DEUQZ
+=pB4W
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/christophevg
+
+==================================================================

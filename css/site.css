@@ -194,6 +194,7 @@ CODE {
   font-size: 13px;
 }
 
+PRE.highlight CODE,
 FIGURE.highlight PRE CODE {
   background: #eeeeee;
   width: 560px;
@@ -208,6 +209,7 @@ FIGURE.highlight PRE CODE {
   overflow-y: hidden;
 }
 
+DIV.language-bash PRE.highlight CODE,
 FIGURE.highlight PRE CODE.bash {
   background-color: black;
   line-height: 125%;

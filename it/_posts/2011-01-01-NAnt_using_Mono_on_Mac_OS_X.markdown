@@ -1,5 +1,4 @@
 ---
-layout: post
 title: NAnt using Mono on Mac OS X
 ---
 

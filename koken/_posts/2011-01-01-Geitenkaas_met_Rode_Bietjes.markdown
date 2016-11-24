@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Geitenkaas met Rode Bietjes
 ---
 

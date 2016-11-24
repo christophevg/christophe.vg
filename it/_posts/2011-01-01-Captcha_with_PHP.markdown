@@ -1,7 +1,8 @@
 ---
-layout: post
 title: Captcha with PHP
 ---
+
+Simple example to create a captcha with PHP.
 
 {% highlight php %}
 # captcha.php

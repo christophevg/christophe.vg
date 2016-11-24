@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Gevulde koeken met chocolade
 ---
 

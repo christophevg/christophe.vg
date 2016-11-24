@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Omelet met geroosterde aardappels en paprika
 ---
 

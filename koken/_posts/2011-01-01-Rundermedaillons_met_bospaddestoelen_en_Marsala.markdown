@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Rundermedaillons met bospaddestoelen en Marsala
 ---
 

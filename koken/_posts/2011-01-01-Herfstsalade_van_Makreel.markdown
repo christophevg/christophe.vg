@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Herfstsalade van Makreel
 ---
 

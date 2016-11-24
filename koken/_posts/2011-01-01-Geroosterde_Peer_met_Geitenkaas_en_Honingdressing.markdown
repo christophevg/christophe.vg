@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Geroosterde Peer met Geitenkaas en Honingdressing
 ---
 

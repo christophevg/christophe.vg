@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Kalkoen met citrusvruchten en tijm
 ---
 

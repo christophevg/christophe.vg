@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Bisque de Crevettes
 ---
 

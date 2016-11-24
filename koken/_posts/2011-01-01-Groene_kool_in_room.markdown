@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Groene kool in room
 ---
 

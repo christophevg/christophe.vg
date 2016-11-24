@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Raspberry Pi Notes
 ---
 

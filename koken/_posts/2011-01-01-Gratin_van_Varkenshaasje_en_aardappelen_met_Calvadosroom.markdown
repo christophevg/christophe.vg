@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Gratin van Varkenshaasje en aardappelen met Calvadosroom
 ---
 

@@ -1,7 +1,8 @@
 ---
-layout: post
 title: Postfix Notes
 ---
+
+Some old notes from back in the days when I was hosting my own mail server.
 
 {% highlight bash %}
 # Virtual Mailboxes via MySQL configuration

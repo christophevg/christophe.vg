@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Rollade met mousse van vis
 ---
 

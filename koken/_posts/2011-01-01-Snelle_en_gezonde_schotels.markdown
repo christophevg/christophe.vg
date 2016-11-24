@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Snelle en gezonde schotels
 ---
 

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Risotto ala Carbonara
 ---
 

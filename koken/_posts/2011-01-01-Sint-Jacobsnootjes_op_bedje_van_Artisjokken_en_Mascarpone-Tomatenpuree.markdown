@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Sint-Jacobsnootjes op bedje van Artisjokken en Mascarpone-Tomatenpuree
 ---
 

@@ -1,9 +1,14 @@
 ---
-layout: post
 title: Aardappel-Zalm Salade
+header:
+  teaser: /koken/images/full/aardappel-zalm-salade.png
+  image: /koken/images/header/aardappel-zalm-salade.png
 ---
 
+Tover aardappelen en wat gerookte zalm om tot een smaakbom!
+
 ## ingredienten
+
 * geschilde aardappelen
 * halve citroen
 * rode wijnazijn
@@ -17,9 +22,6 @@ title: Aardappel-Zalm Salade
 * gerookte zalm
 
 ## bereiding
-<div class="thumb right" markdown="1">
-[![Aardappel-Zalm Salade](images/thumb/aardappel-zalm-salade.png)](images/full/aardappel-zalm-salade.png)
-</div>
 
 Maak de marinade met de zeste en het sap van een halve citroen, evenveel rode
 wijn azijn en driemaal dat volledige volume aan goede olijfolie. Voeg peper,

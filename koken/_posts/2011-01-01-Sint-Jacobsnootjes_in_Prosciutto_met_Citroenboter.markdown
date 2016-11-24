@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Sint-Jacobsnootjes in Prosciutto met Citroenboter
 ---
 

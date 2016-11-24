@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Gratin van Aardappel en Varkensfilet met cantharellenroom
 ---
 

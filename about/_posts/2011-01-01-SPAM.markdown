@@ -1,6 +1,4 @@
 ---
-layout: post
-hideSectionImage: true
 title: SPAM
 ---
 

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: PInvoke Hello World
 ---
 

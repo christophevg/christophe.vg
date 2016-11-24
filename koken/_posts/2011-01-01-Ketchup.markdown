@@ -1,7 +1,11 @@
 ---
-layout: post
 title: Ketchup
+header:
+  teaser: /koken/images/full/ketchup.jpeg
+  image: /koken/images/header/ketchup.jpeg
 ---
+
+Zelf verse ketchup maken... in een handomdraai.
 
 ## ingredienten
 
@@ -19,9 +23,6 @@ title: Ketchup
 * maïzena
 
 ## bereiding
-<div class="thumb right" markdown="1">
-[![Ketchup](images/thumb/ketchup.jpeg)](images/full/ketchup.jpeg)
-</div>
 
 Snij de rode uit, tomaten en paprika in grove stukken. Maak een siroop door de suiker met wat water aan de kook te brengen. Als het water bijna verdampt is, voeg de versneden groenten er aan toe en stoof gedurende enkele minuten.
 

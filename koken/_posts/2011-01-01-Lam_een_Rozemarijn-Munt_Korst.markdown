@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Lam een Rozemarijn-Munt Korst
 ---
 

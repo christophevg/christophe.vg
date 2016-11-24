@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Kipsate met Aceto Balsamico
 ---
 

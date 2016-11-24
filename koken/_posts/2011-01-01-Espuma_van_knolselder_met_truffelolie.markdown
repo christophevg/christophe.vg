@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Espuma van knolselder met truffelolie
 ---
 

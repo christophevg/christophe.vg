@@ -1,5 +1,4 @@
 ---
-layout: post
 title: XT0F-003 - my first WSN node
 ---
 

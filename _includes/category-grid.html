@@ -1,0 +1,7 @@
+{% include base_path %}
+{% include group-by-array collection=site.posts field="categories" %}
+<div class="grid__wrapper">
+  {% for post in site.categories[page.index] reversed %}
+    {% include archive-single.html type="grid" %}
+  {% endfor %}
+</div>

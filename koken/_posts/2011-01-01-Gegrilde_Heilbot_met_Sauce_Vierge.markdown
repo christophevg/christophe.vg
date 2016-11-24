@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Gegrilde Heilbot met Sauce Vierge
 ---
 

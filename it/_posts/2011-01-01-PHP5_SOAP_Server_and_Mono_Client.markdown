@@ -1,5 +1,4 @@
 ---
-layout: post
 title: PHP SOAP Server an Mono Client
 ---
 

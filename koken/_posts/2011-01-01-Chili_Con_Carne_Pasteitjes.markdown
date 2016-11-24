@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Chili Con Carne Pasteitjes
 ---
 

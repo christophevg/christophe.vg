@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Granite van Champagne
 ---
 

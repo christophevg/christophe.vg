@@ -1,0 +1,44 @@
+DIV.definition {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 4px 0px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 4px 0px;
+  color: rgb(34, 34, 34);
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  line-height: 15px;
+  padding:26px;
+}
+
+DIV.definition H1 {
+  font-size: 20px;
+}
+
+DIV.definition A {
+  text-decoration: underline;
+}
+
+@media (min-width: 48em) {
+  DIV.definition {
+    font-size: 14px
+  }
+  DIV.definition H1 {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 64em) {
+  DIV.definition {
+      font-size: 16px
+  }
+  DIV.definition H1 {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 80em) {
+  DIV.definition {
+      font-size: 18px
+  }
+  DIV.definition H1 {
+    font-size: 26px;
+  }
+}

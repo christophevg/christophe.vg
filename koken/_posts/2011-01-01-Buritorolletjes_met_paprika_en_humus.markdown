@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Buritorolletjes met paprika en humus
 ---
 

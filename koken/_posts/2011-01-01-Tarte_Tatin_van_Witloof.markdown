@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Tarte Tatin van Witloof
 ---
 

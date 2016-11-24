@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Tiramisu met Frambozen en Peer
 ---
 

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Mac OS X Notes
 ---
 

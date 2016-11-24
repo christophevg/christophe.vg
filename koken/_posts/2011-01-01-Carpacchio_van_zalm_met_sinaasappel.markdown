@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Carpacchio van zalm met sinaasappel
 ---
 

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Sint-Jacobsnootje in een jasje van Gerookte Eend
 ---
 

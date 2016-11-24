@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Peertje in koffiesiroop met Chocoladeijs en Hazelnotencreme
 ---
 

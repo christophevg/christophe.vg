@@ -1,91 +1,319 @@
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Whoops...</title>
-  <meta name="viewport" 
-        content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
-  <link rel="stylesheet" type="text/css" href="/css/site.css">
-</head>
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
 
-<body>
-  <!--[if lt IE 9 ]>
-  <div style='margin-bottom:15px; border: 1px solid #F7941D; background: #FEEFDA; text-align: center; clear: both; height: 75px; position: relative;'>
-    <div style='position: absolute; right: 3px; top: 3px; font-family: courier new; font-weight: bold;'><a href='#' onclick='javascript:this.parentNode.parentNode.style.display="none"; return false;'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-cornerx.jpg' style='border: none;' alt='Close this notice'/></a></div>
-    <div style='width: 640px; margin: 0 auto; text-align: left; padding: 0; overflow: hidden; color: black;'>
-      <div style='width: 75px; float: left;'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-warning.jpg' alt='Warning!'/></div>
-      <div style='width: 275px; float: left; font-family: Arial, sans-serif;'>
-        <div style='font-size: 14px; font-weight: bold; margin-top: 12px;'>You are using an obsolete browser</div>
-        <div style='font-size: 12px; margin-top: 6px; line-height: 12px;'>I'm not Internet Eploder-friendly, nor is my site. Please upgrade to a modern web browser.</div>
-      </div>
-      <div style='width: 73px; float: left;'><a href='http://www.apple.com/safari/download/' target='_blank'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-safari.jpg' style='border: none;' alt='Get Safari 4'/></a></div>
-      <div style='width: 75px; float: left;'><a href='http://www.firefox.com' target='_blank'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-firefox.jpg' style='border: none;' alt='Get Firefox 3.5'/></a></div>
-      <div style='float: left;'><a href='http://www.google.com/chrome' target='_blank'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-chrome.jpg' style='border: none;' alt='Get Google Chrome'/></a></div>
-    </div>
-  </div>
-  <![endif]-->
+    <!-- begin SEO -->
 
-  <div class="error">
-    <div class="message">
-      <a href="./"><img src="/images/avatar.png" alt="christophe.vg"/></a>
+    <title>Christophe VG</title>
 
-      <br/><br/><br/>
+    <meta name="description" content="The World According to Christophe VG">
 
-      Hi there, ...<br>
-      you've stumbled upon a page that is no longer there. This
-      is probably because I've recently redesigned this site, including its
-      structure.<br>
-      No content was hurt or lost in the process, so it's all still there, 
-      somewhere...<br>
-      <br>
-      Due to a change in the content generation infrastructure at GitHub,
-      all directories are now generated using lowercase characters. So a lot of
-      links out there now fail. Sorry, little I can do about it :-(
-      
-      <br><br>
-      
-      Please pay a visit to <strong><a href="/">the front-page</a></strong>
-      and try to locate the content you were looking for.
-      
-    </div>
-  </div>
+    <meta property="og:locale" content="en">
+    <meta property="og:site_name" content="Christophe VG">
+    <meta property="og:title" content="Christophe VG">
 
-  <div id="footer">
-    <table>
-      <tr>
-        <td style="width:320px;vertical-align:top">
-          <a href="http://creativecommons.org/licenses/by-sa/2.0/be/">
-            <img alt="Creative Commons License" style="border-width:0" 
-                 src="http://i.creativecommons.org/l/by-sa/2.0/be/80x15.png" >
-          </a><br>
-          This site is licensed under a<br><a href="http://creativecommons.org/licenses/by-sa/2.0/be/">Creative Commons Attribution-Share Alike 2.0 Belgium License</a>.<br>
-          Last update on {{ site.time }}.
-        </td>
-        <td style="width:100px;vertical-align:bottom;">
-          <a href="https://github.com/ChristopheVG"
-             class="icon" style="background-image:url(/images/icons/github.png);">GitHub</a><br><br>
-        </td>
-        <td style="width:100px;vertical-align:bottom;">
-          <a href="http://twitter.com/Christophe_VG"
-             class="icon" style="background-image:url(/images/icons/twitter.png);">Twitter</a><br><br>
-        </td>
-        <td style="width:100px;vertical-align:bottom;">
-          <a href="https://plus.google.com/106074746666509232363?rel=author"
-             class="icon" style="background-image:url(https://ssl.gstatic.com/images/icons/gplus-16.png);">Google+</a><br><br>
-        </td>
-      </tr>
-    </table>
-  </div>
+    <meta property="og:description" content="The World According to Christophe VG">
+
+    <meta name="twitter:site" content="@christophe_vg">
+    <meta name="twitter:title" content="Christophe VG">
+    <meta name="twitter:description" content="The World According to Christophe VG">
+    <meta name="twitter:url" content="http://christophe.vg/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="http://christophe.vg/assets/images/banner.jpeg">
   
-  <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-393672-2']);
-    _gaq.push(['_trackPageview']);
+    <meta property="og:image" content="http://christophe.vg/assets/images/banner.jpeg">
 
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-  </script>
-</body>
+    <script type="application/ld+json">
+      {
+        "@context" : "http://schema.org",
+        "@type" : "Person",
+        "name" : "Christophe VG",
+        "url" : "http://christophe.vg",
+        "sameAs" : null
+      }
+    </script>
+
+    <!-- end SEO -->
+
+
+    <link href="http://christophe.vg/feed.xml" type="application/atom+xml" rel="alternate" title="Christophe VG Feed">
+
+    <!-- http://t.co/dKP3o1e -->
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+      document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+    </script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+    <!-- start custom head snippets -->
+
+<link rel="stylesheet" href="/assets/css/custom.css">
+
+<!-- end custom head snippets -->
+  </head>
+
+  <body class="layout--home">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="/">Christophe VG</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="/about">About</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="/koken">Koken</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="/zeilen">Zeilen</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="/embedded">Embedded</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="/it">IT</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="/fotografie">Fotografie</a></li>
+          
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+  
+
+
+
+
+
+
+
+<div class="page__hero"
+  style=" "
+>
+  
+    <img src="/assets/images/banner.jpeg" alt="" class="page__hero-image">
+  
+  
+</div>
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="/assets/images/avatar.png" class="author__avatar" alt="Christophe VG" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name" itemprop="name">Christophe VG</h3>
+    
+      <p class="author__bio" itemprop="description">
+        If you think I'm arrogant, you're missing the point ;-)
+      </p>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
+          <i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> 
+          <span itemprop="name"> Schriek, Belgium </span>
+        </li>
+      
+      
+      
+      
+      
+        <li>
+          <a href="mailto:contact@christophe.vg">
+            <i class="fa fa-fw fa-envelope-square" aria-hidden="true"></i>
+            <meta itemprop="email" content="contact@christophe.vg" />
+            Email
+          </a>
+        </li>
+      
+      
+      
+        <li><a href="https://twitter.com/Christophe_VG" itemprop="sameAs">
+          <i class="fa fa-fw fa-twitter-square" aria-hidden="true"></i> 
+          Twitter
+        </a></li>
+      
+      
+      
+        <li><a href="https://plus.google.com/+ChristopheVG" itemprop="sameAs">
+          <i class="fa fa-fw fa-google-plus-square" aria-hidden="true"></i> 
+          Google+
+        </a></li>
+      
+      
+        <li><a href="https://www.linkedin.com/in/christophevg" itemprop="sameAs">
+          <i class="fa fa-fw fa-linkedin-square" aria-hidden="true"></i> 
+          LinkedIn
+        </a></li>
+      
+      
+        <li><a href="http://www.slideshare.netchristophevg" itemprop="sameAs">
+          <i class="fa fa-fw fa-slideshare" aria-hidden="true"></i> 
+          Slideshare
+        </a></li>
+      
+      
+      
+      
+      
+        <li><a href="https://github.com/christophevg" itemprop="sameAs">
+          <i class="fa fa-fw fa-github" aria-hidden="true"></i> 
+          Github
+        </a></li>
+      
+      
+        <li><a href="https://bitbucket.org/christophevg" itemprop="sameAs">
+          <i class="fa fa-fw fa-bitbucket" aria-hidden="true"></i> 
+          Bitbucket
+        </a></li>
+      
+      
+      
+      
+      
+        <li><a href="https://www.pinterest.com/christophevg" itemprop="sameAs">
+          <i class="fa fa-fw fa-pinterest" aria-hidden="true"></i> 
+          Pinterest
+        </a></li>
+      
+      
+      
+      
+        <li><a href="https://www.youtube.com/user/ChristopheVG" itemprop="sameAs">
+          <i class="fa fa-fw fa-youtube-square" aria-hidden="true"></i> 
+          YouTube
+        </a></li>
+      
+      
+      
+      
+        <li><a href="https://www.flickr.com/christophevg" itemprop="sameAs">
+          <i class="fa fa-fw fa-flickr" aria-hidden="true"></i> 
+          Flickr
+        </a></li>
+      
+      
+      
+      
+        <li><a href="https://keybase.io/christophevg " itemprop="sameAs">
+          <i class="fa fa-fw fa-key" aria-hidden="true"></i> 
+          Keybase
+        </a></li>
+      
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+  <div class="archive">
+    
+      <h1 class="page__title">Whoops</h1>
+    
+      <p>Hi there, ... you've stumbled upon a page that is no longer here. This
+      is probably because I sometimes redesign this site a bit, including its
+      structure.</p>
+      
+      <p>No content was hurt or lost in the process, so it's all still there,
+      somewhere...</p>
+      
+      <p>Please try to use the main site navigation at the top to locate the
+      content you were looking for.</p>
+      
+      <p>Christophe</p>
+    
+  </div>
+</div>
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <div style="float:right">
+    <a href="http://creativecommons.org/licenses/by-sa/2.0/be/">
+      <img alt="Creative Commons License" style="border-width:0" 
+           src="http://i.creativecommons.org/l/by-sa/2.0/be/80x15.png" >
+    </a>
+  </div>
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+      <li><a href="https://twitter.com/christophe_vg"><i class="fa fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+    
+    
+    
+      <li><a href="http://github.com/christophevg"><i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+      <li><a href="http://bitbucket.org/christophevg"><i class="fa fa-fw fa-bitbucket" aria-hidden="true"></i> Bitbucket</a></li>
+    
+    <li><a href="/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">
+  &copy; 2016 Christophe VG. Powered by <a href="http://pages.github.com">GitHub Pages</a>, <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.<br>
+  Last update on 2016-11-24 11:53:53 +0100.<br>
+</div>
+      </footer>
+    </div>
+
+  <script src="/assets/js/main.min.js"></script>
+
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-393672-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+  </body>
 </html>
+

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Tempura van Scampi en Groene Asperges
 ---
 

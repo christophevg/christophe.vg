@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Filet Pur met Gekarameliseerde Pompoen, Bospaddestoelen en Gekonfijte Knoflook
 ---
 

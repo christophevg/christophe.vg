@@ -1,11 +1,13 @@
-source 'https://rubygems.org'
-gem 'github-pages'
+source "https://rubygems.org"
 
-# Notes:
-#
-# upgrading nokogiri might fail
-# via: http://www.nokogiri.org/tutorials/installing_nokogiri.html
-# $ gem install nokogiri -v '1.6.6.2' -- \
-#       --use-system-libraries \
-#       --with-xml2-config=/opt/local/bin/xml2-config \
-#       --with-xslt-config=/opt/local/bin/xslt-config
+# gem "github-pages", group: :jekyll_plugins
+# solution for https://github.com/bundler/bundler/issues/5154
+gem 'github-pages', '104', group: :jekyll_plugins
+
+group :jekyll_plugins do
+  gem "jekyll-paginate"
+  gem "jekyll-sitemap"
+  gem "jekyll-gist"
+  gem "jekyll-feed"
+  gem "jemoji"
+end

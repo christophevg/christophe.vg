@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Sabayonne van Witte Wijn en Citrus
 ---
 

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Gekarameliseerde Kalfszwezerik met Jus Sauternes
 ---
 

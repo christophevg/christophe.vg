@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Gerookte Zalm met Bietjes en Wodkacreme
 ---
 

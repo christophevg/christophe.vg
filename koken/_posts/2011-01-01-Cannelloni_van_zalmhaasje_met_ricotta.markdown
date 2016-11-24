@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Cannelloni van zalmhaasje met ricotta
 ---
 

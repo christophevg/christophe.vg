@@ -1,6 +1,4 @@
 ---
-layout: post
-hideSectionImage: true
 title: Muziek
 ---
 
@@ -8,68 +6,56 @@ title: Muziek
 
 ### Soothe My Soul - Depeche Mode
 
-<object width="640" height="390">
-  <param name="movie" value="http://www.youtube.com/v/bt-28iNQnwY&amp;rel=0&amp;hl=en_US&amp;feature=player_embedded&amp;version=3"></param>
-  <param name="allowFullScreen" value="true"></param>
-  <param name="allowScriptAccess" value="always"></param>
-  <embed src="http://www.youtube.com/v/bt-28iNQnwY&amp;rel=0&amp;hl=en_US&amp;feature=player_embedded&amp;version=3" 
-         type="application/x-shockwave-flash" allowfullscreen="true" allowScriptAccess="always" width="640" height="390">
-  </embed>
-</object>
-
-<br>
-<br>
-
-I'm coming for you<br>
-When the sun goes down<br>
-I'm coming for you<br>
-When there's no one around<br>
-<br>
-I come to your house<br>
-Break down the door<br>
-Girl I'm shaking<br>
-I need more<br>
-<br>
-There's only one way to soothe my soul<br>
-There's only one way to soothe my soul<br>
-Only one way<br>
-Only one way<br>
-Only one way<br>
-Only one way<br>
-<br>
-I'm coming for you<br>
-I need to feel your skin<br>
-I'm coming for you<br>
-To stop this crawling<br>
-<br>
-I'm taking my place<br>
-By your side<br>
-I'm not leaving<br>
-Until I'm satisfied<br>
-<br>
-There's only one way to soothe my soul<br>
-There's only one way to soothe my soul<br>
-Only one way<br>
-Only one way<br>
-Only one way<br>
-Only one way<br>
-<br>
-I'm coming for you<br>
-My body's hungry<br>
-I'm coming for you<br>
-Like a junkie<br>
-<br>
-I can't stop<br>
-The desire in me<br>
-I'm not waiting<br>
-Patiently<br>
-<br>
-There's only one way to soothe my soul<br>
-There's only one way to soothe my soul<br>
-There's only one way to soothe my soul<br>
-There's only one way to soothe my soul<br>
-Only one way<br>
-Only one way<br>
-Only one way<br>
-Only one way<br>
+I'm coming for you  
+When the sun goes down  
+I'm coming for you  
+When there's no one around  
+  
+I come to your house  
+Break down the door  
+Girl I'm shaking  
+I need more  
+  
+There's only one way to soothe my soul  
+There's only one way to soothe my soul  
+Only one way  
+Only one way  
+Only one way  
+Only one way  
+  
+I'm coming for you  
+I need to feel your skin  
+I'm coming for you  
+To stop this crawling  
+  
+I'm taking my place  
+By your side  
+I'm not leaving  
+Until I'm satisfied  
+  
+There's only one way to soothe my soul  
+There's only one way to soothe my soul  
+Only one way  
+Only one way  
+Only one way  
+Only one way  
+  
+I'm coming for you  
+My body's hungry  
+I'm coming for you  
+Like a junkie  
+  
+I can't stop  
+The desire in me  
+I'm not waiting  
+Patiently  
+  
+There's only one way to soothe my soul  
+There's only one way to soothe my soul  
+There's only one way to soothe my soul  
+There's only one way to soothe my soul  
+Only one way  
+Only one way  
+Only one way  
+Only one way  
 There's only one way to soothe my soul

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Gerookte zalm met Boursinsaus
 ---
 

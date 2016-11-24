@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Kalkoenrollade met Pancetta en Vulling met Citroen en Pijnboompitten
 ---
 

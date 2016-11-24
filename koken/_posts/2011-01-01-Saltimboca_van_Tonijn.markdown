@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Saltimboca van Tonijn
 ---
 

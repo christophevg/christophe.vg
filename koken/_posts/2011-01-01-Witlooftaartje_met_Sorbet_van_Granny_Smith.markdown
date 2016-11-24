@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Witlooftaartje met Sorbet van Granny Smith
 ---
 

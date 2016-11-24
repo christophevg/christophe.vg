@@ -1,11 +1,5 @@
 ---
-layout: post
-hideSectionImage: true
 title: Curriculum Vitae
-more: "<b>Download</b><br>
-       <a class=\"download pdf\" href=\"CV/cv_beknopt.pdf\">
-         CV  beknopt - PDF
-       </a>"
 ---
 
 ## Profiel

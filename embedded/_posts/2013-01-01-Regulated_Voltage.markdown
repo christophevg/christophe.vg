@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Regulated Voltage Circuit
 ---
 

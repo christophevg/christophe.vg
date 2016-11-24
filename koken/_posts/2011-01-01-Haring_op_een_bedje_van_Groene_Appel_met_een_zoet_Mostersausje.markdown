@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Haring op een bedje van Groene Appel met een zoet Mostersausje
 ---
 

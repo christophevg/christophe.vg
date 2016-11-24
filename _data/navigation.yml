@@ -1,0 +1,14 @@
+# main links
+main:
+  - title: "About"
+    url: /about
+  - title: "Koken"
+    url: /koken
+  - title: "Zeilen"
+    url: /zeilen
+  - title: "Embedded"
+    url: /embedded
+  - title: "IT"
+    url: /it
+  - title: "Fotografie"
+    url: /fotografie

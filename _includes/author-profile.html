@@ -187,10 +187,15 @@
         </a></li>
       {% endif %}
       {% if author.keybase %}
-        <li><a href="https://keybase.io/{{ author.keybase }} " itemprop="sameAs">
+        <li><a href="https://keybase.io/{{ author.keybase }}" itemprop="sameAs">
           <i class="fa fa-fw fa-key" aria-hidden="true"></i> 
           Keybase
         </a></li>
+      {% endif %}
+      {% if author.runkeeper %}
+        <li><a href="https://runkeeper.com/user/{{ author.runkeeper }}" itemprop="sameAs">
+          <img src="/assets/images/runkeeper.png" style="width:16px;height=16px;margin-bottom:3px;margin-right:3px;margin-left:2px;" aria-hidden="true"> 
+          Runkeeper
       {% endif %}
     </ul>
   </div>

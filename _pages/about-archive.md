@@ -22,7 +22,7 @@ it became apparant that [embedded systems](/embedded) seemed to lure me their
 way.
 
 But, there is more than [computers](/it) in my life. I'm happily married to
-Kristien Tambuyzer and our daughter [Eline](http://eline.vg) and baby son
+Kristien Tambuyzer and our daughter [Eline](http://eline.vg) and son
 [Arjen](http://arjen.vg) really brighten up every day of our life.
 
 [Cooking](/koken), [digital photography](/fotografie) and [catamaran

@@ -1,7 +1,7 @@
 ---
 title: Ketchup
 header:
-  teaser: /koken/images/full/ketchup.jpeg
+  teaser: /koken/images/thumb/ketchup.jpeg
   image: /koken/images/header/ketchup.jpeg
 ---
 

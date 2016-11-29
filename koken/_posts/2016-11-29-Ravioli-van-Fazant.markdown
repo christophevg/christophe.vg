@@ -1,7 +1,7 @@
 ---
 title: Ravioli van Fazant
 header:
-  teaser: /koken/images/full/ravioli-van-fazant.jpeg
+  teaser: /koken/images/thumb/ravioli-van-fazant.jpeg
   image: /koken/images/header/ravioli-van-fazant.jpeg
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Aardappel-Zalm Salade
 header:
-  teaser: /koken/images/full/aardappel-zalm-salade.png
+  teaser: /koken/images/thumb/aardappel-zalm-salade.png
   image: /koken/images/header/aardappel-zalm-salade.png
 ---
 

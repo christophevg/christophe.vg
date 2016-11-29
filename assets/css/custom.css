@@ -4,7 +4,7 @@ DIV.definition {
   color: rgb(34, 34, 34);
   font-family: arial, sans-serif;
   font-size: 14px;
-  line-height: 15px;
+  line-height: 100%;
   padding:26px;
 }
 
@@ -27,7 +27,7 @@ DIV.definition A {
 
 @media (min-width: 64em) {
   DIV.definition {
-      font-size: 16px
+    font-size: 16px
   }
   DIV.definition H1 {
     font-size: 24px;
@@ -36,7 +36,7 @@ DIV.definition A {
 
 @media (min-width: 80em) {
   DIV.definition {
-      font-size: 18px
+    font-size: 18px
   }
   DIV.definition H1 {
     font-size: 26px;

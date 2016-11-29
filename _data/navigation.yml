@@ -6,9 +6,9 @@ main:
     url: /koken
   - title: "Zeilen"
     url: /zeilen
+  - title: "Fotografie"
+    url: /fotografie
   - title: "Embedded"
     url: /embedded
   - title: "IT"
     url: /it
-  - title: "Fotografie"
-    url: /fotografie

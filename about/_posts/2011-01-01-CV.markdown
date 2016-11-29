@@ -50,7 +50,7 @@ energieverbruik in draadloze sensornetwerken.
 __januari 2011 - september 2011__
 
 Uitvoeren van functionele en technische analyses omtrent de
-platform-specifieke aspected van het UnifiedPost aanbod. Hierbij ligt de focus
+platform-specifieke aspecten van het UnifiedPost aanbod. Hierbij ligt de focus
 met nadruk op de beveiliging, de schaalbaarheid en de beschikbaarheid van het
 platform. Organiseren en ondersteunen van zowel interne als externe audits en
 certificering-procedures.
@@ -72,7 +72,6 @@ formuleren van een aanbevolen implementatie, rekening houdend met de bestaande
 infrastructuur en de toekomstvisie op business en ICT vlak.
 
 ### Functioneel Analist & Methodologie Coach, SD Worx
-
 __januari 2006 - maart 2008__
 
 Analyseren van het bestaande software platform voor loonberekeningen en
@@ -148,12 +147,14 @@ een FORTRAN applicatie voor de analyse van de elektriciteitsproductie naar
 Visual C++ op Windows NT voor Electrabel
 
 ## Eigenschappen
+
 * mogelijkheid om snel te leren door zelfstudie
 * teamgericht
 * positief ingesteld en sterk motiverende invloed
 * flexibel, goed aanpassingsvermogen bij wijzigende omstandigheden
 
 ## Motivatie
+
 * ontwerp en ontwikkeling van uitgebreide geïnformatiseerde systemen
 * samenwerken met mensen en hen aanzetten om hun capaciteiten te overstijgen
 * het zoeken en vinden van de beste oplossingen voor problemen met een oog naar de toekomst
@@ -161,12 +162,14 @@ Visual C++ op Windows NT voor Electrabel
 * samenbrengen van mensen en het combineren van hun mogelijkheden
 
 ## Vrije tijd
+
 * koken, o.a. koksopleiding PIVA
 * catamaran zeilen, o.a. internationale wedstrijden en opleiding van jeugd
 * fotografie
 * wandelen (meerdaagse tochten)
 
 ## Kennis
+
 * gedreven door Object-Orientatie, UML, MDA, SOA
 * gepassioneerd door geïntegreerde systemen (hardware en software)
 * uitgebreide ervaring met Linux, OpenBSD, Mac OS X, Solaris en Microsoft Windows
@@ -177,6 +180,7 @@ Visual C++ op Windows NT voor Electrabel
 * oog voor ontwerp van interactieve grafische gebruikers interfaces
 
 ## Talen
+
 * Nederlands : moedertaal
 * Engels : vloeiend
 * Frans: goed

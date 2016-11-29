@@ -1,0 +1,23 @@
+{% if page.feature1 %}
+<h3 class="archive__subtitle">Featured Updates</h3>
+
+<br>
+
+{% include feature_row id="feature1" type="left" %}
+{% endif %}
+
+{% if page.feature2 %}
+{% include feature_row id="feature2" type="right" %}
+{% endif %}
+
+{% if page.feature3 %}
+{% include feature_row id="feature3" type="left" %}
+{% endif %}
+
+{% if page.feature4 %}
+{% include feature_row id="feature4" type="right" %}
+{% endif %}
+
+{% if page.feature5 %}
+{% include feature_row id="feature5" type="left" %}
+{% endif %}

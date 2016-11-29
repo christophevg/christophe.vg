@@ -1,5 +1,8 @@
 ---
 title: Raven
+header:
+  teaser: /embedded/images/thumb/raven-cvg.jpg
+  image: /embedded/images/header/raven-cvg.jpg
 ---
 
 While doing research for possible master thesis topics, I'm looking into the
@@ -170,6 +173,6 @@ TODO
 
 ### Temporary notes
 
-* sudo port install libusb
-* export PYUSB_DEBUG_LEVEL=debug
-* system_profiler SPUSBDataType | grep -A10 USBSTICK
+* `sudo port install libusb`
+* `export PYUSB_DEBUG_LEVEL=debug`
+* `system_profiler SPUSBDataType | grep -A10 USBSTICK`

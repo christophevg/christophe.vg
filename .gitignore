@@ -2,3 +2,4 @@ _site
 .DS_Store
 *.lock
 .sass-cache
+.jekyll-metadata

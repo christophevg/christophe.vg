@@ -9,7 +9,7 @@ Sinds enkele jaren heb ik mijn liefde voor het visuele iets meer ter harte
 genomen en heb de overstap naar een spiegelreflexcamera aangevuld met enkele
 cursussen digitale fotografie.
 
-Een selectie van publieke foto's kan je terugvinden op mijn [Flickr profile](https://www.flickr.com/christophevg).
+Een selectie van publieke foto's kan je terugvinden op mijn [Flickr profiel](https://www.flickr.com/christophevg).
 
 <div>
   <center>

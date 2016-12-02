@@ -42,3 +42,7 @@ DIV.definition A {
     font-size: 26px;
   }
 }
+
+DIV.fluid-width-video-wrapper {
+  margin-bottom: 1em;
+}

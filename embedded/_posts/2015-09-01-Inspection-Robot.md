@@ -1,7 +1,7 @@
 ---
 title: Inspection Robot
 header:
-  teaser: /embedded/images/full/inspection-robot.jpeg
+  teaser: /embedded/images/thumb/inspection-robot.jpeg
   image: /embedded/images/header/inspection-robot.jpeg
 gallery:
   - url: /embedded/images/full/inspection-robot-render.png

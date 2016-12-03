@@ -21,16 +21,15 @@ Besides the top-level categories, I also try to add tags to the pages on this si
     <i class="fa fa-fw fa-tags" aria-hidden="true"></i>
     {{ site.data.ui-text[site.locale].tags_label | default: "Tags:" }}
   </strong>
-  <ul class="tag-box inline">
-  {% for tag in tags %}
-    <li>
-      <a href="#{{ tag | cgi_escape }}">
+  <br><br>
+  <span itemprop="keywords">
+    {% for tag in tags %}
+      <a href="#{{ tag | cgi_escape }}" class="page__taxonomy-item">
         {{ tag }}
         <span>{{ site.tags[tag].size }}</span>
       </a>
-    </li>
-  {% endfor %}
-  </ul>
+    {% endfor %}
+  </span>
  
   {% for tag in tags %}
   <h2 id="{{ tag | cgi_escape }}">{{ tag }}</h2>

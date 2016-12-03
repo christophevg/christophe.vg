@@ -29,8 +29,6 @@ Kristien Tambuyzer and our daughter [Eline](http://eline.vg) and son
 sailing](/zeilen) complete the initial picture of my world. Below are a few
 more pages that add some more personal details.
 
-I don't keep a blog, am not really active on so called social networks, but I
-sometimes feel the need to write down my very personal opinion about
-_things_.
+Some of them are tagged "[thing](/tags/#thing)". These are small write-ups about some _thing_ I seem to have an opinion about.
 
-And please remember: "If you think I'm arrogant, you're missing the point."
+Other pages are just plain informative and/or practical.

@@ -1,5 +1,6 @@
 ---
 title: Raven
+tags: avr
 header:
   teaser: /embedded/images/thumb/raven-cvg.jpg
   image: /embedded/images/header/raven-cvg.jpg

@@ -1,5 +1,6 @@
 ---
 title: JTAGICE mkII
+tags: avr
 ---
 
 There are many programmers, but because I know I'll also will need to debug

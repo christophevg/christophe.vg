@@ -1,5 +1,6 @@
 ---
 title: avrdude
+tags: avr
 ---
 
 To handle the programmer when programming e.g. my [ATMEGA168](ATMEGA168.html),

@@ -1,5 +1,6 @@
 ---
 title: ATMEGA 168
+tags: avr
 ---
 
 The Atmel ATMEGA168 was the first MCU I programmed completely by myself, and

@@ -1,5 +1,6 @@
 ---
 title: XT0F-003 - my first WSN node
+tags: avr
 header:
   teaser: /embedded/images/thumb/xt0f-003-rev1.jpg
   image: /embedded/images/header/xt0f-003-rev1.jpg

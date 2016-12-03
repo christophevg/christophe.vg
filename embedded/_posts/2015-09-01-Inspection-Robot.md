@@ -1,5 +1,8 @@
 ---
 title: Inspection Robot
+tags:
+  - professional
+  - robot
 header:
   teaser: /embedded/images/thumb/inspection-robot.jpeg
   image: /embedded/images/header/inspection-robot.jpeg

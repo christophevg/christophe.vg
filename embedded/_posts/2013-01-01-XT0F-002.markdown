@@ -1,5 +1,6 @@
 ---
 title: XT0F-002 - Programmer
+tags: avr
 ---
 
 XT0F-002 is a programmer for a 24-pin [ATMEGA8 MCU](ATMEGA168.html). It allows

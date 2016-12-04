@@ -343,7 +343,7 @@ We can let JBoss take care of setting up and maintaining a connection to our dat
 
 Access the code for this step also @ http://github.com/christophevg/HelloJBoss/tree/datasource
 
-See [MySQL](IT/MySQL.html) for instructions on how to create a basic user/database setup.
+See [MySQL](MySQL.html) for instructions on how to create a basic user/database setup.
 
 Create a table holding some ... information:
 

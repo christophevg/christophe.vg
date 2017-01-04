@@ -2,7 +2,7 @@
 title: Verse Kruiden Room
 ---
 
-##  ingredienten 
+## ingrediënten
 * 100ml verse room
 * verse kruiden: bieslook, dille en koriander
 

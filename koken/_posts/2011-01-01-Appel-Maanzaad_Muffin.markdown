@@ -2,7 +2,7 @@
 title: Appel-Maanzaad Muffin
 ---
 
-##  ingredienten 
+## ingrediënten
 * 50g maanzaad
 * 3 zure appels
 * 5 el citroensap

@@ -2,7 +2,7 @@
 title: Tiramisu met Frambozen en Peer
 ---
 
-## ingredienten
+## ingrediënten
 * 3 eieren, gescheiden
 * 7 lepels fijne suiker
 * 500g mascarpone

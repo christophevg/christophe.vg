@@ -2,7 +2,7 @@
 title: Caesar Salade
 ---
 
-## Ingredienten
+## ingrediënten
 ### voor de salade
 * romeinse sla
 * broodcroutons

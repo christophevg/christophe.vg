@@ -2,7 +2,7 @@
 title: Buritorolletjes met paprika en humus
 ---
 
-##  Ingredienten 
+## ingrediënten
 * 3 rode paprika, ontdaan van zaadlijsten en in 8 verdeeld
 * olijfolie
 * 4 tortilla's

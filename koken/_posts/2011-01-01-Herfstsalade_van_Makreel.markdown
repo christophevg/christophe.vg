@@ -2,7 +2,7 @@
 title: Herfstsalade van Makreel
 ---
 
-## ingredienten
+## ingrediënten
 * 1 gerookte makreel
 * 100g witte kool
 * ijsbergsalade

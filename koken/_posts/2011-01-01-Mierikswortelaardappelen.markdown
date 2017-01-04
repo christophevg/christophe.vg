@@ -2,7 +2,7 @@
 title: Mierikswortelaardappelen
 ---
 
-##  ingredienten 
+## ingrediënten
 
 * vastkokende aardappelen
 * 2 eetlepels mierikswortelsaus

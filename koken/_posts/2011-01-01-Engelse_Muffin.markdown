@@ -2,7 +2,7 @@
 title: Engelse Muffin
 ---
 
-##  ingredienten
+## ingrediënten
 * 7 g gist
 * 1/2 tl suiker
 * 1 tl bloem

@@ -2,7 +2,7 @@
 title: Zweedse gehaktballetjes
 ---
 
-##  Ingredienten 
+## ingrediënten
 * 1kg gehakt, varkens/kalfs
 * 2 uitjes
 * 50g broodkruim

@@ -2,7 +2,7 @@
 title: Sinaasappelijs
 ---
 
-## ingredienten
+## ingrediënten
 * 1 sinaasappel
 * 140 g basterdsuiker
 * 2,75 dl slagroom

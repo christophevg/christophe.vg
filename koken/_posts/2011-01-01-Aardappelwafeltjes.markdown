@@ -2,7 +2,7 @@
 title: Aardappelwafeltjes
 ---
 
-## ingredienten
+## ingrediënten
 * 1 kg geschilde aardappelen
 * 3 dl water
 * 150 g boter

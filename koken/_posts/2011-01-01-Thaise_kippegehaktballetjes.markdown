@@ -2,7 +2,7 @@
 title: Thaise kippegehaktballetjes
 ---
 
-##  Ingredienten 
+## ingrediënten
 
 * 1 1/2 tl rietsuiker
 * 1 tl vissaus

@@ -2,7 +2,7 @@
 title: Kerstpastei
 ---
 
-##  ingredienten 
+## ingrediënten
 
 ### voor de vulling
 * 7 hardgekookte eieren

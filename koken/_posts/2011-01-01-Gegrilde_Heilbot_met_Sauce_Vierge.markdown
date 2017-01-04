@@ -2,7 +2,7 @@
 title: Gegrilde Heilbot met Sauce Vierge
 ---
 
-## ingredienten
+## ingrediënten
 
 * 7el olijfolie
 * 1/2 tl venkelzaad

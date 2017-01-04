@@ -2,7 +2,7 @@
 title: Pasta a la Carbonara
 ---
 
-## Ingredienten
+## ingrediënten
 * pasta
 * spekreepjes
 * 4 eieren

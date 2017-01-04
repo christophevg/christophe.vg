@@ -2,7 +2,7 @@
 title: Omelet met aardappel en salami
 ---
 
-## Ingredienten
+## ingrediënten
 * 2 aardappelen
 * 50g fijngesneden salami
 * 8 eieren

@@ -2,7 +2,7 @@
 title: Scampibroodjes
 ---
 
-## ingredienten
+## ingrediënten
 * 10 grote gepelde tijgergarnalen
 * 5 mini chiabatta
 * 10 tal blaadjes rucola

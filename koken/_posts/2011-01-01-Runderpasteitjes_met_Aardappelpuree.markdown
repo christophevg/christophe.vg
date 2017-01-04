@@ -2,7 +2,7 @@
 title: Runderpasteitjes met Aardappelpuree
 ---
 
-## ingredienten
+## ingrediënten
 
 ### voor het deeg
 * 250g bloem

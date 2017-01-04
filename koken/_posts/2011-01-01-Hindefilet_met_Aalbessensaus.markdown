@@ -2,7 +2,7 @@
 title: Hindefilet met Aalbessensaus
 ---
 
-## ingredienten
+## ingrediënten
 
 * peper, zout, tijm, laurier
 * hindefilets

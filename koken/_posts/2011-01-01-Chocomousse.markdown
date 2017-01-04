@@ -2,7 +2,7 @@
 title: Chocomousse
 ---
 
-##  ingredienten 
+## ingrediënten
 
 * 300g chocolade
 * 30cl verse room

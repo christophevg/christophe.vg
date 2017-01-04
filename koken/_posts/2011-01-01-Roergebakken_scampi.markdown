@@ -2,7 +2,7 @@
 title: Roergebakken scampi
 ---
 
-##  ingredienten 
+## ingrediënten
 
 * 250g grote scampi
 * 1 eiwit

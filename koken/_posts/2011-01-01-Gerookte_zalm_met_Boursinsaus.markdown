@@ -2,7 +2,7 @@
 title: Gerookte zalm met Boursinsaus
 ---
 
-##  Ingredienten 
+## ingrediënten
 
 * Boursin
 * room

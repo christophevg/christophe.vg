@@ -2,7 +2,7 @@
 title: Peertje in koffiesiroop met Chocoladeijs en Hazelnotencreme
 ---
 
-## ingredienten
+## ingrediënten
 * 4 kleine conferencepeetjes
 * 40g hazelnoten
 * 10g suiker

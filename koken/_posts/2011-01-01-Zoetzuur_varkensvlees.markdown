@@ -2,7 +2,7 @@
 title: Zoetzuur varkensvlees
 ---
 
-##  ingredienten 
+## ingrediënten
 
 ### voor het vlees
 * 450g varkensvlees

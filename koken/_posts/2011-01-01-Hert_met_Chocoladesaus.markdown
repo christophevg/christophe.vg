@@ -2,7 +2,7 @@
 title: Hert met Chocoladesaus
 ---
 
-## ingredienten
+## ingrediënten
 
 * 400g wortelen in blokjes van 1cm
 * 400g knolselder in blokjes van 1cm

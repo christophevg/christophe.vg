@@ -2,7 +2,7 @@
 title: Pizzaspiraal
 ---
 
-##  ingredienten 
+## ingrediënten
 
 * 375g bloem
 * 60g boter

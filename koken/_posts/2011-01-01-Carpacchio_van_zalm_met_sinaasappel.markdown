@@ -2,7 +2,7 @@
 title: Carpacchio van zalm met sinaasappel
 ---
 
-## ingredienten
+## ingrediënten
 * 1 el honing
 * 300 gr verse zalm in schijfjes
 * 2 el balsamicoazijn

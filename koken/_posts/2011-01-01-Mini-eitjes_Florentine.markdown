@@ -2,7 +2,7 @@
 title: Mini-eitjes Florentine
 ---
 
-## ingredienten
+## ingrediënten
 
 * enkele sneedjes brood
 * kwarteleitjes

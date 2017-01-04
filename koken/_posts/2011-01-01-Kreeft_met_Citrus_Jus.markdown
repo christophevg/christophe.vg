@@ -2,7 +2,7 @@
 title: Kreeft met Citrus Jus
 ---
 
-##  ingredienten 
+## ingrediënten
 
 * twee levende kreeftjes
 * gezouten water om te pocheren

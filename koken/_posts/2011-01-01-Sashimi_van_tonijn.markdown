@@ -2,7 +2,7 @@
 title: Sashimi van tonijn
 ---
 
-## ingredienten
+## ingrediënten
 * verse tonijn, versneden in kleine blokjes
 * granny smith, versneden in kleine blokjes
 * soyasaus

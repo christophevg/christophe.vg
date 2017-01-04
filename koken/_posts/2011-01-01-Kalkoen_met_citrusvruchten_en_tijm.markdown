@@ -4,7 +4,7 @@ title: Kalkoen met citrusvruchten en tijm
 
 Voor mijn eerste kalkoen op Kerst (2006) heb ik lang gezocht naar een recept dat het waard was om 4 1/2 uur mee bezig te zijn. Op basis van onderstaand recept kunnen een 10tal mensen smullen van een originele kalkoen met Kerst. 
 
-##  ingredienten 
+## ingrediënten
 
 ### voor de kalkoen zelf
 * 1 kalkoen van rond de 5kg (ingewanden verwijderd)

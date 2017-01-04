@@ -2,7 +2,7 @@
 title: Espuma van knolselder met truffelolie
 ---
 
-##  ingredienten 
+## ingrediënten
 * 1/2 knolselder
 * gevogeltefond
 * 30 cl halfvolle melk

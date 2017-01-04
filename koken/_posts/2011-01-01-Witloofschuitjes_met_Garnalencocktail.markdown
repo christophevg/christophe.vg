@@ -2,7 +2,7 @@
 title: Witloofschuitjes met Garnalencocktail
 ---
 
-## ingredienten
+## ingrediënten
 * grijze garnalen
 * witloof
 * 

@@ -2,7 +2,7 @@
 title: Hollandse Saus
 ---
 
-##  ingredienten 
+## ingrediënten
 
 * 3 eierdooiers
 * 1/2 citroen

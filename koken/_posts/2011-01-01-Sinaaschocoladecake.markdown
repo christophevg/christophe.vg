@@ -2,7 +2,7 @@
 title: Sinaaschocoladecake
 ---
 
-## ingredienten
+## ingrediënten
 * 1 sinaasappel
 * 100 g zelfrijzend bakmeel
 * 1 tl bakpoeder

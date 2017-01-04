@@ -2,7 +2,7 @@
 title: Vanille Roomijs
 ---
 
-## ingredienten
+## ingrediënten
 * 500 ml melk
 * 5 eierdooiers
 * 80 g suiker

@@ -2,7 +2,7 @@
 title: Chocoladecakeje
 ---
 
-## ingredienten
+## ingrediënten
 * 200g pure chocolade
 * 240g ongezouten boter 
 * 4 eieren

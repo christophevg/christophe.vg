@@ -2,7 +2,7 @@
 title: Pompoentorentje
 ---
 
-##  ingredienten 
+## ingrediënten
 * 300 g pompoen, in kleine blokjes versneden
 * 3 peren, in kleine blokjes versneden
 * vers bereide veenbesjes

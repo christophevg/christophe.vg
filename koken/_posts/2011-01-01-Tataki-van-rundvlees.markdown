@@ -2,7 +2,7 @@
 title: Tataki van Rundvlees
 ---
 
-## Ingredienten
+## ingrediënten
 
 * 500g ossehaas
 * 4 el sojasaus

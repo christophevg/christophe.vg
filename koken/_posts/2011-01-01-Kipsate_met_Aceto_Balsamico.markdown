@@ -2,7 +2,7 @@
 title: Kipsate met Aceto Balsamico
 ---
 
-##  ingredienten 
+## ingrediënten
 
 * kip + kruiden
 * ui

@@ -2,7 +2,7 @@
 title: Chocolade Hazelnootcake
 ---
 
-##  ingredienten
+## ingrediënten
 * 250 g zachte boter
 * 1/2 flesje amandelaroma
 * 300 g suiker

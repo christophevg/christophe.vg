@@ -2,7 +2,7 @@
 title: Gerookte Zalm met Bietjes en Wodkacreme
 ---
 
-## ingredienten
+## ingrediënten
 * 2dl verse room
 * 3tl wodka
 * 2tl mierikswortelpasta

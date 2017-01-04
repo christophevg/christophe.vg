@@ -2,7 +2,7 @@
 title: Gesmolten Aardappelbootjes
 ---
 
-##  ingredienten
+## ingrediënten
 
 * 3 grotere aardappelen
 * cheddar

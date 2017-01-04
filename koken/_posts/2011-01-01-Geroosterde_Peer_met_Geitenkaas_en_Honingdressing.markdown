@@ -2,7 +2,7 @@
 title: Geroosterde Peer met Geitenkaas en Honingdressing
 ---
 
-##  ingredienten
+## ingrediënten
 
 * 3 el fijngesneden verse gemengde kruiden (bladpeterselie, basilicum, rozemarijn)
 * 200g zachte geitenkaas

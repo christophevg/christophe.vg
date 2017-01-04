@@ -2,7 +2,7 @@
 title: Saltimboca van Tonijn
 ---
 
-## ingredienten
+## ingrediënten
 * 4 kleine tonijn tournedos
 * salie
 * mozarella

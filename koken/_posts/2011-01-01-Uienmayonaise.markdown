@@ -2,7 +2,7 @@
 title: Uienmayonaise
 ---
 
-##  ingredienten 
+## ingrediënten
 * 2 uien
 * zout en peper
 * fijne olie

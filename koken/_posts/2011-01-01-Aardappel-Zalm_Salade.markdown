@@ -7,7 +7,7 @@ header:
 
 Tover aardappelen en wat gerookte zalm om tot een smaakbom!
 
-## ingredienten
+## ingrediënten
 
 * geschilde aardappelen
 * halve citroen

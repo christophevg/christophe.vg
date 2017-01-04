@@ -2,7 +2,7 @@
 title: Appel Crumble
 ---
 
-## ingredienten
+## ingrediënten
 * 400g appels, in schijfjes gesneden
 * 50g bruine suiker
 * 1tl kaneel

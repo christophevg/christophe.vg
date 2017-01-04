@@ -2,7 +2,7 @@
 title: Chocolade-Koffiepudding
 ---
 
-## ingredienten
+## ingrediënten
 
 * 75g bloem
 * 2 tl bakpoeder

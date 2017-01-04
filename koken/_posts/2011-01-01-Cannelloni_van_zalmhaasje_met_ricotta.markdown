@@ -2,7 +2,7 @@
 title: Cannelloni van zalmhaasje met ricotta
 ---
 
-## ingredienten
+## ingrediënten
 * 200g gerookt zalmhaasje
 * 250g ricottakaas
 * 125g gemalen mozarella

@@ -2,7 +2,7 @@
 title: Bruschetta
 ---
 
-## Ingredienten
+## ingrediënten
 * tomaten
 * rode ui
 * basilicum

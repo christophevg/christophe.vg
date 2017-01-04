@@ -2,7 +2,7 @@
 title: Rundermedaillons met bospaddestoelen en Marsala
 ---
 
-##  ingredienten 
+## ingrediënten
 * 1 handvol verse tijm
 * 8 rundermedaillons
 * olijfolie

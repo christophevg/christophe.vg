@@ -2,7 +2,7 @@
 title: Groentensoep met Spekballetjes
 ---
 
-##  ingredienten 
+## ingrediënten
 
 * enkele sneden oud wit brood
 * 150g spekreepjes

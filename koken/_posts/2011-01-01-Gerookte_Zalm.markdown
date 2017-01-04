@@ -2,7 +2,7 @@
 title: Gerookte Zalm
 ---
 
-##  ingredienten 
+## ingrediënten
 
 * 600g-800g zalmfilet
 * grof zeezout 

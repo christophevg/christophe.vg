@@ -2,7 +2,7 @@
 title: Gratin van Varkenshaasje en aardappelen met Calvadosroom
 ---
 
-##  ingredienten
+## ingrediënten
 
 * 800 g aardappelen
 * 2 uien

@@ -2,7 +2,7 @@
 title: Lam een Rozemarijn-Munt Korst
 ---
 
-## ingredienten
+## ingrediënten
 
 * munt
 * rozemarijn

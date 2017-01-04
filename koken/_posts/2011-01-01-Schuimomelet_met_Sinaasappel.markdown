@@ -2,7 +2,7 @@
 title: Schuimomelet met Sinaasappel
 ---
 
-## ingredienten
+## ingrediënten
 * 30g boter
 * 1 sinaasappel
 * 5 eieren

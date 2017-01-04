@@ -2,7 +2,7 @@
 title: Sint-Jacobsnootjes in Prosciutto met Citroenboter
 ---
 
-## ingredienten
+## ingrediënten
 * cherry trostomaatjes
 * kleine Sint-Jacobsnootjes, schoongemaakt
 * plakjes prosciutto

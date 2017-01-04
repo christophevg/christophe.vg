@@ -2,7 +2,7 @@
 title: Gnocchi met Bospaddestoelen
 ---
 
-##  ingredienten 
+## ingrediënten
 
 ### voor de gnocchi
 * 250g aardappelen 

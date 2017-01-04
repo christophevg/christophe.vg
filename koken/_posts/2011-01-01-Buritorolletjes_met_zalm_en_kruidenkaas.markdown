@@ -2,7 +2,7 @@
 title: Buritorolletjes met zalm en kruidenkaas
 ---
 
-##  ingredienten 
+## ingrediënten
 * tortilla's
 * kruidenkaas (Boursin)
 * gerookte zalm, dun gesneden

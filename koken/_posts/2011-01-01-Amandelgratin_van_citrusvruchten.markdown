@@ -2,7 +2,7 @@
 title: Amandelgratin van citrusvruchten
 ---
 
-## Ingredienten
+## ingrediënten
 * 4 sinaasappels
 * 4 pompelmoezen
 * 2 eigelen

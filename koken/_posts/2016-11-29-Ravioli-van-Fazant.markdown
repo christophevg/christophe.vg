@@ -8,7 +8,7 @@ header:
 Een eenvoudige en feestelijke bereiding van een heerlijk stukje wild. Ideaal
 als voorgerecht.
 
-## ingredienten
+## ingrediënten
 
 * fazant
 * ajuin, look, wortel, selder, laurier

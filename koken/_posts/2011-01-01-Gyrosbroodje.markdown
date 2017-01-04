@@ -2,7 +2,7 @@
 title: Gyrosbroodje
 ---
 
-##  ingredienten 
+## ingrediënten
 
 * 300g varkensvlees
 * gyroskruiden

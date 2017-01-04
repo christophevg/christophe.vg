@@ -2,7 +2,7 @@
 title: Pasta met Honing-Basilicumroom
 ---
 
-## Ingredienten
+## ingrediënten
 * pasta
 * 100g verse basilicum
 * 1 kleine rode chilipeper, fijngehakt

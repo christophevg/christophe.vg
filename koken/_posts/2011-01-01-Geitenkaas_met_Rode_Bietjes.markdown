@@ -2,7 +2,7 @@
 title: Geitenkaas met Rode Bietjes
 ---
 
-##  ingredienten
+## ingrediënten
 * geitekaas
 * rode bietjes
 * honing

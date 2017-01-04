@@ -2,7 +2,7 @@
 title: Groene kool in room
 ---
 
-##  ingredienten 
+## ingrediënten
 
 * 1 groene kool
 * 1/2l verse room

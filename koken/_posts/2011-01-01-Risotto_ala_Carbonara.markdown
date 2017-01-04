@@ -2,7 +2,7 @@
 title: Risotto ala Carbonara
 ---
 
-## ingredienten
+## ingrediënten
 * boter
 * sjalotje
 * risotto rijst

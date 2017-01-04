@@ -2,7 +2,7 @@
 title: Pomme Moscovit
 ---
 
-## ingredienten 
+## ingrediënten
 * krielaardappeltjes
 * zure room
 * lompviseitjes

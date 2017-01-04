@@ -2,7 +2,7 @@
 title: Gekonfijte sinaasappelschil
 ---
 
-## ingredienten
+## ingrediënten
 * 55g kristalsuiker
 * 100 ml koud water
 * geraspte schil van 1/4 citroen

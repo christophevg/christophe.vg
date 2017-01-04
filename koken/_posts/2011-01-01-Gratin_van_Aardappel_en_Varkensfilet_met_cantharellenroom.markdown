@@ -2,7 +2,7 @@
 title: Gratin van Aardappel en Varkensfilet met cantharellenroom
 ---
 
-## ingredienten
+## ingrediënten
 
 * 1kg gekookte aardappelen
 * 300g cantharellen

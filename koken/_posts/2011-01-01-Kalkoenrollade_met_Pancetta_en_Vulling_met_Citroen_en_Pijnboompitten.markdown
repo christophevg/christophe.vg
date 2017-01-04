@@ -2,7 +2,7 @@
 title: Kalkoenrollade met Pancetta en Vulling met Citroen en Pijnboompitten
 ---
 
-## ingredienten
+## ingrediënten
 
 * (dubbele) kalkoenfilet van 1,5kg
 * 20 plakjes pancetta

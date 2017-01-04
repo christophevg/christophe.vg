@@ -2,7 +2,7 @@
 title: Pancetta Mozarella BBQ hapje
 ---
 
-## ingredienten
+## ingrediënten
 * mozarella
 * ciabatta (of gewoon stokbrood)
 * olijfolie

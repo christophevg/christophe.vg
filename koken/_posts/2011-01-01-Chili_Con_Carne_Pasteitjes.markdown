@@ -2,7 +2,7 @@
 title: Chili Con Carne Pasteitjes
 ---
 
-## ingredienten
+## ingrediënten
 * filodeeg
 * blik kidneybonen
 * 1 ui, versnipperd

@@ -2,7 +2,7 @@
 title: Tomatentaartje met geitenkaas
 ---
 
-##  Ingredienten 
+## ingrediënten
 * 4 plakken bladerdeeg
 * 125g pesto
 * geitenkaas

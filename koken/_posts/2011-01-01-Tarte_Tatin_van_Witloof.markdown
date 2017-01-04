@@ -2,7 +2,7 @@
 title: Tarte Tatin van Witloof
 ---
 
-## ingredienten
+## ingrediënten
 * 500g witloof, kleine stronkjes
 * 25g boter
 * 2el ahornsiroop

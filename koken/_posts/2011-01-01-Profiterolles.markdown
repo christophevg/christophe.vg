@@ -1,22 +1,28 @@
 ---
 title: Profiterolles
+header:
+  teaser: /koken/images/thumb/profiterolles.jpeg
+  image: /koken/images/header/profiterolles.jpeg
 ---
 
-##  ingredienten 
+Niemand kan weerstaan aan verse profiterolles. Je eet er _altijd_ minstens eentje te veel ;-)
 
-### voor de profiterolles
-* 3 dl water
-* 150 g boter
-* 4 g zout
-* 1 theelepel suiker
-* 150 g bloem
-* 5 eieren
+## ingrediënten
 
-### voor de vulling
-* [chocolade ijsroom](Chocolade_ijsroom.html)
-* slagroom
+* voor de profiterolles
+  * 3 dl water
+  * 150 g boter
+  * 4 g zout
+  * 1 theelepel suiker
+  * 150 g bloem
+  * 5 eieren
 
-##  bereiding 
+* voor de vulling
+  * [chocolade ijsroom](Chocolade_ijsroom)
+  * slagroom
+  * pudding
+
+## bereiding 
 
 Verwarm de oven voor op een hoge stand.
 
@@ -39,6 +45,5 @@ Zo kan de stoom er uit ontsnappen. Zet de oven uit en plaats de profiterolles
 er terug in. Laat ze gedurende nog eens 10-15 minuten uitdrogen. Haal ze uit de
 oven en laat ze afkoelen.
 
-Vul ze met donkere [chocolade ijsroom](Chocolade_ijsroom.html) en spuit een
-roosje slagroom op elke profiterolle.
-
+Vul ze met donkere [chocolade ijsroom](Chocolade_ijsroom) of pudding en spuit
+een roosje slagroom op elke profiterolle.

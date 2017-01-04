@@ -2,7 +2,7 @@
 title: Gevulde koeken met chocolade
 ---
 
-##  Ingredienten 
+## ingrediënten
 
 * 50g pure chocolade
 * 125g suiker

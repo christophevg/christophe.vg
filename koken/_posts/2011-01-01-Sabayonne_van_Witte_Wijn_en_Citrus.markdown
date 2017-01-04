@@ -2,7 +2,7 @@
 title: Sabayonne van Witte Wijn en Citrus
 ---
 
-##  ingredienten 
+## ingrediënten
 * 4 eierdooiers
 * 100g suiker
 * geraspte schil van 1/2 citroen

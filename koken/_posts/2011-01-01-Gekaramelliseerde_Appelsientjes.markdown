@@ -2,7 +2,7 @@
 title: Gekaramelliseerde Appelsientjes
 ---
 
-## ingredienten
+## ingrediënten
 
 * een sinaasappel
 * 1 el donkere rum

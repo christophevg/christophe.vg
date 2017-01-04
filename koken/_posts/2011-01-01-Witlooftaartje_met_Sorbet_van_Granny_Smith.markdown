@@ -2,7 +2,7 @@
 title: Witlooftaartje met Sorbet van Granny Smith
 ---
 
-## ingredienten
+## ingrediënten
 * witloof
 * mayonaise
 * yoghurt

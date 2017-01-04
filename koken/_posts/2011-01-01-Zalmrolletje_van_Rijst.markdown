@@ -2,7 +2,7 @@
 title: Zalmrolletje van Rijst
 ---
 
-## ingredienten
+## ingrediënten
 * 200g gerookte zalm
 * 2el zwarte lompviseitjes
 * 50g gekookte rijst

@@ -2,7 +2,7 @@
 title: Haring op een bedje van Groene Appel met een zoet Mostersausje
 ---
 
-## ingredienten
+## ingrediënten
 
 * 2 haring filets
 * 1 Granny Smitt

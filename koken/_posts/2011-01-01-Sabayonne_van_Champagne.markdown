@@ -2,7 +2,7 @@
 title: Sabayonne van Champagne
 ---
 
-##  ingredienten 
+## ingrediënten
 * 4 eierdooiers
 * 6 dopjes fijne kristalsuiker
 * 6 dopjes champagne (ipv de klassieke witte wijn)

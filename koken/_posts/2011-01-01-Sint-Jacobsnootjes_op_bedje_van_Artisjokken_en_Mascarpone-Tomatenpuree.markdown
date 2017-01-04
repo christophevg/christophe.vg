@@ -2,7 +2,7 @@
 title: Sint-Jacobsnootjes op bedje van Artisjokken en Mascarpone-Tomatenpuree
 ---
 
-## ingredienten
+## ingrediënten
 * 8 sint-jacobsnootjes zonder koraal
 * 400g artisjokkenbodems
 * 100g halfgedroogde kerstomaten

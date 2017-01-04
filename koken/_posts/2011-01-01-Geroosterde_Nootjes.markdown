@@ -2,7 +2,7 @@
 title: Geroosterde Nootjes
 ---
 
-##  ingredienten 
+## ingrediënten
 
 * olijfolie
 * notenmengeling

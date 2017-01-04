@@ -2,7 +2,7 @@
 title: Munt-Chocoladeijs
 ---
 
-## ingredienten
+## ingrediënten
 * 200 g fijne kristalsuiker
 * 200 ml water
 * 125 g witte chocolade

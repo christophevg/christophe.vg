@@ -2,7 +2,7 @@
 title: Rollade met mousse van vis
 ---
 
-##  ingredienten 
+## ingrediënten
 * 500 witte vis (wijting, kabeljauw, ...)
 * 250 ml room
 * 2 eieren

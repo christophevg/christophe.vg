@@ -4,7 +4,7 @@ title: Bisque de Crevettes
 
 Velen hebben voet bij stuk gehouden dat deze soep een rasechte kreeftensoep was. De verrassing was groot wanneer zij vernamen dat het "maar" een garnaalsoepje was. Dit is een soep met een enorm feest-karakter.
 
-##  Ingredienten
+## ingrediënten
 * 500g ongepelde garnalen
 * 200g wortelen, 3 uien, 1/2 groene selder, 4 sjalotten, 3 teentjes look
 * olijfolie

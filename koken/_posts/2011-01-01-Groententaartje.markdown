@@ -2,7 +2,7 @@
 title: Groententaartje
 ---
 
-##  Ingredienten 
+## ingrediënten
 
 * 4 vellen balderdeeg
 * 1 ei, licht geklopt

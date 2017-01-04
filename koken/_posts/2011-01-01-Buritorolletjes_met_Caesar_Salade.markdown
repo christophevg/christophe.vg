@@ -2,7 +2,7 @@
 title: Buritorolletjes met Caesar Salade
 ---
 
-##  ingredienten 
+## ingrediënten
 * tortilla's
 *  dressing
 * kipfilet

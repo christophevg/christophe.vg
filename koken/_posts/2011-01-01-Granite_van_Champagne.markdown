@@ -2,7 +2,7 @@
 title: Granite van Champagne
 ---
 
-## ingredienten
+## ingrediënten
 
 * 100 gram suiker
 * 2,5 dl champagne

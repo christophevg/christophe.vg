@@ -2,7 +2,7 @@
 title: Omelet met geroosterde aardappels en paprika
 ---
 
-##  Ingredienten 
+## ingrediënten
 * olijfolie
 * 1 teentje look
 * 1 rode ui

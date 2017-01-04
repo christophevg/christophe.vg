@@ -2,7 +2,7 @@
 title: Pasta Bolognaise
 ---
 
-## Ingredienten
+## ingrediënten
 * pasta
 * 400g gehakt, varkens-kalfs
 * 2 uien

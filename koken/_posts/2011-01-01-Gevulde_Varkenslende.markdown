@@ -2,7 +2,7 @@
 title: Gevulde Varkenslende
 ---
 
-## ingredienten
+## ingrediënten
 
 * 1,5 kg varkenslende, uitgebeend en bijna volledig doormidden gesneden
 * 50 g rozijnen

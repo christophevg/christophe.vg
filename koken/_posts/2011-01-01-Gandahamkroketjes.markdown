@@ -2,7 +2,7 @@
 title: Gandahamkroketjes
 ---
 
-##  Ingredienten 
+## ingrediënten
 * 400g gandaham in kleine stukjes
 * 1l melk
 * 100g boter

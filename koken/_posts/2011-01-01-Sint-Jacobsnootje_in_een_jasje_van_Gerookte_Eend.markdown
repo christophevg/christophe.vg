@@ -2,7 +2,7 @@
 title: Sint-Jacobsnootje in een jasje van Gerookte Eend
 ---
 
-## ingredienten
+## ingrediënten
 * sint-jacobsnootjes
 * paprikapoeder
 * dunne sneedjes gerookte eendeborstfilet

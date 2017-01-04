@@ -2,7 +2,7 @@
 title: Worstenbroodjes
 ---
 
-## Ingredienten
+## ingrediënten
 
 * bladerdeeg
 * 150g varkens-kalfsgehakt

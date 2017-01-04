@@ -2,7 +2,7 @@
 title: Rode Wijnsaus
 ---
 
-##  ingredienten 
+## ingrediënten
 
 * kleine zilveruitjes
 * 50g boter

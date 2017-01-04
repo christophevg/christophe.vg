@@ -2,7 +2,7 @@
 title: Spinaziesoep met zalm
 ---
 
-##  ingredienten 
+## ingrediënten
 * 400g spinazie
 * 1/2l kippeboulion
 * 20cl slagroom

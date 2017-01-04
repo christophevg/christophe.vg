@@ -2,7 +2,7 @@
 title: Filet Pur met Gekarameliseerde Pompoen, Bospaddestoelen en Gekonfijte Knoflook
 ---
 
-## ingredienten
+## ingrediënten
 * 4 filet pur
 * 1 kleine pompoen
 * 250g gemengde bospaddestoelen

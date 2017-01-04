@@ -2,7 +2,7 @@
 title: Gekarameliseerde Kalfszwezerik met Jus Sauternes
 ---
 
-## ingredienten
+## ingrediënten
 
 * 4 kalfszwezerikken van 150g elk
 * olijfolie

@@ -6,7 +6,7 @@ Albondigas zijn die overheerlijke Spaanse gehaktballetjes in tomatensaus.
 Alleen moeten ze precies goed zijn, anders zijn het gewone balletjes in
 tomatensaus.
 
-## ingredienten
+## ingrediënten
 
 * 750g rundsgehakt
 * 7 teentjes look

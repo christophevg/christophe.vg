@@ -1,8 +1,14 @@
 ---
 title: Pomme Dauphin
+header:
+  teaser: /koken/images/thumb/pomme-dauphin.jpeg
+  image: /koken/images/header/pomme-dauphin.jpeg
 ---
 
+Super feestelijk en heerlijk.
+
 ## ingrediënten
+
 * 1 kg geschilde aardappelen
 * 3 dl water
 * 150 g boter
@@ -12,6 +18,7 @@ title: Pomme Dauphin
 * 1 eierdooier
 
 ##  bereiding 
+
 Kook de aardappelen met wat zout en pureer ze.
 
 Kook voor het soezenbeslag het water met de boter en het zout. Voeg de bloem toe en roer goed droog. Meng er een voor een de eieren onder.

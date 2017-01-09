@@ -50,4 +50,6 @@ Meng ongeveer 200g van de pudding met de chocolade en laat afkoelen. Bedek hierm
 
 Wring gelatine uit en voeg toe aan de overige pudding. Laat afkoelen tot het begint op te stijven.
 
-Klop de eiwitten stijf en voeg op het einde nog 70g suiker toe. Blijf kloppen tot goed stijf en blinkend. Voeg eerst 1/3 van de eiwitten toe aan de afgekoelde pudding, om deze opnieuw wat lopender te maken. Voeg daarna de overige 2/3 en de rum voorzichtig toe. Spreid over de donkere "bottom" en werk af met chocolade krullen. Ze in de koelkast tot opdienen.
+Klop de eiwitten stijf en voeg op het einde nog 70g suiker toe. Blijf kloppen tot goed stijf en blinkend. Voeg eerst 1/3 van de eiwitten toe aan de afgekoelde pudding, om deze opnieuw wat lopender te maken. Voeg daarna de overige 2/3 en de rum voorzichtig toe. Spreid over de donkere "bottom".
+
+Klopt de room stijf, strijk over de taart en werk af met chocolade krullen. Zet in de koelkast tot opdienen.

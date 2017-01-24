@@ -1,12 +1,17 @@
 ---
 title: Gerookte Zalm
+header:
+  teaser: /koken/images/thumb/gerookte-zalm.jpeg
+  image: /koken/images/header/gerookte-zalm.jpeg
 ---
+
+Zelf zalm roken is helemaal niet moeilijk. Zelfs zonder _echte_ rookoven, vraagt het echte té weinig tijd om het niet te doen. Heerlijk!
 
 ## ingrediënten
 
 * 600g-800g zalmfilet
 * grof zeezout 
-* bruine bastardsuiker
+* bruine basterdsuiker
 * houtmeel
 
 ##  bereiding 

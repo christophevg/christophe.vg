@@ -1,8 +1,14 @@
 ---
 title: Aardappelwafeltjes
+header:
+  teaser: /koken/images/thumb/aardappel-wafeltjes.jpeg
+  image: /koken/images/header/aardappel-wafeltjes.jpeg
 ---
 
+Eens geproefd, altijd gewenst. Heerlijk zachte wafeltjes van fijne puree. Onweerstaanbaar!
+
 ## ingrediënten
+
 * 1 kg geschilde aardappelen
 * 3 dl water
 * 150 g boter

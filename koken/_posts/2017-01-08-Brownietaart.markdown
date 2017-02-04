@@ -15,7 +15,7 @@ Cho - co - la la la laaa - de ...
 * 5 eieren
 * 150g poedersuiker
 
-## bereiding:
+## bereiding
 
 Verwarm de oven voor op 200 graden en boter een springvorm van ongeveer 25cm in en bestuif met bloem.
 

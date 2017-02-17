@@ -23,7 +23,7 @@ Smelt de boter en laat afkoelen.
 
 Voeg ei-gelen en melk samen in een mengkom. Een keukenrobot met klopper is handig om vlot te werken.
 
-Verbrokkel de verse gist, voeg toe aan het ei-melk mengsel en laat verder goed mengen. Voeg het lauwe water toe, alsook de bloem en laat mengen tot het beslag glad is en er geen klontertjes meer in zitten.
+Verbrokkel de verse gist, voeg toe aan het ei-melk mengsel en laat verder goed mengen. Voeg het lauwe water toe, alsook de bloem en laat mengen tot het beslag glad is en er geen klontertjes meer in zitten. Voeg vervolgens de gesmolten boter toe.
 
 Klop de ei-witten stijf en schep voorzichtig onder het beslag. Scherp er tot slot voorzichtig nog een snuifje zout onder.
 

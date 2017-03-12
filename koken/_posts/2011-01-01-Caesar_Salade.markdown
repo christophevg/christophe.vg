@@ -1,5 +1,8 @@
 ---
 title: Caesar Salade
+header:
+  teaser: /koken/images/thumb/caesar-salade.jpeg
+  image: /koken/images/header/caesar-salade.jpeg
 ---
 
 ## ingrediënten

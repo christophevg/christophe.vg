@@ -5,17 +5,7 @@ title: Sailing According to Christophe VG
 permalink: /zeilen/
 ---
 
-Reeds sinds vele jaren heeft de zeilmicrobe me te pakken. Na begonnen te zijn
-op caravelle, optimist, cadet, vaurien, 420, fireball, ... kwam ik in contact
-met catamaranzeilen. Het was liefde vanaf het eerste halve windse rack. Na een
-tweetal weken les genomen te hebben bij Bloso en vervolgens terecht gekomen te
-zijn op de Beachclub Duinbergen van de RBSC, was het hek van de dam.
-Cat-zeilen is niet alleen mijn ding, het is een verslaving die niet meer uit
-mijn bloed te weren is. Reeds het tweede seizoen dat ik op een cat zeilde kon
-ik mij de trotse eigenaar noemen van mijn eigen cat ... Waterproof, een Dart
-18. Ik had er nog niet eerder aan gedacht, maar eigenlijk moet ik wel een
-stukje van mijn domein speciaal toewijden aan de waanzinnig leuke wereld van
-het zeilen. Op deze pagina's vind je verhalen van op zee en daarrond.
+Reeds sinds vele jaren heeft de zeilmicrobe me te pakken. Na begonnen te zijn op caravelle, optimist, cadet, vaurien, 420, fireball, ... kwam ik in contact met catamaranzeilen. Het was liefde vanaf het eerste halve windse rack. Na een tweetal weken les genomen te hebben bij Bloso en vervolgens terecht gekomen te zijn op de Beachclub Duinbergen van de RBSC, was het hek van de dam. Cat-zeilen is niet alleen mijn ding, het is een verslaving die niet meer uit mijn bloed te weren is. Reeds het tweede seizoen dat ik op een cat zeilde kon ik mij de trotse eigenaar noemen van mijn eigen cat ... Waterproof, een Dart 18. Ik had er nog niet eerder aan gedacht, maar eigenlijk moet ik wel een stukje van mijn domein speciaal toewijden aan de waanzinnig leuke wereld van het zeilen. Op deze pagina's vind je verhalen van op zee en daarrond.
 
 ## Een beetje voorgeschiedenis
 

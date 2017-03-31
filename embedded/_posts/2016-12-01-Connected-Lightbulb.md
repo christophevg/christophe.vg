@@ -66,7 +66,7 @@ That's when I entered the [Open Garage](http://opengarage.org). Since I had ever
 
 When we finished version 2, Anthony made a little Youtube video, showing the possibilities and outlining some of the technical components we used. It shows also the lamps in action, using some basic code, hosted on a web page. So, no mandatory proprietary app required.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_ZPRNsgZJc8" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_ZPRNsgZJc8?rel=0" frameborder="0" allowfullscreen></iframe>
 
 # Version 3 - The Proof-of-Concept
 

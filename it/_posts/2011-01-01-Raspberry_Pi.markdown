@@ -213,3 +213,14 @@ permitted by applicable law.
 Last login: Fri Feb 26 02:29:22 2016 from 192.168.0.1
 ```
 
+### Freeing UART/console for applications
+
+By default, the Pi uses its UART for its console. This means that you can't connect external devices. To free it up do the following:
+
+1. Go into the configuration tool and disable serial support: `sudo raspi-config`, go into `9 Advanced Options`, then select `A8 Serial` and acknowledge you want to disable serial.
+2. Now, one more step is needed, because else you won't find any serial ports: edit `/boot/config.txt` and add `enable_uart=1`.
+3. ALSO add `core_freq=250` to the same `/boot/config.txt`, or else the handling of the data with base its baudrate on a variable clock speed ()?!) (See [http://raspberrypi.stackexchange.com/questions/45570/](http://raspberrypi.stackexchange.com/questions/45570/) for some background information).
+4. reboot
+
+Now, after installing e.g. `screen`, you can access UART using e.g. `screen /dev/ttyS0`.
+

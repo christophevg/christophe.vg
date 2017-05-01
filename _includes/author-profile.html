@@ -114,6 +114,12 @@
           Bitbucket
         </a></li>
       {% endif %}
+      {% if author.thingiverse %}
+        <li><a href="https://thingiverse.com/{{ author.thingiverse }}" itemprop="sameAs">
+          <img src="/assets/images/thingiverse.png" style="width:16px;height=16px;margin-bottom:3px;margin-right:3px;margin-left:2px;" aria-hidden="true"> 
+          Thingiverse
+        </a></li>
+      {% endif %}
       {% if author.stackoverflow %}
         <li><a href="https://www.stackoverflow.com/users/{{ author.stackoverflow }}" itemprop="sameAs">
           <i class="fa fa-fw fa-stack-overflow" aria-hidden="true"></i> 

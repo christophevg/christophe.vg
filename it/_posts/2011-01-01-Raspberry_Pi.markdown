@@ -224,3 +224,87 @@ By default, the Pi uses its UART for its console. This means that you can't conn
 
 Now, after installing e.g. `screen`, you can access UART using e.g. `screen /dev/ttyS0`.
 
+## Use it...
+
+### ... as a WiFi Access Point
+
+TODO: https://frillip.com/using-your-raspberry-pi-3-as-a-wifi-access-point-with-hostapd/
+
+### Reboot wireless network interface
+
+TODO:
+http://weworkweplay.com/play/rebooting-the-raspberry-pi-when-it-loses-wireless-connection-wifi/
+
+```bash
+ping -c4 192.168.1.1 > /dev/null
+ 
+if [ $? != 0 ]; then
+  sudo /sbin/shutdown -r now
+fi
+```
+
+### ... as a Node.js server
+
+TODO: 
+* http://thisdavej.com/upgrading-to-more-recent-versions-of-node-js-on-the-raspberry-pi/
+* https://expressjs.com/en/starter/installing.html
+* https://expressjs.com/en/starter/hello-world.html
+* http://weworkweplay.com/play/raspberry-pi-nodejs/
+
+### ... as an audio recording + playback device
+
+TODO
+* http://www.g7smy.co.uk/2013/08/recording-sound-on-the-raspberry-pi/
+  * aplay -D hwplug:1 recoding.wav
+
+### ... to send email
+
+TODO
+* https://blog.dantup.com/2016/04/setting-up-raspberry-pi-raspbian-jessie-to-send-email/
+
+
+### ... without a _head_
+
+* `sudo apt-get --purge remove x11-*` frees ~1.4GB (https://raspberrypi.stackexchange.com/questions/5258/how-can-i-remove-the-gui-from-raspbian-debian)
+
+before:
+```bash
+pi@raspberrypi:~ $ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root        14G  3.5G  9.0G  28% /
+devtmpfs        459M     0  459M   0% /dev
+tmpfs           463M     0  463M   0% /dev/shm
+tmpfs           463M  6.4M  457M   2% /run
+tmpfs           5.0M  4.0K  5.0M   1% /run/lock
+tmpfs           463M     0  463M   0% /sys/fs/cgroup
+/dev/mmcblk0p6   63M   20M   44M  31% /boot
+tmpfs            93M     0   93M   0% /run/user/1000
+```
+
+after:
+```bash
+pi@raspberrypi:~ $ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root        14G  2.1G   11G  17% /
+devtmpfs        459M     0  459M   0% /dev
+tmpfs           463M     0  463M   0% /dev/shm
+tmpfs           463M  6.4M  457M   2% /run
+tmpfs           5.0M  4.0K  5.0M   1% /run/lock
+tmpfs           463M     0  463M   0% /sys/fs/cgroup
+/dev/mmcblk0p6   63M   20M   44M  31% /boot
+tmpfs            93M     0   93M   0% /run/user/1000
+```
+
+
+### ... with a Huawei E3276
+
+* https://trick77.com/setting-up-huawei-e3276-150-4g-lte-usb-modem-ubuntu-server-desktop/
+* http://www.gnuton.org/blog/2015/07/huawei-e3372/
+* https://www.raspberrypi.org/forums/viewtopic.php?f=45&t=101582
+* https://www.reddit.com/r/raspberry_pi/comments/2pcu9b/4g_dongle_for_the_pi/
+
+### ... with voice control
+
+* http://jasperproject.github.io/documentation/usage/
+* http://www.techradar.com/how-to/how-to-control-the-raspberry-pi-with-your-voice
+* https://diyhacking.com/best-voice-recognition-software-for-raspberry-pi/

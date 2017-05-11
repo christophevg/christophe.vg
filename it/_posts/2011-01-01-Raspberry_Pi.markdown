@@ -96,6 +96,14 @@ Mar  3 10:07:47  bootpd[92620] <Notice>: ACK sent raspberrypi 192.168.0.2 pktsiz
 
 The Pi can now be contacted at `192.168.0.2`.
 
+> From https://www.raspberrypi.org/documentation/remote-access/ssh/
+>
+> As of the November 2016 release, Raspbian has the SSH server disabled by default. You will have to enable it manually. This is done using raspi-config:
+> 
+> Enter sudo raspi-config in the terminal, first select Interfacing options, then navigate to ssh, press Enter and select Enable or disable ssh server.
+> 
+> For headless setup, SSH can be enabled by placing a file named 'ssh', without any extension, onto the boot partition of the SD card.
+
 Connect to the Pi using the default `pi` user with password `raspberry`:
 
 ```bash
@@ -108,7 +116,7 @@ Warning: Permanently added '192.168.0.2' (ECDSA) to the list of known hosts.
 pi@192.168.0.2's password: 
 
 The programs included with the Debian GNU/Linux system are free software;
-the exact distribution terms for each program are described in the
+the exact distribution terms f or each program are described in the
 individual files in /usr/share/doc/*/copyright.
 
 Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
@@ -125,14 +133,14 @@ Everybody knows the default password for user `pi`. Change it:
 
 ```bash
 $ passwd
-Changing password for pi.
+Changing password f or pi.
 (current) UNIX password: 
 Enter new UNIX password: 
 Retype new UNIX password: 
 passwd: password updated successfully
 ```
 
-Even better: setup key-based SSH access ;-)
+> Even better: setup key-based SSH access and disable password access ;-)
 
 ### Wifi
 
@@ -217,55 +225,26 @@ Last login: Fri Feb 26 02:29:22 2016 from 192.168.0.1
 
 By default, the Pi uses its UART for its console. This means that you can't connect external devices. To free it up do the following:
 
-1. Go into the configuration tool and disable serial support: `sudo raspi-config`, go into `9 Advanced Options`, then select `A8 Serial` and acknowledge you want to disable serial.
+1. Go into the configuration tool and disable serial support: `sudo raspi-config`, go into `5 Interfacing Options`, then select `P6 Serial` and acknowledge you want to disable serial.
 2. Now, one more step is needed, because else you won't find any serial ports: edit `/boot/config.txt` and add `enable_uart=1`.
 3. ALSO add `core_freq=250` to the same `/boot/config.txt`, or else the handling of the data with base its baudrate on a variable clock speed ()?!) (See [http://raspberrypi.stackexchange.com/questions/45570/](http://raspberrypi.stackexchange.com/questions/45570/) for some background information).
 4. reboot
 
 Now, after installing e.g. `screen`, you can access UART using e.g. `screen /dev/ttyS0`.
 
-## Use it...
-
-### ... as a WiFi Access Point
-
-TODO: https://frillip.com/using-your-raspberry-pi-3-as-a-wifi-access-point-with-hostapd/
-
-### Reboot wireless network interface
-
-TODO:
-http://weworkweplay.com/play/rebooting-the-raspberry-pi-when-it-loses-wireless-connection-wifi/
+### Update,... Upgrade
 
 ```bash
-ping -c4 192.168.1.1 > /dev/null
- 
-if [ $? != 0 ]; then
-  sudo /sbin/shutdown -r now
-fi
+% sudo apt update
+...
+% sudo apt upgrade
+...
 ```
-
-### ... as a Node.js server
-
-TODO: 
-* http://thisdavej.com/upgrading-to-more-recent-versions-of-node-js-on-the-raspberry-pi/
-* https://expressjs.com/en/starter/installing.html
-* https://expressjs.com/en/starter/hello-world.html
-* http://weworkweplay.com/play/raspberry-pi-nodejs/
-
-### ... as an audio recording + playback device
-
-TODO
-* http://www.g7smy.co.uk/2013/08/recording-sound-on-the-raspberry-pi/
-  * aplay -D hwplug:1 recoding.wav
-
-### ... to send email
-
-TODO
-* https://blog.dantup.com/2016/04/setting-up-raspberry-pi-raspbian-jessie-to-send-email/
-
 
 ### ... without a _head_
 
 * `sudo apt-get --purge remove x11-*` frees ~1.4GB (https://raspberrypi.stackexchange.com/questions/5258/how-can-i-remove-the-gui-from-raspbian-debian)
+* `sudo apt-get autoremove` completes the picture
 
 before:
 ```bash
@@ -295,16 +274,193 @@ tmpfs           463M     0  463M   0% /sys/fs/cgroup
 tmpfs            93M     0   93M   0% /run/user/1000
 ```
 
+## Use it...
 
-### ... with a Huawei E3276
+### ... to host a mobile uplink, with a Huawei E3372 LTE dongle
 
-* https://trick77.com/setting-up-huawei-e3276-150-4g-lte-usb-modem-ubuntu-server-desktop/
-* http://www.gnuton.org/blog/2015/07/huawei-e3372/
-* https://www.raspberrypi.org/forums/viewtopic.php?f=45&t=101582
-* https://www.reddit.com/r/raspberry_pi/comments/2pcu9b/4g_dongle_for_the_pi/
+Start by disabling the PIN using a "normal" computer.
 
-### ... with voice control
+Currently you need to edit `/lib/udev/rules.d/40-usb_modeswitch.rules` and change
 
-* http://jasperproject.github.io/documentation/usage/
-* http://www.techradar.com/how-to/how-to-control-the-raspberry-pi-with-your-voice
-* https://diyhacking.com/best-voice-recognition-software-for-raspberry-pi/
+```
+ATTRS{idVendor}=="12d1", ATTR{bInterfaceNumber}=="00", ATTR{bInterfaceClass}=="08", RUN+="usb_modeswitch '%b/%k'
+```
+to read
+```
+'%k'
+```
+
+at the end.
+
+Reboot and afterwards, the dongle will have created `eth1` with IP address `192.168.8.100` and will act as a NAT router.
+
+> Reference: [https://github.com/RPi-Distro/repo/issues/47](https://github.com/RPi-Distro/repo/issues/47)
+
+### ... as a WiFi Access Point
+
+```bash
+$ sudo apt-get install dnsmasq hostapd
+```
+
+Edit `/etc/dhcpcd.conf` and add
+```
+denyinterfaces wlan0
+```
+
+Edit `/etc/network/interfaces`, edit `wlan0` section:
+
+```
+allow-hotplug wlan0  
+iface wlan0 inet static  
+    address 172.24.1.1
+    netmask 255.255.255.0
+    network 172.24.1.0
+    broadcast 172.24.1.255
+```
+
+```bash
+$ sudo service dhcpcd restart
+$ sudo ifdown wlan0
+$ sudo ifup wlan0
+```
+
+Edit `/etc/hostapd/hostapd.conf`
+
+```
+interface=wlan0
+driver=nl80211
+ssid=<YourNetworkName>
+
+hw_mode=g
+channel=6
+ieee80211n=1
+wmm_enabled=1
+ht_capab=[HT40][SHORT-GI-20][DSSS_CCK-40]
+macaddr_acl=0
+
+auth_algs=1
+ignore_broadcast_ssid=0
+wpa=2
+wpa_key_mgmt=WPA-PSK
+wpa_passphrase=<YourNetworkPassword>
+rsn_pairwise=CCMP
+```
+
+Edit `/etc/default/hostapd`
+
+```
+DAEMON_CONF="/etc/hostapd/hostapd.conf"
+```
+
+Edit `/etc/dnsmasq.d/dnsmasq.wlan0.conf`:
+
+```
+interface=wlan0
+listen-address=172.24.1.1
+bind-interfaces
+server=8.8.8.8 
+domain-needed
+bogus-priv
+dhcp-range=172.24.1.50,172.24.1.150,12h
+```
+
+Edit `/etc/sysctl.conf`:
+
+```
+net.ipv4.ip_forward=1
+```
+
+Setup NAT rules for `eth0` and `wlan0` to use `eth1` uplink:
+
+```
+sudo iptables -t nat -A POSTROUTING -o eth1 -j MASQUERADE  
+sudo iptables -A FORWARD -i wlan0 -o eth1 -m state --state RELATED,ESTABLISHED -j ACCEPT  
+sudo iptables -A FORWARD -i eth1 -o wlan0 -j ACCEPT 
+sudo iptables -A FORWARD -i eth00 -o eth1 -m state --state RELATED,ESTABLISHED -j ACCEPT  
+sudo iptables -A FORWARD -i eth1 -o eth0 -j ACCEPT 
+```
+
+```bash
+$ sudo sh -c "iptables-save > /etc/iptables.ipv4.nat"
+```
+
+Edit `/etc/rc.local` and add (before `exit 0`):
+
+```
+iptables-restore < /etc/iptables.ipv4.nat  
+```
+
+```bash
+$ sudo service hostapd start  
+$ sudo service dnsmasq start
+```
+
+> Reference: [https://frillip.com/using-your-raspberry-pi-3-as-a-wifi-access-point-with-hostapd/](https://frillip.com/using-your-raspberry-pi-3-as-a-wifi-access-point-with-hostapd/)
+
+### ... as a DHCP Server (for eth0)
+
+Edit `/etc/network/interfaces`
+
+```
+auto eth0
+iface eth0 inet static
+    address 192.168.0.1
+    netmask 255.255.255.0
+```
+
+Edit `/etc/dnsmasq.d/dnsmasq.eth0.conf`:
+
+```
+interface=eth0
+listen-address=192.168.0.1
+bind-interfaces
+server=8.8.8.8 
+domain-needed
+bogus-priv
+dhcp-range=192.168.0.50,192.168.0.150,12h
+```
+
+Optionally, add to `/etc/dnsmasq.d/dnsmasq.eth0.conf`
+
+```
+dhcp-option=3
+dhcp-option=6
+```
+
+to not have it set default router and DNS resolvement, if e.g. the host has another internet connection.
+
+References:
+* [https://www.raspberrypi.org/learning/networking-lessons/lesson-3/plan/](https://www.raspberrypi.org/learning/networking-lessons/lesson-3/plan/)
+* [https://superuser.com/questions/306121/i-dont-want-my-dhcp-to-be-a-default-gateway](https://superuser.com/questions/306121/i-dont-want-my-dhcp-to-be-a-default-gateway)
+
+### ... as an audio recording + playback device using Sound Blaster Play 2
+
+* use `alsamixer` to set audio parameters
+* use `sudo alsactl store` to save paramters
+
+* `aplay -D hwplug:1 recoding.wav`
+
+To make the Sound Blaster the only and default device:
+
+Edit `/etc/asound.conf`:
+
+```
+pcm.!default {
+    type hw
+    card 1
+}
+
+ctl.!default {
+    type hw           
+    card 1
+}
+```
+
+> `card` should be the card number in `aplay -l` and `arecord -l`
+
+To record use `arecord -f cd -vv test.wav`
+To play use `aplay test.wav`
+
+Reference:
+* [http://www.g7smy.co.uk/2013/08/recording-sound-on-the-raspberry-pi/](http://www.g7smy.co.uk/2013/08/recording-sound-on-the-raspberry-pi/)
+* [https://raspberrypi.stackexchange.com/questions/19705/usb-card-as-my-default-audio-device](https://raspberrypi.stackexchange.com/questions/19705/usb-card-as-my-default-audio-device)

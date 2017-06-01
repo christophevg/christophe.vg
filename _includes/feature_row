@@ -1,50 +1,41 @@
-{% if include.id %}
-  {% assign feature_row = page.[include.id] %}
-{% else %}
-  {% assign feature_row = page.feature_row %}
-{% endif %}
-
 <div class="feature__wrapper">
 
-  {% for f in feature_row %}
-
-    {% if f.url contains "://" %}
-      {% capture f_url %}{{ f.url }}{% endcapture %}
+    {% if include.feature.url contains "://" %}
+      {% capture f_url %}{{ include.feature.url }}{% endcapture %}
     {% else %}
-      {% capture f_url %}{{ f.url | absolute_url }}{% endcapture %}
+      {% capture f_url %}{{ include.feature.url | absolute_url }}{% endcapture %}
     {% endif %}
 
     <div class="feature__item{% if include.type %}--{{ include.type }}{% endif %}">
       <div class="archive__item">
-        {% if f.image_path %}
+        {% if include.feature.image_path %}
           <div class="archive__item-teaser">
             <img src=
-              {% if f.image_path contains "://" %}
-                "{{ f.image_path }}"
+              {% if include.feature.image_path contains "://" %}
+                "{{ include.feature.image_path }}"
               {% else %}
-                "{{ f.image_path | absolute_url }}"
+                "{{ include.feature.image_path | absolute_url }}"
               {% endif %}
-            alt="{% if f.alt %}{{ f.alt }}{% endif %}">
+            alt="{% if include.feature.alt %}{{ include.feature.alt }}{% endif %}">
           </div>
         {% endif %}
 
         <div class="archive__item-body">
-          {% if f.title %}
-            <h2 class="archive__item-title">{{ f.title }}</h2>
+          {% if include.feature.title %}
+            <h2 class="archive__item-title">{{ include.feature.title }}</h2>
           {% endif %}
 
-          {% if f.excerpt %}
+          {% if include.feature.excerpt %}
             <div class="archive__item-excerpt">
-              {{ f.excerpt | markdownify }}
+              {{ include.feature.excerpt | markdownify }}
             </div>
           {% endif %}
 
-          {% if f.url %}
-            <p><a href="{{ f_url }}" class="btn {{ f.btn_class }}">{{ f.btn_label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}</a></p>
+          {% if include.feature.url %}
+            <p><a href="{{ f_url }}" class="btn {{ include.feature.btn_class }}">{{ include.feature.btn_label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}</a></p>
           {% endif %}
         </div>
       </div>
     </div>
-  {% endfor %}
 
 </div>

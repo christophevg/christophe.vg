@@ -1,3 +1,11 @@
+- image_path: /embedded/images/thumb/c3po-luisterbox.jpeg
+  alt: "C3PO Luisterbox"
+  title: "C<sup>3</sup>PO Luisterbox"
+  excerpt: "In opdracht van Studio Dott ontwikkelde ik de internet-geconnecteerde C3PO Luisterbox voor een participatieproject in Schilde."
+  url: "/embedded/C3PO-Luisterbox"
+  btn_label: "Lees meer"
+  btn_class: "btn--inverse"
+
 - image_path: /embedded/images/thumb/neobutton.jpeg
   alt: "NeoButton"
   title: "NeoButton"

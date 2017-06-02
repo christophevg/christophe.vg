@@ -42,7 +42,7 @@ De gesprekken worden online doorgestuurd naar de mensen van [Cropland](http://cr
 
 ## De straat op...
 
-Het prototype werd in een door [Solution Group](http://solutiongroup.eu) ontwikkelde "box" ingebouwd, klaar voor veel leuke gesprekken.
+Het prototype werd in een mooie en solide behuizing, ontworpen door Studio Dott en gebouwd door [Solution Group](http://solutiongroup.eu), ingebouwd en is nu helemaal klaar voor veel leuke gesprekken.
 
 ![Ingebouwde versie](images/full/c3po-ingebouwd-operationeel.jpeg)
 

@@ -30,21 +30,21 @@ Naast de selectie van een vandaalbestendige telefoon en de ontwikkeling van een 
 
 {% include gallery id="gallery-prototype" %}
 
-Voor de realisatie van het electronisch, kloppend hart van de Luisterbox werden standaard oplossingen zoals Raspberry Pi modules, een kwalitatieve geluidsmodule en een LTE dongle gecombineerd met specifiek ontwikkelde componenten. Alles werd tot slot afgewerkt in een modulaire behuizing, klaar voor integratie in een fysieke uitgewerkte "box".
+Voor de realisatie van het electronisch, kloppend hart van de Luisterbox werden standaard oplossingen zoals Raspberry Pi modules, een kwalitatieve geluidsmodule en een LTE dongle gecombineerd met specifiek ontwikkelde componenten. Alles werd tot slot afgewerkt in een modulaire behuizing, klaar voor integratie in een fysieke "box".
 
 <div style="float:right" markdown="1">
   ![C3po Dashboard](/embedded/images/thumb/c3po-dashboard.png)
 </div>
 
-Dankzij een online platform, is Studio Dott in staat om de gesprekken in real-time op te volgen en eventueel de samenstelling van de interviews bij te sturen op basis van deze statistische informatie. Hiervoor beschikken zij over een dashboard en ondersteuning voor de configuratie van de scenario's van de gesprekken - want geen enkel gesprek is het zelfde.
+Dankzij een online platform, is Studio Dott in staat om de gesprekken in real-time op te volgen en eventueel de samenstelling van de interviews bij te sturen op basis van deze statistische informatie. Hiervoor beschikken zij over een dashboard en ondersteuning voor de configuratie van de scenario's van de gesprekken - want geen enkel gesprek is hetzelfde.
 
-Het hele systeem werkt autonoom. Diensten van de desbetreffende steden kunnen zo de box zelf gewoon in het straatbeeld plaatsen, terwijl Studio Dott op de hoogte wordt gehouden van alle activiteit. Alle aspecten van de Luisterbox kunnen op een veilige manier van op afstand aangepast worden. Zo biedt de Luisterbox veel meer mogelijkheden dan louter het opnemen van enkele antwoorden.
+Het hele systeem werkt autonoom. Diensten van de desbetreffende steden kunnen zo de box zelf in het straatbeeld plaatsen, terwijl Studio Dott op de hoogte wordt gehouden van alle gebeurtenissen. Alle aspecten van de Luisterbox kunnen op een veilige manier van op afstand aangepast worden. Zo biedt de Luisterbox veel meer mogelijkheden dan louter het opnemen van enkele antwoorden.
 
 De gesprekken worden online doorgestuurd naar de mensen van [Cropland](http://cropland.be). Zij zorgen voor de omzetting van de antwoorden naar tekst, waarna deze inhoudelijk kunnen verwerkt worden tot een overzichtelijk beeld van de mening van de gesprekpartners van de Luisterbox.
 
 ## De straat op...
 
-Het prototype werd in een mooie en solide behuizing, ontworpen door Studio Dott en gebouwd door [Solution Group](http://solutiongroup.eu), ingebouwd en is nu helemaal klaar voor veel leuke gesprekken.
+Het prototype werd ingebouwd in een mooie en solide behuizing, ontworpen door Studio Dott en gebouwd door [Solution Group](http://solutiongroup.eu), en is nu helemaal klaar voor veel leuke gesprekken.
 
 ![Ingebouwde versie](images/full/c3po-ingebouwd-operationeel.jpeg)
 
@@ -52,6 +52,6 @@ De komende maanden zal de Luisterbox van Studio Dott op verschillende plekken in
 
 ## Bedankt!
 
-Alle partners in dit project zijn tot het uiterste gegaan om op een _veel te korte_ tijdspanne C<sup>3</sup>PO _aan de praat te krijgen_. Het was geweldig samenwerken met Dries, Sofie, Jody, Marie, Frank, Sven, Geert, Jeroen, en alle anderen voor en achter de schermen.
+Alle partners in dit project zijn tot het uiterste gegaan om op een _heel korte_ tijdspanne C<sup>3</sup>PO _aan de praat_ te krijgen. Het was geweldig samenwerken met Dries, Sofie, Jody, Marie, Frank, Sven, Geert, Jeroen, en alle anderen voor en achter de schermen.
 
 Bedankt!

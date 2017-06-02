@@ -47,3 +47,9 @@ Het prototype werd in een mooie en solide behuizing, ontworpen door Studio Dott 
 ![Ingebouwde versie](images/full/c3po-ingebouwd-operationeel.jpeg)
 
 De komende maanden zal de Luisterbox van Studio Dott op verschillende plekken in België in het straatbeeld verschijnen. De primeur is voor [de bewoners van Schilde](http://www.schilde.be/uwmeningtelt).
+
+## Bedankt!
+
+Alle partners in dit project zijn tot het uiterste gegaan om op een _veel te korte_ tijdspanne C<sup>3</sup>PO _aan de praat te krijgen_. Het was geweldig samenwerken met Dries, Sofie, Jody, Marie, Frank, Sven, Geert, Jeroen, en alle anderen voor en achter de schermen.
+
+Bedankt!

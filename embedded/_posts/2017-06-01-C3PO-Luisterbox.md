@@ -3,6 +3,8 @@ title: C<sup>3</sup>PO Luisterbox
 header:
   teaser: /embedded/images/thumb/c3po-luisterbox.jpeg
   image: /embedded/images/header/c3po-luisterbox.jpeg
+tags:
+  - professional
 gallery-prototype:
   - url: /embedded/images/full/c3po-luisterbox.jpeg
     image_path: /embedded/images/thumb/c3po-luisterbox.jpeg

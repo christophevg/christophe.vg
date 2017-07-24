@@ -4,9 +4,62 @@ title: Raspberry Pi Notes
 
 These are my notes on the Raspberry Pi, model 3b.
 
-## Getting Started
+> *Why hook up a screen, keyboard and mouse, if all you need is a network connection? ;-)*
 
-*Why hook up a screen, keyboard and mouse, if all you need is a network connection? ;-)*
+## Getting Started with Noobs
+
+Noobs is a nice framework to automate the setup of your Raspberry Pi. The following modifications enable a true headless install, including setup of the SSH server and provisioning of a authorized public key for immediate passwordless access.
+
+Put the micro SD card with the stock Noobs image in your laptop and perform the following edits:
+
+### Enable automated and interactionless/silent Install
+
+Edit `recovery.cmdline`:
+
+* add `runinstaller` at the beginning
+* add `silentinstall` at the end
+
+### Provision Wifi
+
+Add to `RECOVERY/os/Raspbian/partition_setup.sh` (below similar code for `ssh.txt`):
+
+```sh
+if [ -f /mnt/wpa_supplicant.conf ]; then
+  cp /mnt/wpa_supplicant.conf /tmp/1/
+fi
+```
+
+Add `wpa_supplicant.conf` file to `RECOVERY/`
+
+```
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+
+network={
+    ssid="..."
+    psk="..."
+}
+```
+
+### SSH server enable by default
+
+* create `ssh` file in `RECOVERY/` (`touch`)
+* change default password in `RECOVERY/os/Raspbian/os.json`
+* provision a public key:
+  * Add to `RECOVERY/os/Raspbian/partition_setup.sh`:
+
+```sh
+if [ -f /mnt/authorized_keys ]; then
+  mkdir -p /tmp/2/home/pi/.ssh
+  cp /mnt/authorized_keys /tmp/2/home/pi/.ssh/authorized_keys
+fi
+```
+
+  * Add an `authorized_keys` file to `RECOVERY/`
+
+* For first time connecting use : `ssh -o StrictHostKeyChecking=no pi@xxx.xxx.xxx.xxx` to accept adding host to known hosts
+
+## Getting Started without Noobs
 
 By default, the Pi tries to acquire an address via DHCP. To perform initial configuration before hooking it up to a real network, we can connect the Pi directly to a host using a network cable. Running a DHCP server on the host we can provide the Pi with an address and connect to it.
 
@@ -273,6 +326,16 @@ tmpfs           463M     0  463M   0% /sys/fs/cgroup
 /dev/mmcblk0p6   63M   20M   44M  31% /boot
 tmpfs            93M     0   93M   0% /run/user/1000
 ```
+
+### Make sure "time" is correct...
+
+* `apt-get install ntpdate` to force update of time on boot before `ntpd` starts
+  force update:
+  ```bash
+  sudo /etc/init.d/ntp stop
+  sudo ntpd -q -g
+  sudo /etc/init.d/ntp start
+  ```
 
 ## Use it...
 

@@ -9,10 +9,11 @@ Ik ben geen "snoeper", maar voor de kids maak ik wel eens een uitzondering ;-)
 
 ## ingrediënten
 
+* 125g ongezouten boter
 * 300 ml gecondenseerde melk (gezoet)
-* 100g bruine suiker
-* 2 el esdoornsiroop
+* 200g bruine suiker
 * 100g witte chocolade
+* 2 el esdoornsiroop
 
 ## bereiding
 

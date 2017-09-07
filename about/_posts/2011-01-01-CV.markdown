@@ -180,12 +180,12 @@ Visual C++ op Windows NT voor Electrabel
 
 ## Kennis
 
-* gedreven door Object-Orientatie, UML, MDA, SOA
 * gepassioneerd door geïntegreerde systemen (hardware en software)
+* gedreven door Object-Orientatie, UML, MDA, SOA
 * uitgebreide ervaring met Mac OS X, Linux, OpenBSD en Microsoft Windows
 * actieve kennis betreffende Python, C, Swift, C#, Java, HTML, CSS, Javascript, XML, SQL, Bash
-* onderlegd in verschillende RDBMS (PostgreSQL, MySQL, Oracle, MS SQL Server)
 * passieve kennis betreffende C++, Perl, PHP, Assembler, COBOL, XSLT, Visual Basic
+* onderlegd in verschillende RDBMS (PostgreSQL, MySQL, Oracle, MS SQL Server)
 * sterke achtergrond betreffende beveiliging en netwerken
 * oog voor ontwerp van interactieve grafische gebruikers interfaces
 

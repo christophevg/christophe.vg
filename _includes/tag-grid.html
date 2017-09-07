@@ -1,0 +1,8 @@
+{% include base_path %}
+{% include group-by-array collection=site.posts field="categories" %}
+{% assign sorted_posts = site.tags[page.index] | sort: 'title' %}
+<div class="grid__wrapper">
+  {% for post in sorted_posts %}
+    {% include archive-single.html type="grid" %}
+  {% endfor %}
+</div>

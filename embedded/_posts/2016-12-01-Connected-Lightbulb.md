@@ -3,6 +3,7 @@ title: Connected Lightbulb
 tags:
   - fun
   - arduino
+  - portfolio
 header:
   teaser: /embedded/images/thumb/connected-lightbulb-v2.jpeg
   image: /embedded/images/header/connected-lightbulb-v2.jpeg

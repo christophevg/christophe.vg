@@ -3,6 +3,7 @@ title: Inspection Robot
 tags:
   - professional
   - robot
+  - portfolio
 header:
   teaser: /embedded/images/thumb/inspection-robot.jpeg
   image: /embedded/images/header/inspection-robot.jpeg

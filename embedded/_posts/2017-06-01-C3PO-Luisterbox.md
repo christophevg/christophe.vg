@@ -5,6 +5,7 @@ header:
   image: /embedded/images/header/c3po-luisterbox.jpeg
 tags:
   - professional
+  - portfolio
 gallery-prototype:
   - url: /embedded/images/full/c3po-luisterbox.jpeg
     image_path: /embedded/images/thumb/c3po-luisterbox.jpeg

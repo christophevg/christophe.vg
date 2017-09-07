@@ -2,13 +2,15 @@
 main:
   - title: "About"
     url: /about
+  - title: "Portfolio"
+    url: /portfolio
+  - title: "Embedded"
+    url: /embedded
+  - title: "IT"
+    url: /it
   - title: "Koken"
     url: /koken
   - title: "Zeilen"
     url: /zeilen
   - title: "Fotografie"
     url: /fotografie
-  - title: "Embedded"
-    url: /embedded
-  - title: "IT"
-    url: /it

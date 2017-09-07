@@ -32,3 +32,6 @@ more pages that add some more personal details.
 Some of them are tagged "[thing](/tags/#thing)". These are small write-ups about some _thing_ I seem to have an opinion about.
 
 Other pages are just plain informative and/or practical.
+
+Finally, you can always browse my [portfolio](/portfolio) for some more elaborate examples of what I love to do and try to help people with.
+

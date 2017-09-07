@@ -1,9 +1,5 @@
 {% if site.data.featured %}
 
-<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_projects | default: "Recente projecten" }}</h3>
-
-<br>
-
   {% for featured in site.data.featured %}
     {% capture position %}{% cycle "right", "left" %}{% endcapture %}
     {% include feature_row feature=featured type=position %}

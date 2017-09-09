@@ -1,6 +1,8 @@
+/* styling of services: hardware, software, made with passion */
+
 .service {
-  margin-top:          10px;
-  margin-bottom:       10px;
+  margin-top:           0px;
+  margin-bottom:       30px;
   font-size:           .75em;
   text-align:          center;
 }

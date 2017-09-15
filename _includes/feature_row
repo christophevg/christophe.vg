@@ -22,7 +22,9 @@
 
         <div class="archive__item-body">
           {% if include.feature.title %}
-            <h2 class="archive__item-title">{{ include.feature.title }}</h2>
+            <h2 class="archive__item-title">
+              <a href="{{ f_url }}">{{ include.feature.title }}</a>
+            </h2>
           {% endif %}
 
           {% if include.feature.excerpt %}

@@ -52,3 +52,7 @@ DIV.fluid-width-video-wrapper {
   font-size: 10px;
   font-size: 0.625rem;
 }
+
+h2.archive__item-title {
+  margin: 1em 0 0.5em;
+}

@@ -19,13 +19,35 @@ gallery-prototype:
     image_path: /embedded/images/thumb/c3po-prototype-binnenkant-detail.jpeg
     alt: "Prototype binnenkant (detail)"
     title: "Prototype binnenkant (detail)"
+gallery-schilde:
+  - url: /embedded/images/full/c3po-schilde-1.jpeg
+    image_path: /embedded/images/thumb/c3po-schilde-1.jpeg
+    alt: "C3PO op het Kerkplein"
+    title: "C3PO op het Kerkplein"
+  - url: /embedded/images/full/c3po-schilde-2.jpeg
+    image_path: /embedded/images/thumb/c3po-schilde-2.jpeg
+    alt: "C3PO aan het gemeentehuis"
+    title: "C3PO aan het gemeentehuis"
+  - url: /embedded/images/full/c3po-schilde-3.jpeg
+    image_path: /embedded/images/thumb/c3po-schilde-3.jpeg
+    alt: "C3PO aan het vredegerecht"
+    title: "C3PO aan het vredegerecht"
+gallery-gent:
+  - url: /embedded/images/full/c3po-gent-1.jpeg
+    image_path: /embedded/images/thumb/c3po-gent-1.jpeg
+    alt: "C3PO in Gent"
+    title: "C3PO in Gent"
+  - url: /embedded/images/full/c3po-gent-2.jpeg
+    image_path: /embedded/images/thumb/c3po-gent-2.jpeg
+    alt: "C3PO in actie"
+    title: "C3PO in actie"
 ---
 
 In het kader van het [C<sup>3</sup>PO - Collaborative City Co-design PlatfOrm](https://itea3.org/project/c3po.html) contacteerde [Studio Dott](http://studiodott.be) mij voor de ontwikkeling van een _interactieve luisterbox_.
 
-Aan de hand van deze luisterbox wil Studio Dott participatieprojecten ondersteunen met een fysieke aanwezigheid in het straatbeeld. Inwoners van verschillende Belgische steden kunnen weldra in een geautomatiseerd, interactief gesprek feedback geven over tal van onderwerpen, waarover het bestuur van hun woonplaats hun mening wil kennen.
+Aan de hand van deze luisterbox gaat Studio Dott participatieprojecten ondersteunen met een fysieke aanwezigheid in het straatbeeld. Inwoners van verschillende Belgische steden kunnen zo in een geautomatiseerd, interactief gesprek feedback geven over tal van onderwerpen, waarover het bestuur van hun woonplaats hun mening wil kennen.
 
-## Protoyping van een Luisterbox
+## Protoypen van een Luisterbox
 
 Naast de selectie van een vandaalbestendige telefoon en de ontwikkeling van een [veelkleurige knop](NeoButton) werd een online platform ontwikkeld dat Studio Dott in staat stelt om een interactief interview op te stellen en op te volgen.
 
@@ -43,13 +65,40 @@ Het hele systeem werkt autonoom. Diensten van de desbetreffende steden kunnen zo
 
 De gesprekken worden online doorgestuurd naar de mensen van [Cropland](http://cropland.be). Zij zorgen voor de omzetting van de antwoorden naar tekst, waarna deze inhoudelijk kunnen verwerkt worden tot een overzichtelijk beeld van de mening van de gesprekpartners van de Luisterbox.
 
+Via Studio Dott: [Burgerparticipatie 2.0](http://studiodott.be/2017/06/participatie-paviljoen)
+
 ## De straat op...
 
-Het prototype werd ingebouwd in een mooie en solide behuizing, ontworpen door Studio Dott en gebouwd door [Solution Group](http://solutiongroup.eu), en is nu helemaal klaar voor veel leuke gesprekken.
+Het prototype werd ingebouwd in een mooie en solide behuizing, ontworpen door Studio Dott, gebouwd door [Solution Group](http://solutiongroup.eu) en nu helemaal klaar voor veel leuke gesprekken.
 
 ![Ingebouwde versie](images/full/c3po-ingebouwd-operationeel.jpeg)
 
-De komende maanden zal de Luisterbox van Studio Dott op verschillende plekken in België in het straatbeeld verschijnen. De primeur is voor [de bewoners van Schilde](http://www.schilde.be/uwmeningtelt).
+Vanaf de zomer tot het einde van van 2017 zal de Luisterbox van Studio Dott op verschillende plekken in België in het straatbeeld verschijnen.
+
+### Lokatie 1: Schilde
+
+De primeur was voor [de bewoners van Schilde](http://www.schilde.be/uwmeningtelt), waar de Luisterbox tijdens de maand juni op verschillende plekken opgesteld werd en de bewoners ondervroeg over de toekomst van hun kerkplein.
+
+{% include gallery id="gallery-schilde" %}
+
+#### In de pers
+
+* [GVA - Dag en nacht ideeën spuien over Kerkplein in rondreizende Luisterbox](http://www.gva.be/cnt/dmf20170530_02904369/dag-en-nacht-ideeen-spuien-over-kerkplein-in-rondreizende-luisterbox)
+* [GVA - Brainstormen over toekomst van Kerkplein](http://www.gva.be/cnt/bljau_02914735/brainstormen-over-toekomst-van-kerkplein)
+* [Nieuwsblad - Luisterbox klaar voor inspraaktournee](http://www.nieuwsblad.be/cnt/dmf20170602_02909876)
+
+### Lokatie 2: 
+
+Tijdens de zomermaanden verhuisde de Luisterbox naar Gent, waar hij met de bewoners van de wijk [Muide Meulestede Morgen](https://stad.gent/mmm/nieuws-evenementen/zeg-uw-gedacht-over-de-marseillestraat) in gesprek gaat over de mobiliteit en de algemene toekomst van de omgeving.
+
+{% include gallery id="gallery-gent" %}
+
+#### In de pers
+
+* [HLN - Luisterbox peilt naar mening bewoners](http://www.hln.be/regio/nieuws-uit-gent/-wij-raken-rust-in-onze-wijk-kwijt-a3239490/)
+* [AVS Nieuws van 22 augustus](https://vimeo.com/230731748)
+
+<iframe src="https://player.vimeo.com/video/230731748?title=0&byline=0&portrait=0" width="640" height="366" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 ## Bedankt!
 

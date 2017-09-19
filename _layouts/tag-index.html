@@ -5,3 +5,8 @@ layout: archive
 {{ content }}
 
 {% include tag-grid.html %}
+
+{% if page.more_content %}
+  <br clear="both">
+  {% include {{ page.more_content }} %}
+{% endif %}

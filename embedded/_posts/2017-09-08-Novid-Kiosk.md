@@ -8,7 +8,7 @@ tags:
   - portfolio
 ---
 
-Tijdens de 2016 editie van Fri3d Camp, ontstond het idee bij de CEO van Novid om een eigen online content-management platform te laten ontwikkelen als vervanging voor de dure media players waar zij tot op dat moment moesten vertrouwen.
+Tijdens de 2016 editie van Fri3d Camp, ontstond het idee bij de CEO van Novid om een eigen online content-management platform te laten ontwikkelen als vervanging voor de dure media players waar zij tot op dat moment moesten op  vertrouwen.
 
 Na enkele proof-of-concepts met sub-Ghz communicatie en Google ChromeOS werd in de lente van 2017 dan het startschot gegeven voor de ontwikkeling van de Novid Kiosk op basis van het Raspberry Pi 3 embedded platform.
 
@@ -27,7 +27,7 @@ De eerste versie van het Novid Kiosk Platform prototype bestaat uit vier delen:
 
 ### De Novid Kiosk
 
-De Novid Kiosk vormt natuurlijk de essentie van de oplossing: het is dé media player die met alle schermen die Novid aanbiedt kan verbonden via een HDMI kabel.
+De Novid Kiosk vormt natuurlijk de essentie van de oplossing: het is dé media player die met alle schermen die Novid aanbiedt kan verbonden worden via een HDMI kabel.
 
 Een eerste zeer belangrijke eigenschap van de kiosk is dat deze volledig autonoom kan werken. Dit aspect is ingebouwd vanaf het embryonale begin, waar de software zichzelf volledig vanaf een blanke, standaard Rasberry Pi opbouwt tot een volledig operationele online kiosk.
 

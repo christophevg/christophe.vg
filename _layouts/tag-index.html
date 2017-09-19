@@ -8,5 +8,7 @@ layout: archive
 
 {% if page.more_content %}
   <br clear="both">
-  {% include {{ page.more_content }} %}
+  {% for more in page.more_content %}
+    {% include {{ more }} %}
+  {% endfor %}
 {% endif %}

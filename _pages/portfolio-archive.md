@@ -3,7 +3,9 @@ layout: tag-index
 index: portfolio
 title: Mijn Portfolio
 permalink: /portfolio/
-more_content: for-hire.html
+more_content:
+  - for-hire.html
+  - customers.html
 ---
 
 Deze sectie van mijn site biedt een overzicht van de projecten waar ik zowel

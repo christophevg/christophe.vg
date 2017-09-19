@@ -1,17 +1,17 @@
-- image_path: /embedded/images/thumb/c3po-luisterbox.jpeg
-  alt: "C3PO Luisterbox"
-  title: "C<sup>3</sup>PO Luisterbox"
-  excerpt: "In opdracht van Studio Dott ontwikkelde ik de internet-geconnecteerde C3PO Luisterbox voor een participatieproject in Schilde."
-  url: "/embedded/C3PO-Luisterbox"
+- image_path: /embedded/images/thumb/novid-kiosk.jpeg
+  alt: "Novid Kiosk"
+  title: "Novid Kiosk"
+  excerpt: "Novid zocht een oplossing om hun arsenaal aan schermen aan te sturen (van) op eender welke plek ter wereld."
+  url: "/embedded/Novid-Kiosk"
   btn_label: "Lees meer"
   btn_class: "btn--inverse"
 
-- image_path: /embedded/images/thumb/neobutton.jpeg
-  alt: "NeoButton"
-  title: "NeoButton"
-  excerpt: "The NeoButton is the unholy matrimony of an oldschool Arcade button and an Adafruit NeoPixel ring."
-  url: "/embedded/NeoButton"
-  btn_label: "Read More"
+- image_path: /embedded/images/thumb/c3po-luisterbox.jpeg
+  alt: "C3PO Luisterbox"
+  title: "C<sup>3</sup>PO Luisterbox"
+  excerpt: "In opdracht van Studio Dott ontwikkelde ik de internet-geconnecteerde C3PO Luisterbox voor participatieprojecten in Schilde, Gent,..."
+  url: "/embedded/C3PO-Luisterbox"
+  btn_label: "Lees meer"
   btn_class: "btn--inverse"
 
 - image_path: /embedded/images/thumb/a-bot.jpeg
@@ -43,13 +43,5 @@
   title: "Inspection Robot"
   excerpt: "For an industrial customer, I designed and built a custom robot to allow inspection of hard to reach locations in their plant."
   url: "/embedded/Inspection-Robot"
-  btn_label: "Read More"
-  btn_class: "btn--inverse"
-
-- image_path: /embedded/images/thumb/connected-lightbulb-v2.jpeg
-  alt: "Connected Lightbulb"
-  title: "Connected Lightbulb"
-  excerpt: "Together with my good friend Anthony, I had some fun turning a dull disco lightbulb into an internet-connected, pimped-up version."
-  url: "/embedded/Connected-Lightbulb"
   btn_label: "Read More"
   btn_class: "btn--inverse"

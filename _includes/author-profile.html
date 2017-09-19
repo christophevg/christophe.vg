@@ -53,6 +53,13 @@
           </a>
         </li>
       {% endif %}
+
+      {% if author.phone %}
+        <li>
+          <i class="fa fa-fw fa-phone-square" aria-hidden="true"></i>
+          {{ author.phone }}
+        </li>
+      {% endif %}
       
       {% if author.twitter %}
         <li><a href="https://twitter.com/{{ author.twitter }}" itemprop="sameAs">

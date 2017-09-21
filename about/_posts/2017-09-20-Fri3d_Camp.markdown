@@ -1,0 +1,112 @@
+---
+title: Fri3d Camp
+header:
+  teaser: /about/images/thumb/fri3d/1.jpg
+  image: /about/images/header/fri3d.jpg
+tag:
+  - portfolio
+gallery:
+  - url: /about/images/full/fri3d/1.jpg
+    image_path: /about/images/thumb/fri3d/1.jpg
+    alt: "Fri3d Camp"
+    title: "Fri3d Camp"
+  - url: /about/images/full/fri3d/2.jpg
+    image_path: /about/images/thumb/fri3d/2.jpg
+    alt: "Fri3d Camp"
+    title: "Fri3d Camp"
+  - url: /about/images/full/fri3d/3.jpg
+    image_path: /about/images/thumb/fri3d/3.jpg
+    alt: "Fri3d Camp"
+    title: "Fri3d Camp"
+  - url: /about/images/full/fri3d/4.jpg
+    image_path: /about/images/thumb/fri3d/4.jpg
+    alt: "Fri3d Camp"
+    title: "Fri3d Camp"
+  - url: /about/images/full/fri3d/5.jpg
+    image_path: /about/images/thumb/fri3d/5.jpg
+    alt: "Fri3d Camp"
+    title: "Fri3d Camp"
+  - url: /about/images/full/fri3d/6.jpg
+    image_path: /about/images/thumb/fri3d/6.jpg
+    alt: "Fri3d Camp"
+    title: "Fri3d Camp"
+  - url: /about/images/full/fri3d/7.jpg
+    image_path: /about/images/thumb/fri3d/7.jpg
+    alt: "Fri3d Camp"
+    title: "Fri3d Camp"
+  - url: /about/images/full/fri3d/8.jpg
+    image_path: /about/images/thumb/fri3d/8.jpg
+    alt: "Fri3d Camp"
+    title: "Fri3d Camp"
+  - url: /about/images/full/fri3d/9.jpg
+    image_path: /about/images/thumb/fri3d/9.jpg
+    alt: "Fri3d Camp"
+    title: "Fri3d Camp"
+  - url: /about/images/full/fri3d/10.jpg
+    image_path: /about/images/thumb/fri3d/10.jpg
+    alt: "Fri3d Camp"
+    title: "Fri3d Camp"
+  - url: /about/images/full/fri3d/11.jpg
+    image_path: /about/images/thumb/fri3d/11.jpg
+    alt: "Fri3d Camp"
+    title: "Fri3d Camp"
+  - url: /about/images/full/fri3d/12.jpg
+    image_path: /about/images/thumb/fri3d/12.jpg
+    alt: "Fri3d Camp"
+    title: "Fri3d Camp"
+---
+
+In de vroege uurtjes, bij het opkomen van de eerste zonnestralen over [OHM2013](https://ohm2013.org), het vierjaarlijkse Nederlandse hackerkamp, vonden [Anthony](http://anthony.liekens.net) en ik dat de tijd rijp was voor een Belgisch equivalent. We besften het toen misschien nog niet, maar op dat moment, met een pintje in de hand, zag [Fri3d Camp](http://fri3d.be) het levenslicht.
+
+## 2014
+
+Nadat al heel snel in de [Hoge Rielen](http://dehogerielen.be) een geschikte locatie gevonden was, gingen er enkele maanden voorbij, totdat ik op een avond in de [Open Garage](http://opengarage.org) besloot om de volgende ochtend een uitnodiging tot deelname de wereld in te sturen. We hadden op dat moment immers nog maar een tweetal maanden voor dat de aangekondigde start van de eerste editie van [Fri3d Camp](http://fri3d.be) een feit was en buiten een locatie, een datum en een logo was er nog maar weinig geregeld.
+
+De respons uit de Belgische hacker- en makerscene was overweldigend. Met meer dan 45 activiteiten, bulkte het programma gedurende drie dagen (en nachten) van de wetenschappelijk en technologische presentaties en workshops.
+
+128 deelnemers, waaronder enorm veel kinderen, genoten van een waanzinnig uitgebreid en divers aanbod aan activiteiten, van het bouwen van robots, tot het maken van juwelen, het bedrukken van T-shirts tot het openmaken van sloten. [Fri3d Camp](http://fri3d.be) belichaamde werkelijk de prachtige wereld van de hacker- en makergemeenschap.
+
+Na twee intense maanden van voorbereiding en drie uitputtende dagen en nachten vol fantastische ervaringen waren Anthony, ik en nog enkele moedigen die zich bij ons als team hadden vervoegd, doodop. "Dit doen we echt nooit meer!", klonk het.
+
+Maar dat duurde niet lang...
+
+## 2016
+
+De fonkeling in de ogen van de kinderen en bij gevolg ook van hun ouders, konden we allemaal niet uit onze herinnering bannen. We _moesten_ dit opnieuw doen.
+
+Geschraagd tussen de grote Nederlandse en Duitse kampen, besloten we om twee jaar later, een tweede editie op poten te zetten. [Fri3d Camp](http://fri3d.be) werd zo hét tweejaarlijkse Belgische hackerkamp.
+
+Na een oproep om de organisatie te versterken, groeide het kleine team van 2014 tot een team van een tiental vrijwilligers die hun schouders mee onder een tweede editie wilden zetten.
+
+Tot lang na de eerste editie bleven de reacties binnenstromen, en het algemene gevoel was een van spijt dat men er niet bij had kunnen zijn. Snel werd duidelijk dat de 128 tickets van de eerste editie veel te weinig zouden zijn en een van de eerste beslissingen die genomen werd was een verdubbeling van het aantal beschikbare tickets, tot 256. Uiteindelijk waren er zelfs 299+1 deelnemers aanwezig, waaronder reeds enkele grote namen uit de nationale en internationale hacker en makerscene, zoals [Lieven Scheire](http://lievenscheire.be) en [Mitch Altman](https://en.wikipedia.org/wiki/Mitch_Altman).
+
+Met meer dan 70 activiteiten werd het programma nóg uitbundiger en zagen we hoe gezinnen samen genoten van hun kennismaking met al deze wonderbaarlijke projecten, workshops,... De tweede editie was opnieuw een schot in de roos en nog voor het weekend om was, brandde de vraag op ieders lippen: "Tot binnen 2 jaar?!"
+
+## 2018
+
+Het antwoord was zeer snel "Ja!". In 2018 zal de derde editie van [Fri3d Camp](http://fri3d.be) plaats vinden.
+
+Het aantal beschikbare tickets zal opnieuw verdubbelen tot 512. Hiervoor moesten we wel op zoek naar een nieuwe locatie en die werd relatief snel gevonden in Sint-Joris-Weert, nabij Leuven: [De Kluis](https://www.hopper.be/en/jeugdverblijf/de-kluis).
+
+Op dit ogenblik is onze [uitnodiging tot deelname](http://fri3d.be/uitnodiging) reeds in volle gang en de voorstellen voor activiteiten stromen binnen. Nu reeds belooft [Fri3d Camp 2018](http://fri3d.be) opnieuw een ongelooflijk verhaal te worden, met nog veel nieuwigheden en verrassingen in petto.
+
+In 2018 zal [Fri3d Camp](http://fri3d.be) tevens een thema hebben: Robots! We zijn dan ook enorm gelukkig dat niemand minder dan Mr. Robot himself, [Jan De Coster](http://jandecoster.com) het peterschap van dit thema aanvaard heeft. Hijzelf en zijn fantastische familie van eigenzinnige robots zullen alvast de toon zetten voor een wonderbaarlijke editie.
+
+## Fri3d Camp & ik
+
+Na onder pot en pint het gekke idee gevormd te hebben, heb ik mijn schouders ook telkens onder de organisatie geplaatst. Tijdens de eerste editie was ik in eerste plaats verantwoordelijk voor het samen brengen van het programma, maar zorgde ik er ook voor dat de administratieve kant in goeie banen geleid werd.
+
+In 2016 bouwde ik samen met Dries [Team Content](http://content.fri3d.be) verder uit en starte ik de zoektocht naar een heuse [Fri3d Badge](/embedded/Fri3d-Badge).
+
+Ook in 2018 geef ik opnieuw present voor zowel [Team Content](http://content.fri3d.be) als het uitwerken van een nieuwe  [Fri3d Badge](/embedded/Fri3d-Badge).
+
+## Fri3d in beeld
+
+Onderstaande foto's zijn een kleine greep uit de twee eerste fantastische edities, in 2014 en 2016. De Flickr groepen voor deze twee edities, bevatten nog veel meer prachtige herinneringen.
+
+* [Fri3d Camp 2014](https://www.flickr.com/groups/fri3dcamp2014/pool/)
+* [Fri3d Camp 2016](https://www.flickr.com/groups/2979621@N25/pool/)
+
+{% include gallery id="gallery" %}
+
+## Be excellent to each other !

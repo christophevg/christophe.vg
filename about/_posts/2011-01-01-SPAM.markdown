@@ -1,5 +1,8 @@
 ---
 title: SPAM
+header:
+  teaser: /about/images/thumb/spam.jpg
+  image: /about/images/header/spam.jpg
 ---
 
 **Spam** _(ook: ongewenste post, ongewenste reclame; afkorting: orec) is

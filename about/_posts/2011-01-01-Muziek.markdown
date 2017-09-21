@@ -1,5 +1,8 @@
 ---
 title: Muziek
+header:
+  teaser: /about/images/thumb/muziek.jpg
+  image: /about/images/header/muziek.jpg
 ---
 
 ## Favoriete Song Tekst van het ogenblik ...

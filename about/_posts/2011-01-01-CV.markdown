@@ -1,5 +1,8 @@
 ---
 title: Curriculum Vitae
+header:
+  teaser: /about/images/thumb/cv.jpg
+  image: /about/images/header/cv.jpg
 ---
 
 Een meer klassieke vorm om mij te leren kennen, door de professionele activiteiten die ik eerder ondernam...

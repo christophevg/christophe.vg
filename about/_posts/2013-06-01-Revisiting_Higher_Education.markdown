@@ -1,6 +1,9 @@
 ---
 title: Revisiting Higher Education
 tag: thing
+header:
+  teaser: /about/images/thumb/education.jpg
+  image: /about/images/header/education.jpg
 ---
 
 Having decided to return to full-time studying presented me with an incredible

@@ -1,6 +1,9 @@
 ---
 title: A-Social Networks
 tag: thing
+header:
+  teaser: /about/images/thumb/social.jpg
+  image: /about/images/header/social.jpg
 ---
 
 Unlike <strike>some</strike> many among you, I see so called socials

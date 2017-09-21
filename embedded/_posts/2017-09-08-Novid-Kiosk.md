@@ -8,7 +8,7 @@ tags:
   - portfolio
 ---
 
-Tijdens de 2016 editie van Fri3d Camp, ontstond het idee bij de CEO van Novid om een eigen online content-management platform te laten ontwikkelen als vervanging voor de dure media players waar zij tot op dat moment moesten op  vertrouwen.
+Tijdens de 2016 editie van [Fri3d Camp](/about/Fri3d_Camp), ontstond het idee bij de CEO van Novid om een eigen online content-management platform te laten ontwikkelen als vervanging voor de dure media players waar zij tot op dat moment moesten op  vertrouwen.
 
 Na enkele proof-of-concepts met sub-Ghz communicatie en Google ChromeOS werd in de lente van 2017 dan het startschot gegeven voor de ontwikkeling van de Novid Kiosk op basis van het Raspberry Pi 3 embedded platform.
 

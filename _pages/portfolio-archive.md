@@ -6,6 +6,8 @@ permalink: /portfolio/
 more_content:
   - for-hire.html
   - customers.html
+header:
+  image: /assets/images/portfolio.jpg
 ---
 
 Deze sectie van mijn site biedt een overzicht van de projecten waar ik zowel

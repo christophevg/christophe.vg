@@ -1,0 +1,199 @@
+/*
+  HTML and CSS kindly remixed from great prior works:
+  - https://bootsnipp.com/snippets/7B7W
+  - https://bootsnipp.com/snippets/7PmV
+*/
+
+.timeline {
+  list-style: none;
+  padding: 20px 0 20px;
+  position: relative;
+}
+
+.timeline:before {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  content: " ";
+  width: 3px;
+  background-color: #eeeeee;
+  left: 50%;
+  margin-left: -1.5px;
+}
+
+.timeline > li {
+  margin-bottom: 20px;
+  position: relative;
+  width: 50%;
+  float: left;
+  clear: left;
+}
+
+.timeline > li:before,
+.timeline > li:after {
+  content: " ";
+  display: table;
+}
+
+.timeline > li:after {
+  clear: both;
+}
+
+.timeline > li:before,
+.timeline > li:after {
+  content: " ";
+  display: table;
+}
+
+.timeline > li:after {
+  clear: both;
+}
+
+.timeline > li > .timeline-panel {
+  width: 95%;
+  float: left;
+  border: 1px solid #d4d4d4;
+  border-radius: 2px;
+  position: relative;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+}
+
+.timeline > li > .timeline-panel:before {
+  position: absolute;
+  top: 26px;
+  right: -15px;
+  display: inline-block;
+  border-top: 15px solid transparent;
+  border-left: 15px solid #ccc;
+  border-right: 0 solid #ccc;
+  border-bottom: 15px solid transparent;
+  content: " ";
+}
+
+.timeline > li > .timeline-panel:after {
+  position: absolute;
+  top: 27px;
+  right: -14px;
+  display: inline-block;
+  border-top: 14px solid transparent;
+  border-left: 14px solid #fff;
+  border-right: 0 solid #fff;
+  border-bottom: 14px solid transparent;
+  content: " ";
+}
+
+.timeline > li.timeline-inverted > .timeline-panel {
+  float: right;
+}
+
+.timeline > li.timeline-inverted > .timeline-panel:before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+}
+
+.timeline > li.timeline-inverted > .timeline-panel:after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto;
+}
+
+.timeline-body > p,
+.timeline-body > ul {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 0;
+}
+
+.timeline-body > p,
+.timeline-body > p > tt {
+  font-size: 0.8em;
+}
+
+.timeline-body > h1 {
+  padding: 0px;
+  padding-top: 10px;
+  padding-left: 15px;
+  margin: 0px;
+  font-size: 1em;
+}
+
+.timeline-body > h2 {
+  padding: 0px;  
+  padding-left: 15px;
+  margin: 0px;
+  font-size: 0.70em;
+  color: #aaaaaa;
+  font-weight: normal;
+}
+
+.timeline-body > p + p {
+  margin-top: 5px;
+}
+
+.timeline-footer {
+  background-color: #efefef;
+  padding: 10px;
+  margin-top: 15px;
+  font-size: 0.75em;
+}
+
+.timeline > li.timeline-inverted {
+  float: right; 
+  clear: right;
+}
+
+.timeline > li:nth-child(2) {
+  margin-top: 60px;
+}
+
+@media (max-width: 767px) {
+  ul.timeline:before {
+    left: 20px;
+  }
+
+  ul.timeline > li {
+    margin-bottom: 20px;
+    position: relative;
+    width:100%;
+    float: left;
+    clear: left;
+  }
+
+  .timeline > li:nth-child(2) {
+    margin-top: 0px;
+  }
+
+  ul.timeline > li > .timeline-panel {
+    margin-right: 20px;
+    width: calc(100% - 60px);
+    width: -moz-calc(100% - 60px);
+    width: -webkit-calc(100% - 60px);
+  }
+
+  ul.timeline > li > .timeline-panel {
+    float: right;
+  }
+
+  ul.timeline > li > .timeline-panel:before {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+  }
+
+  ul.timeline > li > .timeline-panel:after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -14px;
+    right: auto;
+  }
+  
+  .timeline > li.timeline-inverted{
+    float: left; 
+    clear: left;
+  }
+}

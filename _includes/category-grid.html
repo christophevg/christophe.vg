@@ -3,6 +3,8 @@
 {% assign sorted_posts = site.categories[page.index] | sort: 'title' %}
 <div class="grid__wrapper">
   {% for post in sorted_posts %}
-    {% include archive-single.html type="grid" %}
+    {% if post.layout != "redirect" %}
+      {% include archive-single.html type="grid" %}
+    {% endif %}
   {% endfor %}
 </div>

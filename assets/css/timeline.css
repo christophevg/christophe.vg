@@ -1,4 +1,5 @@
 /*
+  Timeline
   HTML and CSS kindly remixed from great prior works:
   - https://bootsnipp.com/snippets/7B7W
   - https://bootsnipp.com/snippets/7PmV
@@ -83,18 +84,18 @@
   content: " ";
 }
 
-.timeline > li.timeline-inverted > .timeline-panel {
+.timeline > li:nth-child(even) > .timeline-panel {
   float: right;
 }
 
-.timeline > li.timeline-inverted > .timeline-panel:before {
+.timeline > li:nth-child(even) > .timeline-panel:before {
   border-left-width: 0;
   border-right-width: 15px;
   left: -15px;
   right: auto;
 }
 
-.timeline > li.timeline-inverted > .timeline-panel:after {
+.timeline > li:nth-child(even) > .timeline-panel:after {
   border-left-width: 0;
   border-right-width: 14px;
   left: -14px;
@@ -141,7 +142,7 @@
   font-size: 0.75em;
 }
 
-.timeline > li.timeline-inverted {
+.timeline > li:nth-child(even) {
   float: right; 
   clear: right;
 }
@@ -192,7 +193,7 @@
     right: auto;
   }
   
-  .timeline > li.timeline-inverted{
+  .timeline > li:nth-child(even){
     float: left; 
     clear: left;
   }

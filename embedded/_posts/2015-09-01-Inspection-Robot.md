@@ -22,7 +22,7 @@ gallery:
     title: "Inspection Robot Top"
 ---
 
-In 2015 I was contracted by a very large industrial/pharmaceutical company to design and implement a solution for their QA team to be able to inspect certain locations in their factory that were very hard to reach. The combination of a height restriction of about 12cm and the need to be able to carry a sensor on a rotatable arm were challenging.
+In 2015 I was contracted by a very large industrial/pharmaceutical company to design and implement a solution for their QA team to be able to inspect certain locations in their factory that were very hard to reach. The combination of a height restriction of about 12cm and the need to be able to carry a sensor on a rotating arm were challenging.
 
 The result was a pure Radio Control (RC) solution, using an existing robot chasis, the [Rover 5 Robot Platform](https://www.sparkfun.com/products/10336).
 

@@ -1,7 +1,5 @@
 {% for post in paginator.posts %}
-  {% if post.layout != "redirect" %}
-    {% include archive-single.html %}
-  {% endif %}
+  {% include archive-single.html %}
 {% endfor %}
 
 {% include paginator.html %}

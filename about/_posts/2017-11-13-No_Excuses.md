@@ -39,3 +39,15 @@ So I, for one, will not accept jobs that result in or contribute to products tha
 I'll try...
 
 <iframe width="560" height="315" src="https://player.vimeo.com/video/128873380" frameborder="0" allowfullscreen></iframe>
+
+## More...
+
+<center>
+  <blockquote class="twitter-tweet" data-lang="en">
+    <p lang="en" dir="ltr">
+      perhaps good to state that the film &quot;univited guest&quot; was also shown in Aalst just to accentuate the discussion area you mention in your blog. The challenge is to find the right balance.
+    </p>
+    &mdash; De Werkkamer (@Werkkamer) <a href="https://twitter.com/Werkkamer/status/934324760804253696?ref_src=twsrc%5Etfw">November 25, 2017</a>
+  </blockquote>
+</center>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 

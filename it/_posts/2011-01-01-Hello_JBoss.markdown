@@ -178,7 +178,7 @@ $ make deploy
 10:23:53,820 INFO  [TomcatDeployer] deploy, ctxPath=/HelloJBoss, warUrl=.../deploy/HelloJBoss.war/
 {% endhighlight %}
 
-![](IT/images/full/HelloJBoss-Servlet.png)
+![](images/full/HelloJBoss-Servlet.png)
 
 {% highlight bash %}
 $ make undeploy
@@ -535,7 +535,7 @@ $ make deploy
 09:13:17,647 INFO  [TomcatDeployer] deploy, ctxPath=/HelloJBoss, warUrl=.../tmp/deploy/tmp3460387247149222507HelloJBoss-exp.war/
 {% endhighlight %}
 
-![](IT/images/full/HelloJBoss-DataSource.png)
+![](images/full/HelloJBoss-DataSource.png)
 
 {% highlight bash %}
 $ make undeploy
@@ -933,7 +933,7 @@ $ make deploy
 13:29:12,203 INFO  [EARDeployer] Started J2EE application: file:/Users/xtof/Workspace/jboss/HelloJBoss/HelloJBoss-ear/target/HelloJBoss.ear
 {% endhighlight %}
 
-![](IT/images/full/HelloJBoss-EJB.png)
+![](images/full/HelloJBoss-EJB.png)
 
 {% highlight bash %}
 $ make undeploy
@@ -1421,9 +1421,9 @@ public class GreeterBean implements Greeter {
 
 ### Action
 
-![](IT/images/full/HelloJBoss-JSF1.png)
+![](images/full/HelloJBoss-JSF1.png)
 
-![](IT/images/full/HelloJBoss-JSF2.png)
+![](images/full/HelloJBoss-JSF2.png)
 
 ## Step 9: Add interaction and Entities
 
@@ -1911,9 +1911,9 @@ public class GreeterBean implements Greeter {
 
 ### Action
 
-![](IT/images/full/HelloJBoss-entity1.png)
+![](images/full/HelloJBoss-entity1.png)
 
-![](IT/images/full/HelloJBoss-entity2.png)
+![](images/full/HelloJBoss-entity2.png)
 
 ## Step 10: Add a REST interface
 

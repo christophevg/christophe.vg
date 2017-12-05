@@ -16,7 +16,7 @@ The lucky girl, who I was picked for as secret santa, was into cosplay and pokem
 
 > DISCLAIMER: I really don't known anything about Pokemon, except for the fact that it are imaginary creatures that love to fight ;-)
 
-My strategy was to 3D print Pokemon figures using transparant filament, [Z-Glass](https://store.zortrax.com/m200-z-glass), and combine them with a string of LED lights into a unique set of Pokemon Christmas Lights.
+My strategy was to 3D print Pokemon figures using transparent filament, [Z-Glass](https://store.zortrax.com/m200-z-glass), and combine them with a string of LED lights into a unique set of Pokemon Christmas Lights. _It doesn't always have to involve rocket science ;-)_
 
 ## Making on the Shoulders of Giants
 
@@ -61,7 +61,7 @@ Now let's hope that at the receiving end that feeling is mutual ;-)
 
 ## Give it a Try
 
-A [GitHub] repository](https://github.com/christophevg/PokemonChristmasLights) contains everything needed and everything that I created. Using [OpenSCAD)[http://www.openscad.org] I imported the original STL files and added the mounting head on all four of them. The code should be self-explanatory.
+A [GitHub repository](https://github.com/christophevg/PokemonChristmasLights) contains everything needed and everything that I created. Using [OpenSCAD](http://www.openscad.org) I imported the original STL files and added the mounting head on all four of them. The code should be self-explanatory.
 
 I've also created pages for the remixes on Thingiverse and put them in a collection:
 
@@ -69,7 +69,7 @@ I've also created pages for the remixes on Thingiverse and put them in a collect
 * [Pikachu](https://www.thingiverse.com/thing:2692445)
 * [Totodile](https://www.thingiverse.com/thing:2692446)
 * [Squirtle](https://www.thingiverse.com/thing:2692449)
-* [Collection](https://www.thingiverse.com/christophevg/collections/pokemon-christmas-lights)
+* [Entire Collection](https://www.thingiverse.com/christophevg/collections/pokemon-christmas-lights)
 
 If you make any, let me know!
 

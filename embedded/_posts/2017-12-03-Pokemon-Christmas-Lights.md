@@ -3,6 +3,9 @@ title: Pokemon Christmas Lights
 header:
   teaser: /embedded/images/thumb/pokemon-christmas-lights.jpeg
   image: /embedded/images/header/pokemon-christmas-lights.jpeg
+tags:
+  - 3dprinting
+  - fun
 ---
 
 In december 2017 I joined in a [Secret Santa event](https://www.facebook.com/events/189537648284407/) organised by [Henk Reickaert](http://www.henkrijckaert.be), amongst others known for his fun making endavours in the [Koterij](http://www.koterij.be).

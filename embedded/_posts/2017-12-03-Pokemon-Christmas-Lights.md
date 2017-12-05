@@ -10,7 +10,7 @@ tags:
 
 In december 2017 I joined in a [Secret Santa event](https://www.facebook.com/events/189537648284407/) organised by [Henk Reickaert](http://www.henkrijckaert.be), amongst others known for his fun making endavours in the [Koterij](http://www.koterij.be).
 
-The idea was to not simply buy a present for a noble stanger, but to _make_ something, as it was also part of the [Make in Belgium](https://www.facebook.com/groups/makeinbelgium/) group.
+The idea was to not simply buy a present for a noble stranger, but to _make_ something, as it was also part of the [Make in Belgium](https://www.facebook.com/groups/makeinbelgium/) group.
 
 The lucky girl, who I was picked for as secret santa, was into cosplay and pokemon. Given that it was nearly Christmas, I came up with the idea to create a set of unique Christmas lights, based on Pokemons.
 

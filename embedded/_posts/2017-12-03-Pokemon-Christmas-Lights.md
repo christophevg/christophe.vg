@@ -24,14 +24,15 @@ Now, I'm nowhere capable of designing a Pokemon figure from scratch, so what doe
 
 So I found [Flowalistik](https://www.thingiverse.com/FLOWALISTIK/about), who has been creating a whole set of [low-poly Pokemon models](https://www.thingiverse.com/FLOWALISTIK/collections/low-poly-pokemon). They were simply perfect for my goal in any possible way - I didn't even have to scale them.
 
-I selected 4 - of which, I must admit, I knew two! How's that for not knowing anything about Pokemon ;-)
+I selected 4 (+ did a fifth on request by another Thingiverse user) - of which, I must admit, I knew two! How's that for not knowing anything about Pokemon ;-)
 
 * [Bulbasaur](https://www.thingiverse.com/thing:327753)
 * [Pikachu](https://www.thingiverse.com/thing:376601)
 * [Totodile](https://www.thingiverse.com/thing:341719)
 * [Squirtle](https://www.thingiverse.com/thing:319413)
+* [Charmander](https://www.thingiverse.com/thing:323038)
 
-Next I looked for a LED string to start from. I found one with 8 Christmas balls at the best Maker store in town: [Action](https://www.action.com/nl-be/moment/kerst-decoratie/). Because the string was already constructed for the same purpose, it had small metal caps that fit on top of the balls.
+Next I looked for a LED string to start from. I found one with 8 (that's why I selected 4 to start with) Christmas balls at the best Maker store in town: [Action](https://www.action.com/nl-be/moment/kerst-decoratie/). Because the string was already constructed for the same purpose, it had small metal caps that fit on top of the balls.
 
 That left me with _simply_ adding the same mounting head to the Pokemon models... et voila.
 
@@ -69,6 +70,7 @@ I've also created pages for the remixes on Thingiverse and put them in a collect
 * [Pikachu](https://www.thingiverse.com/thing:2692445)
 * [Totodile](https://www.thingiverse.com/thing:2692446)
 * [Squirtle](https://www.thingiverse.com/thing:2692449)
+* [Charmander](https://www.thingiverse.com/thing:2697678)
 * [Entire Collection](https://www.thingiverse.com/christophevg/collections/pokemon-christmas-lights)
 
 If you make any, let me know!

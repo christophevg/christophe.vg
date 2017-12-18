@@ -1,0 +1,41 @@
+@media print {
+
+  .sidebar.sticky,
+  .masthead,
+  .page__footer,
+  .page__share,
+  .pagination,
+  .author__urls-wrapper {
+    display: none;
+  }
+  
+  html {
+    font-size: 12pt;
+  }
+
+  body {
+    line-height: 1;
+  }
+
+  .page {
+    width: 100%;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .archive {
+    width: 100%;
+    float: none;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding-left: 25px;
+    padding-right: 25px;    
+  }
+
+  #main {
+    max-width: 100%;
+  }
+
+}

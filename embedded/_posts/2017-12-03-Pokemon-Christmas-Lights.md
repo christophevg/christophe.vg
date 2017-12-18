@@ -75,4 +75,4 @@ I've also created pages for the remixes on Thingiverse and put them in a collect
 
 If you make any, let me know!
 
-Happy _Maker_ Chrismas!
+Happy _Maker_ Christmas!

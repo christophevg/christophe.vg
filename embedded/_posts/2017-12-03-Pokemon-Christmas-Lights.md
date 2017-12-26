@@ -8,7 +8,7 @@ tags:
   - fun
 ---
 
-In december 2017 I joined in a [Secret Santa event](https://www.facebook.com/events/189537648284407/) organised by [Henk Reickaert](http://www.henkrijckaert.be), amongst others known for his fun making endavours in the [Koterij](http://www.koterij.be).
+In december 2017 I joined in a [Secret Santa event](https://www.facebook.com/events/189537648284407/) organised by [Henk Reickaert](http://www.henkrijckaert.be), amongst others known for his fun making endeavours in the [Koterij](http://www.koterij.be).
 
 The idea was to not simply buy a present for a noble stranger, but to _make_ something, as it was also part of the [Make in Belgium](https://www.facebook.com/groups/makeinbelgium/) group.
 

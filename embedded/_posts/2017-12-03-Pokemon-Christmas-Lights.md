@@ -36,7 +36,7 @@ Next I looked for a LED string to start from. I found one with 8 (that's why I s
 
 That left me with _simply_ adding the same mounting head to the Pokemon models... et voila.
 
-It took some experiments to find the right way to add the mounting head, but after some fiddling, all four Pokemon Christmas Lights came out just perfectly. And after printing 2 of each, my secret santa present was ready to be shipped.
+It took some experiments to find the right way to add the mounting head, but after some fiddling, all Pokemon Christmas Lights came out just perfectly. And after printing 2 of each, my secret santa present was ready to be shipped.
 
 > Sigh ... Each print took about 1.5 hours, and at 90% into the 4th print (FYI the second Pikachu) a blackout forced my beloved Zortrax into its very first failed print :-( Luckily I had these Christmas lights to shed some light into the darkness while I waited for the problem to be resolved.
 
@@ -50,7 +50,7 @@ Two experiments with Bulbasaur: on the left a version that only had a shell, whi
 
 On the right the final version, which is printed with medium infill. Here the opening for the LED is modeled using an extraction of a cylinder. I went with this version because it had a nicer glow - which I initially didn't expect due to the infill pattern. Luckily I tried it afterall.
 
-An overview of all four Pokemons as 3D models:
+An overview of all Pokemons as 3D models:
 
 ![All 4 Pokemon models with mounting head](images/full/pokemon-christmas-lights-model.png)
 
@@ -62,7 +62,7 @@ Now let's hope that at the receiving end that feeling is mutual ;-)
 
 ## Give it a Try
 
-A [GitHub repository](https://github.com/christophevg/PokemonChristmasLights) contains everything needed and everything that I created. Using [OpenSCAD](http://www.openscad.org) I imported the original STL files and added the mounting head on all four of them. The code should be self-explanatory.
+A [GitHub repository](https://github.com/christophevg/PokemonChristmasLights) contains everything needed and everything that I created. Using [OpenSCAD](http://www.openscad.org) I imported the original STL files and added the mounting head on all of them. The code should be self-explanatory.
 
 I've also created pages for the remixes on Thingiverse and put them in a collection:
 

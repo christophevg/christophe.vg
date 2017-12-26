@@ -76,3 +76,29 @@ I've also created pages for the remixes on Thingiverse and put them in a collect
 If you make any, let me know!
 
 Happy _Maker_ Christmas!
+
+## Epilogue
+
+Having fun with a material you never printed with before is ... fun. But while doing so, also ruining your printer's hot-end is something else.
+
+Printing the Pokemons for the Secret Santa project was just the beginning of several experiments with [Z-Glass](https://store.zortrax.com/m200-z-glass). After those, I printed another set for my son and some other things to test the range of possibilities.
+
+When I switched back to Z-ABS after a few weeks, my printer's extruder servo had problems feeding the filament through the hot-end and made a clicking sound. After cleaning the extruder servo - which did have some Z-Glass particles stuck to it, the problem ... didn't go away.
+
+So, next up was cleaning the nozzle with acetone. The next day, the problem still wasn't resolved.
+
+Time to check the (wonderful)  [Zortrax Support](http://support.zortrax.com) site in more detail. After some digging around I found [this](http://support.zortrax.com/printing-tips-m200/#step_8):
+
+> Immediately after the print, unload Z-GLASS/Z-PETG from the extruder. These materials should not be left loaded as they become more difficult to extrude after some time. In addition, once you finish printing with Z-GLASS/Z-PETG, print a small-sized object using Z-ABS to prevent further problems with extrusion.
+>
+> If these steps do not help and you still have problems with extrusion, the nozzle or the hotend should be replaced.
+
+_Auwch_ ... I had Z-Glass loaded onto my printer for several weeks with daily prints.
+
+As I already had cleaned the nozzle, which now looked spick and span again, I looked into the possibilities to [replace the hot-end](http://support.zortrax.com/hotend-replacement/) and found:
+
+> Hotend replacement is necessary when you encounter problems with material extrusion caused by a blockage inside the hotend. If the extruder motor makes a clicking sound or if the material leaks through the top of the hotend (around the two black screws), or if your print is incomplete (there is some material missing in the structure), the hotend needs replacing.
+
+Yep, that's exactly the problem, that awful _clicking sound_.
+
+So I contacted [3D & I](http://3dprintingwinkel.be) where I bought my printer and discussed what could be done. They were very helpful and invited me over to their store to test another hot-end to make sure that it would actually resolve the issue, before buying the &euro;80-something part. So in the end, I'll be going over my budget of &euro;15 :-(

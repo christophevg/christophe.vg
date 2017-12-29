@@ -101,4 +101,8 @@ As I already had cleaned the nozzle, which now looked spick and span again, I lo
 
 Yep, that's exactly the problem, that awful _clicking sound_.
 
-So I contacted [3D & I](http://3dprintingwinkel.be) where I bought my printer and discussed what could be done. They were very helpful and invited me over to their store to test another hot-end to make sure that it would actually resolve the issue, before buying the &euro;80-something part. So in the end, I'll be going over my budget of &euro;15 :-(
+So I contacted [3D & I](http://3dprintingwinkel.be) where I bought my printer and discussed what could be done. They were very helpful and invited me over to their store to test another hot-end to make sure that it would actually resolve the issue, before buying the &euro;80-something part. 
+
+At the store, we swapped the hot-end and did a few tests, but to everyone's surprise, the problem still occurred. So now, my printer is still at the shop, where they are looking into the actual problem.
+
+So maybe, the Z-Glass wasn't the culprit, but still ... printing with Z-Glass can be dangerous for your hot-end, so take précautions and clean it afterwards with a small ABS print.

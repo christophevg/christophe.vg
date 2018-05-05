@@ -8,7 +8,7 @@ this page documents some first guide steps into leveraging what is already
 available right now.
 
 **DISCLAIMER**: I was part of the MOSAIC LoPoW research group for a year. So of
-course I have a bias towards Dash7 ;-) No, being more a user than a producer,
+course I have a bias towards Dash7 ;-) Now, being more a user than a producer,
 standing on the actual open source (user) end of the project, I feel like
 advocating and supporting it from the ground up, making it more available to
 everybody outside of the inner circle.

@@ -11,7 +11,7 @@ title                    : "Christophe VG, Freelance Hardware & Software Prototy
 title_separator          : "-"
 name                     : "Christophe Van Ginneken"
 description              : "Portfolio, Curriculum Vitae en informatieve website van en over Christophe Van Ginneken."
-url                      : "http://christophe.vg"
+url                      : "https://christophe.vg"
 baseurl                  : 
 repository               : "christophevg/christophe.vg"
 teaser                   : 

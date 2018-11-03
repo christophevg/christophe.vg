@@ -44,4 +44,10 @@ In combination with a [multi-channel RC radio system](http://www.robotshop.com/e
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7OHj70Zl4tA?rel=0" frameborder="0" allowfullscreen></iframe>
 
+## Version 2.0
+
+In 2018, a second robot was ordered to further support the growing need for inspection of new setups. Lessons learned from the first version were applied, which mostly resulted in a new bodywork, replacing the plexi cut parts by 3D printed parts for improved flexibility. The plexi cut parts were rather fragile and had to be replaced a few times.
+
+[![version 2.0](/embedded/images/thumb/inspection-robot-v2.jpeg)](/embedded/images/full/inspection-robot-v2.jpeg)
+
 {% include for-hire.html %}

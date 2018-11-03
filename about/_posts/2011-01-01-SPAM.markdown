@@ -4,91 +4,63 @@ header:
   teaser: /about/images/thumb/spam.jpg
   image: /about/images/header/spam.jpg
 ---
-
-**Spam** _(ook: ongewenste post, ongewenste reclame; afkorting: orec) is
-e-mail of postings in de nieuwsgroepen van Usenet die op grote schaal
-ongevraagd wordt toegestuurd of geplaatst in veel verschillende nieuwsgroepen.
-Spam is ook bekend onder de term UCE (Unsolicited Commercial E-mail) of UBE
-(Unsolicited Bulk E-mail). Maar ook charitatieve instellingen en Nederlandse
-overheidsorganisaties versturen soms spam. Het begrip spam wordt ook gebruikt
-voor ongewenste reclame in Usenet-nieuwsgroepen. Spam is één van de bronnen
-van junkmail._ (Overgenomen van [Wikipedia](http://nl.wikipedia.org/wiki/Spam))
+> Deze pagina mag dan wel meer dan 15 jaar oud zijn, ze blijft meer dan relevant. De spelregels rond SPAM zijn in al die tijd echt niet veranderd, bewijze hef feit dat ik nog meerdere keren per jaar mensen moet wijzen op hun onverantwoorde omgang met mijn email adres of dat van mijn kinderen. Sinds een tweetal jaar is ook de [AVG](https://nl.wikipedia.org/wiki/Algemene_verordening_gegevensbescherming#Principes) in werking getreden, die boven op de rationele zaken die al lang op deze pagina stonden, ook een juridisch kader schetst waarom je bv. niet zomaar mijn email adres mag delen met anderen.
 
 **Als je door mij naar deze pagina bent geleid, dan ben je waarschijnlijk
-onvoorzichtig geweest in het gebruik van mijn emailadres. Iedereen klaagt
+onvoorzichtig geweest met mijn email adres. Iedereen klaagt
 erover, maar ik merk dat bijna niemand er iets aan doet. Probeer volgende
 regels in acht te houden en lees de pagina over
-[SPAM](http://nl.wikipedia.org/wiki/Spam) ten minste een keer volledig door.
-Bedankt!**
+[SPAM](https://nl.wikipedia.org/wiki/Spam_(post)) ten minste een keer volledig door. Bedankt!**
+
+**Spam** _is een verzamelnaam voor ongewenste berichten en is ook bekend als Unsolicited Commercial E-mail en Unsolicited Bulk E-mail. Onder deze term vallen ongewenste e-mails en reclameboodschappen op websites (onder andere fora). Spam is moeilijk te definiëren. Niet ieder initiatief van een persoon of organisatie om contact te leggen is spam. Spam onderscheidt zich van andere vormen van commerciële communicatie, omdat een bericht wordt gestuurd aan een groep die veel groter is dan de potentiële doelgroep._ (Overgenomen van [Wikipedia](https://nl.wikipedia.org/wiki/Spam_(post)))
 
 Om SPAM te kunnen ontvangen moet je email adres in verkeerde handen zijn
 gevallen, zorg er voor dat dit niet kan gebeuren
 
-* stuur je email adres niet naar onbekenden
+* Laat je email adres niet in de handen van onbekenden terecht komen.
 
-  * stuur geen emails naar verschillende mensen die elkaar niet kennen,
-    gebruik in dat geval een BCC (Blind Carbon Copy) en richt de email aan
-    jezelf. zo komen de email adressen van alle geaddresseerden niet in
-    allerhande adresboeken waar ze niet thuishoren.
+  * Stuur geen emails naar verschillende mensen die elkaar niet kennen, gebruik in dat geval een BCC (Blind Carbon Copy) en richt de email aan  jezelf. Zo komen de email adressen van alle geadresseerden niet in  allerhande adresboeken waar ze niet thuishoren.
 
-  * verwijder bij het forwarden van email alle overbodige informatie
-    betreffende emailadressen van eerdere schrijvers om diezelfde reden.
+  * Verwijder bij het doorsturen van email alle overbodige informatie betreffende emailadressen van eerdere schrijvers om diezelfde reden.
 
-* bevestig geen email adressen
+* Bevestig geen email adressen.
 
-  * een emailadres is geld waard, een bevestigd email adres is nog veel meer
-    waard. geloof daarom niet dat door op een link te klikken om je uit te
-    schrijven je verlost zal zijn van SPAM, in tegendeel je zal er meer en
-    meer ontvangen.
+  * Een email adres is geld waard, een bevestigd email adres is nog veel meer waard. geloof daarom niet dat door op een link te klikken om je uit te schrijven je verlost zal zijn van SPAM, in tegendeel je zal er meer en meer ontvangen.
 
-* pas op voor viri en wormen
+* Pas op voor viri en wormen.
 
-  * het merendeel van de hededaagse viri en wormen zijn uit op emailadressen.
-    iedereen in je adresboek is in gevaar als jij geinfecteerd wordt. op deze
-    manier kunnen email adressen die je slechts aan 1 persoon gegeven hebt
-    plots SPAM ontvangen via vele omwegen.
+  * Het merendeel van de hedendaagse viri en wormen zijn uit op email adressen. Iedereen in je adresboek is in gevaar als jij geïnfecteerd wordt. Op deze manier kunnen email adressen die je slechts aan 1 persoon gegeven hebt plots SPAM ontvangen via veel omwegen.
 
-  * de meeste wormen doorzoeken niet alleen je adresboek, maar ook alle
+  * De meeste wormen doorzoeken niet alleen je adresboek, maar ook alle
     bewaarde berichten op zoek naar email adressen.
 
-  * gebruik daarom o.a. veilige software om je op het internet te begeven:
-    [de FireFox webbrowser](http://www.mozilla.com/firefox/ ) en
-    [de Thunderbird email client](http://www.mozilla.com/thunderbird/).
+  * Gebruik daarom o.a. veilige software om je op het internet te begeven.
 
-* wees niet goedgelovig
+* Wees niet goedgelovig.
 
-  * Nokia of Ericson delen GEEN gratis GSM's uit
+  * Nokia of Ericson delen GEEN gratis GSM's uit (Wow, dat bewijst alvast dat deze pagina meer dan 15 jaar oud ;-))
 
   * Door een mail te sturen naar iedereen die jij kent zal niemand jou iets
-    geven
+    geven.
 
-  * Leer wat een [Hoax](http://www.google.be/search?hl=nl&q=hoax) is en hoe
-    eenvoudig je dit kan testen met de voorgaande zoekopdracht.
+  * Leer wat een [Hoax](https://nl.wikipedia.org/wiki/Hoax) is en hoe eenvoudig je dit kan testen door het verhaal even door [Google](https://www.google.com/search?oq=hoax) te halen.
 
-Kortom: Heb respect voor anderen en bescherm hun emailadres beter dan dat van
+Kortom: Heb respect voor anderen en bescherm hun email adres beter dan dat van
 jezelf.
 
 ## Ze winnen niet altijd mijnheer
 
-via [ZDNet.be](http://zdnet.be ) - [http://zdnet.be/news.cfm?id=54076](http://zdnet.be/news.cfm?id=54076)
+Ooit verscheen op [ZDNet.be](http://zdnet.be ):
 
-_De Washington Post publiceerde vorige week een interview met hacker "0x80",
-die alleen op voorwaarde van absolute anonimiteit wilde spreken. Zijn
-identiteit ligt echter op straat omdat een foto bij het artikel meer
-informatie bevatte dan gedacht._
+_De Washington Post publiceerde vorige week een interview met hacker "0x80", die alleen op voorwaarde van absolute anonimiteit wilde spreken. Zijn identiteit ligt echter op straat omdat een foto bij het artikel meer informatie bevatte dan gedacht._
 
-_"0x80" gebruikt geïnfecteerde computers om nog meer reclame te verspreiden.
-Via virussen en het exploiteren van lekken zou hij elke dag zo'n 2.000
-machines aan zijn netwerk van slaafcomputers toevoegen. Naar eigen zeggen
-harkt '0x80' maandelijks bijna 7.000 dollar aan inkomsten bij elkaar._
+_"0x80" gebruikt geïnfecteerde computers om nog meer reclame te verspreiden. Via virussen en het exploiteren van lekken zou hij elke dag zo'n 2.000 machines aan zijn netwerk van slaafcomputers toevoegen. Naar eigen zeggen harkt '0x80' maandelijks bijna 7.000 dollar aan inkomsten bij elkaar._
 
-via [ZDNet.be](http://zdnet.be) - [http://zdnet.be/news.cfm?id=60409](http://zdnet.be/news.cfm?id=60409)
+Nog een ander verhaal:
 
-_De Amerikaanse spammer Daniel Lin, die miljoenen spamberichten verstuurde om
-potentieverhogende pillen en afslankpoeders te verkopen, moet drie jaar de cel
-in. Ook kreeg hij een boete van tienduizend dollar opgelegd._
+_De Amerikaanse spammer Daniel Lin, die miljoenen spamberichten verstuurde om potentie-verhogende pillen en afslank-poeders te verkopen, moet drie jaar de cel in. Ook kreeg hij een boete van tienduizend dollar opgelegd._
 
-Aanklager Stephen Murphy verklaarde na de veroordeling dat "internetoplichters
+Aanklager Stephen Murphy verklaarde na de veroordeling dat "internet-oplichters
 moeten leren dat spammen een misdaad is, als computers zonder autorisatie
 worden gebruikt". Lin zou ruim 350.000 dollar met zijn activiteiten hebben
 verdiend.''

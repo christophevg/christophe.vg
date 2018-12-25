@@ -1,5 +1,8 @@
 ---
 title: Kalkoen met citrusvruchten en tijm
+header:
+  teaser: /koken/images/thumb/kalkoen-met-citrus.jpeg
+  image: /koken/images/header/kalkoen-met-citrus.jpeg
 ---
 
 Voor mijn eerste kalkoen op Kerst (2006) heb ik lang gezocht naar een recept dat het waard was om 4 1/2 uur mee bezig te zijn. Op basis van onderstaand recept kunnen een 10tal mensen smullen van een originele kalkoen met Kerst. 

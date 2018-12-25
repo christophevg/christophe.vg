@@ -80,15 +80,15 @@ author:
   email            : "contact@christophe.vg"
   phone            : "+32(0)498/62.33.29"
   uri              :
-  bitbucket        : "christophevg"
+  bitbucket        :
   codepen          :
   dribbble         :
-  flickr           : "christophevg"
+  flickr           :
   facebook         :
   foursquare       :
   github           : "christophevg"
-  google_plus      : "ChristopheVG"
-  keybase          : "christophevg"
+  google_plus      :
+  keybase          :
   instagram        : "christophe.vg_"
   lastfm           :
   linkedin         : "christophevg"
@@ -103,7 +103,8 @@ author:
   weibo            :
   xing             :
   youtube          : "UCqkRWUeAazrKowidudU8-gQ"
-  runkeeper        : "christophevg"
+  runkeeper        :
+  strava           : "christophevg"
   thingiverse      : "christophevg"
 
 # Reading Files

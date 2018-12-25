@@ -211,6 +211,12 @@
           Runkeeper
         </a></li>
       {% endif %}
+      {% if author.strava %}
+        <li><a href="https://www.strava.com/athletes/{{ author.strava }}" itemprop="sameAs">
+          <img src="/assets/images/strava.png" style="width:16px;height=16px;margin-bottom:3px;margin-right:3px;margin-left:2px;" aria-hidden="true"> 
+          Strava
+        </a></li>
+      {% endif %}
     </ul>
   </div>
 </div>

@@ -1,29 +1,5 @@
 ---
 title: XT0F Family
+layout: redirect
+redirection: /technology/XT0F
 ---
-
-After diving into the electronics world for some weeks, I felt the need/urge to
-create reusable components - much as I was used to in the software world. Just
-for fun, I decided to give them a name and group them as a family.
-
-And so I created the XT0F family of components:
-
-### Family Members
-
-* [XT0F-001](XT0F-001.html) is the elementary first component every project
-  needs: a regulated power supply.
-* [XT0F-002](XT0F-002.html) is my self-compiled ISP-over-JTAG-SPI programmer
-  for the [ATMEGA8](ATMEGA168.html) family of MCU's that I'm initially
-  focussing on.
-* [XT0F-003](XT0F-003.html) is my first home-grown wireless sensor node - short
-  mote.
-
-### Family Ties
-
-Besides boxing all components as much as possible using custom 3D printed
-cases, I also try to make connections between the components in a consistent
-way. Most members can be connected to each other through header-based
-connectors.
-
-For example: [XT0F-001](XT0F-001.html) can be plugged onto
-[XT0F-002](XT0F-002.html), but can also be plugged onto a breadboard.

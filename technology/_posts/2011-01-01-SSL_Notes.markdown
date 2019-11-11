@@ -1,0 +1,162 @@
+---
+title: SSL Notes
+---
+
+## introduction
+
+OpenSSL is a wonderful technology and the openssl tool is truly a Swiss
+Armyknife. But I use it not on a daily basis and therefore I tend to forget
+how to use it. These notes list the typical and common actions I need to
+perform with it, making it easy to simply copy and paste and move on with the
+more fun parts in life.
+
+## resources
+
+* [http://www.openssl.org/docs/HOWTO/keys.txt](http://www.openssl.org/docs/HOWTO/keys.txt)
+* [http://www.openssl.org/docs/HOWTO/certificates.txt](http://www.openssl.org/docs/HOWTO/certificates.txt)
+* [http://www.madboa.com/geek/openssl/](http://www.madboa.com/geek/openssl/)
+* [http://www.mobilefish.com/developer/openssl/openssl_quickguide_command_examples.html](http://www.mobilefish.com/developer/openssl/openssl_quickguide_command_examples.html)
+
+## generate private key
+
+{% highlight bash %}
+$ openssl genrsa -out privkey.pem 2048
+Generating RSA private key, 2048 bit long modulus
+....+++
+......................+++
+e is 65537 (0x10001)
+{% endhighlight %}
+
+## generate CSR
+
+{% highlight bash %}
+$ openssl req -new -key privkey.pem -out cert.csr
+You are about to be asked to enter information that will be incorporated
+into your certificate request.
+What you are about to enter is what is called a Distinguished Name or a DN.
+There are quite a few fields but you can leave some blank
+For some fields there will be a default value,
+If you enter '.', the field will be left blank.
+-----
+Country Name (2 letter code) [AU]:BE
+State or Province Name (full name) [Some-State]:Antwerp
+Locality Name (eg, city) []:Schriek
+Organization Name (eg, company) [Internet Widgits Pty Ltd]:2Know BVBA
+Organizational Unit Name (eg, section) []:Operations
+Common Name (eg, YOUR name) []:Christophe VG
+Email Address []:
+
+Please enter the following 'extra' attributes
+to be sent with your certificate request
+A challenge password []:
+An optional company name []:
+{% endhighlight %}
+
+## display CSR content ##
+
+{% highlight bash %}
+$ openssl req -text -noout -in cert.csr
+Certificate Request:
+    Data:
+        Version: 0 (0x0)
+        Subject: C=BE, ST=Antwerp, L=Schriek, O=2Know BVBA, OU=Operations, CN=Christophe VG/emailAddress=
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+            RSA Public Key: (2048 bit)
+                Modulus (2048 bit):
+                    00:ae:88:b4:44:44:4e:fe:48:84:65:a2:5d:0f:20:
+										...
+                    60:6c:9c:6e:ca:81:12:b0:15:97:f3:4a:5b:7b:3a:
+                    7d:e3
+                Exponent: 65537 (0x10001)
+        Attributes:
+            a0:00
+    Signature Algorithm: sha1WithRSAEncryption
+        22:f6:ca:35:fb:0c:ff:a5:7d:a0:5a:93:77:49:00:c6:b1:fc:
+				...
+        bd:b5:fb:71:77:3c:ef:6b:aa:dc:65:c8:5b:a5:12:a3:b9:19:
+        ff:1d:bd:ae
+{% endhighlight %}
+
+## (self-)sign a certificate ##
+
+{% highlight bash %}
+$ openssl x509 -req -days 365 -in cert.csr -signkey privkey.pem -out server.crt
+Signature ok
+subject=/C=BE/ST=Antwerp/L=Schriek/O=2Know BVBA/OU=Operations/CN=Christophe VG
+Getting Private key
+{% endhighlight %}
+
+## display certificate content
+
+{% highlight bash %}
+$ openssl x509 -text -in server.cert
+Certificate:
+    Data:
+        Version: 1 (0x0)
+        Serial Number:
+            f0:f2:34:32:6f:cd:93:79
+        Signature Algorithm: sha1WithRSAEncryption
+        Issuer: C=BE, ST=Antwerp, L=Schriek, O=2Know BVBA, OU=Operations, CN=Christophe VG
+        Validity
+            Not Before: Mar 22 08:53:35 2011 GMT
+            Not After : Mar 21 08:53:35 2012 GMT
+        Subject: C=BE, ST=Antwerp, L=Schriek, O=2Know BVBA, OU=Operations, CN=Christophe VG
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+            RSA Public Key: (2048 bit)
+                Modulus (2048 bit):
+                    00:bb:fa:bf:d4:fd:77:87:e1:b8:e0:ad:2c:48:a0:
+                    25:80:c3:bc:c1:9f:84:57:af:34:3b:53:ba:fe:d5:
+										...
+                    82:0f:90:57:1c:0c:ca:dc:ea:93:39:b3:03:43:d4:
+                    b2:c5
+                Exponent: 65537 (0x10001)
+    Signature Algorithm: sha1WithRSAEncryption
+        56:9b:39:77:8b:94:0d:e7:7a:70:a8:c9:7c:a9:f3:83:83:b4:
+        d4:51:8b:37:e0:a2:55:74:37:6a:fe:d9:ec:8d:84:06:83:fe:
+				...
+        41:ba:39:cd:cc:4c:39:be:bf:65:61:73:23:dc:26:8f:d4:1f:
+        d5:0d:e0:30
+-----BEGIN CERTIFICATE-----
+MIIDYjCCAkoCCQDw8jQyb82TeTANBgkqhkiG9w0BAQUFADBzMQswCQYDVQQGEwJC
+RTEQMA4GA1UECBMHQW50d2VycDEQMA4GA1UEBxMHU2NocmllazETMBEGA1UEChMK
+...
+QitnBMnEHpoIynoQOcmu0MQjED3kEfl/CfvTTUZmylFBujnNzEw5vr9lYXMj3CaP
+1B/VDeAw
+-----END CERTIFICATE-----
+
+{% endhighlight %}
+
+## verify certificate
+
+{% highlight bash %}
+$ openssl verify server.crt 
+server.crt: /C=BE/ST=Antwerp/L=Schriek/O=2Know BVBA/OU=Operations/CN=Christophe VG
+error 18 at 0 depth lookup:self signed certificate
+OK
+{% endhighlight %}
+
+## convert PEM private key to PKCS#8
+
+{% highlight bash %}
+$ openssl pkcs8 -in privkey.pem -topk8 -v2 des3 -nocrypt -outform DER -out privkey.p8c
+
+$ cat privkey.p8c
+??0?????X?|?T?f
+ Z?4?wly???y????&
+?x???}??=
+  2~?]G??{Ư???1(o?)m??w?I????CM@?????E?*????@yP?@z b?2??"|U`g????v?WB*?
+...
+{% endhighlight %}
+
+## base64 encode a file (e.g. a PKCS#8 private key)
+
+{% highlight bash %}
+$ openssl enc -base64 -in privkey.p8c -out privkey.p8c.base64
+
+$ cat privkey.p8c.base64 
+MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCh/lg/fJVUk2YQ
+Bg3uHwta3jSnd2x5orOjea+GxMkmCgX2eMJN35QUtcXUfb2fPQwyfpZdR7jpgXvG
+...
+{% endhighlight %}

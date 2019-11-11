@@ -1,0 +1,44 @@
+---
+title: XT0F-002 - Programmer
+tags: avr
+---
+
+XT0F-002 is a programmer for a 24-pin [ATMEGA8 MCU](ATMEGA168.html). It allows
+you to to connect the [ISP](http://en.wikipedia.org/wiki/In-System_Programming)
+(In System Programmer) to the MCU's
+[SPI](http://en.wikipedia.org/wiki/Serial_Peripheral_Interface_Bus).
+
+## Revision 1
+
+I use a [JTAGICE mkII](JTAGICE_mkII.html), which has a JTAG interface. ISP only
+uses 6 wires, but I include a full JTAG male connector which allows me to
+directly connect the JTAGICE.
+
+The implementation is mainly a direct implementation of the [programming
+circuit for the ATMEGA8](ATMEGA168.html). Of course, I reuse the
+[XT0F-001](XT0F-001.html) to include a rock-stable 5V power supply.
+
+<div class="thumb circuit left">
+  <a href="images/full/jtag_spi_programmer_atmega168.jpg" target="_blank">
+    <img src="images/thumb/jtag_spi_programmer_atmega168.jpg"><br>
+    complete wiring for the programmer
+  </a>
+</div>
+
+<br clear="both">
+
+In this revision, I've also included 4 LEDs to allow an MCU to do basic visual
+checks. ADC pins 5 through 2 are provided.
+
+<div class="thumb circuit left">
+  <a href="images/full/xt0f-002-rev1.png" target="_blank">
+    <img src="images/thumb/xt0f-002-rev1.png"><br>
+    revision 1 through-hole design
+  </a>
+</div>
+
+<br clear="both">
+
+### Status
+
+Implementation in progress :-)

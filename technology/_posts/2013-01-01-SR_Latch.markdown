@@ -1,0 +1,74 @@
+---
+title: SR Latch
+---
+
+While studying for my [Digital Electronics and Processors
+exam](http://onderwijsaanbod.kuleuven.be/syllabi/n/H01L1AN.htm) I came across
+the SR Latch, the Set-Reset Latch. It is a sequential circuit that is capable
+of storing 1 bit and it forms the basis for Flip-flops and memory in general.
+
+A SR Latch can be constructed using two NOR ports and by chance I had some NOR
+ports lying around...
+
+## The circuit
+
+We want a circuit that can _memorize_ 1 bit. So we need a circuit that allows
+us to set or reset a bit and also lets us consult that value. Because our
+_stimulus_ is not constantly present, the circuit needs to constantly _feed_
+its own value. This can be achieved by introducing feedback.
+
+The conceptual circuit below shows two NOR gates that use each others' output.
+This way when no set or reset signal is present, the feedback loop retains the
+memorized state.
+
+<iframe width="725" height="448" src="http://123d.circuits.io/circuits/18974/embed#schematic" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+
+Let's see what happens. When set and reset are low the NOR ports will depend on
+each others' output to come up with output. Due to noise they will in the end
+produce output. The outcome of this race will be is completely random, so let's
+say that the output of NOR<sub>0</sub> is 1.
+
+That means that in<sub>1</sub> of NOR<sub>1</sub> is high and the output of
+NOR<sub>1</sub> will become 0. Which is great, because both inputs of
+NOR<sub>0</sub> must be 0 to produce an output of 1.
+
+Q' is in fact Q inverted, so everything matches and we have a stable state.
+
+When we put set high, the inputs of NOR<sub>0</sub> differ and the output
+becomes 0, which goes to the other NOR gate, which now will produce 1. Which is
+indeed the value we just set.
+
+Now when we bring set back low, the inputs of NOR<sub>0</sub> are 0 and 1, so
+the gate still produces 0 and everything remains stable. The circuit can
+memorize 1 bit.
+
+## The schematic
+
+To actually create this circuit, I used a [Texas Instruments
+SN74LS27N](http://datasheet.octopart.com/SN74LS27N-Texas-Instruments-datasheet-1
+0784589.pdf). This IC contains 3 3-input NOR gates, so it's a bit more that I
+needed, but it was what I had laying around. The three gates are labeled 1 to 3
+and the inputs on each gate are labeled A through C, while the output is
+labeled Y. I'm using gates 1 and 2.
+
+Set and reset are two SPST switches and on the output side, two LEDs are
+showing the state of Q and Q'.
+
+Note that the third input of each used gate must be connected to GND.
+
+<iframe width="725" height="448" src="http://123d.circuits.io/circuits/18702/embed#schematic" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+
+## Action
+
+And that's how you make a 1-bit memory ...
+
+<object width="560" height="315">
+  <param name="movie" value="http://www.youtube.com/v/94OKqcIgU20?hl=en_US&amp;version=3&amp;rel=0"></param>
+  <param name="allowFullScreen" value="true"></param>
+  <param name="allowscriptaccess" value="always"></param>
+  <embed src="http://www.youtube.com/v/94OKqcIgU20?hl=en_US&amp;version=3&amp;rel=0" 
+         type="application/x-shockwave-flash" width="560" height="315"
+         allowscriptaccess="always" allowfullscreen="true"></embed>
+</object>
+
+<br clear="both">

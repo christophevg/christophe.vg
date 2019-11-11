@@ -18,10 +18,10 @@ repositories](http://github.com/christophevg).
 In 2011, at the age of 37, I decided to return to full time studying at the
 University of Leuven, seizing the moment to take a step back and try to find a
 (professional) life that I can be even more passionate about. After about a year
-it became apparant that [embedded systems](/embedded) seemed to lure me their
+it became apparant that [embedded systems](/technology) seemed to lure me their
 way. The hardware world became a very important counter-part to my interest in software.
 
-But, there is more than [computers](/it) in my life. My daughter
+But, there is more than [computers](/technology) in my life. My daughter
 [Eline](http://eline.vg) and son [Arjen](http://arjen.vg) really brighten up
 every day of my life. [Cooking](/koken), [digital photography](/fotografie) and
 [catamaran sailing](/zeilen) complete the initial picture of my world. Each of

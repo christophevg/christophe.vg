@@ -8,7 +8,7 @@ permalink: /koken/
 Naast alle informatica-gerelateerde interesses, heeft de keuken een belangrijk
 plekje in mijn hart verworven, of moet ik eerlijkheidshalve dan maar maag
 zeggen? De liefde van de man gaat door de maag, ook de mijne. Kortom, naast
-[computers](/it), [embedded systemen](/embedded) en mijn voorliefde voor het
+[technology](/technology) en mijn voorliefde voor het
 [zeilen](/zeilen) is de keuken sinds ongeveer 1997 een van die plekken in huis
 waar je me kan terugvinden met mijn neus die in de potten, op zoek naar weer
 een lekkere bereiding.

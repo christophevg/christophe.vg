@@ -1,5 +1,8 @@
 ---
 title: Worstenbroodjes
+header:
+  teaser: /koken/images/thumb/worstenbroodjes.jpeg
+  image: /koken/images/header/worstenbroodjes.jpeg
 ---
 
 ## ingrediënten

@@ -47,7 +47,7 @@ In het kader van het [C<sup>3</sup>PO - Collaborative City Co-design PlatfOrm](h
 
 Aan de hand van deze luisterbox gaat Studio Dott participatieprojecten ondersteunen met een fysieke aanwezigheid in het straatbeeld. Inwoners van verschillende Belgische steden kunnen zo in een geautomatiseerd, interactief gesprek feedback geven over tal van onderwerpen, waarover het bestuur van hun woonplaats hun mening wil kennen.
 
-## Protoypen van een Luisterbox
+## Prototypen van een Luisterbox
 
 Naast de selectie van een vandaalbestendige telefoon en de ontwikkeling van een [veelkleurige knop](NeoButton) werd een online platform ontwikkeld dat Studio Dott in staat stelt om een interactief interview op te stellen en op te volgen.
 
@@ -96,9 +96,6 @@ Tijdens de zomermaanden verhuisde de Luisterbox naar Gent, waar hij met de bewon
 #### In de pers
 
 * [HLN - Luisterbox peilt naar mening bewoners](http://www.hln.be/regio/nieuws-uit-gent/-wij-raken-rust-in-onze-wijk-kwijt-a3239490/)
-* [AVS Nieuws van 22 augustus](https://vimeo.com/230731748)
-
-<iframe src="https://player.vimeo.com/video/230731748?title=0&byline=0&portrait=0" width="640" height="366" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 ## Bedankt!
 

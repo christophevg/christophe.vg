@@ -24,10 +24,17 @@
       </p>
     {% endif %}
   </div>
-
+  
   <div class="author__urls-wrapper">
     <button class="btn btn--inverse">{{ site.data.ui-text[site.locale].follow_label | remove: ":" | default: "Follow" }}</button>
     <ul class="author__urls social-icons">
+      
+      <li><a href="/assets/vcard.vcf" itemprop="sameAs">
+        <img src="/assets/images/vcard.png" style="width:16px;height=16px;margin-bottom:3px;margin-right:3px;margin-left:2px;" aria-hidden="true"> 
+        vCard
+      </a></li>
+      
+      
       {% if author.location %}
         <li itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
           <i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> 

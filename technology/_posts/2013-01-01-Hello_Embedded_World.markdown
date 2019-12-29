@@ -1,5 +1,8 @@
 ---
 title: Hello Embedded World
+header:
+  teaser: /technology/images/thumb/xt0f-003-rev1.jpg
+  image: /technology/images/header/xt0f-003-rev1.jpg
 ---
 
 While doing research for possible master thesis topics, I'm looking into the

@@ -1,5 +1,8 @@
 ---
 title: Electronics - first steps
+header:
+  teaser: /technology/images/thumb/hello_led2.jpg
+  image: /technology/images/header/hello_led.jpg
 ---
 
 While doing research for possible master thesis topics, I'm looking into the

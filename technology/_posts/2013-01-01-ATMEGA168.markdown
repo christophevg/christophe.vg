@@ -1,6 +1,9 @@
 ---
 title: ATMEGA 168
 tags: avr
+header:
+  teaser: /technology/images/thumb/atmega168.jpeg
+  image: /technology/images/header/atmega168.jpeg
 ---
 
 The Atmel ATMEGA168 was the first MCU I programmed completely by myself, and

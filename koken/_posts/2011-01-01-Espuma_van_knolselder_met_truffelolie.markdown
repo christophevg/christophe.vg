@@ -1,5 +1,6 @@
 ---
 title: Espuma van knolselder met truffelolie
+tags: veggie
 ---
 
 ## ingrediënten

@@ -1,5 +1,6 @@
 ---
 title: Chocolade ijsroom
+tags: veggie
 ---
 
 ## ingrediënten

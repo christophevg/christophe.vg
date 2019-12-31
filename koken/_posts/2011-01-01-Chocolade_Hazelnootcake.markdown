@@ -1,5 +1,6 @@
 ---
 title: Chocolade Hazelnootcake
+tags: veggie
 ---
 
 ## ingrediënten

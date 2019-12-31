@@ -1,5 +1,6 @@
 ---
 title: Pompoentorentje
+tags: veggie
 ---
 
 ## ingrediënten

@@ -1,5 +1,6 @@
 ---
 title: Pomme Moscovit
+tags: veggie
 ---
 
 ## ingrediënten

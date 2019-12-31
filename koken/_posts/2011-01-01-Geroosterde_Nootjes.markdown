@@ -1,5 +1,6 @@
 ---
 title: Geroosterde Nootjes
+tags: veggie
 ---
 
 ## ingrediënten

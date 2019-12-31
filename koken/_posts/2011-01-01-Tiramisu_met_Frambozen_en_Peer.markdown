@@ -1,5 +1,6 @@
 ---
 title: Tiramisu met Frambozen en Peer
+tags: veggie
 ---
 
 ## ingrediënten

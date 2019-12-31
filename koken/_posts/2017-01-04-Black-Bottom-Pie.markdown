@@ -3,6 +3,7 @@ title: Black Bottom Pie
 header:
   teaser: /koken/images/thumb/black-bottom-pie-piece.jpeg
   image: /koken/images/header/black-bottom-pie-piece.jpeg
+tags: veggie
 ---
 
 Een verrassend lekkere Amerikaanse klassieker!

@@ -1,5 +1,6 @@
 ---
 title: Chocolade-Koffiepudding
+tags: veggie
 ---
 
 ## ingrediënten

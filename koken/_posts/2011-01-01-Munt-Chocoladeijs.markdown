@@ -1,5 +1,6 @@
 ---
 title: Munt-Chocoladeijs
+tags: veggie
 ---
 
 ## ingrediënten

@@ -1,5 +1,6 @@
 ---
 title: Sinaaschocoladecake
+tags: veggie
 ---
 
 ## ingrediënten

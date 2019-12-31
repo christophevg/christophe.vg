@@ -1,5 +1,6 @@
 ---
 title: Tomatentaartje met geitenkaas
+tags: veggie
 ---
 
 ## ingrediënten

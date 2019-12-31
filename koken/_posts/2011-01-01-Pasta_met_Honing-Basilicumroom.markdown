@@ -1,5 +1,6 @@
 ---
 title: Pasta met Honing-Basilicumroom
+tags: veggie
 ---
 
 ## ingrediënten

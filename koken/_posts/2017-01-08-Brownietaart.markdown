@@ -3,6 +3,7 @@ title: Brownietaart
 header:
   teaser: /koken/images/thumb/brownietaart.jpeg
   image: /koken/images/header/brownietaart.jpeg
+tags: veggie
 ---
 
 Cho - co - la la la laaa - de ...

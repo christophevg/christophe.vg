@@ -1,5 +1,6 @@
 ---
 title: Granite van Champagne
+tags: veggie
 ---
 
 ## ingrediënten

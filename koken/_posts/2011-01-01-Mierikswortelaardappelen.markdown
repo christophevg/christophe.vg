@@ -1,5 +1,6 @@
 ---
 title: Mierikswortelaardappelen
+tags: veggie
 ---
 
 ## ingrediënten

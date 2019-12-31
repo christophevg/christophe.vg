@@ -1,5 +1,6 @@
 ---
 title: Amandelgratin van citrusvruchten
+tags: veggie
 ---
 
 ## ingrediënten

@@ -3,6 +3,7 @@ title: Pomme Duchesse
 header:
   teaser: /koken/images/thumb/pomme-duchesse.jpeg
   image: /koken/images/header/pomme-duchesse.jpeg
+tags: veggie
 ---
 
 Super feestelijk en heerlijk.

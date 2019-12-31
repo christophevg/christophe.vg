@@ -1,5 +1,6 @@
 ---
 title: Humus
+tags: veggie
 ---
 
 ## ingrediënten

@@ -1,5 +1,6 @@
 ---
 title: Mousselinesaus
+tags: veggie
 ---
 
 ## ingrediënten

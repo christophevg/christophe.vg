@@ -1,5 +1,6 @@
 ---
 title: Hollandse Saus
+tags: veggie
 ---
 
 ## ingrediënten

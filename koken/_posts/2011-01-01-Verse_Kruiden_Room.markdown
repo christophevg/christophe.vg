@@ -1,5 +1,6 @@
 ---
 title: Verse Kruiden Room
+tags: veggie
 ---
 
 ## ingrediënten
@@ -11,5 +12,4 @@ Klop de verse room half op en meng er de fijngesneden verse kruiden onder.
 
 Breng verder op smaak met peper en zout. Zet ook een tijdje koel.
 
-Heerlijk bij een  of bij gebakken vis of op een zomerse  sandwich
-
+Heerlijk bij gebakken vis of op een zomerse sandwich.

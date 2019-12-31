@@ -1,5 +1,6 @@
 ---
 title: Engelse Muffin
+tags: veggie
 ---
 
 ## ingrediënten

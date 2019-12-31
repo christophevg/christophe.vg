@@ -1,5 +1,6 @@
 ---
 title: Gevulde koeken met chocolade
+tags: veggie
 ---
 
 ## ingrediënten

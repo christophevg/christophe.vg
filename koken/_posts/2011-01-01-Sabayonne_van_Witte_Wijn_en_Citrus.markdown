@@ -1,5 +1,6 @@
 ---
 title: Sabayonne van Witte Wijn en Citrus
+tags: veggie
 ---
 
 ## ingrediënten

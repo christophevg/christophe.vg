@@ -3,6 +3,7 @@ title: Karamel Fudge
 header:
   teaser: /koken/images/thumb/karamel-fudge.jpeg
   image: /koken/images/header/karamel-fudge.jpeg
+tags: veggie
 ---
 
 Ik ben geen "snoeper", maar voor de kids maak ik wel eens een uitzondering ;-)

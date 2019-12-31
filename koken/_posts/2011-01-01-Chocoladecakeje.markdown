@@ -1,5 +1,6 @@
 ---
 title: Chocoladecakeje
+tags: veggie
 ---
 
 ## ingrediënten

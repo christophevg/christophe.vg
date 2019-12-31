@@ -1,5 +1,6 @@
 ---
 title: Buritorolletjes met paprika en humus
+tags: veggie
 ---
 
 ## ingrediënten

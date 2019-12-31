@@ -3,6 +3,7 @@ title: Brusselse Wafels
 header:
   teaser: /koken/images/thumb/brusselse-wafels.jpeg
   image: /koken/images/header/brusselse-wafels.jpeg
+tags: veggie
 ---
 
 Dé klassieke luchtige en knapperige wafel...

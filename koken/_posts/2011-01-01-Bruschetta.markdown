@@ -3,6 +3,7 @@ title: Bruschetta
 header:
   teaser: /koken/images/thumb/bruscetta.jpeg
   image: /koken/images/header/bruscetta.jpeg
+tags: veggie
 ---
 
 De eenvoud zelve, maar een heerlijk frisse opener of zelfs volwaardig voorgerecht.

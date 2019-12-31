@@ -1,8 +1,6 @@
 ---
 title: Panna Cotta
-#header:
-#  teaser: /koken/images/thumb/panna-cotta.jpeg
-#  image: /koken/images/header/panna-cotta.jpeg
+tags: veggie
 ---
 
 Één van Italië's trotsen ... gekookte room!

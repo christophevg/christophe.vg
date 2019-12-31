@@ -3,6 +3,7 @@ title: Profiterolles
 header:
   teaser: /koken/images/thumb/profiterolles.jpeg
   image: /koken/images/header/profiterolles.jpeg
+tags: veggie
 ---
 
 Niemand kan weerstaan aan verse profiterolles. Je eet er _altijd_ minstens eentje te veel ;-)

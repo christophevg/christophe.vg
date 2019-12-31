@@ -1,5 +1,6 @@
 ---
 title: Appel Crumble
+tags: veggie
 ---
 
 ## ingrediënten

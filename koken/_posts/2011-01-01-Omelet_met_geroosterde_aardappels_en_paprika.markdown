@@ -1,5 +1,6 @@
 ---
 title: Omelet met geroosterde aardappels en paprika
+tags: veggie
 ---
 
 ## ingrediënten

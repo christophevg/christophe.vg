@@ -1,5 +1,6 @@
 ---
 title: Witlooftaartje met Sorbet van Granny Smith
+tags: veggie
 ---
 
 ## ingrediënten

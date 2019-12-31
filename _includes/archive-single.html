@@ -17,6 +17,9 @@
         {% if post.tags contains 'thing' %}
         <div class="corner-ribbon top-right small sticky red">Thing</div>
         {% endif %}
+        {% if post.tags contains 'veggie' %}
+        <div class="corner-ribbon top-right small sticky green">Veggie</div>
+        {% endif %}
         <img src=
           {% if teaser contains "://" %}
             "{{ teaser }}"

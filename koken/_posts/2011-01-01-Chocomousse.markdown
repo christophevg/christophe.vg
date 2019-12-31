@@ -1,5 +1,6 @@
 ---
 title: Chocomousse
+tags: veggie
 ---
 
 ## ingrediënten

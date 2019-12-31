@@ -1,5 +1,6 @@
 ---
 title: Gekaramelliseerde Appelsientjes
+tags: veggie
 ---
 
 ## ingrediënten

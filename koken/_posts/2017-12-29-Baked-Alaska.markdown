@@ -3,6 +3,7 @@ title: Baked Alaska
 header:
   teaser: /koken/images/thumb/baked-alaska.jpeg
   image: /koken/images/header/baked-alaska.jpeg
+tags: veggie
 ---
 
 Dit is mijn variatie op een recept van Gordon Ramsey. Bekijk zeker de video onderaan, want zijn stijl is toch onovertroffen.

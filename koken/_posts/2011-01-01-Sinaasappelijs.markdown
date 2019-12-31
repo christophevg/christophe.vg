@@ -1,5 +1,6 @@
 ---
 title: Sinaasappelijs
+tags: veggie
 ---
 
 ## ingrediënten

@@ -1,5 +1,6 @@
 ---
 title: Schuimomelet met Sinaasappel
+tags: veggie
 ---
 
 ## ingrediënten

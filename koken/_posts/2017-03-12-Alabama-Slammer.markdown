@@ -3,6 +3,7 @@ title: Alabama Slammer
 header:
   teaser: /koken/images/thumb/alabama-slammer.jpeg
   image: /koken/images/header/alabama-slammer.jpeg
+tags: veggie
 ---
 
 Een Amerikaanse klassieker met een aangenaam verrassende twist.

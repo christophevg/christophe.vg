@@ -1,5 +1,6 @@
 ---
 title: Geitenkaas met Rode Bietjes
+tags: veggie
 ---
 
 ## ingrediënten

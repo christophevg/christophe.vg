@@ -1,8 +1,6 @@
 ---
 title: 1 Minuut Chocoladecakje
-#header:
-#  teaser: /koken/images/thumb/1-minuut-chocoladecakje.jpeg
-#  image: /koken/images/header/1-minuut-chocoladecakje.jpeg
+tags: veggie
 ---
 
 Voor dat moment dat de kids een cakeje verdienen, maar wanneer de vorige cake weer al volledig op is... Klaar in één minuut, soms ook wel verorberd op diezelfde tijd ;-)

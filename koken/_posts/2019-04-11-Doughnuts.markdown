@@ -3,6 +3,7 @@ title: Doughnuts
 header:
   teaser: /koken/images/thumb/doughnuts.jpeg
   image: /koken/images/header/doughnuts.jpeg
+tags: veggie
 ---
 
 Letterlijk een deeg-moer, maar dat kan het de kids niet schelen. Ik vroeg me af of ze een zelf gebakken versie ook lekker zouden vinden. Simpel antwoord: JA!

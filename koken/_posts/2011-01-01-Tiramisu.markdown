@@ -1,5 +1,6 @@
 ---
 title: Tiramisu
+tags: veggie
 ---
 
 Tiramisu is een van die gerechten die ik helemaal in het begin van mijn

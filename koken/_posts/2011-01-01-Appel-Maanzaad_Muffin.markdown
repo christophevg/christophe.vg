@@ -3,6 +3,7 @@ title: Appel-Maanzaad Muffin
 header:
   teaser: /koken/images/thumb/appel-maanzaad-muffin.jpeg
   image: /koken/images/header/appel-maanzaad-muffin.jpeg
+tags: veggie
 ---
 
 Super snel, maar ook super lekker en leuk nagerecht, dat zich laat combineren tot een groots dessert.

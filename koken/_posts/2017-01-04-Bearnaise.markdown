@@ -3,6 +3,7 @@ title: Béarnaise
 header:
   teaser: /koken/images/thumb/hamburger-bearnaise.jpeg
   image: /koken/images/header/hamburger-bearnaise.jpeg
+tags: veggie
 ---
 
 Misschien wel mijn favoriete saus, volledig vers gemaakt.

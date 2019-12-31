@@ -3,6 +3,7 @@ title: Ketchup
 header:
   teaser: /koken/images/thumb/ketchup.jpeg
   image: /koken/images/header/ketchup.jpeg
+tags: veggie
 ---
 
 Zelf verse ketchup maken... in een handomdraai.

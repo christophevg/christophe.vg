@@ -1,5 +1,6 @@
 ---
 title: Groene kool in room
+tags: veggie
 ---
 
 ## ingrediënten

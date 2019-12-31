@@ -1,5 +1,6 @@
 ---
 title: Coleslaw
+tags: veggie
 ---
 
 Een eenvoudig en fris bijgerecht bij stevige vleesmaaltijden.

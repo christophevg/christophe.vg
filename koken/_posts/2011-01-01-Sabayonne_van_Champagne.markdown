@@ -1,5 +1,6 @@
 ---
 title: Sabayonne van Champagne
+tags: veggie
 ---
 
 ## ingrediënten

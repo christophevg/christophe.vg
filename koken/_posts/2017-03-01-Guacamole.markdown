@@ -3,6 +3,7 @@ title: Guacamole
 header:
   teaser: /koken/images/thumb/guacamole.jpeg
   image: /koken/images/header/guacamole.jpeg
+tags: veggie
 ---
 
 De verrassend simpele en lekkere dip-klassieker.

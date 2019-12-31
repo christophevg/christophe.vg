@@ -1,5 +1,6 @@
 ---
 title: Tarte Tatin van Witloof
+tags: veggie
 ---
 
 ## ingrediënten

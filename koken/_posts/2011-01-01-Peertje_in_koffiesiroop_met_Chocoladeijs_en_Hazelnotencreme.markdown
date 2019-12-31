@@ -1,5 +1,6 @@
 ---
 title: Peertje in koffiesiroop met Chocoladeijs en Hazelnotencreme
+tags: veggie
 ---
 
 ## ingrediënten

@@ -1,5 +1,6 @@
 ---
 title: Vanille Roomijs
+tags: veggie
 ---
 
 ## ingrediënten

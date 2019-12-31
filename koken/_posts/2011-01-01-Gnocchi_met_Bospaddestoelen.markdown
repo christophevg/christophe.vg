@@ -1,5 +1,6 @@
 ---
 title: Gnocchi met Bospaddestoelen
+tags: veggie
 ---
 
 ## ingrediënten

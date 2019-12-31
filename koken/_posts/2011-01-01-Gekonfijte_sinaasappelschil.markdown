@@ -1,5 +1,6 @@
 ---
 title: Gekonfijte sinaasappelschil
+tags: veggie
 ---
 
 ## ingrediënten

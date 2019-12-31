@@ -1,5 +1,6 @@
 ---
 title: Groententaartje
+tags: veggie
 ---
 
 ## ingrediënten

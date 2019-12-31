@@ -67,9 +67,9 @@ social:
 
 # Analytics
 analytics:
-  provider               : "google"
+  provider               :
   google:
-    tracking_id          : UA-393672-2
+    tracking_id          :
 
 # Site Author
 author:

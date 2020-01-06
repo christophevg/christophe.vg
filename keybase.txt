@@ -4,61 +4,49 @@ https://keybase.io/christophevg
 
 I hereby claim:
 
-  * I am an admin of http://christophe.vg
+  * I am an admin of https://christophe.vg
   * I am christophevg (https://keybase.io/christophevg) on keybase.
-  * I have a public key with fingerprint F5EC FEB6 A1B8 0CB6 CFA7  FDE7 897E 3E40 AABF 2ECC
+  * I have a public key ASAchSq6OMeHwqCkToGzHbZq1CQFLsNJDZxCg0p1hGMFhgo
 
 To do so, I am signing this object:
 
 {
-    "body": {
-        "key": {
-            "eldest_kid": "0101dc7b322dfadbd9ba7b5cd478e5075c8aff6f6219bd52c4849de7ee0051e704050a",
-            "fingerprint": "f5ecfeb6a1b80cb6cfa7fde7897e3e40aabf2ecc",
-            "host": "keybase.io",
-            "key_id": "897e3e40aabf2ecc",
-            "kid": "0101dc7b322dfadbd9ba7b5cd478e5075c8aff6f6219bd52c4849de7ee0051e704050a",
-            "uid": "c7118487597693ebeaf1392d26ce8a19",
-            "username": "christophevg"
-        },
-        "service": {
-            "hostname": "christophe.vg",
-            "protocol": "http:"
-        },
-        "type": "web_service_binding",
-        "version": 1
+  "body": {
+    "key": {
+      "eldest_kid": "01201c852aba38c787c2a0a44e81b31db66ad424052ec3490d9c42834a75846305860a",
+      "host": "keybase.io",
+      "kid": "01201c852aba38c787c2a0a44e81b31db66ad424052ec3490d9c42834a75846305860a",
+      "uid": "c7118487597693ebeaf1392d26ce8a19",
+      "username": "christophevg"
     },
-    "ctime": 1472547967,
-    "expire_in": 157680000,
-    "prev": "4b1b96174ed65c52536c0cbf1f3def5d692955d6d836654386feec5a240be911",
-    "seqno": 4,
-    "tag": "signature"
+    "merkle_root": {
+      "ctime": 1578344376,
+      "hash": "f7843f62b29a4615f24c66984b2fcd6e1d19c123174f0db0037b2bc156da9368d230eaefc071e1c5e7784a97e3c8ceea430ebde950da69a6d2a678e0db4488b8",
+      "hash_meta": "f01c4ecd8f5140d9e2385714c92abadfc7a19ed8a83ee0803791cdb2a792746a",
+      "seqno": 14111615
+    },
+    "service": {
+      "entropy": "LABZV1NC/8/eZcKZR7VhSg3e",
+      "hostname": "christophe.vg",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.1.1"
+  },
+  "ctime": 1578344387,
+  "expire_in": 504576000,
+  "prev": "93ec7a0bfbe090f7cc048d76d896406b7b60d25b977db06401b5a44f403e82f9",
+  "seqno": 17,
+  "tag": "signature"
 }
 
 which yields the signature:
 
------BEGIN PGP MESSAGE-----
-Version: Keybase OpenPGP v2.0.56
-Comment: https://keybase.io/crypto
-
-yMI3AnicrZJfaBxFHMcvsU1MSnsFg01MQTppjtKEsLO7s7N79U+LwQctEsUkYCXH
-zuxv7pY0u5e7vYs1PWtqG2xjxL8BLVbzh5aGlPgHIiiSi5g8mPiQh7SkfRBBpA8V
-m5ZCOEx1NtgnfXRefsz8Pt/v/H6/mR+2PxCpLlu58Jvxlrc+W7Y4dy4X6Zw/fKIf
-Md85huL9qBs2Axx1IBskul0HxZGCFexwyjRVdYTtMMdiNmWEOzo1gSiUcNMWwhCG
-ii3mEJXrpm45QAEUhWCgiq4QxUbNSLheEjLpjOsF0lYQ4AKYYWNmKpwZXNhUSJlp
-UdBAV2ybCRU4l8KUnw0VsjhmZ6HF9eWZ3CQ2y/sP/n+uO7dpxynGpm5SYlHD0oCB
-LbBmqY5qcDBtbIVgFjKe3QMhncq42cBPpyCfRIVmJDN5l0M43LCbf1EtEmtG6Ywf
-+Nw/KlOpIEjHQ2VwLB2ifcAS/5gkmOs5cpZSkIdM1vU9FMeS5IEbumKdqkSnlkGb
-EbySdjOQcEOCUMNU5Aqvgby01BlmloGpDo5BOFGJZnD5EgILzQFBHMNSLSKDY2qG
-QXTNNAQAJ7aqKwwsjFHYVq/no7guy7ST0jLrJj07yGUAFb4vvrwlUlYdqdhaHv6x
-SHXVzvs/7+3blX+9UGy/U/HQ0GPt2u8itXTw4YGaffFvBvr/eKe0vlEcW9w2vKDG
-JmOl5Xud9Wp335Ox8+O3Z9suXZ9Jfn1q5P2uaFXjvbpc6vWhqUE4H911uQFNDF08
-CW/U5vcO1o3FL7g/PvLJq+Mto7c+7FLPdsQ+uPXm8ae1n7yPPn/iyo3tbX9OTzVs
-nOl49Ewr2aGlJ79dvvbedzNfREUXjbbtRS8Nfdy0Or86vKP2y3fNwemKtd4DK4WN
-3fWnnxlcunvtq4sjxYEjlc+dONy09Wc8erOu8dOaQkfb7gcbYtueLS30te45e6hq
-Yrmn5anGk699VhwpjT9envr16uXlxV/O5XqfXzv04ty0Fd1/5G8DEUQZ
-=pB4W
------END PGP MESSAGE-----
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgHIUqujjHh8KgpE6Bsx22atQkBS7DSQ2cQoNKdYRjBYYKp3BheWxvYWTESpcCEcQgk+x6C/vgkPfMBI122JZAa3tg0luXfbBkAbWkT0A+gvnEIJkPq0dxP45QnBWdZsjc23DK0wbatHskHMcga3ToF+dUAgHCo3NpZ8RAg2sCYrRbIJ/W+3feXISYSY/vPC0twfbWLXWfOZ/Tz63ZE1oQrAJ38B50ob++iw6KXzwizX3dZG9xYOmnmxCmA6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIHjGrU5T5rs5Ot7SH5Y/gxY8GBG3iaguMxZMToM3J6ygo3RhZ80CAqd2ZXJzaW9uAQ==
 
 And finally, I am proving ownership of this host by posting or
 appending to this document.
@@ -66,3 +54,4 @@ appending to this document.
 View my publicly-auditable identity here: https://keybase.io/christophevg
 
 ==================================================================
+

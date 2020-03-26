@@ -10,9 +10,9 @@ item2.EMAIL;type=INTERNET:http://christophe.vg
 item2.X-ABLabel:home url
 EMAIL;type=INTERNET;type=WORK:info@2know.be
 TEL;type=IPHONE;type=CELL;type=VOICE:+32 498 62 33 29
-item5.ADR;type=HOME;type=pref:;;Haachtsebaan 60;Keerbergen;Antwerp;3140;Belgium
+item5.ADR;type=HOME;type=pref:;;Veldonkweg 2A;Baal;Antwerp;3128;Belgium
 item5.X-ABADR:us
-ADR;type=WORK:;;Averegtenlaan 1 bus 1;Heist-op-den-Berg;;2220;Belgium
+ADR;type=WORK:;;Veldonkweg 2A;Baal;;3128;Belgium
 BDAY:1974-05-03
 PHOTO;ENCODING=b;TYPE=JPEG:/9j/4AAQSkZJRgABAQAASABIAAD/4QBMRXhpZgAATU0AKgAA
  AAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAsqADAAQAAAABAA

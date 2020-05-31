@@ -9,7 +9,7 @@ info:
   professional: Although most of my customers require some form of professional discretion about their projects. Sometimes I can share some abstract information.
   robot: I confess, I'm a sucker for robots. Step by step I'm moving closer to the point where I'm able to design and build my very own robot.
   arduino: Although I started with its fundamental core, the AVR-based microcontrollers, Arduino and I cross paths now and then.
-  portfolio: These pages are examples of what I spend most of my time on. It contains projects and activities, both commercial and pro-bono. Visit my [portfolio section](/portfolio) for a more elaborate overview.
+  portfolio: These pages are examples of what I spend most of my time on. It contains projects and activities, both commercial and pro-bono.
   veggie: For no specific reason, by the end of 2019, I got intruiged by vegetarian cooking. For no other reason it deserves its own tag ;-)
 ---
 

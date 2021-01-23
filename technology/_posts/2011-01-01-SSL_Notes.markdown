@@ -169,6 +169,8 @@ total 16
 -rw-r--r--  1 xtof  staff  183 Jan 22 12:30 plainfile.zip
  
 # One Time Setup of Key Infrastructure
+# 1. generate private key
+# 2. generate certificate for private key
 
 $ openssl genrsa -aes256 -out private.pem 8912
 Generating RSA private key, 8912 bit long modulus
@@ -178,54 +180,6 @@ e is 65537 (0x10001)
 Enter pass phrase for private.pem:
 Verifying - Enter pass phrase for private.pem:
  
-$ openssl rsa -in private.pem -pubout -out public.pem
-Enter pass phrase for private.pem:
-writing RSA key
- 
-$ openssl req -x509 -nodes -days 100000 -newkey rsa:8912 -keyout private_key.pem -out certificate.pem
-Generating a 8912 bit RSA private key
-.................................................................................................................................................................++
-.....................................++
-writing new private key to 'private_key.pem'
------
-You are about to be asked to enter information that will be incorporated
-into your certificate request.
-What you are about to enter is what is called a Distinguished Name or a DN.
-There are quite a few fields but you can leave some blank
-For some fields there will be a default value,
-If you enter '.', the field will be left blank.
------
-Country Name (2 letter code) []:BE
-State or Province Name (full name) []:
-Locality Name (eg, city) []:
-Organization Name (eg, company) []:
-Organizational Unit Name (eg, section) []:
-Common Name (eg, fully qualified host name) []:
-Email Address []:
- 
-$ openssl req -x509 -days 100000 -newkey rsa:8912 -keyout private_key.pem -out certificate.pem
-Generating a 8912 bit RSA private key
-................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................++
-...........................................................................++
-writing new private key to 'private_key.pem'
-Enter PEM pass phrase:
-Verifying - Enter PEM pass phrase:
------
-You are about to be asked to enter information that will be incorporated
-into your certificate request.
-What you are about to enter is what is called a Distinguished Name or a DN.
-There are quite a few fields but you can leave some blank
-For some fields there will be a default value,
-If you enter '.', the field will be left blank.
------
-Country Name (2 letter code) []:BE
-State or Province Name (full name) []:
-Locality Name (eg, city) []:
-Organization Name (eg, company) []:
-Organizational Unit Name (eg, section) []:
-Common Name (eg, fully qualified host name) []:
-Email Address []:
-
 $ openssl req -x509 -new -days 100000 -key private_key.pem -out certificate.pem
 Enter pass phrase for private_key.pem:
 You are about to be asked to enter information that will be incorporated
@@ -243,7 +197,7 @@ Organizational Unit Name (eg, section) []:
 Common Name (eg, fully qualified host name) []:
 Email Address []:
  
-# Encryption
+# Encryption using certificate
 
 $ openssl smime -encrypt -binary -aes-256-cbc -in plainfile.zip -out encrypted.zip.enc -outform DER certificate.pem
  
@@ -257,7 +211,7 @@ total 72
 -rw-r--r--  1 xtof  staff  7078 Jan 22 12:32 private_key.pem
 -rw-r--r--  1 xtof  staff  1612 Jan 22 12:30 public.pem
  
-# Decryption
+# Decryption using private key
  
 $ openssl smime -decrypt -binary -in encrypted.zip.enc -inform DER -out decrypted.zip -inkey private_key.pem
 Enter pass phrase for private_key.pem:
@@ -281,6 +235,103 @@ new name: decrypted_info.txt
  
 $ cat decrypted_info.txt 
 This is a secret
+```
+
+### Makefile
+
+The following Makefile implements all steps to generate data, setup the key infrastructure and perform the encryption/decryption
+
+```makefile
+all: data.decrypted.txt
+	@echo "### content of $<"
+	cat $<
+
+data.txt:
+	@echo "### generating $@"
+	date > $@
+	echo "big secret" >> $@
+	@echo "generated data:"
+	cat $@
+
+data.zip: data.txt
+	@echo "### zipping $<"
+	zip data $<
+
+private.pem:
+	@echo "### creating private key: $@"
+	openssl genrsa -aes256 -out $@ 8912
+
+certificate.pem: private.pem
+	@echo "### creating certificate: $@ from $<"
+	openssl req -x509 -new -days 100000 -key $< -out $@
+
+%.zip.enc: %.zip certificate.pem
+	@echo "encrypting $< into $@"
+	openssl smime -encrypt -binary -aes-256-cbc -in $< -out $@ -outform DER $(word 2,$^)
+
+%.decrypted.zip: %.zip.enc private.pem
+	@echo "### decrypting $< into $@"
+	openssl smime -decrypt -binary -in $< -inform DER -out $@ -inkey $(word 2,$^)
+
+%.decrypted.txt: %.decrypted.zip
+	@echo "### unzipping $*.txt into $@"
+	unzip -p $< $*.txt > $@
+
+clean:
+	@rm *.*
+````
+
+Running it and providing a pass phrase three time shows the entire process:
+
+```bash
+$ make
+### generating data.txt
+date > data.txt
+echo "big secret" >> data.txt
+generated data:
+cat data.txt
+Sat Jan 23 15:22:13 CET 2021
+big secret
+### zipping data.txt
+zip data data.txt
+  adding: data.txt (stored 0%)
+### creating private key: private.pem
+openssl genrsa -aes256 -out private.pem 8912
+Generating RSA private key, 8912 bit long modulus
+...................................................................................................................................................................................................++
+................++
+e is 65537 (0x10001)
+Enter pass phrase for private.pem:
+Verifying - Enter pass phrase for private.pem:
+### creating certificate: certificate.pem from private.pem
+openssl req -x509 -new -days 100000 -key private.pem -out certificate.pem
+Enter pass phrase for private.pem:
+You are about to be asked to enter information that will be incorporated
+into your certificate request.
+What you are about to enter is what is called a Distinguished Name or a DN.
+There are quite a few fields but you can leave some blank
+For some fields there will be a default value,
+If you enter '.', the field will be left blank.
+-----
+Country Name (2 letter code) []:BE
+State or Province Name (full name) []:
+Locality Name (eg, city) []:
+Organization Name (eg, company) []:
+Organizational Unit Name (eg, section) []:
+Common Name (eg, fully qualified host name) []:
+Email Address []:
+encrypting data.zip into data.zip.enc
+openssl smime -encrypt -binary -aes-256-cbc -in data.zip -out data.zip.enc -outform DER certificate.pem
+### decrypting data.zip.enc into data.decrypted.zip
+openssl smime -decrypt -binary -in data.zip.enc -inform DER -out data.decrypted.zip -inkey private.pem
+Enter pass phrase for private.pem:
+### unzipping data.txt into data.decrypted.txt
+unzip -p data.decrypted.zip data.txt > data.decrypted.txt
+### content of decrypted data.decrypted.txt
+cat data.decrypted.txt
+Sat Jan 23 15:22:13 CET 2021
+big secret
+rm data.decrypted.zip data.zip.enc
 ```
 
 ## References

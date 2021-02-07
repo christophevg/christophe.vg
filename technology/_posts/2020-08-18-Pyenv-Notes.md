@@ -8,13 +8,24 @@ Good habits die hard, so it will take some time to convert my mind and fingers t
 
 ## Global Installation
 
-Install pyenv itself...
+### Install pyenv itself...
+
+#### MacOS
 
 ```bash
 $ brew install pyenv 
 ```
 
-Install a version of Python...
+#### From Git repo
+
+```bash
+$ git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+$ echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bash_profile
+$ echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bash_profile
+$ echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.bash_profile
+```
+
+### Install a version of Python...
 
 ```bash
 $ pyenv install --list

@@ -25,6 +25,13 @@ $ echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bash_profile
 $ echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.bash_profile
 ```
 
+Also install virtualenv plugin
+
+```bash
+$ git clone https://github.com/pyenv/pyenv-virtualenv.git $(pyenv root)/plugins/pyenv-virtualenv
+$ echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.bash_profile
+```
+
 ### Install a version of Python...
 
 ```bash

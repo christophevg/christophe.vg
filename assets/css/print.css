@@ -94,4 +94,7 @@
     display:none;
   }
 
+  .timeline-body > h2 {
+    color: #444444;
+  }
 }

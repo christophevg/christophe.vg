@@ -6,9 +6,11 @@ header:
   image: /about/images/header/social.jpg
 ---
 
-Unlike <strike>some</strike> many among you, I see so called socials
-networks as a necessary evil. Yes I have a Google+ account, yes I have a
-Twitter account, yes I even have a Facebook account.
+_Note: This thing is already quiet old and just like social networks, I've also evolved and moved on. So I've annotated the first paragraph to represent my actual current presence on social media. The ideas in this thing... are still, more than ever valid ;-)_
+
+Unlike <strike>some</strike> many among you, I see so called socials networks
+as a necessary evil. Yes I have a <strike>Google+ account</strike>, yes I have
+a Twitter account, yes I even have a <strike>Facebook account</strike>. Today an Instagram account is still active.
 
 Let's work ourselves up from the lowest ... I'm on Facebook, also known as the
 privacy whore, because for some strange reason, my fellow students think it's

@@ -44,19 +44,37 @@ $ ssh pi@raspberrypi.local
 
 ## Things to do after First Boot
 
-```console
-$ sudo apt-get update
-```
+## Change Hostname
+
+Edit `/etc/hostname` and `/etc/hosts`, replacing `raspberrypi` with the new name. Reboot or execute `sudo hostname <new name>`.
+
+## Add SSH public key
+
+Add your public key to `~/.ssh/authorized_keys`.
 
 ### Disable Password-based Access
 
 Edit `/etc/ssh/sshd_config` and look for Password-related settings and turn them off ;-)
 
+## Update
+
+```console
+$ sudo apt-get update
+```
+
+### Load .bashrc when .bash_profile exists
+
+$ cat - >> .bash_profile
+if [ -f $HOME/.bashrc ]; then
+  . $HOME/.bashrc
+fi
+^D
+
 ### Install and make Python 3 default
 
 ```console
 $ sudo apt-get install python3-pip
-$ cat - >> .bashrc
+$ cat - >> .bash_aliases
 alias python='/usr/bin/python3'
 alias pip=pip3
 ^D

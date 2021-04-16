@@ -102,5 +102,3 @@ Tijdens de zomermaanden verhuisde de Luisterbox naar Gent, waar hij met de bewon
 Alle partners in dit project zijn tot het uiterste gegaan om op een _heel korte_ tijdspanne C<sup>3</sup>PO _aan de praat_ te krijgen. Het was geweldig samenwerken met Dries, Sofie, Jody, Marie, Frank, Sven, Geert, Jeroen, en alle anderen voor en achter de schermen.
 
 Bedankt!
-
-{% include for-hire.html %}

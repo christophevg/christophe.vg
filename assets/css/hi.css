@@ -1,0 +1,19 @@
+div.hi img.nametag {
+  position: relative;
+  float: right;
+  width: 250px;
+  top: -100px;
+  margin-bottom: -100px;
+}
+
+div.slider { 
+  z-index: 2;
+}
+
+@media (max-width: 767px) {
+  div.hi img.nametag {
+    width: 100px;
+    top: 0px;
+    margin-bottom: 0px;
+  }
+}

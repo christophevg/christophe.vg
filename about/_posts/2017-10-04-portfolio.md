@@ -2,9 +2,6 @@
 layout: tag-index
 index: portfolio
 title: Portfolio
-more_content:
-  - for-hire.html
-  - customers.html
 header:
   teaser: /about/images/thumb/portfolio.jpg
   image: /about/images/header/portfolio.jpg

@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "Christophe VG, Freelance Hardware & Software Prototyper"
+title                    : "Christophe VG, Software Architect"
 title_separator          : "-"
 name                     : "Christophe Van Ginneken"
 description              : "Portfolio, Curriculum Vitae en informatieve website van en over Christophe Van Ginneken."
@@ -75,7 +75,7 @@ analytics:
 author:
   name             : "Christophe VG"
   avatar           : "/assets/images/avatar.png"
-  bio              : "Freelance Hardware & Software Prototyper."
+  bio              : "Software Architect<br>&#35;howcanihelp"
   location         : "Baal, Belgium"
   email            : "contact@christophe.vg"
   phone            : "+32(0)498/62.33.29"

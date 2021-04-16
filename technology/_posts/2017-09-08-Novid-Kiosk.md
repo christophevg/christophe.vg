@@ -50,5 +50,3 @@ Naar klanten toe, kan Novid tevens deze map delen, waardoor de klant zelf op dez
 ### De Novid Cloud
 
 Tot slot kunnen alle kiosken ook verder beheerd worden via de Novid Cloud. Daar waar de Kiosk Manager direct communiceert met de kiosken, zullen operationele kiosken te raden gaan bij de Novid Cloud om eventuele aanpassingen aan hun configuratie op te halen, en om informatie over hun werking te rapporteren. Op die manier kan Novid zijn kiosken ten allen tijde in groot detail opvolgen.
-
-{% include for-hire.html %}

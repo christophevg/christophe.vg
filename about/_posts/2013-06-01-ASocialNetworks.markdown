@@ -10,7 +10,7 @@ _Note: This thing is already quiet old and just like social networks, I've also 
 
 Unlike <strike>some</strike> many among you, I see so called socials networks
 as a necessary evil. Yes I have a <strike>Google+ account</strike>, yes I have
-a Twitter account, yes I even have a <strike>Facebook account</strike>. Today an Instagram account is still active.
+a <strike>Twitter account</strike>, yes I even have a <strike>Facebook account</strike>. Today an <strike>Instagram account</strike> is still active.
 
 Let's work ourselves up from the lowest ... I'm on Facebook, also known as the
 privacy whore, because for some strange reason, my fellow students think it's

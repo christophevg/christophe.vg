@@ -92,7 +92,7 @@ author:
   instagram        :
   lastfm           :
   linkedin         : "christophevg"
-  pinterest        : "christophevg"
+  pinterest        :
   slideshare       :
   soundcloud       :
   stackoverflow    :
@@ -102,10 +102,10 @@ author:
   vine             :
   weibo            :
   xing             :
-  youtube          : "UCqkRWUeAazrKowidudU8-gQ"
+  youtube          :
   runkeeper        :
-  strava           : "christophevg"
-  thingiverse      : "christophevg"
+  strava           :
+  thingiverse      :
 
 # Reading Files
 include:

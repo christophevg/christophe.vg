@@ -2,10 +2,6 @@
 title: Logboek 2021
 ---
 
-<!--
-## 21 juli - Zwin Race
--->
-
 ## 12 juli - Bijna ... bijna ...
 
 {% include image name="bijna-bijna" title="bijna ... bijna" %}

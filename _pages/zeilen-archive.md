@@ -1,5 +1,5 @@
 ---
-layout: archive-index
+layout: archive
 index: zeilen
 title: Sailing According to Christophe VG
 permalink: /zeilen/
@@ -71,3 +71,14 @@ heuse Formula18 catamaran genaamd Boosui ...
 ... 2021 !
 
 Boosui leverde enkele mooi zeiltochten op tot 2016. Na opnieuw een onderbreking van een kleine vijf jaar bracht onze tocht zich terug naar onze roots in Duinbergen. Nu ook met een nieuwe generatie van zeilende Van Ginnekens in aantocht.
+
+{% include base_path %}
+{% include group-by-array collection=site.posts field="categories" %}
+{% assign sorted_posts = site.categories[page.index] %}
+<div class="grid__wrapper">
+  {% for post in sorted_posts %}
+    {% if post.layout != "redirect" %}
+      {% include archive-single.html type="grid" %}
+    {% endif %}
+  {% endfor %}
+</div>

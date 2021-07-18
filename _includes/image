@@ -1,0 +1,3 @@
+<div class="thumb right">
+  <a href="images/full/{{ include.name }}.jpeg" title="{{ include.title }}"><img src="images/thumb/{{ include.name }}.jpeg" width="100" height="75" alt="{{ include.title }}"></a>
+</div>

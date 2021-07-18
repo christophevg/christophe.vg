@@ -65,3 +65,19 @@ div.customers img {
   margin: 20px;
 }
 
+div.mail {
+  margin-left: 20px;
+  margin-bottom: 15px;
+  padding-left: 20px;
+  border-left: 2px solid gray;
+  font-family: Courier;
+  font-size: 75%;
+}
+
+div.thumb {
+  margin: 5px;
+}
+
+div.thumb.right {
+  float: right;
+}

@@ -33,7 +33,7 @@ voorwaarden als de "Pink Pather" verkocht zou worden. Toen ik terugkwam van
 mijn Rome-reis lag er op het strand van Duinbergen een gloednieuwe Dart 18 op
 mij te wachten.
 
-Tijdens de seizoenen 90, 91,92,93,94 & 98 heb ik samen met verschillende
+Tijdens de seizoenen 90, 91, 92, 93, 94 & 98 heb ik samen met verschillende
 fokkenmaten fantastische dagen doorgebracht op het wateren tussen Zeebrugge en
 Vlissingen. Met Patrick Van Coolput, mijn kozijn, heb ik de eerste paar jaar
 een onafscheidelijk top-duo gevormd. We konden echt het beste uit de die
@@ -65,3 +65,9 @@ kustwateren weer onveilig maken :)
 Na opnieuw 4 fantastische zeilseizoenen, werd het tijd om afscheid te nemen
 van Waterproof. Zeilseizoen 2008 begon met een stevige investering in een
 heuse Formula18 catamaran genaamd Boosui ...
+
+## And again
+
+... 2021 !
+
+Boosui leverde enkele mooi zeiltochten op tot 2016. Na opnieuw een onderbreking van een kleine vijf jaar bracht onze tocht zich terug naar onze roots in Duinbergen. Nu ook met een nieuwe generatie van zeilende Van Ginnekens in aantocht.

@@ -2,6 +2,17 @@
 title: Logboek 2021
 ---
 
+## 21 juli - Zwin Race
+
+{% include image name="post-zwin-race" title="post zwin race" %}
+
+Statistisch gezien was dit die éné ultieme zeildag van een Belgisch zeilseizoen. Beter kan je ze niet krijgen. Een rustig windje, warm genoeg om zelf een shorty te moeten boven halen. 
+
+Mark en ik hebben van begin tot eind, de hele 5u op het water genoten. De probleempjes van twee onervaren spi-zeilers konden de pret niet drukken.
+
+En nu maar hopen dat deze zomer eentje van statistische aberraties wordt en dat er gedurende de twee eerste weken van augustus nog zo'n dag (of twee) volgt, zodat de kids ook eens van zulke prachtige omstandigheden kunnen genieten.
+
+
 ## 12 juli - Bijna ... bijna ...
 
 {% include image name="bijna-bijna" title="bijna ... bijna" %}

@@ -2,6 +2,30 @@
 title: Logboek 2021
 ---
 
+## 11 augustus - Kids sessie 2
+
+{% include image name="kids-sessie-2-3" title="3 VGs sailing" %}
+
+{% include image name="kids-sessie-2-2" title="stuurman" %}
+
+{% include image name="kids-sessie-2-1" title="pre sessie 2" %}
+
+Na een gesmaakte eerste sessie vorige week, biedt er zich alweer een mooie zeildag aan. Met nog aardig wat wind kiezen we het sop. Na anderhalf uur luwt de wind een beetje en kiezen we voor een rustige landing en wat apéro-time op de club ;-)
+
+## 3 augustus - Kids sessie 1
+
+{% include image name="kids-sessie-1-2" title="geconcentreerd" %}
+
+{% include image name="kids-sessie-1-1" title="pre sessie 1" %}
+
+Een dikke maand na de eerste ervaring op de zeilstage belooft deze dinsdag een prachtige zeildag te worden. 2-3 beaufort, ideaal om iedereen eens aan het roer te laten.
+
+Na een korte strijd met de branding - met weinig wind kan een cat zich soms moeilijk door de branding laten geleiden - genieten drie VGs van een uniek moment: sailing with kids.
+
+Gedurende twee uurtjes genieten E & A duidelijk van een iets uitgebreidere zeilervaring op een mooi afwisselend ruim en scherp rack langs de kustlijn van Duinbergen tot aan de MOW paal en terug.
+
+Dit was trouwens de 10e keer dat ik met Boosui op het water ging. Twee keer daarvan waren dit jaar, een derde keer hopelijk volgende week en de zomer is nog niet voorbij. De test of dit leuk kan zijn om verder te zetten de komende jaren lijkt alvast positief beantwoord.
+
 ## 21 juli - Zwin Race
 
 {% include image name="post-zwin-race" title="post zwin race" %}
@@ -11,7 +35,6 @@ Statistisch gezien was dit die éné ultieme zeildag van een Belgisch zeilseizoe
 Mark en ik hebben van begin tot eind, de hele 5u op het water genoten. De probleempjes van twee onervaren spi-zeilers konden de pret niet drukken.
 
 En nu maar hopen dat deze zomer eentje van statistische aberraties wordt en dat er gedurende de twee eerste weken van augustus nog zo'n dag (of twee) volgt, zodat de kids ook eens van zulke prachtige omstandigheden kunnen genieten.
-
 
 ## 12 juli - Bijna ... bijna ...
 
@@ -29,7 +52,7 @@ Epiloog: de zeilstage was een schoolvoorbeeld van Belgische omstandigheden: op m
 
 Halverwege de week waren E & A zo moe (van het sleuren met boten) en lagen A zijn voetjes zo open van het schuren van het zand in zijn zeilschoentjes dat ik hem niet met tranen in zijn ogen terug kon sturen en zijn we wijselijk naar huis vertrokken.
 
-Maar niet zonder twee kids die van het weinige dat ze gezeild hadden, enorm de smaak gepakt hadden, zelfs na meerdere keren kapsijzen, in de branding en een mast tegen het gezicht gekregen te hebben. We kijken nu dus nog meer uit naar de twee weken in augustus, waar we met z;n drietjes op Boosui gaan zeilen.
+Maar niet zonder twee kids die van het weinige dat ze gezeild hadden, enorm de smaak gepakt hadden, zelfs na meerdere keren kapsijzen, in de branding en een mast tegen het gezicht gekregen te hebben. We kijken nu dus nog meer uit naar de twee weken in augustus, waar we met z'n drietjes op Boosui gaan zeilen.
 
 Fingers nog meer crossed voor twee mooie weken in augustus...
 

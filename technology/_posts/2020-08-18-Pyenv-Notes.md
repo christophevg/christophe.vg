@@ -20,39 +20,39 @@ $ brew install pyenv
 
 ```bash
 $ git clone https://github.com/pyenv/pyenv.git ~/.pyenv
-$ echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bash_profile
-$ echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bash_profile
-$ echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.bash_profile
+$ cd ~/.pyenv && src/configure && make -C src
+$ echo 'eval "$(pyenv init --path)"' >> ~/.zprofile
+$ echo 'eval "$(pyenv init -)"' >> ~/.zshrc
 ```
+
+#### Minimal Python build enviornment
+
+```bash
+$ brew install openssl readline sqlite3 xz zlib
+```
+
+#### Virtuelenv support
 
 Also install virtualenv plugin
 
 ```bash
 $ git clone https://github.com/pyenv/pyenv-virtualenv.git $(pyenv root)/plugins/pyenv-virtualenv
-$ echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.bash_profile
+$ echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.zshrc
 ```
 
 ### Install a version of Python...
 
 ```bash
 $ pyenv install --list
-$ pyenv install 3.7.7
+$ pyenv install 3.8.12
 ```
 
 Enable the version for global use
 
 ```bash
-$ pyenv global 3.7.7
+$ pyenv global 3.8.12
 $ pyenv version
-3.7.9 (set by /Users/mbbroberg/.pyenv/version)
-```
-
-To enable pyenv in every shell, add to `~/.bash_profile`
-
-```bash
-if command -v pyenv 1>/dev/null 2>&1; then
-  eval "$(pyenv init -)"
-fi
+3.8.12 (set by /Users/xtof/.pyenv/version)
 ```
 
 ## Managing Virtual Environments
@@ -60,7 +60,31 @@ fi
 Create a virtual environment based on a Python version...
 
 ```bash
-$ pyenv virtualenv 3.7.7 hello_world
+$ pyenv virtualenv 3.8.12 hello_world
+```
+
+or "fork" from active version:
+
+```bash
+$ pyenv version
+3.8.12 (set by /Users/xtof/.pyenv/version)
+
+$ pyenv virtualenv test3.8.12
+Looking in links: /var/folders/nq/xvzwtwsj25727ybthkp1wmhr0000gn/T/tmpji3hjgb_
+Requirement already satisfied: setuptools in /Users/xtof/.pyenv/versions/3.8.12/envs/test3.8.12/lib/python3.8/site-packages (56.0.0)
+Requirement already satisfied: pip in /Users/xtof/.pyenv/versions/3.8.12/envs/test3.8.12/lib/python3.8/site-packages (21.1.1)
+
+$ pyenv versions             
+  system
+* 3.8.12 (set by /Users/xtof/.pyenv/version)
+  3.8.12/envs/test3.8.12
+  test3.8.12
+```
+
+Removing a virtual environment
+
+```bash
+$ pyenv uninstall test3.8.12
 ```
 
 Enabling the virtual environment for a given folder...
@@ -72,7 +96,7 @@ $ pyenv version
 hello_world (set by /Users/xtof/Workspace/hello_world/.python-version)
 $ cd ..
 $ pyenv version
-3.7.7 (set by /Users/xtof/.pyenv/version)
+3.8.12 (set by /Users/xtof/.pyenv/version)
 $ cd hello_world
 $ pyenv version
 hello_world (set by /Users/xtof/Workspace/hello_world/.python-version)
@@ -82,12 +106,7 @@ Makefile support for the virtual environment, creating it if needed:
 
 ```Makefile
 .python-version:
-	@pyenv virtualenv 3.7.7 $$(basename ${CURDIR}) > /dev/null 2>&1 || true
+	@pyenv virtualenv 3.8.12 $$(basename ${CURDIR}) > /dev/null 2>&1 || true
 	@pyenv local $$(basename ${CURDIR})
 	@pyenv version
 ```
-
-## references
-
-* [https://opensource.com/article/19/5/python-3-default-mac#what-to-do](https://opensource.com/article/19/5/python-3-default-mac#what-to-do)
-* [https://akrabat.com/creating-virtual-environments-with-pyenv/](https://akrabat.com/creating-virtual-environments-with-pyenv/)

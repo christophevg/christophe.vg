@@ -2,6 +2,32 @@
 title: Logboek 2021
 ---
 
+## 30 oktober - Boo zzzz ui
+
+{% include image name="tour-du-zoute" title="Tour du Zoute" %}
+
+{% include image name="fin-de-saison-en-noir" title="Fin de saison en noire" %}
+
+{% include image name="two-friends-on-the-beach" title="Two friends on the beach" %}
+
+En zoals elk seizoen komt er ook een einde aan dit. Met 2 zeilsessies met de kids en 3 wedstrijden was 2021 in Boosui termen een druk en succesvol jaar.
+
+Mieke en Mark waren zo vriendelijk om ons catje een droge plek voor de winter te geven - vooral met dank aan Andreas! Samen de hangar opruimen, nadien de boot aftuigen en droog van strand halen was leuk, maar niets vergeleken met het rondtoeren in de winkelstraten van Knokke en 't Zoute ;-)
+
+Tot binnen 6 maanden !
+
+## 21 augustus - Diamond Cup
+
+Nog eentje ... maar zonder Mark, want die kon niet snel genoeg van geslacht veranderen. Gelukkig kan ik ook beroep doen op Mieke. De Diamond Cup is een wedstrijd voor "mixed couples".
+
+Na een snel bezoekje aan L'Aperçu voor een borgpen om de voorstag terug deftig vast te maken, zijn Mieke en ik al snel opgetuigd en ready to sail.
+
+Onder een drijgende hemel varen we de verschillende manches. De eerste best pittig, de twee easy does it met leuke windvlagen en veel spi. Tijdens de laatste valt de wind, zo goed als letterlijk voor de storm. We twijfelen even om de wedstrijd vroegtijdig af te blazen en terug te keren. Een beetje extra wind voert ons uiteindelijk toch nog over de finish en dan snel/traag terug naar de club. Uiteindelijk geen storm over ons gehad.
+
+Het snelle bezoekje aan L'Aperçu zal nog een vervolg krijgen. Het ringetje van de nieuwe borgpen heeft naar alle waarschijnlijk een hele boel kleine gaatjes in de spi gemaakt :-(
+
+Even een zorg die we parkeren naar volgend jaar.
+
 ## 14 augustus - Papy's Race
 
 {% include image name="papys-race-3" title="Zeebrugge zonsondergang" %}

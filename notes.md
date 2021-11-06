@@ -21,3 +21,11 @@ solution for https://github.com/bundler/bundler/issues/5154
 ```
 gem 'github-pages', '104', group: :jekyll_plugins
 ```
+
+# cannot load such file -- webrick (LoadError)
+
+https://github.com/jekyll/jekyll/issues/8523
+
+```
+gem "webrick"
+```

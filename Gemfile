@@ -11,3 +11,5 @@ group :jekyll_plugins do
 end
 
 gem "faraday", "< 1.0"
+
+gem "webrick" # https://github.com/jekyll/jekyll/issues/8523

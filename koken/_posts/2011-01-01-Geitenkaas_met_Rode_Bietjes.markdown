@@ -1,5 +1,8 @@
 ---
 title: Geitenkaas met Rode Bietjes
+header:
+  teaser: /koken/images/thumb/geitenkaas-rode-biet.jpeg
+  image: /koken/images/header/geitenkaas-rode-biet.jpeg
 tags: veggie
 ---
 

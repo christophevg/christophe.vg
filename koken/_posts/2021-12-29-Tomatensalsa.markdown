@@ -1,5 +1,8 @@
 ---
 title: Tomatensalsa
+header:
+  teaser: /koken/images/thumb/tomatensalsa.jpeg
+  image: /koken/images/header/tomatensalsa.jpeg
 tags: veggie
 ---
 

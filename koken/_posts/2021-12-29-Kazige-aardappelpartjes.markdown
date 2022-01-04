@@ -1,5 +1,8 @@
 ---
-title: Kazige aardappelen
+title: Kazige aardappelpartjes
+header:
+  teaser: /koken/images/thumb/kazige-aardappelpartjes.jpeg
+  image: /koken/images/header/kazige-aardappelpartjes.jpeg
 tags: veggie
 ---
 

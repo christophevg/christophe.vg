@@ -1,5 +1,8 @@
 ---
 title: Rucola en rode bietjes salade
+header:
+  teaser: /koken/images/thumb/rucola-met-rode-bietjes.jpeg
+  image: /koken/images/header/rucola-met-rode-bietjes.jpeg
 tags: veggie
 ---
 

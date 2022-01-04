@@ -1,5 +1,8 @@
 ---
 title: Foccacia
+header:
+  teaser: /koken/images/thumb/foccacia.jpeg
+  image: /koken/images/header/foccacia.jpeg
 tags: veggie
 ---
 

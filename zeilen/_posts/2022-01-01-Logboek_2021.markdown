@@ -1,0 +1,13 @@
+---
+title: Logboek 2022
+---
+
+## 1 mei - Let's Get this Season Started...
+
+{% include image name="start-22-boosui" title="2022 Start!" %}
+
+{% include image name="start-22-zee" title="En't zeetje was er ook nog altijd bij" %}
+
+Niet moeilijk over doen... Boosui ligt weer met de slijtlagen op het zand. Punt.
+
+Met dank aan Mark, Mieke, Andreas, Alexander, Victoria, Gusta en Koen voor een fijne breng-Boosui-naar-strand-dag.

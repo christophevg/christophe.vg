@@ -1,3 +1,5 @@
+all: update serve
+
 update:
 	bundle update
 

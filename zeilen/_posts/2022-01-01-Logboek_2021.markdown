@@ -2,6 +2,14 @@
 title: Logboek 2022
 ---
 
+## 23 juli - No wind 👉 apéro time...
+
+{% include image name="koffie-23-7" title="Koffie!" %}
+
+Een dagje later was er nog minder wind en is ook het bezoek van Koen en Katrien herleid tot een gezellig aperitieven, uitwaaien aan de waterlijn, een uitstekende lunch en nog wat loungen op de club.
+
+De eer om dit jaar als eerste op het water te gaan zal dit jaar begin augustus zijn voor E & A ;-)
+
 ## 22 juli - Time flies...
 
 {% include image name="koffie-22-7" title="Koffie!" %}

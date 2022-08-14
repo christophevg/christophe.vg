@@ -4,6 +4,8 @@ main:
     url: /about
   - title: "Technology"
     url: /technology
+  - title: "Makes"
+    url: /makes
   - title: "Koken"
     url: /koken
   - title: "Zeilen"

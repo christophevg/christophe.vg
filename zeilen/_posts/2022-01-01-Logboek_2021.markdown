@@ -2,6 +2,20 @@
 title: Logboek 2022
 ---
 
+## 3 augustus - "Schade boot"
+
+{% include image name="schade-buurman" title="Kennismaking met de buurman" %}
+{% include image name="schade-buurman-closeup" title="Closeup" %}
+
+... van zo'n "subject" van een  binnenlopende mail wordt je niet vrolijk. Een mail van de beachmaster, Edouard:
+
+> Ik moet je melden dat jouw buurman op het strand bij het kantelen van zijn boot een schram heeft gemaakt op jouw achterbeam.
+> Niets ergs volgens mij, alleen oppervlakkige schade.
+
+En inderdaad, op basis van de foto's verwacht ik ook niet dat onze wedstrijdresultaten er zullen onder leiden 😉
+
+It happens, en daarmee afgehandeld.
+
 ## 23 juli - No wind 👉 apéro time...
 
 {% include image name="koffie-23-7" title="Koffie!" %}

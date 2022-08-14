@@ -1,6 +1,9 @@
 {% include base_path %}
 {% include group-by-array collection=site.posts field="categories" %}
 {% assign sorted_posts = site.categories[page.index] | sort: 'title' %}
+<div class="grid__filter">
+  <input type="text" id="grid__filter" placeholder="&#xF002;" style="font-family:Arial, FontAwesome">
+</div>
 <div class="grid__wrapper">
   {% for post in sorted_posts %}
     {% if post.layout != "redirect" %}

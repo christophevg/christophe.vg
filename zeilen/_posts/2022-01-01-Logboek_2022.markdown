@@ -2,6 +2,19 @@
 title: Logboek 2022
 ---
 
+## 2 oktober - [Goodnight Lover(s)](https://youtu.be/jmY_MiJ1hAY)
+
+{% include image name="overwinteren-int-groen" title="Overwinteren in't groen" %}
+{% include image name="goodnight-2022" title="Goodnight 2022" %}
+{% include image name="njord" title="Njord" %}
+
+
+En voor je het weet zit het seizoen er weer op. Agenda's, weer, praktische beslommeringen,... soms zit het gewoon niet mee. En samen met Koen, die op 1 mei aan het begin van het seizoen stond, eindigen we opnieuw in schoonheid.
+
+Om 9u kom ik toe, net wanneer een druiligere regen er even mee ophoudt. Anderhalf uur lang dreigt een plensbui, die nooit geplenst heeft. Af en toe ook een beetje positieve karma ;-)
+
+'s Middags zeer lekker gegeten in [Njord](https://www.njord.restaurant) en dan nog even blijven plakken op de club. En bij een prachtige ondergaande zon, neemt Boosui even tijd voor een winterslaapje... in mijn eigen tuin.
+
 ## 13 augustus - Pappy's Race
 
 {% include image name="pappys-race-22" title="100!" %}

@@ -81,3 +81,7 @@ div.thumb {
 div.thumb.right {
   float: right;
 }
+
+div.thumb.center {
+  text-align: center;
+}

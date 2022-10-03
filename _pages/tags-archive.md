@@ -3,15 +3,16 @@ layout: archive
 title: The World Tagged According to Christophe VG
 permalink: /tags/
 info:
-  3dprinting: 3D printing is a tool for me, not really a big focus. My first 3D printer was a self-constructed printrbot variation, later upgraded and finally replaced by my sturdy Zortrax M200.
+  3dprinting: Many years ago I started out printing and building my own 3D printer. Over the years I'm a very happy Zortrax M200 owner and 3D printing has become a commodity - it is really a tool for me, not a focus by itself.
+  arduino: Although I started with its fundamental core, the AVR-based microcontrollers, Arduino and I cross paths now and then.
   airfryer: Where have you been all my life? ;-)
   avr: The AVR architecture, by Atmel, was the first embedded platform I encountered when I entered the hardware space. A lot of my first steps involved this series of MCUs.
   fun: All work and no play makes Christophe a dull boy.
-  thing: I don't keep a blog, am not really active on so called social networks, but I sometimes feel the need to write down my very personal opinion about _things_.
+  lasercutting: Maybe the most versatile making tool a maker can own, my Beambox Pro laser cutter is one of the most used tools in my shop.
+  portfolio: These pages are examples of what I spend most of my time on. It contains projects and activities, both commercial and pro-bono.
   professional: Although most of my customers require some form of professional discretion about their projects. Sometimes I can share some abstract information.
   robot: I confess, I'm a sucker for robots. Step by step I'm moving closer to the point where I'm able to design and build my very own robot.
-  arduino: Although I started with its fundamental core, the AVR-based microcontrollers, Arduino and I cross paths now and then.
-  portfolio: These pages are examples of what I spend most of my time on. It contains projects and activities, both commercial and pro-bono.
+  thing: I don't keep a blog, am not really active on so called social networks, but I sometimes feel the need to write down my very personal opinion about _things_.
   veggie: For no specific reason, by the end of 2019, I got intruiged by vegetarian cooking. For no other reason it deserves its own tag ;-)
 ---
 

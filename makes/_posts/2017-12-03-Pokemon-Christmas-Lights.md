@@ -1,7 +1,7 @@
 ---
 title: Pokemon Christmas Lights
 header:
-  teaser: /makes/images/thumb/pokemon-christmas-lights.jpeg
+  teaser: /makes/images/thumb/pokemon-christmas-lights/lights.jpeg
   image: /makes/images/header/pokemon-christmas-lights.jpeg
 tags:
   - 3dprinting
@@ -40,23 +40,23 @@ It took some experiments to find the right way to add the mounting head, but aft
 
 > Sigh ... Each print took about 1.5 hours, and at 90% into the 4th print (FYI the second Pikachu) a blackout forced my beloved Zortrax into its very first failed print :-( Luckily I had these Christmas lights to shed some light into the darkness while I waited for the problem to be resolved.
 
-![Let there be light](images/thumb/pokemon-christmas-lights-blackout.jpeg)
+![Let there be light](images/thumb/pokemon-christmas-lights/blackout.jpeg)
 
 ## Pictures or it didn't Happen
 
 Two experiments with Bulbasaur: on the left a version that only had a shell, which resulted in some inferior quality around the eyes and at the top of the head, due to the lack of infill supporting these parts. Also, because I used the shell generating feature of the Z-Suite slicer, I had to cut out the top part of the mounting head. Not a big problem, but it could be improved upon.
 
-![First experiments with Bulbasaur](images/thumb/pokemon-christmas-lights-bulbasaur-experiments.jpeg)
+![First experiments with Bulbasaur](images/thumb/pokemon-christmas-lights/bulbasaur-experiments.jpeg)
 
 On the right the final version, which is printed with medium infill. Here the opening for the LED is modeled using an extraction of a cylinder. I went with this version because it had a nicer glow - which I initially didn't expect due to the infill pattern. Luckily I tried it afterall.
 
 An overview of all Pokemons as 3D models:
 
-![All 4 Pokemon models with mounting head](images/full/pokemon-christmas-lights-model.png)
+![All 4 Pokemon models with mounting head](images/full/pokemon-christmas-lights/model.png)
 
 And the final result: a LED string with four times two prints of the different Pokemons, LEDs inserted and looking gorgeous. I think I'm going to make another one for myself ;-)
 
-![The Final Result](images/thumb/pokemon-christmas-lights-more.jpeg)
+![The Final Result](images/thumb/pokemon-christmas-lights/more.jpeg)
 
 Now let's hope that at the receiving end that feeling is mutual ;-)
 

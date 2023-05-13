@@ -3,6 +3,7 @@ layout: archive-index
 index: technology
 title: Technology According to Christophe VG
 permalink: /technology/
+filter: true
 ---
 
 Somewhere around the end of 1983, computers entered my life, and have never checked out ever since. Pasionate about interacting with these machines, programming languages have always been my favorite topic. This love for languages evolved towards a love for software architecture, doing the right thing with the right tools in the right way.

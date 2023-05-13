@@ -3,6 +3,7 @@ layout: archive-index
 index: koken
 title: Koken according to Christophe VG
 permalink: /koken/
+filter: true
 ---
 
 Naast alle informatica-gerelateerde interesses, heeft de keuken een belangrijk

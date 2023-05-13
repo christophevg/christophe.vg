@@ -1,0 +1,19 @@
+---
+layout: single
+---
+
+<h2>Favoriete song (tekst) van het ogenblik ...</h2>
+
+Muziek is "Poetry on Steroids". Het heeft een onontkoombaar effect op mij en brengt me in extatische vervoering of op de rand van de afgrond. Een mooiere uiting van passie bestaat niet.
+
+Op deze pagina vind je de song (tekst) die me in deze fase van mijn leven het meeste weet te raken, steunt en hoopvol doet vooruit kijken.
+
+<h3>{{ page.song.title }}</h3>
+
+<iframe src="https://www.youtube.com/embed/{{ page.song.youtube }}?rel=0"
+        width="560" height="315" 
+        frameborder="0" allowfullscreen></iframe>
+
+{{ content }}
+
+{% include category_pagination.html cat="muziek" %}

@@ -8,7 +8,7 @@
 {% endif %}
 <div class="grid__wrapper">
   {% for post in sorted_posts %}
-    {% if post.layout != "redirect" %}
+    {% if post.layout != "redirect" and post.hidden != true %}
       {% include archive-single.html type="grid" %}
     {% endif %}
   {% endfor %}

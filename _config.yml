@@ -230,7 +230,6 @@ compress_html:
   ignore:
     envs: development
 
-
 # Defaults
 defaults:
   # _pages
@@ -252,3 +251,21 @@ defaults:
       comments: # true
       share: false
       related: true
+  - scope:
+      path: "about/muziek"
+      type: posts
+    values:
+      layout: song
+      title: Muziek
+      excerpt: Favoriete song (tekst) van het ogenblik …
+      author_profile: true
+      read_time: true
+      comments: # true
+      share: false
+      related: true
+      pagination: false
+      hidden: true
+      permalink: /:categories/:year/:month/:day/:title
+      header:
+        teaser: /about/images/thumb/muziek.jpg
+        image: /about/images/header/muziek.jpg

@@ -14,10 +14,10 @@ Voor de verandering eens een keertje solo Boosui van m'n bos naar het strand geb
 
 {% include image name="start-23-graven" title="beetje graven" %}
 
-Echter, op een club - met nieuwe gebouwen - ben je nooit alleen, laat staan dat je alleen zwoegt. Er is altijd wel iemand die met plezier je uitde nood helpt, omdat iedereen weet hoe het ... (wait for it) ... reilt en zeilt 🥁
+Echter, op een club - met nieuwe gebouwen - ben je nooit alleen, laat staan dat je alleen zwoegt. Er is altijd wel iemand die met plezier je uit de nood helpt, omdat iedereen weet hoe het ... (wait for it) ... reilt en zeilt 🥁
 
 {% include image name="start-23-negroni" title="tempation waits" %}
 
 Op de terugweg, met een omwegje langs Andreas' drone, nog even een welkom-terug-geschenkje gekregen van een Brugse <s>zot</s> trajectcontrole 🙄, dus al bij al een top-zondag.
 
-Mind note... I like Negroni's en Mark maakt er lekkere 😇
+<p align="right">Mind note... I like Negroni's en Mark maakt er lekkere 😇</p>

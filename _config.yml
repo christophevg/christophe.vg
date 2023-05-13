@@ -269,3 +269,10 @@ defaults:
       header:
         teaser: /about/images/thumb/muziek.jpg
         image: /about/images/header/muziek.jpg
+  - scope:
+      path: "zeilen"
+      type: posts
+    values:
+      header:
+        teaser: /zeilen/images/thumb/zeilen.jpeg
+        image: /zeilen/images/header/zeilen.jpeg

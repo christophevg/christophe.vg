@@ -10,6 +10,4 @@ group :jekyll_plugins do
   gem "jemoji"
 end
 
-gem "faraday", "< 1.0"
-
 gem "webrick" # https://github.com/jekyll/jekyll/issues/8523

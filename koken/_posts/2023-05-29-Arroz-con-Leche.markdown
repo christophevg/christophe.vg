@@ -1,8 +1,11 @@
 ---
 title: Arroz con Leche
+header:
+  teaser: /koken/images/thumb/arroz-con-leche.jpeg
+  image: /koken/images/header/arroz-con-leche.jpeg
 ---
 
-Rijstpap, op z'n Spaans...
+Zeg niet gewoon rijstpap op z'n Spaans, tegen Arroz con Leche 😉
 
 ## ingrediënten
 

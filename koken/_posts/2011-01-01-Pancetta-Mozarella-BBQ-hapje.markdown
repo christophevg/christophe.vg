@@ -1,10 +1,16 @@
 ---
 title: Pancetta Mozarella BBQ hapje
+header:
+  teaser: /koken/images/thumb/pancetta-mozarella-bbq-hapje.jpeg
+  image: /koken/images/header/pancetta-mozarella-bbq-hapje.jpeg
 ---
 
+Misschien wel het eenvoudigste en lekkerste hapje-to-share op de BBQ. En wat moet een BBQ hapje meer zijn?
+
 ## ingrediënten
+
 * mozarella
-* ciabatta (of gewoon stokbrood)
+* ciabatta of panini's of gewoon stokbrood
 * olijfolie
 * geraspte citroenschil
 * pancetta (in sneedjes)

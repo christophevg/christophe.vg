@@ -2,6 +2,20 @@
 title: Logboek 2023
 ---
 
+## 24 juni - Perfect day 1
+
+{% include image name="23-06-24-2" title="fun... ;-)" %}
+
+{% include image name="23-06-24-1" title="perfect day" %}
+
+De combinatie van een drukke agenda, van zowel Mark als ik, overgoten door het enorm variabele weer dat ons Belgenlandje ons biedt, maakt dat ik betrekkelijk meer kans maak om de lotto te winnen dan dat we een echt goeie zeildag hebben.
+
+Behold ... perfect day 1 ;-)
+
+Onder een staalblauwe hemel, gaven we vroeg present voor de spreekwoordelijke lange eerste optuigbeurt van het seizoen. Om dan na een uurtje terug wat te wennen, even lekker voluit ons F18 beestje los te laten.
+
+"_Now, was that civilized? No, clearly not. Fun, but in no sense civilized._"
+
 ## 30 april -  We're back bitches...
 
 {% include image name="start-23-strand" title="naar het strand" %}

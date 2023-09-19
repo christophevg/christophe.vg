@@ -1,6 +1,9 @@
 ---
 title: Smokey Mayonaise
 tags: veggie
+header:
+  teaser: /koken/images/thumb/smokey-mayonaise.jpeg
+  image: /koken/images/header/smokey-mayonaise.jpeg
 ---
 
 Ondanks alles kan je Amerikanen één ding niet ontzeggen: appreciatie voor hun sauzen. Deze variatie op de klassieke mayonaise is werkelijk heerlijk. We hebben onze versie getest op ons Haute Dog Buffet en het was een regelrechte hit.

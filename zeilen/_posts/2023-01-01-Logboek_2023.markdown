@@ -2,6 +2,18 @@
 title: Logboek 2023
 ---
 
+## 14 oktober - This is the end, my sailing friend,...
+
+{% include image name="23-10-14-3" title="...lekker ingeduffeld in het bos." %}
+
+{% include image name="23-10-14-2" title="...naar huis..." %}
+
+{% include image name="23-10-14-1" title="van het strand..." %}
+
+En net zoals ik Boosui aan het begin van het seizoen solo naar het strand bracht, breng ik hem vandaag ook fijntjes gewoon zelf weer naar huis.
+
+Ik had niet veel verwachtingen voor dit seizoen, en dan is het altijd superleuk om terug te kunnen kijken op veel meer fijne zeildagen dan je verwachtte.
+
 ## 9 september - Perfect day 3
 
 {% include image name="23-09-09" title="toch nog ☺️" %}

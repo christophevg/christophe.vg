@@ -5,13 +5,13 @@ header:
   image: /koken/images/header/wraps-n-things.jpeg
 ---
 
-Sinds de aanvang van schooljaar 23-24 heb ik een missie in de keuken: de lunch van de kinderen die de kinderen meekrijgen moet bestaan uit een originele, gezonde, gevarieerde en uitdagende selectie van telkens 2 verschillende wraps.
+Sinds de aanvang van schooljaar '23-'24 heb ik een missie in de keuken: de lunch die de kids meekrijgen naar school moet bestaan uit een originele, gezonde, gevarieerde en uitdagende selectie van telkens 2 verschillende wraps.
 
-Geen saaie boterhammen meer, geen eenvoudig over-bereid beleg,... echter wél voedzame ingrediënten, gezonde combinaties en vooral lekker.
+Geen saaie boterhammen meer, geen eenvoudig (over-)bereid beleg,... echter wél voedzame ingrediënten, gezonde combinaties en vooral lekker.
 
-Deze pagina is dus niet één recept. Ze bevat mijn groeiende collectie aan wraps die voldoen aan mijn eisen en die minstens door één van mijn twee culinaire lunchers geapprecieerd werden.
+Deze pagina is dus niet één recept. Ze bevat mijn groeiende collectie aan wraps die voldoen aan _mijn_ eisen en die _minstens door één_ van mijn twee culinaire lunchers geapprecieerd werden.
 
-I present you my ... Wraps 'n Things
+I present you my... Wraps 'n Things!
 
 ## Algemeen
 

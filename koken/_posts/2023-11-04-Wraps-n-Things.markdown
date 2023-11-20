@@ -148,6 +148,7 @@ Wat nu volgt is een reeks van combinaties van bvb. bovenstaande spreads met bijk
 
 * Smeer wat tonijnsalade op een wrap, leg er een halve avocado in dunne sneedjes op, werk af met wat kwartjes van cherry tomaatjes en een paar druppels limoensap - dat houdt de avocado mooi fris tot de middag.
 * Grill een kipfilet en trek in kleine stukjes. Besmeer een wrap met wat (gezondere) cocktailsaus, leg er de kip op en werk af met wat fijngesneden ijsbergsla en kwartjes van cherry tomaatjes.
+* Een zoetere variatie bekom je door de cocktailsaus bv. te vervangen door (de iets minder gezonde 😇) [BBQ saus](BBQ-Saus).
 * Hak een handvol spinazieblaadjes en een half sjalotje fijn en meng (manueel!) met geitekaas, honing en wat zure room. Gebruik als spread op een wrap en leg er enkele sneedjes Parmaham op.
 * Besmeer een wrap met wat roomkaas, leg er een halve avocado in dunne sneedjes op. Voeg wat sliertjes gerookte zalm toe en werk af met wat bieslook en enkele druppels limoen.
 * Smeer een wrap in met wat Pulled Kip Saté salade. (punt)

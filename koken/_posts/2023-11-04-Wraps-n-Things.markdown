@@ -142,6 +142,10 @@ Een iets gezondere versie van tonijnsalade maak ik met een blik tonijn in eigen 
 
 Een iets gezondere versie van cocktailsaus maak ik door mayonaise te vervangen door Skyr: dus gewoon Skyr met ketchup.
 
+### Eenvoudige Tzatziki
+
+Griekse yoghurt, een teentje look en wat geraspte komkommer.
+
 ## De Wraps
 
 Wat nu volgt is een reeks van combinaties van bvb. bovenstaande spreads met bijkomende ingrediënten en de simpele instructies om er op een doordeweekse ochtend snel een variatie aan lekkere lunch-wraps van te maken:

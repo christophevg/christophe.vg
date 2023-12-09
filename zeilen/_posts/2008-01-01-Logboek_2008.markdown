@@ -4,9 +4,15 @@ title: Logboek 2008
 
 ## 21 december 2008 - Epiloog
 
+{% include image name="08-12-21-2" title="... en dat van Mark" %}
+
+{% include image name="08-12-21-1" title="Mijn happy race face..." %}
+
 Ai, ai, ai ... ik heb vandaag nieuw speelgoed ontdekt: een [Blokart](http://blokart.be). Mark had een [Bongobon](http://bongo.be) gekregen voor allerhande uitdagende sporten, waaronder Blokarting. Blokarting is vergelijkbaar met het meer klassieke zeilwagenrijden, maar in dit geval met een "kart" van amper 27kg. En dat merk je wanneer je er plaats inneemt. O, ja, Mark had mij als tweede persoon uitgenodigd, en in afwachting van de aankomst van Mieke en de kids op het strand, kon ik als eerst plek nemen in onze kart. 
 
 Oooooh yeeaaahhh baby. Dit is mega fun. Die 27kg stellen natuurlijk niets voor en al snel is het jij, drie wielen en een zeil. En wind natuurlijk, en die was vandaag gewoon in perfecte hoeveelheid aanwezig: 5 beaufort. Na het eerste rondje, wordt het tijd om er wat vaart in te steken. Binnen de kortste keren was het weer balanceren op twee (van de drie) wielen, alsof het een catamaran was. Na een 20 minuutjes, was het tijd om te wisselen en was het de beurt aan Mark. Ook hij genoot zichtbaar en was het achteraf meer dan eens met mijn enthousiasme. Hij had tijdens mijn rit al info ingewonnen omtrent ... het prijskaartje natuurlijk, wat anders. En dat valt, voor wat je krijgt, best mee. Misschien niet meer deze winter, maar in 2009 gaan we er toch wel eentje aanschaffen.
+
+{% include image name="08-12-21-3" title="Fris aan de vis..." %}
 
 Als kers op de taart, kon ik met mijn telelens nog net de eerste take van de opnames van de nieuwe editie van De Naaktkalender 2009 ;-)
 

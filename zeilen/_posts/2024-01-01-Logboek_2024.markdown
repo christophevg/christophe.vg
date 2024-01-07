@@ -2,6 +2,12 @@
 title: Logboek 2024
 ---
 
+## 7 december - Kleine wasjes, grote wasjes... 
+
+{% include image name="07-01-24" title="maiden wash" %}
+
+En zoals het goede huisvader betaamt: wordt het nieuwe speelgoedje flink gewassen en gedroogd _the day after_ 😇 Klaar voor een volgende sessie (hopelijk binnen 2 weken).
+
 ## 6 december - Some things never change...
 
 {% include image name="06-01-24-2" title="maiden voyage" %}
@@ -11,3 +17,4 @@ title: Logboek 2024
 Waarschijnlijk de vroegste logboek notitie _ever_... het is gebeurd... 15 jaar en net geen maand geleden stond ik met fonkelende oogjes op het strand van Oostende en vandaag was niet anders. 2 uur lang, tot mijn handen gewoon geen schoot meer konden vasthouden, heb ik genoten van zowat de meest ideale omstandigheden om met een blokart tussen Zeebrugge en de Meerlaan loeihard te _tjezen_. Het was gewoon kei kei kei leuk.
 
 Met het vooruitzicht om misschien _iemand_ te zien, was een groep van om en bij de 10 blokarters een geweldige kennismaking met een ongelooflijk fijne _community_. Dit gaat terecht heel wat tijd deze winter toebedeeld krijgen.
+

@@ -37,7 +37,8 @@ Besides the top-level categories, I also try to add tags to the pages on this si
   <h2 id="{{ tag | cgi_escape }}">{{ tag }}</h2>
   {% if page.info[tag] %}{{ page.info[tag] | markdownify }}{% endif %}
   <ul class="posts">
-    {% for post in site.tags[tag] %}{% if post.title != null %}
+    {% assign sorted_posts = site.tags[tag] | sort: "title" %}
+    {% for post in sorted_posts %}{% if post.title != null %}
     <li><a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endif %}{% endfor %}
   </ul>

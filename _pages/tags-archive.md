@@ -4,6 +4,7 @@ title: The World Tagged According to Christophe VG
 permalink: /tags/
 info:
   3dprinting: 3D printing is a tool for me, not really a big focus. My first 3D printer was a self-constructed printrbot variation, later upgraded and finally replaced by my sturdy Zortrax M200.
+  airfryer: Where have you been all my life? ;-)
   avr: The AVR architecture, by Atmel, was the first embedded platform I encountered when I entered the hardware space. A lot of my first steps involved this series of MCUs.
   fun: All work and no play makes Christophe a dull boy.
   thing: I don't keep a blog, am not really active on so called social networks, but I sometimes feel the need to write down my very personal opinion about _things_.

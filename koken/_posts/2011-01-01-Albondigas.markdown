@@ -1,5 +1,8 @@
 ---
 title: Albondigas
+header:
+  teaser: /koken/images/thumb/albondigas.jpeg
+  image: /koken/images/header/albondigas.jpeg
 ---
 
 Albondigas zijn die overheerlijke Spaanse gehaktballetjes in tomatensaus.

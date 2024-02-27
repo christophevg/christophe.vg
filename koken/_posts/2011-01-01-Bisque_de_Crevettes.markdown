@@ -1,5 +1,8 @@
 ---
 title: Bisque de Crevettes
+header:
+  teaser: /koken/images/thumb/bisque-de-crevettes.jpeg
+  image: /koken/images/header/bisque-de-crevettes.jpeg
 ---
 
 Velen hebben voet bij stuk gehouden dat deze soep een rasechte kreeftensoep was. De verrassing was groot wanneer zij vernamen dat het "maar" een garnaalsoepje was. Dit is een soep met een enorm feest-karakter.

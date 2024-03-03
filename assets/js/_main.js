@@ -66,6 +66,17 @@ $(document).ready(function(){
   $("a[href$='.jpg'],a[href$='.jpeg'],a[href$='.JPG'],a[href$='.png'],a[href$='.gif']").addClass("image-popup");
 
   // Magnific-Popup options
+
+  $('.popup-youtube').magnificPopup({
+		disableOn: 700,
+		type: 'iframe',
+		mainClass: 'mfp-fade',
+		removalDelay: 160,
+		preloader: false,
+		fixedContentPos: false
+	});
+
+
   $(".image-popup").magnificPopup({
     // disableOn: function() {
     //   if( $(window).width() < 500 ) {

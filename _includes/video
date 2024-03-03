@@ -1,0 +1,3 @@
+<div class="thumb right">
+  <a href="https://www.youtube.com/watch?v={{ include.id }}" title="{{ include.title }}" class="popup-youtube"><img src="images/thumb/{{ include.name }}.video.jpeg" height="75" alt="{{ include.title }}"></a>
+</div>

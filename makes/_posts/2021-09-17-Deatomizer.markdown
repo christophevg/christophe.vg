@@ -1,7 +1,7 @@
 ---
 title: Deatomizer
 header:
-  teaser: /makes/images/thumb/deatomizer.jpeg
+  teaser: /makes/images/thumb/deatomizer/deatomizer.jpeg
   image: /makes/images/header/deatomizer.jpeg
 tags:
   - lasercutting

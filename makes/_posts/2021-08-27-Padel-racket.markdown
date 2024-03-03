@@ -1,7 +1,7 @@
 ---
 title: Padel Racket
 header:
-  teaser: /makes/images/thumb/padel-racket.jpeg
+  teaser: /makes/images/thumb/padel-racket/padel-racket.jpeg
   image: /makes/images/header/padel-racket.jpeg
 tags:
   - lasercutting

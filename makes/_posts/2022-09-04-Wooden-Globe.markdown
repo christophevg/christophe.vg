@@ -1,7 +1,7 @@
 ---
 title: Wooden Globe
 header:
-  teaser: /makes/images/thumb/wooden-globe.jpeg
+  teaser: /makes/images/thumb/wooden-globe/wooden-globe.jpeg
   image: /makes/images/header/wooden-globe.jpeg
 tags:
   - lasercutting

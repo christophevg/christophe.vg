@@ -60,9 +60,15 @@ gallery:
 
 A few weeks after having made a [Padel Racket for Mark](Padel-racket), my son Arjen had to dress up as a "[Man in Black](https://www.imdb.com/title/tt0119654/)". Building the racket was a first attempt at working with EVA foam, now I was ready for something more challenging 🙄
 
+### Inspiration / Credits
+
+{% include video name="kamui-mandalorian" kind="png" id="9NntQbGUWdo" title="I built the Mandalorian STAR WARS Rifle out of EVA FOAM!" %}
+
+My interest in EVA foam and prop making was triggered by the incredible cosplay builds by <a href="https://www.kamuicosplay.com" target="_blank">Svetlana from KamuiCosplay</a>. Especially her build of the Mandalorian Sniper Rifle, which has been on my bucketlist ever since.
+
 ## Constructing the [Series 4 De-Atomizer](https://meninblack.fandom.com/wiki/Series_4_De-Atomizer)
 
-So I couldn't come up with a simple prop... of course it had to be one that is hard to find good pictures of, is a complex construction of many different parts and has to look shiny all over.
+So of course I couldn't come up with a simple prop... of course it had to be one that is hard to find good pictures of, is a complex construction of many different parts and has to look shiny all over.
 
 Yep, it had to be the Series 4 De-Atomizer 😇
 

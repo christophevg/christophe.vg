@@ -1,5 +1,0 @@
----
-title: Puppet Notes
-layout: redirect
-redirection: /technology/Puppet
----

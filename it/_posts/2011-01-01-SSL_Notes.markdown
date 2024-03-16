@@ -1,5 +1,0 @@
----
-title: SSL Notes
-layout: redirect
-redirection: /technology/SSL_Notes
----

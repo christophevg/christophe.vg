@@ -22,7 +22,7 @@ Dus in tegenstelling tot de eerste sessie, was die vooral een moeilijke sessie, 
 
 Halverwege even aan gedacht om Strava in te schakelen om de tweede helft van de sessie in kaart te brengen. Met veel downs en enkele stevige ups toch een 13-tal kms afgelegd, zelfs met een piekje van 35km/u. En neen, dat is niet in-het-water getracked,... merk op de "donkerdere blauwe zone" die het laag-water gedeelte aangeeft 😉 Wordt vervolgd...
 
-{% include video name="02-03-24" id="ZV6O18gPRSs" title="on board..." %}
+{% include video name="02-03-24-video" id="ZV6O18gPRSs" title="on board..." %}
 
 En aangezien het dan toch, met momenten, "rustig" was, even een one-handed video-shoot gehouden op een moment dat er even wat wind was.
 

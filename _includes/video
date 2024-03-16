@@ -1,3 +1,7 @@
-<div class="thumb right">
-  <a href="https://www.youtube.com/watch?v={{ include.id }}" title="{{ include.title }}" class="popup-youtube"><img src="images/thumb/{{ include.name }}.video.jpeg" height="75" alt="{{ include.title }}"></a>
+{% capture kind %}{{ include.kind | default: "png" }}{% endcapture %}
+<div class="video thumb right">
+  <a href="https://www.youtube.com/watch?v={{ include.id }}" title="{{ include.title }}" class="popup-youtube">
+    <img src="images/thumb/{{ include.name }}.{{ kind }}" height="75" alt="{{ include.title }}">
+    <img src="/assets/images/youtube-logo.png" class="overlay">
+  </a>
 </div>

@@ -85,3 +85,14 @@ div.thumb.right {
 div.thumb.center {
   text-align: center;
 }
+
+div.video.thumb {
+  position: relative;
+  display: inline;
+}
+
+div.video.thumb .overlay {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}

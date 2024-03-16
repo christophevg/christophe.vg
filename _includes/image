@@ -1,3 +1,4 @@
+{% capture kind %}{{ include.kind | default: "jpeg" }}{% endcapture %}
 <div class="thumb right">
-  <a href="images/full/{{ include.name }}.jpeg" title="{{ include.title }}"><img src="images/thumb/{{ include.name }}.jpeg" height="75" alt="{{ include.title }}"></a>
+  <a href="images/full/{{ include.name }}.{{ kind }}" title="{{ include.title }}"><img src="images/thumb/{{ include.name }}.{{ kind }}" height="75" alt="{{ include.title }}"></a>
 </div>

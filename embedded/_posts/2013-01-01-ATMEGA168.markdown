@@ -1,5 +1,0 @@
----
-title: ATMEGA 168
-layout: redirect
-redirection: /technology/ATMEGA168
----

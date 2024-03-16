@@ -1,5 +1,0 @@
----
-title: PIC
-layout: redirect
-redirection: /technology/PIC
----

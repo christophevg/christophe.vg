@@ -1,5 +1,0 @@
----
-title: XT0F Family
-layout: redirect
-redirection: /technology/XT0F
----

@@ -1,5 +1,0 @@
----
-title: MAX232
-layout: redirect
-redirection: /technology/MAX232
----

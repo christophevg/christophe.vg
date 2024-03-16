@@ -1,5 +1,0 @@
----
-title: XBee - Zigbee module
-layout: redirect
-redirection: /technology/XBee
----

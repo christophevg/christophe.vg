@@ -1,5 +1,0 @@
----
-title: XT0F-001 - Regulated Power
-layout: redirect
-redirection: /technology/XT0F-001
----

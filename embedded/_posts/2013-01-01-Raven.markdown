@@ -1,5 +1,0 @@
----
-title: Raven
-layout: redirect
-redirection: /technology/Raven
----

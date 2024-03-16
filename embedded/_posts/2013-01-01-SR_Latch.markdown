@@ -1,5 +1,0 @@
----
-title: SR Latch
-layout: redirect
-redirection: /technology/SR_Latch
----

@@ -24,11 +24,13 @@ A few years ago I came across Kendra's video on how to create a laser engraved e
 
 ## Day 1: Engraving the Design
 
-I've said it before and I'll say it again: "<a href="https://www.action.com/nl-be/" target="_blank">Action</a> is a maker's wet dream when it comes to scoring raw materials." 😇 So some time ago I found some nice wooden coasters, just waiting to be transformed in something more.
+I've said it before and I'll say it again: "<a href="https://www.action.com/nl-be/" target="_blank">Action</a> is a maker's wet dream when it comes to scoring raw materials." 😇 So some time ago I found some nice {% include google search="acasia wood coasters" %}, just waiting to be transformed in something _more_.
 
 {% include image name="resin-in-wood-coasters/step-1" title="step 1" kind="png"%}
 
-The design I went for was {% include google search="monograms" %}. Starting from a bitmap image I found online, I traced it to a vector-version to avoid pixel-artefacts.
+The design I went for was four variations of a {% include google image="yes" search="letter V monogram" %}. Starting from a bitmap image I found online, I traced it to a vector-version in Inkscape, to avoid pixel-artefacts.
+
+> In hindsight I should have replaced the letter "V" with a fresh one, although in the final result that little detail didn't strike me so much as a problem as now on screen. Yet time was an important factor 😓
 
 {% include image name="resin-in-wood-coasters/step-2" title="step 2" %}
 

@@ -2,8 +2,6 @@
 main:
   - title: "About"
     url: /about
-  - title: "Technology"
-    url: /technology
   - title: "Makes"
     url: /makes
   - title: "Koken"
@@ -12,4 +10,6 @@ main:
     url: /zeilen
   - title: "Fotografie"
     url: /fotografie
+  - title: "Technology"
+    url: /technology
 

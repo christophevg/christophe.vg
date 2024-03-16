@@ -7,5 +7,5 @@ header:
 
 During the second semester of my Digital Photography course I was able to embed the pictures I had to take, into a complete book with additional information and visual mark-up.
 
-This is the digital version of it:  
-[Eindwerk Cursus Digitale Fotografie Deel 2 (PDF/61MB)](https://www.dropbox.com/s/j952mnzo9gsn6co/eindwerk2.pdf)
+<iframe src="/fotografie/assets/eindwerk2.pdf"
+        style="width: 100%; aspect-ratio : 4 / 2.75; border: none;"></iframe>

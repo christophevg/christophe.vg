@@ -1,6 +1,9 @@
 ---
-title: avrdude
+title: Avrdude
 tags: avr
+header:
+  teaser: /technology/images/thumb/avrdude.png
+  image: /technology/images/header/avrdude.png
 ---
 
 To handle the programmer when programming e.g. my [ATMEGA168](ATMEGA168.html),

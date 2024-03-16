@@ -3,8 +3,6 @@ title: Fri3d Camp
 header:
   teaser: /about/images/thumb/fri3d/1.jpg
   image: /about/images/header/fri3d.jpg
-tag:
-  - portfolio
 gallery:
   - url: /about/images/full/fri3d/1.jpg
     image_path: /about/images/thumb/fri3d/1.jpg

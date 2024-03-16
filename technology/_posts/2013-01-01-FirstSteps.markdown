@@ -5,6 +5,8 @@ header:
   image: /technology/images/header/hello_led.jpg
 ---
 
+> This page is more than 10 years old and besides the fact that the circuit diagrams are no longer available, it needs some love. I intent to clean it up in the near future, so keep posted...
+
 While doing research for possible master thesis topics, I'm looking into the
 idea of wireless sensor network. At KULeuven the DISTRINET research group is
 spending quiet some effort into this and I want to make sure that I fully
@@ -90,11 +92,9 @@ initial experiments below where constructed from examples from this book.
 
 ### Diagrams
 
-* To document circuits on my online pages I'm using
-  [Circuits.io](http://circuits.io). Not only because I happen to know one of
-  the creators, but simply because it was the best online tool I found so far -
-  covering _my_ needs :-) All diagrams on these pages are all available on my
-  [Cuircuits.ui profile page](http://123d.circuits.io/users/1785#mycircuits).
+To document circuits on my online pages I used Circuits.io. Over the years it
+has been acquired by Autodesk and transformed, dropping the support for
+rendering simple circuits. I'll be redoing all circuits in the near future.
 
 ### Hardware
 
@@ -126,8 +126,6 @@ to start with the basics: make a LED light up ... without burning it.
   </a>
 </div>
 
-<iframe width="600" height="300" src="http://123d.circuits.io/circuits/19034/embed#schematic" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
-
 It's of course a bit more practical with a button :-)
 
 <div class="thumb circuit left">
@@ -136,8 +134,6 @@ It's of course a bit more practical with a button :-)
     on/off
   </a>
 </div>
-
-<iframe width="600" height="300" src="http://123d.circuits.io/circuits/17018/embed#schematic" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
 
 Next up of course is having the LED fade in and out, like a heart-beat. I
 followed the different examples from the excellent Make: Electronics book here.
@@ -153,8 +149,6 @@ complicated at first. Just start at the power source and follow the current.
 Notice that I've created a setup with two battery sources: one 9V and one
 consisting of two 1.5V AA batteries. Combined in series these result in a
 power source of 12V (9 + 2x1.5).
-
-<iframe width="725" height="448" src="http://123d.circuits.io/circuits/17634/embed#schematic" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
 
 <object width="560" height="315">
   <param name="movie" value="http://www.youtube.com/v/kG8f-J1K0ts?version=3&amp;hl=en_US"></param>
@@ -174,8 +168,6 @@ it's basically a on/off switch. In the case of the relay, we have a two-way on
 switch. To create the same effect, two transistors, turning each other on and
 of are needed.
 
-<iframe width="725" height="448" src="http://123d.circuits.io/circuits/17479/embed#schematic" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
-
 <object width="560" height="315">
   <param name="movie" value="http://www.youtube.com/v/lLMTcqTKUIE?version=3&amp;hl=en_US"></param>
   <param name="allowFullScreen" value="true"></param>
@@ -187,8 +179,6 @@ Note: In the movie I've added a switch, which is not included in the diagram :-)
 
 But it's not quiet yet the effect I'm aiming for. Let's try it with the famous
 555 timer.
-
-<iframe width="725" height="448" src="http://123d.circuits.io/circuits/16711/embed#schematic" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
 
 <object width="560" height="315">
   <param name="movie" value="http://www.youtube.com/v/yjtR2P6eKc0?version=3&amp;hl=en_US"></param>
@@ -233,8 +223,6 @@ This current will flow back through resistor R1, so I can put a LED in parallel
 to that. To only show the back-current when discharging the capacitor, I added
 a diode to that branch, blocking any charge current from going through the LED.
 
-<iframe width="725" height="448" src="http://123d.circuits.io/circuits/16733/embed#schematic" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
-
 <object width="560" height="315">
   <param name="movie" value="http://www.youtube.com/v/Te_AX1X_7ag?version=3&amp;hl=en_US"></param>
   <param name="allowFullScreen" value="true"></param>
@@ -269,8 +257,6 @@ discharging only through the trimmer.
 This can be eliminated by adding a diode in parallel with the trimmer, which
 will eliminate it from the charge cycle and only include it in the discharge
 cycle. This way the charge and discharge cycles can be configured independently.
-
-<iframe width="725" height="448" src="http://123d.circuits.io/circuits/16682/embed#schematic" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
 
 <object width="560" height="315">
   <param name="movie" value="http://www.youtube.com/v/XOqSQaZmZLM?hl=en_US&amp;version=3&amp;rel=0"></param>

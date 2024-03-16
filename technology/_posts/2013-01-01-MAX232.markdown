@@ -1,5 +1,8 @@
 ---
 title: MAX232
+header:
+  teaser: /technology/images/thumb/rs232.jpeg
+  image: /technology/images/header/rs232.jpeg
 ---
 
 What do real programmers use to debug software ? Right, <tt>printf</tt>. And
@@ -30,8 +33,6 @@ Integration is really easy and requires a few capacitors to allow the IC to
 
 Although Maxim isn't the only vendor anymore, offering this kind of IC, the name
 sticks, just like "a coke".
-
-<iframe width="725" height="448" src="http://123d.circuits.io/circuits/17511/embed#schematic" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
 
 <div class="thumb circuit left">
   <a href="images/full/max232_breadboard.jpg" target="_blank">

@@ -9,7 +9,6 @@ info:
   avr: The AVR architecture, by Atmel, was the first embedded platform I encountered when I entered the hardware space. A lot of my first steps involved this series of MCUs.
   fun: All work and no play makes Christophe a dull boy.
   lasercutting: Maybe the most versatile making tool a maker can own, my Beambox Pro laser cutter is one of the most used tools in my shop.
-  portfolio: These pages are examples of what I spend most of my time on. It contains projects and activities, both commercial and pro-bono.
   professional: Although most of my customers require some form of professional discretion about their projects. Sometimes I can share some abstract information.
   robot: I confess, I'm a sucker for robots. Step by step I'm moving closer to the point where I'm able to design and build my very own robot.
   thing: I don't keep a blog, am not really active on so called social networks, but I sometimes feel the need to write down my very personal opinion about _things_.

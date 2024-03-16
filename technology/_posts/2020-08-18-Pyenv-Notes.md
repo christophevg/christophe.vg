@@ -1,5 +1,8 @@
 ---
 title: Pyenv Notes
+header:
+  teaser: /technology/images/thumb/pyenv.png
+  image: /technology/images/header/pyenv.png
 ---
 
 Up to now, I haven been using virtualenv for my Python development. Recently, after having run into issues now and then - which were more related to the installation of Python on my MacBook, I started looking for alternatives. Pyenv seems a nice candidate, because it focusses more on separate Python installations.

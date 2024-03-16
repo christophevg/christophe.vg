@@ -1,6 +1,11 @@
 ---
 title: Regulated Voltage Circuit
+header:
+  teaser: /technology/images/thumb/regulated-voltage-circuit.jpeg
+  image: /technology/images/header/regulated-voltage-circuit.jpeg
 ---
+
+> This page is more than 10 years old and besides the fact that the circuit diagrams are no longer available, it needs some love. I intent to clean it up in the near future, so keep posted...
 
 The wall socket in your house gives you 110 to 240V, depending on your physical
 location in the world. Embedded systems typically use much lower voltages. Also
@@ -16,8 +21,6 @@ and via an adapter, connected to the electric grid.
 
 The circuit below shows somewhat _the_ default circuit you'll set up when
 designing something around a processor (of course one requiring 5V).
-
-<iframe width="725" height="448" src="http://123d.circuits.io/circuits/17148/embed#schematic" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
 
 It consists of a 9V source, typically from an adapter plugged into the an
 electric wall socket which is routed through an LM7805 regulator. This
@@ -52,7 +55,7 @@ Laying things out on a breadboard and adding a switch ...
 To avoid dismantling the connector on the adapter, I've added a barrel jack.
 This allows me to simply plug in the connector from the adapter.
 
-## The 3V Circuit<a name="mcp1700">&nbsp;</a>
+## The 3V Circuit
 
 While designing my first [mote](XT0F-003.html), I wanted to use a [LIPO battery of
 3.7V with 1400mAh](https://www.olimex.com/Products/Power/BATTERY-LIPO1400mAh/).
@@ -60,19 +63,3 @@ My design required 3.3V, so I had to create a drop. With a little help from a
 [friend](http://aitec.be), I found the
 [MCP1700](http://www.microchip.com/wwwproducts/Devices.aspx?dDocName=en010642),
 which perfectly fitted my requirements.
-
-<iframe width="725" height="448" src="http://123d.circuits.io/circuits/18435/embed#schematic" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
-
-## The Boxed Version
-
-As this is the first basic building block, I thought it might be a good idea to
-actually build this in a small and boxed form factor, as a default power source
-for my embedded projects. It's small and simple and allows me to start
-experimenting with transferring such a design from the breadboard to a PCB.
-Besides that it is also a good excuse to design an enclosure and print it using
-my new 3D Printer ;-)
-
-This first building block is called [XT0F-001](XT0F-001.html) and it's the
-first component from my [XT0F](XT0F.html) family of components. On its
-[page](XT0F-001.html), details about the actual implementation are collected in
-more detail.

@@ -96,3 +96,7 @@ div.video.thumb .overlay {
   bottom: 5px;
   right: 5px;
 }
+
+div.retired {
+  margin-top: 20px;
+}

@@ -1,52 +1,87 @@
 <!doctype html>
-<html lang="en" class="no-js">
+<html lang="en">
   <head>
     <meta charset="utf-8">
 
-    <!-- begin SEO -->
 
-    <title>Christophe VG</title>
 
-    <meta name="description" content="The World According to Christophe VG">
+<!-- begin SEO -->
 
-    <meta property="og:locale" content="en">
-    <meta property="og:site_name" content="Christophe VG">
-    <meta property="og:title" content="Christophe VG">
 
-    <meta property="og:description" content="The World According to Christophe VG">
 
-    <meta name="twitter:site" content="@christophe_vg">
-    <meta name="twitter:title" content="Christophe VG">
-    <meta name="twitter:description" content="The World According to Christophe VG">
-    <meta name="twitter:url" content="http://christophe.vg/">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="http://christophe.vg/assets/images/banner.jpeg">
+
+
+
+
+
+
+<title>Christophe VG, Software Architect</title>
+
+
+
+
+<meta name="description" content="Portfolio, Curriculum Vitae en informatieve website van en over Christophe Van Ginneken.">
+
+
+
+
+<meta property="og:locale" content="en">
+<meta property="og:site_name" content="Christophe VG, Software Architect">
+<meta property="og:title" content="Christophe VG, Software Architect">
+
+
+  <link rel="canonical" href="/">
+  <meta property="og:url" content="/">
+
+
+
+
+
+
+
   
-    <meta property="og:image" content="http://christophe.vg/assets/images/banner.jpeg">
 
-    <script type="application/ld+json">
-      {
-        "@context" : "http://schema.org",
-        "@type" : "Person",
-        "name" : "Christophe VG",
-        "url" : "http://christophe.vg",
-        "sameAs" : null
-      }
-    </script>
-
-    <!-- end SEO -->
+  
 
 
-    <link href="http://christophe.vg/feed.xml" type="application/atom+xml" rel="alternate" title="Christophe VG Feed">
 
-    <!-- http://t.co/dKP3o1e -->
-    <meta name="HandheldFriendly" content="True">
-    <meta name="MobileOptimized" content="320">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:image" content="/assets/images/cvg-header.jpg">
 
-    <script>
-      document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
-    </script>
+
+
+
+
+
+  <link rel="next" href="/page2/">
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "Christophe Van Ginneken",
+      "url" : "http://localhost:4000",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Christophe VG, Software Architect Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- For all browsers -->
 <link rel="stylesheet" href="/assets/css/main.css">
@@ -54,12 +89,21 @@
 <meta http-equiv="cleartype" content="on">
     <!-- start custom head snippets -->
 
+<link href="/assets/css/bootstrap.grid.css" rel="stylesheet">
+
 <link rel="stylesheet" href="/assets/css/custom.css">
 
+<link rel="stylesheet" href="/assets/css/hi.css">
+<link rel="stylesheet" href="/assets/css/slider.css">
+<link rel="stylesheet" href="/assets/css/timeline.css">
+
+<link rel="stylesheet" href="/assets/css/print.css">
+  
 <!-- end custom head snippets -->
+
   </head>
 
-  <body class="layout--home">
+  <body class="layout--archive">
 
     <!--[if lt IE 9]>
 <div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
@@ -74,9 +118,12 @@
           
             
             <li class="masthead__menu-item"><a href="/about">About</a></li>
-
-
+          
+            
             <li class="masthead__menu-item"><a href="/technology">Technology</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="/makes">Makes</a></li>
           
             
             <li class="masthead__menu-item"><a href="/koken">Koken</a></li>
@@ -94,9 +141,28 @@
   </div>
 </div>
 
-<div class="page__hero">
-  <img src="/assets/images/banner.jpeg" alt="" class="page__hero-image">
+    <!-- default content starts here... -->
+
+    
+  
+
+
+
+
+
+
+
+<div class="page__hero"
+  style=" "
+>
+  
+    <img src="/assets/images/cvg-header.jpg" alt="" class="page__hero-image">
+  
+  
 </div>
+
+
+
 
 <div id="main" role="main">
   
@@ -117,14 +183,21 @@
     <h3 class="author__name" itemprop="name">Christophe VG</h3>
     
       <p class="author__bio" itemprop="description">
-        If you think I'm arrogant, you're missing the point ;-)
+        Software Architect<br>&#35;howcanihelp
       </p>
     
   </div>
-
+  
   <div class="author__urls-wrapper">
     <button class="btn btn--inverse">Follow</button>
     <ul class="author__urls social-icons">
+      
+      <li><a href="/assets/vcard.vcf" itemprop="sameAs">
+        <img src="/assets/images/vcard.png" style="width:16px;height=16px;margin-bottom:3px;margin-right:3px;margin-left:2px;" aria-hidden="true"> 
+        vCard
+      </a></li>
+      
+      
       
         <li itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
           <i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> 
@@ -143,14 +216,17 @@
           </a>
         </li>
       
+
+      
+        <li>
+          <i class="fa fa-fw fa-phone-square" aria-hidden="true"></i>
+          +32(0)498/62.33.29
+        </li>
       
       
-        <li><a href="https://twitter.com/Christophe_VG" itemprop="sameAs">
-          <i class="fa fa-fw fa-twitter-square" aria-hidden="true"></i> 
-          Twitter
-        </a></li>
       
-     
+      
+      
       
         <li><a href="https://www.linkedin.com/in/christophevg" itemprop="sameAs">
           <i class="fa fa-fw fa-linkedin-square" aria-hidden="true"></i> 
@@ -158,17 +234,7 @@
         </a></li>
       
       
-        <li><a href="http://www.slideshare.net/christophevg" itemprop="sameAs">
-          <i class="fa fa-fw fa-slideshare" aria-hidden="true"></i> 
-          Slideshare
-        </a></li>
       
-      
-      
-        <li><a href="https://instagram.com/christophe.vg_" itemprop="sameAs">
-          <i class="fa fa-fw fa-instagram" aria-hidden="true"></i> 
-          Instagram
-        </a></li>
       
       
       
@@ -176,12 +242,16 @@
           <i class="fa fa-fw fa-github" aria-hidden="true"></i> 
           Github
         </a></li>
-        
+      
+      
       
         <li><a href="https://thingiverse.com/christophevg" itemprop="sameAs">
-          <img src="/assets/images/thingiverse.png" style="width:16px;height=16px;margin-bottom:3px;margin-right:3px;margin-left:2px;" aria-hidden="true"> 
+          <img src="/assets/images/thingiverse.png" style="width:16px;height:16px;margin-bottom:3px;margin-right:3px;margin-left:2px;" aria-hidden="true"> 
           Thingiverse
         </a></li>
+      
+      
+      
       
       
         <li><a href="https://www.pinterest.com/christophevg" itemprop="sameAs">
@@ -192,42 +262,46 @@
       
       
       
-        <li><a href="https://www.youtube.com/user/ChristopheVG" itemprop="sameAs">
+        <li><a href="https://www.youtube.com/@christophevg" itemprop="sameAs">
           <i class="fa fa-fw fa-youtube-square" aria-hidden="true"></i> 
           YouTube
         </a></li>
       
       
-        <li><a href="https://www.strava.com/athletes/christophevg" itemprop="sameAs">
-          <img src="/assets/images/strava.png" style="width:16px;height=16px;margin-bottom:3px;margin-right:3px;margin-left:2px;" aria-hidden="true"> 
-          Strava
-        </a></li>
+      
+      
+      
+      
+      
+      
       
     </ul>
   </div>
 </div>
 
-  
-  </div>
+</div>
 
   <div class="archive">
-    
-      <h1 class="page__title">Whoops</h1>
-    
-      <p>Hi there, ... you've stumbled upon a page that is no longer here. This
-      is probably because I sometimes redesign this site a bit, including its
-      structure.</p>
-      
-      <p>No content was hurt or lost in the process, so it's all still there,
-      somewhere...</p>
-      
-      <p>Please try to use the main site navigation at the top to locate the
-      content you were looking for.</p>
-      
-      <p>Christophe</p>
-    
+
+    <h1 class="page__title">Whoops</h1>
+
+    <p>Hi there, ... you've stumbled upon a page that is no longer here. This
+    is probably because I sometimes redesign this site a bit, including its
+    structure.</p>
+  
+    <p>No content was hurt or lost in the process, so it's all still there,
+    somewhere...</p>
+  
+    <p>Please try to use the main site navigation at the top to locate the
+    content you were looking for.</p>
+  
+    <p>Christophe</p>
+
   </div>
+
 </div>
+
+    <!-- default content ends here. -->
 
     <div class="page__footer">
       <footer>
@@ -238,7 +312,7 @@
   <div style="float:right">
     <a href="http://creativecommons.org/licenses/by-sa/2.0/be/">
       <img alt="Creative Commons License" style="border-width:0" 
-           src="https://i.creativecommons.org/l/by-sa/2.0/be/80x15.png" >
+           src="/assets/images/80x15.png" >
     </a>
   </div>
   <ul class="social-icons">
@@ -246,39 +320,27 @@
       <li><strong>Follow:</strong></li>
     
     
-      <li><a href="https://twitter.com/christophe_vg"><i class="fa fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
-    
     
     
       <li><a href="http://github.com/christophevg"><i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
     
-    
-      <li><a href="http://bitbucket.org/christophevg"><i class="fa fa-fw fa-bitbucket" aria-hidden="true"></i> Bitbucket</a></li>
     
     <li><a href="/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
   </ul>
 </div>
 
 <div class="page__footer-copyright">
-  &copy; 2016 Christophe VG. Powered by <a href="http://pages.github.com">GitHub Pages</a>, <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.<br>
-  Last update on 2016-11-24 11:53:53 +0100.<br>
+  &copy; 2024 Christophe Van Ginneken. Powered by <a href="http://pages.github.com">GitHub Pages</a>, <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.<br>
+  Last update on 2024-03-16 19:33:28 +0100.<br>
 </div>
       </footer>
     </div>
 
-  <script src="/assets/js/main.min.js"></script>
+    <script src="/assets/js/main.min.js"></script>
 
-  <script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-393672-2']);
-  _gaq.push(['_trackPageview']);
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-</script>
+
+
 
   </body>
 </html>

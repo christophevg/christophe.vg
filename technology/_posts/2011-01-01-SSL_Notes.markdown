@@ -1,5 +1,8 @@
 ---
 title: SSL Notes
+header:
+  teaser: /technology/images/thumb/openssl.png
+  image: /technology/images/header/openssl.png
 ---
 
 OpenSSL is a wonderful technology and the openssl toolset is truly a Swiss

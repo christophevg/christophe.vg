@@ -1,5 +1,8 @@
 ---
 title: MongoDB Notes
+header:
+  teaser: /technology/images/thumb/mongo.png
+  image: /technology/images/header/mongo.png
 ---
 
 My notes on installing, running and using MongoDB

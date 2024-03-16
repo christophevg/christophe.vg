@@ -1,6 +1,9 @@
 ---
 title: JTAGICE mkII
 tags: avr
+header:
+  teaser: /technology/images/thumb/jtagice.jpeg
+  image: /technology/images/header/jtagice.jpeg
 ---
 
 There are many programmers, but because I know I'll also will need to debug
@@ -43,8 +46,6 @@ male header. This allows me to cleanly connect the 6 required wires. If I want
 to add this to a PCB, I can of course use a 10 (5x2) pin female connector into
 which the JTAG connector can be plugged in.
 
-<iframe width="725" height="448" src="http://123d.circuits.io/circuits/17091/embed#schematic" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
-
 <div class="thumb left">
   <a href="images/full/squid_cable.jpg" target="_blank">
     <img src="images/thumb/squid_cable.jpg"><br>
@@ -80,11 +81,7 @@ program and JTAG for debugging, requiring me to switch back and forth between
 ISP and JTAG. I wondered if I couldn't program using JTAG. Short story: of
 course, it simply works :-)
 
-The setup isn't that different from the ISP setup:
-
-<iframe width="725" height="448" src="http://123d.circuits.io/circuits/10002861/embed#schematic" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
-
-The programming process using [avrdude](Averdude.html) remains identical, apart
+The setup isn't that different from the ISP setup. The programming process using [avrdude](Averdude.html) remains identical, apart
 from the the <tt>-c</tt> switch that now simple is set to <tt>jtag2</tt>.
 
 {% highlight console %}

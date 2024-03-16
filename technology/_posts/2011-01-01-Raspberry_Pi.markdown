@@ -1,5 +1,8 @@
 ---
 title: Raspberry Pi Notes
+header:
+  teaser: /technology/images/thumb/raspberry-pi.png
+  image: /technology/images/header/raspberry-pi.png
 ---
 
 These are my notes on the Raspberry Pi, model 3b.

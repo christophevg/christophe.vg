@@ -74,7 +74,22 @@ Yep, it had to be the Series 4 De-Atomizer 😇
 
 The process was "basically" the same as with the Padel Racket, just a little more elaborate and complex.
 
-From some pictures online, I constructed a print-out template to use as blue-print. I had to come up with many 3D-puzzles to combine basic shapes into a construction that immitated the original.
+### Making Plans
+
+{% include image name="deatomizer/reference" title="Reference" kind="png"%}
+
+From some pictures online, I constructed a print-out template to use as blue-print of the top and side of the gun - and you gotta use what works... printing them from Numbers, allowed me to span it acros multiple pages and print it to scale 🫣
+
+{% include image name="deatomizer/3d-model" title="3D model" kind="png"%}
+
+I had to come up with many 2D-to-3D-puzzles to combine basic shapes into a construction that immitated the original. While doing so, I modelled many parts in Fusion, until in the end I even had a complete 3D model of the gun.
+
+{% include image name="deatomizer/3d-prints" title="3D Prints" kind="png"%}
+{% include image name="deatomizer/cuts" title="Cuts" kind="png"%}
+
+This allowed me to make many projections and section cuts to have clean 2D vector images and 3D surface models to feed into my laser cutter and/or 3D printer.
+
+### Cutting and Printing and Glueing and Sanding...
 
 So, I again cut many pieces of EVA foam with my laser cutter, glued them together and sanded them to come up with a nice curvy look. Some smaller parts were 3D printed and had a layer of EVA foam clay added to make them more like the other parts.
 
@@ -82,6 +97,6 @@ After the entire gun was assembled, I again applied a coat of Plasti Dip to give
 
 Some additional (real) screws and other wooden and plastic details added the final finishing touches.
 
-In the end my son was very happy with the end-result - and to this date it is still my most elaborate EVA foam prop making project. If I had had more time, I would have redone the final coatings and first applied the foam clay also to the flat EVA foam parts. Now these parts have different feel and look more "porous" 🤷‍♂️
+> In the end my son was very happy with the end-result - and to this date it is still my most elaborate EVA foam prop making project. If I had had more time, I would have redone the final coatings and first applied the foam clay also to the flat EVA foam parts. Now these parts have different feel and look more "porous" 🤷‍♂️
 
 {% include gallery id="gallery" %}

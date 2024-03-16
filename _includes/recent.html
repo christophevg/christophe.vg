@@ -1,5 +1,5 @@
 {% for post in paginator.posts %}
-  {% include archive-single.html %}
+  {% include archive-single.html with_category=true %}
 {% endfor %}
 
 {% include paginator.html %}

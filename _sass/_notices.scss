@@ -97,3 +97,7 @@
 .notice--danger {
   @include notice($danger-color);
 }
+
+.notice-danger {
+  @include notice($danger-color);
+}

@@ -1,7 +1,7 @@
 <meta charset="utf-8">
 
 {% if page.redirection %}
-<meta http-equiv="refresh" content="0;url={{ page.redirection }}" />
+<meta http-equiv="refresh" content="0;url={{ page.redirection }}">
 {% endif %}
 
 {% include seo.html %}
@@ -16,4 +16,4 @@
 <!-- For all browsers -->
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | absolute_url }}">
 
-<meta http-equiv="cleartype" content="on">
+<!--[if IEMobile]> <meta http-equiv="cleartype" content="on"> <![endif]-->

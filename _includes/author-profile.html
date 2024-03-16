@@ -30,7 +30,7 @@
     <ul class="author__urls social-icons">
       
       <li><a href="/assets/vcard.vcf" itemprop="sameAs">
-        <img src="/assets/images/vcard.png" style="width:16px;height:16px;margin-bottom:3px;margin-right:3px;margin-left:2px;" aria-hidden="true"> 
+        <img src="/assets/images/vcard.png" style="width:16px;height:16px;margin-bottom:3px;margin-right:3px;margin-left:2px;" aria-hidden="true" alt="vcard"> 
         vCard
       </a></li>
       
@@ -55,7 +55,7 @@
         <li>
           <a href="mailto:{{ author.email }}">
             <i class="fa fa-fw fa-envelope-square" aria-hidden="true"></i>
-            <meta itemprop="email" content="{{ author.email }}" />
+            <meta itemprop="email" content="{{ author.email }}">
             {{ site.data.ui-text[site.locale].email_label | default: "Email" }}
           </a>
         </li>
@@ -130,7 +130,7 @@
       {% endif %}
       {% if author.thingiverse %}
         <li><a href="https://thingiverse.com/{{ author.thingiverse }}" itemprop="sameAs">
-          <img src="/assets/images/thingiverse.png" style="width:16px;height:16px;margin-bottom:3px;margin-right:3px;margin-left:2px;" aria-hidden="true"> 
+          <img src="/assets/images/thingiverse.png" style="width:16px;height:16px;margin-bottom:3px;margin-right:3px;margin-left:2px;" aria-hidden="true" alt="thingiverse"> 
           Thingiverse
         </a></li>
       {% endif %}

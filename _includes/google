@@ -1,0 +1,5 @@
+{% if include.image %}
+<a href="https://www.google.com/search?as_q={{ include.search | replace " ", "+" }}&tbm=isch" target="_blank">{{ include.search}}</a>
+{% else %}
+<a href="https://google.com/search?q={{ include.search | replace " ", "+" }}" target="_blank">{{ include.search }}</a>
+{% endif %}

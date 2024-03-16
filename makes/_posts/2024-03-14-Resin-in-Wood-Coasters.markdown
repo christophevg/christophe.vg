@@ -6,6 +6,7 @@ header:
 tags:
   - lasercutting
   - fun
+hidden: true
 ---
 
 I've been wanting to play with combining wood and resin for some time, yet never found the time to do so, until Veronique's birthday came up and what do you give someone who can buy anything? Right, the one thing no one can buy: my (creative) time 😉

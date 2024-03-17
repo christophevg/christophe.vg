@@ -3,6 +3,7 @@ layout: archive-index
 index: fotografie
 title: Fotografie According to Christophe VG
 permalink: /fotografie/
+locale: nl
 ---
 
 Sinds enkele jaren heb ik mijn liefde voor het visuele iets meer ter harte

@@ -274,6 +274,20 @@ defaults:
       path: "zeilen"
       type: posts
     values:
+      locale: nl
       header:
         teaser: /zeilen/images/thumb/zeilen.jpeg
         image: /zeilen/images/header/zeilen.jpeg
+  - scope:
+      path: "koken"
+    values:
+      locale: nl
+  - scope:
+      path: "fotografie"
+    values:
+      locale: nl
+  - scope:
+      path: "zeilen"
+      type: pages
+    values:
+      locale: nl

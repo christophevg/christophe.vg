@@ -4,6 +4,7 @@ index: koken
 title: Koken according to Christophe VG
 permalink: /koken/
 filter: true
+locale: nl
 ---
 
 Naast alle informatica-gerelateerde interesses, heeft de keuken een belangrijk

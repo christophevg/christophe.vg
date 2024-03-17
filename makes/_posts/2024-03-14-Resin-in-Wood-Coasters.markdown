@@ -6,7 +6,6 @@ header:
 tags:
   - lasercutting
   - fun
-hidden: true
 ---
 
 I've been wanting to play with combining wood and resin for some time, yet never found the time to do so, until Veronique's birthday came up and what do you give someone who can buy anything? Right, the one thing no one can buy: my (creative) time 😉
@@ -68,6 +67,20 @@ This is probably the shortest session, yet it is probably also the main one: add
 
 Tomorrow... manual labour time! 👷
 
-## Day 4: Sanding to Perfection
+## Day 4: Sanding to "Perfection"
 
-...
+Okay, final day and ... most stressful day: two potentially destructive operations: sanding and applying oil.
+
+{% include image name="resin-in-wood-coasters/step-12" title="step 12" %}
+
+Sanding worked out okay-ish 🫣 The first coaster, I've - apparently - been sanding a bit too much on one side. Hey, you live you learn. Applying 80, 120, 180, 400 and 600 grids resulted in a very soft finish. Not quiet as shiny as I'd hoped for, but the result was better than I initially imagined. The more drak finish gives it a more suiting vintage vibe.
+
+And so, after the first step of this final day: the four coasters were ready:
+
+{% include image name="resin-in-wood-coasters/before-oil" title="before oil" %}
+
+{% include image name="resin-in-wood-coasters/step-13" title="step 13" %}
+
+Final step: oil on, oil off and ... 45min later we're all done. This turned out much easier than expected. The wood absorbed the oil completly and afterwards the overall look 'n feel was nice.
+
+Mission accomplished! Present ready.

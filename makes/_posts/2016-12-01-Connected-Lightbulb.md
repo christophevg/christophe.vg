@@ -34,7 +34,7 @@ gallery-v3:
     title: "Connected Lightbulb version 3 - Short-cut"
 ---
 
-Not everything has to be all work and no play. Sometimes, we just play. My good friend [Anthony](http://anthony.liekens.net) sometimes hosts team building events. His current topic of choice is the Internet of Things. To illustrate the core idea of the IoT, he uses the case of the connected lightbulb.
+Not everything has to be all work and no play. Sometimes, we just play. My good friend {% include external link="http://anthony.liekens.net" title="Anthony" %} sometimes hosts team building events. His current topic of choice is the Internet of Things. To illustrate the core idea of the IoT, he uses the case of the connected lightbulb.
 
 # Enter: The Internet of Things
 
@@ -42,15 +42,15 @@ The Internet of Things is basically an economy of scale: computers today are so 
 
 So computers no longer need humans and can now also be useful to things ... that in their turn are useful to humans, who communicate with these things using ... computers. So in the end nothing has changed, just the scale and the number of applications. That's (probably - because I haven't had the luck to attend one of Anthony's team building events) the story Anthony tells the team that needs building. 
 
-Next up: the actual building: Everybody, divided into groups gets an internet connected lightbulb. Using the wonderfully simple [If This Then That (IFTTT)](http://ifttt.com) all groups are soon working as teams, making sure that the lightbulb turns red when a new email arrives. Yeah, team!
+Next up: the actual building: Everybody, divided into groups, gets an internet connected lightbulb. Using the wonderfully simple {% include external link="http://ifttt.com" title="If This Then That" %} all groups are soon working as teams, making sure that the lightbulb turns red when a new email arrives. Yeah, team!
 
-So to host these team building events, he needed internet-connected lightbulbs. [Philips Hue](http://meethue.com) I hear you say? Yeah right... a single lamp costs about &euro;60 and you still need a "starter kit" first, which apparently starts somewhere around the same price. The latter comes with a "bridge", so internet-connected ... _naah_.
+So to host these team building events, he needed internet-connected lightbulbs. {% include external link="http://meethue.com" title="Philips Hue" %} I hear you say? Yeah right... a single lamp costs about &euro;60 and you still need a "starter kit" first, which apparently starts somewhere around the same price. The latter comes with a "bridge", so internet-connected ... _naah_.
 
 # Version 1 - The Mock-up
 
-Having been playing with [Particle Photons](https://www.particle.io/products/hardware/photon-wifi-dev-kit) he thought that combining that with an [Adafruit Neopixel 24](https://www.adafruit.com/product/1586) would basically provide him with an actual, basic "internet-connected light(bulb)". Even more, the Photon costs about &euro;20 and the Neopixel ring about &euro;17. Which together is even way below the price of a single Hue lamp. With about &euro;23 to spare on a bulb-like enclosure and converter from 220V to 5V, even a single production item would be cheaper than the existing _sort-of-solution_.
+Having been playing with {% include external link="https://www.particle.io/products/hardware/photon-wifi-dev-kit" title="Particle Photons" %} he thought that combining that with an {% include external link="https://www.adafruit.com/product/1586" title="Adafruit Neopixel 24" %} would basically provide him with an actual, basic "internet-connected light(bulb)". Even more, the Photon costs about &euro;20 and the Neopixel ring about &euro;17. Which together is even way below the price of a single Hue lamp. With about &euro;23 to spare on a bulb-like enclosure and converter from 220V to 5V, even a single production item would be cheaper than the existing _sort-of-solution_.
 
-In Belgium, our country, we have this wonderful store, [Action](http://www.action.be). They sell all sort of cheap-ass things, thus often a dream-come true for makers. One of the items they offer is a LED disco light bulb. It's basically 3 LEDs in series, powered by a converter bringing down 220V to around 8V and a small motor to make the facet-dome rotate. They sell this at about &euro;3! (I kid you not.) So open it and throw everything out, just keeping the enclosure.
+In Belgium, our country, we have this wonderful store, {% include external link="http://www.action.be" title="Action" %}. They sell all sort of cheap-ass things, thus often a dream-come true for makers. One of the items they offer is a LED disco light bulb. It's basically 3 LEDs in series, powered by a converter bringing down 220V to around 8V and a small motor to make the facet-dome rotate. They sell this at about &euro;3! (I kid you not.) So open it and throw everything out, just keeping the enclosure.
 
 As a quick solution to the power conversion, Anthony took an Apple USB charger and ripped it apart, to fit it in the bulb, using USB connectors to wire it to the Photon, and the Neopixel ring.
 
@@ -58,15 +58,13 @@ Done!
 
 # Version 2 - The Prototype
 
-After having built version 1 using a teared down Apple USB charger, he was looking for a better solution to bring 220V down to 5V. He found the [HiLink ACDC 5V 3W module](https://www.aliexpress.com/store/product/Hi-Link-ac-dc-power-module-5v-3w-220v-isolated-ac-dc-converter/345286_32360232521.html). Wonderful. So now all that was left, was once again, putting it all together.
+After having built version 1 using a teared down Apple USB charger, he was looking for a better solution to bring 220V down to 5V. He found the {% include external link="https://www.aliexpress.com/store/product/Hi-Link-ac-dc-power-module-5v-3w-220v-isolated-ac-dc-converter/345286_32360232521.html" title="HiLink ACDC 5V 3W module" %}. Wonderful. So now all that was left, was once again, putting it all together.
 
-That's when I entered the [Open Garage](http://opengarage.org). Since I had everything required to do just that, I offered an afternoon of my time to make a simple board with headers to fit the Photon and the HiLink and allow for attaching the 220V and the Neopixel. No rocket science, just a bit of fun, mostly refreshing my rusty soldering skills and Anthony had three boards, ready to be plugged in.
+That's when I entered the {% include external link="http://opengarage.org" title="Open Garage" %}. Since I had everything required to do just that, I offered an afternoon of my time to make a simple board with headers to fit the Photon and the HiLink and allow for attaching the 220V and the Neopixel. No rocket science, just a bit of fun, mostly refreshing my rusty soldering skills and Anthony had three boards, ready to be plugged in.
 
 {% include gallery id="gallery-v2"%}
 
-When we finished version 2, Anthony made a little Youtube video, showing the possibilities and outlining some of the technical components we used. It shows also the lamps in action, using some basic code, hosted on a web page. So, no mandatory proprietary app required.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_ZPRNsgZJc8?rel=0" frameborder="0" allowfullscreen></iframe>
+When we finished version 2, Anthony made a little Youtube video, showing the possibilities and outlining some of the technical components we used. It shows also the lamps in action, using some basic code, hosted on a web page. So, no mandatory proprietary app required. (note: The video isn't available anymore 😔)
 
 # Version 3 - The Proof-of-Concept
 
@@ -80,7 +78,7 @@ So now, we had a drop-in replacement for the original &euro;3 disco light, with 
 
 While fitting everything in there, I decided to replace the screw terminals with simple Dupont contacts. Not such a good idea. The dome had been spinning nicely for about an hour when I left the Open Garage, heading home. En route, I received a message from Anthony:
 
-<div style="padding-left: 150px; padding-right: 150px; margin-bottom: 1em;">
+<div style="text-align:left; margin-bottom: 1em;">
   <img src="/makes/images/full/connected-lightbulb/connected-lightbulb-v3-short.png"><br>
   <div style="text-align: right">
     <img src="/makes/images/full/connected-lightbulb/connected-lightbulb-v3-short-oops.png">

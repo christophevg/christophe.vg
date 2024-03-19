@@ -1,4 +1,13 @@
+{% assign folder = include.folder | default: page.folder %}
+{% if folder %}
+{% capture subfolder %}/{{ folder }}{% endcapture %}
+{% else %}
+{% assign subfolder = "" %}
+{% endif %}
 {% capture kind %}{{ include.kind | default: "jpeg" }}{% endcapture %}
-<div class="thumb right">
-  <a href="images/full/{{ include.name }}.{{ kind }}" title="{{ include.title }}"><img src="images/thumb/{{ include.name }}.{{ kind }}" height="75" alt="{{ include.title }}"></a>
+{% assign human = include.name | replace: "-", " " | capitalize %}
+<div style="text-align:center;margin-bottom:5px;">
+  <a href="images/full{{ subfolder }}/{{ include.name }}.{{ kind }}" title="{{ include.title | default: human }}">
+    <img src="images/thumb{{ subfolder }}/{{ include.name }}.{{ kind }}" alt="{{ include.title | default: human }}">
+  </a>
 </div>

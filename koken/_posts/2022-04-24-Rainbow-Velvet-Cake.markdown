@@ -6,11 +6,11 @@ header:
 tags: veggie
 ---
 
-Twee kinderen, twee keer een Rainbow Velvet Cake. Gebaseerd op [een recept van Laura voor een rode versie](https://www.laurasbakery.nl/red-velvet-taart/), heb ik er enkele kleuren extra bij gehaald en er een verrassing in gestopt ;-)
+Twee kinderen, twee keer een Rainbow Velvet Cake. Gebaseerd op {% include external link="https://www.laurasbakery.nl/red-velvet-taart/" title="een recept van Laura voor een rode versie" %}, heb ik er enkele kleuren extra bij gehaald en er een verrassing in gestopt ;-)
 
 ## ingrediënten
 
-* 120g boter (geen ongezouten boter meer, wel [Solo patisserie](https://www.solo.be/nl/producten/solo-patisserie/) ;-))
+* 120g boter (geen ongezouten boter meer, wel {% include external link="https://www.solo.be/nl/producten/solo-patisserie/" title="Solo patisserie" %} ;-))
 * 250g suiker
 * 2 eieren
 * vanille extract

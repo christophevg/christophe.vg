@@ -77,8 +77,8 @@ So students aren't getting the best support, companies are required to invest
 in another five-year period of on the job training and the higher educational
 institutes loose touch with their target.
 
-This _thing_ came to be while I was preparing for my [psychology of
-perception](http://onderwijsaanbod.kuleuven.be/syllabi/v/e/P00H0AE.htm) exam.
+This _thing_ came to be while I was preparing for my {% include external link="http://onderwijsaanbod.kuleuven.be/syllabi/v/e/P00H0AE.htm" title="psychology of
+perception" %} exam.
 The final chapter of this course dealt with the acquisition of skills. Although
 I already knew about the 10.000 hours rule of expertise, it once again struck
 me that to be able to really master a skill, one needs about 10 years of
@@ -122,7 +122,7 @@ knowing it.
 As I learned once more from my psychology course, education or training in
 general is far more effective in a one-on-one situation, with direct feedback.
 During this same semester I also took on
-[robotics](http://onderwijsaanbod.kuleuven.be/syllabi/e/H02A4AE.htm). This
+{% include external link="http://onderwijsaanbod.kuleuven.be/syllabi/e/H02A4AE.htm" title="robotics" %}. This
 course completely follows this idea. Students are required to propose a project
 and schedule 4 to 5 meetings with the professor during the semester where they
 talk about their project and need to show progress at every meeting. At first I
@@ -207,8 +207,8 @@ any valid reason why this shouldn't be a path to pursue. It is done in other
 education systems, resulting in pretty good craftsmen leaving school.
 
 Now I don't want to leave on a negative note and I have to give at least two
-examples of efforts that try to implement these ideas: [Academics For
-Companies](http://www.afcleuven.be) is a non-profit organization, that aims to
+examples of efforts that try to implement these ideas: {% include external link="http://www.afcleuven.be" title="Academics For
+Companies" %} is a non-profit organization, that aims to
 incorporate actual experience in students' educational carrier. It's still a
 voluntary effort, but the ideas are a big step in the right direction. If this
 effort would be tightly integrated into the entire curriculum, this could

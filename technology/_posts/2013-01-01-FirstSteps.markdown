@@ -39,7 +39,7 @@ electronics. This means that I also will have to digg in and start reading until
 some pieces start falling into place.
 
 On the wonderful StackOverflow scene I found a page dealing with my exact 
-question, titled: [Basic Electronics Book](http://electronics.stackexchange.com/questions/616/basic-electronics-book).
+question, titled: {% include external link="http://electronics.stackexchange.com/questions/616/basic-electronics-book" title="Basic Electronics Book" %}.
 It lists some great books, but all of them are mainly references. From experience 
 I know that at this embryonic stage, one needs a book that is a bit easier to 
 read and reads more like a story with a specific point of view.
@@ -52,7 +52,7 @@ After some more searches I (once again) ended up at O'Reilly's.
   <img src="images/full/making_embedded_systems_cover.gif" alt="Making Embedded Systems">
 </div>
 
-The first book I took on was "[Making Embedded Systems](http://shop.oreilly.com/product/0636920017776.do)".
+The first book I took on was "{% include external link="http://shop.oreilly.com/product/0636920017776.do" title="Making Embedded Systems" %}".
 I think it was the right book to get me started from the world I came from, 
 looking at embedded systems from a software developer's point of view, while 
 introducing the hardware concepts pretty good.
@@ -64,7 +64,7 @@ LEDs.
 
 And although this book does indeed introduce many hardware aspects pretty nicely, 
 it also points out that it barely scratches the surface and therefore refers to 
-another (sister-) book "[Designing Embedded Hardware](http://shop.oreilly.com/product/9780596007553.do)", 
+another (sister-) book "{% include external link="http://shop.oreilly.com/product/9780596007553.do" title="Designing Embedded Hardware" %}", 
 one that I also already had found through other searches.
 
 ### Book 2 : Designing Embedded Hardware

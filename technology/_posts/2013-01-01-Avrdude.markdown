@@ -9,7 +9,7 @@ header:
 To handle the programmer when programming e.g. my [ATMEGA168](ATMEGA168.html),
 I use <tt>avrdude</tt>.
 
-* [avrdude Homepage](http://www.nongnu.org/avrdude/)
+* {% include external link="http://www.nongnu.org/avrdude/" title="avrdude Homepage" %}
 
 ## Using avrdude
 
@@ -147,7 +147,7 @@ avrdude done.  Thank you.
 {% endhighlight %}
 
 The content of <tt>low.txt</tt> contains information about the low fuse in
-[Intel Hex format](http://en.wikipedia.org/wiki/Intel_HEX) and requires a
+{% include external link="http://en.wikipedia.org/wiki/Intel_HEX" title="Intel Hex format" %} and requires a
 little interpretation.
 
 {% highlight console %}
@@ -227,4 +227,4 @@ avrdude: safemode: Fuses OK
 avrdude done.  Thank you.
 {% endhighlight %}
 
-* [avrdude Example Command Line Invocation](http://www.nongnu.org/avrdude/user-manual/avrdude_6.html)
+* {% include external link="http://www.nongnu.org/avrdude/user-manual/avrdude_6.html" title="avrdude Example Command Line Invocation" %}

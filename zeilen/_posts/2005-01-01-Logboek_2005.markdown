@@ -52,11 +52,11 @@ Na Kristien is het de beurt aan Else om voor de eerste keer mee op Waterproof pl
 
 En dan slaagt het onheil toe. Gelukkig zijn we reeds aan land wanneer de stuurboord bridle plate doorbreekt en de mast plots 1 vast punt minder heeft. Dit zoveelste voorval zet ons stilaan aan het denken dat we misschien best overwegen om Waterproof tijdig een nieuw onderkomen te bezorgen, voor de herstellingskosten te hoog oplopen en de restwaarde minder en minder wordt. Een aantal nieuwe boten liggen (min of meer) binnen de mogelijkheden:
 
-* my "wet" dream : [Capricorn](http://www.ahpc.com.au/Boats_CAPRICORN.html)
-* een logische opvolger : [Dart Hawk](http://www.mulder-catamarans.nl/DartHawk)
-* the outsider : [Hobie Tiger](http://www.hobiecat.nl/tiger.php)
-* the other outsiders : [Nacra F18](http://www.nacrasailing.com/index.php?option=com_content&view=article&catid=41:race&id=86:nacra-f18-infusion) of [Nacra Inter 18](http://www.catamaraninfo.nl/index.php/Nacra_Inter_18)
-* een andere golden oldy : [Mattia Flash](http://www.f18.nl/f18-class-mainmenu-10/f18-types/34-mattia.html)
+* my "wet" dream : {% include external link="http://www.ahpc.com.au/Boats_CAPRICORN.html" title="Capricorn" %}
+* een logische opvolger : {% include external link="http://www.mulder-catamarans.nl/DartHawk" title="Dart Hawk" %}
+* the outsider : {% include external link="http://www.hobiecat.nl/tiger.php" title="Hobie Tiger" %}
+* the other outsiders : {% include external link="http://www.nacrasailing.com/index.php?option=com_content&view=article&catid=41:race&id=86:nacra-f18-infusion" title="Nacra F18" %} of {% include external link="http://www.catamaraninfo.nl/index.php/Nacra_Inter_18" title="Nacra Inter 18" %}
+* een andere golden oldy : {% include external link="http://www.f18.nl/f18-class-mainmenu-10/f18-types/34-mattia.html" title="Mattia Flash" %}
 
 ## 2 juli - Kristel, Noor, Anniek en Ann
 

@@ -42,7 +42,7 @@ gallery-gent:
     title: "C3PO in actie"
 ---
 
-In het kader van het [C<sup>3</sup>PO - Collaborative City Co-design PlatfOrm](https://technologyea3.org/project/c3po.html) contacteerde [Studio Dott](http://studiodott.be) mij voor de ontwikkeling van een _interactieve luisterbox_.
+In het kader van het {% include external link="https://technologyea3.org/project/c3po.html" title="C<sup>3</sup>PO - Collaborative City Co-design PlatfOrm" %} contacteerde {% include external link="http://studiodott.be" title="Studio Dott" %} mij voor de ontwikkeling van een _interactieve luisterbox_.
 
 Aan de hand van deze luisterbox gaat Studio Dott participatieprojecten ondersteunen met een fysieke aanwezigheid in het straatbeeld. Inwoners van verschillende Belgische steden kunnen zo in een geautomatiseerd, interactief gesprek feedback geven over tal van onderwerpen, waarover het bestuur van hun woonplaats hun mening wil kennen.
 
@@ -62,13 +62,13 @@ Dankzij een online platform, is Studio Dott in staat om de gesprekken in real-ti
 
 Het hele systeem werkt autonoom. Diensten van de desbetreffende steden kunnen zo de box zelf in het straatbeeld plaatsen, terwijl Studio Dott op de hoogte wordt gehouden van alle gebeurtenissen. Alle aspecten van de Luisterbox kunnen op een veilige manier van op afstand aangepast worden. Zo biedt de Luisterbox veel meer mogelijkheden dan louter het opnemen van enkele antwoorden.
 
-De gesprekken worden online doorgestuurd naar de mensen van [Cropland](http://cropland.be). Zij zorgen voor de omzetting van de antwoorden naar tekst, waarna deze inhoudelijk kunnen verwerkt worden tot een overzichtelijk beeld van de mening van de gesprekpartners van de Luisterbox.
+De gesprekken worden online doorgestuurd naar de mensen van {% include external link="http://cropland.be" title="Cropland" %}. Zij zorgen voor de omzetting van de antwoorden naar tekst, waarna deze inhoudelijk kunnen verwerkt worden tot een overzichtelijk beeld van de mening van de gesprekpartners van de Luisterbox.
 
-Via Studio Dott: [Burgerparticipatie 2.0](http://studiodott.be/2017/06/participatie-paviljoen)
+Via Studio Dott: {% include external link="http://studiodott.be/2017/06/participatie-paviljoen" title="Burgerparticipatie 2.0" %}
 
 ## De straat op...
 
-Het prototype werd ingebouwd in een mooie en solide behuizing, ontworpen door Studio Dott, gebouwd door [Solution Group](http://solutiongroup.eu) en nu helemaal klaar voor veel leuke gesprekken.
+Het prototype werd ingebouwd in een mooie en solide behuizing, ontworpen door Studio Dott, gebouwd door {% include external link="http://solutiongroup.eu" title="Solution Group" %} en nu helemaal klaar voor veel leuke gesprekken.
 
 ![Ingebouwde versie](/makes/images/full/c3po-luisterbox/c3po-ingebouwd-operationeel.jpeg)
 
@@ -76,25 +76,25 @@ Vanaf de zomer tot het einde van van 2017 zal de Luisterbox van Studio Dott op v
 
 ### Lokatie 1: Schilde
 
-De primeur was voor [de bewoners van Schilde](http://www.schilde.be/uwmeningtelt), waar de Luisterbox tijdens de maand juni op verschillende plekken opgesteld werd en de bewoners ondervroeg over de toekomst van hun kerkplein.
+De primeur was voor {% include external link="http://www.schilde.be/uwmeningtelt" title="de bewoners van Schilde" %}, waar de Luisterbox tijdens de maand juni op verschillende plekken opgesteld werd en de bewoners ondervroeg over de toekomst van hun kerkplein.
 
 {% include gallery id="gallery-schilde" %}
 
 #### In de pers
 
-* [GVA - Dag en nacht ideeën spuien over Kerkplein in rondreizende Luisterbox](http://www.gva.be/cnt/dmf20170530_02904369/dag-en-nacht-ideeen-spuien-over-kerkplein-in-rondreizende-luisterbox)
-* [GVA - Brainstormen over toekomst van Kerkplein](http://www.gva.be/cnt/bljau_02914735/brainstormen-over-toekomst-van-kerkplein)
-* [Nieuwsblad - Luisterbox klaar voor inspraaktournee](http://www.nieuwsblad.be/cnt/dmf20170602_02909876)
+* {% include external link="http://www.gva.be/cnt/dmf20170530_02904369/dag-en-nacht-ideeen-spuien-over-kerkplein-in-rondreizende-luisterbox" title="GVA - Dag en nacht ideeën spuien over Kerkplein in rondreizende Luisterbox" %}
+* {% include external link="http://www.gva.be/cnt/bljau_02914735/brainstormen-over-toekomst-van-kerkplein" title="GVA - Brainstormen over toekomst van Kerkplein" %}
+* {% include external link="http://www.nieuwsblad.be/cnt/dmf20170602_02909876" title="Nieuwsblad - Luisterbox klaar voor inspraaktournee" %}
 
 ### Lokatie 2: 
 
-Tijdens de zomermaanden verhuisde de Luisterbox naar Gent, waar hij met de bewoners van de wijk [Muide Meulestede Morgen](https://stad.gent/mmm/nieuws-evenementen/zeg-uw-gedacht-over-de-marseillestraat) in gesprek gaat over de mobiliteit en de algemene toekomst van de omgeving.
+Tijdens de zomermaanden verhuisde de Luisterbox naar Gent, waar hij met de bewoners van de wijk {% include external link="https://stad.gent/mmm/nieuws-evenementen/zeg-uw-gedacht-over-de-marseillestraat" title="Muide Meulestede Morgen" %} in gesprek gaat over de mobiliteit en de algemene toekomst van de omgeving.
 
 {% include gallery id="gallery-gent" %}
 
 #### In de pers
 
-* [HLN - Luisterbox peilt naar mening bewoners](http://www.hln.be/regio/nieuws-uit-gent/-wij-raken-rust-in-onze-wijk-kwijt-a3239490/)
+* {% include external link="http://www.hln.be/regio/nieuws-uit-gent/-wij-raken-rust-in-onze-wijk-kwijt-a3239490/" title="HLN - Luisterbox peilt naar mening bewoners" %}
 
 ## Bedankt!
 

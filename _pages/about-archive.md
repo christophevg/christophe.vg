@@ -12,8 +12,8 @@ architecture, about doing the right thing in the right way.
 
 Professional might be an understatement, because in my not so copious spare
 time I also tend to enjoy the company of my MacBooks to work on some fun
-project. Most of these are available in the open through my [GitHub
-repositories](http://github.com/christophevg).
+project. Most of these are available in the open through my {% include external link="http://github.com/christophevg" title="GitHub
+repositories" %}.
 
 In 2011, at the age of 37, I decided to return to full time studying at the
 University of Leuven, seizing the moment to take a step back and try to find a
@@ -22,7 +22,7 @@ it became apparant that [embedded systems](/technology) seemed to lure me their
 way. The hardware world became a very important counter-part to my interest in software.
 
 But, there is more than [computers](/technology) in my life. My daughter
-[Eline](http://eline.vg) and son [Arjen](http://arjen.vg) really brighten up
+{% include external link="http://eline.vg" title="Eline" %} and son {% include external link="http://arjen.vg" title="Arjen" %} really brighten up
 every day of my life. [Cooking](/koken), [digital photography](/fotografie) and
 [catamaran sailing](/zeilen) complete the initial picture of my world. Each of
 these have their own section on this site and contain information at various

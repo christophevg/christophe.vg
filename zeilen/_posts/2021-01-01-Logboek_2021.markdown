@@ -1,18 +1,56 @@
 ---
 title: Logboek 2021
+thumbs:
+  files:
+    tour-du-zoute:
+      title: Tour du Zoute
+    fin-de-saison-en-noir:
+      title: Fin de saison en noire
+    two-friends-on-the-beach:
+      title: Two friends on the beach
+    papys-race-3:
+      title: Zeebrugge zonsondergang
+    papys-race-2:
+      title: Boosui up close & personal
+    papys-race-1:
+      title: Boosui up close & personal
+    kids-sessie-2-3:
+      title: 3 VGs sailing
+    kids-sessie-2-2:
+      title: stuurman
+    kids-sessie-2-1:
+      title: pre sessie 2
+    kids-sessie-1-2:
+      title: geconcentreerd
+    kids-sessie-1-1:
+      title: pre sessie 1
+    post-zwin-race:
+      title: post zwin race
+    bijna-bijna:
+      title: bijna ... bijna
+    zeilstage-dag-1:
+      title: zeilstage dag 1
+    zomer-voorbereiden:
+      title: zomer voorbereiden
+    opruimen-klaarmaken:
+      title: opruimen en klaarmaken
+    look-whos-back:
+      title: look who's back
+    diy-sleepdienst:
+      title: DIY sleepdienst
+    goodmorning-sunshine:
+      title: good morning sunshine
+    coming-home:
+      title: coming home
 ---
 
 ## 30 oktober - Boo zzzz ui
 
-{% include image name="tour-du-zoute" title="Tour du Zoute" %}
-
-{% include image name="fin-de-saison-en-noir" title="Fin de saison en noire" %}
-
-{% include image name="two-friends-on-the-beach" title="Two friends on the beach" %}
+{% include thumbs show="two-friends-on-the-beach,fin-de-saison-en-noir,tour-du-zoute" %}
 
 En zoals elk seizoen komt er ook een einde aan dit. Met 2 zeilsessies met de kids en 3 wedstrijden was 2021 in Boosui termen een druk en succesvol jaar.
 
-Mieke en Mark waren zo vriendelijk om ons catje een droge plek voor de winter te geven - vooral met dank aan Andreas! Samen de hangar opruimen, nadien de boot aftuigen en droog van strand halen was leuk, maar niets vergeleken met het rondtoeren in de winkelstraten van Knokke en 't Zoute ;-)
+Mieke en Mark waren zo vriendelijk om ons catje een droge plek voor de winter te geven - vooral met dank aan Andreas! Samen de hangar opruimen, nadien de boot aftuigen en droog van strand halen was leuk, maar niets vergeleken met het rondtoeren in de winkelstraten van Knokke en 't Zoute 😉
 
 Tot binnen 6 maanden !
 
@@ -30,11 +68,7 @@ Even een zorg die we parkeren naar volgend jaar.
 
 ## 14 augustus - Papy's Race
 
-{% include image name="papys-race-3" title="Zeebrugge zonsondergang" %}
-
-{% include image name="papys-race-2" title="Boosui up close & personal" %}
-
-{% include image name="papys-race-1" title="Boosui up close & personal" %}
+{% include thumbs show="papys-race-1,papys-race-2,papys-race-3" %}
 
 Een zomer om snel te vergeten, toch wanneer je niets met zeilen hebt. Ondanks deze miserabele zomer, blijven we de ene na de andere prachtige zeildag noteren. Nadat we al op 21 juli dachten de beste dag van het seizoen gehad te hebben, werd 14 augustus op meerdere vlakken een nog veel beter dag.
 
@@ -56,19 +90,13 @@ Voor mij was het even of ik opnieuw 18 was, op een BBQ in Duinbergen, na een zon
 
 ## 11 augustus - Kids sessie 2
 
-{% include image name="kids-sessie-2-3" title="3 VGs sailing" %}
-
-{% include image name="kids-sessie-2-2" title="stuurman" %}
-
-{% include image name="kids-sessie-2-1" title="pre sessie 2" %}
+{% include thumbs show="kids-sessie-2-1,kids-sessie-2-2,kids-sessie-2-3" %}
 
 Na een gesmaakte eerste sessie vorige week, biedt er zich alweer een mooie zeildag aan. Met nog aardig wat wind kiezen we het sop. Na anderhalf uur luwt de wind een beetje en kiezen we voor een rustige landing en wat apéro-time op de club ;-)
 
 ## 3 augustus - Kids sessie 1
 
-{% include image name="kids-sessie-1-2" title="geconcentreerd" %}
-
-{% include image name="kids-sessie-1-1" title="pre sessie 1" %}
+{% include thumbs show="kids-sessie-1-1,kids-sessie-1-2" %}
 
 Een dikke maand na de eerste ervaring op de zeilstage belooft deze dinsdag een prachtige zeildag te worden. 2-3 beaufort, ideaal om iedereen eens aan het roer te laten.
 
@@ -80,7 +108,7 @@ De test of dit leuk kan zijn om verder te zetten de komende jaren lijkt alvast p
 
 ## 21 juli - Zwin Race
 
-{% include image name="post-zwin-race" title="post zwin race" %}
+{% include thumbs show="post-zwin-race" %}
 
 Statistisch gezien was dit die éné ultieme zeildag van een Belgisch zeilseizoen. Beter kan je ze niet krijgen. Een rustig windje, warm genoeg om zelf een shorty te moeten boven halen. 
 
@@ -92,9 +120,7 @@ Dit was trouwens de 10e dag dat ik met Boosui op het water ging ... op 13 jaar ;
 
 ## 12 juli - Bijna ... bijna ...
 
-{% include image name="bijna-bijna" title="bijna ... bijna" %}
-
-{% include image name="zeilstage-dag-1" title="zeilstage dag 1" %}
+{% include thumbs show="zeilstage-dag-1,bijna-bijna" %}
 
 Terwijl E & A hun eerste (dobberende) stage dag aanvatten, maak ik Boosui helemaal klaar, tuig ik op en na wat sukkelen met mijn zwemvest, kan ik ook het ruime sop kiezen.
 
@@ -112,7 +138,7 @@ Fingers nog meer crossed voor twee mooie weken in augustus...
 
 ## 27 juni - Zomer voorbereiden
 
-{% include image name="zomer-voorbereiden" title="zomer voorbereiden" %}
+{% include thumbs show="zomer-voorbereiden" %}
 
 Met de zomervakantie in aantocht wordt het tijd dat ik de nodige zeillessen voor de kids ga boeken. Terwijl ik dacht nog wel op tijd te zijn voor augustus, was niets minder waar. Nathalie, verantwoordelijke voor de zeilschool, slaat mijn plan om twee weken in augustus naar zee te komen aan diggelen. Geen plek meer in augustus.
 
@@ -122,19 +148,15 @@ Epiloog: dat lukte, en zo gaan we de week van 12 juli naar zee voor een zeilstag
 
 ## 30 mei - Opruimen en klaarmaken
 
-{% include image name="opruimen-klaarmaken" title="opruimen en klaarmaken" %}
+{% include thumbs show="opruimen-klaarmaken" %}
 
 Een weekje later heb ik een vrije zondag en breng ik die wat graag door op het strand om alles verder op te ruimen, een staat op te maken, shopping lijst samen te stellen, ... kortom alles verder klaarmaken om zo snel mogelijk te kunnen gaan zeilen.
 
-Wanneer we op zoek gaan naar L'Aperçu, de winkel van [Catacare](https://www.catacare.be) in Duinbergen, ontdek ik dat er op 500m van de RBSC beach club, een nieuwe beach club is: [Anemos](https://www.anemos.be).
+Wanneer we op zoek gaan naar L'Aperçu, de winkel van {% include external link="https://www.catacare.be" title="Catacare" %} in Duinbergen, ontdek ik dat er op 500m van de RBSC beach club, een nieuwe beach club is: {% include external link="https://www.anemos.be" title="Anemos" %}.
 
 ## 23 mei - Boosui is back bitches
 
-{% include image name="look-whos-back" title="look who's back" %}
-
-{% include image name="diy-sleepdienst" title="DIY sleepdienst" %}
-
-{% include image name="goodmorning-sunshine" title="good morning sunshine" %}
+{% include thumbs show="goodmorning-sunshine,diy-sleepdienst,look-whos-back" %}
 
 Zoals afgesproken, staan Mark & Mieke, Arjen en ik zelf op zondag 23 mei op het strand, mét Boosui.
 
@@ -144,7 +166,7 @@ Fingers crossed ;-)
 
 ## 15 april - Een beetje thuiskomen
 
-{% include image name="coming-home" title="coming home" %}
+{% include thumbs show="coming-home" %}
 
 De afgelopen drie jaar stonden in het teken van nogal wat veranderingen. De kinderen zijn ondertussen 10 en 14. Als ik alles optel kom ik tot een eenvoudige conclusie: OF we gaan verder met zeilen OF niet. De enige manier waarop ik hiermee verder kan is indien de kids het ook zo leuk vinden als ik, zodat we de komende jaren minstens enkele dagen (weken?) van onze zomervakantie  er aan willen spenderen.
 

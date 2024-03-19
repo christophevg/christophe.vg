@@ -2,7 +2,7 @@
 title: Kip Tikka Masala
 ---
 
-Mijn voorliefde voor curries is nooit echt aangeslagen bij de kids, echter deze vereenvoudigde versie van [Kip Tikka Masala door Jeroen](https://dagelijksekost.een.be/gerechten/kip-tikka-masala) was een succes 🙌
+Mijn voorliefde voor curries is nooit echt aangeslagen bij de kids, echter deze vereenvoudigde versie van {% include external link="https://dagelijksekost.een.be/gerechten/kip-tikka-masala" title="Kip Tikka Masala door Jeroen" %} was een succes 🙌
 
 ## ingrediënten
 

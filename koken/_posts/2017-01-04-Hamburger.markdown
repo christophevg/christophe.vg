@@ -10,7 +10,7 @@ Een hamburger, volledig vers gemaakt,... dat smaakt ;-)
 ## ingrediënten
 
 * Voor de broodjes:
-  * 500g bloem [Frans krokant brood van Aveve](https://avevewinkels.be/Producten/Detail/bakken/brood/classics/frans-krokant/0fa66)
+  * 500g bloem {% include external link="https://avevewinkels.be/Producten/Detail/bakken/brood/classics/frans-krokant/0fa66" title="Frans krokant brood van Aveve" %}
   * 320ml water
   * 11g droge gist
   * 40ml olijfolie

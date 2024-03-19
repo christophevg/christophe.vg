@@ -12,7 +12,7 @@ Het was een kort (als in weinig zeildagen) seizoen, maar hevig. Elke keer was we
 
 Na ongeveer 14 jaar sta ik opnieuw aan de start van de Eurocats. Daar waar er 14 jaar geleden in Oostende veel te veel wind was, is de wind vandaag gewoonweg niet aanwezig. De voorspellingen tijdens de week waren 1-2-1 beaufort, volgens de meteo 2-3 beaufort en op de schaal van Van Ginneken is er voor de hele dag "geen scheet wind". In principe moet deze wedstrijd afgelast worden, of ten minste verschoven worden naar een reservedag (zondag?).
 
-Om 13.15 wordt het signaal gegeven dat binnen 30 minuten gestart wordt. Om 14.15 begint een startprocedure van 5 minuten die 6 minuten duurt ;-) bij amper een zuchtje wind. Na 1,5 uur dobberen is het duidelijk, we gaan met zijn allen meer achteruit dan vooruit. Mark en ik vinden het leuk geweest, en proberen naar de kant te dobberen. De stroming brengt ons dubbel zover weg als we al gekomen waren. Vlak voordat we beslissen op welke beachclub we gaan landen komt er net genoeg wind op om op eigen kracht [VVW Heist](http://www.vvwheist.be) te bereiken. Aftuigen en wegwezen. Volgend jaar beter.
+Om 13.15 wordt het signaal gegeven dat binnen 30 minuten gestart wordt. Om 14.15 begint een startprocedure van 5 minuten die 6 minuten duurt ;-) bij amper een zuchtje wind. Na 1,5 uur dobberen is het duidelijk, we gaan met zijn allen meer achteruit dan vooruit. Mark en ik vinden het leuk geweest, en proberen naar de kant te dobberen. De stroming brengt ons dubbel zover weg als we al gekomen waren. Vlak voordat we beslissen op welke beachclub we gaan landen komt er net genoeg wind op om op eigen kracht {% include external link="http://www.vvwheist.be" title="VVW Heist" %} te bereiken. Aftuigen en wegwezen. Volgend jaar beter.
 
 ## 24 juli 2006 - Manu @ the beach, the sequel
 
@@ -74,4 +74,4 @@ Er zijn al een goede 200 cats ingeschreven voor Texel. Na een korte navraag op h
 
 ## 1 maart - Inschrijving Texel 2006
 
-Fanatiek als we aan ons seizoen beginnen zijn we alvast als eerste ingeschreven voor de [grootse catamaranrace van de wereld](http://www.rondeomtexel.nl), na een zekere Test Tester. We gaan dit jaar opnieuw met de Dart en deze keer gaan we hopelijk het water op. We gaan in ieder geval al beter voorbereid zijn, dus hopelijk maken we alvast de start mee. Nog 107 dagen te gaan voor weer enkele onvergetelijke dagen ... off course met super-fokkemaat MVM.
+Fanatiek als we aan ons seizoen beginnen zijn we alvast als eerste ingeschreven voor de {% include external link="http://www.rondeomtexel.nl" title="grootse catamaranrace van de wereld" %}, na een zekere Test Tester. We gaan dit jaar opnieuw met de Dart en deze keer gaan we hopelijk het water op. We gaan in ieder geval al beter voorbereid zijn, dus hopelijk maken we alvast de start mee. Nog 107 dagen te gaan voor weer enkele onvergetelijke dagen ... off course met super-fokkemaat MVM.

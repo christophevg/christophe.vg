@@ -1,0 +1,1 @@
+<a href="{{ include.link }}" target="_blank" rel="noreferrer">{{ include.title | default: include.link }}</a> ↗

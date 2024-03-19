@@ -57,9 +57,9 @@ This allows me to simply plug in the connector from the adapter.
 
 ## The 3V Circuit
 
-While designing my first [mote](XT0F-003.html), I wanted to use a [LIPO battery of
-3.7V with 1400mAh](https://www.olimex.com/Products/Power/BATTERY-LIPO1400mAh/).
+While designing my first [mote](XT0F-003.html), I wanted to use a {% include external link="https://www.olimex.com/Products/Power/BATTERY-LIPO1400mAh/" title="LIPO battery of
+3.7V with 1400mAh" %}.
 My design required 3.3V, so I had to create a drop. With a little help from a
-[friend](http://aitec.be), I found the
-[MCP1700](http://www.microchip.com/wwwproducts/Devices.aspx?dDocName=en010642),
+{% include external link="http://aitec.be" title="friend" %}, I found the
+{% include external link="http://www.microchip.com/wwwproducts/Devices.aspx?dDocName=en010642" title="MCP1700" %},
 which perfectly fitted my requirements.

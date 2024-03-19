@@ -4,7 +4,7 @@ title: Logboek 2007
 
 ## 17 november 2007 - surprise, surprise, surprise, ...
 
-Wat ik niet meer voor mogelijk had gehouden is vandaag door Remco waargemaakt. Met een schitterende overnameprijs voor Waterproof en een sterke basisprijs wist hij mij het aanbod te doen dat ik niet kon afslaan. Volgend jaar zeilen Mark en ik op de enige echte [Capricorn F18](http://www.ahpc.com.au/Boats_CAPRICORN.html) catamaran from down under! Het moeilijkste tot nu toe was het kiezen van de juiste kleuren. Het werd natuurlijk een smoke grootzeil en fok, voorzien van een rode spi.
+Wat ik niet meer voor mogelijk had gehouden is vandaag door Remco waargemaakt. Met een schitterende overnameprijs voor Waterproof en een sterke basisprijs wist hij mij het aanbod te doen dat ik niet kon afslaan. Volgend jaar zeilen Mark en ik op de enige echte {% include external link="http://www.ahpc.com.au/Boats_CAPRICORN.html" title="Capricorn F18" %} catamaran from down under! Het moeilijkste tot nu toe was het kiezen van de juiste kleuren. Het werd natuurlijk een smoke grootzeil en fok, voorzien van een rode spi.
 
 Na een aanbetaling, begint het lange wachten. In tussentijd zijn we gelukkig zoet met het zoeken van een waardige opvolger voor de naam Waterproof, kunnen we aan onze conditie werken en hebben we tijd om de F18 klasse te leren kennen. Volgend jaar waarschijnlijk geen Texel met zo'n nieuwe boot, maar veel leerzame uren op het water en afscheid van een trouwe vriend. Na 16 jaar gaan onze vaarroutes scheiden. Brrr, het doet nu al vies aan.
 
@@ -16,10 +16,10 @@ Ook al zal het logboek dit jaar vrij leeg blijven, toch maar naar goede gewoonte
 
 Na drie jaar betalend lidmaatschap kunnen Kristien en ik ons dit jaar kandidaat stellen om effectief lid te worden van de vzw Sycod. Dat lidmaatschap wordt vandaag bekrachtigd op de algemene vergadering. Elk huisje heeft zijn kruisje, en Sycod is daar duidelijk geen uitzondering op. Blijkbaar waren de ontwikkelingen van de laatste tijd nog niet bij iedereen verwerkt en het durfde er soms "geambieerd" aan toe te gaan ;-) Aaahh ... club-life.
 
-Luc en de andere catamaran zeilers maken dit jaar opnieuw plannen om naar Texel te gaan, dus zal ik onze jaarlijkse reservatie in hotel de [Strandplevier](http://www.strandplevier.nl) moeten annuleren.
+Luc en de andere catamaran zeilers maken dit jaar opnieuw plannen om naar Texel te gaan, dus zal ik onze jaarlijkse reservatie in hotel de {% include external link="http://www.strandplevier.nl" title="Strandplevier" %} moeten annuleren.
 
 ## 15 maart 2007 - Inschrijving Texel 2007
 
-Na drie jaar wordt het een kleine traditie... Ook dit jaar start het seizoen met een inschrijving voor de 30ste [Ronde om Texel](http://roundtexel.com).
+Na drie jaar wordt het een kleine traditie... Ook dit jaar start het seizoen met een inschrijving voor de 30ste {% include external link="http://roundtexel.com" title="Ronde om Texel" %}.
 
-In tegenstelling tot vorig jaar waren we niet bij de eerste om in te schrijven. Een [klein wondertje](http://eline.vg ) zat daar voor iets tussen ;-) Mijn prioriteiten liggen duidelijk elders de laatste tijd.
+In tegenstelling tot vorig jaar waren we niet bij de eerste om in te schrijven. Een {% include external link="http://eline.vg " title="klein wondertje" %} zat daar voor iets tussen ;-) Mijn prioriteiten liggen duidelijk elders de laatste tijd.

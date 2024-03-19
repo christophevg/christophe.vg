@@ -4,6 +4,15 @@ tags: avr
 header:
   teaser: /makes/images/thumb/xt0f/xt0f-003-rev1.jpg
   image: /makes/images/header/xt0f-003-rev1.jpg
+folder: xt0f
+images:
+  files:
+    xt0f-003-rev1:
+      kind: jpg
+      title: Revision 1 with battery mounted at the bottom design bottom
+    xt0f-003-rev1-bottom:
+      kind: jpg
+      title: Revision 1 through-hole
 ---
 
 In 2012 I was introduced to Wireless Sensor Networks (WSN) and it didn't take
@@ -22,7 +31,7 @@ was implemented using the very complete [XBee](/technology/XBee.html) module. An
 [ATMEGA328](/technology/ATMEGA168.html) was added to steer all functionality. Finally, a
 1700mAh LIPO battery should allow the node to run at least 5 days - which was
 the initial goal when taking the project to the
-[OpenGarage](http://opengarage.org) Village at OHM2013.
+{% include external link="http://opengarage.org" title="OpenGarage" %} Village at OHM2013.
 
 ## Bill Of Material
 
@@ -31,7 +40,7 @@ the initial goal when taking the project to the
 * 1 TSL252R light sensor
 * 1 AD22103 temperature sensor
 * 1 MCP1700 3V regulated power supply
-* 1 [1700mAh LIPO battery](https://www.olimex.com/Products/Power/BATTERY-LIPO1400mAh/) with additional female connector
+* 1 {% include external link="https://www.olimex.com/Products/Power/BATTERY-LIPO1400mAh/" title="1700mAh LIPO battery" %} with additional female connector
 * 4 5mm LEDs for visual verification of functioning
 * 1 pushbutton
 * 5 100nF capacitors
@@ -40,10 +49,10 @@ the initial goal when taking the project to the
 # Software
 
 Details about the software can be found on each of the components' own pages.
-All source code is available in my public [embedded GitHub
-repository](https://github.com/christophevg/embedded/). The main.c, using the
+All source code is available in my public {% include external link="https://github.com/christophevg/embedded/" title="embedded GitHub
+repository" %}. The main.c, using the
 other reusable components' code from that repository, is located in the
-[xt0f-003](https://github.com/christophevg/embedded/tree/master/xt0f-003)
+{% include external link="https://github.com/christophevg/embedded/tree/master/xt0f-003" title="xt0f-003" %}
 directory.
 
 The software has a loop that gets all sensor values and then puts everything to
@@ -63,8 +72,8 @@ the mote only required 0.07mA (or 70&mu;A), resulting in an average current of
 Currently the software for the node is functional, but the readings are off.
 The power supply level reading is way off and the sensor readings seem to be
 consistently too low. I think it has to do with the way I'm reading values from
-the ADC, which is implemented in the [generic AVR
-code](https://github.com/christophevg/embedded/tree/master/avr). So I'll try to
+the ADC, which is implemented in the {% include external link="https://github.com/christophevg/embedded/tree/master/avr" title="generic AVR
+code" %}. So I'll try to
 solve it there. Once this is fixed, the node will probably operate as expected.
 
 # Hardware
@@ -81,14 +90,7 @@ module. This is reflected in the circuit design below:
 
 Operational on a breadboard, it looks like this ...
 
-<div class="thumb circuit left">
-  <a href="/makes/images/full/xt0f/xt0f-003-breadboard.jpg" target="_blank">
-    <img src="/makes/images/thumb/xt0f/xt0f-003-breadboard.jpg"><br>
-    breadboard design (in front)
-  </a>
-</div>
-
-<br clear="both">
+{% include image name="xt0f-003-breadboard" title="Breadboard design (in front)" kind="jpg" %}
 
 ## Revision 1 - aka the OHM revision
 
@@ -103,34 +105,11 @@ layout all the connections without crossings. Those were then created using
 solid wires with their coating still on. Those connections are shown in orange
 on the circuit.
 
-<div class="thumb circuit left">
-  <a href="/makes/images/full/xt0f/xt0f-003-rev1.png" target="_blank">
-    <img src="/makes/images/thumb/xt0f/xt0f-003-rev1.png"><br>
-    revision 1 through-hole design
-  </a>
-</div>
+{% include image name="xt0f-003-rev1" title="Revision 1 through-hole design" kind="png" %}
 
-<br clear="both">
+### Status: Implemented
 
-### Status
-
-Implemented
-
-<div class="thumb circuit left">
-  <a href="/makes/images/full/xt0f/xt0f-003-rev1.jpg" target="_blank">
-    <img src="/makes/images/thumb/xt0f/xt0f-003-rev1.jpg"><br>
-    revision 1 with battery mounted at the bottom
-  </a>
-</div>
-
-<div class="thumb circuit left">
-  <a href="/makes/images/full/xt0f/xt0f-003-rev1-bottom.jpg" target="_blank">
-    <img src="/makes/images/thumb/xt0f/xt0f-003-rev1-bottom.jpg"><br>
-    revision 1 through-hole design bottom
-  </a>
-</div>
-
-<br clear="both">
+{% include images show="xt0f-003-rev1,xt0f-003-rev1-bottom" %}
 
 While (finally) documenting all this, I noticed that I had made an error in the
 implementation. Apparently, I wrongly connected the pull-up resistor to GND in
@@ -154,14 +133,7 @@ other at the same height as the XBee. Adding all LEDs and sensors to that
 secondary board, would also bring all external components to the same level,
 which would allow for a better casing design.
 
-<div class="thumb circuit left">
-  <a href="/makes/images/full/xt0f/xt0f-003-rev2.png" target="_blank">
-    <img src="/makes/images/thumb/xt0f/xt0f-003-rev2.png"><br>
-    revision 2 multi-board through-hole design
-  </a>
-</div>
-
-<br clear="both">
+{% include image name="xt0f-003-rev2" title="Revision 2 multi-board through-hole design" kind="png" %}
 
 The two board are connected using seven wires, connected on both boards to
 headers. The pad shows the part that could be cut from the top board to make
@@ -174,9 +146,7 @@ each other using threaded rods and nuts.
 
 But ...
 
-### Status
-
-Not implemented.
+### Status: Not implemented.
 
 Although a very good idea, the design didn't live up to the expectations and
 while designing it, I came up with a variation on it and therefore I abandoned
@@ -191,6 +161,4 @@ of male and female headers. A bit like a plug-in board for the MCU's base board.
 This idea continued to grow and evolved towards a multi-board construction
 around the XBee stack.
 
-### Status
-
-To be designed ... some day :-)
+### Status: To be designed ... some day :-)

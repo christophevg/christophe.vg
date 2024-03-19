@@ -6,7 +6,7 @@ header:
 tags: veggie
 ---
 
-Een ontdekking op onze meest recente ski-trip naar Oostenrijk: Kaiserschmarrn. Op basis van [een recept van Mr. Jerre himself](https://dagelijksekost.een.be/gerechten/kaiserschmarrn), een iets kleinere versie met iets minder suiker van yours truely - met dank aan een kokende voornaamgenoot voor enkele waardevolle tips ;-)
+Een ontdekking op onze meest recente ski-trip naar Oostenrijk: Kaiserschmarrn. Op basis van {% include external link="https://dagelijksekost.een.be/gerechten/kaiserschmarrn" title="een recept van Mr. Jerre himself" %}, een iets kleinere versie met iets minder suiker van yours truely - met dank aan een kokende voornaamgenoot voor enkele waardevolle tips ;-)
 
 ## ingrediënten
 

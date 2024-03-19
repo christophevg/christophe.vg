@@ -48,7 +48,7 @@ Ondertussen zijn de nieuwe sloten ook toegekomen. Perfect timing. Dank u [http:/
 
 ## 17 juli 2016 - Ja, ja ... j.... neeen!
 
-Eindelijk zijn we terug aan zee geraakt. Nieuwe palen in de koffer. Na een bezoekje aan [Westdiep](http://www.westdiep.com), ook nog 25m nieuwe (zwarte) "rekkers". Alles is klaar om Boosui in orde te maken voor een eerste zeiltochtje. Ook de weersverwachtingen zien er beloftevol uit. Het zit eens mee.
+Eindelijk zijn we terug aan zee geraakt. Nieuwe palen in de koffer. Na een bezoekje aan {% include external link="http://www.westdiep.com" title="Westdiep" %}, ook nog 25m nieuwe (zwarte) "rekkers". Alles is klaar om Boosui in orde te maken voor een eerste zeiltochtje. Ook de weersverwachtingen zien er beloftevol uit. Het zit eens mee.
 
 Ook op het strand aangekomen, blijkt er ook geen zand-ravage te zijn en moeten we cat noch zeilbak onder het zand vandaan scheppen. Het zit eens mee.
 
@@ -58,7 +58,7 @@ Tijd om aan het vervangen van de "rekkers" te beginnen... tot dat Kristien een p
   <a href="images/full/naked-boosui.jpeg" title="Naked Boosui"><img src="images/thumb/naked-boosui.jpeg" width="100" height="75" alt="Naked Boosui"></a>
 </div>
 
-Volgens beachmaster Dominique kan men ons in [Fly High Sports](http://www.flyhighsports.eu) hier wel mee helpen. Ook, tijd om de trampoline te demonteren. Na letterlijk veel trekken en veel teflon spray, hebben we ze er uit gekregen. Net op tijd om ze nog binnen te brengen in de shop. Morgen rond 10u weten we meer, als Carl in de winkel is en er naar kan kijken. Fingers crossed.
+Volgens beachmaster Dominique kan men ons in {% include external link="http://www.flyhighsports.eu" title="Fly High Sports" %} hier wel mee helpen. Ook, tijd om de trampoline te demonteren. Na letterlijk veel trekken en veel teflon spray, hebben we ze er uit gekregen. Net op tijd om ze nog binnen te brengen in de shop. Morgen rond 10u weten we meer, als Carl in de winkel is en er naar kan kijken. Fingers crossed.
 
 ## 8 mei 2016 - Meetfoutje
 
@@ -78,7 +78,7 @@ Gelukkig verlopen de andere taken wel vlot en ligt Boosui al snel, naast enkele 
 
 Volgende keer... optuigen ... en zeilen (?!)
 
-## 4 mei 2016 - [And so we're Back](https://youtu.be/ZBR2G-iI3-I)
+## 4 mei 2016 - {% include external link="https://youtu.be/ZBR2G-iI3-I" title="And so we're Back" %}
 
 <div class="thumb right">
   <a href="images/full/boosui_is_back.jpeg" title="Boosui is back"><img src="images/thumb/boosui_is_back.jpeg" width="100" height="75" alt="Boosui is back"></a>

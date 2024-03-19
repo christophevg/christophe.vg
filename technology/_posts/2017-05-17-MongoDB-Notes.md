@@ -85,7 +85,7 @@ switched to db c3po
 
 
 References:
-* [https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/)
-* [https://docs.mongodb.com/manual/tutorial/enable-authentication/](https://docs.mongodb.com/manual/tutorial/enable-authentication/)
-* [https://serverfault.com/questions/690284/mongodb-config-file-option-for-authentication](https://serverfault.com/questions/690284/mongodb-config-file-option-for-authentication)
-* [http://stackoverflow.com/questions/8495293/whats-a-clean-way-to-stop-mongod-on-mac-os-x](http://stackoverflow.com/questions/8495293/whats-a-clean-way-to-stop-mongod-on-mac-os-x)
+* {% include external link="https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/" title="https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/" %}
+* {% include external link="https://docs.mongodb.com/manual/tutorial/enable-authentication/" title="https://docs.mongodb.com/manual/tutorial/enable-authentication/" %}
+* {% include external link="https://serverfault.com/questions/690284/mongodb-config-file-option-for-authentication" title="https://serverfault.com/questions/690284/mongodb-config-file-option-for-authentication" %}
+* {% include external link="http://stackoverflow.com/questions/8495293/whats-a-clean-way-to-stop-mongod-on-mac-os-x" title="http://stackoverflow.com/questions/8495293/whats-a-clean-way-to-stop-mongod-on-mac-os-x" %}

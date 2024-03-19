@@ -1,10 +1,44 @@
 ---
 title: Logboek 2023
+thumbs:
+  files:
+    08-12-21-1:
+      title: 15 jaar geleden...
+    23-12-09-2:
+      title: Full Monty
+    23-12-09-1:
+      title: Ik ben blijkbaar een brave jongen geweest dit jaar 😋
+    23-10-14-3:
+      title: ...lekker ingeduffeld in het bos.
+    23-10-14-2:
+      title: ...naar huis...
+    23-10-14-1:
+      title: Van het strand...
+    23-09-09:
+      title: Toch nog ☺️
+    23-07-08-2:
+      title: Gaatje 🥺
+    23-07-08-1:
+      title: Best of friends
+    23-06-24-2:
+      title: Fun... 😎
+    23-06-24-1:
+      title: Perfect day
+    start-23-strand:
+      title: ...naar het strand
+    start-23-bos:
+      title: Van het bos...
+    start-23-ready:
+      title: All ready to sail
+    start-23-graven:
+      title: Beetje graven
+    start-23-negroni:
+      title: Tempation waits 
 ---
 
 ## 9 december - Almost 15 years in the making...
 
-{% include image name="08-12-21-1" title="15 jaar geleden..." %}
+{% include thumbs name="08-12-21-1" %}
 
 _"Misschien niet meer deze winter,  
 maar in 2009 gaan we er toch wel eentje aanschaffen."_
@@ -13,9 +47,7 @@ Met die gevleugelde woorden sloot ik destijds het zeilseizoen van [2008](Logboek
 
 Echter, enkele weken geleden, kwam het plots weer in me op, dat ik ooit eens in een Blokart gezeten had, en het gevoel dat ik toen had sloeg opnieuw in als een bommetje.
 
-{% include image name="23-12-09-2" title="Full Monty" %}
-
-{% include image name="23-12-09-1" title="Ik ben blijkbaar een brave jongen geweest dit jaar 😋" %}
+{% include thumbs show="23-12-09-1,23-12-09-2" %}
 
 Ik ben blijkbaar een brave jongen geweest, want de lieve Sint en zijn zwarte piet hebben na 15 jaar eindelijk mijn schoorsteen gevonden...
 
@@ -27,11 +59,7 @@ The season isn't over... Stay tuned... 😇
 
 ## 14 oktober - This is the end, my sailing friend,...
 
-{% include image name="23-10-14-3" title="...lekker ingeduffeld in het bos." %}
-
-{% include image name="23-10-14-2" title="...naar huis..." %}
-
-{% include image name="23-10-14-1" title="van het strand..." %}
+{% include thumbs show="23-10-14-1,23-10-14-2,23-10-14-3" %}
 
 En net zoals ik Boosui aan het begin van het seizoen solo naar het strand bracht, breng ik hem vandaag ook fijntjes gewoon zelf weer naar huis.
 
@@ -39,7 +67,7 @@ Ik had niet veel verwachtingen voor dit seizoen, en dan is het altijd superleuk 
 
 ## 9 september - Perfect day 3
 
-{% include image name="23-09-09" title="toch nog ☺️" %}
+{% include thumbs show="23-09-09" %}
 
 Dat er in augustus niet veel gezeild ging worden stond al lang vast. Singapore en Bali hadden sowieso prioriteit. Dus ik verwachtte na twee mooie zeildagen niet veel meer. 
 
@@ -51,9 +79,7 @@ Simply a perfect day 3 en in mijn bescheiden mogelijkheden tegenwoordig ... een 
 
 ## 8 juli - Tempus Tourismus
 
-{% include image name="23-07-08-2" title="gaatje 🥺" %}
-
-{% include image name="23-07-08-1" title="best of friends" %}
+{% include thumbs show="23-07-08-1,23-07-08-2" %}
 
 Je houdt het niet voor mogelijk: Belgisch weer en mijn agenda die samen een 2 op 2 halen. Na de perfecte dag op 24 juni, nu opnieuw op zich een perfecte dag: dit keer zeer weinig ... tot gewoon geen ... wind, echter wel perfecte omstandigheden om het vorige weekend op dé wei nog even af te ronden op het water met best of friends (& dochter).
 
@@ -63,9 +89,7 @@ In al die rust een klein gaatje ontdekt in de trampoline 🥺 Geen risico mee ne
 
 ## 24 juni - Perfect day 1
 
-{% include image name="23-06-24-2" title="fun... 😎" %}
-
-{% include image name="23-06-24-1" title="perfect day" %}
+{% include thumbs show="23-06-24-1,23-06-24-2" %}
 
 De combinatie van een drukke agenda, van zowel Mark als ik, overgoten door het enorm variabele weer dat ons Belgenlandje ons biedt, maakt dat ik betrekkelijk meer kans maak om de lotto te winnen dan dat we een echt goeie zeildag hebben.
 
@@ -79,19 +103,15 @@ Inclusief een geslaaagd pet-over-boord-maneuvre 😇
 
 ## 30 april -  We're back bitches...
 
-{% include image name="start-23-strand" title="naar het strand" %}
-
-{% include image name="start-23-bos" title="van het bos!" %}
+{% include thumbs show="start-23-bos,start-23-strand" %}
 
 Voor de verandering eens een keertje solo Boosui van m'n bos naar het strand gebracht dit jaar 😉
 
-{% include image name="start-23-ready" title="all ready to sail" %}
-
-{% include image name="start-23-graven" title="beetje graven" %}
+{% include thumbs show="start-23-graven,start-23-ready" %}
 
 Echter, op een club - met nieuwe gebouwen - ben je nooit alleen, laat staan dat je alleen zwoegt. Er is altijd wel iemand die met plezier je uit de nood helpt, omdat iedereen weet hoe het ... (wait for it) ... reilt en zeilt 🥁
 
-{% include image name="start-23-negroni" title="tempation waits" %}
+{% include thumbs show="start-23-negroni" %}
 
 Op de terugweg, met een omwegje langs Andreas' drone, nog even een welkom-terug-geschenkje gekregen van een Brugse <s>zot</s> trajectcontrole 🙄, dus al bij al een top-zondag.
 

@@ -53,13 +53,13 @@ Before hooking up TX and RX to the ATMEGA, you can test the MAX232 by itself.
 With a wire, connect TX and RX and boot up a terminal session. This *loop-back*
 allows for easy testing of the RS232 part of the design.
 
-Because my Mac doesn't come with a serial port anymore, I bought a [Digitus USB
+Because my Mac doesn't come with a serial port anymore, I bought a {% include external link="http://www.digitus.info/en/products/accessories/adapter-and-converter/u
+sb-to-serial-adaptor-usb-20-da-70156/" title="Digitus USB
 to serial
-adaptor](http://www.digitus.info/en/products/accessories/adapter-and-converter/u
-sb-to-serial-adaptor-usb-20-da-70156/) some time ago. The drivers supplied by
+adaptor" %} some time ago. The drivers supplied by
 the vendor aren't that up to date anymore, but luckily the use some other
-vendor's hardware and so I found [recent
-drivers](http://www.ftdichip.com/Drivers/VCP.htm).
+vendor's hardware and so I found {% include external link="http://www.ftdichip.com/Drivers/VCP.htm" title="recent
+drivers" %}.
 
 Terminal emulators are one of those whole wars. I tend to rely on
 <tt>screen</tt>.
@@ -74,7 +74,7 @@ hello world<ctrl+a><ctrl+k><y>
 
 After wiring RX to ATMEGA's pin 2 (PD0/RXD) and TX to pin 3 (PD1/TXD), the
 circuit is ready to go. This is only the main part, for all details, refer to
-my [Github embedded repository](https://github.com/christophevg/embedded).
+my {% include external link="https://github.com/christophevg/embedded" title="Github embedded repository" %}.
 
 {% highlight c %}
 // serial.c

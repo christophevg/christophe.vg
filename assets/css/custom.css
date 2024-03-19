@@ -100,3 +100,22 @@ div.video.thumb .overlay {
 div.retired {
   margin-top: 20px;
 }
+
+div.thumbs {
+  text-align: center;
+  float: right;
+}
+
+@media screen and (max-width:600px) {
+  div.thumbs.many {
+    float: none;
+  }  
+}
+
+img.thumb {
+  height: 75px;
+}
+
+div.images {
+  text-align: center;
+}

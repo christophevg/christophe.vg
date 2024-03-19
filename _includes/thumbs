@@ -1,0 +1,23 @@
+{% assign thumbs = include.thumbs | default: page.thumbs %}
+{% assign category = thumbs.category | default: page.categories[0] %}
+{% assign folder = thumbs.folder | default: page.folder %}
+{% if folder %}
+{% capture subfolder %}/{{ folder }}{% endcapture %}
+{% else %}
+{% assign subfolder = "" %}
+{% endif %}
+{% assign show = include.show | split: "," %}
+{% if show.size > 2 %}{% assign size = "many" %}{% else %}{% assign size = "few" %}{% endif %}
+<div class="thumbs {{ size }}">
+  {% for name in show %}
+  {% assign file = thumbs.files[name] %}
+  {% assign ext = file.kind | default: "jpeg" %}
+  {% assign human = name | replace: "-", " " | capitalize %}
+  <a href="/{{ category }}/images/full{{ subfolder }}/{{ name }}.{{ ext }}"
+     title="{{ file.title | default: file.alt | default: human }}">
+    <img class="thumb {{ file.class }}" 
+         src="/{{ category }}/images/thumb{{ subfolder }}/{{ name }}.{{ ext }}"
+         alt="{{ file.title | default: file.alt | default: human }}">
+  </a>
+  {% endfor %}
+</div>

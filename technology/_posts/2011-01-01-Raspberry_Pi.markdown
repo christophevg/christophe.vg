@@ -11,7 +11,7 @@ These are my notes on the Raspberry Pi, model 3b.
 
 ## Use Raspberry Pi Imager
 
-Download Raspberry Pi Imager from [https://www.raspberrypi.org/software/](https://www.raspberrypi.org/software/) and run it, follow the instructions to download and transfer it onto an SD card.
+Download Raspberry Pi Imager from {% include external link="https://www.raspberrypi.org/software/" title="https://www.raspberrypi.org/software/" %} and run it, follow the instructions to download and transfer it onto an SD card.
 
 ![Raspberry Pi Imager](images/full/rpi-imager.png)
 
@@ -90,7 +90,7 @@ By default, the Pi uses its UART for its console. This means that you can't conn
 
 1. Go into the configuration tool and disable serial support: `sudo raspi-config`, go into `5 Interfacing Options`, then select `P6 Serial` and acknowledge you want to disable serial.
 2. Now, one more step is needed, because else you won't find any serial ports: edit `/boot/config.txt` and add `enable_uart=1`.
-3. ALSO add `core_freq=250` to the same `/boot/config.txt`, or else the handling of the data with base its baudrate on a variable clock speed ()?!) (See [http://raspberrypi.stackexchange.com/questions/45570/](http://raspberrypi.stackexchange.com/questions/45570/) for some background information).
+3. ALSO add `core_freq=250` to the same `/boot/config.txt`, or else the handling of the data with base its baudrate on a variable clock speed ()?!) (See {% include external link="http://raspberrypi.stackexchange.com/questions/45570/" title="http://raspberrypi.stackexchange.com/questions/45570/" %} for some background information).
 4. reboot
 
 Now, after installing e.g. `screen`, you can access UART using e.g. `screen /dev/ttyS0`.
@@ -276,9 +276,9 @@ To play use `aplay test.wav`
 
 ## References
 
-* [https://learn.sparkfun.com/tutorials/python-programming-tutorial-getting-started-with-the-raspberry-pi/configure-your-pi](https://learn.sparkfun.com/tutorials/python-programming-tutorial-getting-started-with-the-raspberry-pi/configure-your-pi)
-* [https://github.com/RPi-Distro/repo/issues/47](https://github.com/RPi-Distro/repo/issues/47)* [https://frillip.com/using-your-raspberry-pi-3-as-a-wifi-access-point-with-hostapd/](https://frillip.com/using-your-raspberry-pi-3-as-a-wifi-access-point-with-hostapd/)
-* [https://www.raspberrypi.org/learning/networking-lessons/lesson-3/plan/](https://www.raspberrypi.org/learning/networking-lessons/lesson-3/plan/)
-* [https://superuser.com/questions/306121/i-dont-want-my-dhcp-to-be-a-default-gateway](https://superuser.com/questions/306121/i-dont-want-my-dhcp-to-be-a-default-gateway)
-* [http://www.g7smy.co.uk/2013/08/recording-sound-on-the-raspberry-pi/](http://www.g7smy.co.uk/2013/08/recording-sound-on-the-raspberry-pi/)
-* [https://raspberrypi.stackexchange.com/questions/19705/usb-card-as-my-default-audio-device](https://raspberrypi.stackexchange.com/questions/19705/usb-card-as-my-default-audio-device)
+* {% include external link="https://learn.sparkfun.com/tutorials/python-programming-tutorial-getting-started-with-the-raspberry-pi/configure-your-pi" title="https://learn.sparkfun.com/tutorials/python-programming-tutorial-getting-started-with-the-raspberry-pi/configure-your-pi" %}
+* {% include external link="https://github.com/RPi-Distro/repo/issues/47" title="https://github.com/RPi-Distro/repo/issues/47" %}* {% include external link="https://frillip.com/using-your-raspberry-pi-3-as-a-wifi-access-point-with-hostapd/" title="https://frillip.com/using-your-raspberry-pi-3-as-a-wifi-access-point-with-hostapd/" %}
+* {% include external link="https://www.raspberrypi.org/learning/networking-lessons/lesson-3/plan/" title="https://www.raspberrypi.org/learning/networking-lessons/lesson-3/plan/" %}
+* {% include external link="https://superuser.com/questions/306121/i-dont-want-my-dhcp-to-be-a-default-gateway" title="https://superuser.com/questions/306121/i-dont-want-my-dhcp-to-be-a-default-gateway" %}
+* {% include external link="http://www.g7smy.co.uk/2013/08/recording-sound-on-the-raspberry-pi/" title="http://www.g7smy.co.uk/2013/08/recording-sound-on-the-raspberry-pi/" %}
+* {% include external link="https://raspberrypi.stackexchange.com/questions/19705/usb-card-as-my-default-audio-device" title="https://raspberrypi.stackexchange.com/questions/19705/usb-card-as-my-default-audio-device" %}

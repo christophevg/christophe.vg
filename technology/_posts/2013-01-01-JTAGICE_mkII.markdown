@@ -16,9 +16,9 @@ I use [avrdude](Avrdude.html).
 
 The JTAGICE mkII comes with the *squid cable*, a female JTAG connector with 10
 loose wires. It allows you to separate the 6 wires needed to connect the
-[ISP](http://en.wikipedia.org/wiki/In-System_Programming) (In System
+{% include external link="http://en.wikipedia.org/wiki/In-System_Programming" title="ISP" %} (In System
 Programmer) to the MCU's
-[SPI](http://en.wikipedia.org/wiki/Serial_Peripheral_Interface_Bus). The
+{% include external link="http://en.wikipedia.org/wiki/Serial_Peripheral_Interface_Bus" title="SPI" %}. The
 following table shows which 6 of the 10 JTAG wires are matched to the wires
 from the squid cable:
 
@@ -60,14 +60,14 @@ can go respectively to the 5V (regulated) power supply and GND to ground. The
 four remaining wires will need to be connected to the MCU that is going to be
 programmed or debugged.
 
-* [Connecting to a target board with the AVR JTAGICE
-  mkII](http://www.atmel.com/Images/doc2562.pdf)
-* [JTAGICE mkII Hardware
-  Description](http://support.atmel.no/knowledgebase/avrstudiohelp/mergedProject
-  s/JTAGICEmkII/mkII/Html/JTAGICE_mkII_Hardware_description.htm)
-* [Connecting to an SPI
-  target](http://www.atmel.no/webdoc/jtagicemkii/jtagicemkii.connecting_spi.html
-  )
+* {% include external link="http://www.atmel.com/Images/doc2562.pdf" title="Connecting to a target board with the AVR JTAGICE
+  mkII" %}
+* {% include external link="http://support.atmel.no/knowledgebase/avrstudiohelp/mergedProject
+  s/JTAGICEmkII/mkII/Html/JTAGICE_mkII_Hardware_description.htm" title="JTAGICE mkII Hardware
+  Description" %}
+* {% include external link="http://www.atmel.no/webdoc/jtagicemkii/jtagicemkii.connecting_spi.html
+  " title="Connecting to an SPI
+  target" %}
 
 ## JTAG
 

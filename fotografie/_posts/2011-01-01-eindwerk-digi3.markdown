@@ -14,6 +14,6 @@ gallery:
     title: "The Long Walk Team"
 ---
 
-When I was a young boy, I just loved [The Long Walk by Stephen King](http://www.stephenking.com/library/bachman_novel/long_walk_the.html) and every passage still seems visually carved in my mind. The opportunity to turn the end-scene into a great picture, with the help of all my fellow course members, was not one that I would let pass me by ...
+When I was a young boy, I just loved {% include external link="http://www.stephenking.com/library/bachman_novel/long_walk_the.html" title="The Long Walk by Stephen King" %} and every passage still seems visually carved in my mind. The opportunity to turn the end-scene into a great picture, with the help of all my fellow course members, was not one that I would let pass me by ...
 
 {% include gallery %}

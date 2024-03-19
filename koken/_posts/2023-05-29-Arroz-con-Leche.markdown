@@ -12,7 +12,7 @@ Zeg niet gewoon rijstpap op z'n Spaans, tegen Arroz con Leche 😉
 * 2l volle melk
 * schil van een appelsien
 * 2 kaneelstokken
-* 250g rijst (ik heb die van [Bosto](https://bosto.be/product/rijstpap-40-min) gebruikt)
+* 250g rijst (ik heb die van {% include external link="https://bosto.be/product/rijstpap-40-min" title="Bosto" %} gebruikt)
 * 80g suiker
 * gemalen kaneel
 

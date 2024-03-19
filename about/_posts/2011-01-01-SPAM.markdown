@@ -4,15 +4,15 @@ header:
   teaser: /about/images/thumb/spam.jpg
   image: /about/images/header/spam.jpg
 ---
-> Deze pagina mag dan wel meer dan 15 jaar oud zijn, ze blijft meer dan relevant. De spelregels rond SPAM zijn in al die tijd echt niet veranderd, bewijze hef feit dat ik nog meerdere keren per jaar mensen moet wijzen op hun onverantwoorde omgang met mijn email adres of dat van mijn kinderen. Sinds een tweetal jaar is ook de [AVG](https://nl.wikipedia.org/wiki/Algemene_verordening_gegevensbescherming#Principes) in werking getreden, die boven op de rationele zaken die al lang op deze pagina stonden, ook een juridisch kader schetst waarom je bv. niet zomaar mijn email adres mag delen met anderen.
+> Deze pagina mag dan wel meer dan 15 jaar oud zijn, ze blijft meer dan relevant. De spelregels rond SPAM zijn in al die tijd echt niet veranderd, bewijze hef feit dat ik nog meerdere keren per jaar mensen moet wijzen op hun onverantwoorde omgang met mijn email adres of dat van mijn kinderen. Sinds een tweetal jaar is ook de {% include external link="https://nl.wikipedia.org/wiki/Algemene_verordening_gegevensbescherming#Principes" title="AVG" %} in werking getreden, die boven op de rationele zaken die al lang op deze pagina stonden, ook een juridisch kader schetst waarom je bv. niet zomaar mijn email adres mag delen met anderen.
 
 **Als je door mij naar deze pagina bent geleid, dan ben je waarschijnlijk
 onvoorzichtig geweest met mijn email adres. Iedereen klaagt
 erover, maar ik merk dat bijna niemand er iets aan doet. Probeer volgende
 regels in acht te houden en lees de pagina over
-[SPAM](https://nl.wikipedia.org/wiki/Spam_(post)) ten minste een keer volledig door. Bedankt!**
+{% include external link="https://nl.wikipedia.org/wiki/Spam_(post" title="SPAM" %}) ten minste een keer volledig door. Bedankt!**
 
-**Spam** _is een verzamelnaam voor ongewenste berichten en is ook bekend als Unsolicited Commercial E-mail en Unsolicited Bulk E-mail. Onder deze term vallen ongewenste e-mails en reclameboodschappen op websites (onder andere fora). Spam is moeilijk te definiëren. Niet ieder initiatief van een persoon of organisatie om contact te leggen is spam. Spam onderscheidt zich van andere vormen van commerciële communicatie, omdat een bericht wordt gestuurd aan een groep die veel groter is dan de potentiële doelgroep._ (Overgenomen van [Wikipedia](https://nl.wikipedia.org/wiki/Spam_(post)))
+**Spam** _is een verzamelnaam voor ongewenste berichten en is ook bekend als Unsolicited Commercial E-mail en Unsolicited Bulk E-mail. Onder deze term vallen ongewenste e-mails en reclameboodschappen op websites (onder andere fora). Spam is moeilijk te definiëren. Niet ieder initiatief van een persoon of organisatie om contact te leggen is spam. Spam onderscheidt zich van andere vormen van commerciële communicatie, omdat een bericht wordt gestuurd aan een groep die veel groter is dan de potentiële doelgroep._ (Overgenomen van {% include external link="https://nl.wikipedia.org/wiki/Spam_(post" title="Wikipedia" %}))
 
 Om SPAM te kunnen ontvangen moet je email adres in verkeerde handen zijn
 gevallen, zorg er voor dat dit niet kan gebeuren
@@ -43,14 +43,14 @@ gevallen, zorg er voor dat dit niet kan gebeuren
   * Door een mail te sturen naar iedereen die jij kent zal niemand jou iets
     geven.
 
-  * Leer wat een [Hoax](https://nl.wikipedia.org/wiki/Hoax) is en hoe eenvoudig je dit kan testen door het verhaal even door [Google](https://www.google.com/search?oq=hoax) te halen.
+  * Leer wat een {% include external link="https://nl.wikipedia.org/wiki/Hoax" title="Hoax" %} is en hoe eenvoudig je dit kan testen door het verhaal even door {% include external link="https://www.google.com/search?oq=hoax" title="Google" %} te halen.
 
 Kortom: Heb respect voor anderen en bescherm hun email adres beter dan dat van
 jezelf.
 
 ## Ze winnen niet altijd mijnheer
 
-Ooit verscheen op [ZDNet.be](http://zdnet.be ):
+Ooit verscheen op {% include external link="http://zdnet.be " title="ZDNet.be" %}:
 
 _De Washington Post publiceerde vorige week een interview met hacker "0x80", die alleen op voorwaarde van absolute anonimiteit wilde spreken. Zijn identiteit ligt echter op straat omdat een foto bij het artikel meer informatie bevatte dan gedacht._
 

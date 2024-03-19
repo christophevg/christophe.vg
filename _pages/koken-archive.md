@@ -20,4 +20,4 @@ niet kan. Dikwijls heb ik de ervaring van enkele verschillende recepten
 samengebracht tot mijn eigen versie. Om al deze wijsheid niet te verliezen of
 niet telkens opnieuw te moeten samen stellen, begin ik maar eens aan een groeiende, neergeschreven versie van "Mijn Kookboek"...
 
-_Disclaimer: mijn recepten zijn in mijn recepten-taal, met mijn recepten-maten en recepten-eenheden neergepend. Dat is dikwijls met een zeer losse pols en vooral hoe ik gewoon ben om dingen te doen. When in doubt: check [papa Google](https://google.be) 😉_
+_Disclaimer: mijn recepten zijn in mijn recepten-taal, met mijn recepten-maten en recepten-eenheden neergepend. Dat is dikwijls met een zeer losse pols en vooral hoe ik gewoon ben om dingen te doen. When in doubt: check {% include external link="https://google.be" title="papa Google" %} 😉_

@@ -5,7 +5,7 @@ header:
   image: /koken/images/header/couscous-met-gehaktballetjes.jpeg
 ---
 
-Dit is mijn versie (met minimale aanpassingen ;-)) op [een recept van Jeroen Meus](https://dagelijksekost.een.be/gerechten/couscous-met-geroosterde-paprika-en-kruidige-gehaktballetjes).
+Dit is mijn versie (met minimale aanpassingen ;-)) op {% include external link="https://dagelijksekost.een.be/gerechten/couscous-met-geroosterde-paprika-en-kruidige-gehaktballetjes" title="een recept van Jeroen Meus" %}.
 
 ## ingrediënten
 

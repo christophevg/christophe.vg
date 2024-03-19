@@ -8,7 +8,7 @@ tags: veggie
 
 Letterlijk een deeg-moer, maar dat kan het de kids niet schelen. Ik vroeg me af of ze een zelf gebakken versie ook lekker zouden vinden. Simpel antwoord: JA!
 
-Gebaseerd op [een recept van Jeroen Meus](https://dagelijksekost.een.be/gerechten/doughnut-met-chococino), met maar een minimale aanpassing op basis van mijn ondervinding tijdens de try-outs ;-)
+Gebaseerd op {% include external link="https://dagelijksekost.een.be/gerechten/doughnut-met-chococino" title="een recept van Jeroen Meus" %}, met maar een minimale aanpassing op basis van mijn ondervinding tijdens de try-outs ;-)
 
 Met een cirkelvormige uitsteek ring van 10cm bekwam ik een 12 tal doughnuts.
 

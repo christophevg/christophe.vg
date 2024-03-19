@@ -7,8 +7,8 @@ header:
 
 > This page is more than 10 years old and besides the fact that the circuit diagrams are no longer available, it needs some love. I intent to clean it up in the near future, so keep posted...
 
-While studying for my [Digital Electronics and Processors
-exam](http://onderwijsaanbod.kuleuven.be/syllabi/n/H01L1AN.htm) I came across
+While studying for my {% include external link="http://onderwijsaanbod.kuleuven.be/syllabi/n/H01L1AN.htm" title="Digital Electronics and Processors
+exam" %} I came across
 the SR Latch, the Set-Reset Latch. It is a sequential circuit that is capable
 of storing 1 bit and it forms the basis for Flip-flops and memory in general.
 
@@ -47,9 +47,9 @@ memorize 1 bit.
 
 ## The schematic
 
-To actually create this circuit, I used a [Texas Instruments
-SN74LS27N](http://datasheet.octopart.com/SN74LS27N-Texas-Instruments-datasheet-1
-0784589.pdf). This IC contains 3 3-input NOR gates, so it's a bit more that I
+To actually create this circuit, I used a {% include external link="http://datasheet.octopart.com/SN74LS27N-Texas-Instruments-datasheet-1
+0784589.pdf" title="Texas Instruments
+SN74LS27N" %}. This IC contains 3 3-input NOR gates, so it's a bit more that I
 needed, but it was what I had laying around. The three gates are labeled 1 to 3
 and the inputs on each gate are labeled A through C, while the output is
 labeled Y. I'm using gates 1 and 2.

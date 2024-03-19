@@ -1,23 +1,44 @@
 ---
 title: Logboek 2022
+thumbs:
+  files:
+    overwinteren-int-groen:
+      title: Overwinteren in't groen
+    goodnight-2022:
+      title: Goodnight 2022
+    njord:
+      title: Njord
+    pappys-race-22:
+      title: 100!
+    schade-buurman:
+      title: Kennismaking met de buurman
+    schade-buurman-closeup:
+      title: Closeup
+    koffie-23-7:
+      title: Koffie!
+    koffie-22-7:
+      title: Koffie!
+    nieuwe-hengsels:
+      title: Nieuwe hengsels
+    start-22-boosui:
+      title: 2022 Start!
+    start-22-zee:
+      title: En't zeetje was er ook nog altijd bij
 ---
 
-## 2 oktober - [Goodnight Lover(s)](https://youtu.be/jmY_MiJ1hAY)
+## 2 oktober - {% include external link="https://youtu.be/jmY_MiJ1hAY" title="Goodnight Lover(s)" %}
 
-{% include image name="overwinteren-int-groen" title="Overwinteren in't groen" %}
-{% include image name="goodnight-2022" title="Goodnight 2022" %}
-{% include image name="njord" title="Njord" %}
-
+{% include thumbs show="njord,goodnight-2022,overwinteren-int-groen" %}
 
 En voor je het weet zit het seizoen er weer op. Agenda's, weer, praktische beslommeringen,... soms zit het gewoon niet mee. En samen met Koen, die op 1 mei aan het begin van het seizoen stond, eindigen we opnieuw in schoonheid.
 
 Om 9u kom ik toe, net wanneer een druiligere regen er even mee ophoudt. Anderhalf uur lang dreigt een plensbui, die nooit geplenst heeft. Af en toe ook een beetje positieve karma ;-)
 
-'s Middags zeer lekker gegeten in [Njord](https://www.njord.restaurant) en dan nog even blijven plakken op de club. En bij een prachtige ondergaande zon, neemt Boosui even tijd voor een winterslaapje... in mijn eigen tuin.
+'s Middags zeer lekker gegeten in {% include external link="https://www.njord.restaurant" title="Njord" %} en dan nog even blijven plakken op de club. En bij een prachtige ondergaande zon, neemt Boosui even tijd voor een winterslaapje... in mijn eigen tuin.
 
 ## 13 augustus - Pappy's Race
 
-{% include image name="pappys-race-22" title="100!" %}
+{% include thumbs show="pappys-race-22" %}
 
 Ook tijdens dit tweede jaar terug op RBSC, kan ik de Pappy's Race zeilen met Mark. Een jubileum editie voor ons, want samen zijn we 100 jaar 😉
 
@@ -35,8 +56,7 @@ Met een respectievelijke 44e, 44e en 30e plek worden we overall nog 46e op 63 de
 
 ## 3 augustus - "Schade boot"
 
-{% include image name="schade-buurman" title="Kennismaking met de buurman" %}
-{% include image name="schade-buurman-closeup" title="Closeup" %}
+{% include thumbs show="schade-buurman,schade-buurman-closeup" %}
 
 ... van zo'n "subject" van een  binnenlopende mail wordt je niet vrolijk. Een mail van de beachmaster, Edouard:
 
@@ -49,7 +69,7 @@ It happens, en daarmee afgehandeld.
 
 ## 23 juli - No wind 👉 apéro time...
 
-{% include image name="koffie-23-7" title="Koffie!" %}
+{% include thumbs show="koffie-23-7" %}
 
 Een dagje later was er nog minder wind en is ook het bezoek van Koen en Katrien herleid tot een gezellig aperitieven, uitwaaien aan de waterlijn, een uitstekende lunch en nog wat loungen op de club.
 
@@ -57,9 +77,7 @@ De eer om dit jaar als eerste op het water te gaan zal dit jaar begin augustus z
 
 ## 22 juli - Time flies...
 
-{% include image name="koffie-22-7" title="Koffie!" %}
-
-{% include image name="nieuwe-hengsels" title="Nieuwe hengsels" %}
+{% include thumbs show="koffie-22-7,nieuwe-hengsels" %}
 
 Anders dan 30 jaar geleden, staat zeilen spijtig genoeg niet meer op de eerste plaats wanneer het aankomt op tijdsbesteding. Mei, juli en het meredeel van juli zijn voorbij gevlogen om tal van goeie redenen.
 
@@ -71,9 +89,7 @@ Zeilen zat er niet in vandaag, echter wel een kleine noodzakelijke versteviging 
 
 ## 1 mei - Let's Get this Season Started...
 
-{% include image name="start-22-boosui" title="2022 Start!" %}
-
-{% include image name="start-22-zee" title="En't zeetje was er ook nog altijd bij" %}
+{% include thumbs show="start-22-zee,start-22-boosui" %}
 
 Niet moeilijk over doen... Boosui ligt weer met de slijtlagen op het zand. Punt.
 

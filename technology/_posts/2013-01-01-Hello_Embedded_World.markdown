@@ -30,15 +30,15 @@ different value ;-)
 To allow you to refer to the sources I've consulted, I try to keep track of them
 in the list below:
 
-* [https://www.sparkfun.com/tutorials/57](https://www.sparkfun.com/tutorials/57)
-* [https://www.sparkfun.com/tutorials/93](https://www.sparkfun.com/tutorials/93)
-* [https://www.sparkfun.com/tutorials/95](https://www.sparkfun.com/tutorials/95)
-* [https://www.sparkfun.com/tutorials/104](https://www.sparkfun.com/tutorials/104)
-* [http://www.codehosting.net/blog/BlogEngine/post/Programming-the-ATmega168.aspx](http://www.codehosting.net/blog/BlogEngine/post/Programming-the-ATmega168.aspx)
-* [http://adentranter.blogspot.be/2011/03/atmega168-hello-world.html](http://adentranter.blogspot.be/2011/03/atmega168-hello-world.html)
-* [http://wiki.blinkenarea.org/index.php/DotBloxEnglish](http://wiki.blinkenarea.org/index.php/DotBloxEnglish)
+* {% include external link="https://www.sparkfun.com/tutorials/57" title="https://www.sparkfun.com/tutorials/57" %}
+* {% include external link="https://www.sparkfun.com/tutorials/93" title="https://www.sparkfun.com/tutorials/93" %}
+* {% include external link="https://www.sparkfun.com/tutorials/95" title="https://www.sparkfun.com/tutorials/95" %}
+* {% include external link="https://www.sparkfun.com/tutorials/104" title="https://www.sparkfun.com/tutorials/104" %}
+* {% include external link="http://www.codehosting.net/blog/BlogEngine/post/Programming-the-ATmega168.aspx" title="http://www.codehosting.net/blog/BlogEngine/post/Programming-the-ATmega168.aspx" %}
+* {% include external link="http://adentranter.blogspot.be/2011/03/atmega168-hello-world.html" title="http://adentranter.blogspot.be/2011/03/atmega168-hello-world.html" %}
+* {% include external link="http://wiki.blinkenarea.org/index.php/DotBloxEnglish" title="http://wiki.blinkenarea.org/index.php/DotBloxEnglish" %}
 
-And of course ... [Google](http://google.com) is, also for embedded systems,
+And of course ... {% include external link="http://google.com" title="Google" %} is, also for embedded systems,
 your best friend ;-)
 
 ## Step 1 : Power

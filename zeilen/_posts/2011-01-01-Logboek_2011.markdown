@@ -4,5 +4,5 @@ title: Logboek 2011
 
 ## No Sail Year ... either
 
-Met de geboorte van ons [onze zoon, Arjen](http://arjen.vg) zal de zomer weinig echt vrije tijd laten voor papa's catamaran. Boosui blijft op stal, wordt tijdens de zomer goed verzorgd in de tuin en wacht dan ongeduldig af tot het zeiseizoen 2012 aanbreekt om terug in het zonnetje en de wind het ruime sop te kunnen kiezen.
+Met de geboorte van ons {% include external link="http://arjen.vg" title="onze zoon, Arjen" %} zal de zomer weinig echt vrije tijd laten voor papa's catamaran. Boosui blijft op stal, wordt tijdens de zomer goed verzorgd in de tuin en wacht dan ongeduldig af tot het zeiseizoen 2012 aanbreekt om terug in het zonnetje en de wind het ruime sop te kunnen kiezen.
  

@@ -79,4 +79,4 @@ Aan de waterlijn moeten we nog net de zeilen heisen, wanneer Bart plots terugden
 
 Neen, Bart, niet doen ...
 
-En dan komt [Murphy](http://nl.wikipedia.org/wiki/Wet_van_Murphy) even langs op het strand. Het zelfde probleem met de sluiting van de rits van de fok betekent al snel het einde van wat eerst de mooiste (en enigste) zeildag van het jaar ging worden.
+En dan komt {% include external link="http://nl.wikipedia.org/wiki/Wet_van_Murphy" title="Murphy" %} even langs op het strand. Het zelfde probleem met de sluiting van de rits van de fok betekent al snel het einde van wat eerst de mooiste (en enigste) zeildag van het jaar ging worden.

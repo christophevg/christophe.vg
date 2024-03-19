@@ -1,18 +1,24 @@
 ---
 title: Logboek 2008
+thumbs:
+  files:
+    08-12-21-1:
+      title: Mijn happy race face...
+    08-12-21-2:
+      title: ... en dat van Mark
+    08-12-21-3:
+      title: Fris aan de vis...
 ---
 
 ## 21 december 2008 - Epiloog
 
-{% include image name="08-12-21-2" title="... en dat van Mark" %}
+{% include thumbs show="08-12-21-1,08-12-21-2" %}
 
-{% include image name="08-12-21-1" title="Mijn happy race face..." %}
-
-Ai, ai, ai ... ik heb vandaag nieuw speelgoed ontdekt: een [Blokart](http://blokart.be). Mark had een [Bongobon](http://bongo.be) gekregen voor allerhande uitdagende sporten, waaronder Blokarting. Blokarting is vergelijkbaar met het meer klassieke zeilwagenrijden, maar in dit geval met een "kart" van amper 27kg. En dat merk je wanneer je er plaats inneemt. O, ja, Mark had mij als tweede persoon uitgenodigd, en in afwachting van de aankomst van Mieke en de kids op het strand, kon ik als eerst plek nemen in onze kart. 
+Ai, ai, ai ... ik heb vandaag nieuw speelgoed ontdekt: een {% include external link="http://blokart.be" title="Blokart" %}. Mark had een {% include external link="http://bongo.be" title="Bongobon" %} gekregen voor allerhande uitdagende sporten, waaronder Blokarting. Blokarting is vergelijkbaar met het meer klassieke zeilwagenrijden, maar in dit geval met een "kart" van amper 27kg. En dat merk je wanneer je er plaats inneemt. O, ja, Mark had mij als tweede persoon uitgenodigd, en in afwachting van de aankomst van Mieke en de kids op het strand, kon ik als eerst plek nemen in onze kart. 
 
 Oooooh yeeaaahhh baby. Dit is mega fun. Die 27kg stellen natuurlijk niets voor en al snel is het jij, drie wielen en een zeil. En wind natuurlijk, en die was vandaag gewoon in perfecte hoeveelheid aanwezig: 5 beaufort. Na het eerste rondje, wordt het tijd om er wat vaart in te steken. Binnen de kortste keren was het weer balanceren op twee (van de drie) wielen, alsof het een catamaran was. Na een 20 minuutjes, was het tijd om te wisselen en was het de beurt aan Mark. Ook hij genoot zichtbaar en was het achteraf meer dan eens met mijn enthousiasme. Hij had tijdens mijn rit al info ingewonnen omtrent ... het prijskaartje natuurlijk, wat anders. En dat valt, voor wat je krijgt, best mee. Misschien niet meer deze winter, maar in 2009 gaan we er toch wel eentje aanschaffen.
 
-{% include image name="08-12-21-3" title="Fris aan de vis..." %}
+{% include thumbs show="08-12-21-3" %}
 
 Als kers op de taart, kon ik met mijn telelens nog net de eerste take van de opnames van de nieuwe editie van De Naaktkalender 2009 ;-)
 
@@ -26,7 +32,7 @@ Het seizoen begint dus iets vroeger volgend jaar... met een bezoekje aan ShipSho
 
 ## 31 augustus 2008 - A quicky with Koen
 
-Hij heeft er lang op moeten wachten, maar op de valreep is Koen toch nog dit seizoen nog even mee op het water kunnen gaan. Koen is de peter van [Eline](http://elive.vg), maar hij heeft ook enorm meegeholpen aan de realisatie van ons [huisje](http://35.peyerstraat.be). Om al die en veel meer redenen moest hij toch zeker eens mee. Zeker nu hij onlangs voor het eerst kennisgemaakt had met de zeilerij op een tochtje met een jacht met zijn bedrijf. 
+Hij heeft er lang op moeten wachten, maar op de valreep is Koen toch nog dit seizoen nog even mee op het water kunnen gaan. Koen is de peter van {% include external link="http://elive.vg" title="Eline" %}, maar hij heeft ook enorm meegeholpen aan de realisatie van ons {% include external link="http://35.peyerstraat.be" title="huisje" %}. Om al die en veel meer redenen moest hij toch zeker eens mee. Zeker nu hij onlangs voor het eerst kennisgemaakt had met de zeilerij op een tochtje met een jacht met zijn bedrijf. 
 
 De wind van gisteren was verder gezakt en het was eigenlijk een, zoals Luk het mooi verwoordde, "meer hoeft dat voor mij niet te zijn"-zeil-zondag. Omdat we vroeg naar huis vertrekken vandaag, zijn we dan ook al ruim voor openingstijd op het strand. Rond 11u bevaren we een uitermate platte Noordzee en laat een constante rustige wind ons zelfs toe nog enkele keren de spi te trekken. Koen heeft waar gehad voor zijn ... noeste arbeid ;-)
 
@@ -50,7 +56,7 @@ Op de valreep binnen zijn vakantieperiode, kunnne Mark en ik nog een tweede keer
 
 ## 31 juli 2008 - Zip, zipper, zippest
 
-Voor we opnieuw naar het strand afzakken nog even een pitsstop bij [Fly High](http://www.flyhigh.be) voor een nieuwe shorty (wetsuite) en zwemvest. Na al die jaren kan ik er wel een nieuw gebruiken en ik kan Bart toch geen twee dagen in een full wetsuite bij deze on-Belgische temeraturen laten zweten. Over de jaren zijn de prijzen wel serieus gezakt. En dat komt goed uit want ik heb Kristien een eigen outfit beloofd.
+Voor we opnieuw naar het strand afzakken nog even een pitsstop bij {% include external link="http://www.flyhigh.be" title="Fly High" %} voor een nieuwe shorty (wetsuite) en zwemvest. Na al die jaren kan ik er wel een nieuw gebruiken en ik kan Bart toch geen twee dagen in een full wetsuite bij deze on-Belgische temeraturen laten zweten. Over de jaren zijn de prijzen wel serieus gezakt. En dat komt goed uit want ik heb Kristien een eigen outfit beloofd.
 
 Vandaag vliegen we er sneller dan gisteren in, want we moeten dit keer geen twee uur spenderen aan het optuigen van de spi, die nog mooi in zijn zak zit. Naar het water, groot zeil omhoog, fok ... fok bijna omhoog. De ritssluiting laat het afweten. Gisteren deed die ook al af en toe moeilijk, maar vandaag wil die ritssluiting om de voorstag echt niet dicht. En dan moet je vooral rustig blijven. Het gaat van kattekwaad naar erger: Na een uur proberen, lukt het zelfs niet om enkele centimeters succesvol te sluiten, zelfs niet als de fok vlak ligt.
 
@@ -74,7 +80,7 @@ Laat me het heel eenvoudig stellen: Oewahoe ... dat zeilt lekker. Het is even we
 
 Het gaan nog vele tochten worden, eer we alle "details" van deze nieuwe pracht onder de knie gaan hebben, maar dat is niet zo erg ;-)
 
-En niet alleen papa was in de wolken. Ook [Eline](http://eline.vg) had het enorm naar haar zin op het strand en in de zee. Nog even geduld en we zullen weten of zij ook aangetrokken wordt door het zeilen. En als dat zo is, dan denk ik dat we haar daarin gaan steunen.
+En niet alleen papa was in de wolken. Ook {% include external link="http://eline.vg" title="Eline" %} had het enorm naar haar zin op het strand en in de zee. Nog even geduld en we zullen weten of zij ook aangetrokken wordt door het zeilen. En als dat zo is, dan denk ik dat we haar daarin gaan steunen.
 
 ## 20 juli 2008 - Hijs de zeilen
 
@@ -88,11 +94,11 @@ Maar dan heb je gelukkig ook nog de andere soort die met een oprechte glimlach z
 
 En dan het (eerste) lang verwachte weekend ... Boosui mag naar het strand! Zaterdagvoormiddag geraken we al tot op de nieuw aangelegde terrasplanken achter het nieuwe clubhuis, maar tot 14u is er niemand die ons verder kan helpen. In de namiddag dan maar een tweede poging. Beachmaster Tom is echter pas morgen (zondag) terug uit vakantie, dus voorlopig krijgen we een tijdelijke plek. Goed genoeg, we kunnen toch ten minste beginnen optuigen.
 
-En dat is een heel werkje. De kluwen aan schoten, vallen en trimlijnen is immens op een F18. Tel daarbij nog eens de soms waanzinnig uitgekiende manier waarop [AHPC](http://www.ahpc.com.au) hun tuigage hebben uitgewerkt en je bent al snel zoet voor enkele uren turen op een massa gekleurde lijntjes. Tegen het einde van het weekend beginnen de meeste eindjes wel aan elkaar geknoopt te geraken en wanneer Tom mij op zondag dan uiteindelijke mijn oude plek terug aanwijst, ligt Boosui al redelijk in orde te pronken op het strand. En nu nog alleen vol ongeduld afwachten op het eerste echte zeilweekend.
+En dat is een heel werkje. De kluwen aan schoten, vallen en trimlijnen is immens op een F18. Tel daarbij nog eens de soms waanzinnig uitgekiende manier waarop {% include external link="http://www.ahpc.com.au" title="AHPC" %} hun tuigage hebben uitgewerkt en je bent al snel zoet voor enkele uren turen op een massa gekleurde lijntjes. Tegen het einde van het weekend beginnen de meeste eindjes wel aan elkaar geknoopt te geraken en wanneer Tom mij op zondag dan uiteindelijke mijn oude plek terug aanwijst, ligt Boosui al redelijk in orde te pronken op het strand. En nu nog alleen vol ongeduld afwachten op het eerste echte zeilweekend.
 
 ## 20 juni 2008 - All set ...
 
-Tegen het einde van de week is de belettering klaar en kan ik ze ophalen bij [SignCrew](http://www.signcrew.be). Prima verzorgd, niets op aan te merken, voorzien van de nodige uitleg en materiaal kan ik huiswaarts keren en tussen twee regenbuien in de letters aanbrengen. Ze mogen er wezen.
+Tegen het einde van de week is de belettering klaar en kan ik ze ophalen bij {% include external link="http://www.signcrew.be" title="SignCrew" %}. Prima verzorgd, niets op aan te merken, voorzien van de nodige uitleg en materiaal kan ik huiswaarts keren en tussen twee regenbuien in de letters aanbrengen. Ze mogen er wezen.
 
 Vandaag is ook eindelijk de nieuwe koffer klaar. Ik heb hem maar 2 keer in elkaar gezet, om zeker te zijn. Eigenlijk vooral omdat hij de eerste keer een cm te breed was en ik er dus eerst nog een stuk heb moeten afdoen.
 
@@ -100,13 +106,13 @@ Vandaag is ook eindelijk de nieuwe koffer klaar. Ik heb hem maar 2 keer in elkaa
 
 Vanaf vandaag heb ik 1 week de tijd om alles in orde te brengen voor Boosui het strand op gaat:
 
-* via de supertrage site [http://www.belgiansailing.be](http://www.belgiansailing.be) eindelijk het aanvraagdocument gevonden, afgedrukt, ingevuld en op de post gedaan ... en nu hopen op een leuk nummer
+* via de supertrage site {% include external link="http://www.belgiansailing.be" title="http://www.belgiansailing.be" %} eindelijk het aanvraagdocument gevonden, afgedrukt, ingevuld en op de post gedaan ... en nu hopen op een leuk nummer
 * bij collega clubleden informeren waar zij het zeilnummer hebben laten maken/aanbrengen
 * defintief ontwerp van de naam: lettertype Kai Regular unaniem verkozen
 
 ![Kai Regular](images/full/Boosui-kai.png)
 
-* offerte aanvragen voor belettering van de naam op de rompen bij [SignCrew](http://www.signcrew.be)
+* offerte aanvragen voor belettering van de naam op de rompen bij {% include external link="http://www.signcrew.be" title="SignCrew" %}
 * een nieuwe strandkoffer maken, want de huidige is 10cm te hoog voor de dolphin striker van de Capricorn
 
 ## 14 juni 2008 - Afscheid van een vriend
@@ -115,7 +121,7 @@ En dan komt die dag. Na 17 jaar was het tijd om afscheid te nemen van Waterproof
 
 En daar ligt hij dan ... De Capricorn F18 ... vanaf nu gekend onder de naam: Boosui. Een waardige opvolger en hopelijk nog maar eens 17 jaar op en top zeilplezier.
 
-Na een uurtje ligt Waterproof voor de poorten van [Sailcenter](http://www.sailcenter.nl) en ligt Boosui op mijn trailer. Nog even afrekenen en we kunnen terug vertrekken naar .be voor een kort verblijf van een week te Schriek, alvorens we naar het strand gaan. Net tijd genoeg om nieuwe belettering te voorzien op de rompen.
+Na een uurtje ligt Waterproof voor de poorten van {% include external link="http://www.sailcenter.nl" title="Sailcenter" %} en ligt Boosui op mijn trailer. Nog even afrekenen en we kunnen terug vertrekken naar .be voor een kort verblijf van een week te Schriek, alvorens we naar het strand gaan. Net tijd genoeg om nieuwe belettering te voorzien op de rompen.
 <br style="clear:both"/>
 
 ## 11 april 2008 - Le Boosui Nouveau est arrivé

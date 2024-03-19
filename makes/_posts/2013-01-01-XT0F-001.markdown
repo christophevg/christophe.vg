@@ -3,37 +3,24 @@ title: XT0F-001 - Regulated Power
 header:
   teaser: /makes/images/thumb/xt0f/regulated-voltage-circuit.jpeg
   image: /makes/images/header/regulated-voltage-circuit.jpeg
+folder: xt0f
 ---
 
 XT0F-001 is a an implementation of the [regulated power
-supply](Regulated_Voltage.html). Initially it provides 5V, but I intend to add
+supply](/technology/Regulated_Voltage). Initially it provides 5V, but I intend to add
 support for the 3V circuit also.
 
 ## Revision 1
 
 The first revision is a basic, straight-forward implementation of the
-breadboard design of my [regulated power supply](Regulated_Voltage.html)
+breadboard design of my [regulated power supply](/technology/Regulated_Voltage)
 
-<div class="thumb circuit left">
-  <a href="/makes/images/full/xt0f/regulated_voltage_breadboard.jpg" target="_blank">
-    <img src="/makes/images/thumb/xt0f/regulated_voltage_breadboard.jpg"><br>
-    regulated voltage circuit on a breadboard
-  </a>
-</div>
-
-<br clear="both">
+{% include image name="regulated_voltage_breadboard" title="Regulated voltage circuit on a breadboard" kind="jpg" %}
 
 The power-supply barrel connector and the switch are connected using wires and
 are not mounted on the prototype board and will be incorporated into the casing.
 
-<div class="thumb circuit left">
-  <a href="/makes/images/full/xt0f/xt0f-001-rev1.png" target="_blank">
-    <img src="/makes/images/thumb/xt0f/xt0f-001-rev1.png"><br>
-    revision 1 through-hole design
-  </a>
-</div>
-
-<br clear="both">
+{% include image name="xt0f-001-rev1" title="Revision 1 through-hole design" kind="png" %}
 
 On the right two female headers are mounted in a 90 degree angle, providing a
 socket-style connector for other designs.

@@ -10,7 +10,7 @@ Networks these days. It's a low-power communication stack that provides a way
 to create a meshed network of motes.
 
 To ease the initial pain, I decided to start with a very nicely packed module,
-created within the realm of Arduino. The [XBee](http://www.digi.com/xbee/)
+created within the realm of Arduino. The {% include external link="http://www.digi.com/xbee/" title="XBee" %}
 family of modules are a cost-effective way of incorporating Zigbee into
 embedded systems.
 
@@ -28,7 +28,7 @@ Let's start with the things we need to get started...
 Below is the list of hardware I bought to get started. I've included links to a
 reasonably priced reseller, but other sources are equally good or even cheaper.
 
-[XBee S2 with wire antenna](http://www.antratek.nl/xbee-1-25mw-series-2-wire-antenna-xb24-z7wit-004)
+{% include external link="http://www.antratek.nl/xbee-1-25mw-series-2-wire-antenna-xb24-z7wit-004" title="XBee S2 with wire antenna" %}
 
 The XBee module come in two major flavors: Series 1 and Series 2. Series 2
 implements the entire Zigbee standard and it's therefore important to remember
@@ -40,7 +40,7 @@ of the book I used to get started.
        alt="XBee Adapter Board">
 </div>
 
-[XBee adapter board](http://www.antratek.nl/xbee-adapter-board)
+{% include external link="http://www.antratek.nl/xbee-adapter-board" title="XBee adapter board" %}
 
 The XBee module's pins are spaced at 2mm, which is not the same as the 1"
 spacing of regular through-hole boards. To be able to mount them on a breadboard
@@ -54,7 +54,7 @@ to be mounted on regularly spaces boards.
        alt="XBee USB Explorer">
 </div>
 
-[XBee explorer board](http://www.antratek.nl/xbee-explorer-usb)
+{% include external link="http://www.antratek.nl/xbee-explorer-usb" title="XBee explorer board" %}
 
 Finally, although you are ready to go with two XBees, a very useful addition is
 a USB adapter. It's almost a necessity to be able to configure and upload
@@ -64,8 +64,8 @@ computer and control it from there.
 ## Software
 
 To be able to configure the XBee module, one needs the
-[X-CTU](http://www.digi.com/support/productdetail?pid=3352&osvid=57&type=utiliti
-es) provided by Digi. It's a Windows only solution, which is a pity. I found
+{% include external link="http://www.digi.com/support/productdetail?pid=3352&osvid=57&type=utiliti
+es" title="X-CTU" %} provided by Digi. It's a Windows only solution, which is a pity. I found
 references to non-Windows solutions, but along those also the comments that
 it's not the real thing. So better launch that Windows partition or virtual
 machine.
@@ -195,8 +195,8 @@ valuable tool.
 
 ## Software
 
-The same [software as with the
-MAX232](https://github.com/christophevg/embedded/blob/master/serial/main.c) can
+The same {% include external link="https://github.com/christophevg/embedded/blob/master/serial/main.c" title="software as with the
+MAX232" %} can
 literally be reused, but now without the wires.
 
 ## Setup
@@ -493,8 +493,8 @@ or higher than the highest values of their children.
 
 On the software side, we need to implement some functions to handle the API.
 All code can be found in my XBee module at
-[https://github.com/christophevg/embedded/blob/master/avr/xbee.c](https://github
-.com/christophevg/embedded/blob/master/avr/xbee.c).
+{% include external link="https://github
+.com/christophevg/embedded/blob/master/avr/xbee.c" title="https://github.com/christophevg/embedded/blob/master/avr/xbee.c" %}.
 
 A few highlights:
 

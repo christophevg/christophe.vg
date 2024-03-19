@@ -339,8 +339,8 @@ rm data.decrypted.zip data.zip.enc
 
 ## References
 
-* [http://www.openssl.org/docs/HOWTO/keys.txt](http://www.openssl.org/docs/HOWTO/keys.txt)
-* [http://www.openssl.org/docs/HOWTO/certificates.txt](http://www.openssl.org/docs/HOWTO/certificates.txt)
-* [http://www.madboa.com/geek/openssl/](http://www.madboa.com/geek/openssl/)
-* [http://www.mobilefish.com/developer/openssl/openssl_quickguide_command_examples.html](http://www.mobilefish.com/developer/openssl/openssl_quickguide_command_examples.html)
-* [https://gist.github.com/dreikanter/c7e85598664901afae03fedff308736b#encripting-files](https://gist.github.com/dreikanter/c7e85598664901afae03fedff308736b#encripting-files)
+* {% include external link="http://www.openssl.org/docs/HOWTO/keys.txt" title="http://www.openssl.org/docs/HOWTO/keys.txt" %}
+* {% include external link="http://www.openssl.org/docs/HOWTO/certificates.txt" title="http://www.openssl.org/docs/HOWTO/certificates.txt" %}
+* {% include external link="http://www.madboa.com/geek/openssl/" title="http://www.madboa.com/geek/openssl/" %}
+* {% include external link="http://www.mobilefish.com/developer/openssl/openssl_quickguide_command_examples.html" title="http://www.mobilefish.com/developer/openssl/openssl_quickguide_command_examples.html" %}
+* {% include external link="https://gist.github.com/dreikanter/c7e85598664901afae03fedff308736b#encripting-files" title="https://gist.github.com/dreikanter/c7e85598664901afae03fedff308736b#encripting-files" %}

@@ -13,21 +13,21 @@ just programmed your first MCU, you feel *so* great. It's really worth the pain.
 
 ## The megaAVR 8-bit Family
 
-The ATMEGA168 is a member of the [megaAVR 8-bit
-family](http://www.atmel.com/products/microcontrollers/avr/megaavr.aspx). This
+The ATMEGA168 is a member of the {% include external link="http://www.atmel.com/products/microcontrollers/avr/megaavr.aspx" title="megaAVR 8-bit
+family" %}. This
 means that it contains an 8-bit processor. It also contains 16 KB flash memory.
 Other family members are ATMEGA8 and the ATMEGA328, which all behave exactly
 the same, but carry different flash sizes.
 
-* [ATMEGA8 datasheet](http://www.atmel.com/images/doc2545.pdf)
+* {% include external link="http://www.atmel.com/images/doc2545.pdf" title="ATMEGA8 datasheet" %}
 
 ## The Programming Concept
 
 To program (m)any MCU, we need to connect it to a programmer. This is a
 hardware part that allows a computer to interface with the MCU. There are
 typically a few ways to connect both: serial,
-[ISP](http://en.wikipedia.org/wiki/In-System_Programming) (In System
-Programming), [JTAG](http://en.wikipedia.org/wiki/JTAG) (Joint Test Action
+{% include external link="http://en.wikipedia.org/wiki/In-System_Programming" title="ISP" %} (In System
+Programming), {% include external link="http://en.wikipedia.org/wiki/JTAG" title="JTAG" %} (Joint Test Action
 Group),...
 
 Which one to use depends on you MCU. In my case the ATMEGA168 supports ISP. I
@@ -39,13 +39,13 @@ Input/Output MISO (Master In Slave Out, output) and MOSI (Master Out Slave In,
 input), control SCK (Serial ClocK) and RST (ReSeT).
 
 ISP in fact connects the programmer to the MCU using
-[SPI](http://en.wikipedia.org/wiki/Serial_Peripheral_Interface_Bus) (Serial
+{% include external link="http://en.wikipedia.org/wiki/Serial_Peripheral_Interface_Bus" title="SPI" %} (Serial
 Peripheral Bus) - which makes it a bit confusing maybe. MISO, MOSI and SCK are
 the three wires that are used from the SPI, with the programmer being the
 master and the MCU being the slave. The power-related connections, along with
 the reset functionality allow the programmer to control the SPI communication.
 
-* [ISP using SPI on 8-bit AVR](http://www.atmel.com/images/doc0943.pdf)
+* {% include external link="http://www.atmel.com/images/doc0943.pdf" title="ISP using SPI on 8-bit AVR" %}
 
 ## The Programming Circuit
 
@@ -114,10 +114,10 @@ blink.
 ### Introducing blink.c
 
 To not loose any time, I'm starting with the source code found at the wonderful
-[tutorial on Sparkfun](https://www.sparkfun.com/tutorials/93). You can download
-[a zip file with everything you need from their
-website](http://www.sparkfun.com/tutorial/BeginningEmbedded/2-MicroProgramming/b
-link_1MHz.zip).
+{% include external link="https://www.sparkfun.com/tutorials/93" title="tutorial on Sparkfun" %}. You can download
+{% include external link="http://www.sparkfun.com/tutorial/BeginningEmbedded/2-MicroProgramming/b
+link_1MHz.zip" title="a zip file with everything you need from their
+website" %}.
 
 The source code is not too big and is interesting to take a look at. I also
 modified it a bit, because I wanted the blinking to be a bit more ... complex
@@ -195,8 +195,8 @@ $ sudo port install avr-gcc
 --->  No broken files found.
 {% endhighlight %}
 
-Next we need to compile it. From the great [tutorial on
-Sparkfun](https://www.sparkfun.com/tutorials/93), I happily reused their
+Next we need to compile it. From the great {% include external link="https://www.sparkfun.com/tutorials/93" title="tutorial on
+Sparkfun" %}, I happily reused their
 Makefile for now - until I have time to clean it up and extract what I need.
 For now, I edited it to reflect my setup with a a modified <tt>blink.c</tt>.
 Let's make this...
@@ -371,8 +371,8 @@ At this point I knew that I should be able to access the MCU using SPI, so I
 should also be able to burn the fuses. I looked up the defaults, hoping this
 might reset some other settings that might be faulty.
 
-I used the default fuse settings found on the [Embedded AVR Fuse
-Calculator](http://www.engbedded.com/fusecalc/). According to this source, the
+I used the default fuse settings found on the {% include external link="http://www.engbedded.com/fusecalc/" title="Embedded AVR Fuse
+Calculator" %}. According to this source, the
 high fuse byte should be <tt>DF</tt>, the low fuse byte should be <tt>62</tt>
 and tried to burn these to the MCU.
 
@@ -619,7 +619,7 @@ void turn_ports_off(void) {
 }
 {% endhighlight %}
 
-* [AVR LibC user manual](http://www.nongnu.org/avr-libc/user-manual/group__util__delay.html)
+* {% include external link="http://www.nongnu.org/avr-libc/user-manual/group__util__delay.html" title="AVR LibC user manual" %}
 
 ### 18MHz
 
@@ -676,4 +676,4 @@ running at 18MHz.
 
 ## References
 
-* [Embedded AVR Fuse Calculator](http://www.engbedded.com/fusecalc/)
+* {% include external link="http://www.engbedded.com/fusecalc/" title="Embedded AVR Fuse Calculator" %}

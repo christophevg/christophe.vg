@@ -66,17 +66,17 @@ $ mkdir homebridge-dev
 $ homebridge -D -U ./homebridge-dev > homebridge-dev/homebridge.log
 ```
 
-And visit [http://localhost:8581](http://localhost:8581).
+And visit {% include external link="http://localhost:8581" title="http://localhost:8581" %}.
 
 ## Niko Home Control
 
-Install Niko Home Control Plugin from [https://github.com/openhomekit/homebridge-nhc2](https://github.com/openhomekit/homebridge-nhc2)
+Install Niko Home Control Plugin from {% include external link="https://github.com/openhomekit/homebridge-nhc2" title="https://github.com/openhomekit/homebridge-nhc2" %}
 
 ```bash
 $ sudo npm install -g @openhomekit/homebridge-nhc2
 ```
 
-Using [https://mynikohomecontrol.niko.eu/](https://mynikohomecontrol.niko.eu/) add the Niko Hobby API and obtain the password formatted as a JWT token.
+Using {% include external link="https://mynikohomecontrol.niko.eu/" title="https://mynikohomecontrol.niko.eu/" %} add the Niko Hobby API and obtain the password formatted as a JWT token.
 
 Edit Homebrigde configuration:
 
@@ -132,7 +132,7 @@ $ npm run-script build
 
 Setup using the default Home Connect app.
 
-Visit [https://developer.home-connect.com/user/register](https://developer.home-connect.com/user/register) to setup a developer account and register a new application at [https://developer.home-connect.com/applications/add](https://developer.home-connect.com/applications/add) with "device flow".
+Visit {% include external link="https://developer.home-connect.com/user/register" title="https://developer.home-connect.com/user/register" %} to setup a developer account and register a new application at {% include external link="https://developer.home-connect.com/applications/add" title="https://developer.home-connect.com/applications/add" %} with "device flow".
 
 Copy the `ClientId` into the Homebridge configuration:
 
@@ -170,9 +170,9 @@ $ sudo npm install --unsafe-perm -g homebridge-harmony
 
 ## References
 
-* [https://github.com/homebridge/homebridge/wiki/Install-Homebridge-on-Raspbian](https://github.com/homebridge/homebridge/wiki/Install-Homebridge-on-Raspbian)
-* [https://medium.com/@woutervanvlaenderen/controlling-niko-home-control-2-through-apple-homekit-e902d241b5ca](https://medium.com/@woutervanvlaenderen/controlling-niko-home-control-2-through-apple-homekit-e902d241b5ca)
+* {% include external link="https://github.com/homebridge/homebridge/wiki/Install-Homebridge-on-Raspbian" title="https://github.com/homebridge/homebridge/wiki/Install-Homebridge-on-Raspbian" %}
+* {% include external link="https://medium.com/@woutervanvlaenderen/controlling-niko-home-control-2-through-apple-homekit-e902d241b5ca" title="https://medium.com/@woutervanvlaenderen/controlling-niko-home-control-2-through-apple-homekit-e902d241b5ca" %}
 
-* [https://github.com/thoukydides/homebridge-homeconnect](https://github.com/thoukydides/homebridge-homeconnect)
+* {% include external link="https://github.com/thoukydides/homebridge-homeconnect" title="https://github.com/thoukydides/homebridge-homeconnect" %}
 
-* [https://github.com/nicoduj/homebridge-harmony](https://github.com/nicoduj/homebridge-harmony)
+* {% include external link="https://github.com/nicoduj/homebridge-harmony" title="https://github.com/nicoduj/homebridge-harmony" %}

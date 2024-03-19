@@ -6,7 +6,7 @@ header:
   image: /about/images/header/no-excuses.png
 ---
 
-While visiting [The Good Home](http://thegoodhome.org/visit-us/aalst/) exposition in Aalst, I had a great chat with [Alexandra Deschamps-Sonsino](http://www.designswarm.com/) and [Dries De Roeck](https://twitter.com/driesderoeck) about the intersection of design, technology and care in the home. Although it only hit me while listening to her during the tour of the exposition, I found myself once again confronted with this _thing_ that has been bothering me on and off for quite some time now.
+While visiting {% include external link="http://thegoodhome.org/visit-us/aalst/" title="The Good Home" %} exposition in Aalst, I had a great chat with {% include external link="http://www.designswarm.com/" title="Alexandra Deschamps-Sonsino" %} and {% include external link="https://twitter.com/driesderoeck" title="Dries De Roeck" %} about the intersection of design, technology and care in the home. Although it only hit me while listening to her during the tour of the exposition, I found myself once again confronted with this _thing_ that has been bothering me on and off for quite some time now.
 
 Meet _Radio Me_ ...
 
@@ -32,7 +32,7 @@ Apparently no one had bothered to validate the actual business case, blinded by 
 
 As an added bonus, both the employee and the customer would have had a nice, synchronous, human-to-human talk, with a high chance of a better outcome than with the automated system.
 
-We really must stop lying to ourselves and shouldn't let technology be in the driving seat when it comes to developing new products. Especially not when these products actually provide us with excuses for less human-to-human interaction. Because, if that's the road ahead, we have surpassed the pinnacle of evolution, and are actually [going backwards](https://www.youtube.com/watch?v=60-MoSGqhhg), dehumanising ourselves and becoming actually [obsolete](https://www.youtube.com/watch?v=h1BQPV-iCkU).
+We really must stop lying to ourselves and shouldn't let technology be in the driving seat when it comes to developing new products. Especially not when these products actually provide us with excuses for less human-to-human interaction. Because, if that's the road ahead, we have surpassed the pinnacle of evolution, and are actually {% include external link="https://www.youtube.com/watch?v=60-MoSGqhhg" title="going backwards" %}, dehumanising ourselves and becoming actually {% include external link="https://www.youtube.com/watch?v=h1BQPV-iCkU" title="obsolete" %}.
 
 So I, for one, will not accept jobs that result in or contribute to products that will provide people with excuses to be less human. Even more so, I will not only say no to this kind of projects, but will clearly state to the client why I don't want to take on the job and why I think that he shouldn't pursue such a product. And because I believe that even in these bad products a good product can be found, I will even try to come up with a possible redefinition without excuses.
 

@@ -54,15 +54,15 @@ gallery:
     title: "Fri3d Camp"
 ---
 
-In de vroege uurtjes, bij het opkomen van de eerste zonnestralen over [OHM2013](https://ohm2013.org), het vierjaarlijkse Nederlandse hackerkamp, vonden [Anthony](http://anthony.liekens.net) en ik dat de tijd rijp was voor een Belgisch equivalent. We besften het toen misschien nog niet, maar op dat moment, met een pintje in de hand, zag [Fri3d Camp](http://fri3d.be) het levenslicht.
+In de vroege uurtjes, bij het opkomen van de eerste zonnestralen over {% include external link="https://ohm2013.org" title="OHM2013" %}, het vierjaarlijkse Nederlandse hackerkamp, vonden {% include external link="http://anthony.liekens.net" title="Anthony" %} en ik dat de tijd rijp was voor een Belgisch equivalent. We besften het toen misschien nog niet, maar op dat moment, met een pintje in de hand, zag {% include external link="http://fri3d.be" title="Fri3d Camp" %} het levenslicht.
 
 ## 2014
 
-Nadat al heel snel in de [Hoge Rielen](http://dehogerielen.be) een geschikte locatie gevonden was, gingen er enkele maanden voorbij, totdat ik op een avond in de [Open Garage](http://opengarage.org) besloot om de volgende ochtend een uitnodiging tot deelname de wereld in te sturen. We hadden op dat moment immers nog maar een tweetal maanden voor dat de aangekondigde start van de eerste editie van [Fri3d Camp](http://fri3d.be) een feit was en buiten een locatie, een datum en een logo was er nog maar weinig geregeld.
+Nadat al heel snel in de {% include external link="http://dehogerielen.be" title="Hoge Rielen" %} een geschikte locatie gevonden was, gingen er enkele maanden voorbij, totdat ik op een avond in de {% include external link="http://opengarage.org" title="Open Garage" %} besloot om de volgende ochtend een uitnodiging tot deelname de wereld in te sturen. We hadden op dat moment immers nog maar een tweetal maanden voor dat de aangekondigde start van de eerste editie van {% include external link="http://fri3d.be" title="Fri3d Camp" %} een feit was en buiten een locatie, een datum en een logo was er nog maar weinig geregeld.
 
 De respons uit de Belgische hacker- en makerscene was overweldigend. Met meer dan 45 activiteiten, bulkte het programma gedurende drie dagen (en nachten) van de wetenschappelijk en technologische presentaties en workshops.
 
-128 deelnemers, waaronder enorm veel kinderen, genoten van een waanzinnig uitgebreid en divers aanbod aan activiteiten, van het bouwen van robots, tot het maken van juwelen, het bedrukken van T-shirts tot het openmaken van sloten. [Fri3d Camp](http://fri3d.be) belichaamde werkelijk de prachtige wereld van de hacker- en makergemeenschap.
+128 deelnemers, waaronder enorm veel kinderen, genoten van een waanzinnig uitgebreid en divers aanbod aan activiteiten, van het bouwen van robots, tot het maken van juwelen, het bedrukken van T-shirts tot het openmaken van sloten. {% include external link="http://fri3d.be" title="Fri3d Camp" %} belichaamde werkelijk de prachtige wereld van de hacker- en makergemeenschap.
 
 Na twee intense maanden van voorbereiding en drie uitputtende dagen en nachten vol fantastische ervaringen waren Anthony, ik en nog enkele moedigen die zich bij ons als team hadden vervoegd, doodop. "Dit doen we echt nooit meer!", klonk het.
 
@@ -72,21 +72,21 @@ Maar dat duurde niet lang...
 
 De fonkeling in de ogen van de kinderen en bij gevolg ook van hun ouders, konden we allemaal niet uit onze herinnering bannen. We _moesten_ dit opnieuw doen.
 
-Geschraagd tussen de grote Nederlandse en Duitse kampen, besloten we om twee jaar later, een tweede editie op poten te zetten. [Fri3d Camp](http://fri3d.be) werd zo hét tweejaarlijkse Belgische hackerkamp.
+Geschraagd tussen de grote Nederlandse en Duitse kampen, besloten we om twee jaar later, een tweede editie op poten te zetten. {% include external link="http://fri3d.be" title="Fri3d Camp" %} werd zo hét tweejaarlijkse Belgische hackerkamp.
 
 Na een oproep om de organisatie te versterken, groeide het kleine team van 2014 tot een team van een tiental vrijwilligers die hun schouders mee onder een tweede editie wilden zetten.
 
-Tot lang na de eerste editie bleven de reacties binnenstromen, en het algemene gevoel was een van spijt dat men er niet bij had kunnen zijn. Snel werd duidelijk dat de 128 tickets van de eerste editie veel te weinig zouden zijn en een van de eerste beslissingen die genomen werd was een verdubbeling van het aantal beschikbare tickets, tot 256. Uiteindelijk waren er zelfs 299+1 deelnemers aanwezig, waaronder reeds enkele grote namen uit de nationale en internationale hacker en makerscene, zoals [Lieven Scheire](http://lievenscheire.be) en [Mitch Altman](https://en.wikipedia.org/wiki/Mitch_Altman).
+Tot lang na de eerste editie bleven de reacties binnenstromen, en het algemene gevoel was een van spijt dat men er niet bij had kunnen zijn. Snel werd duidelijk dat de 128 tickets van de eerste editie veel te weinig zouden zijn en een van de eerste beslissingen die genomen werd was een verdubbeling van het aantal beschikbare tickets, tot 256. Uiteindelijk waren er zelfs 299+1 deelnemers aanwezig, waaronder reeds enkele grote namen uit de nationale en internationale hacker en makerscene, zoals {% include external link="http://lievenscheire.be" title="Lieven Scheire" %} en {% include external link="https://en.wikipedia.org/wiki/Mitch_Altman" title="Mitch Altman" %}.
 
 Met meer dan 70 activiteiten werd het programma nóg uitbundiger en zagen we hoe gezinnen samen genoten van hun kennismaking met al deze wonderbaarlijke projecten, workshops,... De tweede editie was opnieuw een schot in de roos en nog voor het weekend om was, brandde de vraag op ieders lippen: "Tot binnen 2 jaar?!"
 
 ## 2018
 
-Het antwoord was zeer snel "Ja!". In 2018 vond de derde editie van [Fri3d Camp](http://fri3d.be) plaats vinden.
+Het antwoord was zeer snel "Ja!". In 2018 vond de derde editie van {% include external link="http://fri3d.be" title="Fri3d Camp" %} plaats vinden.
 
-Het aantal beschikbare tickets verdubbelde opnieuw tot 512. Hiervoor moesten we wel op zoek naar een nieuwe locatie en die werd relatief snel gevonden in Sint-Joris-Weert, nabij Leuven: [De Kluis](https://www.hopper.be/en/jeugdverblijf/de-kluis).
+Het aantal beschikbare tickets verdubbelde opnieuw tot 512. Hiervoor moesten we wel op zoek naar een nieuwe locatie en die werd relatief snel gevonden in Sint-Joris-Weert, nabij Leuven: {% include external link="https://www.hopper.be/en/jeugdverblijf/de-kluis" title="De Kluis" %}.
 
-In 2018 had [Fri3d Camp](http://fri3d.be) tevens een thema: Robots! We waren dan ook enorm gelukkig dat niemand minder dan Mr. Robot himself, [Jan De Coster](http://jandecoster.com) het peterschap van dit thema aanvaard heeft. Hijzelf en zijn fantastische familie van eigenzinnige robots zetten alvast de toon voor een wonderbaarlijke editie.
+In 2018 had {% include external link="http://fri3d.be" title="Fri3d Camp" %} tevens een thema: Robots! We waren dan ook enorm gelukkig dat niemand minder dan Mr. Robot himself, {% include external link="http://jandecoster.com" title="Jan De Coster" %} het peterschap van dit thema aanvaard heeft. Hijzelf en zijn fantastische familie van eigenzinnige robots zetten alvast de toon voor een wonderbaarlijke editie.
 
 ## Fri3d Camp & ik
 
@@ -100,8 +100,8 @@ Ook in 2018 gaf ik opnieuw present voor zowel Team Content als het uitwerken van
 
 Onderstaande foto's zijn een kleine greep uit de twee eerste fantastische edities, in 2014 en 2016. De Flickr groepen voor deze twee edities, bevatten nog veel meer prachtige herinneringen.
 
-* [Fri3d Camp 2014](https://www.flickr.com/groups/fri3dcamp2014/pool/)
-* [Fri3d Camp 2016](https://www.flickr.com/groups/2979621@N25/pool/)
+* {% include external link="https://www.flickr.com/groups/fri3dcamp2014/pool/" title="Fri3d Camp 2014" %}
+* {% include external link="https://www.flickr.com/groups/2979621@N25/pool/" title="Fri3d Camp 2016" %}
 
 {% include gallery id="gallery" %}
 

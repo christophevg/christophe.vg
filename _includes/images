@@ -1,0 +1,22 @@
+{% assign images = include.images | default: page.images %}
+{% assign category = images.category | default: page.categories[0] %}
+{% assign folder = images.folder | default: page.folder %}
+{% if folder %}
+{% capture subfolder %}/{{ folder }}{% endcapture %}
+{% else %}
+{% assign subfolder = "" %}
+{% endif %}
+<div class="images">
+  {% assign show = include.show | split: "," %}
+  {% for name in show %}
+  {% assign file = images.files[name] %}
+  {% assign ext = file.kind | default: "jpeg" %}
+  {% assign human = name | replace: "-", " " | capitalize %}
+  <a href="/{{ category }}/images/full{{ subfolder }}/{{ name }}.{{ ext }}"
+     title="{{ file.title | default: file.alt | default: human }}">
+    <img class="{{ file.class }}" 
+         src="/{{ category }}/images/thumb{{ subfolder }}/{{ name }}.{{ ext }}"
+         alt="{{ file.title | default: file.alt | default: human }}">
+  </a>
+  {% endfor %}
+</div>

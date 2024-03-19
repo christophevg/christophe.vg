@@ -1,16 +1,32 @@
 ---
 title: Logboek 2024
+thumbs:
+  files:
+    06-01-24-1:
+      title: All set!
+    06-01-24-2:
+      title: Maiden voyage
+    07-01-24:
+      title: Maiden wash
+    02-03-24-1:
+      title: Sessie 2
+    02-03-24-2:
+      title: Stats
+    02-03-24-3:
+      title: Action!
+    03-03-24:
+      title: Een propere blokart...
 ---
 
 ## 3 maart - Goeie gewoonte...
 
-{% include image name="03-03-24" title="een propere blokart..." %}
+{% include thumbs show="03-03-24" %}
 
 En met 13 graden was het vandaag een pak aangenamer om m'n blokart buiten terug volledig zand-vrij te maken en deze keer ook buiten rustig te laten drogen.
 
 ## 2 maart - Sessie 2, met, zonder, met, zonder... wind
 
-{% include image name="02-03-24-1" title="sessie 2" %}
+{% include thumbs show="02-03-24-1" %}
 
 "Hopelijk binnen 2 weken" werd "binnen een kleine 2 maand"... that's my life 🤷‍♂️
 
@@ -18,7 +34,7 @@ Voorspellingen waren veel belovend - en na die openingszin weet je al wat er vol
 
 Dus in tegenstelling tot de eerste sessie, was die vooral een moeilijke sessie, echter ook heel leerzaam. Zelfs in deze vervelende omstandigheden heb ik er toch nog een kleine twee uur aan leerschool opzitten.
 
-{% include image name="02-03-24-2" title="stats" %}
+{% include thumbs name="02-03-24-2" %}
 
 Halverwege even aan gedacht om Strava in te schakelen om de tweede helft van de sessie in kaart te brengen. Met veel downs en enkele stevige ups toch een 13-tal kms afgelegd, zelfs met een piekje van 35km/u. En neen, dat is niet in-het-water getracked,... merk op de "donkerdere blauwe zone" die het laag-water gedeelte aangeeft 😉 Wordt vervolgd...
 
@@ -30,23 +46,20 @@ Nadien had ik letterlijk het clubhuis voor mij alleen en was het een gezellige b
 
 Afhankelijk van de wetmatige mogelijkheden hoop ik nog op een derde sessie op 16 maart, echter ergens heb ik precies gelezen dat het slechts tot 15 maart toegelaten is om te blokarten op het strand 🤞
 
-{% include image name="02-03-24-3" title="action!" %}
+{% include thumbs show="02-03-24-3" %}
 
 Na afloop bleek dat er nog een fotograaf op het strand aanwezig was en die leverde mij nog een leuke action-pic op 🤩 (credits en dank aan Lost Creations)
 
 ## 7 januari - Kleine wasjes, grote wasjes... 
 
-{% include image name="07-01-24" title="maiden wash" %}
+{% include thumbs show="07-01-24" %}
 
 En zoals het goede huisvader betaamt: wordt het nieuwe speelgoedje flink gewassen en gedroogd _the day after_ 😇 Klaar voor een volgende sessie (hopelijk binnen 2 weken).
 
 ## 6 januari - Some things never change...
 
-{% include image name="06-01-24-2" title="maiden voyage" %}
-
-{% include image name="06-01-24-1" title="all set..." %}
+{% include thumbs show="06-01-24-1,06-01-24-2" %}
 
 Waarschijnlijk de vroegste logboek notitie _ever_... het is gebeurd... 15 jaar en net geen maand geleden stond ik met fonkelende oogjes op het strand van Oostende en vandaag was niet anders. 2 uur lang, tot mijn handen gewoon geen schoot meer konden vasthouden, heb ik genoten van zowat de meest ideale omstandigheden om met een blokart tussen Zeebrugge en de Meerlaan loeihard te _tjezen_. Het was gewoon kei kei kei leuk.
 
 Met het vooruitzicht om misschien _iemand_ te zien, was een groep van om en bij de 10 blokarters een geweldige kennismaking met een ongelooflijk fijne _community_. Dit gaat terecht heel wat tijd deze winter toebedeeld krijgen.
-

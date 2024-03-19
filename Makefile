@@ -23,3 +23,4 @@ clean:
 	rm $(MAIN_JS)
 
 .PHONY: assets
+.PHONY: $(MAIN_JS)

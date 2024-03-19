@@ -1,5 +1,6 @@
 ---
 title: Resin in Wood Coasters
+short: riwc
 header:
   teaser: /makes/images/thumb/resin-in-wood-coasters/resin-in-wood-coasters.jpeg
   image: /makes/images/header/resin-in-wood-coasters.jpeg

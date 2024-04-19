@@ -44,7 +44,7 @@ From there on it was basic engraving with my sturdy Beambox Pro. Power 55%, spee
 
 {% include thumbs show="step-3,step-4" %}
 
-The result just needed abit of cleaning with household alcohol and water to remove the soot.
+The result just needed a bit of cleaning, with household alcohol and water to remove the soot.
 
 ## Day 2: Adding a Transparant Layer
 

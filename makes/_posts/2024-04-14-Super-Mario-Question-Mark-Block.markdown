@@ -45,4 +45,8 @@ And with some Acrilfix 0192 everything soon was assembled into a worthy Super Ma
 
 {% include image name="result" %}
 
-It features a hinged lid, so I could hide my contribution inside and top it of with some balloons - action pictures coming soon 😉
+{% include video name="super-mario-question-mark-block/unboxing" id="KYzkrTPMFe4" title="unboxing" kind="jpeg"%}
+
+It features a hinged lid, so I could hide my contribution inside and top it off with some balloons...
+
+{% include image name="wrapped" %}

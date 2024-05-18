@@ -16,7 +16,21 @@ thumbs:
       title: Action!
     03-03-24:
       title: Een propere blokart...
+    11-05-24-1:
+      title: Best of Friends
+    11-05-24-2:
+      title: 11u48
+    11-05-24-3:
+      title: 12u48    
 ---
+
+## 11 mei - Schuppen...
+
+{% include thumbs show="11-05-24-1,11-05-24-2,11-05-24-3" %}
+
+Seizoen 4 in Duinbergen start met een hele hoop "schupwerk". De voorjaardswinden hebben de club redelijk "verzand" achtergelaten. Echter, met wat hulp van Koen lag Boosui snel opnieuw op haar plekje.
+
+De komende weken is er wel wat werk aan de winkel om haar volledig zeilklaar te krijgen: nieuwe trapezerekkers en mogelijk een vreemde impactschade aan de romp.
 
 ## 3 maart - Goeie gewoonte...
 

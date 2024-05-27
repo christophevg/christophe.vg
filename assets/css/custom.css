@@ -104,11 +104,13 @@ div.retired {
 div.thumbs {
   text-align: center;
   float: right;
+  margin-left: 5px;
 }
 
 @media screen and (max-width:600px) {
   div.thumbs.many {
     float: none;
+    margin-left: 0px;
   }  
 }
 

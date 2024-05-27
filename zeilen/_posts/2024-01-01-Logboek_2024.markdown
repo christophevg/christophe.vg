@@ -24,6 +24,22 @@ thumbs:
       title: 12u48    
 ---
 
+## 27 mei - Beachy Maandag 😇
+
+{% include thumbs show="27-05-24-1,27-05-24-2,27-05-24-3" %}
+
+Het is eens wat anders, een maandagochtend op het strand. Met wat meer tijd gedurende de week deze zomer, was ik eens de eenzame cat-verder-optuiger.
+
+Met nieuwe trapeze shock absorbers en nieuwe sloten, zijn een paar dingen die nog niet in orde waren nu wél in orde. Verder nog wel een aantal nieuwe dingen opgemerkt en op het groeiende lijstje gezet van dingen die wat liefde nodig hebben: een nieuwe {% include external link="https://www.catacare.be/collections/goodall-design-c2-parts/products/f18-spinnaker-chute" title="spinaker zak" %}, {% include external link="https://www.catacare.be/collections/goodall-design-viper/products/wire-block-tube-rivet" title="blokje voor in de spi boom" %}, {% include external link="https://www.catacare.be/collections/goodall-design-viper/products/nylon-ring" title="nylon ring voor spi shock absorber" %}.
+
+Bij het opzoeken van de onderdelen in de handleiding, ontdekte ik dat er sinds het begin mogelijks twee blokken ontbreken 😱 Dat verklaart waarom er zoveel "overschot" was op de neerhouder. Eerst eens bekijken wanneer we opnieuw helemaal opgetuigd zijn.
+
+{% include thumbs show="27-05-24-4" %}
+
+De stuurboord romp heeft ergens deze winter schade opgelopen. Niemand weet van iets, ik heb wel een vermoeden 😉 (hint: ⚾️) Gelukkig was het super snelle antwoord van Bruno van {% include external link="https://passionknokke.be" title="Passion" %} weer meer dan ok: "Duck tape er op tijdens het seizoen en deze winter even langskomen voor reparatie." Ik hou van mensen met common sense 😊
+
+Nu alleen nog _witte_ duck tape vinden 🤓
+
 ## 11 mei - Schuppen...
 
 {% include thumbs show="11-05-24-1,11-05-24-2,11-05-24-3" %}

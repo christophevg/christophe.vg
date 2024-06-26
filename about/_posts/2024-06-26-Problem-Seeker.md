@@ -84,7 +84,7 @@ When I say _standard_ I mean an _plain vanilla_ open standard, something that wo
   </div>
   <div class="yours messages">
     <div class="message last">
-      Yeah, yeah, but what if I have something at hand that's hasn't been standardised?
+      Yeah, yeah, but what if I have something at hand that hasn't been standardised?
      </div>
   </div>
 </div>      

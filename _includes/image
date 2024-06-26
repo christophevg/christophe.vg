@@ -6,7 +6,7 @@
 {% endif %}
 {% capture kind %}{{ include.kind | default: "jpeg" }}{% endcapture %}
 {% assign human = include.name | replace: "-", " " | capitalize %}
-<div style="text-align:center;margin-bottom:5px;">
+<div style="text-align:center;margin-bottom:{{ include.bottom | default "5px"}};">
   <a href="images/full{{ subfolder }}/{{ include.name }}.{{ kind }}" title="{{ include.title | default: human }}">
     <img src="images/thumb{{ subfolder }}/{{ include.name }}.{{ kind }}" alt="{{ include.title | default: human }}">
   </a>

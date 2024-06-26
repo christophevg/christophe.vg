@@ -152,9 +152,9 @@ _Common_ means it is something that is generally accepted (the universal part in
 
 Next, we can only develop a _sense_, a sentiment, knowledge, judgement even taste, by experience. I often feel that when people use the phrase "common sense" it has this underlying feel of a _deus ex machina_, common sense being something obvious, something evident, while the opposite is actually the case: it requires a lot of effort and experience to develop a common sense about something. It's absolutely not that obvious, not without reflection at its core, as I still experience on a daily basis. Some classic examples I hold dearly...
 
-{% include video id="ZhIsAZO5gl0" name="kiss-video" title="KISS" %}
-
 #### Kiss Complexity Goodbye
+
+{% include video id="ZhIsAZO5gl0" name="kiss-video" title="KISS" %}
 
 {% include external link="https://en.wikipedia.org/wiki/KISS_principle" title="KISS" %}... "Keep It Simple Stupid" is a well-known adage, yet the number of bloated frameworks, of which often hardly a small portion is actually needed _and_ used takes on mythical proportions in so many places. In my experience, projects that do adhere to this "less is more" approach tend to be much leaner and meaner, more agile and have far better results on different KPIs.
 

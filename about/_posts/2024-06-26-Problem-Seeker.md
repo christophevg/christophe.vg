@@ -615,7 +615,7 @@ Looking after your best interest and pointing out flaws or not well-founded deci
 
 Throughout my career, so far I've mostly been blessed with such mature professional superiors and colleagues, who respectfully accept the detected flaws and take on their job of solving them. Because they understand that if they don't solve the actual, underlying problem, it will linger on and cause a lot more problems in the future, wasting more money and time. So swallowing the sometimes bitter (red?) pill now, is always the right way forward.
 
-Being the problem seeker I am, I'm especially grateful to have had the opportunity to work with such great leadership, who have enabled me to do what I'm good at, allowed me to be curious and inquisitive, stoot up for me supporting my findings and helped them get across, basically by enabling me to proactively work on a structural level. Because that's at least one important aspect of how I feel I can [ensure the realisation of the dream of my client](/about/I-Software-Architect).
+Being the problem seeker I am, I'm especially grateful to have had the opportunity to work with such great leadership, who have enabled me to do what I'm good at, allowed me to be curious and inquisitive, stood up for me supporting my findings and helped them get across, basically by enabling me to proactively work on a structural level. Because that's at least one important aspect of how I feel I can [ensure the realisation of the dream of my client](/about/I-Software-Architect).
 
 You know who you are, so this is basically a big "thank you" to you all!  
 And to all others... You're missing the point 😉

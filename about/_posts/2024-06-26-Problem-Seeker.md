@@ -202,7 +202,7 @@ To complete the setup: mix in some command line tools and compilers, executed fr
 
 > As a final side note: there is a lot of scientific research out there that already has concluded that "dark mode" is bad. So my text editor and terminal have been and always will be black on white. I don't care I'm not fashionable. Even in the 80's I already chose Hercules video cards with a paperwhite monitor, because it was much easier on the eyes.
 
-Did that get under your skin? Good! That are _my_ personal preferences and those should not bleed into the realm of common sense. Clearly for good reasons. Although, I personally think they should and I will explain them to you whenever I have the chance 😈
+Did that get under your skin? Good! Those are _my_ personal preferences and they should not bleed into the realm of common sense. Clearly for good reasons. Although, I personally think they should and I will explain them to you whenever I have the chance 😈
 
 ### Snap Back to Reality
 

@@ -42,26 +42,28 @@ With each layer, the colorfull details started to disappear. After some 7 layers
 
 {% include thumbs show="welcome-1,welcome-2,welcome-3" %}
 
-So, next time you pay me a visit and you step into my office, you will be greeted by Artware City as you enter. Enjoy a little tour...
+So, next time you pay me a visit and you step into my office, you will be greeted by Artware City as you enter.
+
+Enjoy a little tour...
 
 ## Welcome to Artware City
 
 {% include thumbs show="din-port" %}
 
-Who doesn't remember the grandeur of DIN Port, hooking up (with) your favorite keyboard. Ever since those pesky PS2 (mini-DIN) ports took over, the city was never the same. Yet, they also had to move over, when the mighty USB boys came to town.
+Who doesn't remember the grandeur of **DIN Port**, hooking up (with) your favorite keyboard. Ever since those pesky PS2 (mini-DIN) ports took over, the city was never the same. Yet, they also had to move over, when the mighty USB boys came to town.
 
 {% include thumbs show="video-card-alley" %}
 
-In between the low-rise disk drives, you can enjoy a beautiful view of the city while strolling along Video Card Alley. If you look carefully, you might even spot a female VGA connector.
+In between the low-rise disk drives, you can enjoy a beautiful view of the city while strolling along **Video Card Alley**. If you look carefully, you might even spot a female VGA connector.
 
 {% include thumbs show="memory-lane" %}
 
-At the end of the alley, take a righthand turn and you can't miss it. Take a trip down Memory Lane and continue down Networking Street. If you keep on going you'll even reach the Super Highway. 
+At the end of the alley, take a righthand turn and you can't miss it. Take a trip down **Memory Lane** and continue down **Networking Street**. If you keep on going you'll even reach the **Information Superhighway**. 
 
 {% include thumbs show="hard-disk-drive" %}
 
-A visit to Artware City is of course not complete without attending a game at the big Seagate ST-251 stadion on Hard Disk Drive.
+A visit to Artware City is of course not complete without attending a game at the big Seagate ST-251 Stadion on **Hard Disk Drive**.
 
 {% include thumbs show="pci-slot-station" %}
 
-Maybe you took a train into town. In that case, you will already know PCI Slot Station. With its high speed expansion slots, it offers everything a modern visitor might want.
+Maybe you took a train into town. In that case, you will already know **PCI Slot Station**. With its high speed expansion slots, it offers everything a modern city dweller needs.

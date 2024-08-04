@@ -31,8 +31,9 @@ But now and then, I need something more and these sites are useful additions:
 
 Although it doesn't have a section on this site, running is one activity that tends to take up quiet some part of my free time.
 
-* {% include external link="https://www.plotaroute.com" %} - is a great tool to ... plot a route 😇
-* {% include external link="https://www.plotaroute.com" %} - for some time, this has become my centralized, statistical analysis tool for all my runs. I can sync from my favorite {% include external link="https://apps.apple.com/us/app/ismoothrun/id410965399" title="tracking app" %} and applies too many scientific statistical algorithms, for my nerdy insight pleasure
-* {% include external link="https://wearerunning.be" %} - contains all running events from january through december (in Belgium). Typically I try to attend most of these.
+* {% include external link="https://www.plotaroute.com" %} - is a great tool to ... plot a route 😇 It allows exporting routes to GPX, which I then can import in...
+* {% include external link="https://www.rungoapp.com" %} - the free version of the {% include external link="https://apps.apple.com/app/rungo-guided-runs-turn-by/id712628644" title="RunGo app"} allows me to do just what I want: import GPX, save it to my watch and have turn-by-turn audio navigation.
+* {% include external link="https://runalyze.com" %} - for some time, this has become my centralised, statistical analysis tool for all my runs. I can sync from my favorite {% include external link="https://apps.apple.com/us/app/ismoothrun/id410965399" title="tracking app" %} and applies too many scientific statistical algorithms, for my nerdy insight pleasure
+* {% include external link="https://wearerunning.be" %} - contains all running events from January through December (in Belgium). Typically I try to attend a lot of these.
 
 > Let's see where this small list ends up (or not) in some time...

@@ -27,12 +27,18 @@ But now and then, I need something more and these sites are useful additions:
 * {% include external link="https://fontmeme.com" %} - great source of free fonts - clean and simple
 * {% include external link="https://pixabay.com" %} - as their tagline states: tunning royalty-free images & royalty-free stock. Found it while looking for some background music.
 
+## Software 🤓
+
+Over the years my development stack has really converged, and so are the tools I use.
+
+* {% include external link="https://realfavicongenerator.net" %} - to convert a logo design for some app into a complete set of icons for the web.
+
 ## Running 🏃‍♂️
 
 Although it doesn't have a section on this site, running is one activity that tends to take up quiet some part of my free time.
 
 * {% include external link="https://www.plotaroute.com" %} - is a great tool to ... plot a route 😇 It allows exporting routes to GPX, which I then can import in...
-* {% include external link="https://www.rungoapp.com" %} - the free version of the {% include external link="https://apps.apple.com/app/rungo-guided-runs-turn-by/id712628644" title="RunGo app"} allows me to do just what I want: import GPX, save it to my watch and have turn-by-turn audio navigation.
+* {% include external link="https://www.rungoapp.com" %} - the free version of the {% include external link="https://apps.apple.com/app/rungo-guided-runs-turn-by/id712628644" title="RunGo app" %} allows me to do just what I want: import GPX, save it to my watch and have turn-by-turn audio navigation.
 * {% include external link="https://runalyze.com" %} - for some time, this has become my centralised, statistical analysis tool for all my runs. I can sync from my favorite {% include external link="https://apps.apple.com/us/app/ismoothrun/id410965399" title="tracking app" %} and applies too many scientific statistical algorithms, for my nerdy insight pleasure
 * {% include external link="https://wearerunning.be" %} - contains all running events from January through December (in Belgium). Typically I try to attend a lot of these.
 

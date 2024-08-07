@@ -21,8 +21,18 @@ thumbs:
     11-05-24-2:
       title: 11u48
     11-05-24-3:
-      title: 12u48    
+      title: 12u48
+    30-07-24:
+      kind: png
 ---
+
+## 30 juli - Registratie
+
+{% include thumbs show="30-07-24" %}
+
+Oops, blijkbaar is de oude vlaggenbrief tegenwoordig toch weer vervangen door een registratiebrief. Voor Waterproof hebben we ooit eens enkele dagen rondgereden in Zeebrugge en Oostende om aan een vlaggenbrief te geraken, want we wilden in orde zijn. Om nadien te vernemen dat dat moeizaam ging omdat dat helemaal niet echt "nodig" was voor een sportcatamaran.
+
+Nu is het dus blijkbaar weer wel nodig en wordt er zelfs actief gecontroleerd. Pffft, weer wat administratie en een slechte online ervaring rijker is mijn registratie ingediend en betaald en kunnen we 4 tot 6 weken wachten 🙄
 
 ## 27 mei - Beachy Maandag 😇
 

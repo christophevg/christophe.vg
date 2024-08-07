@@ -26,6 +26,20 @@ thumbs:
       kind: png
 ---
 
+## 5 augustus - Friend & Kids - part 1
+
+{% include thumbs show="05-08-24-1,05-08-24-2,05-08-24-3" %}
+
+Yada, yada, time flies en zo begint mijn seizoen pas echt in augustus dit jaar. De manier waarop en de reden zijn dan weer super leuk. Half mei afgesproken met F&C om tijdens hun verblijf aan zee eens af te spreken, zorgt ervoor dat ik vandaag drie sessies mag zeilen met allemaal first-time-sailors 😊 #altijdzofijn
+
+Het was bijna een schande dat na zo veel jaren, en keren dat de Bende van Leuven al eens op het strand was geweest, dat F&C nog nooit mee het ruime sop gekozen hadden. Bij deze in schoonheid rechtgezet 🙏
+
+{% include thumbs show="05-08-24-4" %}
+
+En afsluiten doen we ook in schoonheid op het LichtTorenStrand in zeer fijn gezelschap met een heerlijke ondergaande zon. Sommige dagen...
+
+Note to self: nylon ring voor spi shock absorber terug gevonden ✅
+
 ## 30 juli - Registratie
 
 {% include thumbs show="30-07-24" %}

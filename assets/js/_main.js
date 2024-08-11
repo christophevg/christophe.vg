@@ -108,4 +108,10 @@ $(document).ready(function(){
     midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
   });
 
+
+  // dynamically add permalinks links
+  $(":header[id]").append( function() {
+    return "<a class=\"permalink\" href='#" + this.id + "'>🔗</a>";
+  } );
+
 });

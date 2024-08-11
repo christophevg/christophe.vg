@@ -228,3 +228,24 @@ div.images {
   background: white;
   border-bottom-left-radius: 10px;
 }
+
+/* permalinks */
+
+a.permalink {
+  display: none;
+  font-size: 50%;
+  text-decoration: none;
+  margin-left: 10px;
+  position: relative;
+  top: -4px; /* qnd - couldn't middle-align it with the header 😢 */
+}
+
+h2:hover a.permalink,
+h3:hover a.permalink,
+h4:hover a.permalink {
+  display: inline;
+  text-decoration: none;
+}
+h2, h3, h4 {
+  position: relative;
+}

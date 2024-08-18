@@ -26,7 +26,7 @@ These products offer a way out, to avoid direct, human to human interaction. Now
 
 Let's take a step back and take a look at the bigger picture, at the actual root cause of this mess: technology. Technology should never be a driving force when developing products. It's not because we _can_ do something with technology, that we _should_ do it. Products, and any kind of solution we like to build with our beloved technology, should be build because it's actually _needed_.
 
-Let me illustrate this with a professional anecdote: at a certain company a project was started to create an online, interactive Q&A system for their customers, using the latest agent-driven frameworks. About 5 people worked on this for over 2 years. That's 10 man years! When the solution finally went live, they had to wait for several days before the first actual customer tried to use it.
+<a name="agent-anecdote"></a>Let me illustrate this with a professional anecdote: at a certain company a project was started to create an online, interactive Q&A system for their customers, using the latest agent-driven frameworks. About 5 people worked on this for over 2 years. That's 10 man years! When the solution finally went live, they had to wait for several days before the first actual customer tried to use it.
 
 Apparently no one had bothered to validate the actual business case, blinded by the latest and greatest wonders of technology. In the end the simplest, cheapest and by far best solution, would have been a telephone assigned to some knowledgeable employee who would have to answer a call every few days. Even if this was the only thing this person would have to do, the development budget alone would have provided him with a nice salary for at least 10 years.
 

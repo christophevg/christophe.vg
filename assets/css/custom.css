@@ -115,6 +115,7 @@ div.thumbs {
 }
 
 img.thumb {
+  margin: 5px 0px 5px 5px;
   height: 75px;
 }
 

@@ -6,11 +6,10 @@ header:
   image: /about/images/header/social.jpg
 ---
 
-_Note: This thing is already quite old and just like social networks, I've also evolved and moved on. So I've annotated the first paragraph to represent my actual current presence on social media. The ideas in this thing... are still, more than ever valid ;-)_
+_Note: This thing is already quite old and just like social networks, I've also evolved and moved on. So I've annotated the first paragraph (only) to represent my actual current presence on social media. The ideas in this thing... are still, more than ever valid ;-)_
 
 Unlike <strike>some</strike> many among you, I see so called socials networks
-as a necessary evil. Yes I have a <strike>Google+ account</strike>, yes I have
-a <strike>Twitter account</strike>, yes I even have a <strike>Facebook account</strike>. Today an <strike>Instagram account</strike> is still active.
+as a necessary evil. Yes I have an {% include external link="https://instagram.com/homemadebycvg" title="Instagram" %}, {% include external link="https://x.com/homemadebycvg" title="X" %} and even {% include external link="https://www.facebook.com/homemadebycvg" title="Facebook" %} account, yet they serve solely as social feeds for my online content. In a way, they are merely another entry point to everything {% include external link="https://homemadebycvg.com" title="Homemade by CVG" %}.
 
 Let's work ourselves up from the lowest ... I'm on Facebook, also known as the
 privacy whore, because for some strange reason, my fellow students think it's

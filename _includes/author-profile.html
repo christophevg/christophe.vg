@@ -68,10 +68,22 @@
         </li>
       {% endif %}
       
+        <li><a href="https://homemadebycvg.com" itemprop="sameAs" style="margin-bottom:0px">
+          <img src="/assets/images/homemadebycvg.png" style="width:16px;height:16px;margin-bottom:3px;margin-right:3px;margin-left:2px;" aria-hidden="true"> 
+          Homemade by CVG</a>
+          <span style="margin-left:21px">(social landing page)</span>
+        </li>
+
+      {% if author.instagram %}
+        <li><a href="https://instagram.com/{{ author.instagram }}" itemprop="sameAs">
+          <i class="fa fa-fw fa-instagram" aria-hidden="true"></i> 
+          Instagram
+        </a></li>
+      {% endif %}
       {% if author.twitter %}
-        <li><a href="https://twitter.com/{{ author.twitter }}" itemprop="sameAs">
-          <i class="fa fa-fw fa-twitter-square" aria-hidden="true"></i> 
-          Twitter
+        <li><a href="https://x.com/{{ author.twitter }}" itemprop="sameAs">
+          <img src="/assets/images/x-twitter.png" style="width:16px;height:16px;margin-bottom:3px;margin-right:3px;margin-left:2px;" aria-hidden="true"> 
+          X
         </a></li>
       {% endif %}
       {% if author.facebook %}
@@ -102,12 +114,6 @@
         <li><a href="https://www.xing.com/profile/{{ author.xing }}" itemprop="sameAs">
           <i class="fa fa-fw fa-xing-square" aria-hidden="true"></i> 
           XING
-        </a></li>
-      {% endif %}
-      {% if author.instagram %}
-        <li><a href="https://instagram.com/{{ author.instagram }}" itemprop="sameAs">
-          <i class="fa fa-fw fa-instagram" aria-hidden="true"></i> 
-          Instagram
         </a></li>
       {% endif %}
       {% if author.tumblr %}

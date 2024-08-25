@@ -1,0 +1,43 @@
+---
+title: B/C Art
+header:
+  teaser: /makes/images/thumb/bc-art/bc-art.jpeg
+  image: /makes/images/header/bc-art.jpeg
+tags:
+  - fun
+folder: bc-art
+---
+
+Ever since I designed and had my concrete house constructed, I want to create some personal concrete art pieces. So, as usual, it took a few years before I allowed myself some time to start working on it.
+
+## Concept and Design
+
+The concept was simple: a geometric shape (a disc) made out of concrete with a translucent resin core, standing on a stand constructed from reinforcing steel bars. And even though it took me about five years to get going, the concept never changed.
+
+> If you wonder what the name refers to... It's (obviously) **C**oncrete Art, concrete in Dutch is **B**eton and **B/C** is short for because. You surely can piece it together 😇
+
+## Constructing B/C Art
+
+Creating B/C Art was rather straightforward: create a concrete cylinder, fill it with resin. Still I had some new material to work with: steel bars, a larger volume of both concrete and resin. I could however reuse a lot of previous experience and materials.
+
+{% include thumbs show="step1,step2,step3" %}
+
+Using my laser cutter I created two circular cut-outs to hold a piece EVA foam, thus creating the outer circular mold. A piece of PVC tubing kept the central cylinder concrete-free. With three pieces of steel bars, I created some reinforcing structure for the concrete. Finally some scrap wood helped in setting up a complete mold, ready to be filled with concrete.
+
+{% include thumbs show="step4,step5" %}
+
+24 hours later it was unmolding time and after a bit of struggling while keepting the resin _inside_ the center piece, the resin core was also done. The final step was adding a wooden base. For now I used some available scrap piece. I'm going to replace it with scaffolding wood soon.
+
+## The Result
+
+As always, I had a lot to learn. This make was no different. Because I knew, this was _merely_ an experiment and the goal is to make more versions of this design, I didn't mind things go (very) wrong sometimes. All these lessons learned go into the next once and for now, this first B/C Art is truly a nice OG.
+
+{% include image name="bc-art" %}
+
+## The Future
+
+So, this first version is not the last one. I plan on doing a lot of these. So, check back for the next versions, as I will add pictures of each of them right here.
+
+### B/C Art 001
+
+{% include image name="bc-art-001" %}

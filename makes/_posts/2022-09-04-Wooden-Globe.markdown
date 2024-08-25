@@ -34,11 +34,11 @@ gallery:
 folder: wooden-globe
 ---
 
-Roughly a year after I made a [Padel Racket for Mark](Padel-racket), my partners in many crimes, Christophe & Rozanne organized a garden party for too many good reasons. And once again, I proposed to upgrade the money that we wanted to give with some... "gift wrapping".
+Roughly a year after I made a [Padel Racket for Mark](Padel-racket), my partners in many crimes, Christophe & Rozanne organised a garden party for too many good reasons. And once again, I proposed to upgrade the money that we wanted to give with some... "gift wrapping".
 
 ## The Concept
 
-Okay, something you need to know about Christophe & Rozanne: they are travelers, no globetrotters. So the theme was quickly decided upon and digging through my collection of "things I'd love to make"... a wooden globe was an evident choice.
+Okay, something you need to know about Christophe & Rozanne: they are travellers, no globetrotters. So the theme was quickly decided upon and digging through my collection of "things I'd love to make"... a wooden globe was an evident choice.
 
 After some google'ing I found a PDF of a design I have seen some time before. Time to fire up the laser cutter.
 
@@ -78,7 +78,7 @@ I _could_ of course keep the original world-statistics, _or_ I could design 8 cu
 
 {% include thumbs show="step-11,step-12,step-13" %}
 
-I learned a big big lesson trying to lasercut these 8 decorations: engraving fine-line vector-graphics requires the settings to go _too_ fast for the acuracy of my cutter, resulting in soo many failed engravings 🤦‍♂️
+I learned a big big lesson trying to lasercut these 8 decorations: engraving fine-line vector-graphics requires the settings to go _too_ fast for the accuracy of my cutter, resulting in soo many failed engravings 🤦‍♂️
 
 {% include thumbs show="step-14" %}
 

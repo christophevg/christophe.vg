@@ -1,4 +1,4 @@
 {% if include.image
-%}<a class="google" href="https://www.google.com/search?as_q={{ include.search | replace " ", "+" }}&tbm=isch" target="_blank" rel="noreferrer">{{ include.search }}</a>{%
-else %}<a class="google" href="https://google.com/search?q={{ include.search | replace " ", "+" }}" target="_blank" rel="noreferrer">{{ include.search }}</a>{%
+%}<a class="google" href="https://www.google.com/search?as_q={{ include.search | uri_escape | remove: "#" }}&tbm=isch" target="_blank" rel="noreferrer">{{ include.search }}</a>{%
+else %}<a class="google" href="https://google.com/search?q={{ include.search | | uri_escape | remove: "#" }}" target="_blank" rel="noreferrer">{{ include.search }}</a>{%
 endif %} ↗

@@ -75,7 +75,7 @@ analytics:
 author:
   name             : "Christophe VG"
   avatar           : "/assets/images/avatar.png"
-  bio              : "Software Architect<br>&#35;howcanihelp"
+  bio              : "<a href=\"/about/I-Software-Architect\">Software Architect</a><br><a href=\"/about/Mijn-Commitment-als-Team-Lead\">Team Lead</a><br>&#35;howcanihelp"
   location         : "Baal, Belgium"
   email            : "contact@christophe.vg"
   phone            : "+32(0)498/62.33.29"

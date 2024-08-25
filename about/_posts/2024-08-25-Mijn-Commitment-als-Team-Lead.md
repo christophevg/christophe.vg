@@ -31,7 +31,7 @@ Een team werkt dankzij de zwakste schakel. Dit is geen negatief gegeven, echter 
 
 ### Persoonlijke Ontwikkeling
 
-Een team werkt dankzij teamwork en is meer dan de som van de individuen op zich. Als team lead zoek je het beste in elk lid van het team, integreer dit in het team en ondersteun & motiveer het actief om het verder te laten groeien.
+Een team werkt dankzij teamwork en is meer dan de som van de individuen op zich. Als team lead zoek je het beste in elk lid van het team, integreer dit in het team en ondersteun & motiveer dat team lid actief om haar/hem verder te laten groeien.
 
 ### Open Communicatie - Intern
 

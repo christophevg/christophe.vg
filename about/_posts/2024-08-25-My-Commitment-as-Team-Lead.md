@@ -30,7 +30,7 @@ A team works because of its weakest link. This is not a negative fact, but an ex
 
 ### Personal Development
 
-A team works through teamwork and is more than the sum of its individuals. As a team lead, you look for the best in each member of the team, integrate this into the team and actively support & motivate it to continue to grow.
+A team works through teamwork and is more than the sum of its individuals. As a team lead, you look for the best in each member of the team, integrate this into the team and actively support & motivate the team member to continue to grow.
 
 ### Open Communication - Internally
 

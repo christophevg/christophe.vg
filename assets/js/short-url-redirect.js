@@ -2,6 +2,8 @@
 layout:
 ---
 (function() {
+  if(!window.location.hash) { return; }
+
   var redirect = {
   {% for post in site.posts %}{% if post.short
   %}"{{ post.short }}" : "{{ post.url }}",{% endif %}{% endfor %}

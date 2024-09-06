@@ -16,6 +16,17 @@
 
   body {
     line-height: 1;
+    font-size: 70%;
+  }
+
+  a {
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+  }
+  
+  .print {
+    display: block;
   }
 
   div {
@@ -41,6 +52,11 @@
 
   #main {
     max-width: 100%;
+  }
+
+  ul.timeline {
+    padding-top: 0px;
+    margin-top: 0px;
   }
 
   ul.timeline:before {
@@ -90,11 +106,33 @@
   }
 
   .timeline-heading,
-  .timeline-footer {
+  .timeline-footer:has(a) {
     display:none;
+  }
+
+  .timeline-footer {
+    background-color: white;
+    padding-left: 15px;
   }
 
   .timeline-body > h2 {
     color: #444444;
   }
+  
+  .hi.print {
+    padding-left: 25px;
+  }
+
+  .hi.print h2 {
+    margin: 0px;
+  }
+
+  .hi.print ul {
+    padding: 0px;
+  }
+
+  .hi.print li {
+    list-style-type: none;
+  }
+
 }

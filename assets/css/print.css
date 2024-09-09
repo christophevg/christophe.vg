@@ -29,7 +29,7 @@
     display: block;
   }
 
-  div {
+  .timeline li {
     page-break-inside: avoid;
   }
 
@@ -57,6 +57,7 @@
   ul.timeline {
     padding-top: 0px;
     margin-top: 0px;
+    position: relative;
   }
 
   ul.timeline:before {
@@ -64,17 +65,27 @@
   }
 
   ul.timeline > li {
-    margin-bottom: 20px;
+    display: inline-block;
     position: relative;
+    margin-bottom: 5px;
     width:100%;
     float: none;
     clear: none;
+    page-break-inside: avoid;
   }
 
+  ul.timeline > li.noprint {
+    display: none;
+  }
+  
   .timeline > li:nth-child(2) {
     margin-top: 0px;
   }
-
+  
+  .timeline > li > .timeline-panel {
+    margin-bottom: 0px;
+  }
+  
   ul.timeline > li > .timeline-panel {
     margin-right: 20px;
     width: calc(100% - 60px);
@@ -112,7 +123,14 @@
 
   .timeline-footer {
     background-color: white;
-    padding-left: 15px;
+  }
+
+  .timeline-body {
+    margin-bottom: 0px;
+  }
+
+  .timeline-footer {
+    margin-top: 15px;
   }
 
   .timeline-body > h2 {

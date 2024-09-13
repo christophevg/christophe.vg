@@ -26,6 +26,12 @@ thumbs:
       kind: png
 ---
 
+## 7 september - A-day
+
+{% include thumbs show="07-09-24" %}
+
+Net zoals vorig jaar hebben we geluk met nog een zomerse dag in september. Terwijl E de wacht hield op het strand, konden A en ik de zee op en kregen we echt een prachtige, zonnige en van een lekker windje voorziene zeiltocht voorgeschoteld.
+
 ## 17 augustus - Eindelijk, ein...de...lijk...
 
 ... is het gelukt. Na ruwweg 17 jaar hechte vriendschap is Koen _eindelijk_ eens mee op het water geraakt. En niet alleen Koen, ook Katrien ging van stress aan de waterlijn tot boos dat ik me op het water ingehouden had 😉 Geen probleem volgende keer gaan we een dagje met wat meer wind uitkiezen.

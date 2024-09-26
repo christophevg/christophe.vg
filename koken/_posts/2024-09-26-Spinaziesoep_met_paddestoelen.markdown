@@ -14,6 +14,7 @@ Ik had er al [een versie](Spinaziesoep_met_zalm) van, dit is een update met een 
 * 400g spinazie
 * 1l kippebouillon
 * 20cl room
+* 3 eitjes, hard gekookt
 * paddestoelen (Parijse champignons voor A en wilde bos-versie voor mij)
 * pancetta
 
@@ -27,4 +28,4 @@ Bak ondertussen de paddestoelen op een hoog vuur krokant in voldoende olijfolie 
 
 Mix de soep in een blender en voeg de room toe. Laar kort opnieuw opkoken.
 
-Serveer met de paddestoelen en de pancetta.
+Serveer met de hardgekookte eitjes in stukjes, de paddestoelen en de pancetta.

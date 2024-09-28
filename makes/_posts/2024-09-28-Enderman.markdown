@@ -1,0 +1,38 @@
+---
+title: Enderman
+header:
+  teaser: /makes/images/thumb/enderman/enderman.jpeg
+  image: /makes/images/header/enderman.jpeg
+tags:
+  - lasercutting
+  - fun
+folder: enderman
+---
+
+My son, like many sons (and daughters) loves Minecraft. He especially likes the {% include external link="https://minecraft.fandom.com/wiki/Enderman" title="Enderman" %}. When he wanted to use the character as a base for a school project, but couldn't find a model to start from, we started brainstorming.
+
+It didn't take long before he came up with the idea to start from six simple boxes - for which you can find {% include external link="https://boxes.hackerspace-bamberg.de" title="great generators online" %} - and combine those into an Enderman figure.
+
+Based on a reference visual from an Enderman toy, we came up with dimensions for the different pieces: The head (in cm) 8x8x8, body 8x6x12, arm 2x2x29 and leg 2x2x23. In no time all 4 boxes were ready to be cut and assembled.
+
+After importing all pieces into Inkscape and adding some support for assembling the boxes, an initial design was ready in very little time.
+
+{% include images show="reference,v1" %}
+
+The toy also had an additional base on which the figure could be placed, and keep it upright, since it has very long and thin legs with a lot of weight on top. With another box, and some Inkscape loving, we also finished had that ready to be cut.
+
+{% include image name="v2" %}
+
+## Sharing is Caring
+
+All files to construct it yourself are available on Thingiverse:  [https://www.thingiverse.com/thing:6781339](https://www.thingiverse.com/thing:6781339). If you want more, all files used to construct this make, are also found in their own {% include external link="https://github.com/christophevg/enderman" title="git repository on GitHub" %}.
+
+{% include thumbs show="pins" %}
+
+A laser-cut solution to attach the head to the body is included. To attach the arms to the body, a 6mm wooden plug will do the trick. While this works, I like to use a 3D printed pin that keeps both parts nice and tightly together:  That "Snap Together Pin" is also found on Thingiverse:  [https://www.thingiverse.com/thing:6781058](https://www.thingiverse.com/thing:6781058)
+
+## The Final Result
+
+After testing it with MDF, we also cut the base in plexi, which adds a nice touch.
+
+{% include image name="v3" %}

@@ -24,7 +24,29 @@ thumbs:
       title: 12u48
     30-07-24:
       kind: png
+    24-09-29-3:
+      kind: png
 ---
+
+## 29 september - Mid Season Switch Part 1 😇
+
+{% include thumbs show="24-09-29-1" %}
+
+It's a wrap, Boosui has left the beach. Met een tussenstop bij {% include external link="https://passionknokke.be" title="Passion" %}, voor een kleine cosmetische ingreep, maakt ze alvast plek op het strand voor (sind dit jaar) weldra het tweede luik van het zeil-seizoen: het Blokart seizoen vanaf 15 oktober!
+
+Het heeft wat heen en weer gedachten gevergd, echter de kogel is door de kerk: ik had even het idee om Boosui in te ruilen voor een Viper, de F16 variant van mijn Capricorn F18. De reden: een Viper is (officieel) gebouwd om ook alleen mee te zeilen. Dat zou me meer flexibiliteit geven. Dit seizoen, waarbij ik 7 sessies gezeild heb met mensen die nog nooit gezeild hadden, bewijst dat ik feitelijk perfect alleen kan zeilen op een Capricorn en eigenlijk geen Viper nodig heb daarvoor.
+
+Dat betekent dus dat Boosui deze winter een welverdiende set aan updates en upgrades gaat krijgen: een nieuwe {% include external link="https://www.catacare.be/collections/goodall-design-c2-parts/products/f18-spinnaker-chute" title="spinaker zak" %}, {% include external link="https://www.catacare.be/collections/goodall-design-viper/products/wire-block-tube-rivet" title="blokje voor in de spi boom" %} en...
+
+{% include thumbs show="24-09-29-2,locks" %}
+
+...nieuwe hangsloten voor de koffer, want de goedkopere knock-offs hebben we vandaag alle twee moeten doorknippen 🙄 Tijd om opnieuw ABUS aan te schaffen, want die hebben het tenminste [5 seizoenen](Logboek_2016#18-juli-2016---snel-service) op het strand volgehouden.
+
+{% include thumbs show="24-09-29-3" %}
+
+En om een of andere reden trek ik slechte processen, slechte user interactie en slechte software aan, want de [registratie](#30-juli---registratie) ligt nog altijd stil en ik heb blijkbaar geen enkele manier om daaromtrent te communiceren 🙄 Gelukkig hebben we nu 6 maanden tijd om hier weer achteraan te gaan.
+
+Altijd afsluiten met een positieve noot: 2024 was een top-jaar, met 5 zeildagen, 8 sessies, 10 first-time zeilers en vaste pappy/companion Mark mag ik alleen maar hopen dat 2025 even rijkelijk bedeeld wordt ☺️ Bedankt aan iedereen, het was een genoeg! 
 
 ## 7 september - A-day
 

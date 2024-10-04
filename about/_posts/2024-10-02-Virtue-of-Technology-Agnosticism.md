@@ -9,9 +9,11 @@ header:
 
 When I tell people that I am technology agnostic, they open their eyes a little bit more. Usually something along the lines of: "But Christophe, you've been programming longer than I've been alive, you have more hardware devices in your home than I've ever heard of, and your personal software development library contains books older than some papyrus in the museum of ancient history. How on earth can you, of all people, be technology agnostic?"
 
+And, you know, the problem is, they are right, in a way.
+
 ## Once upon a Time
 
-And they are right. Ever since I laid my hands on a computer, back in the very early 1980s, in the shopping mall, while my mother was doing her weekly shopping, I had my hour of computer-time on a series of by now infamous computers, I still pity I haven bought and kept myself: Sinclair, Vic 20, ZX Spectrum, early Atari's,... Each week I brought new scribbles with me that I had been collecting over that past week, at the library and from magazines at the local news stand. Not having the option to "save" them, I had to start over every week, adding line by line until I had pieced together a 10 line program over the same number of weeks. You should have seen those shoppers' eyes when an ASCII art cat was moving around the screen of that Sinclair on display. The shop assistants thought I had hacked their precious machine and in the end even "asked" me to leave.
+Ever since I laid my hands on a computer, back in the very early 1980s, in the shopping mall, while my mother was doing her weekly shopping, I had my hour of computer-time on a series of by now infamous computers, I still pity I haven bought and kept myself: Sinclair, Vic 20, ZX Spectrum, early Atari's,... Each week I brought new scribbles with me that I had been collecting over that past week, at the library and from magazines at the local news stand. Not having the option to "save" them, I had to start over every week, adding line by line until I had pieced together a 10 line program over the same number of weeks. You should have seen those shoppers' eyes when an ASCII art cat was moving around the screen of that Sinclair on display. The shop assistants thought I had hacked their precious machine and in the end even "asked" me to leave.
 
 ![ZXSpectrum48k 1024x752](images/full/ZXSpectrum48k-1024x752.jpg)
 

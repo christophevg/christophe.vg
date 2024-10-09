@@ -1,5 +1,7 @@
 ---
 title: Spinaziesoep met Paddestoelen
+tags:
+- veggie
 header:
   teaser: /koken/images/thumb/spinaziesoep-met-paddestoelen.jpeg
   image: /koken/images/header/spinaziesoep-met-paddestoelen.jpeg
@@ -12,7 +14,7 @@ Ik had er al [een versie](Spinaziesoep_met_zalm) van, dit is een update met een 
 * 1 grote ui
 * 1 grote teen look
 * 400g spinazie
-* 1l kippebouillon
+* 1l kippebouillon (of groenten voor de die-hard veggie versie 😇)
 * 20cl room
 * 3 eitjes, hard gekookt
 * paddestoelen (Parijse champignons voor A en wilde bos-versie voor mij)

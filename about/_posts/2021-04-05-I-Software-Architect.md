@@ -1,5 +1,6 @@
 ---
 title: I, Software Architect
+short: isa
 tags:
   - thing
   - professional

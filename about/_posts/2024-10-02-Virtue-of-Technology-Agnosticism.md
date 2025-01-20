@@ -1,5 +1,6 @@
 ---
-title: The Virtue of Technology Agnosticism
+title: Virtue of Technology Agnosticism
+full_title: The Virtue of Technology Agnosticism
 tags:
   - thing
 header:

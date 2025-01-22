@@ -10,12 +10,18 @@ My notes on installing, running and using MongoDB
 # Install and Basic Setup
 
 ```bash
-$ brew install mongodb
-...
-To have launchd start mongodb now and restart at login:
-  brew services start mongodb
-...
+$ brew tap mongodb/brew
+$ brew update
+$ brew install mongodb-community@8.0
 ```
+
+To have launchd start mongodb now and restart at login:
+
+```bash
+$ brew services restart mongodb-community@8.0
+```
+
+⚠️ Mind the "**re**"start, it avoids some strange problems 🤷‍♂️
 
 ```mongodb
 > use admin

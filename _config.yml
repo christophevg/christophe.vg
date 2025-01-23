@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "Christophe VG, Software Architect - Team Lead"
+title                    : "Christophe VG, IT Architect"
 title_separator          : "-"
 name                     : "Christophe Van Ginneken"
 description              : "Portfolio, Curriculum Vitae en informatieve website van en over Christophe Van Ginneken."
@@ -75,7 +75,7 @@ analytics:
 author:
   name             : "Christophe VG"
   avatar           : "/assets/images/avatar.png"
-  bio              : "<a href=\"/about/I-Software-Architect\">Software Architect</a><br><a href=\"/about/Mijn-Commitment-als-Team-Lead\">Team Lead</a><br>&#35;howcanihelp"
+  bio              : "<a href=\"/about/I-Software-Architect\">IT Architect</a><br>&#35;howcanihelp"
   location         : "Baal, Belgium"
   email            : "contact@christophe.vg"
   phone            : "+32(0)498/62.33.29"

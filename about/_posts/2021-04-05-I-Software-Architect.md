@@ -1,5 +1,6 @@
 ---
 title: I, Software Architect
+full_title: I, (Software) IT Architect
 short: isa
 tags:
   - thing
@@ -70,5 +71,11 @@ When entering the realm of the actual domains, applications,... the focus shifts
 Listening to, challenging and advising business stakeholders, resulting in just enough up front design to establish a stable goal and strategy to get there; supporting the business stakeholders and guarding their decisions throughout the different iterations, each of which adds more formality, up to the actual implementation; coaching analysts, being a soundboard for developers, establishing integrations, oversee consistency, in short: being a single point of contact to _ensure the realization of the dream of the client_.
 
 That's the software architect I wanted to be and am proud to be today.
+
+>## Post Scriptum
+> Since I initially wrote this thing, back in 2021, the world has evolved further, making the title “software architect” more confusing than its intended generalist meaning added value. I’ve always considered the distinction between “building” architect and “software"" architect clear and simple. Ultimately, the outcome is software in one form or another.  
+> Recent developments have led me to believe that I can avoid this confusion by adopting the title “IT architect,” which is even more generic and focuses more on general information and technology, rather than just software. I know this is a semantic discussion, but as I mentioned earlier, “In the information technology industry, we’re in an eternal naming game.”
+> To me personally, this change has a more profound impact than it initially seems. It’s been a gradual transformation that has shaped me over the course of nearly 15 years. It required profound introspection and the processing of a lot of material before I could convince myself that I genuinely and rightfully could adopt this title. As is often the case, I found solace and clarity only when I meticulously documented my thoughts and ideas, which resulted in a soon published new thing: The Solution Split.
+> Still I’ve maintained the original phrasing “Software Architect” throughout this _thing_ - I have no intention of rewriting history. I merely made a minor modification to the title to reflect the continuous evolution.
 
 &#35;howcanihelp

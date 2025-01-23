@@ -164,4 +164,4 @@ Wat nu volgt is een reeks van combinaties van bvb. bovenstaande spreads met bijk
 * Besmeer een wrap met geitenkaas en leg er sliertjes rosbief op. Maar een klein beetje dressing met olijfolie en een lekkere azijn. Werk hiermee een beetje sla-mengeling met rode biet (je vind er genoeg zo voorverpakt en klaar voor gebruik) op en leg dat op de rosbief.
 * Kook een eitje per persoon. Meng zuivelspread met prei met wat paprikapoeder. Snij wat wortel en bleekselder in zeer fijne reepjes. Prak nu de eieren en meng met de spread en de groetjes. Beleg een wrap met wat sla en de ei-wortel salade.
 * Smeer bovenop een dun laagje smeerkaas wat [ranchdressing](Ranchdressing) en leg er wat reepjes crispy gebakken spek op. Werk af met wat ijsbergsla, kerstomaatjes en cheddarkaas.
-
+* Maak eiersla met eieren 🙄, roomkaas, rode ui, mosterd, curry-poeder. Besmeer er een wrap me en leg er sliertjes prosciutto crudo op.

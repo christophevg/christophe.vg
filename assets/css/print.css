@@ -153,4 +153,8 @@
     list-style-type: none;
   }
 
+  img.printable {
+    width: 50%;
+  }
+
 }

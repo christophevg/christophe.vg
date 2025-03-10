@@ -255,3 +255,12 @@ h2, h3, h4 {
   display: none;
 }
 
+
+.notice {
+  border-left-color: red;
+  padding: 8 16;
+  margin-bottom: 16;
+  color: inherit;
+  border-left: .25em solid red;
+}
+

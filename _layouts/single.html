@@ -31,6 +31,20 @@ layout: default
         </header>
       {% endunless %}
 
+      {% if page.tags contains 'wip' %}
+      <div class="notice">
+        <b>⚠️ Work in Progress</b>
+        
+        <p>
+          This document is in a high state of work-in-progress. It has been
+          published in this state to facilitate discussions with others. Both the
+          structure, content, and text itself will likely undergo significant
+          changes in the coming time.
+        </p>
+
+      </div>
+      {% endif %}
+      
       <section class="page__content" itemprop="text">
         {{ content }}
         {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}

@@ -3,14 +3,11 @@ title: Solution Split
 full_title: The Solution Split
 tags:
   - thing
+  - wip
 header:
   teaser: /about/images/thumb/solution-split.jpeg
   image: /about/images/header/solution-split.jpeg
 ---
-
-<div class="notice">
-  ⚠️ This document is in a high state of work-in-progress-ness 😇 It has been published in this state to be able to discuss parts of it with other people. Both the structure as the content as the text itself will probably change considerably over the coming weeks.
-</div>
 
 Starting 2025 marked the end of my first 25 years in the IT industry and the beginning of another chapter that will span approximately the next 15 years. It also coincided with my 50th birthday, halfway through 2024, prompting me to reflect even more on this significant turning point. It was during a weekend trip to Disneyland Paris with my children, that I gained clarity on what I needed to do. Conceptually at that point, since it required substantial changes, and these changes would take time and numerous small steps. Every transition always starts with a vision and changing the course of a tanker ship is not something that can be accomplished overnight. While enjoying my delicious birthday meal at {% include external link="https://www.disneylandparis.com/en-int/dining/disney-village/steakhouse/" title="the steakhouse" %} in the heart of Disney Village, I couldn’t quite put my finger on what was bothering me. But I was determined to figure it out, because I knew where I wanted to go.
 

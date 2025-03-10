@@ -703,8 +703,6 @@ Metrics must have a clear purpose. Taking time to create a clear statement why t
 
 In an Ideal World we would all get along and an architecture would be created, communicated and implemented in a jiffy. Only highlighting all the beauty enterprise architecture has to offer, would not be a sound architecture by itself. There are many bumps in the architectural road and being aware of them, is a giant leap forward.
 
-Challenges in Implementing Business Architecture Strategy 
-
 ### Resistance to Change
 
 Employees and stakeholders may resist changes due to fear of the unknown, loss of control, or comfort with the current state.
@@ -747,7 +745,7 @@ Limited resources, such as time, budget, and skilled personnel, can hinder the s
 
 Therefore, it is crucial to prioritise initiatives based on their strategic importance and feasibility. By allocating resources efficiently, organizations can consider leveraging external expertise or partnerships to supplement their internal capabilities. 
 
-### Maintaining momentum
+### Maintaining Momentum
 
 Once the initial phase of the EA process is completed, sustaining it becomes challenging.
 
@@ -760,6 +758,8 @@ Finally, a lack of skills and expertise in Enterprise Architecture (EA) can pose
 Effective EA demands a diverse set of specialised skills, such as architecture design, data modeling, and technology infrastructure management. By possessing these skills, individuals can more easily build and maintain an effective EA. 
 
 ## So We Split?
+
+{% include todo message="create closure, wrap up" %}
 
 > Architecture is about order, space and proportion. Order demands internal logic, a consistent vision throughout the entire construction. Space is the most important aspect - walls exist merely to shape it. Proportion asks it all to fit in the world around it.
 

@@ -495,7 +495,7 @@ When an organisation reached the fourth level of maturity, when it is able to co
 
 ### TOGAF
 
-Although I firmly believe that each organisation is different, that each organisation deserves and requires a personalised implementation of the above mentioned governance concepts, I also believe that no one should reinvent all wheels themselves all the time. In the current landscape, the {% include external link="https://www.opengroup.org" title="Open Group" %} has earned its place on the architecture stage. IT4IT, TOGAF and Archimate are merely three out of several standards they manage, that have become de factor standards in this industry.
+Although I firmly believe that each organisation is different, that each organisation deserves and requires a personalised implementation of the above mentioned governance concepts, I also believe that no one should reinvent all wheels themselves all the time. In the current landscape, the {% include external link="https://www.opengroup.org" title="Open Group" %} has earned its place on the architecture stage. IT4IT, TOGAF and Archimate are merely three out of several standards they manage, that have become de facto standards in this industry.
 
 > The Open Group Architecture Framework, short {% include external link="https://www.opengroup.org/togaf" title="TOGAF" %}, has gained much traction due to its realistic approach that allows it to be used at organisations of a broad range of sizes. Although it is big in its entirety, it is also possible to see its merits in a rather simple basic structure that can also usefully guide smaller architectures. I often feel its especially suites in this later case, where the structure helps setting up a structure, or rather validating and if needed refining a custom structure for a given organisation. It is in that respect that I like to include it here as an existing structure to continue to exporation of how governance can support the organisation, from an architecture point of view.
 
@@ -601,6 +601,8 @@ At every layer there is also need for aligning business and IT. At every level, 
 
 ## Enterprise Architecture Governance
 
+{% include todo message="untangle idea of governance of EA and EA governance process 😇" %}
+
 Although already slightly focused on architecture, the discussion of governance above is still mostly focused on how to go about it in general. Let's narrow the field down to the specific governance of an enterprise architecture. 
 
 In summary, Enterprise Architecture Governance...
@@ -621,7 +623,14 @@ The resulting benefit of such governance, for an organisation, is found in align
 
 We already looked at sound architectural principles. Just like good architectural principles guide the development of a coherent architecture, good enterprise architecture governance principles form the basis for a sound governance of the architecture, adding securing layers on top of each other.
 
-
+* focus on business value
+* standardisation and consistency
+* transparency and accountability
+* risk management
+* stakeholder engagement
+* continuous improvement
+* flexibility and agility
+* integration with IT governance
 
 ### An Enterprise Architecture Governance Framework
 
@@ -631,38 +640,23 @@ When an Enterprise Architecture describes the fundamental aspects of a business 
 
 An Enterprise Architecture Governance Framework essentially consists of three major components: processes producing content that is stored in an Enterprise Architecture Repository. Processes include the development and revising of the actual architecture, management of standards and policies, modelling, following up on compliance, creation of frameworks, researching technologies and products, monitoring... Resulting in content such as standards, best practices, guidelines, checklists, reference architectures, organisation structures, authorisation structures, roadmaps, transition plans...
 
-All of the examples above can be consolidated in a concise set of 5 essential enterprise architecture governance elements:
-
-* the **organisational structure** needed to implement an enterprise architecture
-* the **roles & responsibilities** needed to provide governance
-* the **governance processes** to support the implementation fo technological solutions
-* the **standards and guidelines** as concrete artefacts to govern technological choices, software development and management in general
-* **tools** to manage all enterprise architectural assets (the EA repository)
-
-Other 
+All of the examples above can be consolidated in a concise set of essential enterprise architecture governance elements, that follow each step of the life cycle of architecture.
 
 * governance structure
-  * architecture review boards / steering committees
-  * roles & responsibilities + decision making processes
 * policies and standards
 * processes and procedures
 * tools and technologies
-* communication and collaboration systems
 * metrics and KPIs
+* communication and collaboration systems
 * continuous improvement cycles
 
+We already seen aspects of many of these. Some deserve some more details:
 
-#### Organisational Structure
+#### Governance Structure
 
-To implement an Enterprise Architecture in the organisation, an organisational structure must be establish. Key elements that must be installed in the organisation include 
+Two important governance bodies can be installed: the **architecture review board** and the **steering committee**. The steering committee provides high level guidance and typically reports to the CIO, whereas the Architecture Review Board provides expertise to assess the architecture and its compliance, actually overseeing the realisation of the architecture and its framework, reporting to the board.
 
-* Enterprise Architecture Frameworks, consisting of standards, procedures, protocols...
-* Enterprise Architecture Review Board overseeing the realisation of the frameworks...
-* Enterprise Architecture Compliance, consisting both of a defined strategy and a set of consistent and repeatable processes and procedure that ensure the compliance
-
-#### Roles & Responsibilities
-
-It is important to note that when I say that the core responsibility of architecture is to align business and IT, this in fact is not simply to "ensure" that this alignment is realised. It must be interpreted as actually realising the business strategy within the IT domain. This is an active interpretation, one that requires adopting actual roles (and responsibilities) within the organisation. A small (non exhaustive) list:
+It is important to note that when I say that the core responsibility of architecture is to align business and IT, this in fact is not simply to "ensure" that this alignment is realised. It must be interpreted as actually realising the business strategy within the IT domain. This is an active interpretation, one that requires adopting actual **roles and responsibilities** within the organisation. A small (non exhaustive) list:
 
 * understanding of business areas
 * showing leadership and providing clear communication
@@ -675,17 +669,99 @@ It is important to note that when I say that the core responsibility of architec
 
 #### Governance Processes
 
-The processes, applied to the implementation of technological solutions, can be summarised to the following top 5:
+Governance Processes are installed to ensure transparant, objective, consistent and coherent realisation of the Enterprise Architecture. They follow the logical and chronological sequence of events throughout any development effort:
 
-* documenting
-* reviewing
-* communicating
-* maintaining compliance
-* keeping the EA framework current & accurate
+* The actual **development**, including the creation, documentation and evolution of the organisations enterprise architecture, resulting in principles, standards, guidelines, a business capability model with overlays, identifying and analysing requirements, capabilities and options.
+* A **review and approval** process of proposed architectural changes, focusing on impact, feasibility, risks and benefits.
+* Monitoring and enforcement of **compliance** of policies, standards and guidelines. Different formats are available: audits, assessments, reviews... resulting possibly in corrective actions, both on the architecture and the implementation.
+* Monitoring and reporting of the **performance** or effectiveness of the architecture.
+* **Risk management** involves the identification, assessment and mitigation of risks associated with the architecture, related to integrity, security, compliance, performance...
+* **Stakeholder engagement and communication** is key to a successful realisation of the architecture and requires soliciting feedback, sharing information, facilitating collaboration and buiding consensus amon stakeholders, to ensure support for architectural decisions.
+* **Keeping the EA framework current & accurate** might seem evident, yet it is a crucial way to keep the entire governance relevant and stable.
+
+#### Metrics and KPIs
+
+Metrics must have a clear purpose. Taking time to create a clear statement why the metric is tracked. Metrics have a level of impact/visibility. There is of course a correlation between this level and the purpose. Using this level to sort them, allows for a high level focus on the most important once, the ones with the most return. Metrics inherently required a matching interval of measurement. This must be aligned with business activity. Choosing a good tool to track metrics is key to a succesful application of their information. Finally, findings regarding metrics must be shared with stakeholders, as a objective and transparant way to communicate about the effectiveness of the enterprise architecture.
+
+* strategic
+  * total IT cost savings
+  * IT portfolio total cost of ownership
+  * cost for annual IT projects
+  * business objectives supported by IT roadmap
+* operational
+  * number of rationalised applications
+  * number of overlapping applications
+  * number of functionally unfit applications
+  * number of technically unfit applications
+  * umber of tech obsolescence candidates
+* extra
+  * time to integrate new technology after a company merger
+
+> Note once more that Enterprise Architecture is no exact science. The listed metrics are merely some classic examples. Every business domain, every organisation is different and so will be the metrics and KPIs that represent their vitality. If this wasn't the case, Enteprise Architecture and its governance would be a simple template and there wouldn't be a need for architects 😉 For the foreseeable future, every Enterprise Architecture still requires a focused Enterprise Architect, to steer it to succesfull destinations.
+
+## What a Beautiful World
+
+In an Ideal World we would all get along and an architecture would be created, communicated and implemented in a jiffy. Only highlighting all the beauty enterprise architecture has to offer, would not be a sound architecture by itself. There are many bumps in the architectural road and being aware of them, is a giant leap forward.
+
+Challenges in Implementing Business Architecture Strategy 
+
+### Resistance to Change
+
+Employees and stakeholders may resist changes due to fear of the unknown, loss of control, or comfort with the current state.
+
+To overcome resistance, it’s crucial to involve stakeholders early in the process. Clearly communicate the benefits of the change and provide training and support. Additionally, engaging key influencers within the organization can help foster a culture that embraces change. 
+
+### Complex IT Environments 
+
+Enterprise architecture initiatives often necessitate substantial transformations to an organization’s IT infrastructure, which can be daunting, especially for those with intricate IT environments. Coordinating changes across multiple systems and ensuring compatibility presents a significant challenge.
+
+To overcome this challenge, organizations must adopt a well-structured and coordinated approach to EA implementation. This approach should involve a thorough analysis of the existing IT infrastructure, identification of potential compatibility issues, and the development of a comprehensive implementation plan that incorporates appropriate testing and validation procedures. Gradually implementing these procedures over time is crucial, while closely monitoring and assessing their effectiveness. 
+
+### Lack of Standards
+
+EA requires standardised processes and procedures across the organization. However, many organizations need to improve their EA, which necessitates standardised processes and procedures. Nevertheless, many also require these standards. Developing and implementing standards can be time-consuming and difficult, especially in organizations with a history of decentralised decision-making.
+
+To overcome this challenge, organizations must establish a clear and consistent set of standards and guidelines that align with their overall business objectives. 
+
+### Lack of Clear Vision and Objectives
+
+A business architecture strategy can lose focus and become ineffective without a clear vision and well-defined objectives.
+
+To ensure this, establish a clear vision and set specific, measurable objectives. Communicate these goals effectively across the organization, ensuring that all stakeholders understand their role in achieving them.
+
+### Insufficient Stakeholder Engagement
+
+Limited engagement from key stakeholders can hinder the success of a strategy by undermining its buy-in and support.
+
+To address this issue, it’s crucial to foster strong stakeholder engagement by actively involving them in the planning and decision-making processes. Regular updates, feedback sessions, and transparent communication can help maintain their interest and commitment. 
+
+### Complexity of Integration
+
+Integrating new architecture with existing systems and processes can be extremely challenging and prone to complications.
+
+To address this, conduct comprehensive assessments of the existing systems and develop a comprehensive integration plan. Implement the plan in phases to manage complexity effectively and ensure thorough testing and validation at each stage.
+
+### Resource Constraints
+
+Limited resources, such as time, budget, and skilled personnel, can hinder the successful implementation of initiatives.
+
+Therefore, it is crucial to prioritise initiatives based on their strategic importance and feasibility. By allocating resources efficiently, organizations can consider leveraging external expertise or partnerships to supplement their internal capabilities. 
+
+### Maintaining momentum
+
+Once the initial phase of the EA process is completed, sustaining it becomes challenging.
+
+To keep the program alive, consistently demonstrate its value, celebrate milestones, and integrate EA practices into the organization’s daily operations.
+
+### Lack of Skills and Expertise 
+
+Finally, a lack of skills and expertise in Enterprise Architecture (EA) can pose a significant challenge.
+
+Effective EA demands a diverse set of specialised skills, such as architecture design, data modeling, and technology infrastructure management. By possessing these skills, individuals can more easily build and maintain an effective EA. 
 
 ## So We Split?
 
-> Architecture is about order, space and proportion. Order demands internal logic, a consistent vision throughout the entire construction. Space is the most important aspect. Walls exist merely to shape the space. Proportion asks it all to fit in the world around it.
+> Architecture is about order, space and proportion. Order demands internal logic, a consistent vision throughout the entire construction. Space is the most important aspect - walls exist merely to shape it. Proportion asks it all to fit in the world around it.
 
 ### TL;DR
 

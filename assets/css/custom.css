@@ -255,12 +255,18 @@ h2, h3, h4 {
   display: none;
 }
 
-
 .notice {
-  border-left-color: red;
   padding: 8 16;
   margin-bottom: 16;
   color: inherit;
-  border-left: .25em solid red;
+  border-left: .25em solid black;
+}
+
+.notice.warning {
+  border-left-color: red;
+}
+
+.notice.info {
+  border-left-color: blue;
 }
 

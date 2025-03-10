@@ -1,0 +1,6 @@
+<div class="notice info">
+  <b>☑️ TODO</b>
+  <p>
+		{{ include.message }}
+  </p>
+</div>

@@ -759,9 +759,11 @@ Effective EA demands a diverse set of specialised skills, such as architecture d
 
 ## So We Split?
 
-{% include todo message="create closure, wrap up" %}
+As much as I wish the IT world were clear and simple, binary if you prefer, I’m afraid I won’t be the one to bring balance to the distinction between technology-agnostic architecture and technology-focused engineering. I won’t be able to take credit for splitting solution architecture and be responsible for rebranding solutions, application, technical.. engineering from the misnomer “architecture.”
 
-> Architecture is about order, space and proportion. Order demands internal logic, a consistent vision throughout the entire construction. Space is the most important aspect - walls exist merely to shape it. Proportion asks it all to fit in the world around it.
+What I do know is that I’ve chosen to continue practicing architecture in the same spirit as I’ve always done: focused on creating actual business value, ensuring that my client’s dream is realised while adhering to best practices and sound principles. More than ever, I’ll advocate for technology-agnostic architecture because technology is an ever-changing landscape that only introduces costs. I used to call my role “[software architect](I-Software-Architect)", but I recently broadened it to “IT architect.” If I want to avoid further confusion, I should probably evolve to “Enterprise Architect.” What’s in a name? I suppose we should have listened to the OGs of architecture...
+
+> Architecture revolves around order, space and proportion. Order requires internal logic and a consistent vision throughout the entire construction. Space holds the most significance; walls merely serve to shape it. Proportion ensures that everything fits harmoniously within the surrounding environment.
 
 ### TL;DR
 

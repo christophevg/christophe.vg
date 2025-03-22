@@ -6,7 +6,8 @@ layout:
 
   var redirect = {
   {% for post in site.posts %}{% if post.short
-  %}"{{ post.short }}" : "{{ post.url }}",{% endif %}{% endfor %}
+  %}{% for short in post.short %}"{{ short }}" : "{{ post.url }}",
+  {% endfor %}{% endif %}{% endfor %}
   }[window.location.hash.slice(1)];
 
   if(redirect) {

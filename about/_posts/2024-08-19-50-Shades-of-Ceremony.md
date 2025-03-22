@@ -12,7 +12,7 @@ thumbs:
       kind: png
 ---
 
-This [thing](/tags/#thing) is the third instalment in a triptych about me being a software architect. Some time ago I started out by explaining [**what** I consider a good software architect](I-Software-Architect). Recently the second chapter explored [**why** I think I'm a good software architect](Problem-Seeker). This final part wraps it up and completes the overall picture, illustrating [**how** I typically deal with software architecture](). And it starts, of course, with a provocative, blunt statement:
+This [thing](/tags/#thing) is the third instalment in a triptych about me being a architect. Some time ago I started out by explaining [**what** I consider a good architect](I-Enterprise-Architect). Recently the second chapter explored [**why** I think I'm a good architect](Problem-Seeker). This final part wraps it up and completes the overall picture, illustrating [**how** I typically deal with architecture](). And it starts, of course, with a provocative, blunt statement:
 
 ## Agile is Dead, Long Live Waterfall
 
@@ -168,17 +168,17 @@ If you live by the nurtured intentions, it doesn't matter which ceremony you fol
 
 No two persons are alike, nor are two teams, nor are two organisations. A methodology (or ceremony) that works for one person, one team, one organisation doesn't necessarily work for any other person, team or organisation.
 
-If Agile Methodologies are ceremonies, nudges, then being Agile is nurture, the abstract version, the goal, the vision. I prefer that abstract version, the pure nurture, pretty much like I prefer software architecture - more on that to come.
+If Agile Methodologies are ceremonies, nudges, then being Agile is nurture, the abstract version, the goal, the vision. I prefer that abstract version, the pure nurture, pretty much like I prefer architecture - more on that to come.
 
 I don't care which Agile Methodology you prefer to be able to implement the nurture, as long as it serves the nurture and doesn't become a thing of its own, or worse, goes against the intended nurture.
 
-In my 25 years of professionally focussing on software development, as a software architect I've always taken the same approach: look at the existing capabilities of the organisation of my client, define the current intersection with common sense best practices, map that to the envisaged goal and define steps to fill in the gaps to reach that goal. To do this, both the architecture and the methodology has always, without any exception, been a custom-tailored one - cherry-picking from of the vast amount of software development and project management methodologies, to create a well-grounded foundation. To apply these I try to lead by example and coach until the existing organisation has settled in this new way of working.
+In my 25 years of professionally focussing on software development, as an architect I've always taken the same approach: look at the existing capabilities of the organisation of my client, define the current intersection with common sense best practices, map that to the envisaged goal and define steps to fill in the gaps to reach that goal. To do this, both the architecture and the methodology has always, without any exception, been a custom-tailored one - cherry-picking from of the vast amount of software development and project management methodologies, to create a well-grounded foundation. To apply these I try to lead by example and coach until the existing organisation has settled in this new way of working.
 
 "New" might be a great overstatement. It most of the time means taking a good look at how people actually currently work, formalise that while fitting it to the closest existing architecture/methodology and present this personalised way of working as a first step. Only that simple first step often brings teams much closer together, resulting in a big gain, without any cost whatsoever. Just be explicit about your ceremony. It's the foundation of communication and interaction. The rest will always follow.
 
 ## Agile Architecture
 
-With my approach to a more Personal Agile, I touched upon the two aspects that often travel along the same road when I join a new client: software architecture and project methodology. That I prefer an Agile (Project) Methodology must be clear by now. So what about architecture? How does software architecture fit in an Agile Mindset?
+With my approach to a more Personal Agile, I touched upon the two aspects that often travel along the same road when I join a new client: architecture and project methodology. That I prefer an Agile (Project) Methodology must be clear by now. So what about architecture? How does architecture fit in an Agile Mindset?
 
 {% include video id="q0hyYWKXF0Q" name="dance-monkey-video" title="Dance Monkey" %}
 
@@ -188,7 +188,7 @@ If you've read some of my other [things](/tags/#thing), you might have encounter
 
 Just like the iterative breakdown of a problem in "bites you can chew", the architecture phase is also just-another-iteration where the even larger business need is analysed, broken down in manageable pieces, distributed over domains and defined as a solution. And that solution **_might_** require a piece of software and thus can be put on the backlog of an autonomous development team that applies all the Agile Goodness to the development of that feature, just like the architects have done before them.
 
-At the architecture level code and specific technologies are taboo. Those are the responsibility of the development teams. Architecture deals with the segregation of capabilities and processes, defining the interactions between them, specifying the protocols that operate between them and maybe assign a development effort to some of them, all to [ensure the realization of the dream of the client, according to best practices and good principles](I-Software-Architect).
+At the architecture level code and specific technologies are taboo. Those are the responsibility of the development teams. Architecture deals with the segregation of capabilities and processes, defining the interactions between them, specifying the protocols that operate between them and maybe assign a development effort to some of them, all to [ensure the realization of the dream of the client, according to best practices and good principles](I-Enterprise-Architect).
 
 {% include video id="TTfYnRQgKgY" name="proud-mary-video" title="Big Wheels Keep on Turning" %}
 

@@ -42,7 +42,7 @@ Sure, I like to solve problems, absolutely. Yet I seem to prefer to seek them ou
 
 The bottom line for me is always the _real problem_. That's what makes me tick. If I can uncover a problem, it can be solved. If it remains undetected, it will continue to cause harm and/or more problems. And there are problems lurking in so many places. One thing they all excel at is hiding in plain sight. Finding them essentially requires being curious, not taking things for granted and daring to pose uncomfortable questions.
 
-And where else than in my professional life, as a [software architect](/about/I-Software-Architect), does being a problem seeker come in handy?! Ah, (professional) life can be beautiful, isn't it?
+And where else than in my professional life, as an [Enterprise Architect](/about/I-Enterprise-Architect), does being a problem seeker come in handy?! Ah, (professional) life can be beautiful, isn't it?
 
 ## Standing on the Shoulders of...
 
@@ -293,7 +293,7 @@ Considering this, I now understand why I struggle with a lot of things that deal
 
 {% include thumbs show="super-a" %}
 
-As part of this suppressing, I believe that I have turned a few of these symptoms into super powers. The problem seeker is probably the super hero incarnation, my alter ego that channels my ADHD and uses it for something good. By applying the restlessness, the fidgeting, the "hyperactiveness" in general, to finding problems, the cornerstone of my quality as a software architect was probably conceived.
+As part of this suppressing, I believe that I have turned a few of these symptoms into super powers. The problem seeker is probably the super hero incarnation, my alter ego that channels my ADHD and uses it for something good. By applying the restlessness, the fidgeting, the "hyperactiveness" in general, to finding problems, the cornerstone of my quality as an architect was probably conceived.
 
 > Ever wondered why I wear multiple rings and bracelets? So did I and today I presume it's because they are my less obvious, socially accepted fidgets that allow me to channel my need to focus. Along the same lines, notice that I am a Paperosaurus, always scribbling notes and doodling during meetings. I'm not distracted or bored, I'm just adding more stimuli to stay focused on you. Once you consider it, you see it everywhere.
 
@@ -560,14 +560,14 @@ I'll be even more in your face and ultra-clear about my believes, because you de
   </div>
 </div>
 
-## I, Software Architect
+## I, Enterprise Architect
 
 Above I showed how asking "Why?" in my personal life led me to understand (probably) the origin of many of the emotional and almost existential questions in it. There are more such "Why?"-dialogues that can explain me being me, for example on a professional level...
 
 <div class="chat">
   <div class="yours messages">
     <div class="message last">
-      Why do many people experience that I'm a pretty good software architect?
+      Why do many people experience that I'm a pretty good architect?
      </div>
   </div>
   <div class="mine messages">
@@ -597,7 +597,7 @@ Above I showed how asking "Why?" in my personal life led me to understand (proba
   </div>
 </div>
 
-So why do a lot of people experience that I'm a pretty good [software architect](/about/I-Software-Architect)? Or solution architect, if you will, because that's the title currently commonly in fashion (time anyone? 😅). By definition, it must be because my "solutions" are good. The reason why they are good, is to be found in my problem seeking nature. Before I propose any solution, I've considered every possible angle, tried several old and new approaches, have taken into account the capabilities of both the organisation and its people and have asked many "What if?" questions, just to make sure that my solution will pass the "Five Whys" test. Basically, I try to ensure that whatever question, alternative or objection you throw at it, I've got it covered. 
+So why do a lot of people experience that I'm a pretty good [architect](/about/I-Enterprise-Architect)? By definition, it must be because my solutions are good. The reason why they are good, is to be found in my problem seeking nature. Before I propose any solution, I've considered every possible angle, tried several old and new approaches, have taken into account the capabilities of both the organisation and its people and have asked many "What if?" questions, just to make sure that my solution will pass the "Five Whys" test. Basically, I try to ensure that whatever question, alternative or objection you throw at it, I've got it covered. 
 
 > Having a response to most questions, objections and/or alternatives, often frustrates people. Sometimes even to the point that in the past they even called me names. For many years, I've used a tag line on [social media](/about/ASocialNetworks), basically to illustrate and poke fun at just that: "_If you think I'm arrogant, you're missing the point._" Because even that clearly fun saying sometimes caused havoc 🤷‍♂️, I've retired it lately in favor of the hashtag "#howcanihelp"
 
@@ -615,7 +615,7 @@ Looking after your best interest and pointing out flaws or not well-founded deci
 
 Throughout my career, so far I've mostly been blessed with such mature professional superiors and colleagues, who respectfully accept the detected flaws and take on their job of solving them. Because they understand that if they don't solve the actual, underlying problem, it will linger on and cause a lot more problems in the future, wasting more money and time. So swallowing the sometimes bitter (red?) pill now, is always the right way forward.
 
-Being the problem seeker I am, I'm especially grateful to have had the opportunity to work with such great leadership, who have enabled me to do what I'm good at, allowed me to be curious and inquisitive, stood up for me supporting my findings and helped them get across, basically by enabling me to proactively work on a structural level. Because that's at least one important aspect of how I feel I can [ensure the realisation of the dream of my client](/about/I-Software-Architect).
+Being the problem seeker I am, I'm especially grateful to have had the opportunity to work with such great leadership, who have enabled me to do what I'm good at, allowed me to be curious and inquisitive, stood up for me supporting my findings and helped them get across, basically by enabling me to proactively work on a structural level. Because that's at least one important aspect of how I feel I can [ensure the realisation of the dream of my client](/about/I-Enterprise-Architect).
 
 You know who you are, so this is basically a big "thank you" to you all!  
 And to all others... You're missing the point 😉

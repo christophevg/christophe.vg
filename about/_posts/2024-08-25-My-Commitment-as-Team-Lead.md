@@ -10,15 +10,15 @@ header:
 
 <p style="text-align:right">(🇳🇱 <a href="Mijn-Commitment-als-Team-Lead">Mijn Commitment als Team Lead</a>)</p>
 
-Yes, I admit it, I've always said I would stick to my guns. I would remain faithful to my role as a [software architect](I-Software-Archtect), because in it I can bring my true [power](Problem-Seeker) to the table and apply a [sense of reality](50-Shades-of-Ceremony) before all.
+Yes, I admit it, I've always said I would stick to my guns. I would remain faithful to my role as a software architect, because in it I can bring my true [power](Problem-Seeker) to the table and apply a [sense of reality](50-Shades-of-Ceremony) before all.
 
 > After 25 years of dedication to this role, I've personally seen "the good, the bad & the ugly" in so many different incarnations, have been taught by the best and have experienced how sometimes ... things could be improved upon.
 
-Today I'm convinced more than ever that I no longer should apply those 25 years of experience merely to that role. I firmly believe that using it to guide those that stepped in my footsteps as a team lead is the right way forward today. In doing so, I see a new and better way to achieve my goals: [the realisation of the dream of my customer](I-Software-Architect)
+Today I'm convinced more than ever that I no longer should apply those 25 years of experience merely to that role. I firmly believe that using it to guide those that stepped in my footsteps as a team lead is the right way forward today. In doing so, I see a new and better way to achieve my goals: [the realisation of the dream of my customer](I-Enterprise-Architect).
 
 ## My Pillars
 
-After 25 years, I've deliberately taken a few months time to actively and with the help of several people, find and shape my personal management style, and this based on my personal experiences as a software architect in all those different roles. From that soul searching a story emerged, which I not only wholeheartedly endorse, but also promote as a profile text, as a statement of commitment, and implement in a targeted way.
+After 25 years, I've deliberately taken a few months time to actively and with the help of several people, find and shape my personal management style, and this based on my personal experiences as an architect in all those different roles. From that soul searching a story emerged, which I not only wholeheartedly endorse, but also promote as a profile text, as a statement of commitment, and implement in a targeted way.
 
 It quickly became clear that two pillars were essential. They define my style: **the team comes first** and a **no-nonsense** approach. Each pillar is further constructed based on three primordial properties, whereby one common element forms an overarching connection.
 
@@ -40,11 +40,11 @@ A team works through communication and team communication is primarily about fee
 
 ### Open Communication - Externally
 
-A no-nonsense approach always starts from business needs. There is no software architecture for software architecture. As a team lead, you apply the same open team communication towards the rest of the organization. You are the single point of contact and ensure that needs are heard first and foremost, and offer guarantees that they are addressed.
+A no-nonsense approach always starts from business needs. There is no architecture for architecture. As a team lead, you apply the same open team communication towards the rest of the organization. You are the single point of contact and ensure that needs are heard first and foremost, and offer guarantees that they are addressed.
 
 ### Goal Orientation
 
-A no-nonsense approach always starts from reality: to measure is to know. As a team lead, you ensure that choices in the software architecture are made based on facts, not hypes or personal opinions. If a choice cannot be supported by demonstrable fact, then it is not a choice but a gamble. A choice is not written in a thick book either. Every business, every organization, every need deserves a personal solution. And that solution is achieved through a process-based approach.
+A no-nonsense approach always starts from reality: to measure is to know. As a team lead, you ensure that choices in the architecture are made based on facts, not hypes or personal opinions. If a choice cannot be supported by demonstrable fact, then it is not a choice but a gamble. A choice is not written in a thick book either. Every business, every organization, every need deserves a personal solution. And that solution is achieved through a process-based approach.
 
 ### Sense of Reality
 

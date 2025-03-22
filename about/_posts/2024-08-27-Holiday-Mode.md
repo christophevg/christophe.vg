@@ -44,7 +44,7 @@ So having a clear view on how I want to improve, I typically head over to Amazon
 
 As I said in the beginning, "_although semantically different, both are structured around the same two principles._" The difference between a _regular_ holiday and a period in-between-clients is basically _size_. While the former typically lasts up to 3 weeks, when 'tweening I take larger chunks of time for major improvements. Where holidays allow for making operational and smaller tactical changes, the months in between customers give me the opportunity to make strategic changes.
 
-"_Give me the opportunity_" does not imply that I _always do_. Most of the time, this means simply _confirming_ the current heading, maybe make some tactical changes, but once in a while a new bearing gets plotted: switching from being an employee to being self-employed and setting up my own business, taking on software architecture consulting, [going back to school at the age of 37](Revisiting_Higher_Education), diving into the hardware scene or more recently [deciding to commit to leading a team](My-Commitment-as-Team-Lead).
+"_Give me the opportunity_" does not imply that I _always do_. Most of the time, this means simply _confirming_ the current heading, maybe make some tactical changes, but once in a while a new bearing gets plotted: switching from being an employee to being self-employed and setting up my own business, taking on IT architecture consulting, [going back to school at the age of 37](Revisiting_Higher_Education), diving into the hardware scene, [deciding to commit to leading a team](My-Commitment-as-Team-Lead) and ultimately becoming an [Enterprise Architect](I-Enterprise-Architect).
 
 &#35;HolidayMode
 

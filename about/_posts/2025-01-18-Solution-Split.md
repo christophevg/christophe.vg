@@ -1,6 +1,8 @@
 ---
 title: Solution Split
 full_title: The Solution Split
+short:
+  - ssplit
 tags:
   - thing
 header:

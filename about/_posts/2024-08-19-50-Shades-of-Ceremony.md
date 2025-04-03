@@ -12,7 +12,7 @@ thumbs:
       kind: png
 ---
 
-This [thing](/tags/#thing) is the third instalment in a triptych about me being a architect. Some time ago I started out by explaining [**what** I consider a good architect](I-Enterprise-Architect). Recently the second chapter explored [**why** I think I'm a good architect](Problem-Seeker). This final part wraps it up and completes the overall picture, illustrating [**how** I typically deal with architecture](). And it starts, of course, with a provocative, blunt statement:
+This [thing](/tags/#thing) is the third instalment in a triptych about me being an architect. Some time ago I started out by explaining [**what** I consider a good architect](I-Enterprise-Architect). Recently the second chapter explored [**why** I think I'm a good architect](Problem-Seeker). This final part wraps it up and completes the overall picture, illustrating [**how** I typically deal with architecture](). And it starts, of course, with a provocative, blunt statement:
 
 ## Agile is Dead, Long Live Waterfall
 

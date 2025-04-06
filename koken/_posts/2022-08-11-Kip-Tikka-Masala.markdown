@@ -1,5 +1,8 @@
 ---
 title: Kip Tikka Masala
+header:
+  teaser: /koken/images/thumb/kip-tikka-masala.jpeg
+  image: /koken/images/header/kip-tikka-masala.jpeg
 ---
 
 Mijn voorliefde voor curries is nooit echt aangeslagen bij de kids, echter deze vereenvoudigde versie van {% include external link="https://dagelijksekost.een.be/gerechten/kip-tikka-masala" title="Kip Tikka Masala door Jeroen" %} was een succes 🙌

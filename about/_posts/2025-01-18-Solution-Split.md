@@ -343,6 +343,14 @@ On the entirely other side of the spectrum, when business drivers are quality of
 
 The fun part I've experienced a few times is that this strategy can also be turned upside down. If business defines its drivers in terms of the urge to innovate, choices can be made with a time to market focus, when management wants to address an opportunity with a differentiation strategy, both time to market and cost to market will drive architectural choices and so on.
 
+Identifying the pacing of applications and/or components is already a significant advantage in objectifying architectural choices. The pace categories also inherently dictate other crucial choices in the same objective manner.
+
+Innovation occurs rapidly, with unexpected twists and turns. Therefore, it necessitates a flexible and swift governance structure. Conversely, non-differentiating systems require tighter controls, clear change and extensive stakeholder management. Since different systems necessitate varying pacing, they also benefit from different governance styles. By explicitly stating this, we can ensure better integration of these systems at a process level.
+
+Technologically, integration also extends across pacing layers. A key success factor in managing these systems operating and evolving at distinct paces is focusing on bridging the gap between them.
+
+Well-founded integrations also help when systems evolve. As systems evolve, they often outgrow their pacing layer. Today’s innovative systems can become the differentiating and even non-differentiating systems of tomorrow.
+
 ## Going All-In
 
 Cost is only one angle to approach an architecture. It is even merely one kind of risk that an organisation faces and would like to be protected from by a stable foundation and architectural plan. Cost is more general a financial risk, which means there is a chance that actual money is lost, at least more of it than it should be. In general we can distinguish four types of risk:

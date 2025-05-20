@@ -1,0 +1,15 @@
+---
+title: Logboek 2025
+thumbs:
+  files:
+    25-05-20-creaminal-font:
+      kind: png
+---
+
+## 25 mei - <strike>Mid Season Switch part 2</strike>
+
+Geen blokarting deze winter. Het is er gewoon niet van gekomen 🤷‍♂️ #ithappens
+
+{% include thumbs show="25-05-20-registratie-nummer,25-05-20-creaminal-font" %}
+
+Ook Boosui gaat wat later dan andere seizoenen op het strand arriveren. Vandaag nog snel _eindelijk_ werk gemaakt van mijn registratienummer. Natuurlijk kon ik weer geen lettertjes gaan kopen en opplakken. No sir, het _moest_ natuurlijk weer in de het juiste Capricon lettertype: {% include external link="https://www.ffonts.net/Creaminal.font" title="Creaminal" %}. De font heeft geen hoofdletters, dus de "B" is een original design van yours truly 🤓

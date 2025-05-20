@@ -21,12 +21,12 @@ University of Leuven, seizing the moment to take a step back and try to find a
 it became apparant that [embedded systems](/technology) seemed to lure me their
 way. The hardware world became a very important counter-part to my interest in software.
 
-But, there is more than [computers](/technology) in my life. My daughter
-{% include external link="http://eline.vg" title="Eline" %} and son {% include external link="http://arjen.vg" title="Arjen" %} really brighten up
-every day of my life. [Cooking](/koken), [digital photography](/fotografie) and
-[catamaran sailing](/zeilen) complete the initial picture of my world. Each of
-these have their own section on this site and contain information at various
-levels - mostly notes, sometimes in depth introductions.
+But, there is more than [computers](/technology) in my life. My daughter Eline
+and son Arjen really brighten up every day of my life. [Cooking](/koken),
+[digital photography](/fotografie) and [catamaran sailing](/zeilen) complete
+the initial picture of my world. Each of these have their own section on this
+site and contain information at various levels - mostly notes, sometimes in
+depth introductions.
 
 In this section I collect topics that add some more personal details. Some of
 them are tagged "[thing](/tags/#thing)". These are small write-ups about some

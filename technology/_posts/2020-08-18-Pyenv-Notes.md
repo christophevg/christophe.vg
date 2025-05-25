@@ -13,10 +13,10 @@ Good habits die hard, so it will take some time to convert my mind and fingers t
 
 ### Install pyenv itself...
 
-#### MacOS
+#### Minimal Python build environment
 
 ```bash
-$ brew install pyenv 
+$ brew install openssl readline sqlite3 xz zlib
 ```
 
 #### From Git repo
@@ -28,15 +28,16 @@ $ echo 'eval "$(pyenv init --path)"' >> ~/.zprofile
 $ echo 'eval "$(pyenv init -)"' >> ~/.zshrc
 ```
 
-#### Minimal Python build enviornment
+**Note**: from time to time: upgrade repo to acquire new version info:
 
 ```bash
-$ brew install openssl readline sqlite3 xz zlib
+$ cd ~/.pyenv
+$ git pull
 ```
 
-#### Virtuelenv support
+#### Virtualenv support
 
-Also install virtualenv plugin
+Install the virtualenv plugin
 
 ```bash
 $ git clone https://github.com/pyenv/pyenv-virtualenv.git $(pyenv root)/plugins/pyenv-virtualenv
@@ -47,15 +48,15 @@ $ echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.zshrc
 
 ```bash
 $ pyenv install --list
-$ pyenv install 3.8.12
+$ pyenv install 3.11.12
 ```
 
 Enable the version for global use
 
 ```bash
-$ pyenv global 3.8.12
+$ pyenv global 3.11.12
 $ pyenv version
-3.8.12 (set by /Users/xtof/.pyenv/version)
+3.11.12 (set by /Users/xtof/.pyenv/version)
 ```
 
 ## Managing Virtual Environments
@@ -63,31 +64,31 @@ $ pyenv version
 Create a virtual environment based on a Python version...
 
 ```bash
-$ pyenv virtualenv 3.8.12 hello_world
+$ pyenv virtualenv 3.11.12 hello_world
 ```
 
 or "fork" from active version:
 
 ```bash
 $ pyenv version
-3.8.12 (set by /Users/xtof/.pyenv/version)
+3.11.12 (set by /Users/xtof/.pyenv/version)
 
-$ pyenv virtualenv test3.8.12
+$ pyenv virtualenv test3.11.12
 Looking in links: /var/folders/nq/xvzwtwsj25727ybthkp1wmhr0000gn/T/tmpji3hjgb_
-Requirement already satisfied: setuptools in /Users/xtof/.pyenv/versions/3.8.12/envs/test3.8.12/lib/python3.8/site-packages (56.0.0)
-Requirement already satisfied: pip in /Users/xtof/.pyenv/versions/3.8.12/envs/test3.8.12/lib/python3.8/site-packages (21.1.1)
+Requirement already satisfied: setuptools in /Users/xtof/.pyenv/versions/3.11.12/envs/test3.11.12/lib/python3.11/site-packages (56.0.0)
+Requirement already satisfied: pip in /Users/xtof/.pyenv/versions/3.11.12/envs/test3.11.12/lib/python3.11/site-packages (21.1.1)
 
 $ pyenv versions             
   system
-* 3.8.12 (set by /Users/xtof/.pyenv/version)
-  3.8.12/envs/test3.8.12
-  test3.8.12
+* 3.11.12 (set by /Users/xtof/.pyenv/version)
+  3.11.12/envs/test3.11.12
+  test3.11.12
 ```
 
 Removing a virtual environment
 
 ```bash
-$ pyenv uninstall test3.8.12
+$ pyenv uninstall test3.11.12
 ```
 
 Enabling the virtual environment for a given folder...
@@ -99,7 +100,7 @@ $ pyenv version
 hello_world (set by /Users/xtof/Workspace/hello_world/.python-version)
 $ cd ..
 $ pyenv version
-3.8.12 (set by /Users/xtof/.pyenv/version)
+3.11.12 (set by /Users/xtof/.pyenv/version)
 $ cd hello_world
 $ pyenv version
 hello_world (set by /Users/xtof/Workspace/hello_world/.python-version)
@@ -109,7 +110,7 @@ Makefile support for the virtual environment, creating it if needed:
 
 ```Makefile
 .python-version:
-	@pyenv virtualenv 3.8.12 $$(basename ${CURDIR}) > /dev/null 2>&1 || true
+	@pyenv virtualenv 3.11.12 $$(basename ${CURDIR}) > /dev/null 2>&1 || true
 	@pyenv local $$(basename ${CURDIR})
 	@pyenv version
 ```

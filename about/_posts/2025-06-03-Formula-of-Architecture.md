@@ -66,8 +66,6 @@ And there you have it, folks: the Formula of Architecture simply states that tec
 
 Hold on a moment! We haven’t reached the end yet. Choosing technology wasn’t the final destination. Technology comes with various costs, including purchase, setup, maintenance, incident, and upgrade expenses. In an ideal scenario, these costs would simply be a consequence of carefully considered choices, as per our Formula of Architecture: <tt>process → people ∩ information = technology = cost</tt>.
 
-From the outset, business needs are constrained by available resources, which include time, money, and people. These resources shape the entire internal capability order. The resulting cost is never absolute and is highly influenced by the money resource. So a feedback loop is introduced into our capability limiting the choice of technology even further. Even more so, also our people factor is further influenced by the same resource limitations. Even is we would be able to get the people with the skills we need, often we simply can't due to resource constraints. And so even more cost-feedback is introduced into our capabilities.
-
 From the outset, Business needs are inherently constrained by available resources, including time, money, and personnel. These resources shape the entire internal capability order. The resulting technology cost is not absolute, and is highly influenced by the business' money resource. This feedback loop further limits the choice of technology, and even the availability of skilled personnel is often hindered by resource constraints. Consequently, even more cost-feedback is introduced into our capabilities.
 
 {% include image name="business-needs-resources" bottom="25px" kind="png" %}

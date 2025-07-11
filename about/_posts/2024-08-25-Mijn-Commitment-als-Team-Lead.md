@@ -54,3 +54,11 @@ Een no-nonsense aanpak erkent fouten, pech,... als een integraal deel. Als team 
 > Als je nu denkt: "Christophe, dat hebben wel allemaal eerder gehoord": Zonder enige twijfel. Echter, wanneer heb je eerder een team lead ontmoet die zijn commitment zwart op wit neergeschreven heeft en online plaatst als een open contract voor zijn team?
 
 &#35;howcanihelp
+
+## TL;DR - The One Slide
+
+Als je al eerder met mij hebt gewerkt, ben je waarschijnlijk bekend met mijn <tt>all</tt> slide decks. Een Keynote (natuurlijk, wat anders? 😇) slide deck met _alle_ slides en presentaties die ik maak in de context van de opdracht waaraan ik werk. Vaak beslaan ze honderden slides en bieden een prachtige, historische en vaak nostalgische reis doorheen de evolutie van onze ideeën.
+
+Veel van mijn teksten beginnen met een slide. Deze was geen uitzondering. Als je tot nu toe nog geen visueel beeld gevormd had van mijn commitment, zal de volgende slide waarschijnlijk bijblijven.
+
+{% include image name="commitment-nl" kind="png" %}

@@ -53,3 +53,11 @@ A no-nonsense approach acknowledges mistakes, bad luck,... as an integral part. 
 > If you're now thinking: "Christophe, we've heard that all before": Without a doubt. However, when have you met a team lead who has written his commitment down in black and white and posted it online as an open contract for his team?
 
 &#35;howcanihelp
+
+## TL;DR - The One Slide
+
+If you've worked with me before, you should be familiar with my <tt>all</tt> slide decks. A Keynote (off course, what else? 😇) slide deck with _all_ slides and presentations I create within the context of the assignment I'm working on. Often spanning of hundreds of slides, they offer a wonderful, historic and often nostalgic journey through the evolution of our ideas.
+
+Many of my writings begin with a slide. This one was no exception. If you hadn't already formed a mental image of my commitment up to now, the following slide will probably stick.
+
+{% include image name="commitment-en" kind="png" %}

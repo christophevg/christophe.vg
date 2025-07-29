@@ -52,6 +52,10 @@ layout: default
           <a href="#" style="text-decoration:none">👆</a>
         </p>
 
+        {% if page.pagination_category %}
+        {% include category_pagination.html cat=page.pagination_category %}
+        {% endif %}
+
         {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>
 

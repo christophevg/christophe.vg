@@ -256,6 +256,7 @@ defaults:
       type: posts
     values:
       layout: song
+      pagination_category: muziek
       title: Muziek
       excerpt: Favoriete song (tekst) van het ogenblik …
       author_profile: true

@@ -7,7 +7,7 @@ permalink: /about/
 
 "Passion makes the world go round." Well, in my world it really does. Lack of
 passion is not something you can accuse me of and I tend to incorporate it in
-everything I do. On a professional level I'm passionate about software
+everything I do. On a professional level I'm passionate about enterprise
 architecture, about doing the right thing in the right way.
 
 Professional might be an understatement, because in my not so copious spare

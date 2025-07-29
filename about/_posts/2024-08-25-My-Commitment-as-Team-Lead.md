@@ -10,7 +10,7 @@ header:
 
 <p style="text-align:right">(🇳🇱 <a href="Mijn-Commitment-als-Team-Lead">Mijn Commitment als Team Lead</a>)</p>
 
-Yes, I admit it, I've always said I would stick to my guns. I would remain faithful to my role as a software architect, because in it I can bring my true [power](Problem-Seeker) to the table and apply a [sense of reality](50-Shades-of-Ceremony) before all.
+Yes, I admit it, I've always said I would stick to my guns. I would remain faithful to my role as an architect, because in it I can bring my true [power](Problem-Seeker) to the table and apply a [sense of reality](50-Shades-of-Ceremony) before all.
 
 > After 25 years of dedication to this role, I've personally seen "the good, the bad & the ugly" in so many different incarnations, have been taught by the best and have experienced how sometimes ... things could be improved upon.
 

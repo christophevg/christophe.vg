@@ -5,7 +5,7 @@ title: Christophe VG makes
 permalink: /makes/
 ---
 
-Be it [software](/about/I-Software-Architect), [technology in general](/technology), [pictures](/fotografie) or some [recipe](/koken)... I just can't stop making things. Over the years I've assembled my personal workshop, where I have (some say) every possible maker tool available (I care to differ 😇).
+Be it [software](/about/I-Enterprise-Architect), [technology in general](/technology), [pictures](/fotografie) or some [recipe](/koken)... I just can't stop making things. Over the years I've assembled my personal workshop, where I have (some say) every possible maker tool available (I care to differ 😇).
 
 This section of my site brings together some of the stories of how these "a little more" elaborate creative projects came to life, along with pointers to information on how I made them, because #sharingiscaring. I also try to include pointers to the sources I used, at least to give credit.
 

@@ -11,7 +11,7 @@ excerpt: |
 
 <p style="text-align:right">(🇬🇧 <a href="My-Commitment-as-Team-Lead">My Commitment as Team Lead</a>)</p>
 
-Ja, ik geef het toe: ik heb altijd gezegd dat ik "bij mijn leest ging blijven". Dat ik de rol van software architect puur ging houden, omdat daar mijn [kracht](Problem-Seeker) ligt en ik op dat niveau [zin voor realiteit](50-Shades-of-Ceremony) in eerste plaats kan blijven voorop stellen.
+Ja, ik geef het toe: ik heb altijd gezegd dat ik "bij mijn leest ging blijven". Dat ik de rol van architect puur ging houden, omdat daar mijn [kracht](Problem-Seeker) ligt en ik op dat niveau [zin voor realiteit](50-Shades-of-Ceremony) in eerste plaats kan blijven voorop stellen.
 
 > Na 25 jaar toewijding aan die rol, heb ik "the good, the bad & the ugly" persoonlijk in alle mogelijke incarnaties ervaren, heb ik geleerd van de besten en gezien hoe het soms ... beter kan.
 

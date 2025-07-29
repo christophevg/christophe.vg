@@ -8,7 +8,7 @@ header:
   image: /about/images/header/holiday-mode.jpeg
 ---
 
-As a [consulting nomad](I-Software-Architect), I'm confronted with two kinds of holiday: the one most of us have, a break from the busyness at work, and then I also have the in-between-clients period. While the former usually occurs 2 to 3 times a year and typically lasts between 1 and 3 weeks, I have made it a habit of taking some extended time off when I'm _'tweening_.
+As a [consulting nomad](I-Enterprise-Architect), I'm confronted with two kinds of holiday: the one most of us have, a break from the busyness at work, and then I also have the in-between-clients period. While the former usually occurs 2 to 3 times a year and typically lasts between 1 and 3 weeks, I have made it a habit of taking some extended time off when I'm _'tweening_.
 
 Although semantically different, both are structured around the same two principles: first of all I split them into three consecutive phases: _cool down_, _enjoy_ and _reboot_. Secondly I always ensure that there is a focus on _contemplation_ and _self-improvement_.
 

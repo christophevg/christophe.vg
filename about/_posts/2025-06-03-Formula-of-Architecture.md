@@ -5,6 +5,7 @@ short:
   - foa
 tags:
   - thing
+  - professional
 header:
   teaser: /about/images/thumb/formula-of-architecture.png
   image: /about/images/header/formula-of-architecture.png

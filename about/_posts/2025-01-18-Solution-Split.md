@@ -5,6 +5,7 @@ short:
   - ssplit
 tags:
   - thing
+  - professional
 header:
   teaser: /about/images/thumb/solution-split.jpeg
   image: /about/images/header/solution-split.jpeg

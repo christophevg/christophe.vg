@@ -8,7 +8,7 @@ header:
   image: /about/images/header/holiday-mode.jpeg
 ---
 
-As a [consulting nomad](I-Enterprise-Architect), I'm confronted with two kinds of holiday: the one most of us have, a break from the busyness at work, and then I also have the in-between-clients period. While the former usually occurs 2 to 3 times a year and typically lasts between 1 and 3 weeks, I have made it a habit of taking some extended time off when I'm _'tweening_.
+As a [freelancing nomad](I-Enterprise-Architect), I'm confronted with two kinds of holiday: the one most of us have, a break from the busyness at work, and then I also have the in-between-clients period. While the former usually occurs 2 to 3 times a year and typically lasts between 1 and 3 weeks, I have made it a habit of taking some extended time off when I'm _'tweening_.
 
 Although semantically different, both are structured around the same two principles: first of all I split them into three consecutive phases: _cool down_, _enjoy_ and _reboot_. Secondly I always ensure that there is a focus on _contemplation_ and _self-improvement_.
 
@@ -44,7 +44,7 @@ So having a clear view on how I want to improve, I typically head over to Amazon
 
 As I said in the beginning, "_although semantically different, both are structured around the same two principles._" The difference between a _regular_ holiday and a period in-between-clients is basically _size_. While the former typically lasts up to 3 weeks, when 'tweening I take larger chunks of time for major improvements. Where holidays allow for making operational and smaller tactical changes, the months in between customers give me the opportunity to make strategic changes.
 
-"_Give me the opportunity_" does not imply that I _always do_. Most of the time, this means simply _confirming_ the current heading, maybe make some tactical changes, but once in a while a new bearing gets plotted: switching from being an employee to being self-employed and setting up my own business, taking on IT architecture consulting, [going back to school at the age of 37](Revisiting_Higher_Education), diving into the hardware scene, [deciding to commit to leading a team](My-Commitment-as-Team-Lead) and ultimately becoming an [Enterprise Architect](I-Enterprise-Architect).
+"_Give me the opportunity_" does not imply that I _always do_. Most of the time, this means simply _confirming_ the current heading, maybe make some tactical changes, but once in a while a new bearing gets plotted: switching from being an employee to being self-employed and setting up my own freelance business, focussing on IT architecture , [going back to school at the age of 37](Revisiting_Higher_Education), diving into the hardware scene, [deciding to commit to leading teams](My-Commitment-as-Team-Lead) and ultimately becoming an [Enterprise Architect](I-Enterprise-Architect).
 
 &#35;HolidayMode
 

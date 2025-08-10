@@ -1,0 +1,481 @@
+positions:
+  - kind:
+      - all
+      - software
+      - hardware
+    image:
+      src: /about/images/banner/cv-architecture.jpeg
+      alt: prototyping
+    title: Freelance Enterprise Architect
+    start: mei 2004
+    body:
+      - Als <a href="/about/I-Enterprise-Architect">Enterprise Architect</a>   leef ik voor het ontwerpen van high-level IT-architecturen. Mijn focus ligt op “capabilities”, om een bedrijfsstrategie te vertalen naar een waardevolle IT-strategie.
+      - Om complexe transformaties op te delen, stel ik roadmaps op die conflicten oplossen en stakeholders ondersteunen. Als betrouwbare partner van het strategisch management begeleid ik de beslissingen en zorg ik ervoor dat transformaties tastbare bedrijfswaarde kunnen opleveren. Om dit te bereiken, hecht ik veel waarde aan governance.
+      - Met meer dan 25 jaar ervaring heb ik me voornamelijk gericht op architectuur. Zo heb ik bijgedragen aan grootschalige transformatie-initiatieven, waarbij ik zowel externe partners als interne teams <a href="/about/My-Commitment-as-Team-Lead">aanstuurde</a>. Hierbij werden mijn communicatieve en interpersoonlijke vaardigheden meermaals geprezen, met name mijn vermogen om complexe onderwerpen te vereenvoudigen en effectief te communiceren.
+      - Mijn uitgebreide ervaring in diverse IT-disciplines, -industrieën en -organisaties toont mijn aanpassingsvermogen en flexibiliteit aan. In elke situatie heb ik consequent creatieve en innovatieve ideeën geïntroduceerd die vaak een aanzienlijke impact hadden.
+    skills:
+       - Enterprise
+       - ArchitectureTeam
+       - Leadership
+
+  - kind:
+      - all
+      - software
+      - hardware
+    image:
+      src: /about/images/banner/cv-nationofpositivity.png
+      alt: Nation of Positivity
+    title: Chief Positivity Officer @ Nation of Positivity
+    start: oktober 2024
+    body:
+      - Bij Nation of Positivity vind je veel kleine leuke cadeautjes. Allemaal gepersonaliseerd en bedoeld om jouw positiviteit aan iemand anders te geven.
+      - Velen van jullie hebben de afgelopen jaren al een klein extraatje van mij gekregen. Ze waren altijd zelfgemaakt, gepersonaliseerd, uniek voor jou. Het was leuk om de soms wat verbaasde, maar altijd vooral heel dankbare reacties te zien. Want we hoeven niet allemaal een raket naar Mars te lanceren. Soms begint een beetje positiviteit gewoon bij jou en mij.
+      - Met Nation of Positivity bied ik mijn atelier en mijn eigen werk aan in een kleine online shop; mijn bescheiden initiatief, mijn spreekwoordelijke duit in het zakje. Met liefde gemaakt om met heel veel liefde te kunnen geven. Samen zorgen we voor een beetje meer positiviteit in de wereld.
+      - Dus breng vooral een bezoekje aan <a href="https://nationofpositivity.com" target="_blank">Nation of Positivity</a> en geef het geschenk van positiviteit!
+    skills:
+      - Company Set-up
+      - Product Development & Marketing
+
+  - kind:
+      - all
+      - software
+    image:
+      src: /about/images/banner/cv-bank-van-breda.jpeg
+      alt: Bank Van Breda
+    title: Framework &amp; Standards Architect, Bank van Breda
+    start: maart 2023
+    end: mei 2024
+    body:
+      - Als er één rode draad in mijn professionele carrière te bespeuren valt, dan is het wel die van methodologie, standaarden en documentatie, allemaal ter ondersteuning van een degelijke IT-strategie als implementatie van de bedrijfsvisie. Gecombineerd met het moderne en sterke IT-verhaal dat zich de afgelopen jaren bij Bank Van Breda heeft ontvouwd, en met een streven naar een rationele aanpak van documentatie, van bedrijfsniveau tot de daadwerkelijke implementatie, was ik klaar om mijn schouders onder deze enorme taak te zetten. Documentatie was duidelijk de drijvende kracht van de transformatie naar een berekenbare en meer gestructureerde IT-organisatie.
+      - Om dit te bereiken, werden verschillende initiatieven aanvankelijk in een roadmap uitgewerkt. Ik paste Agile-principes toe en ontwierp een lichtgewicht, BPMN-gedreven documentatieaanpak. Deze aanpak resulteerde in een niet-intrusief, gedragen door business analyse end-to-end framework voor de documentatie van het softwareplatform doorheen het gehele ontwikkelingsproces. Tegelijkertijd werden business analisten gecoacht en samengebracht in een overkoepelende competentiegroep, die ondersteuning bood en met name de gehele ontwikkeling van binnenuit begeleidde.
+    skills:
+      - Software Analysis
+      - Software Documentation
+      - BPMN
+
+  - kind:
+      - all
+      - software
+    image:
+      src: /about/images/banner/cv-acerta-2.jpeg
+      alt: Acerta
+    title: Lead Solutions Architect, Acerta
+    start: juni 2021
+    end: december 2022
+    body:
+      - Documenten zijn als het ware de slagaders van dit soort organisaties. Elk bedrijfsproces begint, wordt aangestuurd en eindigt met een document. Het documenten-platform is als domein verbonden met elk ander domein, waardoor het een centrale hub is die elk ander domein binnen de organisatie raakt. De mogelijkheden ervan zijn essentieel voor iedereen en elk proces, waardoor het een kritische succesfactor is. Een architecturale droom, zonder twijfel.
+      - De overkoepelende architecturale visie, die de grote bedrijfsstrategie voor het EverESSt-programma ondersteunde, introduceerde significante structurele veranderingen in alle domeinen, inclusief het documenten-platform. Als architect voor dit domein had ik vele stakeholders om mee samen te werken, met als doel hun diverse visies, eisen en beperkingen te verenigen. De stakeholders waren niet alleen intern, maar ook vooral extern, met name door de integraties met externe providers van diensten omtrent het managen van documenten. Om deze integraties te beheren, hebben we de kracht van de Azure Cloud benut en een eenvoudige maar zeer veerkrachtige integratielaag gebouwd. Deze oplossing werd niet alleen goedgekeurd, maar ook geprezen in een door Microsoft uitgevoerde architectuurbeoordeling. Door nauw samen te werken met de interne ontwikkelteams en externe Azure-specialisten en hen te begeleiden, hebben we deze oplossing succesvol tot leven gebracht.
+    skills:
+      - Software Architecture
+      - Cloud Computing
+
+  - kind:
+      - all
+      - software
+    image:
+      src: /about/images/banner/cv-tui.jpeg
+      alt: TUI
+    title: Lead Solutions Architect, TUI Belgium
+    start: april 2018
+    end: juni 2021
+    body:
+      - Ik vergeleek een touroperator als TUI vaak met de Amazon van de reiswereld. Hun activiteiten zijn niet alleen enorm en uitgebreid, maar ze zijn ook continu actief, waardoor het lastig is om zoiets als een openhartoperatie uit te voeren terwijl ze lopen. TUI was bezig met het verenigen van ongeveer 10 afzonderlijke touroperators, elk met zijn eigen unieke 'stack' aan softwareoplossingen. Sommige van deze oplossingen waren gebaseerd op bestaande systemen, terwijl andere over meerdere jaren vanaf nul waren opgebouwd. De visie die op alle niveaus, van proces tot infrastructuur, gerealiseerd moest worden, was 'Één Platform'.
+      - Na een uitgebreide mapping-fase selecteerden we de beste oplossingen uit alle stacks om één platform te bouwen. Om tegemoet te komen aan de zero-downtime eis, ontwierpen we een uitgebreid integratieplatform en hanteerden we een API-first-aanpak, waardoor domein- en solutions architecten onafhankelijk en autonoom binnen hun respectievelijke domeinen konden werken. Naast het aansturen van solutions architecten, bracht ik ook de business analisten van alle domeinen samen in een centrale analyse-cel. Ik introduceerde UML als een eenvoudige en gestandaardiseerde modelleer-taal om alle processen en datamodellen te formaliseren.
+    skills:
+      - Software Architecture
+      - Team Leadership
+      - UML
+      - API Design
+
+  - kind:
+      - all
+      - hardware
+      - noprint
+    project: true
+    image:
+      src: /makes/images/banner/novid-kiosk.png
+      alt: Novid Kiosk
+    title: Novid Kiosk
+    start: juni 2017
+    end: februari 2020
+    body:
+      - Bij Novid leefde al een tijdje het idee om een eigen online content-management platform te laten ontwikkelen als vervanging voor de dure media players waar zij tot op dat moment moesten op vertrouwen.
+      - Na enkele proof-of-concepts met sub-Ghz communicatie en Google ChromeOS werd in de lente van 2017 dan het startschot gegeven voor de ontwikkeling van de Novid Kiosk op basis van het Raspberry Pi 3 embedded platform.
+      - De eerste experimenten in 2017, op het grootste dance festival van Belg&euml;, waren alvast een schot in de roos en bevestigde het enorme potentieel voor Novid. Later volgde nog uitdagende setups op conferenties.
+      - In de zomer van 2018 zal al deze ervaring geconsolideerd worden in een eerste echte product-versie. Deze zal vervolgens op grote schaal ingezet worden tijdens de festival-zomer van 2018.
+    link:
+      url: /makes/Novid-Kiosk
+      text: Novid Kiosk
+
+  - kind:
+      - all
+      - hardware
+      - noprint
+    project: true
+    image:
+      src: /makes/images/banner/c3po.jpeg
+      alt: C3PO
+    title: Studio Dott Luisterbox
+    start: april
+    end: augustus 2017
+    body:
+      - In het kader van het <a href="https://itea3.org/project/c3po.html" target="_blank" rel="noreferrer">C<sup>3</sup>PO - Collaborative City Co-design PlatfOrm</a><span class="noprint">&nbsp;↗</span>, contacteerde Studio Dott mij voor de ontwikkeling van een "<a href="http://studiodott.be/2017/06/participatie-paviljoen/" target="_blank" rel="noreferrer">interactieve luisterbox</a><span class="noprint">&nbsp;↗</span>".
+      - Aan de hand van deze luisterbox ondersteunt Studio Dott participatieprojecten met een fysieke aanwezigheid in het straatbeeld. Inwoners kunnen zo in een geautomatiseerd, interactief gesprek feedback geven over tal van onderwerpen, waarover het bestuur van hun woonplaats hun mening wil kennen.
+      - De Studio Dott Luisterbox stond opgesteld in Schilde, Gent en in Hamme. <span class="noprint">In de pers werd de aanwezigheid ook reeds opgemerkt:<br> <a href="http://www.gva.be/cnt/dmf20170530_02904369/dag-en-nacht-ideeen-spuien-over-kerkplein-in-rondreizende-luisterbox" target="_blank" rel="noreferrer">GVA - Dag en nacht ideeën spuien over Kerkplein</a><span class="noprint">&nbsp;↗</span><br> <a href="http://www.gva.be/cnt/bljau_02914735/brainstormen-over-toekomst-van-kerkplein" target="_blank" rel="noreferrer">GVA - Brainstormen over toekomst van Kerkplein</a><span class="noprint">&nbsp;↗</span><br> <a href="http://www.nieuwsblad.be/cnt/dmf20170602_02909876" target="_blank" rel="noreferrer">Nieuwsblad - Luisterbox klaar voor inspraaktournee</a><span class="noprint">&nbsp;↗</span><br> <a href="http://www.hln.be/regio/nieuws-uit-gent/-wij-raken-rust-in-onze-wijk-kwijt-a3239490" target="_blank" rel="noreferrer">HLN - Luisterbox peilt naar mening bewoners</a><span class="noprint">&nbsp;↗</span><br> <a href="https://vimeo.com/230731748" target="_blank" rel="noreferrer">AVS Nieuws van 22 augustus</a><span class="noprint">&nbsp;↗</span> </span>
+    link:
+      url: /makes/C3PO-Luisterbox
+      text: C3PO - Luisterbox
+
+  - kind:
+      - all
+      - software
+      - noprint
+    project: true
+    image:
+      src: /about/images/banner/bellekens.png
+      alt: Bellekens
+    title: Enterprise Architect Uitbreidingen
+    start: januari
+    end: juni 2017
+    body:
+      - In opdracht van <a href="http://bellekens.com" target="_blank" rel="noreferrer">Bellekens IT</a><span class="noprint">&nbsp;↗</span> ontwikkelde ik verschillende uitbreidingen voor de UML/CASE tool <a href="http://www.sparxsystems.com/products/ea/" target="_blank" rel="noreferrer">Enterprise Architect</a><span class="noprint">&nbsp;↗</span>.
+      - Om COBOL notebooks te importeren ontwikkelde ik o.a. de <a href="https://github.com/christophevg/human-parser-generator" target="_blank" rel="roreferrer">Human Parser Generator</a><span class="noprint">&nbsp;↗</span>, een parser generator die vertrekt van een zuivere (E)BNF beschrijving van de grammatica van de te parsen taal. Deze grammatica wordt binnen dezelfde grammatica vervolgens verder gestructureerd, om tot een volledig gegenereerde, zeer leesbare en gebruikersvriendelijke parser te komen.
+      - De "EA Mapping Tool" laat toe om binnen Enterprise Architect op visuele wijze verbanden te leggen en te onderhouden tussen elementen binnen een model.
+      - Ter ondersteuning van het beheer van grote hoeveelheden elementen in een hi&euml;rarchische structuur, werd ook een "Glossary Manager" ontwikkeld. Deze laat toe om concepten te defini&euml;ren en vervolgens afgeleiden van deze concepten gesynchroniseerd te houden over versies heen.
+    skills:
+      - Software Development
+
+  - kind:
+      - all
+      - hardware
+      - noprint
+    project: true
+    image:
+      src: /makes/images/banner/ezrpi.jpeg
+      alt: EZRPi
+    title: EZRPi
+    start: december 2016
+    end: may 2017
+    body:
+      - The EZRPi is a Raspberry Pi HAT, carrying a Silicon Labs EZR32 Sub-GHz wireless microcontroller (MCU), that adds subGHz radio capabilities to the RPi.
+      - Different protocols can be implemented on the MCU, ranging from basic physical-layer-only ad-hoc communication to full-stack networking protocols. An example of such protocol is Dash-7. Dash7 is a specification for an ultra low power network stack, operating within the sub-GHz spectrum. The Dash7 Open Source Stack (OSS-7) can be flashed onto the EZR to turn it into a modem, accessible from the Raspberry Pi. On the Pi, one then could talk to this modem using pyd7a a collection of Python modules, supporting the DASH7 Alliance Protocol in general, and OSS-7 in particular.
+    link:
+      url: /makes/EZRPi
+      text: EZRPi
+
+  - kind:
+      - all
+      - hardware
+    image:
+      src: /about/images/banner/cv-ua.png
+      alt: UA
+    title: Onderzoeker, Universiteit Antwerpen
+    start: september 2015
+    end: augustus 2016
+    body:
+      - Binnen de onderzoeksgroep rond energiezuinige draadloze netwerken, designde en ontwikkelde ik verschillende Internet of Things oplossingen voor industriële partners.
+      - De focus lag enerzijds op de opkomende netwerktechnologieën zoals Dash7, LoRa, SIGFOX, maar vereiste ook verregaande integraties met andere zeer nieuwe electronica-componenten.
+      - Voor één van deze projecten werd tevens een spin-off voorbereid. In het kader daarvan werd ons business plan geselecteerd voor het <a href="https://www.imec-int.com/en/istart" target="_blank" rel="noreferrer">iMinds iStart</a><span class="noprint">&nbsp;↗</span> incubator programma.
+    skills:
+      - Embedded Software
+      - Hardware Schematics Design
+      - Company Set-up
+
+  - kind:
+      - all
+      - hardware
+      - noprint
+    project: true
+    image:
+      src: /makes/images/banner/fri3d-badge.jpeg
+      alt: Fri3d Badge
+    title: Fri3d 2016 Badge
+    start: december 2015
+    end: august 2016
+    body:
+      - For the second edition of <a href="http://fri3d.be" target="_blank"
+            rel="noreferrer">Fri3d Camp</a><span class="noprint">&nbsp;↗</span>, we wanted to offer each of
+            the 300 participants an electronic badge to wear at camp. This
+            badge was a custom Arduino with infra-red emitters and receiver,
+            allowing the badges to "communicate".
+      - The badge was, amongst others, used in a hide-and-seek game with a
+            large group of young campers. The Arduino-compatible setup enabled
+            many first-time enthousiasts to take the plunge and experience
+            their first "Hello World" steps in electronics.
+    link:
+      url: /makes/Fri3d-Badge
+      text: Fri3d Badge
+
+  - kind:
+      - all
+      - hardware
+      - noprint
+    image:
+      src: /makes/images/banner/inspection-robot.jpeg
+      alt: Inspection Robot
+    title: Inspection Robot
+    start: march
+    end: august 2015
+    body:
+      - Pfizer Puurs contracted me to design and implement a solution for
+            their QA team to be able to inspect certain locations in their
+            factory that were very hard to reach. The combination of a height
+            restriction of about 12cm and the need to be able to carry a sensor
+            on a rotating arm were challenging.
+      - The solution consisted of several existing components that were
+            assembled into a custom radio controlled rover. Using this solution,
+            the QA process was reduced to a few hours, which before could take
+            up to two whole days. The team was rewarded with a company-wide
+            award for their innovative solution.
+    link:
+      url: /makes/Inspection-Robot
+      text: Inspection Robot
+
+  - kind:
+      - all
+      - hardware
+    image:
+      src: /about/images/banner/cv-kul.png
+      alt: KUL
+    title: Onderzoeker, KU Leuven
+    start: september 2014
+    end: augustus 2015
+    body:
+      - In navolging van mijn master thesis rond het verlagen van de impact
+            van inbraakdetectie in draadloze sensor-netwerken, kon ik mijn
+            onderzoek verderzetten binnen de werkgroep <a
+            href="https://distrinet.cs.kuleuven.be" target="_blank"
+            rel="noreferrer">DistriNet</a><span class="noprint">&nbsp;↗</span>.
+      - In dit kader onderzocht ik de inzetbaarheid van programmeertalen
+            bij het optimaliseren van het energieverbruik in draadloze
+            sensor-netwerken in het algemeen.
+      - Één van de resultaten van dit onderzoek was de definitie en
+            initiële implementatie van een een domein specifieke taal die dit
+            mogelijk maakte, genaamd foo-lang.
+    skills:
+      - Software Architecture
+      - Scholarly Research
+      - Language Development
+      - Security
+
+  - kind:
+      - all
+      - hardware
+    image:
+      src: /about/images/banner/cv-msc.png
+      alt: KUL
+    title: Master Computer Wetenschappen, KU Leuven
+    start: oktober 2011
+    end: juni 2014
+    body:
+      - In 2011 besloot ik om een grote persoonlijke investering te doen en mijn vakgebied te verruimen. In overleg met de universiteit van Leuven, startte ik een verkort bachelor jaar en een twee-jarige masteropleiding computerwetenschappen.
+      - Deze periode bood me de mogelijkheid om mij verder te verdiepen in electronica, robotica en embedded development. Zo ontstond een tweede fundamentele peiler voor mijn verdere toekomst.
+      - Mijn masterproef onderzocht de mogelijkheden tot het <i>Verlagen van de impact van inbraakdetectie in draadloze sensor-netwerken door middel van een domein-specifieke taal en code generatietechnieken</i> (<a href="/about/assets/hacker-in-mijn-koelkast.pdf">artikel</a>, <a href="/about/assets/thesis.pdf">thesis</a>). In meerdere opzichten was dit een combinatie van oude en nieuwe passies, software architectuur &amp; code generatie en electronica &amp; embedded development.
+
+  - kind:
+      - all
+      - software
+    image:
+      src: /about/images/banner/cv-up.png
+      alt: UnifiedPost
+    title: Platform Architect, UnifiedPost
+    start: mei 2010
+    end: september 2011
+    body:
+      - Nadat ik het <a href="http://unifiedpost.com" target="_blank"
+            rel="noreferrer">UnifiedPost</a><span class="noprint">&nbsp;↗</span> platform vanuit een
+            klant-oogpunt, voor Acerta, uitvoerig onder de loupe had genomen,
+            was een overstap naar de andere kant van datzelfde platform een
+            zeer leuke uitdaging.
+      - Zo heb ik tal van functionele en technische analyses gemaakt
+            omtrent de platform-specifieke aspecten van het UnifiedPost aanbod.
+            Hierbij lag de focus op de beveiliging, schaalbaarheid en
+            beschikbaarheid van het platform. Dit maakte het mogelijk om het
+            bestaande platform uit te rollen naar verschillende internationale
+            partners die het platform vervolgens autonoom konden uitbaten.
+      - Met deze analyses van het platform, kon ik vervolgens ook
+            verschillende interne en externe audits en certificering-procedures
+            organiseren en ondersteunen.
+    skills:
+      - Security
+      - Platform Architecture
+      - Documentation
+      - Team Leadership
+
+  - kind:
+      - all
+      - software
+    image:
+      src: /about/images/banner/cv-acerta.jpg
+      alt: Acerta
+    title: Solution Architect, Acerta
+    start: april 2008
+    end: december 2009
+    body:
+      - Binnen het architectuur team van <a href="http://acerta.be" target="_blank" rel="noreferrer">Acerta</a><span class="noprint">&nbsp;↗</span> leidde ik verschillende architecturale voorstudies voor nieuwe en vervangingsprojecten ten behoeve van verschillende business units. Business teams werden ondervraagd om concrete en volledige requirements te verzamelen, verschillende mogelijke strategieën werden onderzocht, ik onderhandelde met leveranciers en formuleerde een aanbevolen implementatie, rekening houdend met de bestaande infrastructuur en de toekomstvisie op business en ICT vlak.
+      - Zo werkte ik o.a. in het initiële team dat de basis legde voor het nieuwe digitale documenten beheersysteem, op basis van het UnifiedPost aanbod.
+    skills:
+      - Software Architecture
+      - Software Design
+
+  - kind:
+      - all
+      - software
+    image:
+      src: /about/images/banner/cv-sdworx.png
+      alt: SD Worx
+    title: Functioneel Analist &amp; Methodologie Coach, SD Worx
+    start: januari 2006
+    end: maart 2008
+    body:
+      - Voor de migratie van het bestaande loonberekeningsplatform, op basis van een mainframe en COBOL, naar een .NET-gebaseerd platform, ondersteunde ik <a href="http://sdworx.be" target="_blank" rel="noreferrer">SD Worx</a><span class="noprint">&nbsp;↗</span> initiëel bij de functioneel analyse-fase. Dit vroeg een nauwe samenwerking met het business en het management team. Zowel in de KMO als GO afdeling begeleidde ik het analyse team bij het in kaart brengen en definiëren van het toekomstige nieuwe platform.
+      - Dankzij een doorgedreven object-georiënteerde analyse, met verschillende technieken uit MDA/UML en SOA-gedreven projectbeheer, werd de basis gelegd voor een moderne aanpak van software ontwikkeling naar de toekomst toe.
+    skills:
+      - Team Leadership
+      - Software Analysis
+      - Software Architecture
+
+  - kind:
+      - all
+      - software
+    image:
+      src: /about/images/banner/cv-bai.png
+      alt: Business Architects International
+    title: Technisch Architect &amp; Release Manager, Business Architects International
+    start: juli 2004
+    end: december 2005
+    body:
+      - Business Architects International was in 2004 dé referentie wanneer
+            het UML modellering betrof. Binnen het CLP team, kon ik mij
+            verdiepen in de details van de enorme mogelijkheden van deze
+            analyse-techniek.
+      - Als technisch architect werkte ik functionele modellen uit,
+            betreffende hypotheken en kredieten voor Rabo Bank Nederland.
+            Hierbij werden ver doorgedreven technieken van UML en MDA principes
+            toegepast om tot modellen te komen die volledig geautomatiseerd tot
+            programmacode konden omgezet worden door Cap Gemini.
+      - Later opereerde ik als overkoepelende release manager van het hele
+            design- en modelleringsproces, stelde ik de nodige procedures op en
+            implementeerde deze voor het samenstellen van kwalitatieve releases
+            met de nodige garanties.
+    skills:
+      - Team Leadership
+      - Software Analysis
+      - Software Design
+      - Release Management
+
+  - kind:
+      - all
+      - software
+    image:
+      src: /about/images/banner/cv-2know.png
+      alt: 2Know
+    title: Oprichting 2Know BVBA
+    moment: mei 2004
+    body:
+      - Met de oprichting van 2Know ving mij carrière als freelancer aan. Vanaf nu kon ik mijn expertise betreffende software architectuur, het uitwerken van software analyses &amp; ontwikkelingsprocessen en het begeleiden van software analyse- &amp; ontwikkelingsteams, in de beste omstandigheden aanbieden.
+      - Vanuit mijn onafhankelijke positie ben ik in staat om steeds naar de beste oplossing voor een gegeven situatie te zoeken, zonder beperkingen of vooroordelen, uit andere, commerciële overwegingen. Deze situatie is typerend voor mijn aanpak en heeft over de jaren duidelijk zijn stempel gedrukt en vruchten afgeworpen.
+    skills:
+      - Software Architecture
+      - Team Leadership
+      - Hardware Prototyping
+
+  - kind:
+      - all
+      - software
+    image:
+      src: /about/images/banner/cv-telindus.png
+      alt: Telindus
+    title: Software Architect, Telindus Corporate
+    start: mei 2002
+    end: september 2003
+    body:
+      - Bij <a href="http://telindus.be" target="_blank" rel="noreferrer">Telindus</a><span class="noprint">&nbsp;↗</span>, was ik verantwoordelijk voor het ontwerp en de integratie van het een netwerk-event correlatie- en rapportering-systeem voor het International Service Center.
+      - De strategie voor het ISC project was een verregaande integratie van bestaande componenten. Hiervoor diende ik verschillende partijen te evalueren en met elkaar in een overkoepelende en geïntegreerde architectuur te verenigen.
+    skills:
+      - Software Architecture
+      - Network Monitoring Tools
+      - Software Integration
+
+  - kind:
+      - all
+      - software
+    image:
+      src: /about/images/banner/cv-valid.png
+      alt: Valid Solutions
+    title: Mede-oprichter Valid Solutions
+    start: juni 2002
+    end: maart 2004
+    body:
+      - In 2002 richtte ik samen met Dale Hofkens <a href="http://valid.be" target="_blank" rel="noreferrer">Valid Solutions</a><span class="noprint">&nbsp;↗</span> op. Valid paste vooruitstrevende web-technologieën toe, en creëerde zo zeer dynamische producten voor de Belgische KMO markt. We zagen daarmee reeds zeer vroeg de kracht van het wereld-wijde web voor dit marktsegment - iets dat de daarop volgende jaren zeer duidelijk werd, bv. met de lancering van <a href="http://gmail.com" target="_blank" rel="noreferrer">GMail</a><span class="noprint">&nbsp;↗</span>.
+      - Binnen Valid Solutions was ik verantwoordelijk voor het ontwerp en ontwikkeling van de KMO-gerichte internet-gebaseerde producten, die in de vorm van diensten aangeboden werden. Zo was ik bv. projectleider voor de ontwikkeling van een online orderverwerking-platform voor de Belgische tak van <a href="http://www.ratiopharm.de" target="_blank" rel="noreferrer">Ratiopharm</a><span class="noprint">&nbsp;↗</span>.
+    skills:
+      - Start-up Leadership
+      - Software Architecture
+      - Software Development
+      - Browser Applications
+
+  - kind:
+      - all
+      - software
+    image:
+      src: /about/images/banner/cv-ubizen.png
+      alt: Ubizen
+    title: Software Analist &amp; Teamleider, Ubizen
+    start: februari 2000
+    end: februari 2002
+    body:
+      - Wat startte als een stage tijdens het laatste jaar van mijn opleiding, werd mijn eerste positie binnen een groot en snel groeiend bedrijf. Eerst Netvision, daarna Ubizen, later Cybertrust en sinds 2007 deel van <a href="http://verizon.com" target="_blank" rel="noreferrer">Verizon Business</a><span class="noprint">&nbsp;↗</span>.
+      - Al snel werd ik verantwoordelijk voor het ontwerp van een volgende versie van OnlineGuardian, het monitoring platform voor beveiligingscomponenten. Als teamleider van het ontwikkelingsteam bouwde ik een van de tofste en krachtigste teams uit waarmee ik al heb mogen werken.
+    skills:
+      - Software Architecture
+      - Software Design
+      - Leading Development Teams
+      - Security
+
+  - kind:
+      - all
+    image:
+      src: /about/images/banner/cv-isw.png
+      alt: ISW
+    title: Oprichting ISW
+    moment: academiejaar 1998-1999
+    body:
+      - Anno 1998 regeerden BBS'en, was het mainframe koning en was er van
+           het internet slechts sprake in de kelder van enkelingen. De
+           studenten informatica van de KHLeuven kregen de beginselen van de
+           informatica die voor handen waren, maar sommigen wilden toch al eens
+           wat meer, o.a. ikzelf ;-)
+      - Enigszins in een zoektocht naar gelijkgestemden binnen de school,
+           stelde ik aan de directie voor om een parascolaire werkgroep op te
+           richten waar workshops rond andere topics door en voor studenten
+           georganiseerd konden worden. Na een korte rondvraag ontstond <a
+           href="https://iswleuven.be" target="_blank"
+           rel="noreferrer">ISW</a><span class="noprint">&nbsp;↗</span>
+      - Vandaag, na meer dan 20 jaar bestaat ISW nog steeds en is het
+           uitgegroeid tot een belangrijk onderdeel van de
+           informatica-opleiding aan het <a href="http://ucll.be"
+           target="_blank" rel="noreferrer">UCLL</a><span class="noprint">&nbsp;↗</span>. Ik ben werkelijk
+           trots aan de wieg gestaan te hebben van zo'n mooi verhaal.
+    link:
+      external: true
+      url: http://iswleuven.be
+      text: ISW
+
+  - break
+  - break
+
+  - kind:
+      - all
+      - software
+      - hardware
+      - noprint
+    image:
+      src: /about/images/banner/cv-coco2.jpg
+      alt: Tandy Color Computer II
+    title: En héél lang geleden...
+    moment: december 1983
+    body:
+      - begon mijn informatica-avontuur toen ik mijn eerste eigen computer kreeg, een <a href="https://en.wikipedia.org/wiki/TRS-80_Color_Computer#Color_Computer_2_.281983.E2.80.931986.29" target="_blank" rel="noreferrer">Tandy Color Computer 2</a><span class="noprint">&nbsp;↗</span>.
+      - Mijn ouders dachten dat ik er spelletjes ging op spelen... en dat was <i>deels</i> waar. Deels, want al heel snel bleken dat feitelijk bij voorkeur zelf-geschreven spelletjes te zijn. Het spelen verdween snel, het programmeren niet.
+      - En de rest is geschiedenis ;-)

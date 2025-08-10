@@ -40,6 +40,21 @@ positions:
       - all
       - software
     image:
+      src: /about/images/banner/cv-gosselin.jpeg
+      alt: Gosselin Group
+    title: Enterprise Architect, Gosselin Group
+    start: augustus 2025
+    body:
+      - Gosselin Group is een internationale logistieke reus met het unieke vermogen om in te spelen op constante veranderingen in een steeds groeiend landschap. Als Enterprise Architect begin ik met het erkennen van deze realiteit, het identificeren en ondersteunen van bestaande processen, en het opstellen van een roadmap om geleidelijk een uitdagende toekomstvisie te realiseren.
+      - Mijn ervaring sluit perfect aan bij deze opdracht. Ik focus op processen, documentatie en grootschalige integraties. Mijn vermogen om complexe strategische inspanningen effectief te vertalen naar zowel C-level als operationele collega's, stelt me in staat om Enterprise Architectuur afstemming in de hele organisatie te implementeren.
+      - Integratie is essentieel. Gosselin Group heeft uitgebreide internationale transport- en logistieke partners, evenals interne integraties tussen alle bedrijven onder haar vlag. Daarnaast moeten belangrijke componenten en processen binnen deze bedrijven worden geïntegreerd. Het beheren van deze integraties, het ontwerpen ervan, het realiseren ervan op een centraal IPAAS en het garanderen dat de gehele groep toegang heeft tot actuele documentatie, is een cruciale eerste stap in de geconsolideerde EA roadmap.
+    skills:
+      - Enterprise Architecture
+
+  - kind:
+      - all
+      - software
+    image:
       src: /about/images/banner/cv-bank-van-breda.jpeg
       alt: Bank Van Breda
     title: Framework &amp; Standards Architect, Bank van Breda

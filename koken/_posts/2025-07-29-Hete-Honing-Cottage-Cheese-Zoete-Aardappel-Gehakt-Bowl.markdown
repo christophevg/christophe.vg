@@ -29,11 +29,11 @@ De naam is op één ingredient na ook bijna de bereiding 🤷‍♂️ Gebaseerd
 * avocado
 * cottage cheese
 
-##  bereiding 
+##  bereiding
 
 Snij een chili peper in stukjes, mét de zaadjes. Doe wat honing in een potje, voeg de chili peper en een beetje azijn toe. Breng aan de kook en laat nadien gewoon trekken.
 
-Schil en snijd de aardappelen in blokjes. Voorzie ze van een dun laagje arachideolie en kruid met peper, zout en gerookt paprika poeder. Doe in een air fryer op 190 graden gedurende ±15min. Schud ze regelmatig eens door elkaar.
+Schil en snijd de aardappelen in blokjes. Voorzie ze van een dun laagje arachideolie en kruid met peper, zout en gerookt paprika poeder. Doe in een air fryer op 190 graden gedurende ±25min. Schud ze regelmatig eens door elkaar.
 
 Bak en verkruimel het gehakt. Kruid met de zelf-gemaakte taco kruiden en voeg tomatenpuree toe. Laat nog even goed mee bakken.
 

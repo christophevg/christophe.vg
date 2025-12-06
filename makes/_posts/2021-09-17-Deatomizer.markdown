@@ -6,6 +6,7 @@ header:
 tags:
   - lasercutting
   - 3dprinting
+  - airbrushing
   - fun
 gallery:
   - url: /makes/images/full/deatomizer/step-1.jpeg

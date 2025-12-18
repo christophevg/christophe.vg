@@ -29,6 +29,12 @@ thumbs:
       kind: png
     procedure-stap-6c:
       kind: png
+images:
+  files:
+    donkergrijs-before:
+      kind: png
+    donkergrijs-after:
+      kind: png
 ---
 
 In 2025 heb ik me opnieuw ingeschreven voor een opleiding aan de kunstacademie: grafisch ontwerp en illustratietechnieken. Als ik voor mezelf geen morele verplichting inbouw om aanwezig te zijn op donderdagavond, komen er altijd wel tal van andere "belangrijkere" dingen tussen en verdwijnt een beetje creatieve tijd op een wip en een gauw onder de mat. Zelfs met een opleiding als goede reden, blijft het nog een hele uitdaging, echter toch lukt het me om de meeste van m'n opdrachten tot een goed einde te brengen.
@@ -115,6 +121,43 @@ Nu de afbeelding uit vier kleuren bestaat, kunnen we zwart en grijstinten select
 > Zo bekom je normaal gezien een propere layering:
 > {% include image name="procedure-layers" kind="png" %}
 
-## Next: Tracen
+## Stencils
 
-...
+Ik ga de stencils maken met mijn laser cutter en dikke vellen A3 (misschien A2 😇) papier. Mijn cutter heeft nood aan vector tekeningen dus ik wil de gestileerde foto voor elke kleur "tracen".
+
+Voor dat weer een doenbaar resultaat oplevert gaan de drie uitgesplitste kleuren wel nog wat opgekuist/vereenvoudigd moeten worden.
+
+### stap 7: Vereenvoudigen
+
+Vereenvoudigen betekent het wegvegen van zovele mogelijk kleine artefacten en delen die er in het uiteindelijke resultaat toch niet echt toe doen. Om dit toch wat in true-Photoshop-spirit te doen en te werken met een niet-destructieve layer mask.
+
+Er is geen echte keyboard shortcut, dus het toevoegen van een layer mask vraagt een muis/trackpad clickje.
+
+{% include image name="layer-mask" kind="png" bottom="15px" %}
+
+Dat doen we voor elke uitgesplitste kleur.
+
+{% include image name="layer-masks" kind="png" bottom="15px" %}
+
+Wanneer we nu met de brush tool op dézé layer mask met zwart schilderen, onderdrukken we de pixels van de uitgesplitste kleur.
+
+Repeat voor elke kleur, zodat alle overbodige klein vlakjes of lijntjes weg zijn (💡 click op een afbeelding om te vergroten, switch back/forth met de pijltjes om het verschil te zien):
+
+{% include images show="donkergrijs-before,donkergrijs-after" %}
+
+### stap 8: Naar Illustrator
+
+Tijd om de drie vereenvoudigde kleuren te exporteren naar Illustrator om ze te tracen.
+
+> Tip: gebruik niet de "Quick export" functionaliteit, want die reduceert de afbeelding tot een minimale "bounding box" en dan wordt het moeilijk om de drie lagen op elkaar af te stemmen.  
+> Doe wel: Maak alle de drie lagen zichtbaar en gebruik `File > Export > Export Layers to Files`, activeer `Visible Layers Only`, zet het formaat op `PNG-24`, zorg dat `Transparency` aangevinkt is, en _essentieel_ zet het vinkje bij "Trim Layers" _af_. Druk op `Run` en laat Photoshop zich een beetje amuseren 🤓
+
+Start een A3 document in Illustrator en maak er drie lagen in aan, eentje voor elke kleur. Sleep er de kleuren één voor één elk op hun eigen laag.
+
+Vanuit het `Properties` paneel, kies de Quick Action `Image Trace`. Kies als instelling `Shades of Grey`. Click nu nog op `Expand` om de trace effectief door te voeren. Geef de lijn een kleurtje en de zet de opvulling op onzichtbaar.
+
+{% include image name="traced" kind="png" bottom="15px" %}
+
+Exporteer als SVG en we zijn klaar voor de laser cutter.
+
+## Next: cutting and air brushing

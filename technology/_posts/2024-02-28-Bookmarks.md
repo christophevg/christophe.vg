@@ -35,7 +35,7 @@ Over the years my development stack has really converged, and so are the tools I
 * {% include external link="https://www.jsontest.com" %} - several JSON returning services, useful as a QnD initial online JSON testdata provider.
 * {% include external link="https://www.asciiart.eu" %} - because your warez simply _need_ some ASCII art pizzazz
 
-## Running 🏃‍♂️
+## Running 🏃
 
 Although it doesn't have a section on this site, running is one activity that tends to take up quiet some part of my free time.
 
@@ -43,5 +43,9 @@ Although it doesn't have a section on this site, running is one activity that te
 * {% include external link="https://www.rungoapp.com" %} - the free version of the {% include external link="https://apps.apple.com/app/rungo-guided-runs-turn-by/id712628644" title="RunGo app" %} allows me to do just what I want: import GPX, save it to my watch and have turn-by-turn audio navigation.
 * {% include external link="https://runalyze.com" %} - for some time, this has become my centralised, statistical analysis tool for all my runs. I can sync from my favorite {% include external link="https://apps.apple.com/us/app/ismoothrun/id410965399" title="tracking app" %} and applies too many scientific statistical algorithms, for my nerdy insight pleasure
 * {% include external link="https://wearerunning.be" %} - contains all running events from January through December (in Belgium). Typically I try to attend a lot of these.
+
+## Various 👋
+
+* Every project, application,... needs a good name. For all your naming needs: {% include external link="https://namelix.com" %} has got you covered.
 
 > Let's see where this small list ends up (or not) in some time...

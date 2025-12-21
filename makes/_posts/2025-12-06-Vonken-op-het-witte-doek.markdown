@@ -160,4 +160,24 @@ Vanuit het `Properties` paneel, kies de Quick Action `Image Trace`. Kies als ins
 
 Exporteer als SVG en we zijn klaar voor de laser cutter.
 
-## Next: cutting and air brushing
+## Cutting & Air Brushing
+
+Tijd voor een eerste test op stof!
+
+{% include thumbs show="test1-negatieven,test1-stencils" %}
+Met de laser cutter zijn de drie stencils in ongeveer 20 minuten klaar voor gebruik. Ik had even zin om met de restanten nog iets te maken, echter, zoals snel zal blijken, heb ik m'n handen al vol genoeg.
+
+{% include video id="8er8TDeiuTQ" name="vonk/test1-video" kind="jpeg" %}
+Een foto zegt meer dan 1000 woorden, een video nog eens 24x zoveel? 😇
+
+{% include image name="test1" %}
+
+## Tussentijdse conclusie
+
+Het resultaat van de eerste test is zonder meer een succes. Het komt veel beter tot z'n recht dan ik gedacht had en de eerste stof (van de drie die ik gekocht had) is perfect. Er zijn massa's "fouten", echter, en dat vind ik dan weer het mooie, die vallen helemaal niet op en maken het allemaal feitelijk nog veel mooier. Neen, ik ga niet verklappen welke 😉
+
+De video toont (natuurlijk) niet het zoeken naar een manier om de drie stencils mooi uitgelijnd te krijgen op de stof. Dat sloeg best tegen en ik moet toegeven dat groter dan dit stuk stof, ±A3, ga ik niet moeten proberen met de huidige middelen die ik heb.
+
+Tussentijdse conclusie: ik ga absoluut de 9 vonken op witte doeken maken, echter iets kleiner dan eerst gepland, niet als lange doeken van 2m, en zonder de randen van een filmrolletje na te bootsen.
+
+Ik ga de komende dagen rustig eens nadenken hoe ik met die 9 stukken wit doek dan een andere leuke opstelling kan maken... to be continued tegen februari 😋

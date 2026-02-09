@@ -7,7 +7,6 @@ tags:
   - lasercutting
   - airbrushing
   - fun
-  - wip
 folder: vonk
 thumbs:
   files:
@@ -181,3 +180,20 @@ De video toont (natuurlijk) niet het zoeken naar een manier om de drie stencils 
 Tussentijdse conclusie: ik ga absoluut de 9 vonken op witte doeken maken, echter iets kleiner dan eerst gepland, niet als lange doeken van 2m, en zonder de randen van een filmrolletje na te bootsen.
 
 Ik ga de komende dagen rustig eens nadenken hoe ik met die 9 stukken wit doek dan een andere leuke opstelling kan maken... to be continued tegen februari 😋
+
+## Back to the Beginning
+
+Helemaal in het begin, had ik een idee om 9 iconische film-vonk-beelden te verwerken in één werk. Naar dat initiële ben ik terug gegaan, inclusief de film-frames en de rode draad (ook inclusief een strak plan om alles op tijd klaar te krijgen):
+
+{% include image name="ontwerp" kind="jpeg" bottom="15px" %}
+
+En soms ontstaat iets moois als neveneffect van gewoon wat ondersteuning...
+
+{% include image name="neveneffecten" kind="jpeg" bottom="15px" %}
+
+{% include video id="BcqUroVvyL8" name="vonk/productie-video" kind="png" %}
+En zo'n 30 uur aan productie tijd, vliegt zo voorbij in 2 minuten met een leuk muziekje 😇
+
+En na nog eens een 4tal uur opstellen, was "Vonken op het witte doek" klaar voor de expo en kon mijn kunstwerkje echt tot leven komen wanneer bezoekers het eindelijk konden komen bekijken.
+
+{% include image name="expo" kind="jpeg" bottom="15px" %}

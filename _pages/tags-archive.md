@@ -29,7 +29,18 @@ Besides the top-level categories, I also try to add tags to the pages on this si
   <div class="tag-cloud">
     {% for tag in tags %}
       {% assign count = site.tags[tag].size %}
-      <a href="#{{ tag | cgi_escape }}" class="tag-cloud-item" data-tag="{{ tag | downcase }}" data-count="{{ count }}">
+      {% if count <= 2 %}
+        {% assign size_class = 'tag-size-xs' %}
+      {% elsif count <= 5 %}
+        {% assign size_class = 'tag-size-sm' %}
+      {% elsif count <= 10 %}
+        {% assign size_class = 'tag-size-md' %}
+      {% elsif count <= 20 %}
+        {% assign size_class = 'tag-size-lg' %}
+      {% else %}
+        {% assign size_class = 'tag-size-xl' %}
+      {% endif %}
+      <a href="#{{ tag | cgi_escape }}" class="tag-cloud-item {{ size_class }}" data-tag="{{ tag | downcase }}" data-count="{{ count }}">
         {{ tag }}
         <span class="tag-count">{{ count }}</span>
       </a>

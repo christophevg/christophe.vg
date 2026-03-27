@@ -292,16 +292,12 @@
     box-shadow: 0 2px 4px rgba(#000, 0.1);
   }
 
-  // Size based on post count
-  &[data-count="1"] { font-size: $type-size-6; }
-  &[data-count="2"],
-  &[data-count="3"] { font-size: $type-size-5; }
-  &[data-count="4"],
-  &[data-count="5"],
-  &[data-count="6"] { font-size: $type-size-4; font-weight: bold; }
-  &[data-count="7"],
-  &[data-count="8"],
-  &[data-count="9"] { font-size: $type-size-3; font-weight: bold; }
+  // Size classes based on post count ranges
+  &.tag-size-xs { font-size: $type-size-6; }           // 1-2 posts
+  &.tag-size-sm { font-size: $type-size-5; }           // 3-5 posts
+  &.tag-size-md { font-size: $type-size-4; }            // 6-10 posts
+  &.tag-size-lg { font-size: $type-size-3; font-weight: bold; }  // 11-20 posts
+  &.tag-size-xl { font-size: $type-size-2; font-weight: bold; }  // 21+ posts
 }
 
 .tag-count {

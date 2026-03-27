@@ -9,6 +9,8 @@ description: Use this skill when working with Jekyll sites, building, testing, o
 
 Use `jekyll build` to generate the site to `_site/`. This is sufficient for testing - **never use `jekyll serve`** as it spawns a persistent server process.
 
+**Important**: Full builds take 30+ seconds. Always use `timeout: 60000` (60 seconds) when running Jekyll build commands.
+
 ```bash
 bundle exec jekyll build
 ```

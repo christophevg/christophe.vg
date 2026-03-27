@@ -38,14 +38,26 @@ Besides the top-level categories, I also try to add tags to the pages on this si
 
   {% for tag in tags %}
   <div class="tag-section" data-tag="{{ tag | downcase }}">
-    <h2 id="{{ tag | cgi_escape }}">{{ tag }}</h2>
-    {% if page.info[tag] %}{{ page.info[tag] | markdownify }}{% endif %}
-    <ul class="posts">
+    <div class="tag-header">
+      <h2 id="{{ tag | cgi_escape }}">
+        <i class="fa fa-fw fa-tag" aria-hidden="true"></i>
+        {{ tag }}
+      </h2>
+      <span class="tag-post-count">{{ site.tags[tag].size }} post{% if site.tags[tag].size != 1 %}s{% endif %}</span>
+    </div>
+    {% if page.info[tag] %}
+    <div class="tag-description">
+      {{ page.info[tag] | markdownify }}
+    </div>
+    {% endif %}
+    <div class="grid__wrapper">
       {% assign sorted_posts = site.tags[tag] | sort: "title" %}
-      {% for post in sorted_posts %}{% if post.title != null %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-      {% endif %}{% endfor %}
-    </ul>
+      {% for post in sorted_posts %}
+        {% if post.layout != "redirect" and post.hidden != true %}
+          {% include archive-single.html type="grid" with_category=true %}
+        {% endif %}
+      {% endfor %}
+    </div>
   </div>
   {% endfor %}
 </div>

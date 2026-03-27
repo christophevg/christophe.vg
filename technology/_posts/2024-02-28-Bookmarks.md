@@ -34,6 +34,7 @@ Over the years my development stack has really converged, and so are the tools I
 * {% include external link="https://realfavicongenerator.net" %} - to convert a logo design for some app into a complete set of icons for the web.
 * {% include external link="https://www.jsontest.com" %} - several JSON returning services, useful as a QnD initial online JSON testdata provider.
 * {% include external link="https://www.asciiart.eu" %} - because your warez simply _need_ some ASCII art pizzazz
+* {% include external link="https://github.com/exelban/stats" %} - a clean and simple set of menu bar stats for your mac
 
 ## Running 🏃
 

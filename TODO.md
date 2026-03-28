@@ -5,7 +5,7 @@ Prioritize by moving items up/down. Mark in-progress with `[ ]` → `[~]`. Mark 
 ## Content & UX
 
 - [x] **Tag filtering** - Add clickable tag cloud and enhance `_pages/tags-archive.md` with filterable tag pages
-- [ ] **Search functionality** - Add client-side search with Lunr.js or Algolia
+- [x] **Search functionality** - Add client-side search with Lunr.js or Algolia
 - [ ] **Related posts** - Improve related posts algorithm with tag-based recommendations instead of basic Jekyll `related_posts`
 - [ ] **Reading time accuracy** - Review and optionally disable `read_time` for short posts (e.g., music posts)
 

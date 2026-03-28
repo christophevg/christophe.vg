@@ -12,17 +12,17 @@ title_separator          : "-"
 name                     : "Christophe Van Ginneken"
 description              : "Portfolio, Curriculum Vitae en informatieve website van en over Christophe Van Ginneken."
 url                      : "https://christophe.vg"
-baseurl                  : 
+baseurl                  :
 repository               : "christophevg/christophe.vg"
-teaser                   : 
+teaser                   :
 breadcrumbs              : false
 words_per_minute         : 200
 comments:
   provider               : false
   disqus:
-    shortname            : 
+    shortname            :
   discourse:
-    server               : 
+    server               :
   facebook               :
     appid                :
     num_posts            :
@@ -54,15 +54,15 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : 
+  username               :
 facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 : 
+og_image                 :
 social:
   type                   : "Person"
-  name                   : 
+  name                   :
   links                  : # An array of links to social media profiles
 
 # Analytics
@@ -137,6 +137,7 @@ exclude:
   - tmp
   - /docs # ignore Minimal Mistakes /docs
   - /test # ignore Minimal Mistakes /test
+  - local
 keep_files:
   - .git
   - .svn

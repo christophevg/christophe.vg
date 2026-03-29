@@ -281,6 +281,12 @@ defaults:
         image: /zeilen/images/header/zeilen.jpeg
   - scope:
       path: "koken"
+      type: posts
+    values:
+      layout: recipe
+      locale: nl
+  - scope:
+      path: "koken"
     values:
       locale: nl
   - scope:

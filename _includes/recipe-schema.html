@@ -1,0 +1,89 @@
+{% comment %}
+  Recipe Schema.org JSON-LD structured data.
+
+  Add to recipe post front matter:
+
+  recipe:
+    intro: "Introduction paragraph"
+    ingredients:
+      - "1 cup flour"
+      - "2 eggs"
+    instructions:
+      - "Mix flour and eggs"
+      - "Bake at 180°C"
+    outro: "Serve warm"
+    prep_time: "PT15M"          # ISO 8601 format (15 minutes)
+    cook_time: "PT30M"          # or "PT1H30M" (1 hour 30 minutes)
+    servings: 4
+    cuisine: "Italian"
+    category: "Main course"
+{% endcomment %}
+
+{% if page.recipe %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "Recipe",
+  "name": "{{ page.title | strip_html | escape }}",
+  {% if page.recipe.intro %}
+  "description": "{{ page.recipe.intro | strip_html | strip_newlines | escape }}",
+  {% elsif page.excerpt %}
+  "description": "{{ page.excerpt | strip_html | strip_newlines | escape }}",
+  {% endif %}
+  {% if page.header.image %}
+  "image": [
+    "{{ page.header.image | absolute_url }}"
+  ],
+  {% elsif page.header.teaser %}
+  "image": [
+    "{{ page.header.teaser | absolute_url }}"
+  ],
+  {% endif %}
+  {% if page.date %}
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  {% endif %}
+  {% if page.modified %}
+  "dateModified": "{{ page.modified | date_to_xmlschema }}",
+  {% endif %}
+  "author": {
+    "@type": "Person",
+    "name": "{{ site.author.name | default: site.name | escape }}"
+  },
+  {% if page.recipe.prep_time %}
+  "prepTime": "{{ page.recipe.prep_time }}",
+  {% endif %}
+  {% if page.recipe.cook_time %}
+  "cookTime": "{{ page.recipe.cook_time }}",
+  {% endif %}
+  {% if page.recipe.total_time %}
+  "totalTime": "{{ page.recipe.total_time }}",
+  {% endif %}
+  {% if page.recipe.servings %}
+  "recipeYield": "{{ page.recipe.servings }} servings",
+  {% endif %}
+  {% if page.recipe.cuisine %}
+  "recipeCuisine": "{{ page.recipe.cuisine }}",
+  {% endif %}
+  {% if page.recipe.category %}
+  "recipeCategory": "{{ page.recipe.category }}",
+  {% endif %}
+  {% if page.recipe.ingredients %}
+  "recipeIngredient": [
+    {% for ingredient in page.recipe.ingredients %}
+    "{{ ingredient | escape }}"{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ],
+  {% endif %}
+  {% if page.recipe.instructions %}
+  "recipeInstructions": [
+    {% for instruction in page.recipe.instructions %}
+    {
+      "@type": "HowToStep",
+      "text": "{{ instruction | escape }}"
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+  {% endif %}
+}
+</script>
+{% endif %}

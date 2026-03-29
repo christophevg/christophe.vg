@@ -1,0 +1,70 @@
+---
+layout: single
+---
+
+{% if page.recipe %}
+
+{% comment %}
+  New structured recipe format - content comes from front matter
+{% endcomment %}
+
+{% if page.recipe.intro %}
+{{ page.recipe.intro | markdownify }}
+{% endif %}
+
+{% if page.recipe.ingredients %}
+<h2>Ingrediënten</h2>
+
+<ul>
+{% for ingredient in page.recipe.ingredients %}
+  <li>{{ ingredient }}</li>
+{% endfor %}
+</ul>
+{% endif %}
+
+{% if page.recipe.instructions %}
+<h2>Bereiding</h2>
+
+<ol>
+{% for instruction in page.recipe.instructions %}
+  <li>{{ instruction }}</li>
+{% endfor %}
+</ol>
+{% endif %}
+
+{% if page.recipe.sections %}
+{% for section in page.recipe.sections %}
+<h2>{{ section.name }}</h2>
+
+{% if section.ingredients %}
+<ul>
+{% for ingredient in section.ingredients %}
+  <li>{{ ingredient }}</li>
+{% endfor %}
+</ul>
+{% endif %}
+
+{% if section.instructions %}
+<ol>
+{% for instruction in section.instructions %}
+  <li>{{ instruction }}</li>
+{% endfor %}
+</ol>
+{% endif %}
+
+{% endfor %}
+{% endif %}
+
+{% if page.recipe.outro %}
+{{ page.recipe.outro | markdownify }}
+{% endif %}
+
+{% else %}
+
+{% comment %}
+  Fallback: old-style markdown content in body
+{% endcomment %}
+
+{{ content }}
+
+{% endif %}

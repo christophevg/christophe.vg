@@ -23,7 +23,10 @@ Prioritize by moving items up/down. Mark in-progress with `[ ]` → `[~]`. Mark 
   - **Replaced ion.RangeSlider (84KB) with native HTML range input**
   - **Reduced main.min.js from 176KB to 130KB (46KB savings)**
   - **Reduced slider.css from 61KB to 2KB (59KB savings)**
-- [ ] **Schema.org markup** - Expand structured data for articles, recipes, projects
+- [~] **Schema.org markup** - Expand structured data for articles, recipes, projects
+  - **Recipe schema:** Created `_includes/recipe-schema.html` for JSON-LD
+  - **Example:** Updated Suppli recipe with front matter metadata
+  - **TODO:** Add recipe metadata to remaining koken posts
 
 ## Accessibility
 

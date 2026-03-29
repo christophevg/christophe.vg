@@ -1,11 +1,25 @@
 ---
 title: Connected Lightbulb
+layout: project
 tags:
   - fun
   - arduino
 header:
   teaser: /makes/images/thumb/connected-lightbulb/connected-lightbulb-v2.jpeg
   image: /makes/images/header/connected-lightbulb-v2.jpeg
+project:
+  status: completed
+  time: "2 weeks"
+  difficulty: Intermediate
+  tools:
+    - Particle Photon
+    - Adafruit Neopixel 24
+    - HiLink ACDC 5V 3W module
+    - Soldering iron
+  materials:
+    - LED disco light bulb enclosure
+    - Apple USB charger (or similar 5V supply)
+    - Dupont connectors
 gallery-v2:
   - url: /makes/images/full/connected-lightbulb/connected-lightbulb-v2.jpeg
     image_path: /makes/images/thumb/connected-lightbulb/connected-lightbulb-v2.jpeg

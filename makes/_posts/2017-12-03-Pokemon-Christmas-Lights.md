@@ -1,11 +1,24 @@
 ---
 title: Pokemon Christmas Lights
+layout: project
 header:
   teaser: /makes/images/thumb/pokemon-christmas-lights/lights.jpeg
   image: /makes/images/header/pokemon-christmas-lights.jpeg
 tags:
   - 3dprinting
   - fun
+project:
+  status: completed
+  time: "2 weeks"
+  difficulty: Beginner
+  repo: https://github.com/christophevg/PokemonChristmasLights
+  tools:
+    - 3D printer (Zortrax M200)
+    - Z-Suite slicer
+    - OpenSCAD
+  materials:
+    - Z-Glass transparent filament
+    - LED string with Christmas balls
 ---
 
 In december 2017 I joined in a {% include external link="https://www.facebook.com/events/189537648284407/" title="Secret Santa event" %} organised by {% include external link="http://www.henkrijckaert.be" title="Henk Reickaert" %}, amongst others known for his fun making endeavours in the {% include external link="http://www.koterij.be" title="Koterij" %}.

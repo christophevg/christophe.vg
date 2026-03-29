@@ -1,10 +1,23 @@
 ---
 title: C<sup>3</sup>PO Luisterbox
+layout: project
 header:
   teaser: /makes/images/thumb/c3po-luisterbox/c3po-luisterbox.jpeg
   image: /makes/images/header/c3po-luisterbox.jpeg
 tags:
   - professional
+project:
+  status: completed
+  time: "4 months"
+  difficulty: Advanced
+  tools:
+    - Raspberry Pi
+    - LTE dongle
+    - Custom electronics
+  materials:
+    - Vandal-proof telephone
+    - LTE connectivity
+    - Audio module
 gallery-prototype:
   - url: /makes/images/full/c3po-luisterbox/c3po-luisterbox.jpeg
     image_path: /makes/images/thumb/c3po-luisterbox/c3po-luisterbox.jpeg

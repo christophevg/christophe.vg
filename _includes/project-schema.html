@@ -1,0 +1,95 @@
+{% comment %}
+  Project Schema.org JSON-LD structured data.
+  Generates HowTo schema for maker projects.
+
+  Add to post front matter:
+
+  project:
+    status: completed        # wip, completed, archived
+    time: "2 weeks"           # Estimated time
+    difficulty: "Intermediate" # Beginner, Intermediate, Advanced
+    cost: "€50-100"           # Estimated cost
+    repo: https://github.com/...
+    demo_url: https://...
+    tools:
+      - "3D Printer"
+      - "Soldering iron"
+    materials:
+      - "Arduino Uno"
+      - "LEDs"
+    instructions:
+      - text: "First step description"
+        image: "/path/to/step1.jpg"
+      - text: "Second step description"
+{% endcomment %}
+
+{% if page.project %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "HowTo",
+  "name": {{ page.title | strip_html | escape | jsonify }},
+  {% if page.excerpt %}
+  "description": {{ page.excerpt | strip_html | strip_newlines | truncatewords: 50 | escape | jsonify }},
+  {% endif %}
+  {% if page.header.image %}
+  "image": [
+    {{ page.header.image | absolute_url | jsonify }}
+  ],
+  {% elsif page.header.teaser %}
+  "image": [
+    {{ page.header.teaser | absolute_url | jsonify }}
+  ],
+  {% endif %}
+  {% if page.project.time %}
+  "totalTime": {{ page.project.time | escape | jsonify }},
+  {% endif %}
+  {% if page.project.difficulty %}
+  "difficulty": {{ page.project.difficulty | escape | jsonify }},
+  {% endif %}
+  {% if page.date %}
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  {% endif %}
+  {% if page.modified %}
+  "dateModified": "{{ page.modified | date_to_xmlschema }}",
+  {% endif %}
+  "author": {
+    "@type": "Person",
+    "name": {{ site.author.name | default: site.name | escape | jsonify }}
+  },
+  {% if page.project.tools %}
+  "tool": [
+    {% for tool in page.project.tools %}
+    {
+      "@type": "HowToTool",
+      "name": {{ tool | escape | jsonify }}
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ],
+  {% endif %}
+  {% if page.project.materials %}
+  "supply": [
+    {% for material in page.project.materials %}
+    {
+      "@type": "HowToSupply",
+      "name": {{ material | escape | jsonify }}
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ],
+  {% endif %}
+  {% if page.project.instructions %}
+  "step": [
+    {% for step in page.project.instructions %}
+    {
+      "@type": "HowToStep",
+      "text": {{ step.text | strip_html | escape | jsonify }}
+      {% if step.image %}
+      ,"image": {{ step.image | absolute_url | jsonify }}
+      {% endif %}
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+  {% endif %}
+}
+</script>
+{% endif %}

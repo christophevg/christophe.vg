@@ -1,13 +1,26 @@
 ---
 title: Novid Kiosk
+layout: project
 header:
   teaser: /makes/images/thumb/novid-kiosk.jpeg
   image: /makes/images/header/novid-kiosk.jpeg
 tags:
   - professional
+project:
+  status: completed
+  time: "3 months"
+  difficulty: Intermediate
+  tools:
+    - Raspberry Pi 3
+    - Custom PCB design
+    - Dropbox API
+  materials:
+    - Raspberry Pi 3
+    - HDMI display
+    - Custom enclosure
 ---
 
-Tijdens de 2016 editie van [Fri3d Camp](/about/Fri3d_Camp), ontstond het idee bij de CEO van Novid om een eigen online content-management platform te laten ontwikkelen als vervanging voor de dure media players waar zij tot op dat moment moesten op  vertrouwen.
+Tijdens de 2016 editie van [Fri3d Camp](/about/Fri3d_Camp), ontstond het idee bij de CEO van Novid om een eigen online content-management platform te laten ontwikkelen als vervanging voor de dure media players waar zij tot op dat moment moesten op vertrouwen.
 
 Na enkele proof-of-concepts met sub-Ghz communicatie en Google ChromeOS werd in de lente van 2017 dan het startschot gegeven voor de ontwikkeling van de Novid Kiosk op basis van het Raspberry Pi 3 embedded platform.
 
@@ -15,14 +28,12 @@ De business case voor deze onderneming was overduidelijk: een klassieke media pl
 
 ## Novid Kiosk Platform
 
-De eerste versie van het Novid Kiosk Platform prototype bestaat uit vier delen: 
+De eerste versie van het Novid Kiosk Platform prototype bestaat uit vier delen:
 
 1. De **Novid Kiosk**
 2. Een **Kiosk Manager**
 3. **Dropbox** integratie
 4. De **Novid Cloud**
-
-![Novid Kiosk Platform](/makes/images/full/novid-kiosk-platform.jpeg)
 
 ### De Novid Kiosk
 

@@ -1,11 +1,28 @@
 ---
 title: Inspection Robot
+layout: project
 tags:
   - professional
   - robot
 header:
   teaser: /makes/images/thumb/inspection-robot/inspection-robot.jpeg
   image: /makes/images/header/inspection-robot.jpeg
+project:
+  status: completed
+  time: "4 weeks"
+  difficulty: Advanced
+  repo: https://github.com/christophevg/rover5
+  tools:
+    - Rover 5 Robot Platform
+    - Spektrum 5-channel RC radio system
+    - Laser cutter
+    - 3D printer
+  materials:
+    - Rover 5 chassis
+    - Omni-wheels
+    - Servo motors
+    - Battery packs
+  video: https://www.youtube.com/watch?v=7OHj70Zl4tA
 gallery:
   - url: /makes/images/full/inspection-robot/inspection-robot-render.png
     image_path: /makes/images/thumb/inspection-robot/inspection-robot-render.png

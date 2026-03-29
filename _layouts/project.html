@@ -1,0 +1,163 @@
+---
+layout: single
+---
+
+{% if page.project %}
+
+{% comment %}
+  Project Showcase Layout
+  Provides structured presentation for maker projects with:
+  - Status badge (wip, completed, archived)
+  - Quick links (repo, demo, download)
+  - Tools/materials list
+  - Time and difficulty indicators
+  - Video embeds
+  - Gallery integration
+{% endcomment %}
+
+<div class="project__header">
+
+  {% if page.project.status %}
+  <span class="project__status project__status--{{ page.project.status }}">
+    {{ page.project.status | capitalize }}
+  </span>
+  {% endif %}
+
+  <div class="project__meta">
+
+    {% if page.project.time %}
+    <div class="project__meta-item">
+      <i class="fa fa-clock-o" aria-hidden="true"></i>
+      <span class="project__meta-label">Time:</span>
+      <span class="project__meta-value">{{ page.project.time }}</span>
+    </div>
+    {% endif %}
+
+    {% if page.project.difficulty %}
+    <div class="project__meta-item">
+      <i class="fa fa-signal" aria-hidden="true"></i>
+      <span class="project__meta-label">Difficulty:</span>
+      <span class="project__meta-value">{{ page.project.difficulty }}</span>
+    </div>
+    {% endif %}
+
+    {% if page.project.cost %}
+    <div class="project__meta-item">
+      <i class="fa fa-eur" aria-hidden="true"></i>
+      <span class="project__meta-label">Cost:</span>
+      <span class="project__meta-value">{{ page.project.cost }}</span>
+    </div>
+    {% endif %}
+
+  </div>
+
+  {% if page.project.repo or page.project.demo_url or page.project.download_url %}
+  <div class="project__links">
+
+    {% if page.project.repo %}
+    <a href="{{ page.project.repo }}" class="project__link project__link--repo" target="_blank" rel="noopener">
+      <i class="fa fa-github" aria-hidden="true"></i>
+      <span>Source Code</span>
+    </a>
+    {% endif %}
+
+    {% if page.project.demo_url %}
+    <a href="{{ page.project.demo_url }}" class="project__link project__link--demo" target="_blank" rel="noopener">
+      <i class="fa fa-external-link" aria-hidden="true"></i>
+      <span>Demo</span>
+    </a>
+    {% endif %}
+
+    {% if page.project.download_url %}
+    <a href="{{ page.project.download_url }}" class="project__link project__link--download" target="_blank" rel="noopener">
+      <i class="fa fa-download" aria-hidden="true"></i>
+      <span>Download</span>
+    </a>
+    {% endif %}
+
+  </div>
+  {% endif %}
+
+</div>
+
+{% if page.project.tools or page.project.materials %}
+<div class="project__supplies">
+  {% if page.project.tools %}
+  <div class="project__tools">
+    <h3><i class="fa fa-wrench" aria-hidden="true"></i> Tools</h3>
+    <ul>
+      {% for tool in page.project.tools %}
+      <li>{{ tool }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+
+  {% if page.project.materials %}
+  <div class="project__materials">
+    <h3><i class="fa fa-cube" aria-hidden="true"></i> Materials</h3>
+    <ul>
+      {% for material in page.project.materials %}
+      <li>{{ material }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+</div>
+{% endif %}
+
+{% if page.project.video %}
+<div class="project__video">
+  {% assign video_url = page.project.video %}
+  {% if video_url contains 'youtube.com' or video_url contains 'youtu.be' %}
+    {% if video_url contains 'youtu.be' %}
+      {% assign video_id = video_url | split: '/' | last | split: '?' | first %}
+    {% else %}
+      {% assign video_id = video_url | split: 'v=' | last | split: '&' | first %}
+    {% endif %}
+    <div class="video-wrapper">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ video_id }}?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  {% elsif video_url contains 'vimeo.com' %}
+    {% assign video_id = video_url | split: '/' | last %}
+    <div class="video-wrapper">
+      <iframe width="560" height="315" src="https://player.vimeo.com/video/{{ video_id }}" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  {% else %}
+    <div class="video-wrapper">
+      <iframe width="560" height="315" src="{{ video_url }}" frameborder="0" allowfullscreen></iframe>
+    </div>
+  {% endif %}
+</div>
+{% endif %}
+
+{% if page.gallery %}
+<div class="project__gallery">
+  <h3><i class="fa fa-camera" aria-hidden="true"></i> Gallery</h3>
+  {% include gallery %}
+</div>
+{% endif %}
+
+{% endif %}
+
+{{ content }}
+
+{% if page.project.instructions %}
+<div class="project__instructions">
+  <h2><i class="fa fa-list-ol" aria-hidden="true"></i> Instructions</h2>
+  <ol class="project__steps">
+    {% for step in page.project.instructions %}
+    <li class="project__step">
+      <div class="project__step-content">
+        {{ step.text | markdownify }}
+        {% if step.image %}
+        <img src="{{ step.image }}" alt="{{ step.text | strip_html | truncatewords: 10 }}" class="project__step-image">
+        {% endif %}
+      </div>
+    </li>
+    {% endfor %}
+  </ol>
+</div>
+{% endif %}
+
+{% include project-schema.html %}

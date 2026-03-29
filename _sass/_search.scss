@@ -135,7 +135,8 @@
 }
 
 .search-result__link {
-  display: block;
+  display: flex;
+  align-items: flex-start;
   padding: 0.6em 0.75em;
   text-decoration: none;
   color: $text-color;
@@ -146,6 +147,20 @@
     background: mix(#fff, $primary-color, 92%);
     text-decoration: none;
   }
+}
+
+.search-result__content {
+  flex: 1;
+  min-width: 0;
+}
+
+.search-result__thumbnail {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-left: 0.75em;
+  flex-shrink: 0;
 }
 
 .search-result__title {

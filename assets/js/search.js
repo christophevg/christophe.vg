@@ -84,11 +84,22 @@ layout: null
           }).join('');
         }
 
+        var teaserHtml = '';
+        if (doc.teaser) {
+          var teaserUrl = doc.teaser.indexOf('://') !== -1 ? doc.teaser : '{{ "/" | absolute_url }}' + doc.teaser.replace(/^\//, '');
+          teaserHtml = '<img src="' + teaserUrl + '" alt="" class="search-result__thumbnail">';
+        }
+
         html += '<li class="search-result__item" data-index="' + index + '">';
         html += '<a href="' + doc.url + '" class="search-result__link">';
+        html += '<div class="search-result__content">';
         html += '<h3 class="search-result__title">' + (doc.title || 'Untitled') + '</h3>';
         html += '<div class="search-result__meta">' + categoryBadge + tagsHtml + '</div>';
         html += '<p class="search-result__excerpt">' + (doc.excerpt || '') + '</p>';
+        html += '</div>';
+        if (teaserHtml) {
+          html += teaserHtml;
+        }
         html += '</a>';
         html += '</li>';
       }

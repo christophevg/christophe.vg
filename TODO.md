@@ -19,7 +19,10 @@ Prioritize by moving items up/down. Mark in-progress with `[ ]` → `[~]`. Mark 
   - **Created:** `scripts/check-images.sh` and `scripts/fix-images.sh`
   - **Usage:** Run manually to check/report and optimize images
 - [x] **Lazy loading** - Add `loading="lazy"` to below-fold images to defer loading and improve LCP
-- [ ] **JavaScript tree-shaking** - Remove 24KB unused code from main.min.js
+- [x] **JavaScript tree-shaking** - Remove 24KB unused code from main.min.js
+  - **Replaced ion.RangeSlider (84KB) with native HTML range input**
+  - **Reduced main.min.js from 176KB to 130KB (46KB savings)**
+  - **Reduced slider.css from 61KB to 2KB (59KB savings)**
 - [ ] **Schema.org markup** - Expand structured data for articles, recipes, projects
 
 ## Accessibility

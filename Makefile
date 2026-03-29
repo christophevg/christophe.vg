@@ -1,5 +1,10 @@
 all: update serve
 
+
+MODEL ?= glm-5:cloud
+claude:
+	ollama launch claude --model ${MODEL}
+
 update:
 	bundle update
 
@@ -25,5 +30,19 @@ $(MAIN_JS): $(MAIN_JS_SRCS)
 clean:
 	rm $(MAIN_JS)
 
+# Image optimization
+MAX_IMAGE_SIZE ?= 1200
+MAX_FILE_SIZE ?= 200
+
+check-images:
+	./scripts/check-images.sh $(MAX_IMAGE_SIZE) .
+
+fix-images:
+	./scripts/fix-images.sh $(MAX_IMAGE_SIZE) .
+
+fix-images-dry:
+	DRY_RUN=1 ./scripts/fix-images.sh $(MAX_IMAGE_SIZE) .
+
 .PHONY: assets
 .PHONY: $(MAIN_JS)
+.PHONY: check-images fix-images fix-images-dry

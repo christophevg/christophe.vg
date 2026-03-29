@@ -15,7 +15,9 @@ Prioritize by moving items up/down. Mark in-progress with `[ ]` → `[~]`. Mark 
   - **Results:** Performance 71, Accessibility 71, SEO 92, Best Practices 100
   - **Key issues:** LCP 5.9s (poor), 3.8MB images, 24KB unused JS
   - **Top recommendations:** Convert to WebP, implement responsive images, lazy-load, compress banners
-- [ ] **Image optimization automation** - Automate `reduce-image-sizes.sh` via pre-commit hook or GitHub Actions
+- [x] **Image optimization automation** - Create tooling for checking and fixing oversized images
+  - **Created:** `scripts/check-images.sh` and `scripts/fix-images.sh`
+  - **Usage:** Run manually to check/report and optimize images
 - [ ] **Lazy loading** - Add `loading="lazy"` to below-fold images to defer loading and improve LCP
 - [ ] **JavaScript tree-shaking** - Remove 24KB unused code from main.min.js
 - [ ] **Schema.org markup** - Expand structured data for articles, recipes, projects

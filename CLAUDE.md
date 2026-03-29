@@ -12,15 +12,14 @@ Personal website hosted on GitHub Pages, built with Jekyll using the Minimal Mis
 # Install/update dependencies and serve locally
 make all
 
-# Serve site locally (after initial setup)
-make serve
-
-# Update Ruby dependencies only
-make update
+# Build site locally (after initial setup)
+make build
 
 # Rebuild minified JavaScript assets
 make assets
 ```
+
+**IMPORTANT**: the user runs a constant build and serve loop. During development no build needs to be triggered, just request the user to visually inspect when ready.
 
 The site runs at `http://localhost:4000` when serving locally.
 

@@ -77,10 +77,17 @@ layout: null
           ? '<span class="search-result__category">' + doc.categories[0] + '</span>'
           : '';
 
+        var tagsHtml = '';
+        if (doc.tags && doc.tags.length) {
+          tagsHtml = doc.tags.slice(0, 3).map(function(tag) {
+            return '<span class="search-result__tag">' + tag + '</span>';
+          }).join('');
+        }
+
         html += '<li class="search-result__item" data-index="' + index + '">';
         html += '<a href="' + doc.url + '" class="search-result__link">';
         html += '<h3 class="search-result__title">' + (doc.title || 'Untitled') + '</h3>';
-        html += categoryBadge;
+        html += '<div class="search-result__meta">' + categoryBadge + tagsHtml + '</div>';
         html += '<p class="search-result__excerpt">' + (doc.excerpt || '') + '</p>';
         html += '</a>';
         html += '</li>';

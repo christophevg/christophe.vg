@@ -3,6 +3,9 @@ all: update serve
 update:
 	bundle update
 
+build:
+	bundle exec jekyll build
+
 serve: assets
 	bundle exec jekyll serve
 

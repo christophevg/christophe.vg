@@ -155,6 +155,11 @@
   color: $text-color;
 }
 
+.search-result__meta {
+  margin-top: 0.15em;
+  line-height: 1.5;
+}
+
 .search-result__category {
   display: inline-block;
   font-size: 0.7em;
@@ -163,6 +168,16 @@
   border-radius: 4px;
   margin-right: 0.5em;
   font-weight: 500;
+}
+
+.search-result__tag {
+  display: inline-block;
+  font-size: 0.65em;
+  padding: 0.1em 0.35em;
+  background: mix(#fff, $gray, 90%);
+  border-radius: 3px;
+  margin-right: 0.3em;
+  color: mix(#fff, $gray, 40%);
 }
 
 .search-result__excerpt {

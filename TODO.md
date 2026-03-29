@@ -35,7 +35,7 @@ Prioritize by moving items up/down. Mark in-progress with `[ ]` → `[~]`. Mark 
   - **Fixed:** Empty alt in archive-single.html teaser images
   - **Fixed:** Empty alt in search result thumbnails
   - **Fixed:** Empty alt in 404 page hero image
-- [~] **Button accessibility** - Ensure all buttons have accessible names (search, navigation, etc.)
+- [x] **Button accessibility** - Ensure all buttons have accessible names (search, navigation, etc.)
 - [ ] **Form labels** - Associate labels with all form elements for screen reader compatibility
 - [ ] **Color contrast** - Fix insufficient contrast ratios in text/background combinations
 

@@ -261,7 +261,7 @@ defaults:
       title: Muziek
       excerpt: Favoriete song (tekst) van het ogenblik …
       author_profile: true
-      read_time: true
+      read_time: false
       comments: # true
       share: false
       related: true

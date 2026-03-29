@@ -44,9 +44,34 @@ layout: null
     }
 
     try {
-      // Add wildcard for partial matching (e.g., "Aard" matches "Aardappel")
-      var wildcardQuery = query.trim() + '*';
-      var results = searchIndex.search(wildcardQuery);
+      // Split into terms and search with wildcard for partial matching
+      var terms = query.trim().split(/\s+/).filter(function(t) { return t.length > 0; });
+      var results = searchIndex.query(function(q) {
+        terms.forEach(function(term) {
+          // Search for exact match (higher boost) and prefix match
+          q.term(term, { boost: 10 });
+          q.term(term + '*');
+        });
+      });
+
+      // Filter results to require all terms to match (AND logic)
+      results = results.filter(function(result) {
+        var doc = searchIndex.documents.find(function(d) { return d.url === result.ref; });
+        if (!doc) return false;
+
+        var searchableText = [
+          doc.title || '',
+          doc.excerpt || '',
+          doc.tags || '',
+          doc.categories || ''
+        ].join(' ').toLowerCase();
+
+        return terms.every(function(term) {
+          var termLower = term.toLowerCase();
+          // Check if term matches as prefix in any field
+          return searchableText.indexOf(termLower) !== -1;
+        });
+      });
       if (results.length > 0) {
         searchModal.classList.add('search-modal--has-results');
       } else {
@@ -88,13 +113,13 @@ layout: null
     results.slice(0, 20).forEach(function(result, index) {
       var doc = searchIndex.documents.find(function(d) { return d.url === result.ref; });
       if (doc) {
-        var categoryBadge = doc.categories && doc.categories.length
-          ? '<span class="search-result__category">' + highlightTerms(doc.categories[0], query) + '</span>'
+        var categoryBadge = doc.categoryDisplay && doc.categoryDisplay.length
+          ? '<span class="search-result__category">' + highlightTerms(doc.categoryDisplay[0], query) + '</span>'
           : '';
 
         var tagsHtml = '';
-        if (doc.tags && doc.tags.length) {
-          tagsHtml = doc.tags.slice(0, 3).map(function(tag) {
+        if (doc.tagsDisplay && doc.tagsDisplay.length) {
+          tagsHtml = doc.tagsDisplay.slice(0, 3).map(function(tag) {
             return '<span class="search-result__tag">' + highlightTerms(tag, query) + '</span>';
           }).join('');
         }

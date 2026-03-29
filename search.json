@@ -7,8 +7,10 @@ layout: null
   {
     "title": {{ post.title | jsonify }},
     "url": {{ post.url | absolute_url | jsonify }},
-    "categories": {{ post.categories | jsonify }},
-    "tags": {{ post.tags | jsonify }},
+    "categories": {{ post.categories | join: " " | jsonify }},
+    "categoryDisplay": {{ post.categories | jsonify }},
+    "tags": {{ post.tags | join: " " | jsonify }},
+    "tagsDisplay": {{ post.tags | jsonify }},
     "excerpt": {{ post.excerpt | strip_html | strip_newlines | truncate: 200 | jsonify }},
     "date": {{ post.date | date: "%B %d, %Y" | jsonify }},
     "teaser": {% if post.header.teaser %}{{ post.header.teaser | jsonify }}{% else %}null{% endif %}

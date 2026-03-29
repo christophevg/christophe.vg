@@ -12,10 +12,14 @@
   {% assign file = images.files[name] %}
   {% assign ext = file.kind | default: "jpeg" %}
   {% assign human = name | replace: "-", " " | capitalize %}
-  <a href="/{{ category }}/images/full{{ subfolder }}/{{ name }}.{{ ext }}"
+  {% assign thumb_url = "/" | append: category | append: "/images/thumb" | append: subfolder | append: "/" | append: name | append: "." | append: ext %}
+  {% assign full_url = "/" | append: category | append: "/images/full" | append: subfolder | append: "/" | append: name | append: "." | append: ext %}
+  <a href="{{ full_url }}"
      title="{{ file.title | default: file.alt | default: human }}">
     <img class="{{ file.class }}"
-         src="/{{ category }}/images/thumb{{ subfolder }}/{{ name }}.{{ ext }}"
+         src="{{ thumb_url }}"
+         srcset="{{ thumb_url }} 800w, {{ full_url }} 1280w"
+         sizes="(max-width: 800px) 100vw, 800px"
          alt="{{ file.title | default: file.alt | default: human }}"
          loading="lazy">
   </a>

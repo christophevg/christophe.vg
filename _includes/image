@@ -6,8 +6,15 @@
 {% endif %}
 {% capture kind %}{{ include.kind | default: "jpeg" }}{% endcapture %}
 {% assign human = include.name | replace: "-", " " | capitalize %}
+{% assign thumb_url = include.absolute | append: "images/thumb" | append: subfolder | append: "/" | append: include.name | append: "." | append: kind %}
+{% assign full_url = include.absolute | append: "images/full" | append: subfolder | append: "/" | append: include.name | append: "." | append: kind %}
 <div style="text-align:center;margin-bottom:{{ include.bottom | default "5px"}};">
-  <a href="{{include.absolute}}images/full{{ subfolder }}/{{ include.name }}.{{ kind }}" title="{{ include.title | default: human }}">
-    <img src="{{include.absolute}}images/thumb{{ subfolder }}/{{ include.name }}.{{ kind }}" alt="{{ include.title | default: human }}" class="printable" loading="lazy">
+  <a href="{{ full_url }}" title="{{ include.title | default: human }}">
+    <img src="{{ thumb_url }}"
+         srcset="{{ thumb_url }} 800w, {{ full_url }} 1280w"
+         sizes="(max-width: 800px) 100vw, 800px"
+         alt="{{ include.title | default: human }}"
+         class="printable"
+         loading="lazy">
   </a>
 </div>

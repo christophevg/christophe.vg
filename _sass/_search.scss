@@ -195,6 +195,12 @@
   color: mix(#fff, $gray, 40%);
 }
 
+.search-highlight {
+  background: rgba(255, 235, 59, 0.4);
+  border-radius: 2px;
+  padding: 0 1px;
+}
+
 .search-result__excerpt {
   margin: 0.25em 0 0;
   font-size: 0.8em;

@@ -52,7 +52,7 @@ layout: null
       } else {
         searchModal.classList.remove('search-modal--has-results');
       }
-      displayResults(results);
+      displayResults(results, query);
     } catch (e) {
       searchResults.innerHTML = '';
       selectedIndex = -1;
@@ -60,8 +60,23 @@ layout: null
     }
   }
 
+  // Highlight search terms in text
+  function highlightTerms(text, query) {
+    if (!query || !text) return text;
+    // Escape HTML first to prevent XSS
+    var escaped = text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    // Split query into terms and highlight each
+    var terms = query.trim().split(/\s+/).filter(function(t) { return t.length > 0; });
+    var result = escaped;
+    terms.forEach(function(term) {
+      var regex = new RegExp('(' + term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'gi');
+      result = result.replace(regex, '<mark class="search-highlight">$1</mark>');
+    });
+    return result;
+  }
+
   // Display search results
-  function displayResults(results) {
+  function displayResults(results, query) {
     if (results.length === 0) {
       searchResults.innerHTML = '<p class="search-no-results">No results found</p>';
       selectedIndex = -1;
@@ -74,13 +89,13 @@ layout: null
       var doc = searchIndex.documents.find(function(d) { return d.url === result.ref; });
       if (doc) {
         var categoryBadge = doc.categories && doc.categories.length
-          ? '<span class="search-result__category">' + doc.categories[0] + '</span>'
+          ? '<span class="search-result__category">' + highlightTerms(doc.categories[0], query) + '</span>'
           : '';
 
         var tagsHtml = '';
         if (doc.tags && doc.tags.length) {
           tagsHtml = doc.tags.slice(0, 3).map(function(tag) {
-            return '<span class="search-result__tag">' + tag + '</span>';
+            return '<span class="search-result__tag">' + highlightTerms(tag, query) + '</span>';
           }).join('');
         }
 
@@ -93,9 +108,9 @@ layout: null
         html += '<li class="search-result__item" data-index="' + index + '">';
         html += '<a href="' + doc.url + '" class="search-result__link">';
         html += '<div class="search-result__content">';
-        html += '<h3 class="search-result__title">' + (doc.title || 'Untitled') + '</h3>';
+        html += '<h3 class="search-result__title">' + highlightTerms(doc.title || 'Untitled', query) + '</h3>';
         html += '<div class="search-result__meta">' + categoryBadge + tagsHtml + '</div>';
-        html += '<p class="search-result__excerpt">' + (doc.excerpt || '') + '</p>';
+        html += '<p class="search-result__excerpt">' + highlightTerms(doc.excerpt || '', query) + '</p>';
         html += '</div>';
         if (teaserHtml) {
           html += teaserHtml;

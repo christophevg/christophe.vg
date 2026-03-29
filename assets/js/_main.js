@@ -57,6 +57,9 @@ $(document).ready(function(){
   $(".author__urls-wrapper button").on("click", function() {
     $(".author__urls").fadeToggle("fast", function() {});
     $(".author__urls-wrapper button").toggleClass("open");
+    // Toggle aria-expanded for accessibility
+    var expanded = $(this).attr('aria-expanded') === 'true';
+    $(this).attr('aria-expanded', !expanded);
   });
 
   // init smooth scroll

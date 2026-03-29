@@ -11,14 +11,14 @@
 
 .range-label {
   font-size: 0.85em;
-  color: #7a8288;
+  color: #5a6268;
   cursor: pointer;
   transition: color 0.2s ease;
 }
 
 .range-label-software:hover,
 .range-label-hardware:hover {
-  color: #4c525a;
+  color: #3a4148;
 }
 
 /* Slider wrapper for positioning the icon */

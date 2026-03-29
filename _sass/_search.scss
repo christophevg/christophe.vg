@@ -69,7 +69,7 @@
   left: 1em;
   top: 50%;
   transform: translateY(-50%);
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.7);
   pointer-events: none;
   font-size: 1.15em;
 }
@@ -192,7 +192,7 @@
   background: mix(#fff, $gray, 90%);
   border-radius: 3px;
   margin-right: 0.3em;
-  color: mix(#fff, $gray, 40%);
+  color: mix(#000, $gray, 30%);
 }
 
 .search-highlight {
@@ -204,7 +204,7 @@
 .search-result__excerpt {
   margin: 0.25em 0 0;
   font-size: 0.8em;
-  color: mix(#fff, $gray, 35%);
+  color: mix(#000, $gray, 25%);
   line-height: 1.35;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -215,5 +215,5 @@
 .search-error {
   padding: 1.5em;
   text-align: center;
-  color: mix(#fff, $gray, 50%);
+  color: mix(#000, $gray, 40%);
 }

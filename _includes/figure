@@ -5,7 +5,8 @@
     {% else %}
       "{{ include.image_path | absolute_url }}"
     {% endif %}
-    alt="{% if include.alt %}{{ include.alt }}{% endif %}">
+    alt="{% if include.alt %}{{ include.alt }}{% endif %}"
+    loading="lazy">
   {% if include.caption %}
     <figcaption>{{ include.caption | markdownify | remove: "<p>" | remove: "</p>" }}</figcaption>
   {% endif %}

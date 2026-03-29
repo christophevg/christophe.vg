@@ -14,9 +14,10 @@
   {% assign human = name | replace: "-", " " | capitalize %}
   <a href="/{{ category }}/images/full{{ subfolder }}/{{ name }}.{{ ext }}"
      title="{{ file.title | default: file.alt | default: human }}">
-    <img class="{{ file.class }}" 
+    <img class="{{ file.class }}"
          src="/{{ category }}/images/thumb{{ subfolder }}/{{ name }}.{{ ext }}"
-         alt="{{ file.title | default: file.alt | default: human }}">
+         alt="{{ file.title | default: file.alt | default: human }}"
+         loading="lazy">
   </a>
   {% endfor %}
 </div>

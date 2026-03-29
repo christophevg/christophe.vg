@@ -18,7 +18,7 @@ Prioritize by moving items up/down. Mark in-progress with `[ ]` → `[~]`. Mark 
 - [x] **Image optimization automation** - Create tooling for checking and fixing oversized images
   - **Created:** `scripts/check-images.sh` and `scripts/fix-images.sh`
   - **Usage:** Run manually to check/report and optimize images
-- [ ] **Lazy loading** - Add `loading="lazy"` to below-fold images to defer loading and improve LCP
+- [x] **Lazy loading** - Add `loading="lazy"` to below-fold images to defer loading and improve LCP
 - [ ] **JavaScript tree-shaking** - Remove 24KB unused code from main.min.js
 - [ ] **Schema.org markup** - Expand structured data for articles, recipes, projects
 

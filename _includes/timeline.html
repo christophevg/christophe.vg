@@ -15,7 +15,8 @@
           {% if position.project %}<div class="corner-ribbon top-right sticky blue">Project</div>{% endif %}
           <img class="img-responsive"
                src="{{ position.image.src }}"
-               alt="{{ position.image.alt }}">
+               alt="{{ position.image.alt }}"
+               loading="lazy">
         </div>
         {% endif %}
 

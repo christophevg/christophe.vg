@@ -11,6 +11,8 @@ Use `jekyll build` to generate the site to `_site/`. This is sufficient for test
 
 **Important**: Full builds take 30+ seconds. Always use `timeout: 60000` (60 seconds) when running Jekyll build commands.
 
+**Config Changes**: Changes to `_config.yml` require a server restart. Incremental builds do not pick up config changes.
+
 ```bash
 bundle exec jekyll build
 ```
@@ -63,6 +65,8 @@ Check `_config.yml` for front matter defaults that apply to different paths/cont
 - Use `{% raw %}{{ site.data.file.field }}{% endraw %}` for data files
 - Use `{% raw %}{% include filename.html %}{% endraw %}` for includes
 
+**Important**: `archive-single.html` expects `post` as a global variable, not a parameter. When iterating in an include, set `{% raw %}{% assign post = p %}{% endraw %}` before including it.
+
 ## Debugging
 
 To debug Liquid, output variables:
@@ -84,3 +88,27 @@ To see available variables:
 **CSS not updating**: SCSS files in `_sass/` need to be imported from `assets/css/main.scss` or similar.
 
 **Plugin not working**: Ensure plugin is in both `Gemfile` and `_config.yml` under `plugins:` section.
+
+## Lunr Search Implementation
+
+When implementing client-side search with Lunr.js:
+
+**Field Indexing**: Arrays don't index well in Lunr. Convert to space-separated strings for searchable fields while keeping separate `*Display` arrays for rendering:
+
+```liquid
+"tags": {{ post.tags | join: " " | jsonify }},
+"tagsDisplay": {{ post.tags | jsonify }},
+```
+
+**AND Logic**: Lunr's `q.term()` defaults to optional presence. For AND logic across terms, post-filter results:
+
+```javascript
+results = results.filter(function(result) {
+  return terms.every(function(term) {
+    // Check if term appears in searchable content
+    return searchableText.indexOf(term.toLowerCase()) !== -1;
+  });
+});
+```
+
+**Wildcard Matching**: Use `term + '*'` for prefix matching. Don't require both exact and wildcard terms - use wildcard for matching, exact for scoring boost.

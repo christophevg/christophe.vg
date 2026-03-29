@@ -31,7 +31,10 @@ Prioritize by moving items up/down. Mark in-progress with `[ ]` → `[~]`. Mark 
 
 ## Accessibility
 
-- [~] **Image alt attributes** - Add descriptive `alt` text to all images for screen readers and SEO
+- [x] **Image alt attributes** - Add descriptive `alt` text to all images for screen readers and SEO
+  - **Fixed:** Empty alt in archive-single.html teaser images
+  - **Fixed:** Empty alt in search result thumbnails
+  - **Fixed:** Empty alt in 404 page hero image
 - [ ] **Button accessibility** - Ensure all buttons have accessible names (search, navigation, etc.)
 - [ ] **Form labels** - Associate labels with all form elements for screen reader compatibility
 - [ ] **Color contrast** - Fix insufficient contrast ratios in text/background combinations

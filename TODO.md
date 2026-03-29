@@ -46,7 +46,7 @@ Prioritize by moving items up/down. Mark in-progress with `[ ]` → `[~]`. Mark 
 
 ## Content Features
 
-- [ ] **Recipe structured data** - Add Schema.org Recipe markup to `koken/` posts for SEO
+- [x] **Recipe structured data** - Add Schema.org Recipe markup to `koken/` posts for SEO
 - [ ] **Project showcase layout** - Create dedicated project layout with galleries for `makes/`
 - [ ] **Music integration** - Embed Spotify/YouTube more prominently in `about/muziek/` posts
 

@@ -1,0 +1,62 @@
+{% comment %}
+  Tag-based related posts algorithm with fallback to recent posts.
+
+  Usage: {% include related-posts.html limit=4 %}
+
+  Uses the global `page` variable for the current post.
+  Outputs related posts sorted by tag overlap (most matches first),
+  falling back to recent posts if no tags or no matches.
+{% endcomment %}
+
+{% assign current = page %}
+{% assign limit = include.limit | default: 4 %}
+{% assign output_count = 0 %}
+{% assign has_tags = current.tags | size | greater_than: 0 %}
+
+{% comment %} Collect candidates excluding self and hidden {% endcomment %}
+{% assign candidates = site.posts | where_exp: "p", "p.hidden != true" | where_exp: "p", "p.url != current.url" %}
+
+{% if has_tags %}
+  {% comment %} Multi-pass approach: output posts by match count (descending) {% endcomment %}
+  {% assign current_tag_count = current.tags | size %}
+
+  {% for threshold in (1..20) %}
+    {% assign t = 21 | minus: threshold %}
+    {% if t > current_tag_count %}
+      {% continue %}
+    {% endif %}
+    {% if output_count >= limit %}
+      {% break %}
+    {% endif %}
+
+    {% for p in candidates %}
+      {% if output_count >= limit %}
+        {% break %}
+      {% endif %}
+      {% if p.tags == nil or p.tags.size == 0 %}
+        {% continue %}
+      {% endif %}
+
+      {% assign matches = 0 %}
+      {% for tag in current.tags %}
+        {% if p.tags contains tag %}
+          {% assign matches = matches | plus: 1 %}
+        {% endif %}
+      {% endfor %}
+
+      {% if matches == t %}
+        {% assign post = p %}
+        {% include archive-single.html type="grid" %}
+        {% assign output_count = output_count | plus: 1 %}
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+{% endif %}
+
+{% comment %} Fallback to recent posts if no tag-based matches {% endcomment %}
+{% if output_count == 0 %}
+  {% for p in candidates limit: limit %}
+    {% assign post = p %}
+    {% include archive-single.html type="grid" %}
+  {% endfor %}
+{% endif %}

@@ -22,7 +22,7 @@ Besides the top-level categories, I also try to add tags to the pages on this si
 {% assign tags = site_tags | split: ',' | sort %}
 
 <div class="tag-filter">
-  <input type="text" id="tag-search" placeholder="Filter tags..." class="tag-search-input">
+  <input type="text" id="tag-search" placeholder="Filter tags..." class="tag-search-input" aria-label="Filter tags">
 </div>
 
 <div id="tags">

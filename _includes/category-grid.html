@@ -3,7 +3,7 @@
 {% assign sorted_posts = site.categories[page.index] | sort_natural: 'title' %}
 {% if page.filter %}
 <div class="grid__filter">
-  <input type="text" id="grid__filter" placeholder="&#xF002;" style="font-family:Arial, FontAwesome">
+  <input type="text" id="grid__filter" placeholder="&#xF002;" style="font-family:Arial, FontAwesome" aria-label="Filter items">
 </div>
 {% endif %}
 <div class="grid__wrapper">

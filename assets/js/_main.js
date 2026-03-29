@@ -117,4 +117,11 @@ $(document).ready(function(){
     return "<a class=\"permalink\" href='#" + this.id + "'>🔗</a>";
   } );
 
+  // Force lazy-loaded images to load before printing
+  window.addEventListener('beforeprint', function() {
+    document.querySelectorAll('img[loading="lazy"]').forEach(function(img) {
+      img.removeAttribute('loading');
+    });
+  });
+
 });

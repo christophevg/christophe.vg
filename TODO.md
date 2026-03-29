@@ -41,7 +41,7 @@ Prioritize by moving items up/down. Mark in-progress with `[ ]` → `[~]`. Mark 
 
 ## Visual & Design
 
-- [ ] **Print stylesheet** - Enhance print experience with better page breaks and formatting
+- [~] **Print stylesheet** - Enhance print experience with better page breaks and formatting
 - [ ] **Responsive images** - Implement `srcset` or Jekyll responsive images for better mobile performance (addresses 65% of payload)
 
 ## Content Features

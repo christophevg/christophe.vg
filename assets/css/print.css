@@ -1,15 +1,21 @@
 @media print {
 
+  /* Hide non-essential elements */
   .sidebar.sticky,
   .masthead,
   .page__footer,
   .page__share,
   .pagination,
   .author__urls-wrapper,
-  .noprint {
-    display: none;
+  .noprint,
+  .search-button,
+  .search-modal,
+  .search-overlay,
+  .navicon {
+    display: none !important;
   }
-  
+
+  /* Typography */
   html {
     font-size: 12pt;
   }
@@ -17,20 +23,71 @@
   body {
     line-height: 1;
     font-size: 70%;
+    color: #000;
+    background: #fff;
   }
 
+  /* Links */
   a {
     pointer-events: none;
     cursor: default;
-    text-decoration: none;
+    text-decoration: underline;
+    color: #000;
   }
-  
+
+  /* Show URLs only for external links in paragraph content */
+  .page__content p a[href^="http"]:not([href*="christophe.vg"]):after {
+    content: " (" attr(href) ")";
+    font-size: 0.85em;
+    color: #333;
+    word-break: break-all;
+  }
+
+  /* Never show URLs for anchor links, javascript, or card titles */
+  a[href^="#"]:after,
+  a[href^="javascript"]:after,
+  .archive__item-title a:after,
+  .page__title a:after,
+  .timeline-body a:after {
+    content: none;
+  }
+
   .print {
     display: block;
   }
 
-  .timeline li {
+  /* Prevent page breaks inside elements */
+  img,
+  figure,
+  table,
+  pre,
+  blockquote,
+  ul.timeline > li,
+  .archive__item,
+  .grid__item,
+  .list__item {
     page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  /* Headings */
+  h2, h3 {
+    page-break-after: avoid;
+    page-break-inside: avoid;
+  }
+
+  /* Prevent orphans and widows */
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* Images */
+  img {
+    max-width: 100% !important;
+    height: auto !important;
   }
 
   .page {
@@ -47,13 +104,14 @@
     margin-left: 0px;
     margin-right: 25px;
     padding-left: 0px;
-    padding-right: 25px;    
+    padding-right: 25px;
   }
 
   #main {
     max-width: 100%;
   }
 
+  /* Timeline */
   ul.timeline {
     padding-top: 0px;
     margin-top: 0px;
@@ -77,15 +135,15 @@
   ul.timeline > li.noprint {
     display: none;
   }
-  
+
   .timeline > li:nth-child(2) {
     margin-top: 0px;
   }
-  
+
   .timeline > li > .timeline-panel {
     margin-bottom: 0px;
   }
-  
+
   ul.timeline > li > .timeline-panel {
     margin-right: 20px;
     width: calc(100% - 60px);
@@ -110,9 +168,9 @@
     left: -14px;
     right: auto;
   }
-  
+
   .timeline > li:nth-child(even){
-    float: none; 
+    float: none;
     clear: none;
   }
 
@@ -136,7 +194,7 @@
   .timeline-body > h2 {
     color: #444444;
   }
-  
+
   .hi.print {
     padding-left: 25px;
   }
@@ -155,6 +213,32 @@
 
   img.printable {
     width: 50%;
+  }
+
+  /* Remove backgrounds and shadows */
+  .timeline-panel,
+  .page__hero,
+  .archive {
+    box-shadow: none !important;
+    background: #fff !important;
+  }
+
+  /* Code blocks */
+  pre,
+  code {
+    border: 1px solid #ddd;
+    page-break-inside: avoid;
+  }
+
+  /* Tables */
+  table {
+    border-collapse: collapse;
+  }
+
+  th,
+  td {
+    border: 1px solid #333;
+    padding: 8px;
   }
 
 }

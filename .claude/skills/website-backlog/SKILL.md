@@ -28,8 +28,9 @@ For each backlog item:
 
 5. **Implement** after approval:
    - Make the changes
-   - Test locally with `make serve`
-   - Commit with descriptive message
+   - **STOP and ask user to verify visually at `http://localhost:4000`**
+   - **WAIT for user confirmation before committing**
+   - Only after user confirms, commit with descriptive message
 
 6. **Update TODO.md** - Mark item as `[~]` when starting, `[x]` when complete
 

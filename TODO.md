@@ -23,14 +23,15 @@ Prioritize by moving items up/down. Mark in-progress with `[ ]` → `[~]`. Mark 
   - **Replaced ion.RangeSlider (84KB) with native HTML range input**
   - **Reduced main.min.js from 176KB to 130KB (46KB savings)**
   - **Reduced slider.css from 61KB to 2KB (59KB savings)**
-- [~] **Schema.org markup** - Expand structured data for articles, recipes, projects
+- [x] **Schema.org markup** - Expand structured data for articles, recipes, projects
   - **Recipe schema:** Created `_includes/recipe-schema.html` for JSON-LD
-  - **Example:** Updated Suppli recipe with front matter metadata
-  - **TODO:** Add recipe metadata to remaining koken posts
+  - **Recipe layout:** Created `_layouts/recipe.html` for structured rendering
+  - **Converted:** 153 recipes to structured front matter (see `docs/recipe-conversion-analysis.md`)
+  - **Remaining:** 32 recipes need manual review (complex structure, multi-part, or missing sections)
 
 ## Accessibility
 
-- [ ] **Image alt attributes** - Add descriptive `alt` text to all images for screen readers and SEO
+- [~] **Image alt attributes** - Add descriptive `alt` text to all images for screen readers and SEO
 - [ ] **Button accessibility** - Ensure all buttons have accessible names (search, navigation, etc.)
 - [ ] **Form labels** - Associate labels with all form elements for screen reader compatibility
 - [ ] **Color contrast** - Fix insufficient contrast ratios in text/background combinations

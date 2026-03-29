@@ -127,7 +127,7 @@ layout: null
         var teaserHtml = '';
         if (doc.teaser) {
           var teaserUrl = doc.teaser.indexOf('://') !== -1 ? doc.teaser : '{{ "/" | absolute_url }}' + doc.teaser.replace(/^\//, '');
-          teaserHtml = '<img src="' + teaserUrl + '" alt="" class="search-result__thumbnail">';
+          teaserHtml = '<img src="' + teaserUrl + '" alt="' + (doc.title || 'Untitled') + '" class="search-result__thumbnail">';
         }
 
         html += '<li class="search-result__item" data-index="' + index + '">';

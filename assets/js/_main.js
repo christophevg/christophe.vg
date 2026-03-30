@@ -52,14 +52,47 @@ $(document).ready(function(){
     stickySideBar();
   });
 
-  // Follow menu drop down
+  // Follow menu drop down (modal on narrow viewports)
+
+  // Create modal container for author links (appended to body to escape sidebar constraints)
+  var $followModal = $('<div class="follow-modal-overlay"><div class="follow-modal"><ul class="follow-modal__links"></ul></div></div>');
+  $("body").append($followModal);
+
+  // Populate modal with author links
+  var $authorLinks = $(".author__urls").children().clone();
+  $(".follow-modal__links").append($authorLinks);
 
   $(".author__urls-wrapper button").on("click", function() {
-    $(".author__urls").fadeToggle("fast", function() {});
-    $(".author__urls-wrapper button").toggleClass("open");
-    // Toggle aria-expanded for accessibility
-    var expanded = $(this).attr('aria-expanded') === 'true';
-    $(this).attr('aria-expanded', !expanded);
+    var $button = $(this);
+    var isExpanded = $button.attr('aria-expanded') === 'true';
+
+    if (isExpanded) {
+      // Close
+      $followModal.removeClass("is--visible");
+      $button.removeClass("open");
+      $button.attr('aria-expanded', 'false');
+    } else {
+      // Open
+      $followModal.addClass("is--visible");
+      $button.addClass("open");
+      $button.attr('aria-expanded', 'true');
+    }
+  });
+
+  // Close modal when clicking overlay
+  $followModal.on("click", function(e) {
+    if ($(e.target).hasClass("follow-modal-overlay")) {
+      $followModal.removeClass("is--visible");
+      $(".author__urls-wrapper button").removeClass("open").attr('aria-expanded', 'false');
+    }
+  });
+
+  // Close modal on escape key
+  $(document).on("keydown", function(e) {
+    if (e.key === "Escape" && $followModal.hasClass("is--visible")) {
+      $followModal.removeClass("is--visible");
+      $(".author__urls-wrapper button").removeClass("open").attr('aria-expanded', 'false');
+    }
   });
 
   // init smooth scroll

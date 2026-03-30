@@ -37,8 +37,10 @@
       
       {% if author.location %}
         <li itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
-          <i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> 
-          <span itemprop="name"> {{ author.location }} </span>
+          <span class="author__link">
+            <i class="fa fa-fw fa-map-marker" aria-hidden="true"></i>
+            <span itemprop="name">{{ author.location }}</span>
+          </span>
         </li>
       {% endif %}
       
@@ -63,21 +65,22 @@
 
       {% if author.phone %}
         <li>
-          <i class="fa fa-fw fa-phone-square" aria-hidden="true"></i>
-          {{ author.phone }}
+          <span class="author__link">
+            <i class="fa fa-fw fa-phone-square" aria-hidden="true"></i>
+            {{ author.phone }}
+          </span>
         </li>
       {% endif %}
       
-        <li><a href="https://homemadebycvg.com" itemprop="sameAs" style="margin-bottom:0px">
-          <img src="/assets/images/homemadebycvg.png" style="width:16px;height:16px;margin-bottom:3px;margin-right:3px;margin-left:2px;" aria-hidden="true"> 
-          Homemade by CVG</a>
-          <span style="margin-left:21px">(social landing page)</span>
-        </li>
+        <li><a href="https://homemadebycvg.com" itemprop="sameAs">
+          <img src="/assets/images/homemadebycvg.png" style="width:16px;height:16px;margin-bottom:3px;margin-right:3px;margin-left:2px;" aria-hidden="true">
+          Homemade by CVG
+        </a><br><span class="author__link-note">(social landing page)</span></li>
 
-        <li><a href="https://apps.homemadebycvg.com" itemprop="sameAs" style="margin-bottom:0px">
-          <img src="/assets/images/hosted-flasks.png" style="width:16px;height:16px;margin-bottom:3px;margin-right:3px;margin-left:2px;" aria-hidden="true"> 
-          My Homemade Apps</a>
-        </li>
+        <li><a href="https://apps.homemadebycvg.com" itemprop="sameAs">
+          <img src="/assets/images/hosted-flasks.png" style="width:16px;height:16px;margin-bottom:3px;margin-right:3px;margin-left:2px;" aria-hidden="true">
+          My Homemade Apps
+        </a></li>
 
       {% if author.instagram %}
         <li><a href="https://instagram.com/{{ author.instagram }}" itemprop="sameAs">

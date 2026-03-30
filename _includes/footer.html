@@ -1,34 +1,15 @@
-<div class="page__footer-follow">
+<div class="page__footer-copyright">
   <div style="float:right;text-align:right">
     <a href="https://creativecommons.org/licenses/by-sa/4.0">
-      <img alt="Creative Commons License" style="border-width:0" 
-           src="/assets/images/80x15.png" >
+      <img alt="Creative Commons License" style="border-width:0"
+           src="/assets/images/80x15.png">
     </a>
     <br>
     <a href="/about/Cookies">
       <img src="/assets/images/cookie.svg" height="40" width="40">
     </a>
   </div>
-  <ul class="social-icons">
-    {% if site.data.ui-text[site.locale].follow_label %}
-      <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
-    {% endif %}
-    {% if site.twitter.username %}
-      <li><a href="https://twitter.com/{{ site.twitter.username }}"><i class="fa fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
-    {% endif %}
-    {% if site.facebook.username %}
-      <li><a href="https://facebook.com/{{ site.facebook.username }}"><i class="fa fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
-    {% endif %}
-    {% if site.author.github %}
-      <li><a href="http://github.com/{{ site.author.github }}"><i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
-    {% endif %}
-    {% if site.author.bitbucket %}
-      <li><a href="http://bitbucket.org/{{ site.author.bitbucket }}"><i class="fa fa-fw fa-bitbucket" aria-hidden="true"></i> Bitbucket</a></li>
-    {% endif %}
-  </ul>
-</div>
-
-<div class="page__footer-copyright">
-  &copy; 1997 - {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}. {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="http://pages.github.com">GitHub Pages</a>, <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.<br>
-  Last update on {{ site.time }}.<br>
+  &copy; 1997 - {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}.<br>
+  {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="http://pages.github.com">GitHub Pages</a>, <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>. Crafted together with a <a href="https://claude.ai/code">coding agent</a> and a <a href="https://ollama.com/library/glm-5">nice model</a>.<br>
+  Last update on {{ site.time }}.
 </div>

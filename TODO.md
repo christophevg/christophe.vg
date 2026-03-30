@@ -52,7 +52,7 @@ Prioritize by moving items up/down. Mark in-progress with `[ ]` → `[~]`. Mark 
 
 ## More To Do
 
-- [ ] **Remove RSS support** - It's simply no longer "a thing".
+- [x] **Remove RSS support** - It's simply no longer "a thing".
 - [ ] **Attribution** - Add "coding agent" attribution in footer.
 - [ ] **Size of instructions above timeline slider** - The text size has increased with a previous change. This needs to be fixed.
 - [ ] **Follow Pop-up** - The popup for the follow button, on narrow width viewports, isn't fully "on top" of everything.

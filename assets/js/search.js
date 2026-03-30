@@ -36,6 +36,12 @@ layout: null
 
   // Perform search
   function performSearch(query) {
+    // Clear previous selection state
+    var previousItems = searchResults.querySelectorAll('.search-result__item--selected');
+    previousItems.forEach(function(item) {
+      item.classList.remove('search-result__item--selected');
+    });
+
     if (!query || query.length < 2) {
       searchResults.innerHTML = '';
       selectedIndex = -1;

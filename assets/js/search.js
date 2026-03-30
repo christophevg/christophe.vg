@@ -45,7 +45,7 @@ layout: null
 
     try {
       // Split into terms and search with wildcard for partial matching
-      var terms = query.trim().split(/\s+/).filter(function(t) { return t.length > 0; });
+      var terms = query.trim().toLowerCase().split(/\s+/).filter(function(t) { return t.length > 0; });
       var results = searchIndex.query(function(q) {
         terms.forEach(function(term) {
           // Search for exact match (higher boost) and prefix match

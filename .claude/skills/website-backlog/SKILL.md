@@ -52,6 +52,18 @@ Feature branch names should match the item:
 - "Search functionality" → `feature/search-functionality`
 - "Schema.org markup" → `feature/schema-org-markup`
 
+## Common Issues
+
+### Z-index not working
+
+When z-index doesn't seem to work, check if a parent element has these properties (they create new stacking contexts):
+- `transform` (most common - e.g., `translate3d()`)
+- `opacity` < 1
+- `position: fixed/relative/absolute` with z-index
+- `filter`, `perspective`, `will-change`
+
+**Solution:** Move the element outside the stacking context (e.g., append modal to `<body>`) or remove the transform from the parent.
+
 ## Example
 
 ```

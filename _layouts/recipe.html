@@ -12,9 +12,24 @@ layout: single
 {{ page.recipe.intro | markdownify }}
 {% endif %}
 
+{% comment %}
+  Ingredients: top-level + sections with ingredients
+{% endcomment %}
+{% assign has_ingredients = false %}
 {% if page.recipe.ingredients %}
+  {% assign has_ingredients = true %}
+{% elsif page.recipe.sections %}
+  {% for section in page.recipe.sections %}
+    {% if section.ingredients %}
+      {% assign has_ingredients = true %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
+{% if has_ingredients %}
 <h2>Ingrediënten</h2>
 
+{% if page.recipe.ingredients %}
 <ul>
 {% for ingredient in page.recipe.ingredients %}
   <li>{{ ingredient }}</li>
@@ -22,9 +37,38 @@ layout: single
 </ul>
 {% endif %}
 
+{% if page.recipe.sections %}
+{% for section in page.recipe.sections %}
+{% if section.ingredients %}
+<h3>{{ section.name }}</h3>
+<ul>
+{% for ingredient in section.ingredients %}
+  <li>{{ ingredient }}</li>
+{% endfor %}
+</ul>
+{% endif %}
+{% endfor %}
+{% endif %}
+{% endif %}
+
+{% comment %}
+  Instructions: top-level + sections with instructions
+{% endcomment %}
+{% assign has_instructions = false %}
 {% if page.recipe.instructions %}
+  {% assign has_instructions = true %}
+{% elsif page.recipe.sections %}
+  {% for section in page.recipe.sections %}
+    {% if section.instructions %}
+      {% assign has_instructions = true %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
+{% if has_instructions %}
 <h2>Bereiding</h2>
 
+{% if page.recipe.instructions %}
 <ol>
 {% for instruction in page.recipe.instructions %}
   <li>{{ instruction }}</li>
@@ -34,25 +78,16 @@ layout: single
 
 {% if page.recipe.sections %}
 {% for section in page.recipe.sections %}
-<h2>{{ section.name }}</h2>
-
-{% if section.ingredients %}
-<ul>
-{% for ingredient in section.ingredients %}
-  <li>{{ ingredient }}</li>
-{% endfor %}
-</ul>
-{% endif %}
-
 {% if section.instructions %}
+<h3>{{ section.name }}</h3>
 <ol>
 {% for instruction in section.instructions %}
   <li>{{ instruction }}</li>
 {% endfor %}
 </ol>
 {% endif %}
-
 {% endfor %}
+{% endif %}
 {% endif %}
 
 {% if page.recipe.outro %}

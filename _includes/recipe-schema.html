@@ -17,6 +17,33 @@
     servings: 4
     cuisine: "Italian"
     category: "Main course"
+
+  For multi-part recipes with grouped ingredients:
+
+  recipe:
+    intro: "..."
+    sections:
+      - name: "Main"
+        ingredients:
+          - "ingredient 1"
+          - "ingredient 2"
+      - name: "Sauce"
+        ingredients:
+          - "sauce ingredient 1"
+    instructions:
+      - "Step 1"
+      - "Step 2"
+
+  For recipes with per-section instructions:
+
+  recipe:
+    sections:
+      - name: "Cake"
+        ingredients: [...]
+        instructions: [...]
+      - name: "Frosting"
+        ingredients: [...]
+        instructions: [...]
 {% endcomment %}
 
 {% if page.recipe %}
@@ -66,15 +93,15 @@
   {% endif %}
   {% if page.recipe.category %}
   "recipeCategory": "{{ page.recipe.category }}",
-  {% endif %}
-  {% if page.recipe.ingredients %}
+  {% endif %}{% if page.recipe.ingredients %}
   "recipeIngredient": [
     {% for ingredient in page.recipe.ingredients %}
     "{{ ingredient | escape }}"{% unless forloop.last %},{% endunless %}
     {% endfor %}
-  ],
-  {% endif %}
-  {% if page.recipe.instructions %}
+  ],{% elsif page.recipe.sections %}
+  "recipeIngredient": [
+    {% assign all_ingredients = "" %}{% for section in page.recipe.sections %}{% if section.ingredients %}{% for ing in section.ingredients %}{% if all_ingredients != "" %},{% endif %}{{ ing | escape }}{% endfor %}{% endif %}{% endfor %}
+  ],{% endif %}{% if page.recipe.instructions %}
   "recipeInstructions": [
     {% for instruction in page.recipe.instructions %}
     {
@@ -82,8 +109,21 @@
       "text": "{{ instruction | escape }}"
     }{% unless forloop.last %},{% endunless %}
     {% endfor %}
-  ]
-  {% endif %}
+  ]{% elsif page.recipe.sections %}
+  "recipeInstructions": [{% assign first_section = true %}{% for section in page.recipe.sections %}{% if section.instructions %}{% unless first_section %},{% endunless %}{% assign first_section = false %}
+    {
+      "@type": "HowToSection",
+      "name": "{{ section.name | escape }}",
+      "itemListElement": [
+        {% for instruction in section.instructions %}
+        {
+          "@type": "HowToStep",
+          "text": "{{ instruction | escape }}"
+        }{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+      ]
+    }{% endif %}{% endfor %}
+  ]{% endif %}
 }
 </script>
 {% endif %}

@@ -7,8 +7,9 @@ Generated: 2026-03-29
 - **Total recipes:** 185
 - **Auto-convertible:** 153 (standard structure)
 - **Converted:** 153
-- **Remaining:** 0
-- **Need manual review:** 32 (complex or missing structure)
+- **Multi-part converted:** 18 (with ingredient/instruction sections)
+- **Remaining:** 2
+  - 2 multiple sub-recipes (to handle manually)
 
 ---
 
@@ -189,42 +190,47 @@ These recipes have the standard structure: intro + `## ingrediënten` + `## bere
 
 ---
 
-## Recipes Needing Manual Review (32)
+## Recipes Needing Manual Review (17)
 
-### Extra Sections (5 recipes)
+### Extra Sections (0 recipes)
 
-These have additional sections beyond ingredients/bereiding and need manual handling:
+All converted with ingredient sections:
 
-- [ ] 2011-01-01-Caesar_Salade.markdown (4 sections)
-- [ ] 2011-01-01-Kerstpastei.markdown (4 sections)
-- [ ] 2011-01-01-Zoetzuur_varkensvlees.markdown (4 sections)
-- [ ] 2011-01-01-Kalkoen_met_citrusvruchten_en_tijm.markdown (5 sections)
-- [ ] 2011-01-01-Runderpasteitjes_met_Aardappelpuree.markdown (5 sections)
+- [x] 2011-01-01-Caesar_Salade.markdown
+- [x] 2011-01-01-Kerstpastei.markdown
+- [x] 2011-01-01-Zoetzuur_varkensvlees.markdown
+- [x] 2011-01-01-Kalkoen_met_citrusvruchten_en_tijm.markdown
+- [x] 2011-01-01-Runderpasteitjes_met_Aardappelpuree.markdown
 
-### Multi-part Recipes (6 recipes)
+### Multi-part Recipes (0 recipes)
 
-These have multiple components (e.g., separate parts, fillings):
+All converted with ingredient/instruction sections:
 
-- [ ] 2011-01-01-Gegrilde_Heilbot_met_Sauce_Vierge.markdown (3 sections)
-- [ ] 2011-01-01-Gekarameliseerde_Kalfszwezerik_met_Jus_Sauternes.markdown (3 sections)
-- [ ] 2011-01-01-Hert_met_Chocoladesaus.markdown (3 sections)
-- [ ] 2017-12-29-Baked-Alaska.markdown (3 sections)
-- [ ] 2023-11-04-Wraps-n-Things.markdown (22 sections - multiple sub-recipes)
-- [ ] 2025-11-10-Filet_Pur_met_Gekarameliseerde_Pompoen,_Bospaddestoelen_en_Gekonfijte_Knoflook.markdown (3 sections)
+- [x] 2011-01-01-Gegrilde_Heilbot_met_Sauce_Vierge.markdown
+- [x] 2011-01-01-Gekarameliseerde_Kalfszwezerik_met_Jus_Sauternes.markdown
+- [x] 2011-01-01-Hert_met_Chocoladesaus.markdown
+- [x] 2017-12-29-Baked-Alaska.markdown
+- [x] 2025-11-10-Filet_Pur_met_Gekarameliseerde_Pompoen,_Bospaddestoelen_en_Gekonfijte_Knoflook.markdown
 
-### Missing Standard Sections (21 recipes)
+### Multiple Sub-Recipes (2 recipes)
 
-These are missing `## ingrediënten` or `## bereiding` headers:
+Complex recipes to handle manually:
 
-- [ ] 2011-01-01-Snelle_en_gezonde_schotels.markdown (no standard sections)
-- [ ] 2011-01-01-Scampi_in_bacon_en_bladerdeeg.markdown
-- [ ] 2023-11-20-BBQ-Saus.markdown
-- [ ] 2023-12-04-Gnocchi_met_Bospaddestoelen.markdown (6 sections - complex)
-- [ ] 2023-12-25-Sorbet-van-Bloedappelsien.markdown
-- [ ] 2024-01-12-Arayes.markdown
-- [ ] 2024-01-12-Fattoush-salade.markdown
-- [ ] 2024-01-12-Yoghurtsaus.markdown
-- [ ] ... and more
+- [ ] 2011-01-01-Snelle_en_gezonde_schotels.markdown (11 mini-recipes)
+- [ ] 2023-11-04-Wraps-n-Things.markdown (22 sections)
+
+### Missing Standard Sections (0 recipes)
+
+All converted:
+
+- [x] 2011-01-01-Scampi_in_bacon_en_bladerdeeg.markdown
+- [x] 2017-03-12-Alabama-Slammer.markdown
+- [x] 2023-11-20-BBQ-Saus.markdown
+- [x] 2023-12-04-Gnocchi_met_Bospaddestoelen.markdown
+- [x] 2023-12-25-Sorbet-van-Bloedappelsien.markdown
+- [x] 2024-01-12-Arayes.markdown
+- [x] 2024-01-12-Fattoush-salade.markdown
+- [x] 2024-01-12-Yoghurtsaus.markdown
 
 ---
 

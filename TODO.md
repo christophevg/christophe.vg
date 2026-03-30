@@ -48,11 +48,18 @@ Prioritize by moving items up/down. Mark in-progress with `[ ]` → `[~]`. Mark 
 
 - [x] **Recipe structured data** - Add Schema.org Recipe markup to `koken/` posts for SEO
 - [x] **Project showcase layout** - Create dedicated project layout with galleries for `makes/`
-- [ ] **Music integration** - Embed Spotify/YouTube more prominently in `about/muziek/` posts
+- [~] **Music integration** - Embed Spotify/YouTube more prominently in `about/muziek/` posts
+
+## More To Do
+
+- [ ] **Remove RSS support** - It's simply no longer "a thing".
+- [ ] **Attribution** - Add "coding agent" attribution in footer.
+- [ ] **Size of instructions above timeline slider** - The text size has increased with a previous change. This needs to be fixed.
+- [ ] **Follow Pop-up** - The popup for the follow button, on narrow width viewports, isn't fully "on top" of everything.
+- [ ] **Review the codebase** - look for unused features, unused code, code that can be improved,...
 
 ## Don't Do...
 
 - [x] **RSS feed enhancements** - Add category-specific feeds for about, makes, koken, zeilen, technology
-  - [ ] Instead we're going to remove RSS support completely. It's simply no longer "a thing".
 - [x] **Dark mode** - Enable Minimal Mistakes dark theme (`default_dark_theme: true`) or add toggle
   - [x] Rationale: I don't like dark mode, it's not how I want my website to look.

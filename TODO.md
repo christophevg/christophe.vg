@@ -54,8 +54,8 @@ Prioritize by moving items up/down. Mark in-progress with `[ ]` → `[~]`. Mark 
 
 - [x] **Remove RSS support** - It's simply no longer "a thing".
 - [x] **Attribution** - Add "coding agent" attribution in footer.
-- [ ] **Size of instructions above timeline slider** - The text size has increased with a previous change. This needs to be fixed.
-- [ ] **Follow Pop-up** - The popup for the follow button, on narrow width viewports, isn't fully "on top" of everything.
+- [x] **Size of instructions above timeline slider** - The text size has increased with a previous change. This needs to be fixed.
+- [ ] **Follow Pop-up** - The popup for the follow button, on narrow width viewports, isn't fully "on top" of everything. The timeline cards and the slider are rendered "above" it, hiding it partially.
 - [ ] **Review the codebase** - look for unused features, unused code, code that can be improved,...
 
 ## Don't Do...

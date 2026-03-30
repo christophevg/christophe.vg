@@ -6,8 +6,12 @@ div.hi img.nametag {
   margin-bottom: -100px;
 }
 
-div.slider { 
+div.slider {
   z-index: 2;
+}
+
+div.slider p {
+  font-size: 0.8em;
 }
 
 @media (max-width: 767px) {

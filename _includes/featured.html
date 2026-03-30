@@ -1,8 +1,0 @@
-{% if site.data.featured %}
-
-  {% for featured in site.data.featured %}
-    {% capture position %}{% cycle "right", "left" %}{% endcapture %}
-    {% include feature_row feature=featured type=position %}
-  {% endfor %}
-
-{% endif %}

@@ -203,11 +203,19 @@
       font-size: $type-size-5;
     }
 
+    .author__link-wrapper {
+      display: block;
+      margin-bottom: 5px;
+
+      a {
+        display: block;
+        margin-bottom: 0;
+      }
+    }
+
     .author__link-note {
       display: block;
-      margin-left: 1.5em;
-      margin-top: -3px;
-      margin-bottom: 5px;
+      margin-left: 25px;
       font-size: $type-size-6;
       opacity: 0.7;
     }
@@ -300,6 +308,14 @@
 
     i {
       flex-shrink: 0;
+    }
+  }
+
+  .author__link-wrapper {
+    margin-bottom: 0.125em;
+
+    a {
+      margin-bottom: 0;
     }
   }
 

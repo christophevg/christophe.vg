@@ -205,6 +205,16 @@ layout: null
       searchOverlay.addEventListener('click', closeModal);
     }
 
+    // Close modal when clicking outside the content area
+    if (searchModal) {
+      searchModal.addEventListener('click', function(e) {
+        // Only close if clicking the modal background, not the content
+        if (e.target === searchModal) {
+          closeModal();
+        }
+      });
+    }
+
     if (searchInput) {
       var debounceTimer;
       searchInput.addEventListener('input', function(e) {

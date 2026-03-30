@@ -29,9 +29,14 @@
   align-items: flex-start;
   justify-content: center;
   padding-top: 15vh;
+  cursor: pointer;
 
   &.search-modal--open {
     display: flex;
+  }
+
+  &__content {
+    cursor: default;
   }
 
   &__content {

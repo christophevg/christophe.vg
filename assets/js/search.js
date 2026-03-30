@@ -225,8 +225,18 @@ layout: null
   // Event listeners
   document.addEventListener('DOMContentLoaded', function() {
     var searchButtons = document.querySelectorAll('.search-button');
+
+    // Set keyboard shortcut text based on OS
+    var isMac = navigator.platform.toUpperCase().indexOf('MAC') >= 0 ||
+                navigator.userAgent.toUpperCase().indexOf('MAC') >= 0;
+    var shortcutText = isMac ? '⌘K' : 'Ctrl+K';
+
     searchButtons.forEach(function(btn) {
       btn.addEventListener('click', openModal);
+      var shortcut = btn.querySelector('.search-button__shortcut');
+      if (shortcut) {
+        shortcut.textContent = shortcutText;
+      }
     });
 
     if (searchOverlay) {

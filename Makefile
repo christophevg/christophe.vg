@@ -1,9 +1,6 @@
-all: update serve
+-include ~/.claude/Makefile
 
-
-MODEL ?= glm-5:cloud
-claude:
-	ollama launch claude --model ${MODEL}
+site: update serve
 
 update:
 	bundle update

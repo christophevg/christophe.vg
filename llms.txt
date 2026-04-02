@@ -32,8 +32,9 @@ This site hosts my portfolio, professional articles, cooking recipes, sailing ad
 
 Clean markdown versions of key pages are available for LLM consumption:
 
-- [I, Enterprise Architect (markdown)](https://christophe.vg/md/about/I-Enterprise-Architect.md): Architecture philosophy and approach
+- [About (markdown)](https://christophe.vg/md/about/index.md): Professional profile and background
 - [FAQ (markdown)](https://christophe.vg/md/about/faq.md): Frequently asked questions
+- [I, Enterprise Architect (markdown)](https://christophe.vg/md/about/I-Enterprise-Architect.md): Architecture philosophy and approach
 - [Problem Seeker (markdown)](https://christophe.vg/md/about/problem-seeker.md): Problem-seeking approach
 - [Coding Agent (markdown)](https://christophe.vg/md/about/coding-agent.md): AI collaboration practices
 

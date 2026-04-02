@@ -1,0 +1,153 @@
+/* ==========================================================================
+   AI-GENERATED CONTENT BANNER
+   ========================================================================== */
+
+/* Small badge link at top of page */
+.ai-badge {
+  color: $gray;
+  text-decoration: none;
+  transition: $global-transition;
+  vertical-align: baseline;
+
+  &:hover {
+    color: $dark-gray;
+    text-decoration: none;
+  }
+
+  .ai-badge__icon {
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
+    vertical-align: middle;
+    margin-right: 0.3em;
+  }
+
+  &:hover .ai-badge__icon {
+    opacity: 1;
+  }
+}
+
+/* Banner at bottom of page */
+.ai-banner {
+  margin: 2em 0;
+  padding: 1.5em;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: $border-radius;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  animation: ai-banner-fade-in 0.5s ease-out;
+
+  a {
+    color: #fff;
+    text-decoration: underline;
+
+    &:hover {
+      color: rgba(255, 255, 255, 0.8);
+    }
+  }
+}
+
+.ai-banner__header {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  margin-bottom: 0.75em;
+}
+
+.ai-banner__icon {
+  font-size: 1.5em;
+  animation: ai-banner-bounce 2s ease-in-out infinite;
+}
+
+.ai-banner__title {
+  font-family: $sans-serif;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.ai-banner__description {
+  margin: 0 0 1em 0;
+  font-family: $global-font-family;
+  font-size: $type-size-6;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.5;
+}
+
+.ai-banner__bubble {
+  position: relative;
+  background: #fff;
+  border-radius: 1em;
+  padding: 1em 1.25em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  &::before {
+    content: '"';
+    position: absolute;
+    top: -0.1em;
+    left: 0.5em;
+    font-size: 2em;
+    color: rgba(102, 126, 234, 0.3);
+    font-family: Georgia, serif;
+  }
+
+  &::after {
+    content: '"';
+    position: absolute;
+    bottom: -0.3em;
+    right: 0.5em;
+    font-size: 2em;
+    color: rgba(102, 126, 234, 0.3);
+    font-family: Georgia, serif;
+  }
+}
+
+.ai-banner__bubble-content {
+  font-family: $global-font-family;
+  font-size: $type-size-5;
+  color: $dark-gray;
+  line-height: 1.6;
+  font-style: italic;
+  padding: 0.5em 1em;
+}
+
+/* Animations
+   ========================================================================== */
+
+@keyframes ai-banner-fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes ai-banner-bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+/* Dark mode support
+   ========================================================================== */
+
+@media (prefers-color-scheme: dark) {
+  .ai-banner__bubble {
+    background: #2d2d2d;
+
+    &::before,
+    &::after {
+      color: rgba(118, 75, 162, 0.5);
+    }
+  }
+
+  .ai-banner__bubble-content {
+    color: #e0e0e0;
+  }
+}

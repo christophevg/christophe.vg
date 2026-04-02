@@ -290,7 +290,7 @@
 
   .corner-ribbon.top-left.small {
     top: 12px;
-    left: -25px;
+    left: -75px;
   }
 
   .corner-ribbon.top-right {
@@ -340,6 +340,7 @@
   .corner-ribbon.green{background: #2c7;}
   .corner-ribbon.turquoise{background: #1b9;}
   .corner-ribbon.purple{background: #95b;}
+  .corner-ribbon.agentic{background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);}
   .corner-ribbon.red{background: #e43;}
   .corner-ribbon.orange{background: #e82;}
   .corner-ribbon.yellow{background: #ec0;}

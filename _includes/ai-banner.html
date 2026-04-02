@@ -1,0 +1,16 @@
+{% if page.prompt %}
+<div class="ai-banner" id="ai-banner">
+  <div class="ai-banner__header">
+    <span class="ai-banner__icon">🤖</span>
+    <span class="ai-banner__title">AI-Generated Content</span>
+  </div>
+  <p class="ai-banner__description">
+    This page was created with the help of a coding agent. The original prompt that started it all:
+  </p>
+  <div class="ai-banner__bubble">
+    <div class="ai-banner__bubble-content">
+      {{ page.prompt }}
+    </div>
+  </div>
+</div>
+{% endif %}

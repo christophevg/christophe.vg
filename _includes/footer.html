@@ -1,15 +1,32 @@
 <div class="page__footer-copyright">
-  <div style="float:right;text-align:right">
-    <a href="https://creativecommons.org/licenses/by-sa/4.0">
-      <img alt="Creative Commons License" style="border-width:0"
-           src="/assets/images/80x15.png">
+  <div class="footer-badges">
+    <a href="https://creativecommons.org/licenses/by-sa/4.0" class="footer-badge" title="Creative Commons License">
+      <img src="/assets/images/icon-cc.svg" alt="CC" width="20" height="20">
+      <span>CC BY-SA 4.0</span>
     </a>
-    <br>
-    <a href="/about/Cookies">
-      <img src="/assets/images/cookie.svg" height="40" width="40">
+    <a href="/about/Cookies" class="footer-badge" title="No cookies used">
+      <img src="/assets/images/icon-cookie.svg" alt="No cookies" width="20" height="20">
+      <span>No Cookies</span>
+    </a>
+    <a href="/about/Coding-Agent" class="footer-badge" title="AI-assisted content">
+      <img src="/assets/images/icon-ai.svg" alt="AI" width="20" height="20">
+      <span>AI Coauthored</span>
+    </a>
+  </div>
+  <div class="footer-badges">
+    <a href="http://pages.github.com" class="footer-badge" title="Hosted on GitHub Pages">
+      <img src="/assets/images/icon-github.svg" alt="GitHub Pages" width="20" height="20">
+      <span>GitHub Pages</span>
+    </a>
+    <a href="http://jekyllrb.com" class="footer-badge" title="Built with Jekyll" rel="nofollow">
+      <img src="/assets/images/icon-jekyll.svg" alt="Jekyll" width="20" height="20">
+      <span>Jekyll</span>
+    </a>
+    <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" class="footer-badge" title="Minimal Mistakes theme" rel="nofollow">
+      <img src="/assets/images/icon-theme.svg" alt="Minimal Mistakes" width="20" height="20">
+      <span>Minimal Mistakes</span>
     </a>
   </div>
   &copy; 1997 - {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}.<br>
-  {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="http://pages.github.com">GitHub Pages</a>, <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>. Crafted together with a <a href="https://claude.ai/code">coding agent</a> and a <a href="https://ollama.com/library/glm-5">nice model</a>.<br>
   Last update on {{ site.time }}.
 </div>

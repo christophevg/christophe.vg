@@ -21,6 +21,9 @@
         {% if post.tags contains 'wip' %}
         <div class="corner-ribbon top-right small sticky blue">WiP</div>
         {% endif %}
+        {% if post.prompt %}
+        <div class="corner-ribbon top-left small sticky agentic">🤖 AI</div>
+        {% endif %}
         <img src=
           {% if teaser contains "://" %}
             "{{ teaser }}"

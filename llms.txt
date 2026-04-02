@@ -1,0 +1,34 @@
+# Christophe VG
+
+> Personal website of Christophe Van Ginneken (Christophe VG), Enterprise Architect from Belgium, specializing in software architecture, technology consulting, and digital transformation.
+
+This site hosts my portfolio, professional articles, cooking recipes, sailing adventures, photography, and technology projects.
+
+## About
+
+- [About Me](https://christophe.vg/about/): Professional background, experience as Enterprise Architect, and personal interests
+- [I, Enterprise Architect](https://christophe.vg/about/I-Enterprise-Architect): My role and approach as an Enterprise Architect realizing customers' dreams
+- [Coding Agent & LLM Collaboration](https://christophe.vg/about/coding-agent/): How I work with AI coding agents to maintain this website
+- [Problem Seeker](https://christophe.vg/about/problem-seeker/): My approach to finding and solving problems
+- [Virtue of Technology Agnosticism](https://christophe.vg/about/virtue-of-technology-agnosticism/): Why technology-agnostic thinking matters in architecture
+
+## Projects
+
+- [Makes](https://christophe.vg/makes/): Maker and DIY projects, including electronics, 3D printing, and creative builds
+- [Technology](https://christophe.vg/technology/): Technical articles on software development, architecture, and engineering practices
+
+## Interests
+
+- [Koken](https://christophe.vg/koken/): Cooking recipes and culinary experiments (Dutch)
+- [Zeilen](https://christophe.vg/zeilen/): Sailing adventures, logbooks, and trip reports (Dutch)
+- [Fotografie](https://christophe.vg/fotografie/): Photography portfolio and projects
+
+## Music
+
+- [Muziek](https://christophe.vg/about/muziek/): Favorite songs and music reviews with personal commentary
+
+## Optional
+
+- [All Tags](https://christophe.vg/tags/): Content organized by topic tags
+- [Leadership 101](https://christophe.vg/about/leadership-101/): Notes on engineering leadership
+- [50 Shades of Ceremony](https://christophe.vg/about/50-shades-of-ceremony/): Thoughts on agile ceremonies and meeting practices

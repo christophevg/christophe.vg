@@ -125,7 +125,15 @@
       "@context" : "http://schema.org",
       "@type" : "{% if site.social.type %}{{ site.social.type }}{% else %}Person{% endif %}",
       "name" : "{{ site.social.name | default: site.name }}",
+      "alternateName" : "{{ site.author.name | default: site.name }}",
       "url" : {{ seo_url | jsonify }},
+      "jobTitle" : "Enterprise Architect",
+      "description" : "{{ site.description | strip_newlines | escape }}",
+      {% if site.author.email %}"email" : "{{ site.author.email }}",{% endif %}
+      {% if site.author.location %}"address" : {
+        "@type" : "PostalAddress",
+        "addressLocality" : "{{ site.author.location }}"
+      },{% endif %}
       "sameAs" : {{ site.social.links | jsonify }}
     }
   </script>

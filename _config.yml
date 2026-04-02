@@ -60,8 +60,13 @@ facebook:
 og_image                 :
 social:
   type                   : "Person"
-  name                   :
-  links                  : # An array of links to social media profiles
+  name                   : "Christophe Van Ginneken"
+  links                  :
+    - "https://github.com/christophevg"
+    - "https://linkedin.com/in/christophevg"
+    - "https://www.youtube.com/@christophevg"
+    - "https://www.instagram.com/homemadebycvg"
+    - "https://www.thingiverse.com/christophevg/designs"
 
 # Analytics
 analytics:

@@ -270,3 +270,33 @@ h2, h3, h4 {
   border-left-color: blue;
 }
 
+/* FAQ section styling */
+details {
+  margin: 1em 0;
+  padding: 0.5em 1em;
+  background: #f8f9fa;
+  border-radius: 4px;
+  border: 1px solid #e9ecef;
+}
+
+details summary {
+  cursor: pointer;
+  padding: 0.5em 0;
+  font-weight: 500;
+}
+
+details summary:hover {
+  color: #0085D1;
+}
+
+details[open] summary {
+  border-bottom: 1px solid #dee2e6;
+  margin-bottom: 0.5em;
+  padding-bottom: 0.75em;
+}
+
+details p {
+  margin: 0.5em 0;
+  color: #495057;
+}
+

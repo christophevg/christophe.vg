@@ -25,3 +25,28 @@ div.slider p {
 .greeting {
   font-size: 0.8em;
 }
+
+.quick-links {
+  margin: 1em 0;
+  padding: 0.75em 1em;
+  background: #f8f9fa;
+  border-radius: 4px;
+  border-left: 3px solid #0085D1;
+}
+
+.quick-link-item {
+  margin-right: 1.5em;
+}
+
+.quick-link-item i {
+  color: #0085D1;
+}
+
+.quick-link-item a {
+  font-weight: 500;
+}
+
+.small {
+  font-size: 0.85em;
+  color: #6c757d;
+}

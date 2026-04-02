@@ -7,6 +7,7 @@ This site hosts my portfolio, professional articles, cooking recipes, sailing ad
 ## About
 
 - [About Me](https://christophe.vg/about/): Professional background, experience as Enterprise Architect, and personal interests
+- [FAQ](https://christophe.vg/about/faq/): Frequently asked questions about services, approach, background, and collaboration
 - [I, Enterprise Architect](https://christophe.vg/about/I-Enterprise-Architect): My role and approach as an Enterprise Architect realizing customers' dreams
 - [Coding Agent & LLM Collaboration](https://christophe.vg/about/coding-agent/): How I work with AI coding agents to maintain this website
 - [Problem Seeker](https://christophe.vg/about/problem-seeker/): My approach to finding and solving problems
@@ -26,6 +27,15 @@ This site hosts my portfolio, professional articles, cooking recipes, sailing ad
 ## Music
 
 - [Muziek](https://christophe.vg/about/muziek/): Favorite songs and music reviews with personal commentary
+
+## Markdown Versions
+
+Clean markdown versions of key pages are available for LLM consumption:
+
+- [I, Enterprise Architect (markdown)](https://christophe.vg/md/about/I-Enterprise-Architect.md): Architecture philosophy and approach
+- [FAQ (markdown)](https://christophe.vg/md/about/faq.md): Frequently asked questions
+- [Problem Seeker (markdown)](https://christophe.vg/md/about/problem-seeker.md): Problem-seeking approach
+- [Coding Agent (markdown)](https://christophe.vg/md/about/coding-agent.md): AI collaboration practices
 
 ## Optional
 

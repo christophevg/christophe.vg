@@ -4,6 +4,7 @@ full_title: "How I Use a Coding Agent and LLM for This Site"
 tags:
   - thing
   - personal
+  - agentic
 header:
   image: /about/images/header/coding-agent.png
   teaser: /about/images/thumb/coding-agent.png

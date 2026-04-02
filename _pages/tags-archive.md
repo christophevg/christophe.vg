@@ -4,6 +4,7 @@ title: The World Tagged by Christophe VG
 permalink: /tags/
 info:
   3dprinting: Many years ago I started out printing and building my own 3D printer. Over the years I'm a very happy Zortrax M200 owner and 3D printing has become a commodity - it is really a tool for me, not a focus by itself.
+  agentic: "Yes, I use a coding agent to maintain parts of this website. To be ultra-clear about it, I've asked 🤖 to include a banner and tag to all content he coauthors, along with the prompt that created that content."
   arduino: Although I started with its fundamental core, the AVR-based microcontrollers, Arduino and I cross paths now and then.
   airfryer: Where have you been all my life? ;-)
   avr: The AVR architecture, by Atmel, was the first embedded platform I encountered when I entered the hardware space. A lot of my first steps involved this series of MCUs.

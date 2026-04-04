@@ -19,9 +19,13 @@ Prioritize by moving items up/down. Mark in-progress with `[ ]` → `[~]`. Mark 
   - Audit `_sass/` and `assets/css/`
   - Generate clean CSS bundle
   - **Expected gain: +2-3 performance points**
-- [ ] **Implement image lazy loading** - Add `loading="lazy"` to below-fold images
-  - Update `_includes/image.html` to conditionally add lazy loading
-  - Exclude hero/header images
+- [x] **Implement image lazy loading** - Add `loading="lazy"` to below-fold images
+  - Already implemented in `_includes/image` and `_includes/images`
+  - Added lazy loading to footer icons in `_includes/footer.html`
+  - Added lazy loading to sidebar images in `_includes/sidebar.html`
+  - Added lazy loading to author profile icons in `_includes/author-profile.html`
+  - Added lazy loading to comment avatars in `_includes/comment.html`
+  - Hero images and nametag intentionally excluded (above-fold)
   - **Expected gain: +2-3 performance points, improves LCP**
 
 ## Accessibility (93 → 100)

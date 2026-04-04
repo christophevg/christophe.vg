@@ -10,7 +10,8 @@
         {% else %}
           "{{ s.image | absolute_url }}"
         {% endif %}
-        alt="{% if s.image_alt %}{{ s.image_alt }}{% endif %}">
+        alt="{% if s.image_alt %}{{ s.image_alt }}{% endif %}"
+        loading="lazy">
       {% endif %}
       {% if s.title %}<h3>{{ s.title }}</h3>{% endif %}
       {% if s.text %}{{ s.text | markdownify }}{% endif %}

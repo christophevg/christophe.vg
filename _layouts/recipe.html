@@ -32,7 +32,7 @@ layout: single
 {% if page.recipe.ingredients %}
 <ul>
 {% for ingredient in page.recipe.ingredients %}
-  <li>{{ ingredient }}</li>
+  <li>{{ ingredient | markdownify | remove: '<p>' | remove: '</p>' }}</li>
 {% endfor %}
 </ul>
 {% endif %}
@@ -43,7 +43,7 @@ layout: single
 <h3>{{ section.name }}</h3>
 <ul>
 {% for ingredient in section.ingredients %}
-  <li>{{ ingredient }}</li>
+  <li>{{ ingredient | markdownify | remove: '<p>' | remove: '</p>' }}</li>
 {% endfor %}
 </ul>
 {% endif %}
@@ -71,7 +71,7 @@ layout: single
 {% if page.recipe.instructions %}
 <ol>
 {% for instruction in page.recipe.instructions %}
-  <li>{{ instruction }}</li>
+  <li>{{ instruction | markdownify | remove: '<p>' | remove: '</p>' }}</li>
 {% endfor %}
 </ol>
 {% endif %}
@@ -82,7 +82,7 @@ layout: single
 <h3>{{ section.name }}</h3>
 <ol>
 {% for instruction in section.instructions %}
-  <li>{{ instruction }}</li>
+  <li>{{ instruction | markdownify | remove: '<p>' | remove: '</p>' }}</li>
 {% endfor %}
 </ol>
 {% endif %}

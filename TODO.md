@@ -43,10 +43,11 @@ Prioritize by moving items up/down. Mark in-progress with `[ ]` → `[~]`. Mark 
 
 ## Content & Marketing
 
-- [ ] **Expand llms.txt coverage** - Add Dutch content sections
-  - Add `koken/` section with recipe highlights
-  - Add `zeilen/` section with sailing adventures
-  - Create markdown versions for popular recipes
+- [x] **Expand llms.txt coverage** - Add Dutch content sections
+  - Expanded Koken section with recipe count (185), popular dishes, categories
+  - Expanded Zeilen section with logbook years (2004-2025), coverage areas
+  - Added Dutch language notes for both sections
+  - Improved section organization and descriptions
 - [x] **Add Article schema** - Implement JSON-LD for blog posts
   - Created `_includes/article-schema.html` with Article structured data
   - Added to `_includes/seo.html` for automatic inclusion on all posts

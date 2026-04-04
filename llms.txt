@@ -18,10 +18,25 @@ This site hosts my portfolio, professional articles, cooking recipes, sailing ad
 - [Makes](https://christophe.vg/makes/): Maker and DIY projects, including electronics, 3D printing, and creative builds
 - [Technology](https://christophe.vg/technology/): Technical articles on software development, architecture, and engineering practices
 
+## Cooking (Koken)
+
+> 185 recipes in Dutch covering appetizers, main courses, desserts, and more.
+
+- [All Recipes](https://christophe.vg/koken/): Complete recipe collection (Dutch)
+- Popular: Gegrilde Heilbot met Sauce Vierge, Tomaatjes uit de Oven met Geitenkaas, Thais Kokossoepje
+- Categories: Appetizers, Main courses, Side dishes, Desserts, Sauces
+- Note: Content is in Dutch (Nederlands)
+
+## Sailing (Zeilen)
+
+> 20 years of sailing logbooks documenting trips to Texel and Dutch waters.
+
+- [Sailing Logbooks](https://christophe.vg/zeilen/): Trip reports and adventures (Dutch)
+- Coverage: 2004-2025, primarily sailing around Texel and the Dutch coast
+- Note: Content is in Dutch (Nederlands)
+
 ## Interests
 
-- [Koken](https://christophe.vg/koken/): Cooking recipes and culinary experiments (Dutch)
-- [Zeilen](https://christophe.vg/zeilen/): Sailing adventures, logbooks, and trip reports (Dutch)
 - [Fotografie](https://christophe.vg/fotografie/): Photography portfolio and projects
 
 ## Music

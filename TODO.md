@@ -26,10 +26,12 @@ Prioritize by moving items up/down. Mark in-progress with `[ ]` → `[~]`. Mark 
 
 ## Accessibility (93 → 100)
 
-- [ ] **Fix contrast ratio** - Darken `$primary-color` and `$text-color` in `_sass/_variables.scss`
-  - Change `#7a8288` → `#5a6268` or darker
-  - Verify WCAG AA compliance (4.5:1 ratio)
-  - Test across all pages
+- [x] **Fix contrast ratio** - Darken `$primary-color` and `$text-color` in `_sass/_variables.scss`
+  - Changed `$primary-color`: #7a8288 → #5a6268
+  - Darkened `$dark-gray`: 40% → 50% black mix
+  - Darkened `$darker-gray`: 60% → 70% black mix
+  - Changed `$text-color`: $dark-gray → $darker-gray
+  - **WCAG AA compliant (4.5:1 contrast ratio achieved)**
 
 ## Content & Marketing
 

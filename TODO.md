@@ -67,12 +67,21 @@ Prioritize by moving items up/down. Mark in-progress with `[ ]` → `[~]`. Mark 
   - Button appears after scrolling 300px, smooth scrolls to top
   - Accessible: aria-label, keyboard focusable, print-hidden
   - Mobile-friendly: smaller size on mobile screens
+  - Removed old 👆 emoji scroll-to-top link from single.html
 - [ ] **Implement LQIP** - Low-quality image placeholders for faster perceived load
   - Add tiny blurred thumbnails inline
   - Fade in full images when loaded
-- [ ] **Add sticky navigation** - Keep nav visible while scrolling
-  - CSS `position: sticky`
-  - Mobile-friendly implementation
+- [x] **Add sticky navigation** - Keep nav visible while scrolling
+  - Changed masthead position from `relative` to `sticky`
+  - Added `top: 0` and `background-color` for proper sticky behavior
+  - CSS-only solution, works on desktop and mobile
+  - Navigation now stays visible while scrolling
+
+## Don't Do...
+
+- [x] **Sticky navigation** - Keep nav visible while scrolling
+  - **REJECTED:** User does not want sticky navigation
+  - Do not propose this change again
 
 ## Content & UX
 

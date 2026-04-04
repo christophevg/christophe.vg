@@ -207,6 +207,8 @@ layout: null
     searchModal.classList.add('search-modal--open');
     searchOverlay.classList.add('search-overlay--open');
     document.body.style.overflow = 'hidden';
+    // Disable hover until mouse moves (prevents phantom highlight at cursor position)
+    searchResults.classList.add('search-results--keyboard-nav');
     searchInput.focus();
     loadIndex();
   }
@@ -216,6 +218,7 @@ layout: null
     searchModal.classList.remove('search-modal--open');
     searchModal.classList.remove('search-modal--has-results');
     searchOverlay.classList.remove('search-overlay--open');
+    searchResults.classList.remove('search-results--keyboard-nav');
     document.body.style.overflow = '';
     searchInput.value = '';
     searchResults.innerHTML = '';
@@ -253,6 +256,22 @@ layout: null
       });
     }
 
+    // Enable hover after mouse movement and clear any keyboard selection
+    // This gives mouse priority over keyboard navigation
+    if (searchResults) {
+      searchResults.addEventListener('mousemove', function() {
+        searchResults.classList.remove('search-results--keyboard-nav');
+        // Clear keyboard selection if any
+        if (selectedIndex >= 0) {
+          var selectedItem = searchResults.querySelector('.search-result__item--selected');
+          if (selectedItem) {
+            selectedItem.classList.remove('search-result__item--selected');
+          }
+          selectedIndex = -1;
+        }
+      });
+    }
+
     if (searchInput) {
       var debounceTimer;
       searchInput.addEventListener('input', function(e) {
@@ -268,12 +287,14 @@ layout: null
 
         if (e.key === 'ArrowDown') {
           e.preventDefault();
+          searchResults.classList.add('search-results--keyboard-nav');
           if (selectedIndex < items.length - 1) {
             selectedIndex++;
             updateSelection();
           }
         } else if (e.key === 'ArrowUp') {
           e.preventDefault();
+          searchResults.classList.add('search-results--keyboard-nav');
           if (selectedIndex > 0) {
             selectedIndex--;
             updateSelection();

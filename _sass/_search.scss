@@ -169,6 +169,11 @@
   }
 }
 
+// Disable hover highlight during keyboard navigation (prevents phantom highlight at cursor position)
+.search-results--keyboard-nav .search-result__link:hover {
+  background: transparent;
+}
+
 .search-result__content {
   flex: 1;
   min-width: 0;

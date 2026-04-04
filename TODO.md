@@ -47,9 +47,11 @@ Prioritize by moving items up/down. Mark in-progress with `[ ]` → `[~]`. Mark 
   - Add `koken/` section with recipe highlights
   - Add `zeilen/` section with sailing adventures
   - Create markdown versions for popular recipes
-- [ ] **Add Article schema** - Implement JSON-LD for blog posts
-  - Create `_includes/article-schema.html`
-  - Add to default layout for posts
+- [x] **Add Article schema** - Implement JSON-LD for blog posts
+  - Created `_includes/article-schema.html` with Article structured data
+  - Added to `_includes/seo.html` for automatic inclusion on all posts
+  - Provides: headline, description, author, dates, image, keywords
+  - Excludes recipes and projects (have their own schemas)
 - [ ] **Add "Last Updated" timestamps** - Show content freshness
   - Add to post layout
   - Style consistently with existing meta

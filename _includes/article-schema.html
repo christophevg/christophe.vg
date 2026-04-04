@@ -1,0 +1,64 @@
+{% comment %}
+  Article Schema.org JSON-LD structured data.
+
+  Automatically included for posts in technology, about, makes, fotografie, and zeilen categories.
+  Excludes recipes (which have their own schema) and music posts.
+
+  The schema provides structured data for search engines including:
+  - Article title, description, author
+  - Publication and modification dates
+  - Image, word count, reading time
+  - Tags/categories as keywords
+{% endcomment %}
+
+{% if page.layout == 'single' or page.layout == 'archive' %}
+{% unless page.recipe or page.project %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ page.url | absolute_url }}"
+  },
+  "headline": "{{ page.title | strip_html | strip_newlines | escape | truncate: 110 }}",
+  {% if page.excerpt %}
+  "description": "{{ page.excerpt | strip_html | strip_newlines | escape | truncate: 160 }}",
+  {% endif %}
+  {% if page.header.image %}
+  "image": "{{ page.header.image | absolute_url }}",
+  {% elsif page.header.teaser %}
+  "image": "{{ page.header.teaser | absolute_url }}",
+  {% endif %}
+  "author": {
+    "@type": "Person",
+    "name": "{{ site.author.name | default: site.name | escape }}",
+    "url": "{{ '/' | absolute_url }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ site.title | escape }}",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ '/assets/images/avatar.png' | absolute_url }}"
+    }
+  },
+  {% if page.date %}
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  {% endif %}
+  {% if page.modified %}
+  "dateModified": "{{ page.modified | date_to_xmlschema }}",
+  {% elsif page.date %}
+  "dateModified": "{{ page.date | date_to_xmlschema }}",
+  {% endif %}
+  {% if page.tags %}
+  "keywords": "{{ page.tags | join: ', ' | escape }}",
+  {% endif %}
+  {% if page.categories %}
+  "articleSection": "{{ page.categories | first | escape }}",
+  {% endif %}
+  "inLanguage": "{{ page.locale | default: site.locale | default: 'en' }}"
+}
+</script>
+{% endunless %}
+{% endif %}

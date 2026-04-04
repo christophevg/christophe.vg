@@ -52,9 +52,11 @@ Prioritize by moving items up/down. Mark in-progress with `[ ]` → `[~]`. Mark 
   - Added to `_includes/seo.html` for automatic inclusion on all posts
   - Provides: headline, description, author, dates, image, keywords
   - Excludes recipes and projects (have their own schemas)
-- [ ] **Add "Last Updated" timestamps** - Show content freshness
-  - Add to post layout
-  - Style consistently with existing meta
+- [x] **Add "Last Updated" timestamps** - Show content freshness
+  - Added publication date to post header (visible with title)
+  - Updated footer to show both "Published" and "Last updated" dates
+  - Last updated shows only when different from publication date
+  - Styled consistently with existing meta (calendar icon, time element)
 
 ## UX Enhancements
 

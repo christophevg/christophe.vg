@@ -25,10 +25,10 @@ layout: default
       {% unless page.header.overlay_color or page.header.overlay_image %}
         <header>
           {% if page.title %}<h1 class="page__title" itemprop="headline">{{ page.full_title | default: page.title | markdownify | remove: "<p>" | remove: "</p>" }}{% if page.tags contains 'veggie' %}<img style="vertical-align: baseline;position:relative;bottom:-5px;right:-10px;" height="50" src="/koken/images/full/veggie.png">{% endif %}</h1>{% endif %}
-          {% if page.read_time or page.prompt %}
+          {% if page.date or page.read_time or page.prompt %}
             <p class="page__meta">
-              {% if page.read_time %}<i class="fa fa-clock-o" aria-hidden="true" style="opacity: 0.7;"></i> {% include read-time.html %}{% endif %}
-              {% if page.read_time and page.prompt %} &middot; {% endif %}
+              {% if page.date %}<i class="fa fa-fw fa-calendar" aria-hidden="true" style="opacity: 0.7;"></i> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>{% if page.read_time or page.prompt %} &middot; {% endif %}{% endif %}
+              {% if page.read_time %}<i class="fa fa-clock-o" aria-hidden="true" style="opacity: 0.7;"></i> {% include read-time.html %}{% if page.prompt %} &middot; {% endif %}{% endif %}
               {% if page.prompt %}<a href="#ai-banner" class="ai-badge"><img src="/assets/images/icon-ai.svg" alt="" width="16" height="16" class="ai-badge__icon"> coauthored with a coding agent</a>{% endif %}
             </p>
           {% endif %}
@@ -70,10 +70,11 @@ layout: default
           <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
         {% endif %}
         {% include page__taxonomy.html %}
-        {% if page.modified %}
-          modified: <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Updated:" }}</strong> <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time></p>
-        {% elsif page.show_date and page.date %}
-          date: <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Updated:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time></p>
+        {% if page.date %}
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time></p>
+        {% endif %}
+        {% if page.modified and page.modified != page.date %}
+          <p class="page__date"><strong><i class="fa fa-fw fa-clock" aria-hidden="true"></i> Last updated:</strong> <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time></p>
         {% endif %}
       </footer>
 

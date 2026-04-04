@@ -12,12 +12,16 @@ Prioritize by moving items up/down. Mark in-progress with `[ ]` → `[~]`. Mark 
   - Updated `_includes/hi.html`, `_includes/timeline.html`, `_includes/page__hero.html`, `404.html`
   - **Total saved: ~2.2MB (78% reduction)**
 - [ ] **Optimize FontAwesome** - Replace 70KB font with inline SVGs for used icons only
-  - Audit which icons are actually used
-  - Create SVG subset or use inline SVGs
-  - **Expected gain: +3-5 performance points**
-- [ ] **Remove unused CSS** - Run PurgeCSS to eliminate 17KB unused styles
-  - Audit `_sass/` and `assets/css/`
-  - Generate clean CSS bundle
+  - **Analysis complete:** 25 unique icons used out of 675+ in font (4% usage)
+  - **Current:** 70KB woff2 font + ~50KB CSS = 120KB
+  - **Potential:** ~10KB with subset or inline SVGs
+  - **Requires:** Build tool (fontmin/fantasticon) or manual SVG replacement
+  - **Expected gain: +5-8 performance points**
+- [ ] **Remove unused CSS** - Eliminate unused FontAwesome icon classes
+  - **Analysis complete:** 1724 lines of FA CSS, using ~4% of icons
+  - **17KB unused CSS** primarily from FA icon classes (675+ icons, using 25)
+  - **Requires:** PurgeCSS or manual subset in build process
+  - **Alternative:** Replace FA with inline SVGs for 25 used icons
   - **Expected gain: +2-3 performance points**
 - [x] **Implement image lazy loading** - Add `loading="lazy"` to below-fold images
   - Already implemented in `_includes/image` and `_includes/images`

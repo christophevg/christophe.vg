@@ -1,0 +1,33 @@
+<button class="scroll-to-top" aria-label="Scroll to top" title="Back to top">
+  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="18 15 12 9 6 15"></polyline>
+  </svg>
+</button>
+
+<script>
+(function() {
+  var scrollBtn = document.querySelector('.scroll-to-top');
+  var scrollThreshold = 300;
+
+  function toggleButton() {
+    if (window.scrollY > scrollThreshold) {
+      scrollBtn.classList.add('visible');
+    } else {
+      scrollBtn.classList.remove('visible');
+    }
+  }
+
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+
+  scrollBtn.addEventListener('click', scrollToTop);
+  window.addEventListener('scroll', toggleButton, { passive: true });
+
+  // Initial check
+  toggleButton();
+})();
+</script>

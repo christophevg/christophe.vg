@@ -300,3 +300,56 @@ details p {
   color: #495057;
 }
 
+/* Scroll to top button */
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 44px;
+  height: 44px;
+  background: rgba(90, 98, 104, 0.9);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.scroll-to-top:hover {
+  background: rgba(90, 98, 104, 1);
+  transform: translateY(-2px);
+}
+
+.scroll-to-top:focus {
+  outline: 2px solid #0085D1;
+  outline-offset: 2px;
+}
+
+.scroll-to-top.visible {
+  display: flex;
+  opacity: 1;
+}
+
+@media (max-width: 600px) {
+  .scroll-to-top {
+    bottom: 15px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+}
+
+@media print {
+  .scroll-to-top {
+    display: none !important;
+  }
+}
+

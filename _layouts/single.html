@@ -52,10 +52,6 @@ layout: default
       <section class="page__content" itemprop="text">
         {{ content }}
 
-        <p align="right">
-          <a href="#" style="text-decoration:none">👆</a>
-        </p>
-
         {% if page.pagination_category %}
         {% include category_pagination.html cat=page.pagination_category %}
         {% endif %}

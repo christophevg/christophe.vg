@@ -61,7 +61,12 @@ Prioritize by moving items up/down. Mark in-progress with `[ ]` → `[~]`. Mark 
 
 ## UX Enhancements
 
-- [ ] **Add scroll-to-top button** - Improve navigation on long pages
+- [x] **Add scroll-to-top button** - Improve navigation on long pages
+  - Created `_includes/scroll-to-top.html` with button and JavaScript
+  - Added CSS styles in `assets/css/custom.css`
+  - Button appears after scrolling 300px, smooth scrolls to top
+  - Accessible: aria-label, keyboard focusable, print-hidden
+  - Mobile-friendly: smaller size on mobile screens
 - [ ] **Implement LQIP** - Low-quality image placeholders for faster perceived load
   - Add tiny blurred thumbnails inline
   - Fade in full images when loaded

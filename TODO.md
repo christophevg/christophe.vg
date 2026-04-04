@@ -2,6 +2,58 @@
 
 Prioritize by moving items up/down. Mark in-progress with `[ ]` → `[~]`. Mark completed with `[x]`.
 
+## Performance Optimization (Lighthouse 84 → 95+)
+
+- [x] **Convert images to WebP** - Replace PNG/JPG with WebP format
+  - `nametag.png` (268KB → 44KB) - **84% reduction**
+  - `header/*.jpeg` (351KB → 199KB) - **43% reduction**
+  - `about/images/banner/` (2.2MB → 379KB) - **83% reduction**
+  - Added `<picture>` elements with WebP primary and fallbacks
+  - Updated `_includes/hi.html`, `_includes/timeline.html`, `_includes/page__hero.html`, `404.html`
+  - **Total saved: ~2.2MB (78% reduction)**
+- [ ] **Optimize FontAwesome** - Replace 70KB font with inline SVGs for used icons only
+  - Audit which icons are actually used
+  - Create SVG subset or use inline SVGs
+  - **Expected gain: +3-5 performance points**
+- [ ] **Remove unused CSS** - Run PurgeCSS to eliminate 17KB unused styles
+  - Audit `_sass/` and `assets/css/`
+  - Generate clean CSS bundle
+  - **Expected gain: +2-3 performance points**
+- [ ] **Implement image lazy loading** - Add `loading="lazy"` to below-fold images
+  - Update `_includes/image.html` to conditionally add lazy loading
+  - Exclude hero/header images
+  - **Expected gain: +2-3 performance points, improves LCP**
+
+## Accessibility (93 → 100)
+
+- [ ] **Fix contrast ratio** - Darken `$primary-color` and `$text-color` in `_sass/_variables.scss`
+  - Change `#7a8288` → `#5a6268` or darker
+  - Verify WCAG AA compliance (4.5:1 ratio)
+  - Test across all pages
+
+## Content & Marketing
+
+- [ ] **Expand llms.txt coverage** - Add Dutch content sections
+  - Add `koken/` section with recipe highlights
+  - Add `zeilen/` section with sailing adventures
+  - Create markdown versions for popular recipes
+- [ ] **Add Article schema** - Implement JSON-LD for blog posts
+  - Create `_includes/article-schema.html`
+  - Add to default layout for posts
+- [ ] **Add "Last Updated" timestamps** - Show content freshness
+  - Add to post layout
+  - Style consistently with existing meta
+
+## UX Enhancements
+
+- [ ] **Add scroll-to-top button** - Improve navigation on long pages
+- [ ] **Implement LQIP** - Low-quality image placeholders for faster perceived load
+  - Add tiny blurred thumbnails inline
+  - Fade in full images when loaded
+- [ ] **Add sticky navigation** - Keep nav visible while scrolling
+  - CSS `position: sticky`
+  - Mobile-friendly implementation
+
 ## Content & UX
 
 - [x] **Tag filtering** - Add clickable tag cloud and enhance `_pages/tags-archive.md` with filterable tag pages

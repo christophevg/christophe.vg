@@ -1,7 +1,10 @@
 {% if page.header.image contains "://" %}
   {% capture img_path %}{{ page.header.image }}{% endcapture %}
+  {% assign is_external = true %}
 {% else %}
   {% capture img_path %}{{ page.header.image | absolute_url }}{% endcapture %}
+  {% assign is_external = false %}
+  {% assign img_webp = page.header.image | replace: '.jpeg', '.webp' | replace: '.jpg', '.webp' | replace: '.png', '.webp' | absolute_url %}
 {% endif %}
 
 {% if page.header.cta_url contains "://" %}
@@ -45,7 +48,14 @@
       {% endif %}
     </div>
   {% else %}
-    <img src="{{ img_path }}" alt="{{ page.title }}" class="page__hero-image">
+    {% if is_external %}
+      <img src="{{ img_path }}" alt="{{ page.title }}" class="page__hero-image">
+    {% else %}
+      <picture>
+        <source srcset="{{ img_webp }}" type="image/webp">
+        <img src="{{ img_path }}" alt="{{ page.title }}" class="page__hero-image">
+      </picture>
+    {% endif %}
   {% endif %}
   {% if page.header.caption %}
     <span class="page__hero-caption">{{ page.header.caption | markdownify | remove: "<p>" | remove: "</p>" }}</span>

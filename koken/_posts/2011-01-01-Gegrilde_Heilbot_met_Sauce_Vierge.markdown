@@ -1,8 +1,5 @@
 ---
 title: Gegrilde Heilbot met Sauce Vierge
-header:
-  teaser: /koken/images/thumb/gegrilde-heilbot-met-sauce-vierge.png
-  image: /koken/images/header/gegrilde-heilbot-met-sauce-vierge.png
 recipe:
   intro: "Een verfijnd gerecht met een heerlijke, frisse saus die perfect past bij de gegrilde vis."
   sections:

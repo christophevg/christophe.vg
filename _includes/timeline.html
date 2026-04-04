@@ -11,12 +11,19 @@
       <div class="timeline-panel">
 
         {% if position.image %}
+        {% assign img_src = position.image.src %}
+        {% assign img_ext = img_src | split: '.' | last %}
+        {% assign img_webp = img_src | remove: img_ext | append: 'webp' | remove: '.jpeg' | remove: '.jpg' | remove: '.png' %}
+        {% assign img_webp = img_src | replace: '.jpeg', '.webp' | replace: '.jpg', '.webp' | replace: '.png', '.webp' %}
         <div class="timeline-heading">
           {% if position.project %}<div class="corner-ribbon top-right sticky blue">Project</div>{% endif %}
-          <img class="img-responsive"
-               src="{{ position.image.src }}"
-               alt="{{ position.image.alt }}"
-               loading="lazy">
+          <picture>
+            <source srcset="{{ img_webp }}" type="image/webp">
+            <img class="img-responsive"
+                 src="{{ img_src }}"
+                 alt="{{ position.image.alt }}"
+                 loading="lazy">
+          </picture>
         </div>
         {% endif %}
 

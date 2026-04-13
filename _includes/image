@@ -8,7 +8,7 @@
 {% assign human = include.name | replace: "-", " " | capitalize %}
 {% assign thumb_url = include.absolute | append: "images/thumb" | append: subfolder | append: "/" | append: include.name | append: "." | append: kind %}
 {% assign full_url = include.absolute | append: "images/full" | append: subfolder | append: "/" | append: include.name | append: "." | append: kind %}
-<div style="text-align:center;margin-bottom:{{ include.bottom | default "5px"}};">
+<div class="lqip-wrapper" style="text-align:center;margin-bottom:{{ include.bottom | default "5px"}};">
   <a href="{{ full_url }}" title="{{ include.title | default: human }}">
     <img src="{{ thumb_url }}"
          srcset="{{ thumb_url }} 800w, {{ full_url }} 1280w"

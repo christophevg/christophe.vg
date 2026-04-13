@@ -17,13 +17,15 @@
         {% assign img_webp = img_src | replace: '.jpeg', '.webp' | replace: '.jpg', '.webp' | replace: '.png', '.webp' %}
         <div class="timeline-heading">
           {% if position.project %}<div class="corner-ribbon top-right sticky blue">Project</div>{% endif %}
-          <picture>
-            <source srcset="{{ img_webp }}" type="image/webp">
-            <img class="img-responsive"
-                 src="{{ img_src }}"
-                 alt="{{ position.image.alt }}"
-                 loading="lazy">
-          </picture>
+          <div class="lqip-wrapper">
+            <picture>
+              <source srcset="{{ img_webp }}" type="image/webp">
+              <img class="img-responsive"
+                   src="{{ img_src }}"
+                   alt="{{ position.image.alt }}"
+                   loading="lazy">
+            </picture>
+          </div>
         </div>
         {% endif %}
 

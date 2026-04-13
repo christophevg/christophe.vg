@@ -1,0 +1,44 @@
+<script>
+(function() {
+  // Add loaded class to images when they finish loading
+  function markLoaded(img) {
+    img.classList.add('loaded');
+    var wrapper = img.closest('.lqip-wrapper');
+    if (wrapper) {
+      wrapper.classList.add('is-loaded');
+    }
+  }
+
+  // Check all LQIP images
+  function initLQIP() {
+    var wrappers = document.querySelectorAll('.lqip-wrapper');
+    wrappers.forEach(function(wrapper) {
+      var img = wrapper.querySelector('img');
+      if (img) {
+        if (img.complete && img.naturalHeight !== 0) {
+          // Image already loaded (from cache or very fast)
+          markLoaded(img);
+        } else {
+          img.addEventListener('load', function() {
+            markLoaded(img);
+          });
+          img.addEventListener('error', function() {
+            // Still mark as loaded on error to remove shimmer
+            markLoaded(img);
+          });
+        }
+      }
+    });
+  }
+
+  // Run on DOM ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initLQIP);
+  } else {
+    initLQIP();
+  }
+
+  // Re-run for dynamically loaded content (e.g., search results)
+  document.addEventListener('content-loaded', initLQIP);
+})();
+</script>

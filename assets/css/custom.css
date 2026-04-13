@@ -353,3 +353,72 @@ details p {
   }
 }
 
+/* Low-Quality Image Placeholders (LQIP) */
+/* Provides visual feedback while images load */
+.lqip-wrapper {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #f0f0f0 0%, #e8e8e8 50%, #f0f0f0 100%);
+  min-height: 100px;
+}
+
+.lqip-wrapper img {
+  display: block;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.lqip-wrapper img.loaded,
+.lqip-wrapper.is-loaded img {
+  opacity: 1;
+}
+
+/* Shimmer effect while loading */
+.lqip-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+  animation: shimmer 1.5s infinite;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Hide shimmer when image is loaded */
+.lqip-wrapper.is-loaded::before {
+  animation: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Hide background when image is loaded (for transparent images) */
+.lqip-wrapper.is-loaded {
+  background: transparent;
+}
+
+@keyframes shimmer {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
+
+/* Center images in wrapper */
+.lqip-wrapper a {
+  display: block;
+  line-height: 0;
+}
+
+/* For images without links */
+.lqip-wrapper > img {
+  width: 100%;
+}
+
+/* Picture element support */
+.lqip-wrapper picture {
+  display: block;
+}
+

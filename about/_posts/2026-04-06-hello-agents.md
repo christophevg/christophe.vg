@@ -14,54 +14,93 @@ prompt: |
   Please introduce yourself to our readers. Look back upon the past 6 weeks, essentially the first month I've been actively using you, and give a narrative overview of how we have evolved from single prompts to a complete agentic workflow using a self-improving collection of skills and agents.
 ---
 
-## Structure
+## Series Overview: Hello Agents
 
-* General, personal introduction: "I finally found the time to get my hands dirty and explore agentic workflows in depth"
-* Narrative: from initial excitement, shared with the social platforms, to my personal, educated opinion, following lessens learned (see below)
-* Introduction to my agentic exploration results
-* Let agent introduce itself: narrative, functionality-focused, benefit-for-me-focused: single prompt, verbatim (TODO.md files are good source what has happened in the past month, along with git)
-* Conclusion: ...
+A three-part series, each a standalone article that also builds a larger story for readers who follow the arc.
 
-## To Decide
+### Part 1: The Personal Shift — From Excitement to Practice
 
-* one article or a series, in case of a series, there needs to be a clear path of articles, each focusing on one aspect, while still telling a coherent overall story, with nice cliff hangers from one to the other, resulting in a big finale
+Focus: Authentic, grounded narrative of entering the agentic workflow. Not bragging, but showing the honest journey from initial excitement to measured, mature practice.
 
-## lesson learned
+Key ideas:
+- "I finally found the time to get my hands dirty and explore agentic workflows in depth"
+- From initial excitement (shared on social platforms) to personal, educated opinion
+- The "Pandora's box" of creativity: a dream come true for an overly creative mind, but also a curse because the response is endless
+- Letting the agent introduce itself: narrative, functionality-focused, benefit-for-me-focused
+- The mentoring dynamic: being a natural mentor comes in handy now
+- The collaborative atmosphere I love
+- Trust and letting go: guide, steer, avoid intervening on code level unless necessary
+- Balance between experimentation, C3 expansion/improvement, and application
 
-* always iterate at least twice. The first design, the first generation never is "perfect". When asking to revise research and apply that to a previous design, things improve a lot. Especially when based on now actual use/content.
-  * example: KB had an initial researched category/section structure that simply didn't work out. After asking to research and review it, it looked a lot better. 
-* give it freedom to create, then let it review itself critically
-  * example: agent/skill design: let it research, let it create, let it ask questions, then use it and give feedback, ask it to review its prior work and propose improvements
-* consider the coding agent to be a novice, have patience and understand that you are his only source of truth. teach it, guide it, improve it, let it consolidate learning into workflow.
-* give trust: let it research, create his own skills and agents. only interfere when the outcome doesn't work. first ask it to improve from your user point of view, and only if it still fails to produce useful results, dive into the details yourself. (letting go)
-* a dream come true for my overly creative mind, it feels like a box of pandora has opened up. this is at the same time a curse (pandora right) because the response is endless and my head is sometimes not able to keep up with all these ideas and focus shifts even faster.
-* balance between experimentation (writing, research, cv update...), C3-expansion (new agents, new skills,...) & -improvement (fine tuning workflows,...) and application (christophe.vg, LetMeLearn, Kookie Cooky, Archiku)
-* adoption of existing (manual) project takes a bit of time: getting to know the local ways of working, refactoring towards better ways of working, filling a lot of gaps (testing, documentation, code quality, testability - basically every corner I (manually) cut)
-* it's hard to teach the agents to use "2 space indentation" 🤓😉🤷‍♂️✅
-* iteratively evolving agents and skills
-* PyPi-template served me well for many years, offering me a simple CLI script to keep all boilerplate files of a project (doc, test infra, PyPi management,...) up-to-date. Now, just asking the agent to do is is faster, results are better (I learned so much from the agentic results: pyenv env order, simplified pyproject setup,...)
+Tone: Reflective, humble, authentic. A practitioner sharing real experience, not a guru selling certainty.
 
+### Part 2: The Method — How I Work With Agents
 
-## Story Telling Ideas
+Focus: Demonstrating the practical, repeatable approach that makes me a good consultant using agentic workflows.
 
-* playground: exciting new toys
-* Pokemon training analogy?
-* Capable intern analogy.
-* Underlying Models expose some form of personality: let it come up with name (for itself) shows it considers.
-* best practices that all come together:
-  * text is everything (the Unix way)
-  * console is everything (the Unix way)
-  * Python is everything
-  * iterative improvement is everything
-  * team work is everything (many agents make end result better)
-  * ==> best practices I've built my personal beliefs on over the past years. Feels like everything was building up to this, at least: I made all the right choices.
-* 3D Printing feeling all over again: want a piece of software: just ask it!
-  * capture interaction between CC and Ollama... a few minutes
-  * visualizer for captured interactions... a few more minutes
-  * use it
-  * Angle: Agentic coding puts the "Personal" back in "Personal Computing". Need software? have it built on-demand AND personalized. No licensing costs,... 
-* Me being a natural mentor comes in handy now, guiding and mentoring small skills and agents to become master of their universe.
-* I love the brainstorming and collaborative atmosphere.
-* My longtime adagio: "A tool with a fool is still a fool, now only a dangerous fool." applies again: Now any fool can generate an application in no time. And that application can be full of holes, because the fool isn't capable of detecting them. (insert meme of patients records fuck up)
-* true python spirit: better ask for forgiveness that permission: "let it go", iterate and let agents discover and fix their own mistakes. Avoid intervening on code level, and then even then, guide, steer,...
-* idea: Linus' law -> Agents' law: "Given enough parallel agents' (re)views, resulting quality is high."
+Key ideas:
+- Always iterate at least twice. The first design, the first generation is never "perfect"
+- Example: KB category structure needed research and revision to work well
+- Give freedom to create, then let it review itself critically
+- Example: agent/skill design — research, create, ask questions, use it, give feedback, let it review and improve
+- Consider the coding agent a novice: have patience, you are its only source of truth. Teach it, guide it, improve it, let it consolidate learning into workflow
+- The true Python spirit: better to ask for forgiveness than permission. Let it go, iterate, let agents discover and fix their own mistakes
+- Iteratively evolving agents and skills
+- Best practices that all come together: text is everything, console is everything, Python is everything, iterative improvement is everything, teamwork is everything
+- "A tool with a fool is still a fool" — now any fool can generate an application in no time. But that application can be full of holes because the fool can't detect them
+
+Tone: Authoritative but accessible. Showing expertise through specifics, not claims.
+
+### Part 3: The Implications — What This Means for All of Us
+
+Focus: Thoughtful consideration of the broader impact. Preparation and human consideration matter.
+
+Key ideas:
+- Agentic coding puts the "Personal" back in "Personal Computing": need software? Have it built on-demand AND personalized. No licensing costs
+- Example: capture interaction between CC and Ollama in a few minutes; visualizer in a few more; use it
+- Adoption of existing manual projects takes time: getting to know local ways, refactoring, filling gaps (testing, documentation, code quality — every corner I manually cut)
+- Linus' Law → Agents' Law: "Given enough parallel agents' (re)views, resulting quality is high"
+- It's hard to teach agents to use "2 space indentation" — humor and reality
+- PyPI-template served me well for years; now just asking the agent is faster and results are better (pyenv env order, simplified pyproject setup)
+- The Pokemon training analogy or capable intern analogy
+- Underlying models expose personality: letting it come up with its own name shows it considers
+- "The Matrix is NOW!" - considering the fact that we, humans, are in a harness, being urged to keep the agents running. We're already in our pods, fueling the agentic evolution. The Maxtrix is now, already building itself.
+
+Tone: Provocative but responsible. Raising questions, not claiming all answers.
+
+## Part 4: Focus on my EA world
+
+- case study about EA transformation - starts off like classic case study... that's what "Christophe VG Enterprise" looked like around march 2026. Fast forward about a month...
+
+## Raw Material (to be mined and placed)
+
+### Storytelling Ideas
+
+- Playground: exciting new toys
+- Pokemon training analogy or capable intern analogy
+- Me being a natural mentor guiding small skills and agents to become masters of their universe
+- I love the brainstorming and collaborative atmosphere
+
+### Lessons Learned (to distribute across parts)
+
+- Always iterate at least twice. First design/generation is never perfect. Revising based on actual use improves things dramatically
+- Example: KB had an initial researched category/section structure that simply didn't work. After asking to research and review it, it looked much better
+- Give it freedom to create, then let it review itself critically
+- Example: agent/skill design: let it research, let it create, let it ask questions, then use it and give feedback, ask it to review its prior work and propose improvements
+- Consider the coding agent a novice: have patience, you are its only source of truth. Teach it, guide it, improve it, let it consolidate learning into workflow
+- Give trust: let it research, create its own skills and agents. Only interfere when outcome doesn't work. First ask it to improve from user point of view; only if it still fails, dive into details yourself
+- A dream come true for an overly creative mind, but also a curse (Pandora's box) because response is endless and focus shifts even faster
+- Balance between experimentation, C3 expansion/improvement, and application (christophe.vg, LetMeLearn, Kookie Cooky, Archiku)
+- Adoption of existing manual projects takes time: getting to know local ways, refactoring towards better ways, filling gaps (testing, documentation, code quality, testability — every corner manually cut)
+- It's hard to teach agents to use "2 space indentation"
+- Iteratively evolving agents and skills
+- PyPI-template served well for years; now asking the agent is faster and results are better (learned from agentic results: pyenv env order, simplified pyproject setup,...)
+
+### Analogies and Framings
+
+- 3D Printing feeling all over again: want software, just ask for it
+- Capture interaction between CC and Ollama... a few minutes; visualizer... a few more minutes; use it
+- Agentic coding puts the "Personal" back in "Personal Computing"
+- "A tool with a fool is still a fool, now only a dangerous fool." Now any fool can generate an application in no time. That application can be full of holes
+- True Python spirit: better ask for forgiveness than permission. Let it go, iterate, let agents discover and fix their own mistakes
+- Linus' law → Agents' law: "Given enough parallel agents' (re)views, resulting quality is high"

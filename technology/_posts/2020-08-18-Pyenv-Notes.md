@@ -5,6 +5,14 @@ header:
   image: /technology/images/header/pyenv.png
 ---
 
+<div class="notice warning">
+<b>📦 Migration Notice: Moving to uv</b>
+
+<p>
+This article documents historical usage of pyenv. I have since migrated to <a href="https://docs.astral.sh/uv/">uv</a> for Python version and dependency management. uv is faster, more modern, and better integrated with contemporary Python tooling. For new projects, I recommend using uv instead of pyenv. This page remains for reference purposes.
+</p>
+</div>
+
 Up to now, I haven been using virtualenv for my Python development. Recently, after having run into issues now and then - which were more related to the installation of Python on my MacBook, I started looking for alternatives. Pyenv seems a nice candidate, because it focusses more on separate Python installations.
 
 Good habits die hard, so it will take some time to convert my mind and fingers to use pyenv. These notes will help ;-)
@@ -75,10 +83,10 @@ $ pyenv version
 
 $ pyenv virtualenv test3.11.12
 Looking in links: /var/folders/nq/xvzwtwsj25727ybthkp1wmhr0000gn/T/tmpji3hjgb_
-Requirement already satisfied: setuptools in /Users/xtof/.pyenv/versions/3.11.12/envs/test3.11.12/lib/python3.11/site-packages (56.0.0)
+Requirement already satisfied: setuptools in /Users/xtof/versions/3.11.12/envs/test3.11.12/lib/python3.11/site-packages (56.0.0)
 Requirement already satisfied: pip in /Users/xtof/.pyenv/versions/3.11.12/envs/test3.11.12/lib/python3.11/site-packages (21.1.1)
 
-$ pyenv versions             
+$ pyenv versions
   system
 * 3.11.12 (set by /Users/xtof/.pyenv/version)
   3.11.12/envs/test3.11.12
@@ -103,7 +111,7 @@ $ pyenv version
 3.11.12 (set by /Users/xtof/.pyenv/version)
 $ cd hello_world
 $ pyenv version
-hello_world (set by /Users/xtof/Workspace/hello_world/.python-version)
+hello_world (set by /Users/xtof/.pyenv/version)
 ```
 
 Makefile support for the virtual environment, creating it if needed:

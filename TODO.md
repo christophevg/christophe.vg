@@ -141,11 +141,10 @@ Prioritize by moving items up/down. Mark in-progress with `[ ]` → `[~]`. Mark 
 
 ## More To Do
 
-- [ ] **Update pyenv page** - Add disclaimer about migrating to uv
-  - Add note that pyenv is being phased out in favor of uv
-  - Link to new uv page (when created)
-  - Keep existing content for historical reference
-  - Acceptance: Page updated with migration notice
+- [x] **Update pyenv page** - Add disclaimer about migrating to uv
+  - Added migration notice using WIP-style notice box
+  - Links to uv documentation
+  - Original content preserved for reference
 
 - [ ] **Create uv page** - Document uv-based Python workflow
   - Cover installation, dependency management, virtual environments

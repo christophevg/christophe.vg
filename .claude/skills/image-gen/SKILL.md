@@ -88,8 +88,20 @@ Create a descriptive prompt for image generation:
 **Prompt Guidelines:**
 - Keep under 100 words
 - Be specific but not restrictive
-- Avoid text in images (model struggles with text)
+- **NEVER request text in images** - the model cannot render text well
 - Include style keywords for consistency
+
+**CRITICAL: No Text in Prompts**
+
+The image generation model struggles significantly with text rendering. Never include text requests in prompts:
+
+| ❌ Wrong | ✅ Right |
+|---------|---------|
+| "Logo with text saying 'Python'" | "Abstract Python logo design, no text" |
+| "Sign that says 'Hello Agents'" | "Abstract agent network visualization" |
+| "Title text at top" | "Clean composition, no text" |
+
+If the user mentions needing text, explain the limitation and suggest adding text via CSS/HTML instead.
 
 ### Step 3: Propose Prompt to User
 
@@ -116,35 +128,31 @@ ollama run x/z-image-turbo --width 1200 --height 900 "your prompt"
 
 **Note:** The image will be saved to the current directory or a temp location. Capture this output.
 
-### Step 5: Smart Crop Header
+### Step 5: Present Crop Options (MANDATORY)
 
-For the 1024x200 header, implement smart cropping:
+**CRITICAL:** You MUST present crop options to the user BEFORE finalizing any images. Never skip this step.
 
-1. **Analyze the image** using ImageMagick to detect:
-   - Areas of high contrast (edges)
-   - Color distribution
-   - Potential faces/subjects (if detectable)
+1. **Create preview crops** at multiple Y positions:
+   ```bash
+   # For a 1200x900 image, create crops at top/middle/bottom
+   magick input.png -crop 1024x200+88+0 category/images/header/filename-top.png
+   magick input.png -crop 1024x200+88+350 category/images/header/filename-middle.png
+   magick input.png -crop 1024x200+88+700 category/images/header/filename-bottom.png
+   ```
 
-2. **Score horizontal slices** at different Y positions:
-   - Each slice is 1024x200
-   - Score based on content density and visual interest
+2. **Display previews** using the Read tool to show images visually
 
-3. **Present options to user**:
-   - Show recommended crop position (top/middle/bottom percentage)
-   - Allow user to specify exact position
-   - Present a preview if possible
+3. **Ask user to choose** using AskUserQuestion:
+   ```
+   Which header crop position looks best?
+   - Top crop
+   - Middle crop
+   - Bottom crop
+   ```
 
-**ImageMagick crop commands:**
-```bash
-# Crop from top
-convert input.png -crop 1024x200+0+0 output.png
+4. **Only after user selection**, proceed to Step 6
 
-# Crop from middle
-convert input.png -crop 1024x200+0+350 output.png
-
-# Crop from specific Y position
-convert input.png -crop 1024x200+0+$Y_OFFSET output.png
-```
+**Why this matters:** The "smart" crop algorithm cannot reliably determine the most visually interesting portion. User judgment is essential for quality results.
 
 ### Step 6: Process All Sizes
 
@@ -304,6 +312,16 @@ Assistant: Updated front matter in technology/_posts/2026-04-30-hello-agents.md
 | Category folder missing | Create with `mkdir -p {category}/images/{full,header,thumb}` |
 | Image too dark/bright | Add lighting keywords to prompt |
 | Unwanted text in image | Add "no text" to prompt (may help) |
+
+## Common Mistakes to Avoid
+
+| Mistake | Why it's wrong | Correct approach |
+|---------|----------------|------------------|
+| Skipping crop selection | "Smart" algorithms can't judge visual appeal | Always present top/middle/bottom options to user |
+| Including text in prompt | Model cannot render text well | Use concrete visual concepts, no text |
+| Too abstract prompts | Vague concepts become unrecognizable | Use specific, concrete subjects |
+| Not displaying previews | User can't make informed choice | Use Read tool to show images visually |
+| Finalizing without approval | May need regeneration | Wait for explicit user confirmation |
 
 ## Dependencies
 

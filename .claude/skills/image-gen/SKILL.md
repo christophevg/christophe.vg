@@ -80,28 +80,39 @@ Create a descriptive prompt for image generation:
 [Subject] + [Style/Mood] + [Composition] + [Technical]
 ```
 
-**Example prompts:**
-- "Abstract representation of AI agents collaborating, digital art style, vibrant colors, clean modern composition, minimalist"
-- "Sailing boat at sunset, peaceful seascape, warm golden hour lighting, cinematic wide shot, photorealistic"
-- "Kitchen scene with fresh ingredients, cooking preparation, natural lighting from window, food photography style"
+**Example prompts (from Ollama documentation):**
+
+*Simple prompts:*
+- "A chef in a busy kitchen, steam rising from pots"
+- "Mountain lake at sunrise, pine trees, morning mist"
+- "White sneakers on concrete, overhead shot"
+
+*Detailed prompts:*
+- "Young woman in a cozy coffee shop, natural window lighting, wearing a cream knit sweater, holding a ceramic mug, soft bokeh background with warm ambient lights, candid moment, shot on 35mm film"
+- "Surreal double exposure portrait, woman's silhouette filled with blooming cherry blossom trees, soft pink and white petals floating, dreamy ethereal atmosphere, fine art photography"
+
+**Best Practices (from Ollama):**
+- **Use detailed, descriptive prompts** - the model excels with rich descriptions
+- 1024x1024 resolution is recommended
+- Model works well for photorealistic styles out of the box
+- For text in images, explicitly specify the text content in quotes and describe style/position
+
+**Text Rendering:**
+
+z-image-turbo supports bilingual text rendering (English and Chinese). To include text:
+
+| ✅ Correct | ❌ Wrong |
+|-----------|---------|
+| `A storefront sign that says "BAKERY" in gold letters` | `sign with bakery text` |
+| `The characters "山高水长" written in elegant black ink on rice paper` | `chinese text on paper` |
+
+**Key:** Put text content in **quotes** and describe the **style/position** explicitly.
 
 **Prompt Guidelines:**
 - Keep under 100 words
 - Be specific but not restrictive
-- **NEVER request text in images** - the model cannot render text well
+- Use concrete, specific subjects (avoid overly abstract concepts)
 - Include style keywords for consistency
-
-**CRITICAL: No Text in Prompts**
-
-The image generation model struggles significantly with text rendering. Never include text requests in prompts:
-
-| ❌ Wrong | ✅ Right |
-|---------|---------|
-| "Logo with text saying 'Python'" | "Abstract Python logo design, no text" |
-| "Sign that says 'Hello Agents'" | "Abstract agent network visualization" |
-| "Title text at top" | "Clean composition, no text" |
-
-If the user mentions needing text, explain the limitation and suggest adding text via CSS/HTML instead.
 
 ### Step 3: Propose Prompt to User
 
@@ -318,10 +329,31 @@ Assistant: Updated front matter in technology/_posts/2026-04-30-hello-agents.md
 | Mistake | Why it's wrong | Correct approach |
 |---------|----------------|------------------|
 | Skipping crop selection | "Smart" algorithms can't judge visual appeal | Always present top/middle/bottom options to user |
-| Including text in prompt | Model cannot render text well | Use concrete visual concepts, no text |
 | Too abstract prompts | Vague concepts become unrecognizable | Use specific, concrete subjects |
+| Vague text requests | Model needs explicit format | Put text in quotes, describe style/position |
 | Not displaying previews | User can't make informed choice | Use Read tool to show images visually |
 | Finalizing without approval | May need regeneration | Wait for explicit user confirmation |
+| Too few details | Model excels with rich descriptions | Include lighting, mood, style, composition |
+
+## Model Information
+
+**z-image-turbo** (default model)
+- 6 billion parameter text-to-image model from Alibaba's Tongyi Lab
+- **Photorealistic output** - strong at realistic photographs, portraits, scenes
+- **Bilingual text rendering** - English and Chinese text
+- **Apache 2.0 license** - open weights for commercial use
+- Size: 13GB (fp8), 33GB (bf16)
+
+**Alternative: FLUX.2 Klein**
+- Black Forest Labs' model
+- Handles readable text well for UI mockups and typography
+- Size: 4B (Apache 2.0) or 9B (non-commercial)
+
+## Sources
+
+- [Ollama Image Generation Blog](https://ollama.com/blog/image-generation)
+- [z-image-turbo Model Page](https://ollama.com/x/z-image-turbo)
+- [FLUX.2 Klein Model Page](https://ollama.com/x/flux2-klein)
 
 ## Dependencies
 

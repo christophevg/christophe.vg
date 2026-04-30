@@ -141,6 +141,23 @@ Prioritize by moving items up/down. Mark in-progress with `[ ]` → `[~]`. Mark 
 
 ## More To Do
 
+- [ ] **Update pyenv page** - Add disclaimer about migrating to uv
+  - Add note that pyenv is being phased out in favor of uv
+  - Link to new uv page (when created)
+  - Keep existing content for historical reference
+  - Acceptance: Page updated with migration notice
+
+- [ ] **Create uv page** - Document uv-based Python workflow
+  - Cover installation, dependency management, virtual environments
+  - Document project setup workflow
+  - Reference python-project skill as authoritative source
+  - Acceptance: New page created under about/ or technology/
+
+- [ ] **Update "How I use agents" page** - Add local image generation
+  - Document use of `ollama run x/z-image-turbo` for image generation
+  - Explain local-first approach to AI image creation
+  - Acceptance: Page updated with image generation workflow
+
 - [x] **Remove RSS support** - It's simply no longer "a thing".
 - [x] **Attribution** - Add "coding agent" attribution in footer.
 - [x] **Size of instructions above timeline slider** - The text size has increased with a previous change. This needs to be fixed.

@@ -1,3 +1,5 @@
+ARGS += --plugin-dir ../c3
+
 -include ~/.claude/Makefile
 
 site: update serve

@@ -146,11 +146,11 @@ Prioritize by moving items up/down. Mark in-progress with `[ ]` → `[~]`. Mark 
   - Links to uv documentation
   - Original content preserved for reference
 
-- [ ] **Create uv page** - Document uv-based Python workflow
-  - Cover installation, dependency management, virtual environments
-  - Document project setup workflow
-  - Reference python-project skill as authoritative source
-  - Acceptance: New page created under about/ or technology/
+- [x] **Create uv page** - Document uv-based Python workflow
+  - Created technology/_posts/2026-04-30-uv-Python-Workflow.md
+  - Covers installation, project setup, dependency management, Python versions
+  - References python-project skill as authoritative source
+  - Includes AI-generated header and thumbnail images with pipe theme
 
 - [ ] **Update "How I use agents" page** - Add local image generation
   - Document use of `ollama run x/z-image-turbo` for image generation

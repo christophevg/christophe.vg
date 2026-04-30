@@ -8,8 +8,8 @@ tags:
   - ai
   - personal
 header:
-  teaser: /assets/images/placeholders/thumb-about.png
-  image: /assets/images/placeholders/header-about.png
+  teaser: /about/images/thumb/hello-agents.png
+  image: /about/images/header/hello-agents.png
 prompt: |
   Please introduce yourself to our readers. Look back upon the past 6 weeks, essentially the first month I've been actively using you, and give a narrative overview of how we have evolved from single prompts to a complete agentic workflow using a self-improving collection of skills and agents.
 ---

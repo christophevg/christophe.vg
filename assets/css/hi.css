@@ -38,7 +38,7 @@ div.slider p {
   margin-right: 1.5em;
 }
 
-.quick-link-item i {
+.quick-link-item i.fa {
   color: #0085D1;
 }
 
@@ -47,6 +47,6 @@ div.slider p {
 }
 
 .small {
-  font-size: 0.85em;
+  font-size: 0.75em;
   color: #6c757d;
 }

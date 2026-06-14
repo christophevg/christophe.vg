@@ -111,7 +111,7 @@ div.thumbs {
   div.thumbs.many {
     float: none;
     margin-left: 0px;
-  }  
+  }
 }
 
 img.thumb {
@@ -422,3 +422,18 @@ details p {
   display: block;
 }
 
+/* AI non-ribbon ;-) */
+
+.ribbon-ai {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  width:33px;
+  height: 33px;
+  text-align: center;
+  background-color: rgba(125,125,125,0.25);
+  border-radius: 50%;
+  -moz-box-shadow:    1px 1px 1px 1px rgba(50,50,50,.25);
+  -webkit-box-shadow: 1px 1px 1px 1px rgba(50,50,50,.25);
+  box-shadow:         1px 1px 1px 1px rgba(50,50,50,.25);
+}

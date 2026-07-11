@@ -124,7 +124,7 @@ exclude:
   - assets/js/plugins
   - assets/js/custom
   - assets/js/_main.js
-  - assets/js/vendor
+  - assets/js/vendor/jquery
   - Capfile
   - CHANGELOG
   - config

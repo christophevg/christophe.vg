@@ -69,8 +69,6 @@ Over the past three months I've be discovering the agentic ecosystem by 1) readi
 
 ## More Raw material
 
-Another anecdote: after a long day of several parallel agentic sessions, I stumbled upon a bug and was really tired, ready to call it a day. I had a rough idea about the problem and how to solve it, but didn't feel up for it anymore. To preprare for the next day, I asked an agent to look into it, in detail. It came up with a well founded analysis and solution in a matter of minutes. My rough idea was correct, yet, the quality of the solution, I would not have come up with in any reasonable time. It showed how agents aren't tired after a long day of sessions and still produce their best results. At that point, this lifted up my spirit again, and we finished the fix, released again and enabled the project that bumped into the bug and was blocked by it to continue. That same pattern happened once more later that night.
-
 It's not always fun and games. Agents are really "very capable interns", which also means they have an enourmous drive to mover forward and please by doing a lot. This also includes doing things that shouldn't be done. After a few refactorings I had the impression a configuration features was lost in refactoring. So I asked to add it again. The final report after the fix now told me that there was a configuration priority hierarchy, with the new options overriding existing ones. The options were there. I missed them and now we had redundant options. Agents don't (easily) question their instructions. And always look for a probably reason to follow them. Now let's get things clear: the models that drive agents just produce the most probably next word/token. There is no ghost in the shell. Still, interacting with them really feels like chatting with a very cool and capable co-worker. The apparent joy when finding a nice solution together is a really nice experience versus the lonely experience of traditional solo development. And this goes both way, because I really feel the emotional downer when an agent starts to fail and spins out of control. I really feel the emotional response to agentic behaviour.
 
 This probably has culminated in the creation of Eira, my personal assistant agent. She is constructed from a general purpose assistant agent definition and has one initial bahaviour: to extend her list of behaviours based on things I tell her. The creation of her initial personality has also completely been done by a prompt to do so: research personal assistant traits and create a personal assistant persolnality profile, including choosing her own name and even producing a prompt for an image generation model to produce a picture of herself. Seeing this "come to life" was really an emotional experience. Feeling that line between statistics and reality fade to such extremes is a humbling experience.
@@ -119,13 +117,13 @@ A three-part series, each a standalone article that also builds a larger story f
 Focus: Authentic, grounded narrative of entering the agentic workflow. Not bragging, but showing the honest journey from initial excitement to measured, mature practice.
 
 Key ideas:
-- "I finally found the time to get my hands dirty and explore agentic workflows in depth"
+- [x] "I finally found the time to get my hands dirty and explore agentic workflows in depth"
 - From initial excitement (shared on social platforms) to personal, educated opinion
 - The "Pandora's box" of creativity: a dream come true for an overly creative mind, but also a curse because the response is endless
 - Letting the agent introduce itself: narrative, functionality-focused, benefit-for-me-focused
 - The mentoring dynamic: being a natural mentor comes in handy now
-- The collaborative atmosphere I love
-- Trust and letting go: guide, steer, avoid intervening on code level unless necessary
+- [x] The collaborative atmosphere I love
+- [x] Trust and letting go: guide, steer, avoid intervening on code level unless necessary
 - Balance between experimentation, C3 expansion/improvement, and application
 - **Pokemon Analogy Thread:** Like a trainer with their first Pokemon, I started with basic skills and agents, learning to work together. The early days were about discovering what they could do, building rapport, establishing communication patterns.
 

@@ -118,14 +118,18 @@ Focus: Authentic, grounded narrative of entering the agentic workflow. Not bragg
 
 Key ideas:
 - [x] "I finally found the time to get my hands dirty and explore agentic workflows in depth"
-- From initial excitement (shared on social platforms) to personal, educated opinion
-- The "Pandora's box" of creativity: a dream come true for an overly creative mind, but also a curse because the response is endless
-- Letting the agent introduce itself: narrative, functionality-focused, benefit-for-me-focused
+- [x] From initial excitement (shared on social platforms) to personal, educated opinion
+- [x] The "Pandora's box" of creativity: a dream come true for an overly creative mind, but also a curse because the response is endless
+- [-] Letting the agent introduce itself: narrative, functionality-focused, benefit-for-me-focused -> postponed to later part, maybe "final last words" given to the LLM as a wrap up and show case.
 - The mentoring dynamic: being a natural mentor comes in handy now
 - [x] The collaborative atmosphere I love
 - [x] Trust and letting go: guide, steer, avoid intervening on code level unless necessary
-- Balance between experimentation, C3 expansion/improvement, and application
-- **Pokemon Analogy Thread:** Like a trainer with their first Pokemon, I started with basic skills and agents, learning to work together. The early days were about discovering what they could do, building rapport, establishing communication patterns.
+- [x] Balance between experimentation, C3 expansion/improvement, and application
+- [x] **Pokemon Analogy Thread:** Like a trainer with their first Pokemon, I started with basic skills and agents, learning to work together. The early days were about discovering what they could do, building rapport, establishing communication patterns.
+- [x] Christophe's Agentic Laws 1, 2, 3
+- [x] Refer to: Linus' Law → Agents' Law: "Given enough parallel agents' (re)views, resulting quality is high"
+- [x] Consider the coding agent a novice: have patience, you are its only source of truth. Teach it, guide it, improve it, let it consolidate learning into workflow
+
 
 Tone: Reflective, humble, authentic. A practitioner sharing real experience, not a guru selling certainty.
 
@@ -138,7 +142,6 @@ Key ideas:
 - Example: KB category structure needed research and revision to work well. Initial researched category/section structure simply didn't work. After asking to research and review it, the structure became much better.
 - Give freedom to create, then let it review itself critically
 - Example: agent/skill design — research, create, ask questions, use it, give feedback, let it review and improve
-- Consider the coding agent a novice: have patience, you are its only source of truth. Teach it, guide it, improve it, let it consolidate learning into workflow
 - The true Python spirit: better to ask for forgiveness than permission. Let it go, iterate, let agents discover and fix their own mistakes
 - Iteratively evolving agents and skills
 - Best practices that all come together: text is everything, console is everything, Python is everything, iterative improvement is everything, teamwork is everything
@@ -155,7 +158,6 @@ Key ideas:
 - Agentic coding puts the "Personal" back in "Personal Computing": need software? Have it built on-demand AND personalized. No licensing costs
 - Example: capture interaction between CC and Ollama in a few minutes; visualizer in a few more; use it
 - Adoption of existing manual projects takes time: getting to know local ways, refactoring, filling gaps (testing, documentation, code quality — every corner I manually cut)
-- Linus' Law → Agents' Law: "Given enough parallel agents' (re)views, resulting quality is high"
 - It's hard to teach agents to use "2 space indentation" — humor and reality
 - PyPI-template served me well for years; now just asking the agent is faster and results are better (pyenv env order, simplified pyproject setup)
 - **Pokemon Analogy (Final Stage - The Master Trainer):** I'm now the Elite Four trainer with a full team of specialized agents. The investment has paid off - I orchestrate specialized agents, deploy the right ones for each task, understand each agent's capabilities, and trust them to execute. Minimal investment needed now - they remember from context, apply patterns autonomously.

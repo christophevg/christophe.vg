@@ -10,6 +10,10 @@ tags:
 header:
   teaser: /about/images/thumb/hello-agents.png
   image: /about/images/header/hello-agents.png
+thumbs:
+  files:
+    agents-are-bad-mkay:
+      kind: png
 ---
 
 About four months ago I entered my famous [holiday mode](Holiday-Mode) in between clients. I really love this period, in which I finally have the time to catch up on some reading, spend valuable time with my kids and simply get some sh*t done around te house. This time I was especially looking forward to it, because I had a big project in mind. One that I was going to dedicate 8 hours a day to, 5 days a week, just work my ass off, just like I do for my clients, only this time, I'm my own client.
@@ -136,18 +140,21 @@ Now, here's one of the first paragraphs of one of my favorite books, {% include 
 ```
 An old blue Ford pulled into the guarded parking lot that morning,
 looking like a  small, tired dog after a hard run. One of the guards,
-an expressionless young man  in a khaki uniform and a Sam Browne belt,
-asked to see the blue plastic ID card. The boy in the back seat handed
-it to his mother. His mother handed it to the  guard. The guard took
-it to a computer terminal that looked strange and out of  place in the
-rural stillness.
+an expressionless young man in a khaki uniform and a Sam Browne belt,
+asked to see the blue plastic ID card.
+
+The boy in the back seat handed it to his mother. His mother handed it
+to the  guard. The guard took it to a computer terminal that looked
+strange and out of place in the rural stillness.
 ```
+
+Now let's again feed the first half to our LLM and ask ik to do what it does best...
 
 {% include image name="yoker-the-long-walk-1" bottom="25px" kind="png" %}
 
 So it seems our monkey _can_ produce the works of Shakespeare, but not so much the works of Stephen King. Although it surely produced a compelling start of another story.
 
-Let's try that again...
+Let's try that one more time...
 
 {% include image name="yoker-the-long-walk-2" bottom="25px" kind="png" %}
 
@@ -187,25 +194,27 @@ Here's an anecdote that illustrates this collaborative sounding board effect in 
 
 It clearly illustrates how agents aren't tired after a long day of sessions and still produce their best results. At that point, this lifted up my spirit again, and we finished the fix, released the package again and enabled another project that bumped into the bug and was blocked by it to continue. That same pattern happened once more later that night.
 
+> A word of caution though: LLMs have the tendency to be agreeable. Give them an idea and they will be jumping up and down in joy to help you prove it is a good idea. Here's a little trick to circumvent that: Ask to provide you with 3 flaws/risks in your idea. This is good example of how asking your question in a negative tone, provides you actually with the answer you want/need. In fact this is merely a direct form of communication: ask what you really, really want. Being direct doesn't imply you need to be rude - that's a different story. If you want to know if something is good, ask what is not good about it. If the answer is nothing, you have your answer and else you get input on what is needed to make it good. This is even so true for humans by the way 😉 The LLM will happily answer both version of the same question, yet it's up to you to ask the right one and point the LLM in the right direction. This is a pattern that is fundamental to the agentic workflow and we'll see it pop up more.
+
 The anecdote also illustrates another fundamental thread that runs through the agentic workflow: collaboration, working together, working hand in hand, human and agent. I deliberately call this a thread, because it almost literally threads together some of the fundamental things I've learned over the past 4 months. Make a mind-note, we'll get back to this topic at the end.
 
 I just love the knowledge that is captured inside the LLM, providing me with a forgiving and very human-like queryable tutor, answering my every questions on a wide range of topics, providing me with tutorials tailored to my level of existing or non-existing knowledge, and that in a matter of minutes. Over the past 4 months I've been able to finally uplift my understanding of async Python, Quarts, Docker (or rather podman), uv, typing, argparse, toml, nginx, TOCTOU... and many many more technological (close to) standards, I just didn't have time for to get started with. Now, in a matter of minutes, I both got brought up to speed on each of them, also every project I've been running over the past decade, got upgraded at the same time. This enabled me to go from wanting to learn, to fully operational on the entire spectrum.
 
-Let's illustrate that with an example you already know: this very website. It was the first target I used to try out this "agent thingy". On [March 27 at 15:17]() I committed the first commit of the - then still future - agentic work that was going to happen on this website: I added a `CLAUDE.md` file with instructions for the agentic environment on how to handle this very custom website of mine.
+Let's illustrate that with an example you already know: this very website. It was the first target I used to try out this "agent thingy". On {% include commit sha="acf6786ef478e75fdfeae526d62b607e0758124e" repo="christophe.vg" title="March 27 at 15:17" %} I committed the first commit of the - then still future - agentic work that was going to happen on this website: I added a `CLAUDE.md` file with instructions for the agentic environment on how to handle this very custom website of mine.
 
-[8 minutes later]() we checked in the first co-authored `TODO.md` file, containing a list of things I'd always wanted to do for this website, but simply didn't find the time for: tag filtering, a tag cloude, search functionality... but also a serius of tasks, proposed by the agent himself. I remember starting this experiment and simply asking "What do you think of this website of mine? What could we do to improve it?" After going through the codebase and asking me a few questions, the initial backlog of tasks was showing me a future for this website I would not have been able to get done over the past 4 months, solely by myself.
+{% include commit sha="5ced3f33d7f81fa58e6f6c1b11a491ff2a7329fb" repo="christophe.vg" title="8 minutes later" %} we checked in the first co-authored `TODO.md` file, containing a list of things I'd always wanted to do for this website, but simply didn't find the time for: tag filtering, a tag cloude, search functionality... but also a serius of tasks, proposed by the agent himself. I remember starting this experiment and simply asking "What do you think of this website of mine? What could we do to improve it?" After going through the codebase and asking me a few questions, the initial backlog of tasks was showing me a future for this website I would not have been able to get done over the past 4 months, solely by myself.
 
-[12 minutes later]() we had already created our first skill, further describing _how_ to work on this website: detailing the workflow of creating a feature branch, formulating a plan, discuss the plan until approval was given, implement and report back. This little workflow, now I look back upon it, 4 months later, was already an embryonal agentic workflow, as it would further evolve over the months to come: collaborative, driven by the agent, governed by the human, with clear planning and review gates.
+{% include commit sha="26a6ed93fea4f5d3814fd801b2a6d410f0eb5004" repo="christophe.vg" title="12 minutes later" %} we had already created our first skill, further describing _how_ to work on this website: detailing the workflow of creating a feature branch, formulating a plan, discuss the plan until approval was given, implement and report back. This little workflow, now I look back upon it, 4 months later, was already an embryonal agentic workflow, as it would further evolve over the months to come: collaborative, driven by the agent, governed by the human, with clear planning and review gates.
 
-[Another 12 minutes later]() the first agentic commit went into the repository: a tag cloud from then on welcomed you on the [tags](/tags) page. A simple thingy, I just didn't get around implementing was now live in a matter of minutes. And I learned a little SCCS in the process: `&[data-count="1"]` data-driven styling.
+{% include commit sha="cad2a82f238bb13caac44f27e05a774fea4f67d3" repo="christophe.vg" title="Another 12 minutes later" %} the first agentic commit went into the repository: a tag cloud from then on welcomed you on the [tags](/tags) page. A simple thingy, I just didn't get around implementing was now live in a matter of minutes. And I learned a little SCCS in the process: `&[data-count="1"]` data-driven styling.
 
-We continued to further improve the tags page, because seeing these ideas come to life, immediately sparked more improvements. I firmly believe that that first commit was really the first free dose a pushing dealer gives you to lure you in: I was hooked. My dopamine addicted mind simply went beserk, wanting more and more and more.
+We continued to further improve the tags page, because seeing these ideas come to life, immediately sparked more improvements. I firmly believe that that first commit was really the first free dose a pushing dealer gives you to lure you in: I was hooked. My dopamine addicted mind simply went bezerk, wanting more and more and more.
 
 > Now, before you fear for my mental health - I'm fine. I had read about this effect already some time before and could very literally observe and identify my own reactions to this. It was an enlightening experience, a bit divine (TODO: use other word, can't get it in my head right now) even.
 
-[Only 3 minutes later]() the second skill entered the repository with instructions on how to work with the website's generator (Jekyll), including sections on how to work with it _and_ what to do in case of problems.
+{% include commit sha="146f2ba0717a3d1103e04f1d80c54f4635a37ed9" repo="christophe.vg" title="Only 3 minutes later" %} the second skill entered the repository with instructions on how to work with the website's generator (Jekyll), including sections on how to work with it _and_ what to do in case of problems.
 
-[37 minutes later]() - I clearly remember sitting back to fully grasp what just happened over a matter of merely 35 minutes - we checked in an update to the skill. The generation of the website takes some time - over the past 16 years in its current form it has grown at a slow but steady rythm into a not so small personal website - and the agent often had problems thinking that a fix didn't work properly and started changing things again and again before the actual generation was ready - an eager and not very patient little fella. So, when I explained the problem to him and asked to updates its own instructions, he did so, adding a note on how to wait longer for the build of the website to finish. I learn a lot from him, he also learns from me. See the pattern emerge?
+{% include commit sha="b67be0f9a6ca93c74006bdf5e4fdf5a5d4ae6f9e" repo="christophe.vg" title="37 minutes later" %} I clearly remember sitting back to fully grasp what just happened over a matter of merely 35 minutes - we checked in an update to the skill. The generation of the website takes some time - over the past 16 years in its current form it has grown at a slow but steady rythm into a not so small personal website - and the agent often had problems thinking that a fix didn't work properly and started changing things again and again before the actual generation was ready - an eager and not very patient little fella. So, when I explained the problem to him and asked to updates its own instructions, he did so, adding a note on how to wait longer for the build of the website to finish. I learn a lot from him, he also learns from me. See the pattern emerge?
 
 In a matter of 4 days and 54 commits, we totally revamped this website together into something I once again was proud of pushing to the live environment. I simply could no longer deny that this was the (or my) new way of working. I had become the architect of my project and was no longer the web developer. In 4 days, this new intern had entered, showed its worth and had taken over the development of my website, putting me in the driver seat, discussing changes with me, taking in my ideas, proposing wonderful technologies and implementing them for me in a matter om minutes, fixing years-old bugs I never could solve. If it could do this for a simple, but very customized, website, I was eager to learn how it would perform on some other of my more coding-related projects. If it could bring the same, or even a little less, level of mastery to those projects, I was fundamentally ready to let go.
 
@@ -215,18 +224,147 @@ At this point you, maybe not so technology-inclined reader, may think that it's 
 
 From the very onset, I also had created a (non-public, sorry) `incubator` repository. In this repository I allowed myself to literally experiment with everything. In a true 'throw it in the air and see what happens` philosophy, I literally pushed the agentic envelop to its limits. Many of these experiments shows that there are limits indeed, yet I soon also learned that these are merely a matter of time and agentic time is advancing at an incredible exponential rate. New models emerge at a steady rythm and bring more performance, better (apparent) reasoning and more knowledge all the time.
 
-Many of the experiments in the incubator have nor resulted in some new technology, project or article, but simply have taught me things about fields of expertise that were still so far out of my comfort zone, that I didn't even know how to get started. My researcher agent soon provided me with helpful summaries, tutorials, ...
+Many of the experiments in the incubator have not resulted in some new technology, project or article, but simply have taught me things about fields of expertise that were still so far out of my comfort zone, that I didn't even know how to get started. My researcher agent soon provided me with helpful summaries, tutorials and lively interactive discussions about topics such as copy-writing, CV best-practices, creating business plans, but also help in preparing for exams and interview, creating reports on courses, people, companies, all based on in-dept research, to complement the already available knowledge in the LLM, before applying the incredible summarizing capabilities of it on this new found information. I've seen my researcher agent perform online searches and that turned up results I wouldn't have found myself anytime soon. When I verified some of its reported findings, because I simply couldn't believe them, they turned out to be true, often correcting my own beliefs.
 
+> From the very first version of my researcher agent, or rather the research skill, I focused on auditability. Most part of its instructions are on creating a local cache of everything it searched for and fetched. I really wanted to be able to both verify the search results, as well as the actual content that it based its reports on. I was very wary that it would produce material I could not review, knowing that by nature an LLM will produce very qualitative none-sense in the blink of an eye. Given the fundamental nature of a researcher agent, I had to draw a firm line here. This example again shows a fundamental aspect of an agentic workflow: governance, more specifically building in guards that monitor the workflow and make it auditable for the human in the equation.
+> If you look at the definition of the {% include external link="https://github.com/christophevg/c3/blob/master/skills/research/SKILL.md" title="research skill" %} you notice pretty soon that this _skill_ isn't really about doing the research itself. It actually deals with the surrounding process, the surrounding workflow on how to deal with the artifacts, with the follow up of uncertainties, with quality checklists,... This typically includes explicitly what **not** to do, which is sometimes much more powerful than trying to describe what to do. Negatively phrased instructions limit the agent where **not** to go, yet at the same time keep all other options open, avoiding in steering it _only_ in the direction _you_ already know. This is another example of the whole "letting go".
 
-## Conclusion Part 1: Hello Agents
+This culminated in an experiment to create a team of agents to create a business plan for a business idea I happen to have lying around. The experiment started at a meta-level with instructions for the researcher agent to find information about the skills needed to create and review a business plan. In the next phase, these newly created skills were used to again research and create a business plan for the idea provided to them. The resulting plan was then reviewed by the review skill, to produce a really harsh and incredibly critical review. After about 5 iterations of creating, reviewing, updating and again reviewing, the reviewing team (yes team, because the reviewing was done by several agents by that time, each with their own focus), concluded that the business plan was ready for presenting to investors. Upon reading the report myself, I could only conclude that over the course of my entire professional career, I myself would never have been able to write such a well structured, well founded and realistic prospectus, seeing it contain answers to all the remarks my own documents had received on numerous occasions, and more. The level of competence that was created in a matter of hours, the improvements between each iteration of the document, showing that given good input and enough different agents' (re)views, really proves that even simple statistics result in the right knowledge to be applied to about any case and can produce really high-quality results. The fact that every request to an LLM is bias-free, is handled independently, without memories or recollection of any prior response, outside its context, makes that two independent agents are great opposing parties that really bring out the best in each other.
 
-### Law 1: Unstructured <-> Structured
+I took this even one step further and had several underlying models perform exactly the same reviews in parallel, each time, adding in a second layer of reviewers that reviewed the reviews and again found both flaws and common ground in the reviews, combining these reviews into über reviews. I remember that I wrote once during this process that the well known principle at Microsoft to create multiple completely independent teams to work on the same project, and then pit them against each other and in the end pick the best one to continue, is _so_ well suited for this agentic workflow. Given the speed at which you can now actually have the exact same problem handled by 3, 5, 10 separate instances of agentic workflow teams is an incredible property of this new way of working. It is literally a prime example of large numbers at work, and it is now more affordable than ever and is in implicit guarding opportunity not to be missed.
 
-example: assistant/email -> setup to yoker and "work together"
+## Let's talk numbers
 
-### Law 2: Many Agents
+Let me quantify this one time: on Monday March 23, I decided to finally start paying for a cloud provider, to have access to cloud models, that run about 75x faster than (smaller versions of these models) on my local machine. I chose {% include external link="https://ollama.com" title="Ollama" %} after trying out their free tier and seeing the 75x factor in action. Coming from a few weeks of waiting for hours to get a single response, to literally almost real-time interactive results was another big dopamine shot. {% include external linke="https://ollama.com/pricing" title="Ollama's pricing" %} for its first level non-free tier is $20 per month. So far this $20 (which bils down to about &euro;17 on my actual bill) has enabled me to do everything I want. When I read peopl online complaining about their token usage and the prices they pay, I don't really understand why the stick to single-model providers like Anthropic, OpenAI,... With Ollama's pricing you basically pay for GPU-time, not tokens. I've found a tool that computes the cost of my agentic sessions. A report on the last 30 days tells me that I would have spent $1440.89 on 1.398.630.771 tokens, while in reality this was $20. In that period I used about 8 different models.
 
-### Law 3: AI isn't bad okay -> learn
+> Disclaimer: I'm (currently - feel free to make me an offer 😇) not affiliated with Ollama. I'm endorsing their offering solely from my personal experience. I'm just a very happy customer, who doesn't understand people paying more money to get far less with the "big" names in this industry.
 
-3x work together, not fire and forget -> fire and neglect, fire and throw away
-you don't let an intern to its own devices either
+So breaking that down, that $20 per month buys me a team of agents that provide me with a complete software factory that takes any idea I have, interview me, breaking it down into MBIs, tasks per MBI, create in-depth functional analyses, that are reviewed by security, API and UI/UX specialist, after which a consensus needs to be reached, before I give my feedback and comments, which iteratively continues until I give my concent to move to the implementation phase. When implemented, all specialist agents again validate that all aspects of the analysis and domain-specific instructions are met, or else things are simply bounced back the de developer agent. When a functional iteration is complete, I again get the final say, before everything is merged into the master branch of the project we work on - and all this is managed using a classis GitHub pull request, which is my interface to this team, that treats me as the owner of the project.
+
+I now literally have a performing team of 12 agents (project manager, functional analyst, API architect, security engineer, UI/UX designer, python developer, code reviewer, testing engineer, release manager, end user documenter, researcher and bug fixer) for $20 a month. And if I want, I can apply the Microsoft product bake-off approach and have 5 of these working in parallel, allowing me to pick the best result (or even combine them) for a mere $100 per month. No matter how you want to spin this, no matter what the net result is, this is a new tool in my toolbox that no other can match at that price. This is a revolution happening while we're looking at it. Are you on board?
+
+### Visual Numbers
+
+Here's another fun way to visualize the productivity boost agents have given me over the past 4 months:
+
+{% include image name="github-stats-christophevg" bottom="25px" kind="png" %}
+{% include image name="github-stats-christophevg-agent" bottom="25px" kind="png" %}
+
+These are visual statistics provided by GitHub as part of your profile. It depicts the number of commits (in layman terms: functional additions) to all of my projects. The upper grid is that of {% include external link="https://github.com/christophevg" title="my personal account" %}. It's hard to miss that as of end of March there is a steep increase in work I've pushed towards GitHub.
+
+The bottom grid is that of a second account I've created especially {% include external link="https://github.com/christophevg-agent" title="for my agents" %}. Although I clearly attributed every commit made in conjunction with an agent, I wanted to make the distinction even more apparent. It came also at a time where I had started use GitHub to drive my agentic workflows and I felt that the pull requests looked like me talking to myself. With their own account, the distinction who's who is more clear.
+
+Now before you object by stating that volume of commits is a lousy statistic: you are right, yet, I've from day one ensured that every commit made had my approval, focused on the same scope as I did before. So essentially, for measuring the boost in overall productivity, relative to the period before the agents' introduction is valid, at least from a mere visual perspective.
+
+Seeing the two grids alongside to each other also clearly shows the actual distinction in work and how it is divided between my and my agents.
+
+> Let me give you another reason why I went with the Ollama offering and especially why I'm a big proponent of the use of open weight models: paying for using their infrastructure (in stead of per token or request) scales both ways: models get more optimized, requiring less infrastructure for the same or better models. This optimization today already brings more and more models closed to your own machine. It's a fact that in relatively little time, top-models I currently use using Ollama's cloud infrastructure will be runnable on my machine. You will never be able to run Anthropic's models on your machine, but you can run for example {% include external linkz="https://huggingface.co/zai-org/GLM-5.2" title="zAI's GLM flagship model" %} on your own machine. This is an open weight/open source model, that easily matches the so called top-tier proprietary, closed-source models, as shown in several reports online. So by choosing Ollama as my main provider, or better choosing a provider that gives me affordable access to top-tier open models, doesn't lock me into a vendor, but makes me 100% ready to move from cloud to local inference with the switch of a single configuration switch as soon as local performance allows it - and history of computing proves this _will_ be soon.
+
+## Christophe's Agentic Laws
+
+The past four months have been a rush. What started out as little experimentation in an incubator project, grew into my personal {% include external link="https://github.com/christophevg/c3" title="agentic collection" %} and a stack of new projects, old project being renovated, bringing them up to nowadays modern standards, while learning all about them and more myself and foremost allowing me to take on the role I professionally have mastered over all these years, that of the architect of my own enterprise.
+
+Now this is really a dream come true for this and any overly creative mind. A team that endlessly responds with qualitative results. Yet it has also proven to be a somewhat of a "Pandora's box". Because the response is endless, the urge to do more, to spawn more project, to set up another parallel session, to add another meta-layer, puts an enormous strain on the human. The agents are limited by your credit, and after a few months I now have come to find a nice balance between doing agentic work and off-agentic work. And I have even found a renewed pleasure in doing off-agentic work, which now maybe even counter intuitively lives in the unstructured type of work. The unstructured work where LLMs typically excel, is where I now focus on, the original, creative work like writing, researching and formulating new ideas. And with that work I feed this beast, that cleans it up for me, finds holes in my reasoning, challenges me, all resulting in improvements, all within the confined boundaries I've constructed.
+
+A typical week consists of a few days packed with agentic work, until my credit almost runs out. Yes, after four months, a combination of using more and more potent models and a workflow that is more and more demanding, including more and more iterations, results in my $20 credit being consumed nearly half-way the week. But that is today as-designed, because from that point on, I enter the second half of the week, where I review - in slow motion and this is where I typically catch structural issues I want to change in the next iteration during the following week. I also prepare new ideas and articles like this one, ready to throw at the agents in the next week. This combination of fast and slow work, of fast and slow thinking - matching the agents' speed and afterwards the human speed, today presents me with the perfect cadence to be able to sustain the agents' pressure on this human body and mind. I've struck a balance, a way to co-exist and optimally cooperate.
+
+Like a trainer with their first Pokemon, I started with basic skills and agents, learning to work together. The early days were about discovering what they could do, building rapport, establishing communication patterns. The excitement grew with every Pokemon I added to my Pokedex, and I learned, sometimes the hard way, that being a trainer also puts a strain on myself, and I have to take care of myself to ensure I can keep on training better and more powerful Pokemons, without them going haywire or spin out of control. The key to success is in a fruitful collaboration and coexistence.
+
+These 4 months have given me hands-on experience and insights in this new paradigm that is developing as we speak at an incredible pace. I've formulated the core of this experience in 3 agentic laws that capture the essence of what is and is to come.
+
+### Christophe's Agentic Law #1: Clearly distinct between structured and unstructured workloads
+
+Employing agents is fun. There's no doubt about that. Seeing them do all sort of things is sometimes even mystical. But to move forward together, we need to bring objectivity and realism to table. Not everything we can do with an agent, should be done by an agent. We have to put them to use where they shine, where they excel over technology that has already served us so well over the past decades. It's not because agents exist, that they should take over everything - something most vendors of course encourage you to do. Remember they are selling tokens.
+
+Let me illustrate this with an example. One of the most epic projects that's on every agent enthusiast's wish list is that of the "personal assistant". And yes, it's also on my bucket list. I fact, I have a first version up and running: a nice Claude Code loop that asks the assistant agent to check an email box I created especially for it and respond to emails received. It's my main way of interacting with that assistant and it manages all my projects at a high level, translating short form emails, mostly dictated to Siri using CarPlay when I have that great idea in the middle of the E19, with nothing to write nearby.
+
+And this works great. The agent has an MCP server available to check and manage its email box. A few skills clearly describe how to handle email and so forth.
+
+All nice right. Yes, however, checking email is a solved problem. And I don't mean the fact of actually programmatically checking the email, that's what the MCP server-based tool does. I'm referring to the loop that asks the agent every 15 minutes to check the email box. That's a GPU spinning up every 15 minutes, to first "think" about the request ("Please process your emails."), then deciding request the injection of the email handling skill, then following that workflow and calling the MCP server to log in, then to check the inbox, then to retrieve the email and then finally to process the email and formulate a response. Most of the time, after step 5 the workflow terminates, because there are no new emails. That's 5 requests with still a lot of paid GPU time. And why? Those 5 steps are perfectly implemented using 5 simple lines of code, that all run one after the other in a blink of an eye (even less), and can even provide the body of the email to the agent in a single request, getting a response that can be send back in a reply in another 2 lines of code.
+
+If we want to move forward with this agentic paradigm, we're going to have to acknowledge that fooling around with agents can be fun, yet we need to put them to good use and make sure they become first-class citizens, part of the existing world, where we have solved already many problems, structured problems, and leave the unstructured problems for our new agentic overlords to handle, and nothing more.
+
+This idea has been the driving force for the creation of Yoker, which will be the topic of the follow up to this first of three articles on my experiences and work in the realm of agentic workflows. So stay tuned.
+
+### Christophe's Agentic Law #2: Given Enough Agents, All Agentic Solutions Become Dependable
+
+Building on law #1, we have to also acknowledge that unstructured input results in (mostly) unstructured output or at least output that has the level of dependability of unstructured output. If you want to put this differently: when we rely on a probabilistic method, the outcome is probabilistic.
+
+Luckily, statistics is also on our side in this case: more reviews increase the reliability of a product's quality involves the Law of Large Numbers. As the number of reviews ($N$) grows, the average observed rating gets closer to the true, hidden quality.
+
+For example, applying the binomial distribution. Imagine each review is a test. It can be a success (good review) or a failure (bad review). Let p be the true probability of a good review. Let N be the total number of reviews. Let X be the number of good reviews. The probability of getting exactly X good reviews is:
+
+$$P(X) = \binom{N}{X} p^X (1-p)^{N-X}$$
+
+This teaches us that a growing number of reviews improves the certainty of our quality estimate, causing the observed quality to lock onto the true quality.
+
+In a binomial distribution, you have $$N$$ reviews and a true probability $$p$$ of a positive review.
+
+* The expected number of positive reviews is: $$E(X) = N \times p$$.
+* The expected sample proportion (observed quality) is: $$\frac{E(X)}{N} = p$$.
+ 
+No matter if $$N$$ is 5 or 5,000, the average expected quality remains $$p$$. 
+
+The magic happens when you look at the variance of that sample proportion. Variance measures how much your observed rating is likely to swing away from the truth.
+
+Variance of the proportion = $$\frac{p(1-p)}{N}$$.
+
+Because $$N$$ is in the denominator, as $$N$$ grows, the variance shrinks toward zero. 
+
+When $$N$$ is small (e.g., $$N = 3$$), a few random bad reviews can completely skew the results, making a great product look terrible (observed quality $$= 0\%$$). As $$N$$ grows large 
+
+* The distribution of the average rating narrows into a sharp spike.
+* The probability that the observed quality deviates from the true quality approaches zero. 
+
+Summary: A larger $$N$$ removes the "noise" of random chance. It does not make a bad product good, but it augments the statistical quality of the data, ensuring that a high rating on screen genuinely reflects a high-quality product in reality.
+
+So, when applying agentic workflows, make sure to address a large amount of agents to the problem, each reviewing each other's work. What has proven {% include external link="https://en.wikipedia.org/wiki/Linus%27s_law" title="correct for bugs" %}, also applies here.
+
+And I've experienced this first hand. I started out with a single (default) agent, but soon enough, as I added more agents, preparing work, reviewing work, all from different angles, I saw that the output became more and more dependable.
+
+Also running the same assignment through multiple sets of agents or even using different models, produced different outcomes, which then could be used in a consolidation of best worlds style to produce a superior result over the initial works.
+
+### Christophe's Agentic Law #3: Agents aren't Bad, M'kay
+
+{% include thumbs show="agents-are-bad-mkay" %}
+
+Yes, I've also read the objections to agentic workflows and AI in general: on one side these objections focus on the quality, stating it are merely probabilistic models, that only, at best, produce what you train them with, and often even ahllucinate. On top of that, training them now already with their own output will create a degenerative downward spiral of slot,...
+
+Other objections focus on security: giving agents access to tools and data opens doors to vulnerabilities. Malicious actors can use "prompt injection" to trick agents into taking unintended actions, accessing restricted files or leaking private information.
+
+High costs and abuse of resources is another class of objections: multi-step reasoning and tool-call loops consume significant computing power and time. Making thousands of API calls for a simple task can incur wasteful costs. As a consequence these objections also point to the environmental impact of all these huge datacenters that are consume a lot of (natural) resources.
+
+It might seem old fashioned, but there is surely truth in the objection due to cognitive deskilling: relying on agents to do the thinking for us, can cause loss of our own problem-solving skills and memory over time. It has been said about calculators, computers, online search, and now surely applies to agents.
+
+All these objections are valid. I subscribe to each and every one of them. Still, just like with the demise of the calculator, the rise of the machines and the internet, agents and AI in general are here to stay, so we will have to find a reasonable way to coexist.
+
+I have formulated the following rule with respect to the use of AI: when I apply it, I want to at least learn from it. This can take many shapes: for some time now, I'm a happy camper, enjoying the benefits of having Apple Intelligence rewrite parts of my English texts. I'm not a native English speaker/writer, so the quality of my writing varies. However, I have an urge to write good English, using a good amount of English idioms. When I ask Apple Intelligence to rewrite my texts, I always first copy the result and compare it in detail to my own. Next I evaluate which parts of the rewritten text are apparently better. This still relies on my own perception and gut feeling if something sound more/better English to me. If so, I see this as a way learn, and I incorporate it in my original text.
+
+Every change that has happened to my coding projects, over the past 4 months, has every time been a learning experience. Before an agent could introduce a new technology or code change in general, I asked it to explain it to me. In the end it are _my_ code repositories, and I will always remain (at least) responsible for what I put out there. My agents are in the end mere tools, just like an editor, a spelling checker, an online search engine,...
+
+This rule doesn't answer all objections. I think it answers those that I can control, within my personal reach. Today I can't solve the problem of wasteful abuse of resources, yet, as state above, in the not so distant future, my agentic strategy strives towards on-machine inference, which then at least answers a few more.
+
+## The Common Thread
+
+{% include video id="MPMmC0UAnj0" name="why-cant-we-all-just-get-along-video" title="Why Can't We All Just Get Along?" %}
+
+When I was writing the initial draft of this article, I stumbled upon a theme running through many of the topics I wanted to address. In the end I believe that this ring that rules them all might very well be the god particle of AI: we need to work together, agents and humans. We should not see agents a something new, but as the new virtual coworker, the new intern eagerly running around trying to be useful all over the place. We shouldn't just fire and neglect them.
+
+You would never do the same to their human counterparts, so why would we do this with them? And this makes it rather simple: if we treat them like we (should) do with other humans, tutor them, give them guardrails to protect them (and ourselves), set clear boundaries and most importantly, take on our own, personal responsibility to monitor them, I'm sure we can see them grow and flourish, becoming the best version of themselves over time.
+
+## Stay Tuned...
+
+That's it for part 1... This was the first in a series of articles I've written on the topic of agentic workflows. This installment focused on the initial experiences I was able to enjoy over the first 4 months of intensely working with agents, exploring the opportunities, pitfalls,... At first, my goal was to explore, yet this soon grew far beyond that.
+
+In the [next part]() we dive deeper into this realm of agents and I'll introduce you to my vision of it: Yoker. From observing and exploring, I'll show my heading, my strategy and the first steps towards my goal.
+
+In the [third chapter](), I'll also lift the veil on the overall picture that has been driving me in this direction and how I've fundamentally embedded agentic workflows in everything I do. And all that is based on the fundamental laws and rules I set out above in this first part... Hello Agents!
+
+---
+
+TODO
+* introduce more sub-titles/headings to create more pausing moments
+* use word "persona" for different agents, with different viewpoints
+* apply more stress on the "Brainstorm & Refine": coin idea, clean up, be critical
+* introduce more images/videos, especially in the second half
+* ensure all new images have webp versions

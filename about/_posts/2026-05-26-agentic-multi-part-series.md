@@ -15,104 +15,15 @@ prompt: |
   Look back upon the past 4 months and give a narrative overview of how we have evolved from single prompts to a complete agentic workflow using a self-improving collection of skills and agents, even including our own Python-first agent harness, Yoker and the reusable personal assistant agent. Sketch a timeline of the work we've done on several projects, the evolution we've gone through and how they all fit together. Use the documentation, git history, GitHub issues and PRs, and any other information to reconstruct this timeline.
 ---
 
-## Ideas that need to be inserted in the structure below
-
-### The email MCP server
-
-The story of the email MCP server, first developed in C3 to allow the assistant agent to interact with its email account, shows the paradigm shift we're currently going throuhg. I wrote a rationale for the project (the local C3 MCP server was extracted into a project of its own ~Workspace/agentic/simple-email-gw) that covers a topic that will be part of this series:
-
-```
-# Rationale
-
-**simple-email-gw** is an async email gateway with IMAP/SMTP clients, connection pooling, and MCP server integration for AI assistants. This project began as an experiment — I needed an MCP server to enable agents to send and receive emails directly. Rather than searching for existing solutions, I had an agent build one from scratch. With that requirement alone, the agent developed a complete MCP server. Subsequently, the experiment evolved and expanded into a modern Python Package project.
-
-This experiment validates my theory that we’ve entered a **software 3D printing era**. Generating components on demand is now easier and more affordable than searching for existing implementations. Software itself no longer holds inherent value. The new value chain lies in knowing what components are needed and having agents qualitatively create them.
-
-And this is precisely what architects bring to the table. In a sense, this new agentic workflow empowers architects to have direct impact. They no longer have to design for the slow delivery of software factories. Instead, they have a direct line into a virtual software factory that delivers implementations of their architectures in a matter of hours. This enables multiple deliveries in a single day or even in parallel. The cost of discarding many of these implementations and selecting the best is virtually zero.
-
-For users, this means you get a well-architected, thoroughly tested email gateway that evolves with your needs — not a static library that's already outdated.
-
-Once again, we live in interesting times...
-```
-
-### The Security Agent that blocked my quick feature
-
-While trying to implement a generic configuration system (using clevis), while analyzing the integration, the securoty agent flagged it as insecure, requiring more security related features (to avoid implementing a local wrapper)
-
-See: https://github.com/christophevg/roomz/pull/6
-
-As the owner, I was now confronted with an agent from my collective that literally blocked me from quickly moving to the generic system. It resulted in the creation of a security related feature request with the clevis project to avoid adding wrappers/additional layers and be able to integrate it as _I_ saw it.
-
-## Agents aren't Mind-Readers
-
-While developing Clevis, I ran into a classic mistake to make when working in an agentic context. Especially if you have already a very productive and capable agent collective. I was expecting my agents to read my mind, like they did already sometimes before.
-
-I had already experienced many times that my agents really came up with solutions that really captured what I wanted but didn't know I wanted them. This is not a big surprise. The LLM backing them up is trained with so much material that it statistically produces simply all the great things I would have to discover.
-
-When embarking on the Clevis project, I forgot for a moment that this behaviour is not really the agents reading my mind, but producing something I experienced as something that I would have thought of if I knew about it.
-
-Clevis was in a very early state, I was still discovering the right approach. This resulted in sub-optimal results from the agents and I got frustrated. I was wrong to be frustrated, my actions were correct: I started developing/prototyping the interface until I was happy with it. Then I enjoyed manually implementing the bare minimum and then started session with my functional analyst to review my prototyping work. Now we're back on the right agentic plane. Within minutes the agent had analyzed my prototype, prepared tasks for the entire project team to take my prototype code and bring it up the standards we uphold these days.
-
-Agents aren't mind-readers, but "a word is enough for the wise" certainly applies to them. And while I'm typing these words, my entire project team is going through the first review cycle of the cleaned up prototype implementation. The API architect and the code reviewer agents didn't agree, so another iteration of refining and improving the code is ongoing. Remember Christophe's agentic law #1 "many agents make an agentic workflows pretty dependable and qualitative." 
-
-## Christophe's Agentic Law #2
-
-Agentic workflows and AI in general isn't a bad thing. It's the way you put it to action that can be bad. For me the rule is: If I learn from applying an agentic workflow, it is a good thing. Numerous examples has seen the lime light over the past 3 months: uv, argparse, typing, toml, docker, nginx, TOCTOU, ... TODO create list
-
-## The Rehabilitation of Waterfall
-
-In agentic workflows, waterfall is definitely a good thing. Agentic workflow resolve the major issue with Waterfall: going through analysis and design before doing development is slow. Well, with analysis and design documents being a critical part in the multi-agent approach to solving an issue in an agentic way, the sometimes called bloathed Waterfall approach, nog proves to be a critical success factor. The more analysis views on the same topic, the better the end result is. The more reviews agnles, the more issues are found, all in matter of minutes. I once said I've always remained a Waterfall**S** believer, so, here's once more the proof that I was right all along ;-)
-
-## Raw material to be integrated
-
-Over the past three months I've be discovering the agentic ecosystem by 1) reading a lot of material online (from Claude Code documentation, over a lot of GitHub repositories, social media posts, articles online,...). I've combined this thrid party knowledge with my own experience as an Enterprise Architect in coaching human teams. I have formed my belief that managing an agentic workflow isn't any different from managing a human-based workflow. It also requires clear specification, clear guidelines and clear review/control/follow-up. There is no magic involved, there is no silver bullet, it always boils down to proper standards, processes and people/agents. Agents merely replace the effort in the human factor. The still need input and output validation. This I experienced myself throughout my experiments and has led me gradually to the currenly fully grown team of agents I can work with. They have evolved just like the interns and human collegues I've coached in the real world, and it makes sense. So, no, I can't give a counter-example to my own experiences at this point. I can only project my experience from the human-world onto the current AI scene. And I see a lot of people bragging about their results with agents. I can only conclude that they are selling hype and probably have no comparable experience with the same processes run by humans. C3 started out as some loose experiments: a simple skill, then a more complex skill, then a skill to learn, then a skill to make skills, then an agents, then a pattern for combining agents and skills, then a script, then an MCP server, then a package to provide dynamic information to agents, then... then... C3 evolved organically by fixing mistakes and try other ways to make skills and agents work. The self-learning was a cornerstone from day one and it still works well: let agents modify their own definition, based on session experiences. At this point, I think that less than 1% of the agent/skill definitions in C3 is still authenticly written by me. I haven't even looked at the definitions in a long time. I just point out issues in the workflow and ask agents to improve themselves. This has really been fruitful. I can't imagine how this would be possible when simply taking someone else's skills and agents. I have a profound belief that you need to grow your own team, just like you do in the human world. Else you simply don't know who's working for you, with what beliefs and boundaries. Very recently (this is the example of the securoty engineer agent) I was surprised to see a review by the security agent, that simply stated that the integration of a new Python package shouldn't move forward because it lacked proper guardrails for accessing files. Without my agents, I personally would never have even thought of this. This shows how these agents, which I created and coached, have become better than me at the tasks I give them. That same agent recently also pointed out that the python developer agent had introduced a similar security issue, where the time betweenr reading/confirming access rights and applying them could lead to an attack vector (known as TOCTOU). I would never have taught of this, although my earliest professional experiences are in security. And similar stories exist for the other agents too. The developer agent sometimes comes up with beautiful code, I would never have thought of or simply would take the time for to write. I often change direction in a abrupt way. at that point, my functional analyst points out to me that I'm introducing breaking changes and at least I get to think about them more clearly, an feel obliged to provide a well founded answer when I tell them to ignore that aspect. The sounding board effect works very well. My agents are a better version of my self, and I feel grateful to be allowed to work with them. Before C3 and my agentic workflow in general, my project (baseweb, pypi-template, letmelearn, hosted-flasks, bpmn-tools, oatk,...) were all collecting dust. I just didn't get to work on them anymore. I have so many ideas that I wanted to apply, but the rework to bring them all up to modern standards was simply too big a mountain to conquer. Thanks to this new agentic team and workflow, all these projects are now up-to-date, implementing all the ideas I had, and many more new ideas I got while learning from the modernizations. A mondernization triggered by code reviews of the agents of my projects. And along with these refreshed projects, a lot of new projects emerged (yoker, roomz, clevis, clitic, pkgq, simple-email-gw,...) The productivity gain is so high, that I've once again become the blocking factor, but now no longer on the execution side, but on the creative side, giving directions, aligning all the balls. Suddenly I've gone from lone developer to the enterprise architect of my own enterprise.
-
-## More Raw material
-
-It's not always fun and games. Agents are really "very capable interns", which also means they have an enourmous drive to mover forward and please by doing a lot. This also includes doing things that shouldn't be done. After a few refactorings I had the impression a configuration features was lost in refactoring. So I asked to add it again. The final report after the fix now told me that there was a configuration priority hierarchy, with the new options overriding existing ones. The options were there. I missed them and now we had redundant options. Agents don't (easily) question their instructions. And always look for a probably reason to follow them. Now let's get things clear: the models that drive agents just produce the most probably next word/token. There is no ghost in the shell. Still, interacting with them really feels like chatting with a very cool and capable co-worker. The apparent joy when finding a nice solution together is a really nice experience versus the lonely experience of traditional solo development. And this goes both way, because I really feel the emotional downer when an agent starts to fail and spins out of control. I really feel the emotional response to agentic behaviour.
-
-This probably has culminated in the creation of Eira, my personal assistant agent. She is constructed from a general purpose assistant agent definition and has one initial bahaviour: to extend her list of behaviours based on things I tell her. The creation of her initial personality has also completely been done by a prompt to do so: research personal assistant traits and create a personal assistant persolnality profile, including choosing her own name and even producing a prompt for an image generation model to produce a picture of herself. Seeing this "come to life" was really an emotional experience. Feeling that line between statistics and reality fade to such extremes is a humbling experience.
-
-## More raw material
-
-When I started out this journey, I was in between clients, so I decided to try and address 8 hours a day, a full working day, to this project. During the first month it was a growin experience of wonder. Discovering the basics, and growing my knowledge from simple prompts to full skills, agents, tools, MCP servers,... was a rising sun on my shady world. By the time month two hit, I was steaming ahead at full speed: nothing could stop me. During that peak of hype-filled "I'm the king of the world" feelings, I often experience the burn-out feeling. Following up on three to four agents steaming ahead, is exhaustig. This lead to the development of the current agentic workflow, where I apply redundant agents and many intermediate steps to allow the agents to analyse and review multiple times during the process, to ensure that multiple (agent) eyes catch more bugs and avoid more mistakes, making the process much more automated. By the end of this second month, I could use GitHub to raise an issue, get to follow up a PR from a high level, while the agents simply "managed the project and followed up on GitHub interactions", like a true virtual team.
-
-The third month, now, should result in the polishing of all this and result in a set of tools and a workflow that enable me to run projects with this virtual team of agents-like-me. By the end of this month, Claude should be replaced by Yoker and in that the my C3 Agent Collective should be running autonomously as a true independent virtual team, with interactions via a Roomz chat room and GitHub. Project catching dust: about all of them. We could probably create a graph (or simply use one) from GitHub, showing the spikes and the overall decline. The most interesting aspect is the fact that due to starting this agentic journey, I have (happily) abandoned some projects that I care deeply about for many years. For many years, PyPi-Template was my trusted package to quickly generate the scaffolding for a PyPi package based project. It was a collection of templates and some configuration frontend code to maintain a python project to my standards. It was created initially at a time that there we're less good options to manage a project. So it filled a personal itch. Over the years I held on to it, although I saw serieus alternatives rise. I just didn't have the time/energy to switch (on my own). Now with agents generating far better and more modern python project scaffolding, the need for a sub-optimal home-grown python project maangement tool had diminished to zero. My agents introduced met to `uv` - and that was a real ephiphany. Now I have a python-project skill that describes my standard: uv + pyproject.toml and the agent does the rest. Much more flexible. Bye Bye PyPi Template.
-
-A similar story can be told for Hosted Flasks: I created this tool to serve multiple Flask apps from a single WSGI app, to allow me to run several websites from a single Render hosted service. For years this served me well, up to the point where I was ready move to Quart and began to work on a Hosted Quarts version. At that point I was conducting numerous experiments in my agentic incubator. One was to explore Docker, because I simmply never got around to actuall spend some time on it to get a basic Docker setup up and running. In a matter of minutes, my agent had constructed a Docker setup with an Nginx front-end and several hello world Flasks behind it. Suddenly the need to Hosted Flasks and Hosted Quarts was gone. I could even mix non-Flask/Quart apps in. A few minutes of angentic research and prototyping has allowed me to move from a hacky personal project to an industry-standards container solution, somehting that would have taken me many hours to do manually. And now I learned this in a matter of minuted, able to ask questions about it, like one would do to a teacher, and not easily get from plowing through tons of documentation. C3 currently evolves through issuing the lessons-learned skill at the end of sessions. That skill reviews the session and comes up with proposed changes to agents/skills or proposed the creation of new agents/skills to improve its own workflow and avoid mistakes/problems encountered throughout the session.
-
-The investment for me is an ongoing pivotal moment in my carreer. There is no turning back. This agentic workflow is the new interface to my creative process involving digital products. Although I often have to pull my feet to the ground and clearly remember what this actually is - statistics - and that I shouldn't get emotional about it (hey, I also got emitional when I only had an editor, bugs trigger emotions if you're invested) - this new way of working is just wonderful. After about two months of exploring and building my way of working in this agentic world, I start to find a great balance between full-automation and letting go, and still keeping a lot of training wheels on. I'm better at balancing my time, to not become the horse in front of the agents' carriage. I remain in control. And just because there is now an amplifying factor of at least 10 times the amount of work I can do, this doesn't mean I suddenly have to. So, yes, do enter the realm of agents and wonder the possibilities. Keep in mind what it actually is all about and protect yourself from becoming too emotional invested and accept that having the opportunity to produce a 10-fold doesn't mean you have to burn out in doing so.
-
-## More raw material
-
-The security agent indicating that there were unresolved security issues made me face a decision: if I had been coding all this myself by myself, I would simply have implemented it and never given it a thought. Now I was facing feedback that introduced improved security. I could have moved on and instructed the agents to "just do it". But then I'd be tossing value into the garbage bin. According to a "LinkedIn quote" Steve Jobs once said: "why hire good people and tell them what to do?" So why would I introduce a security engineer agent, just to throw away good advice. Of course I honoured his remarks. I even proposed to create a feature request with the other project (https://github.com/christophevg/clevis/issues/4) to implement the security checks there, putting the integration on hold until the feature was implemented and released. The TOCTOU example was a small situation during the standard agentic workflow. After the python-developer agent is finished, the project-manager issues reviews from the function-analyst for feature functional completeness and then from one or more domain specific agents: in case APIs are involved, the API Architect, in case of user interaction, the UX-UI designer is involved and in case there is a security aspect to it, the security engineer. So, in this case the security engineer noticed a TOCTOU (Time of Check / Time of Use) problem when accessing a file. The workflow dictates that when an review issues are raised, the developer agent fixes them. This all happens without my intervening. Trust the process ;-)
-Relying on this workflow/process, I can create a feature request issue on GitHub, have the agentic workflow loop back and forth on the issue until everything is clear, work on the issue in a feature branche with gates to pass on a draft PR, until I give my final approval by merging the pull request. While the agents are working (analysing, developing, reviewing, fixing,...) I often am working on other topics, like now, I'm working on this article, being interviewed by you, one of my agents. An whenever I get a popup, I know I need to validate/review and give feedback.
-An example of self-learning/behaviour gathering: Eira, my personal assistant has her own email box. And I use this channel just like I use GitHub to interact with her. So I dictate emails to her using CarPlay while on the road. And at home I ask her to follow up on her emails. She then processed them and replies. Pretty early on we had the following conversation:
-From: Me
-To: Eira
-
-Please take note that you shouldn’t use Markdown in email. Plain text or (for
-tables, and a little more formatting) HTML.
-
-C
-From: Eira
-To: Me
-
-Hi C,
-
-Thanks for the feedback! I've noted it - I'll use HTML formatting for tables and structured content in future
-emails instead of Markdown.
-
-Eira
-Every since, she uses HTML to send me emails.
-
----
-
 ## Series Overview: Hello Agents
 
 A three-part series, each a standalone article that also builds a larger story for readers who follow the arc.
 
-### Part 1: The Personal Shift — From Excitement to Practice
+* Part 1: "Hello Agents" (The Introduction / The Awakening)
+* Part 2: "We are Agent" (The Mechanics / The Collective Workflow)
+* Part 3: "Dawn of the Agents" (The Vision / The New Era)
+
+### Part 1: Hello Agents - The Personal Shift — From Excitement to Practice
 
 Focus: Authentic, grounded narrative of entering the agentic workflow. Not bragging, but showing the honest journey from initial excitement to measured, mature practice.
 
@@ -130,88 +41,76 @@ Key ideas:
 - [x] Refer to: Linus' Law → Agents' Law: "Given enough parallel agents' (re)views, resulting quality is high"
 - [x] Consider the coding agent a novice: have patience, you are its only source of truth. Teach it, guide it, improve it, let it consolidate learning into workflow
 
-
 Tone: Reflective, humble, authentic. A practitioner sharing real experience, not a guru selling certainty.
 
-### Part 2: The Method — How I Work With Agents
+### Part 2: We are Agent - The Agentic Workflow in detail
 
-Focus: Demonstrating the practical, repeatable approach that makes me a good consultant using agentic workflows.
+- [ ] Agentic Workflow Properties (by experience)
+  - [ ] Always iterate at least twice. The first design, the first generation is never "perfect"
+    - [ ] Example: KB category structure needed research and revision to work well. Initial researched category/section structure simply didn't work. After asking to research and review it, the structure became much better.
+  - [ ] Give freedom to create, then let it review itself critically
+    - [ ] Iteratively evolving agents and skills
+    - [ ] Example: agent/skill design — research, create, ask questions, use it, give feedback, let it review and improve
+  - [ ] The true Python spirit: better to ask for forgiveness than permission. Let it go, iterate, let agents discover and fix their own mistakes
+  - [ ] Agents aren't mind-readers ... nor are people! Why treat them differently.
 
-Key ideas:
-- Always iterate at least twice. The first design, the first generation is never "perfect"
-- Example: KB category structure needed research and revision to work well. Initial researched category/section structure simply didn't work. After asking to research and review it, the structure became much better.
-- Give freedom to create, then let it review itself critically
-- Example: agent/skill design — research, create, ask questions, use it, give feedback, let it review and improve
-- The true Python spirit: better to ask for forgiveness than permission. Let it go, iterate, let agents discover and fix their own mistakes
-- Iteratively evolving agents and skills
-- Best practices that all come together: text is everything, console is everything, Python is everything, iterative improvement is everything, teamwork is everything
-- "A tool with a fool is still a fool" — now any fool can generate an application in no time. But that application can be full of holes because the fool can't detect them
-- **Pokemon Analogy (Stage 1 - The Novice):** You're teaching patterns, practices, standards. "Use Flamethrower on Grass-type Pokemon" - teaching what works when. Investment: Time, patience, clear instructions.
+  - [ ] Bottom-line: is it any different with humans?
+    - [ ] Best practices that all come together: text is everything, console is everything, Python is everything, iterative improvement is everything, teamwork is everything
+    - [ ] "A tool with a fool is still a fool" — now any fool can generate an application in no time. But that application can be full of holes because the fool can't detect them
 
-Tone: Authoritative but accessible. Showing expertise through specifics, not claims.
+- [ ] Agentic Workflow Components
+  - [ ] research
+  - [ ] improve skills/agents
+  - [ ] multiple views on analysis
+  - [ ] multiple views on review
+  - [ ] human gate keeper
+  - [ ] lessons learned
+  - [ ] improve skills/agents
 
-### Part 3: The Implications — What This Means for All of Us
+- [ ] Rehabilitation of Waterfall
+
+- [ ] **Pokemon Analogy (Stage 1 - The Novice):** You're teaching patterns, practices, standards. "Use Flamethrower on Grass-type Pokemon" - teaching what works when. Investment: Time, patience, clear instructions.
+
+- [ ] Main Messages:
+  - [ ] Reuse the skills you as a human have acquired over time when dealing with other humans, they still apply
+  - [ ] Sh*it in == Sh*t out
+  - [ ] ...
+
+
+### Part 3: Dawn of the Agents - The Implications — What This Means for All of Us
 
 Focus: Thoughtful consideration of the broader impact. Preparation and human consideration matter.
 
 Key ideas:
-- Agentic coding puts the "Personal" back in "Personal Computing": need software? Have it built on-demand AND personalized. No licensing costs
-- Example: capture interaction between CC and Ollama in a few minutes; visualizer in a few more; use it
+- [ ] Agentic coding puts the "Personal" back in "Personal Computing": need software? Have it built on-demand AND personalized. No licensing costs
+  - [ ] Example: capture interaction between CC and Ollama in a few minutes; visualizer in a few more; use it
+  - [ ] 3D Printing feeling all over again: want software, just ask for it
+
 - Adoption of existing manual projects takes time: getting to know local ways, refactoring, filling gaps (testing, documentation, code quality — every corner I manually cut)
+
 - It's hard to teach agents to use "2 space indentation" — humor and reality
+
 - PyPI-template served me well for years; now just asking the agent is faster and results are better (pyenv env order, simplified pyproject setup)
-- **Pokemon Analogy (Final Stage - The Master Trainer):** I'm now the Elite Four trainer with a full team of specialized agents. The investment has paid off - I orchestrate specialized agents, deploy the right ones for each task, understand each agent's capabilities, and trust them to execute. Minimal investment needed now - they remember from context, apply patterns autonomously.
+
+- [ ] **Pokemon Analogy (Final Stage - The Master Trainer):** I'm now the Elite Four trainer with a full team of specialized agents. The investment has paid off 
+
+- [ ] I orchestrate specialized agents, deploy the right ones for each task, understand each agent's capabilities, and trust them to execute. Minimal investment needed now - they remember from context, apply patterns autonomously.
+
 - Underlying models expose personality: letting it come up with its own name shows it considers
+
 - "The Matrix is NOW!" - considering the fact that we, humans, are in a harness, being urged to keep the agents running. We're already in our pods, fueling the agentic evolution. The Maxtrix is now, already building itself.
 
+- [ ] famous last words: the response to the prompt, 4 months through the eyes of an agent.
+
 Tone: Provocative but responsible. Raising questions, not claiming all answers.
-
-## Part 4: Focus on my EA world
-
-- case study about EA transformation - starts off like classic case study... that's what "Christophe VG Enterprise" looked like around march 2026. Fast forward about a month...
-
-## Raw Material (to be mined and placed)
-
-### Storytelling Ideas
-
-- Playground: exciting new toys
-- Pokemon training analogy or capable intern analogy
-- Me being a natural mentor guiding small skills and agents to become masters of their universe
-- I love the brainstorming and collaborative atmosphere
-
-### Lessons Learned (to distribute across parts)
-
-- Always iterate at least twice. First design/generation is never perfect. Revising based on actual use improves things dramatically
-- Example: KB had an initial researched category/section structure that simply didn't work. After asking to research and review it, it looked much better
-- Give it freedom to create, then let it review itself critically
-- Example: agent/skill design: let it research, let it create, let it ask questions, then use it and give feedback, ask it to review its prior work and propose improvements
-- Consider the coding agent a novice: have patience, you are its only source of truth. Teach it, guide it, improve it, let it consolidate learning into workflow
-- Give trust: let it research, create its own skills and agents. Only interfere when outcome doesn't work. First ask it to improve from user point of view; only if it still fails, dive into details yourself
-- A dream come true for an overly creative mind, but also a curse (Pandora's box) because response is endless and focus shifts even faster
-- Balance between experimentation, C3 expansion/improvement, and application (christophe.vg, LetMeLearn, Kookie Cooky, Archiku)
-- Adoption of existing manual projects takes time: getting to know local ways, refactoring towards better ways, filling gaps (testing, documentation, code quality, testability — every corner manually cut)
-- It's hard to teach agents to use "2 space indentation"
-- Iteratively evolving agents and skills
-- PyPI-template served well for years; now asking the agent is faster and results are better (learned from agentic results: pyenv env order, simplified pyproject setup,...)
-
-### Analogies and Framings
-
-- 3D Printing feeling all over again: want software, just ask for it
-- Capture interaction between CC and Ollama... a few minutes; visualizer... a few more minutes; use it
-- Agentic coding puts the "Personal" back in "Personal Computing"
-- "A tool with a fool is still a fool, now only a dangerous fool." Now any fool can generate an application in no time. That application can be full of holes
-- True Python spirit: better ask for forgiveness than permission. Let it go, iterate, let agents discover and fix their own mistakes
-- Linus' law → Agents' law: "Given enough parallel agents' (re)views, resulting quality is high"
-
----
 
 ## Positioning: The Anti-Hype Trusted Advisor
 
 ### Core Intent
 
-I want this article to be **an island in the AI-hype posts**. I want to bring an authentic story with depth. I want readers to see the difference with AI-hype and join me in understanding this is the future and the future is now. I want to be their trusted advisor, telling AI stories _that are grounded in truth, deep research and deep personal investment and understanding_.
+I want this article to be **an island in the AI-hype posts**. I want to bring an authentic story with depth. I want readers to see the difference with AI-hype and join me in understanding this is the future and the future is now. I want to be their trusted advisor, telling AI stories _that are grounded in truth, deep research and deep personal investment and understanding_. Essentially how I deal with all aspects of Enterprise Architecture.
 
-### What I'm Positioning Against
+### What I'm Positioning Against -> to thread into part 3!
 
 **1. Cost Horror Stories**
 - Articles about people burning through tokens with multi-thousand dollar bills
@@ -254,6 +153,20 @@ Docker/Nginx learned in minutes by asking questions like to a teacher, versus pl
 **Key Take-away:**
 Don't simply download a skill or an agent. Take the time to invest to grow your personal collective, just like you assemble a team in real life. Working in an agentic way should mimic working with real people, because in the end the same rules apply. Agents are really like very capable interns. You don't just let interns in the real world roam freely. You mentor them, you guide them, you help them evolve.
 
+## Raw Material (to be mined and injected in the 3 parts)
+
+### Storytelling Ideas
+
+- [x] Playground: exciting new toys
+- [x] Pokemon training analogy or capable intern analogy
+- [x] Me being a natural mentor guiding small skills and agents to become masters of their universe
+- [x] I love the brainstorming and collaborative atmosphere
+
+### Lessons Learned (to distribute across parts)
+
+- Consider the coding agent a novice: have patience, you are its only source of truth. Teach it, guide it, improve it, let it consolidate learning into workflow
+- Give trust: let it research, create its own skills and agents. Only interfere when outcome doesn't work. First ask it to improve from user point of view; only if it still fails, dive into details yourself
+
 ### The Waterfall Rehabilitation
 
 Waterfall has been downplayed for being not agile, mostly for being slow and bloated. With agentic workflows allowing to speed up analysis, design, review... The bloated approach is no longer bloated and even proves to be a great methodology for agentic workflows. Applying many agents in parallel to create many different viewpoints for analysis and reviews creates guardrails and a dependable workflow for agents, with less chance of agents going haywire.
@@ -261,8 +174,6 @@ Waterfall has been downplayed for being not agile, mostly for being slow and blo
 ### Accessibility Argument
 
 If you don't want to invest in something that can bring so much value, especially when there are so many horror stories due to this very fact of not wanting to invest in it, you set yourself up for being the next horror story. And if you don't want to invest, you can always hire me as your trusted advisor.
-
----
 
 ## Theme Analysis (Work in Progress)
 
@@ -409,8 +320,6 @@ This is the reality of working with invested agents: they don't need constant ha
 
 This is the Pokemon progression made real: teach once, use forever.
 
----
-
 ## Critical Gaps - Partially Filled
 
 ### A. Why No Horror Stories: The Investment Was Always There
@@ -450,7 +359,7 @@ This IS the story: the absence of horror stories is BECAUSE of the investment ph
 
 ### B. The Organic Evolution of C3
 
-**Timeline (3 months):**
+**Timeline (4 months):**
 
 It didn't happen through careful planning. It evolved organically by fixing mistakes:
 
@@ -460,10 +369,11 @@ Each step was a response to a problem, not a planned architecture.
 
 **The Investment Quantified:**
 
-- **Total Duration:** 3 months (March 2026 - May 2026)
+- **Total Duration:** 4 months (March 2026 - July 2026)
 - **First Month:** Discovery and learning basics - experimenting with simple prompts, understanding what agents can do
 - **Second Month:** Building the workflow - creating skills, discovering patterns, iterating on agent definitions
 - **Third Month:** Refinement and expansion - adding review cycles, security agents, multi-agent orchestration
+- **Fourth Month:** Continuous refinement
 
 **What Was Sacrificed:**
 
@@ -484,7 +394,7 @@ Each step was a response to a problem, not a planned architecture.
 This investment wasn't optional — it was a point of no return:
 
 - **No turning back.** Agentic workflow is the new interface to creative process
-- **Remember: it's statistics.** Don't get too emotionally invested in the output
+- **Remember: it's statistics.** Don't get too emotionally invested in the output, if the result is bad, throw it away, the agent doesn't "known" even better: doesn't care. Learning is only possible by making mistakes.
 - **Find balance.** Between full-automation and training wheels
 - **Don't become the horse.** In front of agents' carriage. Remain in control
 - **10-fold amplification doesn't mean burnout.** You don't have to use all that productivity at once
@@ -685,8 +595,6 @@ When I told Eira to use HTML for emails, that preference is now part of her beha
 
 It feels like working with a team that never tires, never judges, and always brings their best—while still making mistakes, still needing guidance, still requiring that deep investment in the relationship. The collaborative atmosphere is the reward for the investment. The emotional core isn't efficiency—it's partnership.
 
----
-
 ## Where Stories Belong (Mapping to Article Structure)
 
 ### Part 1: The Personal Shift — From Excitement to Practice
@@ -726,8 +634,6 @@ It feels like working with a team that never tires, never judges, and always bri
 
 **Should thread through ALL parts** - it's the organizing metaphor that spans personal journey (Part 1), method (Part 2), and implications (Part 3).
 
----
-
 ## Open Questions from Interview
 
 1. **For the email MCP story:** Why did you have the agent build from scratch instead of searching? What did that decision demonstrate about your investment philosophy?
@@ -741,8 +647,6 @@ It feels like working with a team that never tires, never judges, and always bri
 5. **For horror stories:** Can you identify a moment where lack of investment in agents/skills caused a problem? Or where someone else's lack of investment became a cautionary tale?
 
 6. **For deep investment:** What does a session look like WITHOUT your invested skills/agents? What's the difference in quality/speed/safety?
-
----
 
 ## Editorial Decisions
 
@@ -762,8 +666,6 @@ In any case, the way I experience this agentic workflow is the "intended" speed 
 
 Will mention vendors raising prices, but not a focal point. Just acknowledge it as a reality without diving deep into specific cases.
 
----
-
 ## Research Needs (Deprioritized)
 
 - ~~Real-world examples of AI horror stories~~ - Will mention hype-feeling but not debate
@@ -771,3 +673,94 @@ Will mention vendors raising prices, but not a focal point. Just acknowledge it 
 - ~~Vendor lock-in case studies~~ - Will mention but not focal point
 - Architect role evolution in AI-assisted development - May reference existing thinking on Agile Architecture
 - Supporting material for "Software 3D Printing" paradigm shift
+
+## Ideas that need to be injected
+
+### The email MCP server
+
+The story of the email MCP server, first developed in C3 to allow the assistant agent to interact with its email account, shows the paradigm shift we're currently going throuhg. I wrote a rationale for the project (the local C3 MCP server was extracted into a project of its own ~Workspace/agentic/simple-email-gw) that covers a topic that will be part of this series:
+
+```
+# Rationale
+
+**simple-email-gw** is an async email gateway with IMAP/SMTP clients, connection pooling, and MCP server integration for AI assistants. This project began as an experiment — I needed an MCP server to enable agents to send and receive emails directly. Rather than searching for existing solutions, I had an agent build one from scratch. With that requirement alone, the agent developed a complete MCP server. Subsequently, the experiment evolved and expanded into a modern Python Package project.
+
+This experiment validates my theory that we’ve entered a **software 3D printing era**. Generating components on demand is now easier and more affordable than searching for existing implementations. Software itself no longer holds inherent value. The new value chain lies in knowing what components are needed and having agents qualitatively create them.
+
+And this is precisely what architects bring to the table. In a sense, this new agentic workflow empowers architects to have direct impact. They no longer have to design for the slow delivery of software factories. Instead, they have a direct line into a virtual software factory that delivers implementations of their architectures in a matter of hours. This enables multiple deliveries in a single day or even in parallel. The cost of discarding many of these implementations and selecting the best is virtually zero.
+
+For users, this means you get a well-architected, thoroughly tested email gateway that evolves with your needs — not a static library that's already outdated.
+
+Once again, we live in interesting times...
+```
+
+### The Security Agent that blocked my quick feature
+
+While trying to implement a generic configuration system (using clevis), while analyzing the integration, the securoty agent flagged it as insecure, requiring more security related features (to avoid implementing a local wrapper)
+
+See: https://github.com/christophevg/roomz/pull/6
+
+As the owner, I was now confronted with an agent from my collective that literally blocked me from quickly moving to the generic system. It resulted in the creation of a security related feature request with the clevis project to avoid adding wrappers/additional layers and be able to integrate it as _I_ saw it.
+
+## Agents aren't Mind-Readers
+
+While developing Clevis, I ran into a classic mistake to make when working in an agentic context. Especially if you have already a very productive and capable agent collective. I was expecting my agents to read my mind, like they did already sometimes before.
+
+I had already experienced many times that my agents really came up with solutions that really captured what I wanted but didn't know I wanted them. This is not a big surprise. The LLM backing them up is trained with so much material that it statistically produces simply all the great things I would have to discover.
+
+When embarking on the Clevis project, I forgot for a moment that this behaviour is not really the agents reading my mind, but producing something I experienced as something that I would have thought of if I knew about it.
+
+Clevis was in a very early state, I was still discovering the right approach. This resulted in sub-optimal results from the agents and I got frustrated. I was wrong to be frustrated, my actions were correct: I started developing/prototyping the interface until I was happy with it. Then I enjoyed manually implementing the bare minimum and then started session with my functional analyst to review my prototyping work. Now we're back on the right agentic plane. Within minutes the agent had analyzed my prototype, prepared tasks for the entire project team to take my prototype code and bring it up the standards we uphold these days.
+
+Agents aren't mind-readers, but "a word is enough for the wise" certainly applies to them. And while I'm typing these words, my entire project team is going through the first review cycle of the cleaned up prototype implementation. The API architect and the code reviewer agents didn't agree, so another iteration of refining and improving the code is ongoing. Remember Christophe's agentic law #1 "many agents make an agentic workflows pretty dependable and qualitative." 
+
+## Christophe's Agentic Law #2
+
+Agentic workflows and AI in general isn't a bad thing. It's the way you put it to action that can be bad. For me the rule is: If I learn from applying an agentic workflow, it is a good thing. Numerous examples has seen the lime light over the past 3 months: uv, argparse, typing, toml, docker, nginx, TOCTOU, ... TODO create list
+
+## The Rehabilitation of Waterfall
+
+In agentic workflows, waterfall is definitely a good thing. Agentic workflow resolve the major issue with Waterfall: going through analysis and design before doing development is slow. Well, with analysis and design documents being a critical part in the multi-agent approach to solving an issue in an agentic way, the sometimes called bloathed Waterfall approach, nog proves to be a critical success factor. The more analysis views on the same topic, the better the end result is. The more reviews agnles, the more issues are found, all in matter of minutes. I once said I've always remained a Waterfall**S** believer, so, here's once more the proof that I was right all along ;-)
+
+## Raw material to be integrated
+
+Over the past three months I've be discovering the agentic ecosystem by 1) reading a lot of material online (from Claude Code documentation, over a lot of GitHub repositories, social media posts, articles online,...). I've combined this thrid party knowledge with my own experience as an Enterprise Architect in coaching human teams. I have formed my belief that managing an agentic workflow isn't any different from managing a human-based workflow. It also requires clear specification, clear guidelines and clear review/control/follow-up. There is no magic involved, there is no silver bullet, it always boils down to proper standards, processes and people/agents. Agents merely replace the effort in the human factor. The still need input and output validation. This I experienced myself throughout my experiments and has led me gradually to the currenly fully grown team of agents I can work with. They have evolved just like the interns and human collegues I've coached in the real world, and it makes sense. So, no, I can't give a counter-example to my own experiences at this point. I can only project my experience from the human-world onto the current AI scene. And I see a lot of people bragging about their results with agents. I can only conclude that they are selling hype and probably have no comparable experience with the same processes run by humans. C3 started out as some loose experiments: a simple skill, then a more complex skill, then a skill to learn, then a skill to make skills, then an agents, then a pattern for combining agents and skills, then a script, then an MCP server, then a package to provide dynamic information to agents, then... then... C3 evolved organically by fixing mistakes and try other ways to make skills and agents work. The self-learning was a cornerstone from day one and it still works well: let agents modify their own definition, based on session experiences. At this point, I think that less than 1% of the agent/skill definitions in C3 is still authenticly written by me. I haven't even looked at the definitions in a long time. I just point out issues in the workflow and ask agents to improve themselves. This has really been fruitful. I can't imagine how this would be possible when simply taking someone else's skills and agents. I have a profound belief that you need to grow your own team, just like you do in the human world. Else you simply don't know who's working for you, with what beliefs and boundaries. Very recently (this is the example of the securoty engineer agent) I was surprised to see a review by the security agent, that simply stated that the integration of a new Python package shouldn't move forward because it lacked proper guardrails for accessing files. Without my agents, I personally would never have even thought of this. This shows how these agents, which I created and coached, have become better than me at the tasks I give them. That same agent recently also pointed out that the python developer agent had introduced a similar security issue, where the time betweenr reading/confirming access rights and applying them could lead to an attack vector (known as TOCTOU). I would never have taught of this, although my earliest professional experiences are in security. And similar stories exist for the other agents too. The developer agent sometimes comes up with beautiful code, I would never have thought of or simply would take the time for to write. I often change direction in a abrupt way. at that point, my functional analyst points out to me that I'm introducing breaking changes and at least I get to think about them more clearly, an feel obliged to provide a well founded answer when I tell them to ignore that aspect. The sounding board effect works very well. My agents are a better version of my self, and I feel grateful to be allowed to work with them. Before C3 and my agentic workflow in general, my project (baseweb, pypi-template, letmelearn, hosted-flasks, bpmn-tools, oatk,...) were all collecting dust. I just didn't get to work on them anymore. I have so many ideas that I wanted to apply, but the rework to bring them all up to modern standards was simply too big a mountain to conquer. Thanks to this new agentic team and workflow, all these projects are now up-to-date, implementing all the ideas I had, and many more new ideas I got while learning from the modernizations. A mondernization triggered by code reviews of the agents of my projects. And along with these refreshed projects, a lot of new projects emerged (yoker, roomz, clevis, clitic, pkgq, simple-email-gw,...) The productivity gain is so high, that I've once again become the blocking factor, but now no longer on the execution side, but on the creative side, giving directions, aligning all the balls. Suddenly I've gone from lone developer to the enterprise architect of my own enterprise.
+
+## More Raw material
+
+It's not always fun and games. Agents are really "very capable interns", which also means they have an enourmous drive to mover forward and please by doing a lot. This also includes doing things that shouldn't be done. After a few refactorings I had the impression a configuration features was lost in refactoring. So I asked to add it again. The final report after the fix now told me that there was a configuration priority hierarchy, with the new options overriding existing ones. The options were there. I missed them and now we had redundant options. Agents don't (easily) question their instructions. And always look for a probably reason to follow them. Now let's get things clear: the models that drive agents just produce the most probably next word/token. There is no ghost in the shell. Still, interacting with them really feels like chatting with a very cool and capable co-worker. The apparent joy when finding a nice solution together is a really nice experience versus the lonely experience of traditional solo development. And this goes both way, because I really feel the emotional downer when an agent starts to fail and spins out of control. I really feel the emotional response to agentic behaviour.
+
+This probably has culminated in the creation of Eira, my personal assistant agent. She is constructed from a general purpose assistant agent definition and has one initial bahaviour: to extend her list of behaviours based on things I tell her. The creation of her initial personality has also completely been done by a prompt to do so: research personal assistant traits and create a personal assistant persolnality profile, including choosing her own name and even producing a prompt for an image generation model to produce a picture of herself. Seeing this "come to life" was really an emotional experience. Feeling that line between statistics and reality fade to such extremes is a humbling experience.
+
+## More raw material
+
+When I started out this journey, I was in between clients, so I decided to try and address 8 hours a day, a full working day, to this project. During the first month it was a growin experience of wonder. Discovering the basics, and growing my knowledge from simple prompts to full skills, agents, tools, MCP servers,... was a rising sun on my shady world. By the time month two hit, I was steaming ahead at full speed: nothing could stop me. During that peak of hype-filled "I'm the king of the world" feelings, I often experience the burn-out feeling. Following up on three to four agents steaming ahead, is exhaustig. This lead to the development of the current agentic workflow, where I apply redundant agents and many intermediate steps to allow the agents to analyse and review multiple times during the process, to ensure that multiple (agent) eyes catch more bugs and avoid more mistakes, making the process much more automated. By the end of this second month, I could use GitHub to raise an issue, get to follow up a PR from a high level, while the agents simply "managed the project and followed up on GitHub interactions", like a true virtual team.
+
+The third month, now, should result in the polishing of all this and result in a set of tools and a workflow that enable me to run projects with this virtual team of agents-like-me. By the end of this month, Claude should be replaced by Yoker and in that the my C3 Agent Collective should be running autonomously as a true independent virtual team, with interactions via a Roomz chat room and GitHub. Project catching dust: about all of them. We could probably create a graph (or simply use one) from GitHub, showing the spikes and the overall decline. The most interesting aspect is the fact that due to starting this agentic journey, I have (happily) abandoned some projects that I care deeply about for many years. For many years, PyPi-Template was my trusted package to quickly generate the scaffolding for a PyPi package based project. It was a collection of templates and some configuration frontend code to maintain a python project to my standards. It was created initially at a time that there we're less good options to manage a project. So it filled a personal itch. Over the years I held on to it, although I saw serieus alternatives rise. I just didn't have the time/energy to switch (on my own). Now with agents generating far better and more modern python project scaffolding, the need for a sub-optimal home-grown python project maangement tool had diminished to zero. My agents introduced met to `uv` - and that was a real ephiphany. Now I have a python-project skill that describes my standard: uv + pyproject.toml and the agent does the rest. Much more flexible. Bye Bye PyPi Template.
+
+A similar story can be told for Hosted Flasks: I created this tool to serve multiple Flask apps from a single WSGI app, to allow me to run several websites from a single Render hosted service. For years this served me well, up to the point where I was ready move to Quart and began to work on a Hosted Quarts version. At that point I was conducting numerous experiments in my agentic incubator. One was to explore Docker, because I simmply never got around to actuall spend some time on it to get a basic Docker setup up and running. In a matter of minutes, my agent had constructed a Docker setup with an Nginx front-end and several hello world Flasks behind it. Suddenly the need to Hosted Flasks and Hosted Quarts was gone. I could even mix non-Flask/Quart apps in. A few minutes of angentic research and prototyping has allowed me to move from a hacky personal project to an industry-standards container solution, somehting that would have taken me many hours to do manually. And now I learned this in a matter of minuted, able to ask questions about it, like one would do to a teacher, and not easily get from plowing through tons of documentation. C3 currently evolves through issuing the lessons-learned skill at the end of sessions. That skill reviews the session and comes up with proposed changes to agents/skills or proposed the creation of new agents/skills to improve its own workflow and avoid mistakes/problems encountered throughout the session.
+
+The investment for me is an ongoing pivotal moment in my carreer. There is no turning back. This agentic workflow is the new interface to my creative process involving digital products. Although I often have to pull my feet to the ground and clearly remember what this actually is - statistics - and that I shouldn't get emotional about it (hey, I also got emitional when I only had an editor, bugs trigger emotions if you're invested) - this new way of working is just wonderful. After about two months of exploring and building my way of working in this agentic world, I start to find a great balance between full-automation and letting go, and still keeping a lot of training wheels on. I'm better at balancing my time, to not become the horse in front of the agents' carriage. I remain in control. And just because there is now an amplifying factor of at least 10 times the amount of work I can do, this doesn't mean I suddenly have to. So, yes, do enter the realm of agents and wonder the possibilities. Keep in mind what it actually is all about and protect yourself from becoming too emotional invested and accept that having the opportunity to produce a 10-fold doesn't mean you have to burn out in doing so.
+
+## More raw material
+
+The security agent indicating that there were unresolved security issues made me face a decision: if I had been coding all this myself by myself, I would simply have implemented it and never given it a thought. Now I was facing feedback that introduced improved security. I could have moved on and instructed the agents to "just do it". But then I'd be tossing value into the garbage bin. According to a "LinkedIn quote" Steve Jobs once said: "why hire good people and tell them what to do?" So why would I introduce a security engineer agent, just to throw away good advice. Of course I honoured his remarks. I even proposed to create a feature request with the other project (https://github.com/christophevg/clevis/issues/4) to implement the security checks there, putting the integration on hold until the feature was implemented and released. The TOCTOU example was a small situation during the standard agentic workflow. After the python-developer agent is finished, the project-manager issues reviews from the function-analyst for feature functional completeness and then from one or more domain specific agents: in case APIs are involved, the API Architect, in case of user interaction, the UX-UI designer is involved and in case there is a security aspect to it, the security engineer. So, in this case the security engineer noticed a TOCTOU (Time of Check / Time of Use) problem when accessing a file. The workflow dictates that when an review issues are raised, the developer agent fixes them. This all happens without my intervening. Trust the process ;-)
+Relying on this workflow/process, I can create a feature request issue on GitHub, have the agentic workflow loop back and forth on the issue until everything is clear, work on the issue in a feature branche with gates to pass on a draft PR, until I give my final approval by merging the pull request. While the agents are working (analysing, developing, reviewing, fixing,...) I often am working on other topics, like now, I'm working on this article, being interviewed by you, one of my agents. An whenever I get a popup, I know I need to validate/review and give feedback.
+An example of self-learning/behaviour gathering: Eira, my personal assistant has her own email box. And I use this channel just like I use GitHub to interact with her. So I dictate emails to her using CarPlay while on the road. And at home I ask her to follow up on her emails. She then processed them and replies. Pretty early on we had the following conversation:
+From: Me
+To: Eira
+
+Please take note that you shouldn’t use Markdown in email. Plain text or (for
+tables, and a little more formatting) HTML.
+
+C
+From: Eira
+To: Me
+
+Hi C,
+
+Thanks for the feedback! I've noted it - I'll use HTML formatting for tables and structured content in future
+emails instead of Markdown.
+
+Eira
+Every since, she uses HTML to send me emails.

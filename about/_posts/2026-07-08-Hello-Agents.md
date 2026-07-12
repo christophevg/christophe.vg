@@ -5,6 +5,7 @@ short:
 tags:
   - thing
   - professional
+  - agentic
   - ai
   - personal
 header:
@@ -256,13 +257,13 @@ The bottom grid is that of a second account I've created especially {% include e
 
 Now before you object by stating that volume of commits is a lousy statistic: you are right, yet, I've from day one ensured that every commit made had my approval, focused on the same scope as I did before. So essentially, for measuring the boost in overall productivity, relative to the period before the agents' introduction is valid, at least from a mere visual perspective.
 
-Seeing the two grids alongside to each other also clearly shows the actual distinction in work and how it is divided between my and my agents.
+Seeing the two grids alongside to each other also clearly shows the actual distinction in work and how it is divided between me and my agents.
 
-> Let me give you another reason why I went with the Ollama offering and especially why I'm a big proponent of the use of open weight models: paying for using their infrastructure (in stead of per token or request) scales both ways: models get more optimized, requiring less infrastructure for the same or better models. This optimization today already brings more and more models closed to your own machine. It's a fact that in relatively little time, top-models I currently use using Ollama's cloud infrastructure will be runnable on my machine. You will never be able to run Anthropic's models on your machine, but you can run for example {% include external linkz="https://huggingface.co/zai-org/GLM-5.2" title="zAI's GLM flagship model" %} on your own machine. This is an open weight/open source model, that easily matches the so called top-tier proprietary, closed-source models, as shown in several reports online. So by choosing Ollama as my main provider, or better choosing a provider that gives me affordable access to top-tier open models, doesn't lock me into a vendor, but makes me 100% ready to move from cloud to local inference with the switch of a single configuration switch as soon as local performance allows it - and history of computing proves this _will_ be soon.
+> Let me give you another reason why I went with the Ollama offering and especially why I'm a big proponent of the use of open weight models: paying for using their infrastructure (in stead of per token or request) scales both ways: models get more optimized, requiring less infrastructure for the same or better models. This optimization today already brings more and more models closed to your own machine. It's a fact that in relatively little time, top-models I currently use using Ollama's cloud infrastructure will be runnable on my machine. You will never be able to run Anthropic's models on your machine, but you can run for example {% include external link="https://huggingface.co/zai-org/GLM-5.2" title="zAI's GLM flagship model" %} on your own machine. This is an open weight/open source model, that easily matches the so called top-tier proprietary, closed-source models, as shown in several reports online. So by choosing Ollama as my main provider, or better choosing a provider that gives me affordable access to top-tier open models, doesn't lock me into a vendor, but makes me 100% ready to move from cloud to local inference with the switch of a single configuration switch as soon as local performance allows it - and history of computing proves this _will_ be soon.
 
 ## Christophe's Agentic Laws
 
-The past four months have been a rush. What started out as little experimentation in an incubator project, grew into my personal {% include external link="https://github.com/christophevg/c3" title="agentic collection" %} and a stack of new projects, old project being renovated, bringing them up to nowadays modern standards, while learning all about them and more myself and foremost allowing me to take on the role I professionally have mastered over all these years, that of the architect of my own enterprise.
+The past four months have been a rush. What started out as little experimentation in an incubator project, grew into my personal {% include external link="https://github.com/christophevg/c3" title="agentic collective" %} and a stack of new projects, old project being renovated, bringing them up to nowadays modern standards, while learning all about them and more myself and foremost allowing me to take on the role I professionally have mastered over all these years, that of the architect of my own enterprise.
 
 Now this is really a dream come true for this and any overly creative mind. A team that endlessly responds with qualitative results. Yet it has also proven to be a somewhat of a "Pandora's box". Because the response is endless, the urge to do more, to spawn more project, to set up another parallel session, to add another meta-layer, puts an enormous strain on the human. The agents are limited by your credit, and after a few months I now have come to find a nice balance between doing agentic work and off-agentic work. And I have even found a renewed pleasure in doing off-agentic work, which now maybe even counter intuitively lives in the unstructured type of work. The unstructured work where LLMs typically excel, is where I now focus on, the original, creative work like writing, researching and formulating new ideas. And with that work I feed this beast, that cleans it up for me, finds holes in my reasoning, challenges me, all resulting in improvements, all within the confined boundaries I've constructed.
 
@@ -286,7 +287,7 @@ If we want to move forward with this agentic paradigm, we're going to have to ac
 
 This idea has been the driving force for the creation of Yoker, which will be the topic of the follow up to this first of three articles on my experiences and work in the realm of agentic workflows. So stay tuned.
 
-### Christophe's Agentic Law #2: Given Enough Agents, All Agentic Solutions Become Dependable
+### Christophe's Agentic Law #2: Given Enough Agents, Agentic Workflows Become Dependable
 
 Building on law #1, we have to also acknowledge that unstructured input results in (mostly) unstructured output or at least output that has the level of dependability of unstructured output. If you want to put this differently: when we rely on a probabilistic method, the outcome is probabilistic.
 
@@ -354,11 +355,11 @@ You would never do the same to their human counterparts, so why would we do this
 
 ## Stay Tuned...
 
-That's it for part 1... This was the first in a series of articles I've written on the topic of agentic workflows. This installment focused on the initial experiences I was able to enjoy over the first 4 months of intensely working with agents, exploring the opportunities, pitfalls,... At first, my goal was to explore, yet this soon grew far beyond that.
+That's it for part 1... This was the first in a series of articles I've written on the topic of agentic workflows. This installment focused on the initial experiences I was able to enjoy over the first 4 months of intensely working with agents, exploring the opportunities, uncovering the pitfalls, sifting through the hype... At first, my goal was to explore, yet this soon grew far beyond that.
 
-In the [next part]() we dive deeper into this realm of agents and I'll introduce you to my vision of it: Yoker. From observing and exploring, I'll show my heading, my strategy and the first steps towards my goal.
+In the [next part](We-are-Agent) we take a deep dive into the agentic workflow and take a closer look at all components that make it work, identifying what is needed and how we could implement those. From observing and exploring to consolidation and creation, I'll show my heading, my strategy and the first steps towards that goal. And of course all that and a lot of fun anecdotes added in the mix.
 
-In the [third chapter](), I'll also lift the veil on the overall picture that has been driving me in this direction and how I've fundamentally embedded agentic workflows in everything I do. And all that is based on the fundamental laws and rules I set out above in this first part... Hello Agents!
+In the [third chapter](Dawn-of-the-Agents), I take step back from all this technology and consider what this all means for us. What's this new era that is upon us like? What will change? For the better and the worse?
 
 ---
 
@@ -368,3 +369,4 @@ TODO
 * apply more stress on the "Brainstorm & Refine": coin idea, clean up, be critical
 * introduce more images/videos, especially in the second half
 * ensure all new images have webp versions
+* cross check the content used with the ideas in the working document, list which content that isn't used here could be added (at what exact location)

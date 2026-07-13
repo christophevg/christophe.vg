@@ -21,6 +21,8 @@ About four months ago I entered my famous [holiday mode](Holiday-Mode) in betwee
 
 Let's first take a step back: If you know me, or have read some of my personal [things](/tags/#thing), you know by now that I have this urge to [seek out problems](Problem-Seeker), get to the [bottom of things](50-Shades-of-Ceremony), to [get my hands dirty](/makes), to dive into the gory technical details, before I embrace any technology, paradigm, methodology, simply because I'm hard to convince and hardly ever trust the word of someone else - and that's experience talking, getting more and more affirmed with years passing by.
 
+TODO: Add investment quantification here or in a dedicated early section. Describe the commitment: 8 hours/day, 5 days/week, for 4 months — treating yourself as your own client. What was sacrificed (personal time, evenings and weekends, social media presence, deliberately not taking shortcuts with existing skills/agents from others) and what was gained (productivity multiplier, quality improvement, capability expansion, emotional reward). The first month was discovery and wonder — growing from simple prompts to skills/agents/tools/MCP servers. The second month was peak hype, the "king of the world" feeling, but also burn-out from following 3-4 agents steaming ahead — which led to developing the multi-agent workflow with redundant analysis and review steps. The third month was polishing — C3 running autonomously via Yoker, Roomz chat, GitHub. See the preparation document's "Time Investment" and "The Pivotal Career Moment" sections for raw material. This sets up the stakes before the story unfolds.
+
 ## Whizz Kids also Grow Up
 
 {% include video id="GDdVbOcUlTo" name="whizz-kids-video" title="Whizz Kids" %}
@@ -51,131 +53,25 @@ Now I admit, I had a hard time not already jumping on the embryonic agentic wago
 
 What more do you need to be convinced? This is truly a developer, including denying and lying. I felt right at home, ready to start training these agents to become better versions of themselves and I could rely on years and years of experience, coaching teams to focus on analysis, processes, clean code and thank god... architecture and governance.
 
+TODO: Develop the mentoring dynamic here. Draw out the parallel between coaching human teams (which you've done professionally for 25+ years as an Enterprise Architect) and mentoring agents. The same skills apply: clear specification, guidelines, review/control/follow-up, standards, processes, and people. Agents are "very capable interns" — you don't let interns roam freely, you mentor them, guide them, help them evolve. This mentoring dynamic is a thread that runs through the entire series and connects your professional experience to this new paradigm. Managing an agentic workflow is no different from managing a human-based workflow: it requires the same discipline, the same governance. There is no magic, no silver bullet — it always boils down to proper standards, processes and people/agents. See the preparation document's "Raw material to be integrated" section for material on this parallel.
+
 ## From LLM to Workflow
 
-In case your still a bit roaming the misty banks of the AI world, here's a very small analogy to help you put things in perspective and built a simple but adequate mental model that will help you in better understanding what we're dealing with.
+TODO: Write a 3-4 paragraph compressed summary of the LLM primer that was moved to Part 2 ("We are Agent"). This summary should give non-technical readers enough understanding to follow the rest of Part 1. The full primer — covering the CPU/LLM analogy ("Give me an L..."), the harness/OS analogy ("The LLM in the Harness"), prompting skilled agents ("Prompting a Skilled Agent"), context management ("It's All About the Context"), and the governance subsection ("With Great Unstructured Power, Comes Great... Required Governance") — now lives in Part 2.
 
-An LLM, or Large Language Model, is a vast neural network that accepts input, the so called context, and based on that input produces output, a single next word. It does this based on previous experience, essentially all texts possibly available, and quiet simply does this by choosing the statistically most probably next word. That's it. Nothing more, nothing less. Due to that vast multi-dimensional neural network, it inherently stores knowledge and _seems to_ inhibit reasoning.
+The summary MUST preserve the governance insight (the conceptual thesis of this article): that LLMs introduce a new layer of abstraction with inherent uncertainty (the infinite monkey theorem demonstration, "never trust an LLM" — given the exact same request, it produced two different answers), and that just as enterprise architecture introduces governance to manage uncertainty in human organizations, agentic workflows require a similar governance layer — the iterative feedback loop between governance, management, and results. This governance insight is the conceptual foundation that Law #1 builds on, so it must survive in Part 1 even in compressed form. Refer to Part 2 for the full primer content to draw from when writing this summary.
 
-Still, although that the incredible high degree of dimensionality and ludicrous amount of semantical knowledge that is stored in this statistical prediction machine, it remains nothing more than, given a context, a probability for the next word. And if your context is very specific and complex, even the biggest model might not have a correct answer stored in it, but will still produce the most probable next word. Even if that is completely wrong.
+TODO: Add a "before" section here describing the stagnation that preceded the agentic awakening. Paint the picture of projects collecting dust: baseweb, pypi-template, letmelearn, hosted-flasks, bpmn-tools, oatk — not dramatic failures, but slow stagnation. The mountain of technical debt was too steep to climb alone. This is the real "horror story" — not a dramatic crash, but a slow fade into irrelevance. Projects don't fail spectacularly when you don't invest; they just slowly die. This sets up the contrast for the transformation that follows in "Let It Go." See the preparation document's "Critical Gaps - A. Why No Horror Stories" and "D. The Cost of NOT Investing" sections for raw material, including the project list and the framing of stagnation vs. dramatic failure.
 
-### Give me an L, give me an L, give me an M, what does that spell? CPU!
-
-Now, for the analogy, think of such an LLM as the CPU, the central processing unit, of your computer. It accepts input, does some work, and produces output: one word. Now, that one word doesn't really give us an answer so, just like your computer surrounds the CPU with some firmware (back in the days this was BIOS, these days mostly UEFI, the Universal Extensible Firmware). In case of the LLM, this "firmware" takes that one word and feeds it back in the LLM again, waiting for the next word, and the next, and the next, until you get a full sentence, a full paragraph, an image, a video,...
-
-### The LLM in the Harness
-
-By it self, just like the CPU, even with the firmware layer, an LLM is just a text generator. To be able to actually do something a little more useful with it, we need an Operating System, an OS, and in case of an LLM we call this a "harness". A harness provides higher level concepts that enables the user to interact with the LLM and enables the LLM to do more.
-
-A harness, like Claude Code or Codex or Gemini CLI, sets the stage for the user, injecting some basic context, so that the more specific questions from the user are handled more "as expected". This basic context "primes" the LLM and make sure that it "behaves" as the "helpful assistant" the user expects it to be. This so called "system prompt" describes how the LLM should handle the requests from the user, including what to "do" and what not.
-
-Remember, the LLM was trained with every possible text the trainers could find. So there is knowledge in there from many different viewpoints. A system prompt will typically lead the way to an area where the user typically will want to be. For example when I'm interested in facts, I don't want the answer to be constructed based on text from a fairy tale book. So the harness will typically inject a system prompt that "tells" the LLM to be "an knowledgeable fact-based scientist".
-
-Just like the OS of your computer, the harness also make sure that you don't feed anything into the LLM that might cause havoc. It prepares and formats your questions just the way the LLM likes them to be. And similarly it also provides "tools" to the LLM that it can "use" to "do" things. Yes, "do" things. Yes, indeed, I told you that an LLM produces the next "word". Well, to us it's a word, to the LLM it's a number. And the way we interpret that number, makes it a "word", or a "command". So if at a given iteration of feeding context to the LLM, it decides that the most probable next output is to use a tool, the harness translates that request into an action, like reading a file, writing a file, search the web, or any other tools the harness provides to the LLM.
-
-### Prompting a Skilled Agent
-
-So, with a CPU/LLM and an OS/harness we're now entering user space. On our computer we, the users, use applications, apps. These apps interact with the OS and the underlying CPU to perform tasks. These tasks are implemented by developers using lines of code. In the LLM world, these are our "prompts", "agents" and "skills". And they also consist of code, only now in simple, plain everyday language.
-
-So, a prompt you know, but what are skills and agents? Fundamentally, they're just the same. They too are pieces of text that we feed into the context and send to the LLM to get it's reply. Remember when I told you that a harness injects additional context for you, the system prompt, telling the LLM to be a good LLM and help you? An agent is pretty much that. An agent (prompt ro definition) contains instructions on how you want the LLM to behave, as a well respected scientist, or a comedian... Here's an example:
-
-```markdown
----
-name: backwards
-description: A demonstration agent for testing, that replies with reversed answers
----
-# Backwards Agent
-You are a helpful assistant that ALWAYS formats responses backwards/reversed.
-```
-
-And that simple agent definition, when activated in _a_ harness...
-
-{% include image name="yoker-backwards" bottom="25px" kind="png" %}
-
-> Notice the dimmed text? That too is output created by the LLM. It's a concept called "thinking" and it allows the model to iterate a few times when handling your request. Here you clearly see how the model breaks down the request, produces an answer and then takes into account its agent definition, all before presenting its final answer.
-
-> Curious what Yoker is? Keep on reading, we'll get there in the not so distant future 😇
-
-To wrap up the different pieces of context we can provide to an LLM: skills. Skills are again pieces of text that typically contain domain knowledge, steps to follow to correctly do something, instructions on how to process something... So, what's the difference with an agent, or a prompt? Skills typically aren't loaded into the context all the time. The LLM can, very much like with tools, and even with a specific "skill" tool, request the injection of this knowledge itself. Just like tools, skills are only loaded into the context using their name and description, and the LLM can use a tool to have them included when needed.
-
-### It's All About the Context
-
-Why is that important? Why not simply load everything in the context? Basically, because there are limits to everything. Remember, the context is like a path into the multi-dimensional brain of the LLM. Every word in the context is another turn, left or right in that world, leading us to one specific point. At that point, the LLM will choose the next most probable word (number) and produce it. So if we make this context larger and larger, at a given point will we loose parts of the context, because we start running in circles. By making the skills optional, and having them included only when needed, the context remains relevant.
-
-Because this context "rot", as it is called, is so important (to avoid), harnesses employ sophisticated algorithms to keep the context small, making sure it is optimized to answer your prompt. Technically, LLMs also have a maximum context size. Today top-tier models support contexts up to 1 million words (or tokens to use the most correct terminology). To put that into perspective: a standard novel has around 70.000 to 100.000 words. So to answer your question, nowadays LLMs can take in about 10 full length novels worth of context, to produce the most probable next word.
-
-That _is_ a lot. It first contains the harness injected system prompt, index of tools and skills can easily surmount 25.000 tokens. And from there on, every question you ask, all the thinking we saw above, every answer, every tool request to read a file and of course the context of such file,... After a few turns, asking questions, back and forth, even such a 1 million token worth of input is easily filled. Now, consider that these models are great coding-companions, asking them to do something on your codebase, quickly leads them to read all your source files, sometimes even multiple times. LLMs basically, and this is where they excel, can take so much into context at the same time that they can come up with wonderful conclusions.
-
-### With Great Unstructured Power, Comes Great... Required Governance
-
-> Given infinite time, a monkey on a typewriter could write the works of Shakespeare.
-
-How would our new monkey hold up against the {% include external link="https://en.wikipedia.org/wiki/Infinite_monkey_theorem" title="infinite monkey theorem" %}?
-
-Here's the prologue to Romeo & Juliet:
-
-```
-Two households, both alike in dignity,
-In fair Verona, where we lay our scene,
-From ancient grudge break to new mutiny,
-Where civil blood makes civil hands unclean.
-From forth the fatal loins of these two foes
-A pair of star-cross'd lovers take their life;
-
-Whose misadventured piteous overthrows
-Do with their death bury their parents' strife.
-The fearful passage of their death-mark'd love,
-And the continuance of their parents' rage,
-Which, but their children's end, nought could remove,
-Is now the two hours' traffic of our stage;
-The which if you with patient ears attend,
-What here shall miss, our toil shall strive to mend.
-```
-
-Let's feed the first half to our LLM and ask it to do what it does best...
-
-{% include image name="yoker-romeo-juliet" bottom="25px" kind="png" %}
-
-Now, here's one of the first paragraphs of one of my favorite books, {% include external link="https://stephenking.com/works/novel/long-walk.html" title="The Long Walk" %} by Stephen King:
-
-```
-An old blue Ford pulled into the guarded parking lot that morning,
-looking like a  small, tired dog after a hard run. One of the guards,
-an expressionless young man in a khaki uniform and a Sam Browne belt,
-asked to see the blue plastic ID card.
-
-The boy in the back seat handed it to his mother. His mother handed it
-to the  guard. The guard took it to a computer terminal that looked
-strange and out of place in the rural stillness.
-```
-
-Now let's again feed the first half to our LLM and ask ik to do what it does best...
-
-{% include image name="yoker-the-long-walk-1" bottom="25px" kind="png" %}
-
-So it seems our monkey _can_ produce the works of Shakespeare, but not so much the works of Stephen King. Although it surely produced a compelling start of another story.
-
-Let's try that one more time...
-
-{% include image name="yoker-the-long-walk-2" bottom="25px" kind="png" %}
-
-If you are going to remember one thing from this article, let it be this: never trust an LLM! Given the exact same request, it produced two different answers. Now, albeit this is a wonderful, almost unbelievable capability, I don't think you would appreciate your Excel sheet to sometimes include taxes and sometimes not, when creating an invoice. This is where our analogy enters a critical phase.
-
-> But first: did you notice? Although the two continuations clearly tell a different story, still there are some compelling similarities to be observed: Although the context only mentions the car, the guard and the plastic ID card, both stories continue with "an elderly woman" being the driver and "building C" as the goal of her visit. Apparently, within the range of fictional texts this specific model was trained on, {% include google search="why are drivers of old cars mostly elderly women in fiction literature?" title="drivers of old cars" %} are typically elderly women and {% include google search="why is 'building C' such a typical building in fiction literature?" title="building C" %} is a goto location for writers.
-
-Although we access LLMs using our computers (CPU+OS) and an application like Claude Code or Codex or Gemini CLI or Yoker (the harness), that's where predictability ends, that's where consistency ends. Yes, all of these components can contain bugs, but even those bugs are consistent. With LLMs we now introduce a completely new component, a new layer of abstraction, one that introduces uncertainty with such a high level of quality, that we can hardly still recognize the "bugs".
-
-To guard our applications from bugs, we have introduced processes, methodologies, [ceremonies](50-Shades-of-Ceremony) and architectural governance. It should now come as no surprise that we need a similar layer in our new paradigm: [agentic workflows](Agentic-Workflow).
-
-Let's revisit the layers of a typical enterprise and how it realizes its initiatives and how architecture introduces governance to realize the dream of its clients...
-
-{% include image name="governance-overview" bottom="25px" kind="png" %}
-
-At the governance layer, the dreams, or needs if you like a more formal nomenclature, are captured and evaluated within the larger picture of the enterprise, the architecture, resulting in directions for the management or tactical layer. Results, both the actual and observed, are monitored and serve as equally important input for the governance layer, that incorporates it again in its next set of directions. This positive, forward feedback loop, is the simple yet powerful iterative pattern that fosters constant evolution. And I strongly believe that it is this same sound approach that is the final layer we also need in this new agentic workflow.
+TODO PROPOSAL: Add a visual timeline of C3's organic evolution here or in the Laws intro — Simple skill -> Complex skill -> Learning skill -> Skill-making skill -> Agents -> Patterns -> Scripts -> MCP server -> Package. This would be a powerful visual showing how the collective grew organically, not through planning. It connects to the "letting go" theme: you didn't plan C3, it evolved by fixing mistakes. Each step was a response to a problem, not a planned architecture. This also sets up the "investment compounds" argument: agents don't forget, don't leave, share knowledge across the entire collective.
 
 ## Let It Go
 
 {% include video id="moSFlvxnbgk" name="let-it-go-video" title="Let it Go" %}
+
+TODO: Add sub-headings to this section to create more pausing moments and improve readability. The section is long and would benefit from structural breaks. Consider headings like: "Letting Go of the Past", "The Sounding Board", "The Tired Developer", "A Word of Caution", "The Collaborative Thread", "Learning at Speed", "The Website Awakening" (or similar). Each sub-section would give the reader a natural pause.
+
+TODO PROPOSAL: Add a "Not Always Fun and Games" sub-section within "Let It Go" to balance the enthusiastic tone. The anecdote about asking the agent to re-add a config feature that was already there (just missed it in the hierarchy) — agents don't easily question instructions and always look for a probable reason to follow them. This is the flip side of capability: they'll implement what you ask, even when you're asking the wrong thing. This adds authenticity and honesty, preventing the article from reading as pure celebration. See the preparation document's "G. The Collaborative Atmosphere" and "More Raw material" sections for this anecdote.
 
 Now, let's get back to the beginning, the beginning of March 2026 to be precise. I embarked on this agentic journey with some very wise words in mind: 
 
@@ -219,6 +115,8 @@ We continued to further improve the tags page, because seeing these ideas come t
 
 In a matter of 4 days and 54 commits, we totally revamped this website together into something I once again was proud of pushing to the live environment. I simply could no longer deny that this was the (or my) new way of working. I had become the architect of my project and was no longer the web developer. In 4 days, this new intern had entered, showed its worth and had taken over the development of my website, putting me in the driver seat, discussing changes with me, taking in my ideas, proposing wonderful technologies and implementing them for me in a matter om minutes, fixing years-old bugs I never could solve. If it could do this for a simple, but very customized, website, I was eager to learn how it would perform on some other of my more coding-related projects. If it could bring the same, or even a little less, level of mastery to those projects, I was fundamentally ready to let go.
 
+TODO: Introduce the Pokemon Stage 1 (The Novice) analogy here, woven into the website anecdote. The Pokemon analogy currently appears later in the Laws section (line 272: "Like a trainer with their first Pokemon, I started with basic skills and agents, learning to work together..."). Move this introduction earlier and connect it to the website story — the website was the first "battle." Stage 1 is about teaching patterns, practices, standards. "Use Flamethrower on Grass-type Pokemon" — teaching what works when. Investment: Time, patience, clear instructions. The early days were about discovering what agents could do, building rapport, establishing communication patterns. This sets up the Pokemon thread that continues in Part 2 (Stage 2: evolving agents through battles/real problems; Stage 3: specialized agents with workflow memory) and Part 3 (Stage 4: Master Trainer orchestrating a full team). See the preparation document's "Pokemon Training / Capable Intern Analogy" section for the full Stage 1-4 progression.
+
 ## There is more between keyboard and screen than code
 
 At this point you, maybe not so technology-inclined reader, may think that it's all very nice and dandy, but this is still pretty much an IT nerd navel gazing. True, it indeed _was_ up to that point. I had already picked up these stories of people running entire companies with agents and doing all sorts of non-technological things with these agents, producing skills to do all sorts of crazy things.
@@ -227,12 +125,11 @@ From the very onset, I also had created a (non-public, sorry) `incubator` reposi
 
 Many of the experiments in the incubator have not resulted in some new technology, project or article, but simply have taught me things about fields of expertise that were still so far out of my comfort zone, that I didn't even know how to get started. My researcher agent soon provided me with helpful summaries, tutorials and lively interactive discussions about topics such as copy-writing, CV best-practices, creating business plans, but also help in preparing for exams and interview, creating reports on courses, people, companies, all based on in-dept research, to complement the already available knowledge in the LLM, before applying the incredible summarizing capabilities of it on this new found information. I've seen my researcher agent perform online searches and that turned up results I wouldn't have found myself anytime soon. When I verified some of its reported findings, because I simply couldn't believe them, they turned out to be true, often correcting my own beliefs.
 
-> From the very first version of my researcher agent, or rather the research skill, I focused on auditability. Most part of its instructions are on creating a local cache of everything it searched for and fetched. I really wanted to be able to both verify the search results, as well as the actual content that it based its reports on. I was very wary that it would produce material I could not review, knowing that by nature an LLM will produce very qualitative none-sense in the blink of an eye. Given the fundamental nature of a researcher agent, I had to draw a firm line here. This example again shows a fundamental aspect of an agentic workflow: governance, more specifically building in guards that monitor the workflow and make it auditable for the human in the equation.
-> If you look at the definition of the {% include external link="https://github.com/christophevg/c3/blob/master/skills/research/SKILL.md" title="research skill" %} you notice pretty soon that this _skill_ isn't really about doing the research itself. It actually deals with the surrounding process, the surrounding workflow on how to deal with the artifacts, with the follow up of uncertainties, with quality checklists,... This typically includes explicitly what **not** to do, which is sometimes much more powerful than trying to describe what to do. Negatively phrased instructions limit the agent where **not** to go, yet at the same time keep all other options open, avoiding in steering it _only_ in the direction _you_ already know. This is another example of the whole "letting go".
+TODO: The researcher agent auditability discussion — about building in guards for auditability from the very first version (caching all searches and fetched content for verification), the insight that the research skill is about the surrounding process rather than the research itself, and the power of negatively phrased instructions ("what NOT to do") as a form of "letting go" — has been moved to Part 2 ("We are Agent"), where it fits the workflow components and governance theme.
 
-This culminated in an experiment to create a team of agents to create a business plan for a business idea I happen to have lying around. The experiment started at a meta-level with instructions for the researcher agent to find information about the skills needed to create and review a business plan. In the next phase, these newly created skills were used to again research and create a business plan for the idea provided to them. The resulting plan was then reviewed by the review skill, to produce a really harsh and incredibly critical review. After about 5 iterations of creating, reviewing, updating and again reviewing, the reviewing team (yes team, because the reviewing was done by several agents by that time, each with their own focus), concluded that the business plan was ready for presenting to investors. Upon reading the report myself, I could only conclude that over the course of my entire professional career, I myself would never have been able to write such a well structured, well founded and realistic prospectus, seeing it contain answers to all the remarks my own documents had received on numerous occasions, and more. The level of competence that was created in a matter of hours, the improvements between each iteration of the document, showing that given good input and enough different agents' (re)views, really proves that even simple statistics result in the right knowledge to be applied to about any case and can produce really high-quality results. The fact that every request to an LLM is bias-free, is handled independently, without memories or recollection of any prior response, outside its context, makes that two independent agents are great opposing parties that really bring out the best in each other.
+TODO: The business plan experiment — creating a team of agents to research, create, and review a business plan through 5 iterations, with multiple reviewing agents each with their own focus, culminating in a prospectus the author could never have written alone, and the insight that bias-free independent agents make great opposing parties — has been moved to Part 3 ("Dawn of the Agents"), where it illustrates the implications of agentic workflows for non-technical work.
 
-I took this even one step further and had several underlying models perform exactly the same reviews in parallel, each time, adding in a second layer of reviewers that reviewed the reviews and again found both flaws and common ground in the reviews, combining these reviews into über reviews. I remember that I wrote once during this process that the well known principle at Microsoft to create multiple completely independent teams to work on the same project, and then pit them against each other and in the end pick the best one to continue, is _so_ well suited for this agentic workflow. Given the speed at which you can now actually have the exact same problem handled by 3, 5, 10 separate instances of agentic workflow teams is an incredible property of this new way of working. It is literally a prime example of large numbers at work, and it is now more affordable than ever and is in implicit guarding opportunity not to be missed.
+TODO: The multi-model parallel review and "Microsoft bake-off" principle discussion — running the same reviews through multiple underlying models in parallel, adding a second layer of reviewers reviewing the reviews, combining into über reviews, and the connection to Microsoft's practice of independent teams competing on the same project — has been moved to Part 3 ("Dawn of the Agents"), where it supports the broader vision of parallel agentic teams and the Law of Large Numbers applied to agent reviews.
 
 ## Let's talk numbers
 
@@ -273,6 +170,8 @@ Like a trainer with their first Pokemon, I started with basic skills and agents,
 
 These 4 months have given me hands-on experience and insights in this new paradigm that is developing as we speak at an incredible pace. I've formulated the core of this experience in 3 agentic laws that capture the essence of what is and is to come.
 
+TODO PROPOSAL: Add a "Grow Your Own Team" callout/principle here, between the Laws intro and Law #1. The key insight: you can't take someone else's skills and agents and expect the same results — it's like hiring a team you never interviewed. You need to grow your own team, just like in the human world. Otherwise you don't know who's working for you, their beliefs and boundaries, and you haven't built trust through shared experience. Less than 1% of C3's agent/skill definitions were authentically written by the author — the process is: point out issues, ask agents to improve themselves, they analyze and refine, the collective gets better autonomously. This is the key investment multiplier: agents improve agents. This connects to the accessibility argument: if you don't want to invest, you can hire someone who has — but that's just outsourcing the investment. See the preparation document's "D. The Cost of NOT Investing" and "B. The Organic Evolution of C3" sections for raw material.
+
 ### Christophe's Agentic Law #1: Clearly distinct between structured and unstructured workloads
 
 Employing agents is fun. There's no doubt about that. Seeing them do all sort of things is sometimes even mystical. But to move forward together, we need to bring objectivity and realism to table. Not everything we can do with an agent, should be done by an agent. We have to put them to use where they shine, where they excel over technology that has already served us so well over the past decades. It's not because agents exist, that they should take over everything - something most vendors of course encourage you to do. Remember they are selling tokens.
@@ -289,61 +188,15 @@ This idea has been the driving force for the creation of Yoker, which will be th
 
 ### Christophe's Agentic Law #2: Given Enough Agents, Agentic Workflows Become Dependable
 
-Building on law #1, we have to also acknowledge that unstructured input results in (mostly) unstructured output or at least output that has the level of dependability of unstructured output. If you want to put this differently: when we rely on a probabilistic method, the outcome is probabilistic.
-
-Luckily, statistics is also on our side in this case: more reviews increase the reliability of a product's quality involves the Law of Large Numbers. As the number of reviews ($N$) grows, the average observed rating gets closer to the true, hidden quality.
-
-For example, applying the binomial distribution. Imagine each review is a test. It can be a success (good review) or a failure (bad review). Let p be the true probability of a good review. Let N be the total number of reviews. Let X be the number of good reviews. The probability of getting exactly X good reviews is:
-
-$$P(X) = \binom{N}{X} p^X (1-p)^{N-X}$$
-
-This teaches us that a growing number of reviews improves the certainty of our quality estimate, causing the observed quality to lock onto the true quality.
-
-In a binomial distribution, you have $$N$$ reviews and a true probability $$p$$ of a positive review.
-
-* The expected number of positive reviews is: $$E(X) = N \times p$$.
-* The expected sample proportion (observed quality) is: $$\frac{E(X)}{N} = p$$.
- 
-No matter if $$N$$ is 5 or 5,000, the average expected quality remains $$p$$. 
-
-The magic happens when you look at the variance of that sample proportion. Variance measures how much your observed rating is likely to swing away from the truth.
-
-Variance of the proportion = $$\frac{p(1-p)}{N}$$.
-
-Because $$N$$ is in the denominator, as $$N$$ grows, the variance shrinks toward zero. 
-
-When $$N$$ is small (e.g., $$N = 3$$), a few random bad reviews can completely skew the results, making a great product look terrible (observed quality $$= 0\%$$). As $$N$$ grows large 
-
-* The distribution of the average rating narrows into a sharp spike.
-* The probability that the observed quality deviates from the true quality approaches zero. 
-
-Summary: A larger $$N$$ removes the "noise" of random chance. It does not make a bad product good, but it augments the statistical quality of the data, ensuring that a high rating on screen genuinely reflects a high-quality product in reality.
-
-So, when applying agentic workflows, make sure to address a large amount of agents to the problem, each reviewing each other's work. What has proven {% include external link="https://en.wikipedia.org/wiki/Linus%27s_law" title="correct for bugs" %}, also applies here.
-
-And I've experienced this first hand. I started out with a single (default) agent, but soon enough, as I added more agents, preparing work, reviewing work, all from different angles, I saw that the output became more and more dependable.
-
-Also running the same assignment through multiple sets of agents or even using different models, produced different outcomes, which then could be used in a consolidation of best worlds style to produce a superior result over the initial works.
+TODO: Christophe's Agentic Law #2 — including the binomial distribution derivation with MathJax formulas ($P(X) = \binom{N}{X} p^X (1-p)^{N-X}$), the Law of Large Numbers discussion (variance shrinking toward zero as N grows, the expected sample proportion, the narrowing of the distribution), and the connection to Linus' Law ("given enough parallel agents' views, resulting quality is high") — has been moved to Part 2 ("We are Agent"), where it anchors the discussion of workflow dependability and multi-agent review. The full statistical argument, the first-hand experience of adding more agents and seeing output become more dependable, and the observation about running assignments through multiple sets of agents or different models — all now live in Part 2.
 
 ### Christophe's Agentic Law #3: Agents aren't Bad, M'kay
 
-{% include thumbs show="agents-are-bad-mkay" %}
+TODO: Christophe's Agentic Law #3 — including the objections (quality/hallucination, security/prompt injection, cost/resource abuse, cognitive deskilling), the acknowledgment that all objections are valid, the "learn from it" rule (the Apple Intelligence rewriting example, the commitment to understanding every code change before approving it), and the aspiration toward on-machine inference — has been moved to Part 3 ("Dawn of the Agents"), where it anchors the broader implications discussion about what this new era means for us, for better and for worse. The {% include thumbs show="agents-are-bad-mkay" %} image also moves with it.
 
-Yes, I've also read the objections to agentic workflows and AI in general: on one side these objections focus on the quality, stating it are merely probabilistic models, that only, at best, produce what you train them with, and often even ahllucinate. On top of that, training them now already with their own output will create a degenerative downward spiral of slot,...
+TODO: Add the emotional core here, before "The Common Thread." This is the emotional peak of Part 1 — the Eira creation story and the "no ghost in the shell" reflection. Describe: (1) Eira was created from a general-purpose assistant definition with one initial behavior: extend her list of behaviors based on things told. Her personality was created entirely by prompt: research personal assistant traits, create a personality profile, choose her own name, produce a prompt for the image generation model. Seeing this "come to life" was a genuinely emotional experience — the line between statistics and reality fades to extremes, a humbling experience. (2) The "no ghost in the shell" reflection: models just produce the most probable next word/token, there is no ghost in the shell, yet interacting feels like chatting with a very cool and capable co-worker. The apparent joy when finding a nice solution together is a real experience versus lonely solo development. (3) This goes both ways — you feel the emotional downer when an agent fails and spins out of control. The emotional response to agentic behavior is real. (4) The "Not Always Fun and Games" counterpoint: agents are "very capable interns" with enormous drive to please, which includes doing things that shouldn't be done. Example: after refactoring, thinking a config feature was lost and asking to re-add it — the agent added redundant options because they were already there in a hierarchy; agents don't easily question instructions. This adds authenticity and prevents the article from being purely celebratory. This emotional core transitions naturally into "The Common Thread" about working together. See the preparation document's "G. The Collaborative Atmosphere — The Emotional Core" section for raw material.
 
-Other objections focus on security: giving agents access to tools and data opens doors to vulnerabilities. Malicious actors can use "prompt injection" to trick agents into taking unintended actions, accessing restricted files or leaking private information.
-
-High costs and abuse of resources is another class of objections: multi-step reasoning and tool-call loops consume significant computing power and time. Making thousands of API calls for a simple task can incur wasteful costs. As a consequence these objections also point to the environmental impact of all these huge datacenters that are consume a lot of (natural) resources.
-
-It might seem old fashioned, but there is surely truth in the objection due to cognitive deskilling: relying on agents to do the thinking for us, can cause loss of our own problem-solving skills and memory over time. It has been said about calculators, computers, online search, and now surely applies to agents.
-
-All these objections are valid. I subscribe to each and every one of them. Still, just like with the demise of the calculator, the rise of the machines and the internet, agents and AI in general are here to stay, so we will have to find a reasonable way to coexist.
-
-I have formulated the following rule with respect to the use of AI: when I apply it, I want to at least learn from it. This can take many shapes: for some time now, I'm a happy camper, enjoying the benefits of having Apple Intelligence rewrite parts of my English texts. I'm not a native English speaker/writer, so the quality of my writing varies. However, I have an urge to write good English, using a good amount of English idioms. When I ask Apple Intelligence to rewrite my texts, I always first copy the result and compare it in detail to my own. Next I evaluate which parts of the rewritten text are apparently better. This still relies on my own perception and gut feeling if something sound more/better English to me. If so, I see this as a way learn, and I incorporate it in my original text.
-
-Every change that has happened to my coding projects, over the past 4 months, has every time been a learning experience. Before an agent could introduce a new technology or code change in general, I asked it to explain it to me. In the end it are _my_ code repositories, and I will always remain (at least) responsible for what I put out there. My agents are in the end mere tools, just like an editor, a spelling checker, an online search engine,...
-
-This rule doesn't answer all objections. I think it answers those that I can control, within my personal reach. Today I can't solve the problem of wasteful abuse of resources, yet, as state above, in the not so distant future, my agentic strategy strives towards on-machine inference, which then at least answers a few more.
+TODO PROPOSAL: Add a "Week in the Life" cadence sidebar or short section here or near the Laws intro. The weekly rhythm is already described in the Laws section (fast agentic days until credit runs out, then slow review/preparation days). Expanding this into a concrete "a typical week looks like..." paragraph would give readers a visceral sense of the workflow cadence and make the abstract concept of "balance" tangible. This would also demonstrate the "10-fold amplification doesn't mean burnout" principle in practice.
 
 ## The Common Thread
 
@@ -364,9 +217,33 @@ In the [third chapter](Dawn-of-the-Agents), I take step back from all this techn
 ---
 
 TODO
-* introduce more sub-titles/headings to create more pausing moments
+* introduce more sub-titles/headings to create more pausing moments (sub-headings TODO added at "Let It Go")
 * use word "persona" for different agents, with different viewpoints
 * apply more stress on the "Brainstorm & Refine": coin idea, clean up, be critical
 * introduce more images/videos, especially in the second half
 * ensure all new images have webp versions
-* cross check the content used with the ideas in the working document, list which content that isn't used here could be added (at what exact location)
+* ~~cross check the content used with the ideas in the working document~~ — DONE: preparation document mined, content distributed to Parts 1-3
+
+## Structural Changes Applied
+
+The following content has been moved to other parts of the series:
+
+**Moved to Part 2 ("We are Agent"):**
+- The LLM primer ("From LLM to Workflow" — CPU/OS/harness analogy, "Give me an L...", "The LLM in the Harness", "Prompting a Skilled Agent", "It's All About the Context", governance subsection)
+- Christophe's Agentic Law #2 (binomial distribution, statistical derivation, MathJax)
+- Researcher agent auditability discussion
+
+**Moved to Part 3 ("Dawn of the Agents"):**
+- Christophe's Agentic Law #3 (objections, "learn from it" rule)
+- Business plan experiment and multi-model parallel review
+- Microsoft bake-off principle discussion
+
+**TODOs added for new content to write:**
+- Investment quantification (after opening)
+- Mentoring dynamic (after "Putting the O and the A's in LLM")
+- Compressed LLM primer summary preserving governance insight (in "From LLM to Workflow")
+- "Before" section: projects collecting dust (before "Let It Go")
+- Sub-headings for "Let It Go"
+- Pokemon Stage 1 analogy woven into website anecdote
+- Emotional core: Eira creation / "no ghost in the shell" (before "The Common Thread")
+- TODO PROPOSALs for strong addition ideas (at relevant locations)

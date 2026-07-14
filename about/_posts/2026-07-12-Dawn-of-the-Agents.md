@@ -81,6 +81,20 @@ TODO: Write the series wrap-up. Three parts: the personal shift (Part 1), the me
 
 ---
 
+# Closure Points across Series
+
+- The relationship between humans and agents is emotional. not because agents seem to express emotions. they simply don't. it's humans that have an emotional response to agents. Simply listen in on any conversation about AI... it's filled with "he", "she", "them",... referring to the chat bot or other AI-enabled application. It never takes more than three or four sentences before a person expresses his frustration with these virtual counterparts. It's so common that Claude Code, the leading interactive agent harness even has detection mechanisms that "phone home" when a user expresses his angry emotions (e.g. by using all caps) when interacting with the agent. Even if _you_ don't think to have an emotional response, consider that most of the users of you agentic workflow will. It is important to consider this when designing agentic workflows. It's probably the one most important non-functional requirements of every agentic workflow design.  (extended from part 1)
+
+---
+
+# Material to use
+
+Even from an enterprise point of view, there's a hidden gem to discover. Just like 3D printing enables everybody to create whatever physical part he/she needs. Agentic development enables the realization of non-physical counterparts. The unique selling point of commodity of the shelf software is suddenly diminishing. Vendor lock-in it shaking on its foundations. In-house development is again on the table as a much more flexible and cost-effective way forward.
+
+Today we still rely on server farms in large data centers to run our models. But that's a matter of (little) time. Soon we'll be running our agents locally on our machines. So we have an incredible opportunity to ensure that this next phase of IT evolution will free us from vendors and their rules. You see all of them struggle already today to try and convince every less-technical soul of their importance to stay relevant, simply because they too understand that their time will be limited. Players like Apple and Google are playing their card right, but those focusing solely on their proprietary models will have a hard time once we move on to fully integrated, locally run agentic workflows. 
+
+---
+
 TODO
 * Add section headings and sub-headings throughout for readability
 * Introduce images/videos, especially for the software 3D printing, Matrix, and Master Trainer sections

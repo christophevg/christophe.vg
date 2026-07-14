@@ -256,7 +256,7 @@ TODO: Write the story of expecting mind-reading and learning the lesson. While d
 
 ## Pokemon: The Evolving and Specialized Agent
 
-TODO: Continue the Pokemon analogy from Part 1 (Stage 1 - The Novice, introduced in the website anecdote). Here in Part 2, cover Stage 2 and Stage 3.
+TODO: Continue the Pokemon analogy from Part 1. Here in Part 2, cover Stage 2 and Stage 3.
 
 ### Stage 2: The Evolving Agent
 

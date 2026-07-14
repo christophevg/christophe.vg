@@ -1,5 +1,8 @@
 ARGS += --plugin-dir ../c3
 
+writing-assistant: ARGS += --agent "c3:writing-assistant"
+writing-assistant: claude  ## Work on this project with the writing-assistant agent.
+
 -include ~/.claude/Makefile
 
 site: update serve

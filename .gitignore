@@ -1,10 +1,14 @@
-_site
+# system files
 .DS_Store
+
+# locks and caches
 *.lock
 .sass-cache
 .jekyll-metadata
 node_modules
 
+# generated site
+_site
+
+# local storage
 local
-/conversations
-/research

@@ -13,7 +13,7 @@ header:
   image: /about/images/header/we-are-agent.png
 ---
 
-TODO: Write an introduction that bridges from Part 1 ("Hello Agents"). In Part 1, I shared the personal shift from excitement to practice — the holiday mode, the first argument over spaces, the website awakening, the emotional core. Here in Part 2, we go deeper into the mechanics: what makes an agentic workflow actually work? What are the components? How do you implement governance? This is the method article — practical, repeatable, grounded in 25+ years of architectural experience applied to virtual co-workers. We start with the technical foundation (the LLM primer), then build up through Law #2 (why enough agents make workflows dependable), then explore the workflow properties, components, and the stories that illustrate them in action.
+This is the second part of a three-part series on my explorations, vision, and strategy regarding agentic workflows. [Part one, Hello Agents](Hello-Agents), the initial encounter with and the impact agents have had in a matter of a few months, laid the groundwork for this series. From the initial argument over spaces and the exploration of how agents can support the authoring of this website, to the clearly emotional impact and the first law defining the first crucial boundaries between structured and unstructured workloads, we've only scratched the surface. Now, it's time to delve deeper into the details and further elaborate on the initial experiences, as we've merely touched the tip of the iceberg. In Part two, we'll go beyond the surface and explore the mechanics of agentic workflows. We'll examine what makes an agentic workflow truly effective, identify its components, and discuss the implementation of governance.
 
 ## From LLM to Workflow
 
@@ -137,50 +137,31 @@ Let's revisit the layers of a typical enterprise and how it realizes its initiat
 
 At the governance layer, the dreams, or needs if you like a more formal nomenclature, are captured and evaluated within the larger picture of the enterprise, the architecture, resulting in directions for the management or tactical layer. Results, both the actual and observed, are monitored and serve as equally important input for the governance layer, that incorporates it again in its next set of directions. This positive, forward feedback loop, is the simple yet powerful iterative pattern that fosters constant evolution. And I strongly believe that it is this same sound approach that is the final layer we also need in this new agentic workflow.
 
-## Christophe's Agentic Law #2: Given Enough Agents, Agentic Workflows Become Dependable
+## From Transcripts to Researcher's Auditability
 
-Building on law #1, we have to also acknowledge that unstructured input results in (mostly) unstructured output or at least output that has the level of dependability of unstructured output. If you want to put this differently: when we rely on a probabilistic method, the outcome is probabilistic.
+When I started, I was ultra worried about what these agents would do. Hearing about agents {% include external link="https://www.youtube.com/watch?v=fVrw8V3iFLc" title="wiping out entire database systems in a matter of 9 minutes" %}, I did't want to become the next scary agent story. So one of the first skills that I created was one {% include commit repo="c3" sha="e652b18e9ea116eacd1568083768f8a4929db203" title="to transcribe a session" %}. I wanted to have an audit trail of everything. After four months, this paranoia has calmed down and has been replaced with other, more active guardrails. Still, and I should check, I'm sure that some of the agentic repositories might still contain such transcriptions.
 
-Luckily, statistics is also on our side in this case: more reviews increase the reliability of a product's quality involves the Law of Large Numbers. As the number of reviews ($N$) grows, the average observed rating gets closer to the true, hidden quality.
+Research is a similar story: from the very first version of my researcher agent, or rather the research skill, I focused on auditability. Most part of its instructions are on creating a local cache of everything it searched for and fetched. I really wanted to be able to both verify the search results, as well as the actual content that it based its reports on. I was very wary that it would produce material I could not review, knowing that by nature an LLM will produce very qualitative none-sense in the blink of an eye. Given the fundamental nature of a researcher agent, I had to draw a firm line here. This example again shows a fundamental aspect of an agentic workflow: governance, more specifically building in guards that monitor the workflow and make it auditable for the human in the equation.
 
-For example, applying the binomial distribution. Imagine each review is a test. It can be a success (good review) or a failure (bad review). Let p be the true probability of a good review. Let N be the total number of reviews. Let X be the number of good reviews. The probability of getting exactly X good reviews is:
-
-$$P(X) = \binom{N}{X} p^X (1-p)^{N-X}$$
-
-This teaches us that a growing number of reviews improves the certainty of our quality estimate, causing the observed quality to lock onto the true quality.
-
-In a binomial distribution, you have $$N$$ reviews and a true probability $$p$$ of a positive review.
-
-* The expected number of positive reviews is: $$E(X) = N \times p$$.
-* The expected sample proportion (observed quality) is: $$\frac{E(X)}{N} = p$$.
- 
-No matter if $$N$$ is 5 or 5,000, the average expected quality remains $$p$$. 
-
-The magic happens when you look at the variance of that sample proportion. Variance measures how much your observed rating is likely to swing away from the truth.
-
-Variance of the proportion = $$\frac{p(1-p)}{N}$$.
-
-Because $$N$$ is in the denominator, as $$N$$ grows, the variance shrinks toward zero. 
-
-When $$N$$ is small (e.g., $$N = 3$$), a few random bad reviews can completely skew the results, making a great product look terrible (observed quality $$= 0\%$$). As $$N$$ grows large 
-
-* The distribution of the average rating narrows into a sharp spike.
-* The probability that the observed quality deviates from the true quality approaches zero. 
-
-Summary: A larger $$N$$ removes the "noise" of random chance. It does not make a bad product good, but it augments the statistical quality of the data, ensuring that a high rating on screen genuinely reflects a high-quality product in reality.
-
-So, when applying agentic workflows, make sure to address a large amount of agents to the problem, each reviewing each other's work. What has proven {% include external link="https://en.wikipedia.org/wiki/Linus%27s_law" title="correct for bugs" %}, also applies here.
-
-And I've experienced this first hand. I started out with a single (default) agent, but soon enough, as I added more agents, preparing work, reviewing work, all from different angles, I saw that the output became more and more dependable.
-
-Also running the same assignment through multiple sets of agents or even using different models, produced different outcomes, which then could be used in a consolidation of best worlds style to produce a superior result over the initial works.
-
-## The Researcher's Auditability
-
-> From the very first version of my researcher agent, or rather the research skill, I focused on auditability. Most part of its instructions are on creating a local cache of everything it searched for and fetched. I really wanted to be able to both verify the search results, as well as the actual content that it based its reports on. I was very wary that it would produce material I could not review, knowing that by nature an LLM will produce very qualitative none-sense in the blink of an eye. Given the fundamental nature of a researcher agent, I had to draw a firm line here. This example again shows a fundamental aspect of an agentic workflow: governance, more specifically building in guards that monitor the workflow and make it auditable for the human in the equation.
-> If you look at the definition of the {% include external link="https://github.com/christophevg/c3/blob/master/skills/research/SKILL.md" title="research skill" %} you notice pretty soon that this _skill_ isn't really about doing the research itself. It actually deals with the surrounding process, the surrounding workflow on how to deal with the artifacts, with the follow up of uncertainties, with quality checklists,... This typically includes explicitly what **not** to do, which is sometimes much more powerful than trying to describe what to do. Negatively phrased instructions limit the agent where **not** to go, yet at the same time keep all other options open, avoiding in steering it _only_ in the direction _you_ already know. This is another example of the whole "letting go".
+If you look at the definition of the {% include external link="https://github.com/christophevg/c3/blob/master/skills/research/SKILL.md" title="research skill" %} you notice pretty soon that this _skill_ isn't really about doing the research itself. It actually deals with the surrounding process, the surrounding workflow on how to deal with the artifacts, with the follow up of uncertainties, with quality checklists,... This typically includes explicitly what **not** to do, which is sometimes much more powerful than trying to describe what to do. Negatively phrased instructions limit the agent where **not** to go, yet at the same time keep all other options open, avoiding in steering it _only_ in the direction _you_ already know. This is another example of the whole "letting go" we already discussed in the [first part](Hello-Agents#let-it-go).
 
 TODO: Expand this section to connect the auditability principle to the broader workflow governance theme. The researcher agent's auditability is one concrete example of building in guards. How does this generalize to other agents? What other governance mechanisms has C3 implemented? How does the human stay in the loop without becoming the bottleneck?
+
+## The Security Agent Story
+
+TODO: Write the story of the security agent that blocked a quick feature. While trying to implement a generic configuration system (using clevis), the security agent flagged it as insecure, requiring more security-related features to avoid implementing a local wrapper. See: https://github.com/christophevg/roomz/pull/6 and https://github.com/christophevg/clevis/issues/4. As the owner, I was confronted with an agent from my collective that literally blocked me from quickly moving forward. The Steve Jobs moment: "Why hire good people and tell them what to do?" I could have overridden the agent with "just do it" — but that would toss the value of my investment into the garbage. Instead, I honored the agent's remarks and created a feature request with the clevis project. The guardrails ARE the agents themselves — not just methodology or process, but active enforcement. The security agent literally blocked the owner from taking a shortcut. This is Waterfall's enforcement mechanism now made fast by agents. Multiple agents reviewing from different angles = multiple guardrails. This story demonstrates: agents enforce standards even when you don't want them to; this IS the "deep investment"; this prevents the horror stories; the human instinct to override is the exact moment where investment pays off or fails.
+
+## TOCTOU - The Standard Workflow in Action
+
+TODO: Write the TOCTOU story as an example of the standard workflow functioning as designed. During a standard agentic workflow session, the Python developer agent completed implementing a feature. Following the established workflow: (1) the project-manager issues reviews from the functional-analyst for feature completeness; (2) then domain-specific agents review from their perspectives — API Architect for APIs, UX-UI designer for user interaction, Security engineer for security aspects. The security engineer agent noticed a TOCTOU (Time-Of-Check to Time-Of-Use) vulnerability when accessing files — a classic security issue where the time between reading/confirming access rights and applying them creates an attack vector. The resolution: review issues raised by security agent, developer agent fixes them, all without user intervening. This demonstrates: no manual intervention needed, the workflow loops back and forth until everything is clear, multiple agent perspectives catch issues that a single developer — even an experienced one — might miss. The security engineer caught something I would never have thought of, despite my earliest professional experiences being in security. Trust the process.
+
+## Autonomy While Agents Work
+
+TODO: Write about the autonomy the workflow enables. The workflow: (1) create a feature request issue on GitHub; (2) agentic workflow loops back and forth until requirements are clear; (3) work begins in a feature branch with quality gates (draft PR checks); (4) final approval through pull request merge. While agents work (analyzing, developing, running tests, reviewing code from multiple perspectives, fixing issues), the user works on other topics. Example: writing an article while being interviewed by the functional-analyst agent. A popup notification signals when the user needs to validate, review, or give feedback. This demonstrates: the workflow enables autonomy through trust, the user is not bottlenecked by constant supervision, the investment in process pays off in regained time, multiple agents work in parallel on different aspects, the user stays in control without being in the way.
+
+## "Agents Aren't Mind-Readers" - The Clevis Lesson
+
+TODO: Write the story of expecting mind-reading and learning the lesson. While developing Clevis, I expected my agents to read my mind, like they sometimes had before. The LLM backing them is trained with so much material that it statistically produces things I would have thought of if I knew about them — but this is not mind-reading, it's pattern matching. Clevis was in a very early state, I was still discovering the right approach, which resulted in sub-optimal results from the agents and I got frustrated. I was wrong to be frustrated; my actions were correct: I started developing/prototyping the interface until I was happy with it, then enjoyed manually implementing the bare minimum, then started a session with the functional analyst to review my prototyping work. Within minutes the agent had analyzed my prototype and prepared tasks for the entire project team. The lesson: agents aren't mind-readers, but "a word is enough for the wise" certainly applies. When you clearly articulate (prototypes, specifications, analysis), agents excel. The frustration comes from expecting magic vs. doing the work. Clear articulation IS the investment.
 
 ## Agentic Workflow Properties
 
@@ -234,25 +215,47 @@ TODO: The human remains the project owner. The human gives final approval before
 
 TODO: The lessons-learned skill at the end of sessions. It reviews the entire session and proposes changes/creations to agents/skills. This is how the workflow improves itself — not by planning, but by retrospecting. Every mistake becomes codified. Every success becomes a pattern. The investment compounds because agents don't forget, don't leave, and share knowledge across the entire collective.
 
+## Christophe's Agentic Law #2: Given Enough Agents, Agentic Workflows Become Dependable
+
+Building on law #1, we have to also acknowledge that unstructured input results in (mostly) unstructured output or at least output that has the level of dependability of unstructured output. If you want to put this differently: when we rely on a probabilistic method, the outcome is probabilistic.
+
+Luckily, statistics is also on our side in this case: more reviews increase the reliability of a product's quality involves the Law of Large Numbers. As the number of reviews ($N$) grows, the average observed rating gets closer to the true, hidden quality.
+
+For example, applying the binomial distribution. Imagine each review is a test. It can be a success (good review) or a failure (bad review). Let p be the true probability of a good review. Let N be the total number of reviews. Let X be the number of good reviews. The probability of getting exactly X good reviews is:
+
+$$P(X) = \binom{N}{X} p^X (1-p)^{N-X}$$
+
+This teaches us that a growing number of reviews improves the certainty of our quality estimate, causing the observed quality to lock onto the true quality.
+
+In a binomial distribution, you have $$N$$ reviews and a true probability $$p$$ of a positive review.
+
+* The expected number of positive reviews is: $$E(X) = N \times p$$.
+* The expected sample proportion (observed quality) is: $$\frac{E(X)}{N} = p$$.
+ 
+No matter if $$N$$ is 5 or 5,000, the average expected quality remains $$p$$. 
+
+The magic happens when you look at the variance of that sample proportion. Variance measures how much your observed rating is likely to swing away from the truth.
+
+Variance of the proportion = $$\frac{p(1-p)}{N}$$.
+
+Because $$N$$ is in the denominator, as $$N$$ grows, the variance shrinks toward zero. 
+
+When $$N$$ is small (e.g., $$N = 3$$), a few random bad reviews can completely skew the results, making a great product look terrible (observed quality $$= 0\%$$). As $$N$$ grows large 
+
+* The distribution of the average rating narrows into a sharp spike.
+* The probability that the observed quality deviates from the true quality approaches zero. 
+
+Summary: A larger $$N$$ removes the "noise" of random chance. It does not make a bad product good, but it augments the statistical quality of the data, ensuring that a high rating on screen genuinely reflects a high-quality product in reality.
+
+So, when applying agentic workflows, make sure to address a large amount of agents to the problem, each reviewing each other's work. What has proven {% include external link="https://en.wikipedia.org/wiki/Linus%27s_law" title="correct for bugs" %}, also applies here.
+
+And I've experienced this first hand. I started out with a single (default) agent, but soon enough, as I added more agents, preparing work, reviewing work, all from different angles, I saw that the output became more and more dependable.
+
+Also running the same assignment through multiple sets of agents or even using different models, produced different outcomes, which then could be used in a consolidation of best worlds style to produce a superior result over the initial works.
+
 ## Rehabilitation of Waterfall
 
 TODO: Write this section about how agentic workflows rehabilitate the Waterfall methodology. Waterfall has been downplayed for being slow and bloated. With agentic workflows allowing analysis, design, and review to happen in minutes, the "bloated" approach is no longer bloated. Applying many agents in parallel to create many different viewpoints for analysis and reviews creates guardrails and a dependable workflow with less chance of agents going haywire. The key insight: apply "Think before you act and verify afterwards" (Waterfall) at the speed of Agile through agents. Multiple analyses and reviews (Waterfall depth) happen in minutes (Agile speed) because agents do the work in parallel. See also [50 Shades of Ceremony](/50-shades-of-Ceremony/) for the detailed view on Waterfall vs Agile. The agentic workflow is the way I've always seen Waterfall vs Agile: they are structurally the same, only the scope of each iteration is smaller.
-
-## The Security Agent Story
-
-TODO: Write the story of the security agent that blocked a quick feature. While trying to implement a generic configuration system (using clevis), the security agent flagged it as insecure, requiring more security-related features to avoid implementing a local wrapper. See: https://github.com/christophevg/roomz/pull/6 and https://github.com/christophevg/clevis/issues/4. As the owner, I was confronted with an agent from my collective that literally blocked me from quickly moving forward. The Steve Jobs moment: "Why hire good people and tell them what to do?" I could have overridden the agent with "just do it" — but that would toss the value of my investment into the garbage. Instead, I honored the agent's remarks and created a feature request with the clevis project. The guardrails ARE the agents themselves — not just methodology or process, but active enforcement. The security agent literally blocked the owner from taking a shortcut. This is Waterfall's enforcement mechanism now made fast by agents. Multiple agents reviewing from different angles = multiple guardrails. This story demonstrates: agents enforce standards even when you don't want them to; this IS the "deep investment"; this prevents the horror stories; the human instinct to override is the exact moment where investment pays off or fails.
-
-## TOCTOU - The Standard Workflow in Action
-
-TODO: Write the TOCTOU story as an example of the standard workflow functioning as designed. During a standard agentic workflow session, the Python developer agent completed implementing a feature. Following the established workflow: (1) the project-manager issues reviews from the functional-analyst for feature completeness; (2) then domain-specific agents review from their perspectives — API Architect for APIs, UX-UI designer for user interaction, Security engineer for security aspects. The security engineer agent noticed a TOCTOU (Time-Of-Check to Time-Of-Use) vulnerability when accessing files — a classic security issue where the time between reading/confirming access rights and applying them creates an attack vector. The resolution: review issues raised by security agent, developer agent fixes them, all without user intervening. This demonstrates: no manual intervention needed, the workflow loops back and forth until everything is clear, multiple agent perspectives catch issues that a single developer — even an experienced one — might miss. The security engineer caught something I would never have thought of, despite my earliest professional experiences being in security. Trust the process.
-
-## Autonomy While Agents Work
-
-TODO: Write about the autonomy the workflow enables. The workflow: (1) create a feature request issue on GitHub; (2) agentic workflow loops back and forth until requirements are clear; (3) work begins in a feature branch with quality gates (draft PR checks); (4) final approval through pull request merge. While agents work (analyzing, developing, running tests, reviewing code from multiple perspectives, fixing issues), the user works on other topics. Example: writing an article while being interviewed by the functional-analyst agent. A popup notification signals when the user needs to validate, review, or give feedback. This demonstrates: the workflow enables autonomy through trust, the user is not bottlenecked by constant supervision, the investment in process pays off in regained time, multiple agents work in parallel on different aspects, the user stays in control without being in the way.
-
-## "Agents Aren't Mind-Readers" - The Clevis Lesson
-
-TODO: Write the story of expecting mind-reading and learning the lesson. While developing Clevis, I expected my agents to read my mind, like they sometimes had before. The LLM backing them is trained with so much material that it statistically produces things I would have thought of if I knew about them — but this is not mind-reading, it's pattern matching. Clevis was in a very early state, I was still discovering the right approach, which resulted in sub-optimal results from the agents and I got frustrated. I was wrong to be frustrated; my actions were correct: I started developing/prototyping the interface until I was happy with it, then enjoyed manually implementing the bare minimum, then started a session with the functional analyst to review my prototyping work. Within minutes the agent had analyzed my prototype and prepared tasks for the entire project team. The lesson: agents aren't mind-readers, but "a word is enough for the wise" certainly applies. When you clearly articulate (prototypes, specifications, analysis), agents excel. The frustration comes from expecting magic vs. doing the work. Clear articulation IS the investment.
 
 ## Pokemon: The Evolving and Specialized Agent
 
@@ -278,7 +281,7 @@ TODO: Write the main messages section, summarizing the key takeaways from Part 2
 
 ## Stay Tuned...
 
-TODO: Write the wrap-up for Part 2, bridging to Part 3 ("Dawn of the Agents"). In Part 3, I take a step back from the technology and the method and consider what this all means for us. What's this new era that is upon us? What will change? For the better and for the worse? From the mechanics of Part 2, we zoom out to the implications.
+TODO: Write the wrap-up for Part 2, bridging to Part 3 ("Dawn of the Agents"). In Part 3, I take a step back from the technology and the method and consider what this all means. What's this new era that is upon us? What will change? For the better and for the worse? From the mechanics of Part 2, we zoom out to the implications.
 
 ---
 

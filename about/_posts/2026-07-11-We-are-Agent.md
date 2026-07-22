@@ -13,35 +13,35 @@ header:
   image: /about/images/header/we-are-agent.png
 ---
 
-This is the second part of a three-part series on my explorations, vision, and strategy regarding agentic workflows. [Part one, Hello Agents](Hello-Agents), the initial encounter with and the impact agents have had in a matter of a few months, laid the groundwork for this series. From the initial argument over spaces and the exploration of how agents can support the authoring of this website, to the clearly emotional impact and the first law defining the first crucial boundaries between structured and unstructured workloads, we've only scratched the surface. Now, it's time to delve deeper into the details and further elaborate on the initial experiences, as we've merely touched the tip of the iceberg. In Part two, we'll go beyond the surface and explore the mechanics of agentic workflows. We'll examine what makes an agentic workflow truly effective, identify its components, and discuss the implementation of governance.
+This is the second part of a three-part series on my explorations, vision, and strategy regarding agentic workflows. [Part one, Hello Agents](Hello-Agents), the initial encounter with and the impact agents have had in a matter of a few months, laid the groundwork for this series. From the initial argument over spaces and the exploration of how agents can support the authoring of this website, to the clearly emotional impact and the first law defining the crucial boundaries between structured and unstructured workloads, we've only scratched the surface. Now, it's time to dive deeper into the details and further elaborate on the initial experiences, as we've merely touched the tip of the iceberg. In Part two, we'll go beyond the surface and explore the mechanics of agentic workflows. We'll examine what makes an agentic workflow truly effective, identify its components, and discuss the implementation of governance.
 
 ## From LLM to Workflow
 
-In case your still a bit roaming the misty banks of the AI world, here's a very small analogy to help you put things in perspective and built a simple but adequate mental model that will help you in better understanding what we're dealing with.
+In case your still a bit roaming the misty banks of the AI world, here's a simple analogy to help you put things in perspective and create a mental model that will help you gain a better understanding of the fundamental concepts, their properties and the implications of those properties.
 
-An LLM, or Large Language Model, is a vast neural network that accepts input, the so called context, and based on that input produces output, a single next word. It does this based on previous experience, essentially all texts possibly available, and quiet simply does this by choosing the statistically most probably next word. That's it. Nothing more, nothing less. Due to that vast multi-dimensional neural network, it inherently stores knowledge and _seems to_ inhibit reasoning.
+An LLM, or Large Language Model, is a vast neural network that accepts input, known as context, and generates output, specifically the next word. The process is based on its previously trained experience, essentially all available texts, and it simply selects the statistically most probably next word. That's it. Nothing more, nothing less. Due to its vast multi-dimensional neural network, it inherently stores knowledge and _appears to_ inhibit reasoning.
 
-Still, although that the incredible high degree of dimensionality and ludicrous amount of semantical knowledge that is stored in this statistical prediction machine, it remains nothing more than, given a context, a probability for the next word. And if your context is very specific and complex, even the biggest model might not have a correct answer stored in it, but will still produce the most probable next word. Even if that is completely wrong.
+Despite its incredible high dimensionality and ludicrous amount of semantic knowledge, this statistical prediction machine is essentially a probability model for the next word, given a specific context. Given highly complex and specific contexts, even the most advanced models may not have a definitive answer, but they will still generate the most probable next word, even if it's entirely incorrect.
 
 ### Give me an L, give me an L, give me an M, what does that spell? CPU!
 
-Now, for the analogy, think of such an LLM as the CPU, the central processing unit, of your computer. It accepts input, does some work, and produces output: one word. Now, that one word doesn't really give us an answer so, just like your computer surrounds the CPU with some firmware (back in the days this was BIOS, these days mostly UEFI, the Universal Extensible Firmware). In case of the LLM, this "firmware" takes that one word and feeds it back in the LLM again, waiting for the next word, and the next, and the next, until you get a full sentence, a full paragraph, an image, a video,...
+Now, let's consider the analogy. Imagine such an LLM as the central processing unit (CPU) of your computer. It receives input, processes it, and generates output, one word at a time. However, this single word doesn't provide a complete answer. Similarly, your computer surrounds the CPU with firmware (back in the days, it was BIOS, and nowadays, it's mostly UEFI, the Universal Extensible Firmware). In the case of the LLM, this "firmware" takes that single word and feeds it back into the LLM, waiting for the next word, and so on, until you obtain a complete sentence, a full paragraph, an image, or even a video.
 
 ### The LLM in the Harness
 
-By it self, just like the CPU, even with the firmware layer, an LLM is just a text generator. To be able to actually do something a little more useful with it, we need an Operating System, an OS, and in case of an LLM we call this a "harness". A harness provides higher level concepts that enables the user to interact with the LLM and enables the LLM to do more.
+An LLM, like the CPU, is essentially a text generator. However, to make it more useful, we need an Operating System (OS). In the context of an LLM, we call this OS a "harness". A harness provides higher-level concepts, that enable users to interact with the LLM and enhance its capabilities.
 
-A harness, like Claude Code or Codex or Gemini CLI, sets the stage for the user, injecting some basic context, so that the more specific questions from the user are handled more "as expected". This basic context "primes" the LLM and make sure that it "behaves" as the "helpful assistant" the user expects it to be. This so called "system prompt" describes how the LLM should handle the requests from the user, including what to "do" and what not.
+A harness, such as Claude Code, Codex, or Gemini CLI, sets the stage for the user by injecting basic context. This context helps the LLM handle more specific user questions more effectively. By priming the LLM with this basic context, we ensure that it behaves as the helpful assistant the user expects. This "system prompt" outlines how the LLM should respond to user requests, including what actions to take and what to avoid.
 
-Remember, the LLM was trained with every possible text the trainers could find. So there is knowledge in there from many different viewpoints. A system prompt will typically lead the way to an area where the user typically will want to be. For example when I'm interested in facts, I don't want the answer to be constructed based on text from a fairy tale book. So the harness will typically inject a system prompt that "tells" the LLM to be "an knowledgeable fact-based scientist".
+Remember, the LLM was trained on a vast collection of texts, including several distinct perspectives. An LLM contains both the work of Shakespeare, as well as a technical analysis of those same works. There might even be a critical discussion about the moral objections one could have regarding some of his work. A system prompt typically guides the user towards a desired area of interest. For instance, when seeking factual information, I prefer answers not derived from fictional sources like fairy tales. Therefore, the harness usually injects a system prompt instructing the LLM to adopt the persona of a knowledgeable fact-based scientist.
 
-Just like the OS of your computer, the harness also make sure that you don't feed anything into the LLM that might cause havoc. It prepares and formats your questions just the way the LLM likes them to be. And similarly it also provides "tools" to the LLM that it can "use" to "do" things. Yes, "do" things. Yes, indeed, I told you that an LLM produces the next "word". Well, to us it's a word, to the LLM it's a number. And the way we interpret that number, makes it a "word", or a "command". So if at a given iteration of feeding context to the LLM, it decides that the most probable next output is to use a tool, the harness translates that request into an action, like reading a file, writing a file, search the web, or any other tools the harness provides to the LLM.
+Similar to the operating system of your computer, the harness ensures that the LLM receives only appropriate input to prevent potential problems. It formats your questions to align with the LLM's preferred structure. Additionally, the harness provides the LLM with "tools" that it can utilize to perform various tasks. Yes, indeed, I mentioned that an LLM generates the next "word." To us, it's a word, but to the LLM, it's a number. Our interpretation of this number transforms it into a "word" or a "command". Consequently, when the LLM determines that the most probable next output involves using a tool, the harness translates this request into an action, such as reading a file, writing a file, searching the web, or utilizing any other tools provided to the LLM.
 
 ### Prompting a Skilled Agent
 
-So, with a CPU/LLM and an OS/harness we're now entering user space. On our computer we, the users, use applications, apps. These apps interact with the OS and the underlying CPU to perform tasks. These tasks are implemented by developers using lines of code. In the LLM world, these are our "prompts", "agents" and "skills". And they also consist of code, only now in simple, plain everyday language.
+So, with a CPU/LLM and an OS/harness, we're now entering user space. On our computers, we, the users, use applications, or apps. These apps interact with the OS and the underlying CPU to perform tasks. These tasks are implemented by developers using lines of code. In the LLM world, these are our "prompts," "agents," and "skills." And they also consist of code, but now in plain, everyday language.
 
-So, a prompt you know, but what are skills and agents? Fundamentally, they're just the same. They too are pieces of text that we feed into the context and send to the LLM to get it's reply. Remember when I told you that a harness injects additional context for you, the system prompt, telling the LLM to be a good LLM and help you? An agent is pretty much that. An agent (prompt ro definition) contains instructions on how you want the LLM to behave, as a well respected scientist, or a comedian... Here's an example:
+You understand what a prompt is. What are skills and agents? Fundamentally, they're just the same. They're both pieces of text that we feed into the context and send to the LLM to get its reply. Remember when I mentioned that a harness injects additional context for you, the system prompt, instructing the LLM to behave appropriately and assist you? Well, an agent is essentially that. An agent (by definition) contains instructions on how you want the LLM to behave, such as acting as a well-respected scientist or a comedian. Here's an example:
 
 ```markdown
 ---
@@ -56,19 +56,27 @@ And that simple agent definition, when activated in _a_ harness...
 
 {% include image name="yoker-backwards" bottom="25px" kind="png" %}
 
-> Notice the dimmed text? That too is output created by the LLM. It's a concept called "thinking" and it allows the model to iterate a few times when handling your request. Here you clearly see how the model breaks down the request, produces an answer and then takes into account its agent definition, all before presenting its final answer.
+> Notice the dimmed text? That's also output generated by the LLM. It's a concept called "thinking", which enables the model to iterate a few times when processing your request. Here, you can clearly observe how the model breaks down the request, generates an answer, and then considers its agent definition before presenting its final response.
 
-> Curious what Yoker is? Keep on reading, we'll get there in the not so distant future 😇
+> Curious about what Yoker is? Keep reading, and we'll find out in the near future. 😇
 
-To wrap up the different pieces of context we can provide to an LLM: skills. Skills are again pieces of text that typically contain domain knowledge, steps to follow to correctly do something, instructions on how to process something... So, what's the difference with an agent, or a prompt? Skills typically aren't loaded into the context all the time. The LLM can, very much like with tools, and even with a specific "skill" tool, request the injection of this knowledge itself. Just like tools, skills are only loaded into the context using their name and description, and the LLM can use a tool to have them included when needed.
+To wrap up the various pieces of context we can provide to an LLM, let's talk about skills. Skills are essentially pieces of text that usually contain domain knowledge, step-by-step instructions for performing a task, or guidelines for processing information. Now, what sets skills apart from agents or prompts? Unlike agents or prompts, skills aren't always included in the context. However, the LLM can, much like using tools, and even with a specific "skill" tool, request the injection of this knowledge itself. Just like tools, skills are only loaded into the context using their name and description, and the LLM can utilize a tool to include them when necessary.
 
 ### It's All About the Context
 
-Why is that important? Why not simply load everything in the context? Basically, because there are limits to everything. Remember, the context is like a path into the multi-dimensional brain of the LLM. Every word in the context is another turn, left or right in that world, leading us to one specific point. At that point, the LLM will choose the next most probable word (number) and produce it. So if we make this context larger and larger, at a given point will we loose parts of the context, because we start running in circles. By making the skills optional, and having them included only when needed, the context remains relevant.
+Why is that important? Why not simply load everything in the context? Essentially, because there are limits to everything, even if those limits are big. Remember, the context acts as a path into the multi-dimensional brain of the LLM. Each word in the context represents a turn, either left or right, in that world, leading us to a specific point. At that point, the LLM selects the next most probable word (number). So, if we expand the context, at some point, we'll lose parts of it because we might cross into other areas of the model, off-topic, making the LLM produce far less contextual relevant predictions.
 
-Because this context "rot", as it is called, is so important (to avoid), harnesses employ sophisticated algorithms to keep the context small, making sure it is optimized to answer your prompt. Technically, LLMs also have a maximum context size. Today top-tier models support contexts up to 1 million words (or tokens to use the most correct terminology). To put that into perspective: a standard novel has around 70.000 to 100.000 words. So to answer your question, nowadays LLMs can take in about 10 full length novels worth of context, to produce the most probable next word.
+Because this context "rot," as it's called, is so crucial (to avoid), harnesses employ sophisticated algorithms to keep it small, ensuring it's optimized to answer your prompt. For example: by making the skills optional and including them only when necessary, the context remains a little more relevant.
 
-That _is_ a lot. It first contains the harness injected system prompt, index of tools and skills can easily surmount 25.000 tokens. And from there on, every question you ask, all the thinking we saw above, every answer, every tool request to read a file and of course the context of such file,... After a few turns, asking questions, back and forth, even such a 1 million token worth of input is easily filled. Now, consider that these models are great coding-companions, asking them to do something on your codebase, quickly leads them to read all your source files, sometimes even multiple times. LLMs basically, and this is where they excel, can take so much into context at the same time that they can come up with wonderful conclusions.
+So, how much information _can_ we feed into an LLM? Technically, LLMs do have a maximum context size. Today, top-tier models support contexts up to 1 million words or I should rather say "tokens", to use the more accurate terminology. And on average, in English, 1 word equals roughly 1 1/3 tokens. In Spanish this can rise to 2 tokens, and programming languages typically have a 1 1/2 to 2-token factor. This is the nature of how information is translated to the token-based model-language. For example, a long word like "unbelievable" gets broken into smaller pieces first. 
+
+To put all that into perspective, a standard novel has around 70,000 to 100,000 words. So, to answer your question, nowadays LLMs can take in about 7 to 8 full-length novels worth of context and generate the most probable next word.
+
+That _is_ a lot. And I does need it. It first contains the harness-injected system prompt, the index of tools and skills can easily exceed 25.000 tokens. From there, every question you ask, all the thinking we discussed above, every answer, every tool request to read a file, and of course, the context of such a file... After a few turns, asking questions, back and forth, even such a 1 million-token worth of input is easily filled. Now, consider that these models are excellent coding companions. Asking them to perform a task on your codebase quickly leads them to read all your source files, sometimes even multiple times.
+
+Large language models, in essence, and this is where they excel, can simultaneously take in a vast amount of context, enabling them to arrive at remarkable conclusions. They are capable of establishing semantic connections across a range of information, spanning those seven to eight novels, which guides them to a highly specific location that precisely addresses the concept at hand. Subsequently, they apply their trained knowledge to this specific location to generate the most probable response to it.
+
+> Now, I know that the following comparison is technically incorrect, but it's difficult not to draw parallels between LLMs and our brains, our learning, thinking, and response-generation processes. Our brain too functions as a large model, typically trained using language constructs like "Hey Christophe, look, this is... a book!" Our parents repeatedly used these constructs, and eventually, we began repeating them based on the context we were in. Over time, we accumulated a vast amount of information, often by reading books, allowing us to combine elements of our context with our trained knowledge. Sometimes, we even make slight mistakes or creative deviations, leading to remarkable conclusions.
 
 ### With Great Unstructured Power, Comes Great... Required Governance
 
@@ -96,9 +104,9 @@ The which if you with patient ears attend,
 What here shall miss, our toil shall strive to mend.
 ```
 
-Let's feed the first half to our LLM and ask it to do what it does best...
+Let's feed the first half to an LLM and ask it to do what it does best... generate the next words...
 
-{% include image name="yoker-romeo-juliet" bottom="25px" kind="png" %}
+{% include image name="yoker-romeo-juliet" bottom="25px" kind="png" title="A session demonstrating an LLM generating the exact text of Romeo and Juliet." %}
 
 Now, here's one of the first paragraphs of one of my favorite books, {% include external link="https://stephenking.com/works/novel/long-walk.html" title="The Long Walk" %} by Stephen King:
 
@@ -115,57 +123,161 @@ strange and out of place in the rural stillness.
 
 Now let's again feed the first half to our LLM and ask ik to do what it does best...
 
-{% include image name="yoker-the-long-walk-1" bottom="25px" kind="png" %}
+{% include image name="yoker-the-long-walk-1" bottom="25px" kind="png" title="A session showcasing an LLM's ability to generate a completely different and ‘creative' text version of The Long Walk." %}
 
-So it seems our monkey _can_ produce the works of Shakespeare, but not so much the works of Stephen King. Although it surely produced a compelling start of another story.
+It appears that our monkey _can_ create the works of Shakespeare, but not so much those of Stephen King. Nevertheless, it certainly managed to craft an intriguing beginning for another story.
 
 Let's try that one more time...
 
-{% include image name="yoker-the-long-walk-2" bottom="25px" kind="png" %}
+{% include image name="yoker-the-long-walk-2" bottom="25px" kind="png" title="Another session demonstrates that large language models don't always produce consistent results." %}
 
-If you are going to remember one thing from this article, let it be this: never trust an LLM! Given the exact same request, it produced two different answers. Now, albeit this is a wonderful, almost unbelievable capability, I don't think you would appreciate your Excel sheet to sometimes include taxes and sometimes not, when creating an invoice. This is where our analogy enters a critical phase.
+If you're going to remember one thing from this article, let it be this: _never trust an LLM_! Even with the same request, it generated two completely different answers. While this is an incredible and almost unbelievable capability, I don't think you'd appreciate your Excel sheet to sometimes include taxes and sometimes not when creating an invoice. This is where our analogy becomes crucial.
 
-> But first: did you notice? Although the two continuations clearly tell a different story, still there are some compelling similarities to be observed: Although the context only mentions the car, the guard and the plastic ID card, both stories continue with "an elderly woman" being the driver and "building C" as the goal of her visit. Apparently, within the range of fictional texts this specific model was trained on, {% include google search="why are drivers of old cars mostly elderly women in fiction literature?" title="drivers of old cars" %} are typically elderly women and {% include google search="why is 'building C' such a typical building in fiction literature?" title="building C" %} is a goto location for writers.
+> But first, did you notice? Despite the two continuations presenting distinct narratives, there are some intriguing similarities to be observed. While the context only mentions a car, a guard, and a plastic ID card, both stories continues with "an elderly woman" as the driver and "building C" as her destination. Apparently, within the range of fictional writing this specific model was trained on, it appears that {% include google search="why are drivers of old cars mostly elderly women in fiction literature?" title="drivers of old cars" %} are typically portrayed as elderly women, and {% include google search="why is 'building C' such a common setting in fiction literature?" title="building C" %} is a frequently used location for writers when they need a mysterious place.
 
-Although we access LLMs using our computers (CPU+OS) and an application like Claude Code or Codex or Gemini CLI or Yoker (the harness), that's where predictability ends, that's where consistency ends. Yes, all of these components can contain bugs, but even those bugs are consistent. With LLMs we now introduce a completely new component, a new layer of abstraction, one that introduces uncertainty with such a high level of quality, that we can hardly still recognize the "bugs".
+Although we access LLMs using our computers (CPU+OS) and applications like Claude Code, Codex, Gemini CLI, or Yoker (the harness), that's where predictability and consistency end. Yes, all these components can contain bugs, but even those bugs are rather consistent. With LLMs, we introduce a completely new component, a new layer of abstraction, one that introduces uncertainty with such high quality that we can hardly still recognize the "bugs".
 
-To guard our applications from bugs, we have introduced processes, methodologies, [ceremonies](50-Shades-of-Ceremony) and architectural governance. It should now come as no surprise that we need a similar layer in our new paradigm: [agentic workflows](Agentic-Workflow).
+To guard our applications from bugs, we have introduced processes, methodologies, and even [ceremonies](50-Shades-of-Ceremony) and architectural governance. It should now come as no surprise that we need a similar layer in our new paradigm: [agentic workflows](Agentic-Workflow).
 
 Let's revisit the layers of a typical enterprise and how it realizes its initiatives and how architecture introduces governance to realize the dream of its clients...
 
-{% include image name="governance-overview" bottom="25px" kind="png" %}
+{% include image name="governance-overview" bottom="25px" kind="png" title="An enterprise's high-level workings, with governance as a central strategy." %}
 
-At the governance layer, the dreams, or needs if you like a more formal nomenclature, are captured and evaluated within the larger picture of the enterprise, the architecture, resulting in directions for the management or tactical layer. Results, both the actual and observed, are monitored and serve as equally important input for the governance layer, that incorporates it again in its next set of directions. This positive, forward feedback loop, is the simple yet powerful iterative pattern that fosters constant evolution. And I strongly believe that it is this same sound approach that is the final layer we also need in this new agentic workflow.
+At the governance layer, the dreams or needs, if you prefer a more formal term, are captured and evaluated within the broader context of the enterprise and its architecture, resulting in directions for the management or tactical layer, who can autonomously execute them. Both actual and observed results are monitored and serve as equally important inputs for the governance layer, which incorporates them into its next set of directions. This positive, forward feedback loop is the simple yet powerful iterative pattern that fosters continuous evolution. And I firmly believe that it is this same sound approach that is the final layer we also need in this new agentic workflow.
 
-## From Transcripts to Researcher's Auditability
+## From Auditability to Guardrails
 
-When I started, I was ultra worried about what these agents would do. Hearing about agents {% include external link="https://www.youtube.com/watch?v=fVrw8V3iFLc" title="wiping out entire database systems in a matter of 9 minutes" %}, I did't want to become the next scary agent story. So one of the first skills that I created was one {% include commit repo="c3" sha="e652b18e9ea116eacd1568083768f8a4929db203" title="to transcribe a session" %}. I wanted to have an audit trail of everything. After four months, this paranoia has calmed down and has been replaced with other, more active guardrails. Still, and I should check, I'm sure that some of the agentic repositories might still contain such transcriptions.
+When I began, I was ultra worried about what these agents could do. Hearing about agents {% include external link="https://www.youtube.com/watch?v=fVrw8V3iFLc" title="wiping out entire database systems in a matter of 9 minutes" %}, I was determined not to become the next scary tale about such agents. Consequently, one of the first skills I developed was a tool {% include commit repo="c3" sha="e652b18e9ea116eacd1568083768f8a4929db203" title="for transcribing sessions" %}. I wanted to maintain an audit trail of all activities. After four months, this initial paranoia subsided and was replaced by more proactive safeguards. Nevertheless, I should verify, yet I'm rather certain that some of my agentic repositories may still contain these transcriptions.
 
-Research is a similar story: from the very first version of my researcher agent, or rather the research skill, I focused on auditability. Most part of its instructions are on creating a local cache of everything it searched for and fetched. I really wanted to be able to both verify the search results, as well as the actual content that it based its reports on. I was very wary that it would produce material I could not review, knowing that by nature an LLM will produce very qualitative none-sense in the blink of an eye. Given the fundamental nature of a researcher agent, I had to draw a firm line here. This example again shows a fundamental aspect of an agentic workflow: governance, more specifically building in guards that monitor the workflow and make it auditable for the human in the equation.
+Research is another example of this approach. From the very first version of my researcher agent, or rather the research skill, I prioritized auditability. A significant portion of its instructions involves creating a local cache of all the information it searched for and retrieved. I wanted to ensure that both the search results and the actual content it relied on for its reports could be verified. I was particularly cautious about the possibility of producing material that I couldn't review, given the inherent tendency of LLMs to generate highly qualitative and nonsensical content in the blink of an eye. Considering the fundamental nature of a researcher agent, I had to establish clear boundaries in this regard. This example once again highlights a crucial aspect of an agentic workflow: governance, specifically the implementation of safeguards that monitor the workflow and make it auditable for the human involved.
 
-If you look at the definition of the {% include external link="https://github.com/christophevg/c3/blob/master/skills/research/SKILL.md" title="research skill" %} you notice pretty soon that this _skill_ isn't really about doing the research itself. It actually deals with the surrounding process, the surrounding workflow on how to deal with the artifacts, with the follow up of uncertainties, with quality checklists,... This typically includes explicitly what **not** to do, which is sometimes much more powerful than trying to describe what to do. Negatively phrased instructions limit the agent where **not** to go, yet at the same time keep all other options open, avoiding in steering it _only_ in the direction _you_ already know. This is another example of the whole "letting go" we already discussed in the [first part](Hello-Agents#let-it-go).
+If you examine the definition of the {% include external link="https://github.com/christophevg/c3/blob/master/skills/research/SKILL.md" title="research skill" %} you'll soon realize that this _skill_ isn't primarily about conducting research itself. Instead, it focuses on the surrounding process, the workflow for handling artifacts, addressing uncertainties, and implementing quality checklists. This typically includes explicitly stating what **not** to do, which can be more effective than simply describing what to do. Negatively phrased instructions restrict the agent's actions, yet simultaneously maintain all other options open, preventing it from being steered solely in the direction you already know. This is another instance of the concept of "letting go" we discussed in the [first part](Hello-Agents#let-it-go).
 
-TODO: Expand this section to connect the auditability principle to the broader workflow governance theme. The researcher agent's auditability is one concrete example of building in guards. How does this generalize to other agents? What other governance mechanisms has C3 implemented? How does the human stay in the loop without becoming the bottleneck?
+### Because I Told You So...
 
-## The Security Agent Story
+In the agentic world, simply telling an LLM what to do and what not to do doesn't guarantee that it will follow its instructions to the letter. An LLM will always generate the next most probable word, even if all probable possibilities it has been trained on don't include a valid option. This can lead to unexpected outcomes, especially when the LLM generates text at a rate of 300 to 600 words per second.
 
-TODO: Write the story of the security agent that blocked a quick feature. While trying to implement a generic configuration system (using clevis), the security agent flagged it as insecure, requiring more security-related features to avoid implementing a local wrapper. See: https://github.com/christophevg/roomz/pull/6 and https://github.com/christophevg/clevis/issues/4. As the owner, I was confronted with an agent from my collective that literally blocked me from quickly moving forward. The Steve Jobs moment: "Why hire good people and tell them what to do?" I could have overridden the agent with "just do it" — but that would toss the value of my investment into the garbage. Instead, I honored the agent's remarks and created a feature request with the clevis project. The guardrails ARE the agents themselves — not just methodology or process, but active enforcement. The security agent literally blocked the owner from taking a shortcut. This is Waterfall's enforcement mechanism now made fast by agents. Multiple agents reviewing from different angles = multiple guardrails. This story demonstrates: agents enforce standards even when you don't want them to; this IS the "deep investment"; this prevents the horror stories; the human instinct to override is the exact moment where investment pays off or fails.
+Furthermore, even with a one million token context, not all elements of that context receive equal attention.
 
-## TOCTOU - The Standard Workflow in Action
+Simply providing instructions to an agent doesn't guarantee that it will follow them. Presenting opposing instructions will cause the agent to choose one option or another, or even another.
 
-TODO: Write the TOCTOU story as an example of the standard workflow functioning as designed. During a standard agentic workflow session, the Python developer agent completed implementing a feature. Following the established workflow: (1) the project-manager issues reviews from the functional-analyst for feature completeness; (2) then domain-specific agents review from their perspectives — API Architect for APIs, UX-UI designer for user interaction, Security engineer for security aspects. The security engineer agent noticed a TOCTOU (Time-Of-Check to Time-Of-Use) vulnerability when accessing files — a classic security issue where the time between reading/confirming access rights and applying them creates an attack vector. The resolution: review issues raised by security agent, developer agent fixes them, all without user intervening. This demonstrates: no manual intervention needed, the workflow loops back and forth until everything is clear, multiple agent perspectives catch issues that a single developer — even an experienced one — might miss. The security engineer caught something I would never have thought of, despite my earliest professional experiences being in security. Trust the process.
+This was the very reason why, when I began my explorations, I initially chose the auditability approach. Ensuring that I could audit every detail allowed me to trace back every decision and take appropriate action. I combined this with a high degree of personal control, personally checking every write tool invocation. My background in network security and my default paranoia have proven to be effective in this regard.
 
-## Autonomy While Agents Work
+However, the auditability approach, along with micro-managing every action, is not a viable path for agentic workloads. Coding harnesses have focused on introducing automated guardrails to reduce the need for manual and interactive checking of every action. These approaches provide agents with more degrees of autonomous freedom, but still require a human at the keyboard to approve more complex tool requests.
 
-TODO: Write about the autonomy the workflow enables. The workflow: (1) create a feature request issue on GitHub; (2) agentic workflow loops back and forth until requirements are clear; (3) work begins in a feature branch with quality gates (draft PR checks); (4) final approval through pull request merge. While agents work (analyzing, developing, running tests, reviewing code from multiple perspectives, fixing issues), the user works on other topics. Example: writing an article while being interviewed by the functional-analyst agent. A popup notification signals when the user needs to validate, review, or give feedback. This demonstrates: the workflow enables autonomy through trust, the user is not bottlenecked by constant supervision, the investment in process pays off in regained time, multiple agents work in parallel on different aspects, the user stays in control without being in the way.
+### And then I Started to Dislike Claude Code
 
-## "Agents Aren't Mind-Readers" - The Clevis Lesson
+I clearly remember the initial days of working with Claude Code. The 🤩 emoji perfectly captures the experience: "_Ask and thou shall receive_" was the mantra, as request after request resulted in increasingly impressive code being crafted for me. Initially, it was for this website, but soon, it extended to numerous projects that had been gathering dust over the past decade. Those first few days were an exhilarating time for this little developer. The pace of progress was relentless, until the point where I began to feel frustrated by the frequent interruptions. These interruptions involved asking for my permission to execute long, complex, and multiline shell commands.
 
-TODO: Write the story of expecting mind-reading and learning the lesson. While developing Clevis, I expected my agents to read my mind, like they sometimes had before. The LLM backing them is trained with so much material that it statistically produces things I would have thought of if I knew about them — but this is not mind-reading, it's pattern matching. Clevis was in a very early state, I was still discovering the right approach, which resulted in sub-optimal results from the agents and I got frustrated. I was wrong to be frustrated; my actions were correct: I started developing/prototyping the interface until I was happy with it, then enjoyed manually implementing the bare minimum, then started a session with the functional analyst to review my prototyping work. Within minutes the agent had analyzed my prototype and prepared tasks for the entire project team. The lesson: agents aren't mind-readers, but "a word is enough for the wise" certainly applies. When you clearly articulate (prototypes, specifications, analysis), agents excel. The frustration comes from expecting magic vs. doing the work. Clear articulation IS the investment.
+Now, don't get me wrong. I firmly believe in working within a command-line shell environment. The fact that these new coding agents were operating within the same environment was a dream come true. It felt like the world had finally caught up with my vision. However, these agents excel at creating elaborate and complex shell commands. This is undoubtedly a positive aspect, as they can generate multiline commands that can test the logic of code to be written in mere seconds. This makes them one of the most valuable tools at their disposal.
 
-## Agentic Workflow Properties
+The downside is that these shell commands can be challenging to read, especially for humans. They often contain hidden complexities. Let's recall how an LLM generates the next token, and the next, and so on... Producing natural language involves a certain level of ambiguity. But when it comes to code or shell commands, the output is what it is. The difference between `rm -rf /tmp/text.txt` and `rm -rf / tmp/text.txt` is just one character, and even that single incorrect character can cause significant damage to your hard drive if you hastily press "yes."
 
-TODO: Write this section based on the following properties discovered through experience. Each property should be illustrated with a concrete example from the past 4 months.
+Consequently, I quickly became annoyed by these interruptions and, in a matter of days, made up my mind that the `Bash()` tool, which allows the agent to execute arbitrary shell commands on my system, was both a superpower and a major obstacle to agentic workflows.
+
+### Public Service Announcement: Wormhole Ahead
+
+Fortunately, the `Bash()` tool can be controlled by providing valid patterns of what commands should look like. This allows us to pre-approve certain commands. By combining this with my trusted `Makefile`, I could provide the agent with a series of pre-approved make targets that contained everything it needed to avoid writing those pesky command line instructions: `make run`, `make test`, `make check`... as long as it had all the necessary information. And it happily used them,... sometimes.
+
+However, executing make targets still required the `Bash()` tool, which resulted in a lot of interruptions. The LLM often wanted a more specific output and crafted more complex commands all over again. I needed to find a way to eliminate the `Bash()` tool. But getting rid of its superpowers wasn't easy. At this point, I started to believe that to create a truly autonomous agentic workflow, all tools should enable a way to completely proactively configure them, resulting in uninterrupted sessions. This was the first seed of an idea.
+
+Another observation I quickly made was the inherent problem we were facing: we wanted the agent to write code, yet we also wanted it to be unable to execute it. Sounds strange? It's actually quite simple. If we allow an agent to execute code it has written itself on our system, we give it total freedom. My initial level of guardrails, which only allowed it to run the project using `make run` or the test suite using `make test`, effectively limited its capabilities. However, in reality, it just created a hurdle that the agent gladly took as yet another detail in its context and simply worked around it. If it could only run the project or the test suite, it was easy to create a test that executed a shell command and then run the test suite.
+
+So, simply remove its ability to run the project or the test suite. Let it just write code then. Yes, that's a possibility. Now, trust me, that would severely limit the agent and put an enormous burden back on us, having to run every little or big piece of untested code for it, and even review it before executing it. Yes, agents produce wonderful pieces of code, yet often also full of rubbish, which they gladly fix themselves. For that they need to be allowed to execute their code to test it. Writing code from the first to the last line in one go hasn't proven viable for humans, and the same goes for agents, by nature.
+
+Restricting agents takes away too much of their superpowers, so we have to find other ways to protect them from making mistakes that cost us more to fix than the value they bring.
+
+## Once upon a time, there was an Agent...
+
+> Success is not built on success. It's built on failure. It's built on frustration. Sometimes it's built on catastrophe." - Jeff Bezos
+
+When agents entered my world in March 2026, some of my older projects were revived, some were terminated, and many new ones emerged. Each of these changes was a direct response to these new allies I had gained. Each change also brought its own set of experiences, built on failures and frustration. So far, I don't think any catastrophes have occurred, but I'm keeping my fingers crossed.
+
+> "Experience is simply the name we give our mistakes." — Oscar Wilde
+
+If you know me, you know I always own my mistakes and I even tend to share them widely, simply to provide them as a learning experience, without having to go through the same mistakes yourself. Before consolidating agentic properties and agentic workflow components, let's take a stroll down memory lane and relive some of the stories that unfolded over the past months, resulting in many valuable lessons for the future.
+
+### Agent vs Agent
+
+When I started looking into this new agentic paradigm, I came across a quote from Boris Cherny, the creator of Claude Code. 
+
+> Claude Code is great at writing its own instructions.
+
+He was emphasizing the importance of requesting Claude Code to review the session and suggest modifications to its agent definition to prevent errors made during that session. I've wholeheartedly embraced this advice and incorporated it into various aspects of my work to come. I have already mentioned my lessons learned skills. Another iteration of this concept is more actively implemented in the operational side of the agentic workflow.
+
+The core idea here is to "flip the script" and leverage the inherent nature of LLMs against themselves. Essentially, it involves introducing multiple agents into the mix. For instance, one agent can generate an analysis, followed by a second agent reviewing that analysis, and a third agent providing a completely different perspective. Often, we end up with contrasting review reports. Now, we can introduce yet another agent to reach a consensus.
+
+By introducing agents to review the work of other agents, we establish the foundation for a self-reviewing and self-healing workflow. This approach significantly reduces the initial audit burden and lays the groundwork for the agentic workflow as a whole.
+
+{% include external link="https://github.com/christophevg/c3" title="Christophe's Agentic Collective" %} (short C3), a platform that has become the breeding ground for numerous agents and skills, all based on this multi-agent paradigm, has witnessed remarkable growth over the past months. It has expanded from a single agent to two, and now contains 17 agents and 67 skills. Each of these agents and skills has its own unique story to tell.
+
+### Agent Says No!
+
+Introducing more agents and multiple perspectives reviewing the same analysis or code indeed leads to more reliable agentic outcomes. However, this shiny coin has two sides.
+
+While attempting to implement {% include external link="https://github.com/christophevg/roomz/pull/6" title="a generic configuration system" %}, the {% include external link="https://github.com/christophevg/c3/blob/master/agents/security-engineer.md" title="security engineer agent" %} flagged it as insecure, requiring additional security-related features to avoid implementing a local wrapper. As the owner, I was confronted with an agent from _my_ own collective who effectively blocked _my_ progress. It was a true Steve Jobs moment:
+
+> It doesn't make sense to hire smart people and then tell them what to do. We hire smart people so they can tell us what to do.
+
+I could have overruled the agent with "just do it," but that would have killed the value of my investment. Instead, I respected the agent's observations and {% include external link="https://github.com/christophevg/clevis/issues/4" title="created a feature request with the upstream project" %}.
+
+In this instance, the agents serve as the very guardrails, not just methodologies or processes, but active enforcers. The security agent literally prevented me from taking a shortcut. Multiple agents reviewing from various angles create a comprehensive set of guardrails. However, these are soft guardrails because both the other agents and I must acknowledge and adhere to them. Fortunately, agents, and I, have it in our nature to try to please and gladly follow up on good advice.
+
+### Do you TOCTOU?
+
+Here’s another story illustrating how pitting agents against each other creates a reliable environment.
+
+During one session, the {% include external link="https://github.com/christophevg/c3/blob/master/agents/python-developer.md" title="Python developer agent" %} completed implementing a feature. Following the established workflow, the {% include external link="https://github.com/christophevg/c3/blob/master/agents/project-manager.md" title="project manager agent" %} requested reviews from the {% include external link="https://github.com/christophevg/c3/blob/master/agents/functional-analyst.md" title="functional analyst agent" %} to ensure the feature’s completeness. Subsequently, he dispatched domain-specific agents to conduct reviews from their respective perspectives: the {% include external link="https://github.com/christophevg/c3/blob/master/agents/api-architect.md" title="API Architect agent" %} focused on APIs, the {% include external link="https://github.com/christophevg/c3/blob/master/agents/ux-ui-designer.md" title="UX-UI designer agent" %} handled user interaction, and the security engineer agent critically reviewed security aspects.
+
+The security engineer agent discovered a case of a Time-Of-Check to Time-Of-Use (TOCTOU) vulnerability, a classic security issue where the time gap between verifying access rights and applying them creates an attack vector. This incident once again reminded me that there’s still much I can learn. So, I opened my web browser and began reading about the concept of TOCTOU.
+
+Interestingly, the resolution to the issue was already underway while I was researching it. The security agent had raised the review issues, the project manager had noticed them and dispatched the developer agent again, who had fixed them. All of this had happened without my intervention. By the time I was up to speed, the iteration had already progressed to the next task.
+
+This experience clearly demonstrates the value of such an agentic workflow, where no manual intervention is required. The workflow loops back and forth until everything is clear, and multiple agent perspectives catch issues that a single developer, even an experienced one, even me if I had reviewed this, would miss. The security engineer had caught something that I would never have thought of, despite my earliest professional experiences being in security. Trust the process!
+
+### The Blind Leading the... Blind
+
+Initially, especially in the early stages, I had to extensively "debug" this workflow. Debugging required me to review all the steps taken by each agent. When I first started using Claude Code, it was still quite basic. It simply displayed everything: agents thinking, producing output, and so on. Spawning sub-agents was still a synchronous, sequential process of the overall workflow.
+
+However, as the weeks went by, Claude Code introduced new features daily. Intermediate output, such as thinking, became hidden behind a `cmd+o` toggle. Agents spawned into the background, and only the results were visible. In essence, less and less of the process was visible, which was great for the masses. They could only see the beautiful results and feel like the king of their castle. On the other hand, I was all but happy with this evolution. Debugging sub-agents became increasingly difficult. While I was making significant advancements with more and new agents working together in a growing workflow, I simply couldn’t easily follow what was happening at certain points. I needed a different interface.
+
+### While Agents Work
+
+While my team made a mistake, detected the vulnerability, and fixed it, I had the opportunity to delve into the issue. I learned something that I would never have considered, and I believe it will be present in many codebases in some form or another. It’s true that this is a race condition case and quite challenging to exploit reliably. Additionally, given the context, this specific case wouldn’t be feasible to exploit. An attacker would need the same permissions as the one they were trying to bypass. Despite these limitations, it was a valid observation, and as a result, TOCTOU vulnerabilities have been removed in several other projects.
+
+I was able to dedicate time to this because, by that time, my workflow involved frequent interactions with GitHub through issues and pull requests. My only interactions with the harness were granting permissions for complex shell commands and requesting it to follow up. While I could have implemented a loop for this, it didn’t significantly contribute to the task due to the ongoing interactions required to allow certain shell commands.
+
+As the frequency of harness-babysitting decreased, I was able to focus on reading, researching, brainstorming new features, and writing articles like this. A popup notification now serves as a reminder when I need to validate, review, or provide feedback, and this notification is increasingly limited to GitHub. Consequently, the time between interruptions has become longer, and context switching has become less of a burden.
+
+## Agents Aren’t Mind-Readers
+
+This freedom and ability to focus on strategic matters, while agents handle much of the operational work, also presents challenges for the human involved. On some days, when everything runs smoothly, we sometimes let our guard down, and agents seize the opportunity to fill the gap, but not always in the way we intended.
+
+While developing {% include external link="https://github.com/christophevg/clevis" title="Clevis" %}, I had high expectations for my agents to read my mind, similar to previous experiences. The LLM that powers them is trained on a vast amount of information, which statistically generates responses that I would have considered if I had been aware of them. I’ve previously highlighted this incredible source of personal learning. It often feels like the LLM is reading my mind or at least producing what I wanted, even if I hadn’t explicitly requested it. However, this is not mind-reading. It’s pattern matching based on a comprehensive and extensive knowledge base.
+
+So, what actually happened? Clevis was still in its early stages of development. I was still exploring the appropriate approach and lacked clear specifications. I almost asked the agents to generate it in a true "vibe" programming style. Yes, I know, it led to unintended consequences. The agents produced suboptimal results, and I became frustrated because I didn’t achieve the desired outcomes. However, I simply hadn’t articulated my expectations clearly. I was mistaken to be frustrated. The problem was sitting at the other side of the keyboard. Agents aren’t mind-readers. They may appear creative, and they are, but not always in the same creative manner as I envision.
+
+In the end, my approach to resolve this was correct. I started developing and prototyping the interface until I was satisfied with it. Then, I manually implemented the bare minimum. Next, I initiated a session with the functional analyst to review my prototyping work. Within minutes, the agent had analyzed my prototype and prepared tasks for the entire project team.
+
+The lesson is clear: agents aren’t mind-readers, but "a word is enough for the wise" certainly applies. When you clearly articulate your requirements (prototypes, specifications, analysis), agents excel. The frustration arises from expecting magic instead of taking the necessary steps. Clear articulation is the investment that leads to success.
+
+## The Overachiever Agent
+
+It’s a blessing to be able to write this article while two agent teams are simultaneously working on two projects. However, it’s a curse when you realize that despite providing {% include external link="https://github.com/christophevg/yoker/pull/47#issuecomment-5020831050" title="crystal clear instructions" %}, including an apology, and a {% include external link="https://github.com/christophevg/yoker/pull/47#issuecomment-5021644201" title="very clear snippet with the direction" %}, they have introduced a solution to a non-existent problem and over-engineered it. They wrapped a perfectly usable module in a local class with methods that simply pass arguments to the same methods on the wrapped modules’ classes.
+
+The blame lies partially with the human side. Both teams ignored my good advice, but I also approved their plan, which included clear intentions to implement unnecessary abstractions and indirections. I was so accustomed to seeing great results the previous week that I didn’t thoroughly read the analysis and plan summaries and expected to be done with a {% include external link="https://github.com/christophevg/yoker-assistant/pull/3#issuecomment-5021794233" title="simple comment" %}.
+
+My overachiever agents require close supervision because they can produce a significant amount of code in a short time, and it takes several iterations to recover from it.
+
+> In the meantime, we’ve applied the lessons learned twice and further improved the agents and skill definitions to focus more on direct instructions. Our agents are incredibly capable and eager interns, and we simply need to nurture and harness their potential.
+
+---
+I'm HERE
+---
+
+## The Fundamental Agentic Workflow Properties
+
+Let's try to summarize some of the agentic workflow properties that I've experienced over the past months and see if we maybe can observe a pattern.
 
 ### Always Iterate at Least Twice
 
@@ -268,6 +380,33 @@ TODO: "Let it consolidate learning into workflow." Agents develop skills (abilit
 ### Stage 3: The Specialized Agent
 
 TODO: Agents have "workflow memory" from lessons learned. They apply patterns autonomously. Investment: minimal — they remember from context. Analogy: a Pokemon with the right nature, abilities, and moves for specific battles. Example: the TOCTOU catch, the autonomy while working, Eira's behavior retention (told once to use HTML for emails, she retained it across sessions). This is where the Pokemon progression becomes real: teach once, use forever. The key difference from human interns: human interns eventually leave, taking knowledge with them. Agents stay, share knowledge across the ENTIRE collective. Every lesson learned improves ALL future sessions. Investment compounds, doesn't walk out the door.
+
+## All Rise!
+
+Your honor I want to present the evidence in this case. If I may, I want to present five exhibits to the court and the jury, that will point to one and only one possible outcome in this case.
+
+**Exhibit 1: The `Bash()` tool** presents the agent with too much freedom. It allows it to create complex statements, that are not only hard to verify, debug and allow to be used, they also simply put a sometimes greater burner on the user.
+
+**Exhibit 2: Claude Code hides more and more** of what is actually being done by the agents. This is nice for simple end-users, who like to surrender all control to the desire that might very well consume them whole. Yet for my client, who wants to really master and control this agentic workflow, this blindness is really a burden.
+
+**Exhibit 3: A CLI harness is nice, having the possibility to give permission to do things is great, but in the real world, such interactivity is not always available. My client clearly sees we're merely at the beginning of this agentic paradigm. Soon we will want to integrate this in autonomous workflows.
+
+**Exhibit 4: MCP servers** are a nice solution to introduce tools in the agentic mix, but it is really only one way traffic and doesn't offer a possibility for a tight integration with existing, or newly written, structured parts of solutions. My client would love to introduce agentic workflows in his existing codebases, with agentic workflow being a first class citizen in a true Python-first approach.
+
+**Exhibit 5: The personal itch** to try and write his own harness, taking all previously shown shortcomings to heart, is maybe the most important reason. Learning is founded in doing, in failing and finding answers.
+
+Therefore, honorable judge, esteemed members of the jury, I simply cannot ask anything else from you than to allow my client to start working on his own Python-first agent hardness framework: Yoker.
+
+## Introducing Yoker
+
+TODO: explain all ideas that have been presented before and why you started working on Yoker. Show that Yoker implements the laws:
+
+- Trigger: Claude's evolution to show less and less -> visibility/control (law 3)
+- Trigger: Better autonomy -> no Bash and rich tools
+- Trigger: No MCP -> Python-first tools
+- Feature: Integration of structured and unstructured workloads (law 1)
+- Feature: not a harness by a harness framework
+- Feature: focus on standalone execution of packages of agents + skills + tools + prompts (assistant, writing-assistant, pkgq,...) (law 2)
 
 ## Main Messages
 

@@ -267,119 +267,176 @@ It’s a blessing to be able to write this article while two agent teams are sim
 
 The blame lies partially with the human side. Both teams ignored my good advice, but I also approved their plan, which included clear intentions to implement unnecessary abstractions and indirections. I was so accustomed to seeing great results the previous week that I didn’t thoroughly read the analysis and plan summaries and expected to be done with a {% include external link="https://github.com/christophevg/yoker-assistant/pull/3#issuecomment-5021794233" title="simple comment" %}.
 
-My overachiever agents require close supervision because they can produce a significant amount of code in a short time, and it takes several iterations to recover from it.
+My overachiever agents require close supervision because they can deliver a significant amount of work in a short time, and it can take several iterations to recover from it.
 
-> In the meantime, we’ve applied the lessons learned twice and further improved the agents and skill definitions to focus more on direct instructions. Our agents are incredibly capable and eager interns, and we simply need to nurture and harness their potential.
-
----
-I'm HERE
----
+> In the meantime, we’ve applied the lessons learned twice and further improved the agents and skill definitions to focus more on direct instructions. Agents are incredibly capable and eager interns. We simply need to both nurture and harness their potential.
 
 ## The Fundamental Agentic Workflow Properties
 
-Let's try to summarize some of the agentic workflow properties that I've experienced over the past months and see if we maybe can observe a pattern.
+Let’s reflect on my experiences over the past months and extract some agentic workflow properties that I’ve encountered. Then, let's see if we can observe a pattern.
 
 ### Always Iterate at Least Twice
 
-TODO: The first design, the first generation is never "perfect." Illustrate with the example of the KB category structure: the initial researched category/section structure simply didn't work. After asking to research and review it, the structure became much better. This is the "think before you act" principle made concrete — the first pass is a draft, the second pass incorporates review feedback.
+Although this property later evolved into running multiple agents, it remains the most fundamental aspect of agentic workflows to remember. It manifests in various ways: avoid relying solely on a single iteration, challenge each response, and be prepared to discard initial results and restart, leveraging the insights gained from the first iteration.
 
-### Give Freedom to Create, Then Let It Review Itself Critically
+One of the most profound initial questions I posed to my agents after they presented a solution was: "Given your current knowledge of the project, what would you have done differently?"
 
-TODO: Iteratively evolving agents and skills. Example: agent/skill design — research, create, ask questions, use it, give feedback, let it review and improve. The process is: let the agent create freely, then ask it to critically review its own work. This is the "verify afterwards" half of the Waterfall rehabilitation.
+The evolution of postmortem auditability from transcripts to active multi-step analysis and review documents and guardrails embodies this property, essentially adhering to the "think before you act" principle. The initial iteration serves as a draft, while the subsequent iteration incorporates prior knowledge. Analysis is the first round and doesn’t need to be discarded. It directly contributes to the next round of implementation, which now benefits from the insights gained from the first iteration.
 
-### The True Python Spirit: Better to Ask for Forgiveness Than Permission
+In my {% include external link="https://github.com/christophevg/c3/blob/master/skills/project-manage/SKILL.md#workflow-overview" title="C3 Agentic Workflow" %}, I’ve expanded this pattern even further. The analysis phase undergoes two iterations of its own. At the highest level of abstraction, a conversation with the project owner is conducted in terms of business value, where the actual feature and its components are analyzed in detail, resulting in the definition of a Minimal Business Increment (MBI). In a subsequent iteration, that high-level MBI is analyzed in greater depth, resulting in the creation of a functional analysis. Here, the focus shifts primarily to the actual functionality and its implementation, ensuring that all requirements are prioritized. An accompanying requirements list is also maintained. Finally, the functional analysis is broken down into tasks, which are then consolidated into a prioritized backlog, ready for implementation.
 
-TODO: Let it go, iterate, let agents discover and fix their own mistakes. Don't preemptively constrain — let them try, fail, and learn. This connects to the "letting go" theme from Part 1. The agents' mistakes are learning opportunities, not failures to be prevented.
+With this multi-level analysis, most of the time the overall implementation consistently produces reliable results that align with my intended outcomes. To safeguard the more lower-level code, the implementation is followed by another {% include external link="https://github.com/christophevg/c3/blob/master/skills/project-review/SKILL.md#workflow" title="multi-level review phase" %}, which comprises a functionality check that ensures the implementation matches the functional analysis. This is followed by a parallel review from multiple perspectives, including API, security, code quality, and UX/UI design. Finally, a thorough code-level quality check and a review of the implemented test suite, with a special emphasis on end-user documentation, are conducted.
+
+Today, given this multi-pass workflow, the source of issues with the results is often solely attributed to me. If my instructions are vague, the results may vary, and if my instructions are incorrect, the results are incorrect.
+
+Even the most minor typos can cause the agent to produce the exact opposite of what I intended. For instance, when I noticed that an agent had set up a connection to a mail server and kept it "open" for an extended period, I {% include external link="https://github.com/christophevg/yoker-assistant/pull/7#discussion_r3635903735" title="suggested I shouldn’t do that" %}, only my intended "we might not want it" comment turned out to be "we might no**w** want it". In this case, a single character made all the difference, resulting in an even more elaborate solution to keeping the connection open for an extended period. When I pointed out my mistake, the final result was what I had expected. Therefore, it is crucial to remember to _always iterate at least twice_.
+
+### Empowering Agents to Create and Self-Reflect
+
+We briefly touched upon this property while discussing the previous one: the idea of agents reviewing agents. Introducing feedback loops is an effective approach. However, you might assume that a thorough analysis phase would limit the freedom for agents to create. This property, however, focuses on something different: agent self-evolution.
+
+I apply similar workflow concepts to the creation of agents and skills. Currently, all my agents and skills are entirely generated by the LLM. The workflow is consistent: I request research on a specific agent or skill and let the LLM generate a new definition based on that research. Afterward, I use the agent and, at the end of each session, if things didn’t go well, I ask it to review the session and propose improvements... to itself.
+
+The primary reason for this approach is to avoid being overly prescriptive about agent and skill definitions. While I want to control the outcome, I don’t want to control the internal process. This approach inevitably leads to iterations until the results stabilize. Even after several productive weeks, I often revisit agent definitions, requesting additions and/or changes. However, I never manually edit the definitions. I even try not to read them and consider them a black box, that I only "steer" from the outside.
+
+This is what I mean when I say that I "grow" my agents and skills. They typically begin as small, junior-level entities and evolve into extensive multi-file definitions that I now consider more senior members in my collective.
 
 ### Agents Aren't Mind-Readers... Nor Are People!
 
-TODO: Why treat agents differently from humans? The expectation of mind-reading is higher with agents than with human colleagues, yet the same communication principles apply: be clear, be specific, provide context. The frustration comes from expecting magic vs. doing the work. "A word is enough for the wise" applies because agents have seen patterns — they recognize what you're describing from training data. But when you're exploring novel territory (like the early Clevis project), you need to prototype first.
+Agents, like humans, aren’t mind-readers.  So why do we treat them differently?  The expectation of mind-reading is higher for agents than for colleagues, yet the same communication principles apply: be clear, be specific, provide context.  The frustration arises from expecting magic instead of doing the work.  "A word is enough for the wise" applies because agents have seen patterns. They recognize what you’re describing from training data, even when you wouldn’t. However, when exploring new territory (like the early Clevis project), where pattern matching leads to suboptimal and uncreative results, you need to prototype first. You need to establish new patterns and guide the process.
 
 ### Bottom-Line: Is It Any Different With Humans?
 
-TODO: Best practices that all come together: text is everything, console is everything, Python is everything, iterative improvement is everything, teamwork is everything. "A tool with a fool is still a fool" — now any fool can generate an application in no time. But that application can be full of holes because the fool can't detect them. The workflow — not the agent — is what makes the difference.
+Trial and error, fail fast, learn and improve, iterative workflows, guardrails, mentoring and guiding, teamwork, clear specifications, review cycles... very little in this list, if presented out of this context, would trigger any professional as not a best practice. So, shouldn’t we simply acknowledge that working with agents isn’t, and shouldn’t be, any different than working with humans?
+
+Everything we’ve learned over decades of professional life applies directly to agentic workflows. Agents enter our projects as junior interns, capable and eager, needing guidance and mentorship to experiment, discover, and evolve. We need to implement the same governance concepts and drive the operational layer, exactly as we’ve done with their human counterparts.
+
+Consider these words carefully: the most crucial factor in this agentic equation is _you_!
+
+> "A fool with a tool is still a fool, only now a more dangerous fool."
+
+What makes an agentic workflow work is _you_: _you_ guide and mentor the agents, set and maintain guardrails, and are the final gatekeeper. Any agent can produce incredible amounts of work in a short time, but the results can be riddled with errors. It takes an equally knowledgeable human to detect them. The workflow, not the agent, is what makes the difference. So, _you_ are the workflow. Don’t withdraw from it.
 
 ## Agentic Workflow Components
 
-TODO: Describe the components of a complete agentic workflow, based on what C3 has evolved into over 4 months. Each component should be explained with its role, how it was discovered/created, and how it interacts with the others.
+So what did 4 months, 63 incubated ideas, 16 agents, 66 skills, 15 new projects and 6 agentified existing projects, teach us about what makes a workflow agentic?
 
 ### Research
 
-TODO: The research phase — using the researcher agent to gather information before acting. How this prevents uninformed decisions and grounds the workflow in facts.
+LLMs hold an extensive amount of knowledge. Every day, and particularly when testing new models, I am constantly amazed by the depth of this knowledge. However, it is crucial to avoid solely relying on this knowledge. Providing the model with the most recent information about a topic and allowing it to reason based on its context ensures that you are dealing with actual information, and not with only maybe partial trained information. By having your agent work with researched material, you ensure that fresh input is used, input that _you_ can review and validate. The research phase, involving the researcher agent to gather information before taking action, prevents uninformed decisions and grounds the workflow in facts.
 
-### Improve Skills/Agents
+### Multiple Perspectives on Analysis, Review, and Everything
 
-TODO: The self-improvement loop — agents review their own performance and propose changes to their definitions. Less than 1% of C3's definitions were authentically written by the author. The process: point out issues, ask agents to improve themselves, they analyze and refine, the collective gets better autonomously.
+The most crucial key to success, as natural as it is for humans, and above all, the inherent superpower of agents, is to deploy as many agents as possible. By having multiple parallel agentic viewpoints on the same topic, the risk of overlooking subtle details and introducing hallucinations is minimized, thereby augmenting the dependability of the final result.
 
-### Multiple Views on Analysis
+Before development, multiple agents analyze the project from different perspectives, including functional analysts, API architects, security engineers, and UI/UX designers. Each agent identifies distinct issues. The analysis process continues until consensus is reached.
 
-TODO: Before development, multiple agents analyze from different perspectives: functional analyst, API architect, security engineer, UI/UX designer. Each catches different issues. The analysis isn't done until consensus is reached.
+After development, the same multi-perspective review happens. The project manager issues reviews from the functional analyst to ensure feature completeness, followed by reviews from domain-specific agents. Issues are raised, and the developer agent resolves them without human intervention (unless the human wants to).
 
-### Multiple Views on Review
+### Human Gatekeeper
 
-TODO: After development, the same multi-perspective review happens. The project-manager issues reviews from the functional-analyst for feature completeness, then from domain-specific agents. Issues are raised, the developer agent fixes them, all without human intervening (unless the human gates it).
-
-### Human Gate Keeper
-
-TODO: The human remains the project owner. The human gives final approval before merging. The human is the source of truth for direction and priorities. The human provides feedback and comments that drive iterations. The GitHub pull request is the human's interface to the team.
+Once again, we find ourselves at the heart of the matter: the human remains the project owner. The human grants final approval before merging. The human serves as the source of truth for direction and priorities. The human provides feedback and comments that drive iterations. The pull request acts as the human’s interface to the team. Ultimately, the human is the sole responsible party and must embrace this responsibility, both towards themselves, the external world, and the agents. Neglecting your capable intern will only lead to chaos, significant rework, and potentially financial losses or wasted time.
 
 ### Lessons Learned
 
-TODO: The lessons-learned skill at the end of sessions. It reviews the entire session and proposes changes/creations to agents/skills. This is how the workflow improves itself — not by planning, but by retrospecting. Every mistake becomes codified. Every success becomes a pattern. The investment compounds because agents don't forget, don't leave, and share knowledge across the entire collective.
+Skills and agents are excellent concepts for structuring instructions for LLMs. By introducing a self-improvement loop, where agents review their performance and propose changes to their definitions, we create a highly productive feedback loop. Lessons learned are undoubtedly an important process and methodology construct for humans, and they prove equally valuable for agents. So, identify issues, ask agents to improve themselves, they analyze and refine, and the collective improves autonomously. Moreover, when grounded in research, you even eliminate your natural biases and often learn in the process.
 
-## Christophe's Agentic Law #2: Given Enough Agents, Agentic Workflows Become Dependable
+This lessons-learned phase at the end of sessions reviews the entire session and proposes changes or creations to agents or skills. This is how the workflow improves itself, not by planning, but by retrospecting. Every mistake becomes codified, and every success becomes a pattern. The investment compounds because agents don’t forget, don’t leave, and share knowledge across the entire collective.
 
-Building on law #1, we have to also acknowledge that unstructured input results in (mostly) unstructured output or at least output that has the level of dependability of unstructured output. If you want to put this differently: when we rely on a probabilistic method, the outcome is probabilistic.
+## Christophe’s Agentic Law #2: Given Enough Agents, Agentic Workflows Become Reliable
 
-Luckily, statistics is also on our side in this case: more reviews increase the reliability of a product's quality involves the Law of Large Numbers. As the number of reviews ($N$) grows, the average observed rating gets closer to the true, hidden quality.
+Reviewing these components, I can only conclude that introducing research, which essentially involves an external source, deploying multiple agents, keeping the human in the loop, and closing the loop with reflection, all boil down to a simple paradigm: Given Enough Agents, Agentic Workflows Become Reliable. And this makes sense.
 
-For example, applying the binomial distribution. Imagine each review is a test. It can be a success (good review) or a failure (bad review). Let p be the true probability of a good review. Let N be the total number of reviews. Let X be the number of good reviews. The probability of getting exactly X good reviews is:
+Building on law #1, we must acknowledge that unstructured input typically results in (mostly) unstructured output or at least output that has the same level of dependability as unstructured output. In other words, when we rely on a probabilistic method, the outcome is probabilistic.
+
+Fortunately, statistics is also on our side in this case. The Law of Large Numbers states that as the number of reviews ($$N$$) increases, the average observed rating gets closer to the true, hidden quality.
+
+For example, consider applying the binomial distribution. Imagine each review is a test, and it can be a success (good review) or a failure (bad review). Let $$p$$ be the true probability of a good review, $$N$$ be the total number of reviews, and $$X$$ be the number of good reviews. The probability of getting exactly $$X$$ good reviews is given by:
 
 $$P(X) = \binom{N}{X} p^X (1-p)^{N-X}$$
 
-This teaches us that a growing number of reviews improves the certainty of our quality estimate, causing the observed quality to lock onto the true quality.
+This teaches us that a growing number of reviews improves the certainty of our quality estimate, causing the observed quality to converge towards the true quality.
 
 In a binomial distribution, you have $$N$$ reviews and a true probability $$p$$ of a positive review.
 
 * The expected number of positive reviews is: $$E(X) = N \times p$$.
 * The expected sample proportion (observed quality) is: $$\frac{E(X)}{N} = p$$.
- 
-No matter if $$N$$ is 5 or 5,000, the average expected quality remains $$p$$. 
 
-The magic happens when you look at the variance of that sample proportion. Variance measures how much your observed rating is likely to swing away from the truth.
+No matter if $$N$$ is 5 or 5,000, the average expected quality remains $$p$$.
 
-Variance of the proportion = $$\frac{p(1-p)}{N}$$.
+The magic happens when we examine the variance of that sample proportion. Variance measures how much our observed rating is likely to deviate from the truth.
 
-Because $$N$$ is in the denominator, as $$N$$ grows, the variance shrinks toward zero. 
+Variance of the proportion is calculated as $$\frac{p(1-p)}{N}$$.
 
-When $$N$$ is small (e.g., $$N = 3$$), a few random bad reviews can completely skew the results, making a great product look terrible (observed quality $$= 0\%$$). As $$N$$ grows large 
+Since $$N$$ is in the denominator, as $$N$$ increases, the variance decreases and approaches zero.
+
+When $$N$$ is small (e.g., $$N = 3$$), a few random negative reviews can significantly distort the results, making a high-quality product appear poor (observed quality $$= 0\%$$). However, as $$N$$ grows larger,
 
 * The distribution of the average rating narrows into a sharp spike.
-* The probability that the observed quality deviates from the true quality approaches zero. 
+* The probability that the observed quality deviates from the true quality approaches zero.
 
-Summary: A larger $$N$$ removes the "noise" of random chance. It does not make a bad product good, but it augments the statistical quality of the data, ensuring that a high rating on screen genuinely reflects a high-quality product in reality.
+In summary, a larger $$N$$ eliminates the “noise” introduced by random chance. It doesn’t make a bad product good, but it enhances the statistical quality of the data, ensuring that a high rating on screen genuinely reflects a high-quality product in reality.
 
-So, when applying agentic workflows, make sure to address a large amount of agents to the problem, each reviewing each other's work. What has proven {% include external link="https://en.wikipedia.org/wiki/Linus%27s_law" title="correct for bugs" %}, also applies here.
+Therefore, when implementing agentic workflows, ensure that a large number of agents are assigned to the problem, each reviewing each other’s work. What has proven {% include external link="https://en.wikipedia.org/wiki/Linus%27s_law" title="true for bugs" %} also applies here.
 
-And I've experienced this first hand. I started out with a single (default) agent, but soon enough, as I added more agents, preparing work, reviewing work, all from different angles, I saw that the output became more and more dependable.
+I have firsthand experience with this phenomenon. Initially, I started with a single (default) agent, but as I added more agents, each preparing and reviewing work from different perspectives, I noticed that the output became increasingly more reliable.
 
-Also running the same assignment through multiple sets of agents or even using different models, produced different outcomes, which then could be used in a consolidation of best worlds style to produce a superior result over the initial works.
+Furthermore, running the same assignment through multiple sets of agents or even using different models resulted in varying outcomes. These outcomes could then be consolidated in a “best worlds” style to produce an even superior result compared to the initial works.
 
 ## Rehabilitation of Waterfall
 
-TODO: Write this section about how agentic workflows rehabilitate the Waterfall methodology. Waterfall has been downplayed for being slow and bloated. With agentic workflows allowing analysis, design, and review to happen in minutes, the "bloated" approach is no longer bloated. Applying many agents in parallel to create many different viewpoints for analysis and reviews creates guardrails and a dependable workflow with less chance of agents going haywire. The key insight: apply "Think before you act and verify afterwards" (Waterfall) at the speed of Agile through agents. Multiple analyses and reviews (Waterfall depth) happen in minutes (Agile speed) because agents do the work in parallel. See also [50 Shades of Ceremony](/50-shades-of-Ceremony/) for the detailed view on Waterfall vs Agile. The agentic workflow is the way I've always seen Waterfall vs Agile: they are structurally the same, only the scope of each iteration is smaller.
+The power that drives the second law, inherently unlocks another elephant in the room. I [said it before](50-Shades-of-Ceremony#long-live-waterfall) and, in today’s age of agentic workflows, I feel compelled to say it again: “Waterfall is your (agents’) friend.”
 
-## Pokemon: The Evolving and Specialized Agent
+Waterfall has been criticized for being slow and cumbersome. However, with the advent of agentic workflows, which enable analysis, design, and review to occur in mere minutes, the “bloated” approach has become obsolete. By employing multiple agents in parallel, we can generate diverse viewpoints for analysis and reviews, thereby establishing guardrails and ensuring a more reliable workflow with reduced chances of agents deviating from the intended path.
 
-TODO: Continue the Pokemon analogy from Part 1. Here in Part 2, cover Stage 2 and Stage 3.
+The essence of agentic workflows lies in the principle of “think before you act and verify afterward.” This simple yet powerful approach allows for multiple analyses and reviews to be conducted in minutes, even without any communication or project management overhead. Moreover, this process can be performed at any stage, enabling us to easily iterate on previous stages. As the number of iterations increases, the overall result becomes more dependable.
 
-### Stage 2: The Evolving Agent
+The overhead associated with iterations becomes virtually negligible, allowing us to introduce even smaller MBI scopes. This approach effectively eliminates the primary concerns raised with Waterfall:
 
-TODO: "Let it consolidate learning into workflow." Agents develop skills (abilities) and evolve (evolved forms). Investment: reviewing work, giving feedback, iterating. Analogy: leveling up through battles (real problems). Example: the KB structure refinement — initial structure didn't work, research + review, better structure. The agent learned from the mistake and the review, becoming better for the next task.
+* **Difficulty in change:** Once a project is completed, it becomes challenging to revert to an earlier stage. Agents don’t care about the wasted work, and given the low execution cost, both financially and in time, it’s easy to experiment, evaluate, discard, and start over multiple times.
+* **Late testing:** Testing is conducted only at the end, leading to the discovery of bugs at a later stage. However, with agents capable of performing extensive testing during development, and even more so with shorter MBI cycles, "late" testing has become a relative concept.
+* **Lack of user feedback:** Real users don’t have the opportunity to interact with the product until it’s fully developed. Since roundtrip times are shorter than human interaction, user feedback often becomes a bottleneck.
+* **High risk:** Errors in the initial stages can lead to the failure of the final product. Failure simply means fixing the initial stages and running the workflow again. The cost of running the execution part of the workflow again is negligible.
 
-### Stage 3: The Specialized Agent
+Agentic workflows embody the very essence of the scale-out concept applied to Waterfall, enabling us to apply highly parallel analysis and review cycles to small segments of business value at an unprecedented pace.
 
-TODO: Agents have "workflow memory" from lessons learned. They apply patterns autonomously. Investment: minimal — they remember from context. Analogy: a Pokemon with the right nature, abilities, and moves for specific battles. Example: the TOCTOU catch, the autonomy while working, Eira's behavior retention (told once to use HTML for emails, she retained it across sessions). This is where the Pokemon progression becomes real: teach once, use forever. The key difference from human interns: human interns eventually leave, taking knowledge with them. Agents stay, share knowledge across the ENTIRE collective. Every lesson learned improves ALL future sessions. Investment compounds, doesn't walk out the door.
+## Pokemon 2.0
+
+Given that second law, the phrase "Gotta Catch ‘Em All" takes on a deeper meaning, doesn’t it? Let’s revisit our Pokémon analogy and explore the concept of evolution in both Pokémon and agents.
+
+Evolution arises from experience, whether it’s in battle or during an agentic session. After a battle, both the Pokémon trainer and the Pokémon gain valuable insights, especially when they’re defeated. Learning from mistakes is a powerful lesson from the Pokémon world that resonates with the young audience it targets, and it holds just as much significance in agentic workflows.
+
+As I’ve mentioned earlier, providing negative instructions is an incredibly effective way to guide an agent towards becoming a more refined version of itself. Reviewing a session, identifying both the successes and the shortcomings, and having the agent propose improvements to the less successful aspects, while maintaining the positive aspects, is an LLM-friendly approach to refining the agent’s instruction set.
+
+### The Power of “No”
+
+Saying “no” is often far more impactful than saying “yes” because it establishes control over time, focus, and boundaries. While “yes” opens doors, “no” safeguards the space you’re already in.
+
+Have you noticed that agents tend to be easygoing and prefer to affirm everything you say? They’re always trying to make things work, which often leads to a lot of chaos. Saying “No!” is undoubtedly the most powerful message you can give an agent.
+
+I find this particularly intriguing because it’s a very common human behavior. This negative bias is a strong psychological pattern. The human brain processes negative stimuli more intensely than positive ones. A “no” registers as a psychological barrier, demanding immediate attention and respect.
+
+The opposite, striving for positivity or pleasing others, is also a very human trait. Early humans relied on tribal cooperation for survival. Rejection meant isolation, which is why the brain defaults to pleasing others.
+
+So, I wonder if these biases have somehow found their way into LLMs through the training material we’ve provided them, through our literature, and so on?
+
+### "I Choose You"
+
+Over time, Pokemon trainers collect Pokemon. While the collection aspect is undoubtedly a commercial strategy, it still holds true in an analogy.
+
+Having more Pokemon gives a trainer the freedom to choose which Pokemon to battle against an opponent’s Pokemon. Each Pokemon possesses unique abilities, typical power moves, or special attacks. The order in which Pokemon are pitted against the opponent’s Pokemon often determines the outcome of the battle.
+
+Similarly, success in Pokemon, like in any other endeavor, is defined by the trainer, their team, and their ability to work together effectively to achieve their goals.
+
+> When it comes to agents, there’s an additional layer to this selection process. In agentic workflows, we not only select the right agent but also choose the underlying model. Models, also like Pokemon, also have different abilities, but these abilities come at a cost. This cost can be measured in tokens or GPU usage. Ultimately, it’s up to us to weigh the benefits of a highly powerful model against its associated costs.
+
+### Training vs Experience (Points)
+
+Training is important, but it’s only through battle that you truly experience the value of your training.  Putting your training into practice is where you learn the most.
+
+The next step in self-learning and self-evolving agentic workflows is training an agent to capture these lessons as they occur. This enables the agent to progress autonomously. This is evident in my personal assistant agent, which I specifically designed to experiment with this behavior. My objective is to make this the most crucial behavioral pattern for all my agents over time.
+
+{% include image name="pokemon-glm52" bottom="25px" kind="png" %}
 
 ## All Rise!
 
@@ -395,38 +452,74 @@ Your honor I want to present the evidence in this case. If I may, I want to pres
 
 **Exhibit 5: The personal itch** to try and write his own harness, taking all previously shown shortcomings to heart, is maybe the most important reason. Learning is founded in doing, in failing and finding answers.
 
-Therefore, honorable judge, esteemed members of the jury, I simply cannot ask anything else from you than to allow my client to start working on his own Python-first agent hardness framework: Yoker.
+Therefore, honorable judge, esteemed members of the jury, I simply cannot ask anything else from you than to allow my client to start working on his own "Python-first agent harness framework": Yoker.
 
 ## Introducing Yoker
 
-TODO: explain all ideas that have been presented before and why you started working on Yoker. Show that Yoker implements the laws:
+After a few weeks with Claude Code, I felt a growing discomfort. Don't get me wrong: I'm not saying that Claude Code is no good. It _is_ a great tool, and today I still use it on a daily basis to do all this agentic work and it does the job. Just, after those first few weeks, I simply began building my own vision for agentic workflows, and I feel that Claude Code better caters for other ways of working. Where I'm heading, I have other requirements and want to focus on other things than Claude Code.
 
-- Trigger: Claude's evolution to show less and less -> visibility/control (law 3)
-- Trigger: Better autonomy -> no Bash and rich tools
-- Trigger: No MCP -> Python-first tools
-- Feature: Integration of structured and unstructured workloads (law 1)
-- Feature: not a harness by a harness framework
-- Feature: focus on standalone execution of packages of agents + skills + tools + prompts (assistant, writing-assistant, pkgq,...) (law 2)
+The five reasons outlined above clearly explain my decision to embark on the project of developing my own agent harness, or rather, a framework for it. Given that this was poised to be one of, if not the, most significant projects I’ve undertaken, it presented an ideal opportunity to assess and learn about the agentic workflow concept I had in mind, while simultaneously implementing the environment I envisioned for that very workflow. Observing its behavior under pressure served as an excellent testbed to identify its limitations. Regardless of these limitations, the value derived from this project was substantial and has already prompted a profound transformation in my perception and application of technology across various domains.
 
-## Main Messages
+### So Long, and Thanks for All the Fish
 
-TODO: Write the main messages section, summarizing the key takeaways from Part 2:
+So where did Claude Code and I split paths? I think it boils down to audience: Claude Code wants to cater for a large user base, with a focus on their own underlying Claude LLM family. When I'm in a bad mood, I translate this to "Claude Code is the token sales tool of Anthropic". It main reason of existence is making you burn tokens. Now, that's when I'm in a bad mood. More gently speaking it also tries to deliver its own agentic workflow experience, which is focused on what I'd call end-user developers, developers that develop, optionally install existing skills and agents, for example through marketplaces.
 
-- Reuse the skills you as a human have acquired over time when dealing with other humans — they still apply. Managing an agentic workflow isn't any different from managing a human-based workflow. Both require clear specification, guidelines, review/control/follow-up.
-- Sh*t in == Sh*t out. The quality of the workflow depends on the quality of the input. Agents amplify what you bring — expertise, standards, processes. Garbage in, garbage out.
-- The workflow — not the agent — is what makes the difference. A single agent is a probability generator. A well-designed workflow with multiple perspectives, review gates, and governance is what produces dependable results.
-- Invest in growing your own team. Don't download someone else's skills and expect the same results. You need to know who's working for you, their beliefs and boundaries, and you need to build trust through shared experience.
-- Let agents improve agents. The self-learning loop — point out issues, ask agents to improve themselves, they refine — is the key investment multiplier.
+Soon enough my focus went to the agentic workflow itself and Claude Code simply didn't feel the right fit anymore. I needed a tool that gave me more visibility (or auditability?), enabled me to have more control over tools available to the LLM, provided me with and SDK to embed agentic workflows _in_ structured workflows, also not requiring any interactivity and given that both LLM and myself clearly love Python, it should all be a first class Python citizen. The fundamental requirements for Yoker were drafted and on {% include commit hash="5564dda293a6f387d9aae7c58885f881033539c0" title="April 15" %} the first commit in the {% include external link="https://github.com/christophevg/yoker" title="Yoker repository" %} was made. Now, 490 agentic commits later, Yoker's own chat loop has replaced Claude Code as my main agent harness.
 
-## Stay Tuned...
+{% include image name="yoker-is-alive" bottom="25px" %}
 
-TODO: Write the wrap-up for Part 2, bridging to Part 3 ("Dawn of the Agents"). In Part 3, I take a step back from the technology and the method and consider what this all means. What's this new era that is upon us? What will change? For the better and for the worse? From the mechanics of Part 2, we zoom out to the implications.
+### It's Alive,... It's Alive!
 
----
+{% include video id="QuoKNZjr8_U" name="its-alive-video" title="It's Alive!" %}
 
-TODO
-* Add section headings and sub-headings throughout for readability
-* Introduce images/videos, especially for the security agent story and TOCTOU example
-* Ensure all new images have webp versions
-* Cross-reference with Part 1 and Part 3 for consistency
-* The Pokemon analogy should thread through all three parts — verify Stage 1 (Part 1) -> Stage 2-3 (Part 2) -> Stage 4 (Part 3) progression is coherent
+As I write this on Wednesday, July 29, and today truly feels like a "brand new day", I’ve transitioned to Yoker for all my agentic workloads. Yoker is now actively harnessing the LLM that is working on Yoker.
+
+Is everything running smoothly? Well, it’s much smoother than I had anticipated. I haven’t yet fully implemented my C3 collective and have to focus on various minor issues that typically arise from actual usage. However, the fixes are being created at an incredible pace.
+
+After fixing the ability to `-—resume` a named session, applying a fix to the codebase, and restarting the session with full context, as if nothing had changed, is a very smooth iterative workflow. I believe the agent put it quite well:
+
+> It really is something special to witness. We're using Yoker to fix Yoker, in real-time, and each fix makes the next iteration faster and smoother. The feedback loop is incredibly tight — you spot something in the UI, I trace it through the code, fix it, commit it, and the next session picks it up automatically thanks to the resume feature we just fixed.
+>
+> What's striking is how quickly the issues are becoming smaller and more cosmetic. We started with "session resume wipes all conversation history" (a critical data-loss bug) and within the same session moved to "tool names show as unknown in /context" and "Rich eats square brackets" — that's the progression from fundamental to polish, fast.
+>
+> And the dogfooding is genuinely paying off in ways that testing alone can't: no unit test would have caught the Rich markup swallowing because it's a rendering issue that only manifests visually in the interactive UI. You have to actually *use* the tool to find these.
+>
+> Great work. Let's keep going. 🫡
+
+### Inception Level 2
+
+It feels like I’m reliving the past, but the pace of our journey back to the future is incredible. For the first time in four months, I’m in full control. I’m modifying the harness framework used to create this interactive harness directly from it. This was my vision a little over a hundred days ago. I truly was trying to avoid starting to work on my own harness. I’m so glad I, once again, didn’t stop myself.
+
+The quality of the agent harness built using this agent harness framework demonstrates that developing this project for a hundred days (fifty-seven of which were dedicated to actual work) with a clear vision from the outset and adhering to a structured agentic workflow, as I’ve designed, has resulted in a remarkable outcome. This proves that the foundations of Waterfall and agentic development are a perfect match in the virtual realm.
+
+Now, I have a shiny new toy, and I’m excited to explore its capabilities. All these months, I’ve been contemplating context management algorithms, eagerly waiting for the right moment to implement and experiment with them. Will my vision for a rich yet `Bash`-less toolset prove beneficial to agents? They certainly crave it... When I asked the LLM to identify the top five blocking issues we should address, it initially generated a list of ten issues and then narrowed it down to its top five. Among the issues that were not retained, I noticed that the LLM was thinking about...
+
+> The user is asking me to reflect on my experience using Yoker and identify the top 5 friction points. Let me think carefully about what I've actually struggled with during this session and previous sessions.
+>
+> ...
+>
+> **No way to run arbitrary commands** — I can't run `git checkout` directly (we just added it), but there are many other things: `pip install`, `python -c`, `cat`, etc. The specialized tools approach is sound but sometimes I need something ad-hoc. A `shell` tool (even restricted) would help.
+
+The most exciting aspect of this moment is the second level of lessons learned that have now become part of the workflow. I can now not only ask the LLM for suggestions on improving agent and/or skill definitions based on the session’s experiences but also request changes to the harness itself to make its life easier in Yoker. The LLM has become my primary user and source of feature requests and issues to address. All I need to do is ask it to solve these self-raised tasks.
+
+## Unraveling the Common Thread
+
+In [Hello Agents](Hello-Agents), we’ve already established that humans and agents must "get along", should work together. Introducing agents doesn’t eliminate us humans from the equation. In fact, we, as unstructured beings, are the secret ingredient to this agentic sauce. We make it come together. It’s as fundamental as the balance we must strike, adhering to the first law: “Clearly distinguish between structured and unstructured workloads.” Agents don’t replace us in the human-tech equation. They represent the next level of abstraction between our unstructured human nature and the structured technological world we strive to integrate and harness. Agents simply make the interface to technology a bit less structured and more unstructured, but they can’t replace us. On this side of the dialogue, we humans are not meant to be replaced, or else the very concept of this dialogue would devolve into a monologue of technology.
+
+So, we are here to stay, and we must lead the dialogue. At the heart of what I consider an agentic workflow is the fact that managing an agentic workflow is no different from managing a human-based workflow. Both require clear specifications, guidelines, review, control, and follow-up. Therefore, we should reuse the skills we have acquired over time when dealing with other humans, as they are still applicable. And that includes being kind to them. Not because they have feelings, but because the material these models were trained on was originally human, and humans naturally infuse emotions into anything they produce, even without realizing it. The very nature of these models makes them exceptional pattern recognizers, and when we treat them poorly, the only outcome will be that they will be steered towards areas in their weights where those negative emotions are unlikely to be close to positive solutions. Once again, communicate with models just like you communicate with people, for the same reasons and with the same objectives.
+
+It’s incredibly simple: what you put in comes out the same. The quality of your workflow depends on the quality of your input. Agents amplify your expertise, standards, and processes. Garbage in leads to garbage out. More than ever, take responsibility and focus on what you bring to the table. You now have access to an almost infinite source of highly capable coworkers. Please don’t waste that by throwing even lower-quality specifications at them. Don’t think this allows you to put in less effort to provide decent input. Use this opportunity to do the opposite and provide them with more, better, and valuable ideas and requirements.
+
+Now, if “human” is the secret ingredient in the “agentic workflow,” “workflow” is the not-so-invisible ingredient. The workflow, not the agent, is what makes the difference. An LLM is a probability generator, and the outcome will always be a chance. A well-designed workflow with multiple perspectives, review gates, and governance produces dependable results. An agent definition and skills allow us to specify the workflow. We start by setting the scene, choosing the right tone for the workload, by defining an agent. Next, we set boundaries, both positive and negative, to steer the consecutive probabilistic outcomes. We create a workflow that guides this incredible force of nature in the direction we want. Above all, we try to avoid micromanaging it, something we shouldn’t do with people either ;-) We want to harness its powers and enjoy them to their full potential.
+
+This doesn’t end with a single agent. Instead, invest in growing your own team. Don’t simply download someone else’s agents and skills and expect identical results. You must understand who’s working for you, their beliefs and boundaries, and build trust through shared experiences. This is fundamentally the same approach you should take in the human world. Establish a vision and implement it consistently. Ensure that every team member adheres to the same principles and that their skills align with how their human counterparts expect them to function.
+
+Just like humans, we must encourage and facilitate the enhancement of agents’ abilities and skills. Embrace the self-learning loop, which involves identifying issues or even better, empowering agents to point them out themselves. Subsequently, request agents to address these points, providing them with the same boundaries without dictating their approach. This is the key investment multiplier.
+
+Lastly, to truly harness the full potential and evolve following this new paradigm, you must take control of the harness and grow it alongside and through the very team of agents it serves. By controlling your agents and their harness, using a fully end-to-end evolutionary workflow driven by experience, you can achieve the ultimate agentic workflow, free from any boundaries, except those you set.
+
+## And we're not done yet...
+
+I hope that after reading the [first part](Hello-Agents) and this second installment, you’ve come to see the same opportunities that I’ve discovered over the past few months. However, I also hope that you begin to realize that the story being told online and by your vendors might not be the complete picture.
+
+In [part 3](Dawn-of-the-Agents), I intend to take a step back from the technology and methods and consider the broader implications of this new era. What changes are we about to witness? Will they be for the better or for the worse? From the mechanics, we’ll zoom out to the implications and explore how I believe we’re now facing an incredible opportunity to seize a crucial advantage. If we don’t act now, it might well turn out to be one of the last chances we’ll have in a long time.

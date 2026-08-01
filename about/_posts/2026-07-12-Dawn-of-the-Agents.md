@@ -93,6 +93,14 @@ Even from an enterprise point of view, there's a hidden gem to discover. Just li
 
 Today we still rely on server farms in large data centers to run our models. But that's a matter of (little) time. Soon we'll be running our agents locally on our machines. So we have an incredible opportunity to ensure that this next phase of IT evolution will free us from vendors and their rules. You see all of them struggle already today to try and convince every less-technical soul of their importance to stay relevant, simply because they too understand that their time will be limited. Players like Apple and Google are playing their card right, but those focusing solely on their proprietary models will have a hard time once we move on to fully integrated, locally run agentic workflows. 
 
+- opportunity for startups - a complete software factory from day one
+- opportunity for enterprises - release themselves from the vendor-lock in platform chains and run open standards using open tools
+- Co-pilot violates Law 1 & 2 ;-)
+- 
+- If lay-offs are your driver, you don't understand AI -> Law? joint-work!!!
+- Capabilities: tech becomes even less important -> focus on process, information and people!
+- next steps: consolidate unstructured workflow into workflow tools -> reduce variability, reduce unstructured structured work,...
+- 
 ---
 
 TODO

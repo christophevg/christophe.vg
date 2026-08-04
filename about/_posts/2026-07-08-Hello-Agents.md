@@ -11,10 +11,6 @@ tags:
 header:
   teaser: /about/images/thumb/hello-agents.png
   image: /about/images/header/hello-agents.png
-thumbs:
-  files:
-    agents-are-bad-mkay:
-      kind: png
 ---
 
 About four months ago I entered my famous [holiday mode](Holiday-Mode) in between clients. I really love this period, as it allows me to catch up on some reading, spend quality time with my kids and simply get some things done around the house. This time, I was particularly excited because I had a significant project in mind. I planned to dedicate eight hours daily, five days a week, to this project, working diligently, just like I do for my clients, but this time, I’m my own client.

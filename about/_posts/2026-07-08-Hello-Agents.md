@@ -292,6 +292,14 @@ The agents are limited by your credit. After a few months, I’ve found a nice b
 
 A typical week is filled with intensive agentic work, leaving my credit nearly depleted by the end of the fourth day. This is due to the combination of increasingly powerful models and a more demanding workflow, including more iterations. Despite my $20 credit being consumed almost halfway through the week, this is the current design. From that point on, I enter the second half of the week, where I review the work in slow motion. This is where I typically identify structural issues that I intend to address in the next iterations during the following week. Additionally, I prepare new ideas and articles, such as this one, to present to the agents in the upcoming week. This dynamic interplay between fast and slow work, as well as fast and slow thinking, allows me to match the agents’ pace and subsequently the human pace. Today, this combination presents me with the ideal cadence to sustain the agents’ pressure on my body and mind. I’ve achieved a balance, a way to coexist and collaborate optimally.
 
+### Which pill do you choose?
+
+I’ve been really aware of the need to strike a balance. During the time I experienced this agentic strain that nearly led to burnout, I couldn’t help but think about the Matrix. While we’re currently attempting to control these LLMs by putting them in a harness, isn’t it us who are being controlled by the harness? Aren’t we the ones who are tamed by the LLMs to keep them running and evolving?
+
+In a way, we could consider ourselves already in our pods, fueling the agentic evolution. The Matrix is now, already building itself. However, unlike the dystopian vision, this is a partnership. We’re not mere batteries, we’re architects. The question is: are we aware fully of our role? Are we steering the ship, or are we being steered?
+
+The balance lies in the conscious choice to remain in the driver’s seat. The danger of becoming the horse in front of the agents’ carriage is real. But so is the opportunity of becoming the architect of your own enterprise.
+
 ### Pokemon Laws of Evolution
 
 Recall our Pokemon analogy? Imagine a trainer with their first Pokemon, starting with basic skills and agents, learning to work together. The early days were about discovering their capabilities, building rapport, and establishing communication patterns. As I added more Pokemon to my Pokedex, the excitement grew, but I also learned, sometimes the hard way, that being a trainer can be demanding. I realized the importance of self-care to ensure I could continue training stronger and more powerful Pokemon without them going haywire or spiraling out of control. The key to success lies in a fruitful collaboration and coexistence.
@@ -390,7 +398,7 @@ Perhaps most importantly, although we're discussing probabilistic models, one si
 
 ## Stay tuned for more!
 
-That’s the end of part 1. This was the first in a series of articles I’ve written on the topic of agentic workflows. This installment focused on my initial experiences working with agents for the first four months, exploring the opportunities, uncovering the pitfalls, and sifting through the hype. Initially, my goal was to explore, but it soon grew far beyond that.
+That’s the end of part 1. This is the first in a series of articles I’ve written on the topic of agentic workflows. This installment focused on my initial experiences working with agents for the first four months, exploring the opportunities, uncovering the pitfalls, and sifting through the hype. Initially, my goal was to explore, but it soon grew far beyond that.
 
 In the next part, titled "[We are Agent](We-are-Agent)", we delve deep into the agentic workflow and examine all its properties and components. We’ll identify what’s needed and how we can implement it. From observing and exploring to consolidation and creation, I’ll share my strategy and the first steps towards achieving my goal. And of course, we’ll add some fun anecdotes along the way.
 

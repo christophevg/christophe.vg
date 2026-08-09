@@ -12,3 +12,7 @@ _site
 
 # local storage
 local
+
+# agentic
+yoker.toml
+context/

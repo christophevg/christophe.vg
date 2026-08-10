@@ -397,7 +397,6 @@ The overhead associated with iterations becomes virtually negligible, allowing u
 
 * **Lack of user feedback:** Real users don't have the opportunity to interact with the product until it's fully developed. With agents the roundtrip times are much shorter than human interaction and actually user feedback often becomes a bottleneck by itself.
 * **Late testing:** Testing is conducted only at the end, leading to the discovery of bugs at a later stage. However, with agents capable of performing extensive testing during development, and even more so with shorter MBI cycles, "late" testing has become a relative concept.
-* **Lack of user feedback:** Real users don’t have the opportunity to interact with the product until it’s fully developed. Since roundtrip times are shorter than human interaction, user feedback often becomes a bottleneck.
 * **High risk:** Errors in the initial stages can lead to the failure of the final product. Failure simply means fixing the initial stages and running the workflow again. The cost of running the execution part of the workflow again is negligible.
 
 Agentic workflows embody the essence of the scale-out concept applied to Waterfall, enabling us to apply highly parallel analysis and review cycles to small segments of business value at an unprecedented pace.

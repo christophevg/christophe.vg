@@ -71,13 +71,15 @@ What does this mean for the future of work? When a single person can command a v
 
 ## Know what you own, and understand why you own it
 
-Writing a three-part series is fun. It allows me to casually introduce things in the first two parts and then bring them to a climax in the third. So, here’s once more some advice we already encountered repeated with stress: Invest in your _own_ agentic team!
+Writing a three-part series is fun. It allows me to casually introduce things in the first two parts and then bring them to a climax in the third. So, here's once more some advice we already encountered repeated with stress: Invest in your _own_ agentic team!
 
 > Know what you own, and understand why you own it
 
 This section’s title is a famous quote by Peter Lynch, a former American investor, mutual fund manager, author, who stepped down as investor at the age of 46 and now focuses on philanthropy. Yes, you can copy what others do and buy the same stocks. But if you don’t know what you buy and why, you’re likely to have a rude awakening in the near future.
 
 Lynch urges investors to build real conviction, avoid blind speculation, and prevent panic during market drops. He emphasizes fundamental business understanding over emotional or hype-driven trading. Buying a stock based on a hot tip or headline is pure guesswork. Knowing the underlying business turns it into a rational choice. If you understand how a company makes money and why you bought it, you’re less likely to panic and sell when the share price drops.
+
+### Own Your Team
 
 The same holds for agentic teams. If you don't understand how your team functions, you are one of the horror stories about things that go horribly wrong at 3 at night, and you don't know where to begin to solve it.
 
@@ -95,6 +97,9 @@ Investing time in your agents and skills yields compounding returns. As these ev
 
 Your investment compounds over time. While the initial session may be slower due to the investment, subsequent sessions become exponentially faster and more effective.
 
+### Own Your Team’s Mistakes
+
+Understanding what you own and the reasons behind it directly implies that you also own their mistakes. Who is responsible for the mistakes made by your human colleagues? The answer should be the same for the agents' mistakes. This is an organizational process, not a new category. Attempting to shift responsibility here is a clear indication of a problem. Fortunately, agents don’t need to take a vacation... yet. So, there’s less worry when they’re on vacation. However, if your human team handover process is flawed, agents will expose that issue, not create a new problem. Agents are symbiotically linked to their human owners, part of an existing team. They are not individuals detached from reality.
 
 ## Personal Computing 2.0
 
@@ -117,6 +122,8 @@ The focus, speed, and cost arguments have always outweighed the fact that we’v
 Today, agents enable almost zero-cost engineering. In the past, building a custom ERP or CRM required millions of dollars and teams of engineers. Today, multi-agent AI frameworks can generate enterprise-grade application skeletons, database schemas, and API integrations in minutes.
 
 Not only can they generate these products, but they can also continuously maintain them by applying security patches before any human even reads the zero-day announcement. They can research best practices and propose product improvements, even incorporating internal experience. To achieve this, enterprises no longer require a dedicated team on the bench. Today, this team can be virtual, and the cost is only incurred when a GPU is spun up to drive it. Are we there yet? No, but you can no longer deny the opportunity.
+
+> Zero-cost engineering doesn't imply there is no cost of ownership. Agents come with a cost and it goes beyond the basic monthly invoice to the GPU provider to run them. Just like any other human role in the organization, agents require governance. This governance is, just like the case with humans, directly related to their value. Agents don't require more governance than humans, they require the same governance, applied at agent speed. Thinking that employing agents means less costs is missing the point.
 
 We now have access to hyper-personalized computing. Off-the-shelf SaaS forces your business to adapt to their workflow, but AI-built software adapts entirely to your specific workflow, offering total flexibility. This leads to true competitive differentiation. If every logistics company uses the exact same Salesforce or SAP modules, no one has a software-driven competitive advantage. Tailor-made, AI-generated code allows companies to own unique, proprietary IP again. Let’s not forget the elimination of SaaS "tax." Businesses are growing tired of annual 10% seat-license price hikes and complex tiered pricing from legacy vendors.
 
@@ -286,6 +293,10 @@ On the other hand, when used for good, agents make great bug finders. AI model p
 
 Remember law #2? If applied correctly, if we use good agents to combat bad agents, we will find the balance. But only if we continue guiding our agents.
 
+Guiding is crucial here. Just as we don’t apply unit tests to humans, applying simple, structured test sets to unstructured agents won’t be effective. The reason is straightforward: an agent’s core value lies in its unstructuredness and probabilistic output. Structured tests will inevitably fall short. We must grasp this fundamental concept from the beginning to avoid creating a false sense of security. Similar to the governance of human processes, we should focus on the actual and perceived outcomes of their work and steer on that, guiding them towards improvement.
+
+The inclination to wrap unstructured agents in structured automated testing is precisely what Law #1 warns against: applying structured tools to unstructured work.
+
 ## Famous Last Words
 
 When I conceived the idea for this article, which evolved into a threefold concept, I initially intended to have my agents craft it, as a pure showcase, drawing upon all the information gathered over the past few months. However, as I accumulated numerous experiences that I felt compelled to share from my perspective, this initial idea underwent a significant transformation.
@@ -315,5 +326,7 @@ And never forget that this is about collaboration, working together, working han
 Where does this leave me? These intense few months, are merely the beginning for me. With Yoker I now have the foundation to work with: a completely self-hosting framework, I control at all levels, offering me the tools to create agentic workflows of different flavors, adhering to my three laws.
 
 Now, I can finally start with all the experiments I have in mind, for which I first had to create all this. I can't wait to apply my new tools to real-world problems and challenges that you simply didn't dare to undertake up to now. Will all these experiments be successful? No, surely not. Will we learn from them? Yes, absolutely.
+
+I’m grateful for the opportunity to firsthand experience an agentic workflow for an extended period. This experience has allowed me to identify what works and what doesn’t. Now, I’m eager to apply this knowledge to various contexts where agentic workflows are relevant. This series of articles serves as a starting point, presenting some fundamental truths. Throughout the articles, I’ve highlighted where these foundational principles align with the existing reality of enterprises. The next phase involves elevating these principles to an organizational scale. Instead of introducing new agent-specific frameworks, we’ll apply the same governance principles, making them tangible.
 
 So, let me know. What project shall we take on together? You, me and my agentic collective.

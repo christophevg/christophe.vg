@@ -143,6 +143,7 @@ exclude:
   - local
   - /reviews
   - /CLAUDE.md
+  - /context # ignore Yoker context logs
 keep_files:
   - .git
   - .svn

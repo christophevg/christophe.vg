@@ -1,9 +1,9 @@
-ARGS += --plugin-dir ../c3
+-include ~/.yoker/Makefile
 
-writing-assistant: ARGS += --agent "c3:writing-assistant"
-writing-assistant: claude  ## Work on this project with the writing-assistant agent.
+YOKER_WRITING_ASSISTANT = --with-editable ../yoker-writing-assistant yoker-writing-assistant
 
--include ~/.claude/Makefile
+writing-assistant:
+	uv run $(YOKER_WRITING_ASSISTANT) $(YOKER_ARGS)
 
 site: update serve
 

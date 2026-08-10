@@ -246,9 +246,25 @@ By focusing on this, I believe that the work we deliver together is not purely a
 
 This cascade even extends further. One of the experiments I’m currently investigating is to determine if the all this new material can be used to further train models. This would allow the lessons learned pattern to be applied even more extensively. After growing the agent, harness, and its framework, we might now also use these newly jointly created outcomes to continue training our model.
 
-<!--
-TODO: Add the writing assistant story, with screenshots and examples about what I learned
--->
+### Co-Authoring
+
+One experiment that truly exceeded expectations was the creation of a writing assistant, which I already mentioned in [the first part of this series](Hello-Agents#when-pokemon-become-trainer). During the launch preparation of the series, it occurred to me again.
+
+To promote these three articles, I prepared nine LinkedIn posts. Since these posts were not meant to introduce anything new and simply summarized certain topics from the articles themselves, I thought it would be practical to have Gemini generate some drafts for me. However, my writing assistant had a different opinion.
+
+{% include image name="writing-assistant-says-no" title="Writing Assistant Says No" kind="png" bottom="25px" %}
+
+And it was right. The agent pushed back on me for using an agent. It forced me to discard nine posts and start over. In doing so, it consistently kept me on track, urging me to reuse parts of the articles and warning me when I was creating new content that was not part of the articles.
+
+In a way, my writing assistant had become a guardrail for this human agent. We worked on the first three posts for over two and a half hours. During that time, it not only pushed back but also explained to me why our joint decisions would improve the overall posts collection.
+
+{% include image name="writing-assistant-supports" title="Writing Assistant Supports" kind="png" bottom="25px" %}
+
+In the end, the three rewritten posts were personal again, and I was reminded of my own rules. And the agent? It updated its own definition based on the feedback from the session, recognizing that sometimes, humans, much like agents, can gain new insights in later stages. Therefore, it should not flag any new content as inappropriate or not based on the original articles.
+
+{% include image name="writing-assistant-learns" title="Writing Assistant Learns" kind="png" bottom="25px" %}
+
+So, beyond teaching me what "Eggcorns" are, the writing assistant agent also plays an active role, not only correcting my writing but also applying governance to my work process.
 
 ### One Step at a Time
 

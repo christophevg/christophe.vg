@@ -129,7 +129,7 @@ We now have access to hyper-personalized computing. Off-the-shelf SaaS forces yo
 
 ### Hail SaaP - Software as a Prompt
 
-The shift towards Generative Software has eliminated the historical barriers of cost, time, and talent in "building". AI agents now write, test, and deploy code at near-zero marginal cost, posing a significant threat to current SaaS vendors. Industry analysts often refer to this as {% include external ling="https://icapital.com/insights/investment-market-strategy/icapital-market-pulse-as-ai-disrupts-not-all-software-is-created-equal/" title="the deflationary software era or the commoditization of the application layer" %}.
+The shift towards Generative Software has eliminated the historical barriers of cost, time, and talent in "building". AI agents now write, test, and deploy code at near-zero marginal cost, posing a significant threat to current SaaS vendors. Industry analysts often refer to this as {% include external link="https://icapital.com/insights/investment-market-strategy/icapital-market-pulse-as-ai-disrupts-not-all-software-is-created-equal/" title="the deflationary software era or the commoditization of the application layer" %}.
 
 > "Hey Gemini, create a secure, SOC2-compliant copy of this platform’s pipeline management system, but integrate our custom 2026 proprietary pricing algorithm."
 

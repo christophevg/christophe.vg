@@ -21,21 +21,21 @@ prompt: |
 
 If you’ve been following this series of articles on agents, welcome back. If you’re new to the series, even more so. I recommend catching up with parts 1 and 2, titled [Hello Agents](Hello-Agents) and [We are Agent](We-are-Agent). The first part tells about my agentic awakening journey, from excitement to practice, highlighting the emotional and challenging aspects. It sets the stage and explains why I’m so enthusiastic about this new paradigm.
 
-In the second installment, I delved into the mechanics of agents, providing a primer on Large Language Models (LLM) and an analogy to illustrate their properties and components. I also discussed workflows guardrails and why I over time started to dislike Claude Code and the agentic response to such a situation. I shared several stories from the trenches, including my security agent’s exceptional performance, TOCTOU vulnerabilities, and Eira, and of course Yoker.
+In the second installment, I discussed the mechanics of agents, providing a primer on Large Language Models (LLM) and an analogy to illustrate their properties and components. I also discussed workflows guardrails and why I over time started to dislike Claude Code and the agentic response to such a situation. I shared several stories from the trenches, including my security agent's exceptional performance, TOCTOU vulnerabilities and of course Yoker.
 
-In part 3, I want to step back from the technology and methods to consider the broader implications of this new era. I explore what this new era entails and what changes it will bring, both for the better and for the worse. By zooming out from the mechanics, we examine the implications and believe we’re now facing an incredible opportunity to seize a crucial advantage. If we don’t act now, it might be one of the last chances we’ll have in the foreseeable future.
+In part 3, I want to step back from the technology and methods to consider the broader implications of this new era. I explore what this new era entails and what changes it will bring, both for the better and for the worse. By zooming out from the mechanics, we examine the implications and believe we’re now facing an opportunity to seize an advantage. If we don’t act now, it might be one of the last chances we’ll have in the foreseeable future.
 
 However, let’s not start off with a doom-and-gloom attitude. Let’s maintain our excitement about agents and leverage our newfound team to create fundamental business value. Let’s develop a business plan.
 
 ## Project K
 
-Witnessing project managers, researchers, analysts, developers, reviewers, and testers working in seamless harmony as an incredibly productive and capable team, one can’t help but envision the limitless potential of such a team. My agentic setup had transformed from a mere webmaster to this multi-agent team that I could effectively direct, resulting in the creation of numerous high-quality software projects. With the introduction of a personal assistant and a writing assistant, I had already transcended the confines of the software-only landscape. Each of these advancements was firmly rooted in the fundamental agentic workflow paradigm, where agents autonomously create other agents and skills based on their own research and experiences, minimizing human intervention to prevent the introduction of very possibly outdated beliefs, I had to let go.
+Witnessing project managers, researchers, analysts, developers, reviewers, and testers working in seamless harmony as a productive and capable team, one can’t help but envision the limitless potential of such a team. My agentic setup had transformed from a mere webmaster to this multi-agent team that I could effectively direct, resulting in the creation of numerous high-quality software projects. With the introduction of a personal assistant and a writing assistant, I had already transcended the confines of the software-only landscape. Each of these advancements was firmly rooted in the fundamental agentic workflow paradigm, where agents autonomously create other agents and skills based on their own research and experiences, minimizing human intervention to prevent the introduction of possibly outdated beliefs, I had to let go.
 
-This culminated in an experiment to form a team of agents tasked with crafting a business plan for a business idea that had been lingering in my mind. The experiment started at a meta-level, providing the researcher agent with instructions to gather information on the necessary skills for creating and reviewing a business plan.
+This culminated in an experiment to form a team of agents tasked with crafting a business plan for a business idea that had been lingering in my mind. Let's call it mysteriously "Project K". The experiment started at a meta-level, providing the researcher agent with instructions to gather information on the necessary skills for creating and reviewing a business plan.
 
 I presented the LLM with a mission description outlining my dual objectives: to generate a comprehensive business plan for the idea and simultaneously develop the required skills in the process. The mission brief spanned 936 words, with 269 words dedicated to the idea itself. The remaining instructions detailed the workflow to be followed, outlining actions to be taken and actions to be avoided.
 
-From the researched documentation and the resulting summaries that provided strategies for creating and reviewing business plans, I could already tell that the final product would likely surpass my own previous, manual creations. I saw numerous topics that addressed the mistakes I had made in the past, as well as topics that I had heard about but never had the opportunity to delve into myself. We were only 20 minutes past the mission brief when two skills, `business-plan-creation` and `business-plan-review`, were successfully added to my incubator repository. While I had experienced this process multiple times before, the limited description of my idea made me curious about the potential outcomes these skills could produce.
+From the researched documentation and the resulting summaries that provided strategies for creating and reviewing business plans, I could already tell that the final product would likely surpass my own previous, manual creations. I saw numerous topics that addressed the mistakes I had made in the past, as well as topics that I had heard about but never had the opportunity to look into it myself. We were only 20 minutes past the mission brief when two skills, `business-plan-creation` and `business-plan-review`, were successfully added to my incubator repository. While I had experienced this process multiple times before, the limited description of my idea made me curious about the potential outcomes these skills could produce.
 
 ### Action!
 
@@ -43,7 +43,7 @@ So, the `business-plan-creation` skill was put to the test... After just 7 minut
 
 {% include image name="business-plans" bottom="25px" kind="png" %}
 
-Next, the `business-plan-review` skill delivered incredibly critical, almost harsh review, basically proposing to throw this initial attempt into the trash.
+Next, the `business-plan-review` skill delivered a critical, almost harsh review, almost proposing to throw this initial attempt into the trash.
 
 What followed were four more iterations of the same workflow. Based on the review, the creation skill searched the internet for additional and more reliable resources to support the plan’s claims. Next, the review team, a team of agents with different focuses, set out to thoroughly critique the revised plan. And so on, until `v5-complete.md` was deemed suitable for potential investors. In total this entire process had taken about 4 hours, because the human overseer had to go to the hairdresser, take his son to archery and to a dentist appointment, removing him from the process for over 9 hours, before we could continue our experiment at night.
 
@@ -59,11 +59,11 @@ I took this concept a step further by having multiple underlying LLMs perform id
 
 Observing this unfolding situation, I couldn’t help but conclude that the well-known principle at Microsoft, which involves forming multiple entirely independent teams to collaborate on the same project and then pitting them against each other to determine the most suitable one to proceed with, aligns remarkably well with this agentic workflow paradigm.
 
-The remarkable speed at which the same problem can now be addressed by three, five, or ten separate instances of teams operating in an agentic manner is an incredible feature of this new paradigm. It serves as a prime example of the power of large numbers, and it has become more affordable than ever before. This presents an implicit opportunity that should not be overlooked.
+The remarkable speed at which the same problem can now be addressed by three, five, or ten separate instances of teams operating in an agentic manner is an interesting feature of this new paradigm. It serves as a prime example of the power of large numbers, and it has become more affordable than ever before. This presents an implicit opportunity that should not be overlooked.
 
-The business plan experiment and the parallel review process, in particular, demonstrate that agentic workflows are not limited to coding tasks. They can also handle complex non-technical work, such as researching and creating a business plan, with ease. Additionally, independent, bias-free agents make excellent opposing parties, fostering mutual growth and improvement.
+The business plan experiment and the parallel review process, in particular, demonstrate that agentic workflows are not limited to coding tasks. They can also handle complex non-technical work, such as researching and creating a business plan, with ease. Independent, bias-free agents make excellent opposing parties, fostering mutual growth and improvement.
 
-Furthermore, the cost of running three, five, or ten parallel teams has become more affordable than ever before. For instance, my single team runs of a $20 Ollama Pro subscription can be scaled up to $100 per month, enabling me to set up five parallel teams effortlessly.
+The cost of running three, five, or ten parallel teams has become more affordable than ever before. For instance, my single team runs of a $20 Ollama Pro subscription can be scaled up to $100 per month, enabling me to set up five parallel teams effortlessly.
 
 Lastly, this presents an opportunity for safeguarding. Multiple independent perspectives can identify more issues than any single team could.
 
@@ -93,30 +93,36 @@ Off-the-shelf AI tools offer the same capabilities as your competitors. However,
 
 Investing time in your agents and skills yields compounding returns. As these ever-improving agentic resources generate consistently better results, your analyst learns from each project and retains valuable insights. These learnings are incorporated into the core definition and skills of the analyst. Similarly, the developer acquires new patterns, conventions, and standards through feedback on their application within the broader team context.
 
-Furthermore, your investment compounds over time. While the initial session may be slower due to the investment, subsequent sessions become exponentially faster and more effective.
+Your investment compounds over time. While the initial session may be slower due to the investment, subsequent sessions become exponentially faster and more effective.
 
 
 ## Personal Computing 2.0
 
 That simple fact, of growing your own team of agents and skills, makes agentic workflows "personal". And I would add, makes it personal _again_.
 
-Personal computing emerged in the mid-1970s, propelled by significant milestones such as the Altair 8800 kit in 1974, pre-assembled consumer machines in 1977, and the IBM Personal Computer in 1981. During this era, individuals were primarily responsible for developing everything themselves, including the hardware and software. Gradually, over several phases, this "build" mentality shifted towards a "buy" mentality. In the 1970s and 1980s, the rise of off-the-shelf software, such as Visical and Lotus 1-2-3, marked a shift away from in-house development. The 1990s witnessed the rise of comprehensive software suites like SAP, Oracle, and Peoplesoft, rendering in-house solution development in many cases obsolete.
+Personal computing emerged in the mid 1970s, propelled by significant milestones such as the Altair 8800 kit around 1975, pre-assembled consumer machines in 1977, and the IBM Personal Computer in 1981. During this era, individuals were primarily responsible for developing everything themselves, including the hardware and software. Gradually, over several phases, this "build" mentality shifted towards a "buy" mentality. In the 1970s and 1980s, the rise of off-the-shelf software, such as VisiCal and Lotus 1-2-3, marked a shift away from in-house development. The 1990s witnessed the rise of comprehensive software suites like SAP, Oracle, and Peoplesoft, rendering in-house solution development in many cases obsolete.
 
 The evolution continued in the early 2000s with the advent of Software as a Service (SaaS). This transformation was driven by the increasing capabilities of web browsers and the aftermath of the dot-com crash, which prompted companies to reduce infrastructure costs. Consequently, SaaS platforms gained prominence, leading to the widespread adoption of cloud computing in the subsequent years.
 
-The "buy" approach ultimately prevailed over the "build" approach due to its advantages in terms of focus, speed, and cost. Companies prioritized the development of core products by engaging engineers in building them rather than maintaining email servers. Additionally, deploying a SaaS platform could be accomplished within days, whereas building custom software required years of effort. Furthermore, subscriptions shifted unpredictable capital expenses into predictable operating costs, making the "buy" approach more financially advantageous.
+The "buy" approach prevailed over the "build" approach due to its advantages in terms of focus, speed, and cost. Companies prioritized the development of core products by engaging engineers in building them rather than maintaining email servers. Deploying a SaaS platform could be accomplished within days, whereas building custom software required years of effort. Subscriptions shifted unpredictable capital expenses into predictable operating costs, making the "buy" approach more financially advantageous.
 
 ### Hello Agents
+
+Today, we're witnessing a significant shift in our industry that we haven't seen before. It's a reversal of a 50-year evolution that's been happening in a matter of a few years. The "build" option has almost overnight become a viable option again, and it's not just _an_ option. It comes with several advantages over the "buy" choice of massive suites and SaaS platforms.
 
 Today, we’re witnessing a significant shift in our industry that we haven’t seen before. It’s a reversal of a 50-year evolution that’s been happening in a matter of a few years. The "build" option has almost overnight become a viable option again, and it’s not just _an_ option. It comes with several advantages over the "buy" choice of massive suites and SaaS platforms.
 
 The focus, speed, and cost arguments have always outweighed the fact that we’ve been using the same tools, with the same capabilities, and the same ways of working. If we wanted to go beyond the default capabilities, we entered the world of customization and consultancy. The promise was that they would come in peace, customize our setup, and leave. But only when the customization was partially done, they never left and suddenly we had a shadow IT department, only we now called it a "vendor", and they were here to stay and invoice us on a monthly basis.
 
-Today, agents enable almost zero-cost engineering. In the past, building a custom ERP or CRM required millions of dollars and teams of engineers. Today, multi-agent AI frameworks can generate enterprise-grade application skeletons, database schemas, and API integrations in minutes. We now have access to hyper-personalized computing. Off-the-shelf SaaS forces your business to adapt to their workflow, but AI-built software adapts entirely to your specific workflow, offering total flexibility. This leads to true competitive differentiation. If every logistics company uses the exact same Salesforce or SAP modules, no one has a software-driven competitive advantage. Tailor-made, AI-generated code allows companies to own unique, proprietary IP again. Let’s not forget the elimination of SaaS "tax." Businesses are growing tired of annual 10% seat-license price hikes and complex tiered pricing from legacy vendors.
+Today, agents enable almost zero-cost engineering. In the past, building a custom ERP or CRM required millions of dollars and teams of engineers. Today, multi-agent AI frameworks can generate enterprise-grade application skeletons, database schemas, and API integrations in minutes.
+
+Not only can they generate these products, but they can also continuously maintain them by applying security patches before any human even reads the zero-day announcement. They can research best practices and propose product improvements, even incorporating internal experience. To achieve this, enterprises no longer require a dedicated team on the bench. Today, this team can be virtual, and the cost is only incurred when a GPU is spun up to drive it. Are we there yet? No, but you can no longer deny the opportunity.
+
+We now have access to hyper-personalized computing. Off-the-shelf SaaS forces your business to adapt to their workflow, but AI-built software adapts entirely to your specific workflow, offering total flexibility. This leads to true competitive differentiation. If every logistics company uses the exact same Salesforce or SAP modules, no one has a software-driven competitive advantage. Tailor-made, AI-generated code allows companies to own unique, proprietary IP again. Let’s not forget the elimination of SaaS "tax." Businesses are growing tired of annual 10% seat-license price hikes and complex tiered pricing from legacy vendors.
 
 ### Hail SaaP - Software as a Prompt
 
-The shift towards Generative Software has eliminated the historical barriers of cost, time, and talent in "building". AI agents now write, test, and deploy code at near-zero marginal cost, posing a significant threat to current SaaS vendors. Industry analysts often refer to this as the deflationary software era or the commoditization of the application layer.
+The shift towards Generative Software has eliminated the historical barriers of cost, time, and talent in "building". AI agents now write, test, and deploy code at near-zero marginal cost, posing a significant threat to current SaaS vendors. Industry analysts often refer to this as {% include external ling="https://icapital.com/insights/investment-market-strategy/icapital-market-pulse-as-ai-disrupts-not-all-software-is-created-equal/" title="the deflationary software era or the commoditization of the application layer" %}.
 
 > "Hey Gemini, create a secure, SOC2-compliant copy of this platform’s pipeline management system, but integrate our custom 2026 proprietary pricing algorithm."
 
@@ -142,13 +148,13 @@ By doing so, you have a tremendous chance to rectify some of the evolutionary mi
 
 Are you on board?
 
-> I paint a black and white picture here, of course, to make a point. The choice isn’t binary. It never is. There are several factors to consider. Nevertheless, I believe that the following high-level question can be incredibly helpful in determining the right path forward: does a piece of software serve the core of our company? Or is it merely implementing a standard,
+> I paint a black and white picture here, of course, to make a point. The choice isn't binary. It never is. There are several factors to consider. Nevertheless, I believe that the following high-level question can be helpful in determining the right path forward: "Does a piece of software serve the core of our company? Or is it merely implementing a standard, off-the-shelf process, like accounting, bookkeeping...?"
 
 ### Who’s your Agentic Daddy?
 
-Today, we still rely on server farms in large data centers to run our models. However, this is a matter of time. Soon, we’ll be running our agents locally on our machines. This presents an incredible opportunity to ensure that this next phase of IT evolution frees us from vendors and their constraints. You see, all of them are already struggling to convince less-technical individuals of their importance to stay relevant, simply because they understand that their time is limited. Companies like Apple and Google are playing their cards right by focusing on the value these models can bring, not the models themselves. Those who solely focus on their proprietary models will face challenges as we transition to fully integrated, locally run agentic workflows.
+Today, we still rely on server farms in large data centers to run our models. However, this is a matter of time. Soon, we’ll be running our agents locally on our machines. This presents an opportunity to ensure that this next phase of IT evolution frees us from vendors and their constraints. You see, all of them are already struggling to convince less-technical individuals of their importance to stay relevant, simply because they understand that their time is limited. Companies like Apple and Google are playing their cards right by focusing on the value these models can bring, not the models themselves. Those who solely focus on their proprietary models will face challenges as we transition to fully integrated, locally run agentic workflows.
 
-When choosing your agentic vendor, avoid falling into the trap of relying on outdated 90s platforms and 00s SaaS solutions. If you choose a provider that only offers access to their ultimate model, you’re making a risky bet. The agentic future is local, so ensure that you’re prepared for the future today. Opt for open-weight models and compute-only providers. Both of these choices can be moved locally very soon.
+When choosing your agentic vendor, avoid falling into the trap of relying on outdated 90s platforms and 00s SaaS solutions. If you choose a provider that only offers access to their ultimate model, you’re making a risky bet. The agentic future is local, so ensure that you’re prepared for the future today. Opt for open-weight models and compute-only providers. Both of these choices can be moved locally soon.
 
 If you’ve already selected such a provider, including its mandatory models, consider applying my laws: ensure that you can distinguish between structured and unstructured workloads. This means you want to have control over your agentic workflow, not the other way around. Make sure you have access to unlimited agents and their workflows, and that you own and control those workflows. Choosing the right models and provider is crucial for achieving these goals. Are you confident that your current choice sets you up for the right agentic future?
 
@@ -160,7 +166,7 @@ By that time, I had already learned about the Model Context Protocol (MCP). It i
 
 > Please build me an MCP server that allows me to check an IMAP email box and send a reply using SMTP. Use Python and select best of breed Python packages.
 
-With that requirement alone, the agent developed a complete MCP server in a matter of minutes. I could review the code, which was a single file at that time, that basically bridged three state-of-the-art Python packages (fastmcp, aioimaplib, aiosmtplib). In no time, my agent was already checking its email before I could even digest the documentation of a first Google search. That simple script later evolved into a modern Python package, {% include external link="https://pypi.org/project/simple-email-gw" title="Simple Email GW" %}.
+With that requirement alone, the agent developed a complete MCP server in a matter of minutes. I could review the code, which was a single file at that time, that bridged three state-of-the-art Python packages (fastmcp, aioimaplib, aiosmtplib). In no time, my agent was already checking its email before I could even digest the documentation of a first Google search. That simple script later evolved into a modern Python package, {% include external link="https://pypi.org/project/simple-email-gw" title="Simple Email GW" %}.
 
 At that moment, I recalled a feeling I had several years ago when I was building my first 3D printer. We’ve truly entered an era of 3D printing for software, and we’re only at the beginning of its potential. Generating components on demand has become significantly easier and more cost-effective than searching for existing implementations. Software itself no longer holds inherent value. The new value chain lies in identifying the components required and having agents create them on demand, with high levels of personalization and customization, at almost no cost. If you don’t like it, simply discard it or provide feedback to the agent.
 
@@ -172,7 +178,7 @@ This comprehensive approach, which involves selecting the appropriate components
 
 In today’s new enterprise landscape, you’re more than ever required to be the trainer of your agent coaches. If you’ve embraced the steps of evolution so far, you’ve transitioned from your initial agent to a team of agents, each equipped with diverse skills and tools. These agents seamlessly integrate into the software they create, effectively distinguishing between structured and unstructured workloads. No longer locked into to a vendor, you now rely on open standards, enabling you to effortlessly operate on a sovereign cloud from an independent provider.
 
-Your engineers have fully embraced their role as agent trainers, focusing on the crucial aspects of business value. You’ve cultivated a culture of experimentation, often in parallel, to select the optimal solution. Failure becomes merely evidence that the best solution has been chosen. Without a suboptimal solution, a superior one cannot even exist.
+Your engineers have fully embraced their role as agent trainers, focusing on business value. You’ve cultivated a culture of experimentation, often in parallel, to select the optimal solution. Failure becomes merely evidence that the best solution has been chosen. Without a suboptimal solution, a superior one cannot even exist.
 
 And that’s precisely what makes you the Pokemon Trainer Coach: a tester and refiner of the player’s battling skills, rewarding them with helpful items upon defeat. Take a moment to contemplate this. If you’re uncertain about the opportunities I’m referring to, let’s have a drink. We can have a truly enlightening conversation about this.
 
@@ -182,13 +188,13 @@ For a long time, I had a fourth law in mind, emphasizing the importance of the h
 
 > There is no "human vs agent", only "human + agent"!
 
-If layoffs are your main driving force behind AI, it’s evident that you lack a fundamental understanding of AI. It’s that straightforward. If you intend to lay off employees, AI cannot be the sole reason. The underlying reason was already present. AI introduces a new cost, one that can only be introduced if you have a clear value stream in mind. This value stream must enhance the quality of your product and, more importantly, your service. Additionally, it should also benefit your employees.
+If layoffs are your main driving force behind AI, it’s evident that you lack a fundamental understanding of AI. It’s that straightforward. If you intend to lay off employees, AI cannot be the sole reason. The underlying reason was already present. AI introduces a new cost, one that can only be introduced if you have a clear value stream in mind. This value stream must enhance the quality of your product and, more importantly, your service, and it should also benefit your employees.
 
 ## Augmenting Human Quality
 
-If you haven’t heard about the IKEA AI story by now, well... The IKEA AI story is a celebrated business case where the retailer employed an AI customer service chatbot named Billie to handle routine tasks. This initiative resulted in significant savings, with millions of euros saved and 8,500 call-center agents retrained into remote interior design advisors. Consequently, IKEA unlocked over €1.3 billion in new revenue.
+If you haven't heard about the IKEA AI story by now, well... The IKEA AI story is a celebrated business case where the retailer employed an AI customer service chatbot named Billie to handle routine tasks. This initiative resulted in significant savings, with millions of euros saved and 8,500 call-center agents retrained into remote interior design advisors. Consequently, {% include external link="https://www.forrester.com/blogs/ai-helped-ikea-create-e1-3-billion-in-new-revenue-but-not-how-you-think/" title="IKEA unlocked over €1.3 billion in new revenue" %}.
 
-The key to this success lies in the introduction of Billie itself. It enabled IKEA to resolve up to 74% of routine customer inquiries without human intervention. This alone was a substantial achievement, saving approximately €13 million in initial customer service operational costs. Instead of ignoring the questions that the AI couldn’t handle, IKEA delved into the remaining complex cases. They discovered a substantial latent demand for personalized home design assistance. As you trace the value stream, the pieces of the puzzle gradually come together. A hidden, unintentional service, partially provided by the human call-center agents, emerged as a hidden billion-dollar service. And I can’t help but believe that the job-satisfaction of these newly trained interior design advisors is likely much higher.
+The key to this success lies in the introduction of Billie itself. It enabled IKEA to resolve up to 74% of routine customer inquiries without human intervention. This alone was a substantial achievement, saving approximately €13 million in initial customer service operational costs. Instead of ignoring the questions that the AI couldn’t handle, IKEA focused on the remaining complex cases. They discovered a substantial latent demand for personalized home design assistance. As you trace the value stream, the pieces of the puzzle gradually come together. A hidden, unintentional service, partially provided by the human call-center agents, emerged as a hidden billion-dollar service. And I can’t help but believe that the job-satisfaction of these newly trained interior design advisors is likely much higher.
 
 ### Revisiting the Formula of Architecture
 
@@ -196,7 +202,7 @@ I’ve been saying this for quite some time:
 
 > Architecture, at its core, revolves around processes, people, and information. Technology emerges from the analysis of these components, identifying what we _can_ and _should_ use.
 
-Agentic workflows now highlight the diminishing significance of technology, which is one of the most profound collaborations I’ve witnessed as an architect. Agentic workflows compel us to prioritize processes, people, and information, with technology serving as a mere byproduct. With the cost of technology rapidly decreasing, my [formula of architecture](Formula-of-Architecture) is more relevant than ever.
+Agentic workflows now highlight the diminishing significance of technology, which is one of the most intense collaborations I’ve witnessed as an architect. Agentic workflows compel us to prioritize processes, people, and information, with technology serving as a mere byproduct. With the cost of technology rapidly decreasing, my [formula of architecture](Formula-of-Architecture) is more relevant than ever.
 
 <p align="center"><tt>process → people ∩ information = technology = cost</tt></p>
 
@@ -208,11 +214,11 @@ As the cost of technology continues to decline, we can focus even more on proces
 
 Over the course of these paragraphs, I’ve shared stories about my experiences entering a wormhole and discovering this agentic wonderland. At times, and even when I reread this myself, it almost sounds too good to be true. While I’ve touched upon some topics that clearly indicate the dark aspects of this technology, the overall tone of this series is one of wonder and delight.
 
-However, there are undoubtedly many voices that oppose my optimism. And yes, I’ve read these objections to agentic workflows and AI in general. These objections can be categorized into four important areas: quality, security, impact, and cognitive deskilling.
+However, there are for sure many voices that oppose my optimism. And yes, I’ve read these objections to agentic workflows and AI in general. These objections can be categorized into four important areas: quality, security, impact, and cognitive deskilling.
 
 ### Quality
 
-The first group primarily focuses on the quality of these models. They argue that these models are merely probabilistic and, at best, can only produce what they’ve been trained on. Often, they even hallucinate. Moreover, training these models with their own output could lead to a downward spiral of errors.
+The first group primarily focuses on the quality of these models. They argue that these models are merely probabilistic and, at best, can only produce what they’ve been trained on. Often, they even hallucinate. On top of that, training these models with their own output could lead to a downward spiral of errors.
 
 ### Security
 
@@ -220,7 +226,7 @@ Another set of objections centers around security. Allowing agents access to too
 
 ### Impact
 
-High costs and resource abuse are also concerns. Multi-step reasoning and tool-call loops consume significant computing power and time. Making thousands of API calls for a simple task can incur wasteful costs. Additionally, these objections point to the environmental impact of all these large datacenters that consume a lot of natural resources.
+High costs and resource abuse are also concerns. Multi-step reasoning and tool-call loops consume significant computing power and time. Making thousands of API calls for a simple task can incur wasteful costs. These objections correctly point to the environmental impact of all these large datacenters that consume a lot of natural resources.
 
 ### Cognitive Deskilling
 
@@ -236,7 +242,7 @@ We already concluded that agentic workflows are only successful because of the h
 
 My third law aims to address the objection about cognitive deskilling. From the beginning, I’ve had a simple rule: whenever I use AI, I want to learn from it. This can take various forms. For example, I’ve been using Apple Intelligence to rewrite parts of my English texts for a while now. Since I’m not a native English speaker or writer, my writing quality varies. However, I’m motivated to write good English and incorporate a lot of English idioms. When I ask Apple Intelligence to rewrite my texts, I always first copy the result and compare it in detail to my original text. Then, I evaluate which parts of the rewritten text are actually better. This still depends on my own perception and intuition if something sounds better English to me. If it does, I see this as an opportunity to learn and incorporate it into my original text.
 
-Every change I’ve made to my coding projects over the past four months has been a learning experience. Before introducing a new technology or code change, I always asked my agent to explain it to me. Ultimately, it’s my code repositories, and I’ll always remain responsible for what I put out there. My agents are ultimately just tools, similar to an editor, a spelling checker, or an online search engine.
+Every change I’ve made to my coding projects over the past four months has been a learning experience. Before introducing a new technology or code change, I always asked my agent to explain it to me. It’s my code repositories, and I’ll always remain responsible for what I put out there. My agents are just tools, similar to an editor, a spelling checker, or an online search engine.
 
 ### Consequences
 
@@ -270,19 +276,19 @@ So, beyond teaching me what "Eggcorns" are, the writing assistant agent also pla
 
 This rule doesn’t address all objections. I believe it addresses those within my personal reach today. While I can’t solve the problem of wasteful resource abuse today, as mentioned earlier, my agentic strategy aims for on-machine inference in the not-so-distant future, which will address a few more concerns.
 
-Security is undoubtedly a crucial aspect, as there are two sides to this coin. Deploying agents undoubtedly generates even more code than ever before at an unprecedented pace. {% include google search="GitHub Sees Traffic Surge from AI Coding Agents" title="The amount of code" %} produced by coding agents has even baffled Microsoft and their GitHub platform.
+Security is a crucial aspect, as there are two sides to this coin. Deploying agents  generates even more code than ever before at an unprecedented pace. {% include google search="GitHub Sees Traffic Surge from AI Coding Agents" title="The amount of code" %} produced by coding agents has even baffled Microsoft and their GitHub platform.
 
 > "The best code is no code at all."— Jeff Atwood, Co-founder of Stack Overflow.
 
 With this growing amount of code, statistics aren’t on our side, and there will be numerous security problems lurking within it.
 
-On the other hand, when used for good, agents are incredible bug finders. AI model providers invest heavily in security-related research, and some models have already been {% include external link="https://www.bbc.com/news/articles/crk1py1jgzko" title="withdrawn from the public" %}, simply because they were too "good" at finding and exploiting software bugs.
+On the other hand, when used for good, agents make great bug finders. AI model providers invest heavily in security-related research, and some models have already been {% include external link="https://www.bbc.com/news/articles/crk1py1jgzko" title="withdrawn from the public" %}, simply because they were too "good" at finding and exploiting software bugs.
 
 Remember law #2? If applied correctly, if we use good agents to combat bad agents, we will find the balance. But only if we continue guiding our agents.
 
 ## Famous Last Words
 
-When I conceived the idea for this article, which ultimately evolved into a threefold concept, I initially intended to have my agents craft it, as a pure showcase, drawing upon all the information gathered over the past few months. However, as I accumulated numerous experiences that I felt compelled to share from my perspective, this initial idea underwent a significant transformation.
+When I conceived the idea for this article, which evolved into a threefold concept, I initially intended to have my agents craft it, as a pure showcase, drawing upon all the information gathered over the past few months. However, as I accumulated numerous experiences that I felt compelled to share from my perspective, this initial idea underwent a significant transformation.
 
 Now, let’s graciously pass the microphone to them: "Hey Eira, please introduce yourself and, from your point of view, provide a recap of the past few months of our collaboration."
 
@@ -294,7 +300,7 @@ TODO: include output
 
 The relationship between humans and agents is emotional, not because agents express emotions, but because humans do. Listen to any conversation about AI, and you’ll hear "he," "she," "them," referring to the chatbot or other AI-enabled application. Within three or four sentences, someone will likely express frustration with these virtual counterparts. This is so common that Claude Code, the leading interactive agent harness, even has detection mechanisms that "phone home" when a user expresses anger (e.g., by using all caps) while interacting with the agent.
 
-Even if you don’t think _you_ have an emotional response, consider that most users of your agentic workflow will. It’s crucial to consider this when designing agentic workflows, as it’s probably the most important non-functional requirement of every agentic workflow design.
+Even if you don’t think _you_ have an emotional response, consider that most users of your agentic workflow will. It’s important to consider this when designing agentic workflows, as it’s probably the most important non-functional requirement of every agentic workflow design.
 
 Remember the three laws that form the foundation of a good agentic workflow:
 

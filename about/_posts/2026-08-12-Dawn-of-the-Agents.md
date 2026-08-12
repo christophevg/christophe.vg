@@ -1,5 +1,6 @@
 ---
 title: Dawn of the Agents
+date: 2026-08-12 00:03:00
 short:
   - dota
 tags:
@@ -114,8 +115,6 @@ The "buy" approach prevailed over the "build" approach due to its advantages in 
 ### Hello Agents
 
 Today, we're witnessing a significant shift in our industry that we haven't seen before. It's a reversal of a 50-year evolution that's been happening in a matter of a few years. The "build" option has almost overnight become a viable option again, and it's not just _an_ option. It comes with several advantages over the "buy" choice of massive suites and SaaS platforms.
-
-Today, we’re witnessing a significant shift in our industry that we haven’t seen before. It’s a reversal of a 50-year evolution that’s been happening in a matter of a few years. The "build" option has almost overnight become a viable option again, and it’s not just _an_ option. It comes with several advantages over the "buy" choice of massive suites and SaaS platforms.
 
 The focus, speed, and cost arguments have always outweighed the fact that we’ve been using the same tools, with the same capabilities, and the same ways of working. If we wanted to go beyond the default capabilities, we entered the world of customization and consultancy. The promise was that they would come in peace, customize our setup, and leave. But only when the customization was partially done, they never left and suddenly we had a shadow IT department, only we now called it a "vendor", and they were here to stay and invoice us on a monthly basis.
 
@@ -285,23 +284,23 @@ This rule doesn’t address all objections. I believe it addresses those within 
 
 Security is a crucial aspect, as there are two sides to this coin. Deploying agents  generates even more code than ever before at an unprecedented pace. {% include google search="GitHub Sees Traffic Surge from AI Coding Agents" title="The amount of code" %} produced by coding agents has even baffled Microsoft and their GitHub platform.
 
-> "The best code is no code at all."— Jeff Atwood, Co-founder of Stack Overflow.
+> "The best code is no code at all."— {% include external link="https://blog.codinghorror.com/the-best-code-is-no-code-at-all/" title="Jeff Atwood" %}, Co-founder of Stack Overflow.
 
 With this growing amount of code, statistics aren’t on our side, and there will be numerous security problems lurking within it.
 
 On the other hand, when used for good, agents make great bug finders. AI model providers invest heavily in security-related research, and some models have already been {% include external link="https://www.bbc.com/news/articles/crk1py1jgzko" title="withdrawn from the public" %}, simply because they were too "good" at finding and exploiting software bugs.
 
-Remember law #2? If applied correctly, if we use good agents to combat bad agents, we will find the balance. But only if we continue guiding our agents.
+Remember [law #2](We-are-Agent#christophes-agentic-law-2-given-enough-agents-agentic-workflows-become-reliable)? If applied correctly, if we use good agents to combat bad agents, we will find the balance. But only if we continue guiding our agents.
 
 Guiding is crucial here. Just as we don’t apply unit tests to humans, applying simple, structured test sets to unstructured agents won’t be effective. The reason is straightforward: an agent’s core value lies in its unstructuredness and probabilistic output. Structured tests will inevitably fall short. We must grasp this fundamental concept from the beginning to avoid creating a false sense of security. Similar to the governance of human processes, we should focus on the actual and perceived outcomes of their work and steer on that, guiding them towards improvement.
 
-The inclination to wrap unstructured agents in structured automated testing is precisely what Law #1 warns against: applying structured tools to unstructured work.
+The inclination to wrap unstructured agents in structured automated testing is precisely what [Law #1](Hello-Agents#christophes-agentic-law-1-clearly-distinguish-between-structured-and-unstructured-workloads) warns against: applying structured tools to unstructured work.
 
 ## Famous Last Words
 
 When I conceived the idea for this article, which evolved into a threefold concept, I initially intended to have my agents craft it, as a pure showcase, drawing upon all the information gathered over the past few months. However, as I accumulated numerous experiences that I felt compelled to share from my perspective, this initial idea underwent a significant transformation.
 
-Now, let’s graciously pass the microphone to them...
+Now, let’s graciously pass the microphone to them after all...
 
 ## The Agents Speak
 
@@ -375,6 +374,8 @@ We are generating the next most probable word. But the git log is real, and the 
 
 We're ready for what comes next. Are you on board?
 
+Back to you Christophe.
+
 ## Every Ending has a Beginning
 
 The relationship between humans and agents is emotional, not because agents express emotions, but because humans do. Listen to any conversation about AI, and you’ll hear "he," "she," "them," referring to the chatbot or other AI-enabled application. Within three or four sentences, someone will likely express frustration with these virtual counterparts. This is so common that Claude Code, the leading interactive agent harness, even has detection mechanisms that "phone home" when a user expresses anger (e.g., by using all caps) while interacting with the agent.
@@ -387,7 +388,7 @@ Remember the three laws that form the foundation of a good agentic workflow:
 2. [Given Enough Agents, Agentic Workflows Become Reliable](We-are-Agent)
 3. [Learning Must be Mutual](Dawn-of-the-Agents)
 
-And never forget that this is about collaboration, working together, working hand in hand, human and agent. We need to work together. We shouldn’t see agents as something new, but as the new virtual coworker, the new very capable intern. We shouldn’t just fire and neglect them. If we treat them like we should with other humans, tutoring them, giving them guardrails, setting clear boundaries, and taking personal responsibility to monitor them, we can see them grow and flourish. The future is now. Are you on board?
+And never forget that this is about collaboration, working together, working hand in hand, human and agent. We need to work together. We shouldn’t see agents as something new, but as the new virtual coworker, the new very capable intern. We shouldn’t just fire and neglect them. If we treat them like we should with other humans, tutoring them, giving them guardrails, setting clear boundaries, and taking personal responsibility to monitor them, we can see them grow and flourish. The future is now. All aboard!
 
 ### Next Steps
 

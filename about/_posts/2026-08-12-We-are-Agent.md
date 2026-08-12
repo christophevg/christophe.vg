@@ -1,5 +1,6 @@
 ---
 title: We are Agent
+date: 2026-08-12 00:02:00
 short:
   - waa
 tags:
@@ -17,7 +18,7 @@ This is the second part of a three-part series on my explorations, vision, and s
 
 ## From LLM to Workflow
 
-In case your still a bit roaming the misty banks of the AI world, here's a simple analogy to help you put things in perspective and create a mental model that will help you gain a better understanding of the fundamental concepts, their properties and the implications of those properties.
+In case you're still roaming the misty banks of the AI world, here's a simple analogy to help you put things in perspective and create a mental model that will help you gain a better understanding of the fundamental concepts, their properties and the implications of those properties.
 
 An LLM, or Large Language Model, is a vast neural network that accepts input, known as context, and generates output, specifically the next word. The process is based on its previously trained experience, consisting of all available texts, and it simply selects the statistically most probable next word. That's it. Nothing more, nothing less. Due to its vast multi-dimensional neural network, it inherently stores knowledge and _appears to_ exhibit reasoning.
 
@@ -72,7 +73,7 @@ So, how much information _can_ we feed into an LLM? Technically, LLMs do have a 
 
 To put all that into perspective, a standard novel has around 70,000 to 100,000 words. So, to answer your question, nowadays LLMs can take in about 7 to 8 full-length novels worth of context and generate the most probable next word.
 
-That _is_ a lot. And I does need it. It first contains the harness-injected system prompt, the index of tools and skills can easily exceed 25.000 tokens. From there, every question you ask, all the thinking we discussed above, every answer, every tool request to read a file, and of course, the context of such a file... After a few turns, asking questions, back and forth, even such a 1 million-token worth of input is easily filled. Now, consider that these models are excellent coding companions. Asking them to perform a task on your codebase quickly leads them to read all your source files, sometimes even multiple times.
+That _is_ a lot. And it does need it. It first contains the harness-injected system prompt, the index of tools and skills can easily exceed 25.000 tokens. From there, every question you ask, all the thinking we discussed above, every answer, every tool request to read a file, and of course, the context of such a file... After a few turns, asking questions, back and forth, even such a 1 million-token worth of input is easily filled. Now, consider that these models are excellent coding companions. Asking them to perform a task on your codebase quickly leads them to read all your source files, sometimes even multiple times.
 
 Large language models, in essence, and this is where they excel, can simultaneously take in a vast amount of context, enabling them to arrive at remarkable conclusions. They are capable of establishing semantic connections across a range of information, spanning those seven to eight novels, which guides them to a highly specific location that precisely addresses the concept at hand. Subsequently, they apply their trained knowledge to this specific location to generate the most probable response to it.
 
@@ -173,7 +174,9 @@ I clearly remember the initial days of working with Claude Code. The 🤩 emoji 
 
 Now, don't get me wrong. I firmly believe in working within a command-line shell environment. The fact that these new coding agents were operating within the same environment was a dream come true. It felt like the world had finally caught up with my vision. However, these agents excel at creating elaborate and complex shell commands. This is a positive aspect, as they can generate multiline commands that can test the logic of code to be written in mere seconds. This makes them one of the most valuable tools at their disposal.
 
-The downside is that these shell commands can be challenging to read, especially for humans. They often contain hidden complexities. Let's recall how an LLM generates the next token, and the next, and so on... Producing natural language involves a certain level of ambiguity. But when it comes to code or shell commands, the output is what it is. The difference between `rm -rf /tmp/text.txt` and `rm -rf / tmp/text.txt` is just one character, and even that single incorrect character can cause significant damage to your hard drive if you hastily press "yes."
+The downside is that these shell commands can be challenging to read, especially for humans. They often contain hidden complexities. Let's recall how an LLM generates the next token, and the next, and so on... Producing natural language involves a certain level of ambiguity. But when it comes to code or shell commands, the output is what it is. The difference between `rm -rf /tmp/text.txt` and `rm -rf / tmp/text.txt` is just one character, and even that single incorrect character can cause significant damage to your hard drive if you hastily press "yes." 
+
+If you’re unfamiliar with Unix-style command line instructions, here’s a breakdown: `rm` is the command to remove files and directories, `-rf` indicates that the operation should be recursive and forceful, and `/` represents the root directory of your hard drive. In simple terms, `rm -rf /` starts the deletion of your entire hard drive, not just the file located at `/tmp/text.txt`.
 
 Consequently, I quickly became annoyed by these interruptions and, in a matter of days, made up my mind that the `Bash()` tool, which allows the agent to execute arbitrary shell commands on my system, was both a superpower and a major obstacle to agentic workflows.
 
@@ -195,7 +198,7 @@ Restricting agents takes away too much of their superpowers, so we have to find 
 
 When agents entered my world in March 2026, some of my older projects were revived, some were terminated, and many new ones emerged. Each of these changes was a direct response to these new allies I had gained. Each change also brought its own set of experiences, built on failures and frustration. So far, I don't think any catastrophes have occurred, but I'm keeping my fingers crossed.
 
-> "Experience is simply the name we give our mistakes." — Oscar Wilde
+> "Experience is simply the name we give our mistakes." — {% include external link="https://www.goodreads.com/quotes/3171761-experience-is-simply-the-name-we-give-our-mistakes" title="Oscar Wilde" %}
 
 If you know me, you know I always own my mistakes and I even tend to share them widely, simply to provide them as a learning experience, without having to go through the same mistakes yourself. Before consolidating agentic properties and agentic workflow components, let's take a stroll down memory lane and relive some of the stories that unfolded over the past months, resulting in many valuable lessons for the future.
 
@@ -315,7 +318,7 @@ It goes even further: just like humans, agents manifest themselves in too many f
 
 Consider these words carefully: the most significant factor in this agentic equation is _you_!
 
-> "A fool with a tool is still a fool, only now a more dangerous fool." - proverd, extended by yours truly 😇
+> "A fool with a tool is still a fool, only now a more dangerous fool." - proverb, extended by yours truly 😇
 
 What makes an agentic workflow work is _you_: _you_ guide and mentor the agents, set and maintain guardrails, and are the final gatekeeper. Any agent can produce large amounts of work in a short time, but the results can be riddled with errors. It takes an equally knowledgeable human to detect them. The workflow, not the agent, is what makes the difference. So, _you_ are the workflow. Don’t withdraw from it.
 
@@ -447,17 +450,17 @@ Your honor I want to present the evidence in this case. If I may, I want to pres
 
 **Exhibit 2: Claude Code hides more and more** of what is actually being done by the agents. This is nice for simple end-users, who like to surrender all control to the desire that might well consume them whole. Yet for my client, who wants to really master and control this agentic workflow, this blindness is really a burden.
 
-**Exhibit 3: A CLI harness is nice, having the possibility to give permission to do things is great, but in the real world, such interactivity is not always available. My client clearly sees we're merely at the beginning of this agentic paradigm. Soon we will want to integrate this in autonomous workflows.
+**Exhibit 3: A CLI harness is nice**, having the possibility to give permission to do things is great, but in the real world, such interactivity is not always available. My client clearly sees we're merely at the beginning of this agentic paradigm. Soon we will want to integrate this in autonomous workflows.
 
 **Exhibit 4: Model Context Protocol (MCP) servers** are a nice solution to introduce tools in the agentic mix, but it is really only one way traffic and doesn't offer a possibility for a tight integration with existing, or newly written, structured parts of solutions. My client would love to introduce agentic workflows in his existing codebases, with agentic workflow being a first class citizen in a true Python-first approach.
 
 **Exhibit 5: The personal itch** to try and write his own harness, taking all previously shown shortcomings to heart, is maybe the most important reason. Learning is founded in doing, in failing and finding answers.
 
-Therefore, honorable judge, esteemed members of the jury, I simply cannot ask anything else from you than to allow my client to start working on his own "Python-first agent harness framework": Yoker.
+Therefore, honorable judge, esteemed members of the jury, I simply cannot ask anything else from you than to allow my client to start working on his own "Python-first agent harness framework": {% include external link="https://yoker.dev" title="Yoker" %}.
 
 ## Introducing Yoker
 
-After a few weeks with Claude Code, I felt a growing discomfort. Don't get me wrong: I'm not saying that Claude Code is no good. It _is_ a great tool, and today I still use it on a daily basis to do all this agentic work and it does the job. Just, after those first few weeks, I simply began building my own vision for agentic workflows, and I feel that Claude Code better caters for other ways of working. Where I'm heading, I have other requirements and want to focus on other things than Claude Code.
+After a few weeks with Claude Code, I felt a growing discomfort. Don't get me wrong: I'm not saying that Claude Code is no good. It _is_ a great tool, and today I still use it on a daily basis to do all this agentic work and it does the job. (Actually, by the time these articles were published online, I had completely stopped using Claude Code.) Just, after those first few weeks, I simply began building my own vision for agentic workflows, and I feel that Claude Code better caters for other ways of working. Where I'm heading, I have other requirements and want to focus on other things than Claude Code.
 
 The five reasons outlined above clearly explain my decision to embark on the project of developing my own agent harness, or rather, a framework for it. Given that this was poised to be one of, if not the, most significant projects I’ve undertaken, it presented an ideal opportunity to assess and learn about the agentic workflow concept I had in mind, while simultaneously implementing the environment I envisioned for that workflow. Observing its behavior under pressure served as an excellent testbed to identify its limitations. Regardless of these limitations, the value derived from this project was substantial and has already prompted a fundamental transformation in my perception and application of technology across various domains.
 
@@ -521,6 +524,6 @@ Lastly, to truly harness the full potential and evolve following this new paradi
 
 ## And we're not done yet...
 
-I hope that after reading the [first part](Hello-Agents) and this second installment, you’ve come to see the same opportunities that I’ve discovered over the past few months. However, I also hope that you begin to realize that the story being told online and by your vendors might not be the complete picture.
+I hope that after reading the [first part](Hello-Agents) and this second installment, you’ve come to see the same opportunities that I’ve discovered over the past few months. However, I also hope that you begin to realize that the stories being told online and by your vendors might not be the complete picture.
 
 In [part 3](Dawn-of-the-Agents), I take a step back from the technology and methods and consider the broader implications of this new era. What changes are we about to witness? Will they be for the better or for the worse? From the mechanics, we zoom out to the implications and explore how I believe we’re now facing an opportunity to seize an advantage. If we don’t act now, it might well turn out to be one of the last chances we’ll have in a long time.

@@ -48,3 +48,7 @@ fix-images-dry:
 .PHONY: assets
 .PHONY: $(MAIN_JS)
 .PHONY: check-images fix-images fix-images-dry
+
+WEBSITE_URL ?= https://christophe.vg
+analyze:
+	uv run python scripts/analyze.py $(WEBSITE_URL)

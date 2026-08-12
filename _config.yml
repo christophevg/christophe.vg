@@ -141,9 +141,13 @@ exclude:
   - /docs # ignore Minimal Mistakes /docs
   - /test # ignore Minimal Mistakes /test
   - local
-  - /reviews
-  - /CLAUDE.md
   - /context # ignore Yoker context logs
+  - /scripts
+  - TODO*
+  - AGENTS.md
+  - Makefile
+  - notes.md
+  - yoker.toml
 keep_files:
   - .git
   - .svn

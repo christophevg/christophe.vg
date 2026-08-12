@@ -9,21 +9,9 @@ This skill provides tools for analyzing website performance using Lighthouse.
 
 ## Running an Analysis
 
-### Prerequisites
-
-Ensure Lighthouse is available (will be installed via npx if not present):
-
-```bash
-npx lighthouse --version
-```
-
 ### Quick Analysis
 
-Run the analysis script to get a comprehensive report:
-
-```bash
-python3 .claude/skills/website-analysis/analyze.py https://example.com
-```
+Run the `analyse` make target to get a comprehensive report.
 
 ### Output
 

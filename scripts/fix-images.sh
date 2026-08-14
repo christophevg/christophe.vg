@@ -168,11 +168,15 @@ while IFS= read -r -d '' image; do
     new_size_kb=$((new_size / 1024))
     savings=$((file_size_kb - new_size_kb))
     echo -e "  ${GREEN}✓ Saved ${savings}KB (${file_size_kb}KB → ${new_size_kb}KB)${NC}"
-    FIXED_COUNT=$((FIXED_COUNT + 1))
+    if [[ $avings -eq 0 ]]; then
+      rm "$image"
+      echo -e "  ${RED}x dropped useless savings${NC}"
+    else
+      FIXED_COUNT=$((FIXED_COUNT + 1))
+    fi
   else
     FIXED_COUNT=$((FIXED_COUNT + 1))
   fi
-
   echo ""
 
 done < <(find "$FOLDER" \( -path "./_site" -o -path "./.git" -o -path "./node_modules" \) -prune -o \

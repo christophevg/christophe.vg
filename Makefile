@@ -52,3 +52,22 @@ fix-images-dry:
 WEBSITE_URL ?= https://christophe.vg
 analyze:
 	uv run python scripts/analyze.py $(WEBSITE_URL)
+
+# WebP management
+check-webp:
+	./scripts/check-webp.sh
+
+check-webp-only:
+	./scripts/check-webp.sh --check
+
+check-webp-dry:
+	./scripts/check-webp.sh --dry-run
+
+clean-webp:
+	./scripts/clean-webp.sh
+
+clean-webp-check:
+	./scripts/clean-webp.sh --check
+
+.PHONY: check-webp check-webp-only check-webp-dry clean-webp clean-webp-check
+

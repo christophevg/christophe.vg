@@ -60,8 +60,11 @@ if [[ ! -d "$CATEGORY" ]]; then
   exit 1
 fi
 
-# Image subdirectories to check
-IMAGE_DIRS=("full" "header" "thumb")
+# Image subdirectories to generate WebP for
+# Only header and banner images are served via <picture> tags in templates
+# (page__hero.html and timeline.html respectively)
+# full/ and thumb/ images use plain <img> tags and don't need WebP
+IMAGE_DIRS=("header" "banner")
 
 # Check for required tools
 if command -v cwebp &>/dev/null; then

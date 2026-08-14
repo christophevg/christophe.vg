@@ -10,7 +10,9 @@ This site hosts my portfolio, professional articles, cooking recipes, sailing ad
 - [FAQ](https://christophe.vg/about/faq/): Frequently asked questions about services, approach, background, and collaboration
 - [I, Enterprise Architect](https://christophe.vg/about/I-Enterprise-Architect): My role and approach as an Enterprise Architect realizing customers' dreams
 - [My Agentic Workflow](https://christophe.vg/about/agentic-workflow/): How I work with AI agents—principles, approach, and transparency practices
-- [Hello Agents](https://christophe.vg/about/hello-agents/): The story of my journey into agentic workflows over the first three months
+- [Hello Agents](https://christophe.vg/about/hello-agents/): The initial encounter with agents and the impact they've had — the first agentic law
+- [We are Agent](https://christophe.vg/about/we-are-agent/): The mechanics of agentic workflows — components, governance, and guardrails — the second agentic law
+- [Dawn of the Agents](https://christophe.vg/about/dawn-of-the-agents/): The broader implications of agentic workflows for the future of work — the third agentic law
 - [Coding Agent & LLM Collaboration](https://christophe.vg/about/coding-agent/): Website-specific details on AI usage for this site
 - [Problem Seeker](https://christophe.vg/about/problem-seeker/): My approach to finding and solving problems
 - [Virtue of Technology Agnosticism](https://christophe.vg/about/virtue-of-technology-agnosticism/): Why technology-agnostic thinking matters in architecture
@@ -53,6 +55,9 @@ Clean markdown versions of key pages are available for LLM consumption:
 - [FAQ (markdown)](https://christophe.vg/md/about/faq.md): Frequently asked questions
 - [I, Enterprise Architect (markdown)](https://christophe.vg/md/about/I-Enterprise-Architect.md): Architecture philosophy and approach
 - [My Agentic Workflow (markdown)](https://christophe.vg/md/about/agentic-workflow.md): AI collaboration principles and practices
+- [Hello Agents (markdown)](https://christophe.vg/md/about/hello-agents.md): Summary of the initial agentic journey and first agentic law
+- [We are Agent (markdown)](https://christophe.vg/md/about/we-are-agent.md): Summary of agentic workflow mechanics and second agentic law
+- [Dawn of the Agents (markdown)](https://christophe.vg/md/about/dawn-of-the-agents.md): Summary of the broader implications and third agentic law
 - [Problem Seeker (markdown)](https://christophe.vg/md/about/problem-seeker.md): Problem-seeking approach
 
 ## Optional

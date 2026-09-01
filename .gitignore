@@ -12,7 +12,7 @@ _site
 
 # local storage
 local
+*.local
 
 # agentic
 yoker.toml
-context/

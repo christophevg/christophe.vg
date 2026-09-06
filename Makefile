@@ -36,14 +36,16 @@ clean:
 MAX_IMAGE_SIZE ?= 1200
 MAX_FILE_SIZE ?= 200
 
+FOLDER ?= .
+
 check-images:
-	./scripts/check-images.sh $(MAX_IMAGE_SIZE) .
+	./scripts/check-images.sh $(MAX_IMAGE_SIZE) $(FOLDER)
 
 fix-images:
-	./scripts/fix-images.sh $(MAX_IMAGE_SIZE) .
+	./scripts/fix-images.sh $(MAX_IMAGE_SIZE) $(FOLDER)
 
 fix-images-dry:
-	DRY_RUN=1 ./scripts/fix-images.sh $(MAX_IMAGE_SIZE) .
+	DRY_RUN=1 ./scripts/fix-images.sh $(MAX_IMAGE_SIZE) $(FOLDER)
 
 .PHONY: assets
 .PHONY: $(MAIN_JS)
@@ -70,4 +72,3 @@ clean-webp-check:
 	./scripts/clean-webp.sh --check
 
 .PHONY: check-webp check-webp-only check-webp-dry clean-webp clean-webp-check
-

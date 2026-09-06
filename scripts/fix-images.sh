@@ -152,6 +152,9 @@ while IFS= read -r -d '' image; do
   echo -e "  Path: ${image}"
   echo -e "  Current: ${width}x${height}, ${file_size_kb}KB"
 
+  # keep backup
+  cp "$image" "$image.org"
+
   # Resize if needed
   if [[ $needs_resize -eq 1 ]]; then
     resize_image "$image" "$MAX_SIZE"
@@ -168,10 +171,12 @@ while IFS= read -r -d '' image; do
     new_size_kb=$((new_size / 1024))
     savings=$((file_size_kb - new_size_kb))
     echo -e "  ${GREEN}✓ Saved ${savings}KB (${file_size_kb}KB → ${new_size_kb}KB)${NC}"
-    if [[ $avings -eq 0 ]]; then
+    if [[ $savings -eq 0 ]]; then
       rm "$image"
+      mv "$image.org" "$image"
       echo -e "  ${RED}x dropped useless savings${NC}"
     else
+      rm "$image.org"
       FIXED_COUNT=$((FIXED_COUNT + 1))
     fi
   else

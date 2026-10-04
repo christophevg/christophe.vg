@@ -2,6 +2,14 @@
 title: Logboek 2026
 ---
 
+## 4 oktober - Fin de season
+
+{% include thumbs show="2026-oktober-4" %}
+
+Onder een heerlijk zonnetje, zonder enige wind, samen met A Boosui van strand gaan halen. En ja, 3 keer zeilen op een seizoen is een laag, maar goed gemiddelde voor mij 😇
+
+Het was een leuk zeilseizoen, punt uit! 💪 Eens zien of ik er ook nog een blokart-seizoen kan aan vast knopen 🤞
+
 ## 6 september - Er is altijd zo één mooie september dag...
 
 {% include thumbs show="2026-september-6" %}

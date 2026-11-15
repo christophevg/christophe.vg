@@ -1,6 +1,9 @@
 ---
 title: Rode Uienchutney
 tags: veggie
+header:
+  teaser: /koken/images/thumb/rode-uienchutney.jpeg
+  image: /koken/images/header/rode-uienchutney.jpeg
 recipe:
   intro: "Altijd lekker bij allerhande gerechtjes. Topper bij een Croque Chasseur, net zoals Vijgenchutney."
   ingredients:
@@ -14,4 +17,5 @@ recipe:
     - "Doe er de suiker bij en laat nogmaals een 20tal minuten karameliseren."
     - "Doe er tot slot de porto en azijn bij en laat inkoken tot een smeuige dikte."
     - "Giet over in een bokaal, sluit af en laat afkoelen."
+date: 2026-11-15
 ---

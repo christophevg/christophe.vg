@@ -5,22 +5,24 @@ header:
   image: /koken/images/header/hamburger-bearnaise.jpeg
 recipe:
   intro: "Een hamburger, volledig vers gemaakt,... dat smaakt ;-)"
-  ingredients:
-    - "Voor de broodjes:"
-    - "500g bloem"
-    - "320ml water"
-    - "11g droge gist"
-    - "40ml olijfolie"
-    - "10g zout"
-    - "semola bloem"
-    - "Voor de burgers:"
-    - "1 kg puur rundsvlees"
-    - "1 losgeklopt ei"
-    - "90g broodkruimels"
-    - "60ml gecondenseerde melk"
-    - "40ml Worcestershire saus"
-    - "snuifje cayennepeper"
-    - "2 teentjes look, fijn gehakt"
+  sections:
+    - name: "Voor de broodjes:"
+      ingredients:
+      - "500g bloem"
+      - "320ml water"
+      - "11g droge gist"
+      - "40ml olijfolie"
+      - "10g zout"
+      - "semola bloem"
+    - name: "Voor de burgers:"
+      ingredients:
+      - "1 kg puur rundsvlees"
+      - "1 losgeklopt ei"
+      - "90g broodkruimels"
+      - "60ml gecondenseerde melk"
+      - "40ml Worcestershire saus"
+      - "snuifje cayennepeper"
+      - "2 teentjes look, fijn gehakt"
   instructions:
     - "Kneed alle ingrediënten voor de broodjes in een keukenrobot, gedurende 15 minuten. Dek af met folie en laat 30 minuten rusten."
     - "Verdeel het deeg in porties (8-10 broodjes voor deze bereiding), dek opnieuw af en laat nogmaals rusten voor 45 minuten. Gebruik wat semola bloem om de buitenkanten niet te veel te laten plakken aan de folie."

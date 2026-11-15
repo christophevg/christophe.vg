@@ -69,9 +69,6 @@ layout: default
         {% if page.date %}
           <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time></p>
         {% endif %}
-        {% if page.modified and page.modified != page.date %}
-          <p class="page__date"><strong><i class="fa fa-fw fa-clock" aria-hidden="true"></i> Last updated:</strong> <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time></p>
-        {% endif %}
       </footer>
 
       {% if page.share %}{% include social-share.html %}{% endif %}
